@@ -1,0 +1,17 @@
+{
+  "name": "asura-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API da loja do Asura (pedidos + verificação on-chain USDC/ETH na Base e ETH mainnet)",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "viem": "^2.45.3"
+  }
+}
