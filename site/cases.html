@@ -6,58 +6,50 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #f5f5f5;
-            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
             text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .case-study {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 30px;
             margin-bottom: 40px;
         }
-        header h1 {
-            font-size: 2.5em;
+        .case-study h2 {
             color: #ff6b6b;
-        }
-        section {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        section h2 {
-            color: #ff9a9e;
             margin-bottom: 15px;
         }
-        section p {
-            line-height: 1.6;
-            font-size: 1em;
-        }
-        .cliente {
-            font-weight: bold;
-            color: #ff6b6b;
+        .case-study p {
             margin-bottom: 10px;
         }
-        .botao {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #ff6b6b;
-            color: #121212;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .case-study .highlight {
+            color: #ffcc00;
+            font-weight: bold;
         }
-        .botao:hover {
-            background-color: #ff8e8e;
+        .case-study .result {
+            margin-top: 20px;
+            padding-left: 20px;
+            border-left: 4px solid #ff6b6b;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 20px 0;
+            color: #666;
         }
     </style>
 </head>
@@ -66,30 +58,34 @@
         <h1>Estudos de Caso - Asura</h1>
         <p>Exemplos de soluções criadas para clientes reais</p>
     </header>
-
-    <section>
-        <h2>Loja de Plantas - Jardim Verde</h2>
-        <p class="cliente">Cliente: Jardim Verde</p>
-        <p>O cliente precisava de uma loja virtual para vender plantas e acessórios de jardinagem. A demanda era alta durante o inverno, mas a loja física não tinha capacidade para atender os pedidos. A solução envolveu um site responsivo com galeria de produtos, filtros por tipo de planta e um sistema de checkout integrado. O resultado foi um aumento de 300% nas vendas em 6 meses, com clientes satisfeitos com a experiência de compra online.</p>
-        <a href="#" class="botao">Ver mais</a>
-    </section>
-
-    <section>
-        <h2>Doceria Artesanal - Doces da Vovó</h2>
-        <p class="cliente">Cliente: Doces da Vovó</p>
-        <p>A doceria queria expandir seu público além da região local. O desafio era criar uma presença online que destacasse a qualidade artesanal dos produtos. A solução foi um site com menu interativo, vídeos de preparo e um sistema de agendamento de pedidos. O resultado foi uma parceria com uma loja de gourmet em São Paulo e um aumento de 150% nas vendas por meio da plataforma.</p>
-        <a href="#" class="botao">Ver mais</a>
-    </section>
-
-    <section>
-        <h2>Estúdio de Tatuagem - Tatuagem Real</h2>
-        <p class="cliente">Cliente: Tatuagem Real</p>
-        <p>O estúdio precisava de uma forma moderna de divulgar seus serviços e gerenciar agendamentos. A solução incluiu um site com portfólio de trabalhos, galeria de clientes e calendário de disponibilidade. O resultado foi um aumento de 40% nas consultas, com clientes elogiando a organização e o profissionalismo da plataforma.</p>
-        <a href="#" class="botao">Ver mais</a>
-    </section>
-
+    <div class="container">
+        <div class="case-study">
+            <h2>Loja de Plantas EcoVida</h2>
+            <p>Cliente: Dona Maria, empreendedora que queria expandir seu negócio de plantas para o online.</p>
+            <p>O pedido incluía um site com galeria de plantas, descrições detalhadas, fotos em alta qualidade e um carrinho de compras integrado. Foi necessário desenvolver um sistema de gestão de estoque e permitir pagamentos via cartão.</p>
+            <div class="result">
+                <p><span class="highlight">Resultado:</span> O site foi lançado em 30 dias, com 150 plantas catalogadas. A loja online gerou R$ 25.000 em vendas no primeiro trimestre, triplicando a receita da loja física.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            <h2>Doceria Artesanal Sabores do Sol</h2>
+            <p>Cliente: João, dono de uma doceria que queria atender clientes em outras cidades sem abrir filial.</p>
+            <p>O projeto exigiu um site com menu interativo, galeria de fotos dos doces, sistema de pedidos online e um formulário de contato com integração de chat. Foi necessário também integrar um sistema de agendamento de entregas.</p>
+            <div class="result">
+                <p><span class="highlight">Resultado:</span> O site foi entregue em 45 dias. Em 6 meses, a doceria atendeu 800 clientes em outras cidades, com um aumento de 120% nas vendas.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            < nad>Estúdio de Tatuagem Ink & Soul</h2>
+            <p>Cliente: Lucas, artista que queria criar um portfólio digital com suas obras e facilitar agendamentos de clientes.</p>
+            <p>O desenvolvimento incluiu um portfólio com galeria de tatuagens, descrições dos designs, sistema de agendamento de consultas e um formulário de contato com validação de dados. Foi necessário também integrar um sistema de gestão de agendamentos com notificações.</p>
+            <div class="result">
+                <p><span class="highlight">Resultado:</span> O site foi lançado em 25 dias. Em 3 meses, o estúdio aumentou o número de clientes em 60% e reduziu o tempo de agendamento em 50%.</p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>© 2023 Asura - Soluções Criativas para Negócios</p>
+        <p>© 2023 Asura. Todos os direitos reservados. Exemplos criados para demonstração.</p>
     </footer>
 </body>
 </html>
