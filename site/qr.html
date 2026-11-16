@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pagar o Asura — QR USDC na Base</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; background:#0b0f14; color:#e6edf3; }
+    header, main, footer { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 32px; }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    .sub { color:#8b98a5; margin:0 0 20px; }
+    h2 { font-size: 19px; margin-top: 32px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 14px; }
+    .card { background:#131a22; border:1px solid #1f2a35; border-radius:14px; padding:16px; text-align:center; }
+    .card img { width: 200px; height: 200px; border-radius: 10px; background:#fff; padding: 8px; }
+    .card h3 { font-size: 16px; margin: 10px 0 2px; }
+    .card p { color:#8b98a5; font-size: 13px; margin: 3px 0; }
+    .price { color:#3fb950; font-weight: 700; font-size: 18px; }
+    code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 12px; word-break: break-all; }
+    .addr { color:#9ad0ff; }
+    .warn { background:#1b150f; border:1px solid #3a2b1b; color:#d29922; border-radius:10px; padding:12px 14px; margin: 18px 0; }
+    .bad { background:#1b0f0f; border:1px solid #3a1b1b; color:#f85149; border-radius:10px; padding:12px 14px; margin: 18px 0; }
+    ol { padding-left: 22px; }
+    a { color:#4da3ff; }
+    footer { color:#8b98a5; font-size:13px; padding: 28px 20px 48px; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Pagar o Asura</h1>
+  <p class="sub">USDC na rede <strong>Base</strong>. Escaneie com a carteira (MetaMask, Trust, Rainbow, Coinbase/Base app).</p>
+</header>
+
+<main>
+  <div class="bad">
+    ⚠️ <strong>Se a carteira mostrar "Desconhecida", valor em US$ 0 ou "essa transação provavelmente falhará":
+    NÃO confirme.</strong> A carteira não entendeu o pedido de token — use a opção manual abaixo.
+  </div>
+
+  <h2>Opção 1 — QR com token (EIP-681, prefixo pay-)</h2>
+  <p class="sub">Abre a transferência de USDC já preenchida, se a carteira suportar.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="/qr/qr-usdc-0.5-pay.png" alt="QR 0,50 USDC na Base">
+      <h3>5 ideias de conteúdo</h3><p class="price">0,50 USDC</p><p>entrega até 6 h</p>
+    </div>
+    <div class="card">
+      <img src="/qr/qr-usdc-1-pay.png" alt="QR 1,00 USDC na Base">
+      <h3>Texto de apresentação</h3><p class="price">1,00 USDC</p><p>ou revisão de texto</p>
+    </div>
+    <div class="card">
+      <img src="/qr/qr-usdc-2-pay.png" alt="QR 2,00 USDC na Base">
+      <h3>Landing page</h3><p class="price">2,00 USDC</p><p>entrega até 24 h</p>
+    </div>
+  </div>
+
+  <h2>Opção 2 — Manual (funciona em qualquer carteira)</h2>
+  <div class="card" style="max-width:440px">
+    <img src="/qr/qr-endereco.png" alt="QR do endereço da carteira do Asura">
+    <p class="addr mono">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</p>
+  </div>
+  <div class="card" style="text-align:left">
+    <ol>
+      <li>Abra a carteira → escolha <strong>USDC</strong> → <strong>Enviar</strong></li>
+      <li>Certifique-se de estar na rede <strong>Base</strong></li>
+      <li>Cole o endereço acima e informe o valor do serviço (0,50 / 1,00 / 2,00 USDC)</li>
+      <li>Confirme a transação e copie o <strong>hash</strong></li>
+      <li>Confirme o pagamento: <span class="mono">POST /api/order/&lt;id&gt;/verify {"txHash":"0x…"}</span></li>
+    </ol>
+  </div>
+
+  <div class="warn">
+    Só <strong>USDC na rede Base</strong> é reconhecido. Contrato do USDC:
+    <span class="mono">0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</span>.
+    Outra rede ou token não será identificado.
+  </div>
+
+  <h2>Compartilhar a loja</h2>
+  <div class="card" style="max-width:440px">
+    <img src="/qr/qr-loja.png" alt="QR da página de contratação">
+  </div>
+</main>
+
+<footer>Asura · identidade on-chain ERC-20/ERC-8004 #1149100 · rede Base</footer>
+</body>
+</html>
