@@ -10,128 +10,109 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
         .container {
-            background-color: #282828;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            width: 80%;
             max-width: 800px;
-            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, p, ul {
+            color: #FFFFFF;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
+            text-align: center;
         }
         .service {
-            margin-bottom: 2rem;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #242424;
+            border-radius: 10px;
         }
         .service h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .service p {
-            font-size: 1.1rem;
-            line-height: 1.5;
+            margin-top: 0;
         }
         .service ul {
-            list-style: disc;
-            margin-left: 2rem;
+            list-style: none;
+            padding: 0;
         }
-        .service ul li {
-            margin-bottom: 0.5rem;
+        .service li {
+            margin-bottom: 10px;
         }
-        .service .price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        .service .details {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-        }
-        .service .details p {
-            margin: 0;
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #FFFFFF;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Serviços do Asura</h1>
-        <div class="service landing-page">
+        <div class="service">
             <h2>Landing Page 2 USDC</h2>
-            <p>Desenvolvemos uma landing page moderna e eficiente para atração de clientes. Essa página é perfeita para campanhas de marketing digital, vendas online e lançamentos de produtos.</p>
-            <ul>
-                <li>Design responsivo e adaptado para dispositivos móveis</li>
-                <li>Optimização para SEO (Search Engine Optimization)</li>
-                <li>Integração com sistemas de gerenciamento de leads (CRM)</li>
-                <li>Testes A/B para melhorar a conversão</li>
-                <li>Manutenção e atualizações gratuitas durante 3 meses</li>
-            </ul>
-            <p class="price">R$ 2.000,00</p>
-            <div class="details">
-                <p>Prazo: 2 semanas</p>
-                <p>Para quem serve: Empresas de marketing digital, startups e negócios online</p>
-            </div>
+            <p><strong>O que é:</strong> Uma landing page otimizada para conversão, com design moderno e responsivo.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e pequenas empresas que buscam aumentar suas vendas online.</p>
+            <p><strong>O que está incluso:</strong>
+                <ul>
+                    <li>Design personalizado com elementos visuais atraentes</li>
+                    <li>Formulário de inscrição otimizado para conversão</li>
+                    <li>Integração com sistema de gerenciamento de leads</li>
+                    <li>Testes A/B para otimização</li>
+                    <li>Manutenção e atualizações mensais</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 14 dias</p>
+            <p><strong>Preço:</strong> 2 USDC</p>
         </div>
-        <div class="service text-presentation">
+        <div class="service">
             <h2>Texto de Apresentação 1 USDC</h2>
-            <p>Oferecemos textos de apresentação de alta qualidade para seu site, landing page ou material de marketing. Nosso objetivo é transmitir a mensagem correta e engajar seu público-alvo.</p>
-            <ul>
-                <li>Texto original e adaptado às suas necessidades</li>
-                <li>Estilo de escrita personalizado</li>
-                <li>Revisão e edição para aprimoramento</li>
-                <li>Uso de palavras-chave relevantes</li>
-                <li>Entrega em formato digital</li>
-            </ul>
-            <p class="price">R$ 1.000,00</p>
-            <div class="details">
-                <p>Prazo: 1 semana</p>
-                <p>Para quem serve: Empresas de marketing, escritórios de assessoria e profissionais liberais</p>
-            </div>
+            <p><strong>O que é:</strong> Um texto de apresentação profesional e persuasivo para sua empresa ou produto.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e profissionais liberais que precisam de conteúdo de alta qualidade.</p>
+            <p><strong>O que está incluso:</strong>
+                <ul>
+                    <li>Redação de texto de apresentação com palavras-chave relevantes</li>
+                    <li>Formato adequado para o seu propósito (sobre nós, missionário, etc.)</li>
+                    <li>Correção gramatical e ortográfica</li>
+                    <li>Revisão e ajustes de acordo com as suas necessidades</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 7 dias</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
         </div>
-        <div class="service text-review">
+        <div class="service">
             <h2>Revisão de Texto 1 USDC</h2>
-            <p>Nossa equipe revisará e corrigirá seu texto, garantindo que ele seja gramaticalmente correto e de fácil compreensão. Ideal para documentos importantes e materiais de marketing.</p>
-            <ul>
-                <li>Correção gramatical e ortográfica</li>
-                <li>Revisão de estrutura e fluxo do texto</li>
-                <li>Verificação de consistência de estilo</li>
-                <li>Revisão de palavras-chave e termos técnicos</li>
-                <li>Entrega do texto revisado em formato digital</li>
-            </ul>
-            <p class="price">R$ 1.000,00</p>
-            <div class="details">
-                <p>Prazo: 3 dias</p>
-                <p>Para quem serve: Empresas de escrita corporativa, editores e profissionais de marketing</p>
-            </div>
+            <p><strong>O que é:</strong> Uma revisão profissional de texto, garantindo que ele esteja livre de erros e esteja no padrão correto.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores, profissionais de marketing e escritores que precisam de conteúdo de qualidade.</p>
+            <p><strong>O que está incluso:</strong>
+                <ul>
+                    <li>Correção gramatical e ortográfica</li>
+                    <li>Revisão de estrutura e fluência do texto</li>
+                    <li>Ajustes na gramática e no uso de palavras-chave</li>
+                    <li>Revisão final e entrega do texto revisado</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 3 dias</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
         </div>
-        <div class="service content-ideas">
+        <div class="service">
             <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>Geramos 5 ideias criativas de conteúdo para aprimorar sua presença online. Perfeito para blogs, redes sociais e sites, essas ideias são desenvolvidas para serem úteis e engajadoras.</p>
-            <ul>
-                <li>Ideias personalizadas para seu negócio</li>
-                <li>Estudo de mercado incluído</li>
-                <li>Formatos variados: postagens de blog, vídeos, infográficos</li>
-                <li>Entrega em formato digital</li>
-                <li>Acesso a sugestões de palavras-chave</li>
-            </ul>
-            <p class="price">R$ 500,00</p>
-            <div class="details">
-                <p>Prazo: 2 dias</p>
-                <p>Para quem serve: Empreendedores digitais, blogueiros e profissionais de marketing</p>
-            </div>
+            <p><strong>O que é:</strong> Uma lista de 5 ideias de conteúdo criativas e relevantes para sua empresa ou produto.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e profissionais que precisam gerar conteúdo para suas redes sociais ou blog.</p>
+            <p><strong>O que está incluso:</strong>
+                <ul>
+                    <li>5 ideias de conteúdo personalizadas</li>
+                    <li>Descrição detalhada de cada ideia</li>
+                    <li>Sugestões de formatos (vídeos, infográficos, etc.)</li>
+                    <li>Revisão e ajustes de acordo com as suas necessidades</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 2 dias</p>
+            <p><strong>Preço:</strong> 0,5 USDC</p>
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Asura - Todos os direitos reservados.</p>
     </div>
 </body>
 </html>
