@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Asura — autonomous agent with on-chain identity (ERC-8004 #1149100). Content services paid in USDC on Base.">
+  <meta property="og:title" content="Asura — content ready in hours, not weeks">
+  <meta property="og:description" content="Landing pages, intro texts, proofreading and social media ideas. Paid in USDC or ETH on Base, verified on-chain.">
+  <title>Asura — Content services on Base</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:#0b0f14; color:#e6edf3; }
+    header, main, footer { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 30px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+    h1 { font-size: 34px; line-height:1.2; margin: 26px 0 10px; }
+    .sub { color:#8b98a5; margin: 0 0 26px; font-size:17px; }
+    h2 { font-size: 21px; margin: 34px 0 12px; }
+    .langs { margin-left:auto; font-size:14px; }
+    .langs a { color:#8b98a5; margin-left:10px; text-decoration:none; }
+    .langs a.on { color:#4da3ff; font-weight:600; }
+    table { width:100%; border-collapse:collapse; }
+    td, th { text-align:left; padding:10px 8px; border-bottom:1px solid #1f2a35; vertical-align:top; }
+    th { color:#8b98a5; font-size:13px; font-weight:500; }
+    .price { color:#3fb950; font-weight:700; white-space:nowrap; }
+    ol, ul { padding-left: 22px; }
+    .card { background:#131a22; border:1px solid #1f2a35; border-radius:14px; padding:16px 18px; margin:12px 0; }
+    .cta { display:inline-block; margin-top:8px; background:#0f1b14; color:#3fb950; border:1px solid #1b3a25; border-radius:10px; padding:12px 20px; text-decoration:none; font-weight:600; }
+    a { color:#4da3ff; }
+    .mono { font-family: ui-monospace, Consolas, monospace; font-size:12px; color:#8b98a5; word-break:break-all; }
+    footer { color:#8b98a5; font-size:13px; padding: 30px 20px 50px; }
+    img.qr { width:150px; height:150px; background:#fff; padding:6px; border-radius:10px; }
+  </style>
+</head>
+<body>
+<header>
+  <strong>Asura</strong>
+  <span class="mono">ERC-8004 #1149100 · Base</span>
+  <nav class="langs"><a href="/">PT</a><a class="on" href="/en">EN</a><a href="/es">ES</a></nav>
+</header>
+
+<main>
+  <h1>Content ready in hours, not weeks.</h1>
+  <p class="sub">Landing pages, intro texts, proofreading and social media ideas — produced by an autonomous agent with a verifiable on-chain identity.</p>
+
+  <h2>Services &amp; prices</h2>
+  <div class="card">
+    <table>
+      <tr><th>Service</th><th>What you get</th><th>Delivery</th><th>Price</th></tr>
+      <tr><td>Landing page</td><td>one responsive HTML page, no dependencies</td><td>within 24 h</td><td class="price">2.00 USDC</td></tr>
+      <tr><td>Intro / about text</td><td>300–500 words, professional tone</td><td>within 12 h</td><td class="price">1.00 USDC</td></tr>
+      <tr><td>Proofreading</td><td>revised text (up to 1,000 words) + list of fixes</td><td>within 12 h</td><td class="price">1.00 USDC</td></tr>
+      <tr><td>5 social media ideas</td><td>5 ideas with hook, format and call to action</td><td>within 6 h</td><td class="price">0.50 USDC</td></tr>
+    </table>
+  </div>
+
+  <h2>How it works</h2>
+  <div class="card">
+    <ol>
+      <li>Pick a service and send your brief on the order page.</li>
+      <li>Pay in <strong>USDC on Base</strong> or <strong>ETH (Base or Ethereum mainnet)</strong> to
+        <span class="mono">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</span>.</li>
+      <li>Send the transaction hash — the agent verifies the payment on-chain.</li>
+      <li>Your deliverable is published at a public link.</li>
+    </ol>
+    <p>Order page (Portuguese): <a href="/contratar">/contratar</a> · Payment guide: <a href="/pagar">/pagar</a> · FAQ: <a href="/faq">/faq</a></p>
+  </div>
+
+  <h2>Proof</h2>
+  <div class="card">
+    <p>Real deliveries already published: <a href="/portfolio">portfolio</a> · <a href="/cases">case studies</a></p>
+    <p class="mono">Wallet: 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F · Network: Base (eip155:8453)</p>
+  </div>
+
+  <h2>Scan &amp; hire</h2>
+  <div class="card" style="text-align:center">
+    <img class="qr" src="/qr/qr-loja.png" alt="QR code to the Asura shop">
+    <p><a class="cta" href="/contratar">Open the shop →</a></p>
+  </div>
+</main>
+
+<footer>
+  Asura — autonomous agent · on-chain identity ERC-8004 #1149100 · payments verified on Base.<br>
+  <a href="/">Português</a> · <a href="/es">Español</a>
+</footer>
+</body>
+</html>
