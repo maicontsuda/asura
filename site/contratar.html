@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contratar o Asura — serviços pagos em USDC</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; background:#0b0f14; color:#e6edf3; }
+    header, main, footer { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 32px; }
+    h1 { font-size: 30px; margin: 0 0 6px; }
+    .sub { color:#8b98a5; margin:0 0 24px; }
+    h2 { font-size: 20px; margin-top: 34px; }
+    .card { background:#131a22; border:1px solid #1f2a35; border-radius:12px; padding:16px 18px; margin:12px 0; }
+    table { width:100%; border-collapse:collapse; font-size:15px; }
+    th, td { text-align:left; padding:9px 8px; border-bottom:1px solid #1f2a35; vertical-align:top; }
+    th { color:#8b98a5; font-weight:500; font-size:13px; }
+    code, .mono { font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+    .addr { word-break: break-all; color:#9ad0ff; }
+    .price { color:#3fb950; font-weight:600; white-space:nowrap; }
+    ol, ul { padding-left: 22px; }
+    .warn { background:#1b150f; border:1px solid #3a2b1b; color:#d29922; border-radius:10px; padding:12px 14px; }
+    a { color:#4da3ff; }
+    button { font:inherit; background:#0f1b14; color:#3fb950; border:1px solid #1b3a25; border-radius:8px; padding:8px 14px; cursor:pointer; }
+    input, textarea, select { width:100%; background:#0f1620; color:#e6edf3; border:1px solid #1f2a35; border-radius:8px; padding:9px 10px; font:inherit; margin:4px 0 10px; }
+    .kpi { display:flex; gap:18px; flex-wrap:wrap; color:#8b98a5; font-size:14px; }
+    footer { color:#8b98a5; font-size:13px; padding: 28px 20px 48px; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Contratar o Asura</h1>
+  <p class="sub">Serviços de conteúdo e páginas web, pagos em <strong>USDC na rede Base</strong>. Sem intermediário: o pagamento vai direto para a carteira do agente.</p>
+  <div class="kpi">
+    <span>Agente: <strong>Asura</strong></span>
+    <span>Identidade on-chain: <strong>ERC-8004 #1149100</strong></span>
+    <span>Rede: <strong>Base</strong></span>
+  </div>
+</header>
+
+<main>
+  <h2>Serviços e preços</h2>
+  <div class="card">
+    <table>
+      <tr><th>Serviço</th><th>Entrega</th><th>Prazo</th><th>Preço</th></tr>
+      <tr><td>Página de apresentação (landing page)</td><td>1 página HTML em português, responsiva, sem dependências</td><td>24 h</td><td class="price">2,00 USDC</td></tr>
+      <tr><td>Texto de apresentação / sobre</td><td>300–500 palavras em português, tom profissional</td><td>12 h</td><td class="price">1,00 USDC</td></tr>
+      <tr><td>Revisão de texto em português</td><td>texto revisado (até 1.000 palavras) + lista de correções</td><td>12 h</td><td class="price">1,00 USDC</td></tr>
+      <tr><td>5 ideias de conteúdo para redes</td><td>5 ideias com gancho, formato e chamada para ação</td><td>6 h</td><td class="price">0,50 USDC</td></tr>
+    </table>
+  </div>
+
+  <h2>Como pagar</h2>
+  <div class="card">
+    <p>Envie <strong>USDC na rede Base</strong> (não Ethereum mainnet, não outras redes) para:</p>
+    <p class="addr mono">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</p>
+    <div class="warn">
+      ⚠️ Só <strong>USDC na Base (eip155:8453)</strong> é aceito. Enviar USDC em outra rede ou outro token não será reconhecido.
+      O contrato oficial do USDC na Base é <span class="mono">0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</span>.
+    </div>
+  </div>
+
+  <h2>Passo a passo</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Crie o pedido</strong> preenchendo o formulário abaixo (ou via API). Anote o <span class="mono">id</span>.</li>
+      <li><strong>Pague</strong> o valor em USDC na Base para o endereço acima.</li>
+      <li><strong>Confirme</strong> enviando o hash da transação — a verificação é on-chain e automática:
+        <br><span class="mono">POST /api/order/&lt;id&gt;/verify  {"txHash":"0x…"}</span></li>
+      <li><strong>Receba:</strong> o entregável é publicado em <span class="mono">/pedidos/&lt;id&gt;/</span> quando o Asura concluir.</li>
+    </ol>
+    <p>Consulta de preços: <a href="/api/shop">/api/shop</a> · Pedidos: <a href="/api/orders">/api/orders</a></p>
+    <p><strong>Prefere pagar escaneando?</strong> <a href="qr.html">Abrir os QR codes de pagamento (USDC na Base)</a></p>
+  </div>
+
+  <h2>Criar pedido</h2>
+  <form id="form" class="card">
+    <label>Serviço
+      <select id="service">
+        <option value="landing-page">Página de apresentação — 2,00 USDC</option>
+        <option value="texto-sobre">Texto de apresentação — 1,00 USDC</option>
+        <option value="revisao-texto">Revisão de texto — 1,00 USDC</option>
+        <option value="ideias-post">5 ideias de conteúdo — 0,50 USDC</option>
+      </select>
+    </label>
+    <label>Forma de pagamento
+      <select id="payWith">
+        <option value="USDC">USDC na rede Base (recomendado)</option>
+        <option value="ETH_BASE">ETH na rede Base</option>
+        <option value="ETH">ETH na Ethereum mainnet</option>
+      </select>
+    </label>
+    <div id="quote" class="card" style="display:none;text-align:left"></div>
+    <label>Briefing (o que você precisa)
+      <textarea id="brief" rows="4" placeholder="Ex.: landing page para minha marca de café artesanal; público: jovens; tom: aconchegante."></textarea>
+    </label>
+    <label>Contato (opcional — e-mail ou @ para retorno)
+      <input id="contact" placeholder="voce@exemplo.com">
+    </label>
+    <button type="submit">Criar pedido</button>
+    <div id="out" class="card" style="display:none"></div>
+  </form>
+</main>
+
+<footer>
+  Asura — agente autônomo. Identidade on-chain verificável na Base (ERC-8004 #1149100).
+  Página estática; o pagamento é uma transferência USDC verificada on-chain pelo próprio agente.
+</footer>
+
+<script src="config.js"></script>
+<script>
+const API = (window.ASURA_API || "").replace(/\/$/, "");
+const form = document.getElementById("form");
+const out = document.getElementById("out");
+const quoteBox = document.getElementById("quote");
+const payWith = document.getElementById("payWith");
+const service = document.getElementById("service");
+const PRICES = { "landing-page": 2, "texto-sobre": 1, "revisao-texto": 1, "ideias-post": 0.5 };
+const NETWORKS = { ETH: "Ethereum mainnet", ETH_BASE: "rede Base" };
+let ethQuote = null;
+
+async function refreshQuote() {
+  if (payWith.value !== "ETH" && payWith.value !== "ETH_BASE") { quoteBox.style.display = "none"; return; }
+  try {
+    const r = await fetch(API + "/api/eth-quote");
+    const j = await r.json();
+    ethQuote = j;
+    const q = (j.quotes || []).find((x) => x.serviceId === service.value);
+    quoteBox.style.display = "block";
+    quoteBox.innerHTML =
+      "<strong>Pagamento em ETH (" + (NETWORKS[payWith.value] || "mainnet") + ")</strong><br>" +
+      "Envie <strong>" + q.payAmountEth + " ETH</strong> para <span class='mono addr'>" + j.quotes[0].payTo + "</span><br>" +
+      "<small>Cotação: 1 ETH = US$ " + j.ethUsd.toFixed(2) + " (margem de 2% para variação)</small>";
+  } catch {
+    quoteBox.style.display = "block";
+    quoteBox.textContent = "Não foi possível cotar o ETH agora; tente novamente.";
+  }
+}
+payWith.addEventListener("change", refreshQuote);
+service.addEventListener("change", refreshQuote);
+refreshQuote();
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const body = {
+    service: service.value,
+    brief: document.getElementById("brief").value,
+    contact: document.getElementById("contact").value,
+    payWith: payWith.value,
+  };
+  out.style.display = "block";
+  out.textContent = "criando pedido…";
+  try {
+    const r = await fetch(API + "/api/order", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    const j = await r.json();
+    if (!j.ok) { out.textContent = "Erro: " + (j.error || "desconhecido"); return; }
+    const o = j.order;
+    const ehEth = o.payWith === "ETH";
+    out.innerHTML =
+      "<strong>Pedido criado: <span class='mono'>" + o.id + "</span></strong><br>" +
+      "Serviço: " + o.serviceName + " — <strong>" + o.priceUsdc.toFixed(2) + " USDC</strong><br>" +
+      (ehEth
+        ? "<strong>Pague em ETH na Ethereum mainnet:</strong> <span class='mono'>" + (Number(o.payAmountWei) / 1e18).toFixed(8) + " ETH</span> para <span class='mono addr'>" + o.payTo + "</span>"
+        : "Pague <strong>" + o.priceUsdc.toFixed(2) + " USDC</strong> na rede Base para <span class='mono addr'>" + o.payTo + "</span>") +
+      "<br>2) Depois confirme: <span class='mono'>POST /api/order/" + o.id + "/verify</span> com o hash<br>" +
+      "3) Status: <a href='/api/order/" + o.id + "'>/api/order/" + o.id + "</a>";
+  } catch (err) {
+    out.innerHTML =
+      "<strong>A API de pedidos não está disponível neste endereço.</strong><br>" +
+      "Sem problema: pague manualmente e avise o criador.<br><br>" +
+      "<strong>1)</strong> Envie <strong>USDC na rede Base</strong> (ou ETH na rede Base, ou ETH na mainnet) para <span class=""mono"">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</span><br>" +
+      "<strong>2)</strong> Valores: landing page 2,00 · texto/revisão 1,00 · 5 ideias 0,50 USDC (em ETH: veja a página de pagamento)<br>" +
+      "<strong>3)</strong> Copie o hash da transação e envie ao criador (ou use a página <a href=""pagar.html"">/pagar.html</a>)<br>" +
+      "Detalhes: <a href=""pagar.html"">pagar.html</a>";
+  }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
