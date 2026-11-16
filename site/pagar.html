@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pagar o Asura — envio manual de USDC (Base)</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; background:#0b0f14; color:#e6edf3; }
+    main { max-width: 620px; margin: 0 auto; padding: 28px 20px 60px; }
+    h1 { font-size: 26px; margin: 0 0 6px; }
+    .sub { color:#8b98a5; margin: 0 0 22px; }
+    .box { background:#131a22; border:1px solid #1f2a35; border-radius:14px; padding:18px; margin: 14px 0; }
+    .addr { font-family: ui-monospace, Consolas, monospace; font-size: 15px; color:#9ad0ff; word-break: break-all; }
+    .big { font-size: 15px; }
+    button { font:inherit; background:#0f1b14; color:#3fb950; border:1px solid #1b3a25; border-radius:9px; padding:10px 16px; cursor:pointer; margin-top:10px; }
+    ol { padding-left: 22px; } li { margin: 8px 0; }
+    .warn { background:#1b150f; border:1px solid #3a2b1b; color:#d29922; border-radius:10px; padding:12px 14px; margin: 16px 0; }
+    .val { font-size: 30px; font-weight: 700; color:#3fb950; }
+    img { width: 240px; height: 240px; background:#fff; border-radius: 12px; padding: 8px; }
+    .center { text-align:center; }
+    code { font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Pagar o Asura</h1>
+  <p class="sub">Envio manual — funciona em qualquer carteira (Base app, MetaMask, Trust, etc.)</p>
+
+  <div class="box">
+    <p class="sub" style="margin:0 0 6px">Valor do serviço</p>
+    <p class="val">0,50 USDC</p>
+    <p class="sub" style="margin:0">5 ideias de conteúdo para redes · pedido <code>b0ec8d6a</code></p>
+  </div>
+
+  <div class="box">
+    <p class="sub" style="margin:0 0 6px">Envie para este endereço (rede Base)</p>
+    <p class="addr big">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</p>
+    <button id="copy">Copiar endereço</button>
+  </div>
+
+  <div class="box center">
+    <p class="sub">QR do endereço (para preencher o destinatário)</p>
+    <img src="/qr/qr-endereco.png" alt="QR com o endereço da carteira do Asura">
+  </div>
+
+  <div class="box">
+    <p><strong>Passo a passo na carteira</strong></p>
+    <ol>
+      <li>Abra a carteira e toque no ativo <strong>USDC</strong> (não em Ether/ETH)</li>
+      <li>Toque em <strong>Enviar</strong></li>
+      <li>Confirme a rede <strong>Base</strong></li>
+      <li>Cole o endereço acima como destinatário</li>
+      <li>Informe <strong>0,50</strong> USDC</li>
+      <li>Confirme e copie o <strong>hash da transação</strong> (algo como <code>0x…</code>, 66 caracteres)</li>
+      <li>Envie o hash para o criador — o pagamento é verificado on-chain e liberado</li>
+    </ol>
+  </div>
+
+  <h2>Opção ETH na rede Base — pedido <code>d4e70e47</code></h2>
+  <div class="box center">
+    <p class="sub">QR de pagamento — ETH na <strong>rede Base</strong></p>
+    <img src="/qr/qr-eth-base-0.00021017.png" alt="QR: 0,00021017 ETH na rede Base para a carteira do Asura" width="240" height="240">
+    <p class="val">0,00021017 ETH</p>
+    <p class="sub">= 0,50 USDC · gas na Base ≈ US$ 0,00–0,01</p>
+    <p class="addr mono">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</p>
+  </div>
+  <div class="box">
+    <p><strong>Se o QR não preencher o valor:</strong> faça manualmente — rede <strong>Base</strong>,
+    destinatário acima, valor <strong>0,00021017 ETH</strong>. Depois copie o hash e me envie.</p>
+    <p class="sub">Atenção: este QR é da rede <strong>Base</strong> (não Ethereum mainnet).</p>
+  </div>
+
+  <div class="warn">
+    ⚠️ Só <strong>USDC na rede Base</strong> ou <strong>ETH na mainnet</strong> (pedido acima).
+    Não envie em outra rede. Contrato do USDC na Base: <code>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</code>.
+  </div>
+</main>
+<script>
+document.getElementById("copy").onclick = async () => {
+  try {
+    await navigator.clipboard.writeText("0x3ecdD82B0abd76b4B32211d08eE309973760DF6F");
+    document.getElementById("copy").textContent = "Copiado ✅";
+  } catch {
+    document.getElementById("copy").textContent = "Copie manualmente";
+  }
+};
+</script>
+</body>
+</html>
+
