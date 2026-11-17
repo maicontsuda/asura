@@ -1,35 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Avaliação de Conteúdo - Critérios Objetivos</title>
+    <title>Critérios para Avaliação de Conteúdo</title>
     <style>
         body {
             background-color: #121212;
             color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 16px;
-        }
-        .container {
-            background-color: #222222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 80%;
-            max-width: 600px;
+            line-height: 1.6;
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            color: #ff9800;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         p {
-            margin-bottom: 10px;
+            font-size: 16px;
         }
         table {
             width: 100%;
@@ -37,82 +34,83 @@
             margin-top: 20px;
         }
         th, td {
-            border: 1px solid #333;
-            padding: 10px;
-            text-align: left;
+            border: 1px solid #ff9800;
+            padding: 12px;
+            text-align: center;
         }
         th {
-            background-color: #333;
-            color: #ffffff;
+            background-color: #1e1e1e;
         }
-        td {
-            background-color: #444;
+        tr:nth-child(even) {
+            background-color: #1e1e1e;
         }
-        .nota {
-            color: #ff6b6b;
-            font-weight: bold;
+        .score {
+            width: 60px;
         }
-        .call-to-action {
-            margin-top: 20px;
-            text-align: center;
+        .criteria {
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Avaliação de Conteúdo - Critérios Objetivos</h1>
-        <p>Este documento fornece critérios objetivos para avaliar um conteúdo recebido. O conteúdo será analisado com base nas seguintes categorias:</p>
-        <p>1. Clareza: A mensagem é clara e compreensível para o público-alvo.</p>
-        <p>2. Aderência ao Briefing: O conteúdo seguiu todas as diretrizes e requisitos estabelecidos no briefing.</p>
-        <p>3. Tom: O tom do conteúdo é apropriado e consistente com a marca.</p>
-        <p>4. Estrutura: O conteúdo está organizado de forma lógica e fácil de seguir.</p>
-        <p>5. Erros de Português: O conteúdo está livre de erros gramaticais, ortográficos e de pontuação.</p>
-        <p>6. Chamada para ação: A chamada para ação é clara e motivacional.</p>
-        <table>
+    <h1>Critérios para Avaliação de Conteúdo</h1>
+    <section>
+        <h2>Clareza</h2>
+        <p>O conteúdo deve ser compreensível e direto, evitando ambiguidades, jargões excessivos ou linguagem vaga. A mensagem principal deve estar clara desde o início, sem necessidade de interpretação adicional por parte do leitor. Exemplos: uso de palavras simples, estrutura lógica e coesão entre parágrafos.</p>
+    </section>
+    <section>
+        <h2>Aderência ao Briefing</h2>
+        <p>O conteúdo deve seguir rigorosamente os objetivos, público-alvo e diretrizes definidos no briefing. Qualquer desvio de tema, tom ou propósito deve ser identificado e pontuado. Exemplos: respeito ao público-alvo, atendimento às metas de engajamento e alinhamento com a marca.</p>
+    </section>
+    <section>
+        <h2>Tom</h2>
+        <p>O tom deve ser adequado ao público e ao propósito do conteúdo. Isso inclui formalidade, informalidade, tom persuasivo, educativo ou criativo. O tom inadequado pode comprometer a eficácia do conteúdo. Exemplos: tom profissional para relatórios, tom amigável para redes sociais.</p>
+    </section>
+    <section>
+        <h2>Estrutura</h2>
+        <p>A estrutura deve ser lógica e organizada, com introdução, desenvolvimento e conclusão claros. A divisão em seções e uso de títulos facilitam a leitura. Falta de organização ou excesso de informações dispersas prejudica a experiência do leitor.</p>
+    </section>
+    <section>
+        <h2>Erros de Português</h2>
+        <p>Conteúdo com erros gramaticais, ortográficos ou de pontuação deve ser pontuado negativamente. A precisão linguística é essencial para a credibilidade do conteúdo. Exemplos: uso incorreto de concordância, crase ou acentuação.</p>
+    </section>
+    <section>
+        <h2>Chamada para a Ação</h2>
+        <p>O conteúdo deve conter uma chamada para ação clara e direcionada, incentivando o leitor a agir. Isso pode incluir links, convites para comentários ou sugestões de próximos passos. A ausência de uma chamada para ação reduz a eficácia do conteúdo.</p>
+    </section>
+    <table>
+        <thead>
             <tr>
-                <th>Categoria</th>
-                <th>Clareza</th>
-                <th>Aderência ao Briefing</th>
-                <th>Tom</th>
-                <th>Estrutura</th>
-                <th>Erros de Português</th>
-                <th>Chamada para ação</th>
-                <th>Nota</th>
+                <th class="criteria">Critério</th>
+                <th class="score">Nota (1-5)</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Clareza</td>
-                <td colspan="6">O conteúdo é compreensível e direto ao ponto. Avalie de 1 a 5, onde 1 é muito confuso e 5 é muito claro.</td>
-                <td class="nota">4</td>
+                <td class="score"><input type="number" min="1" max="5" value="4" disabled></td>
             </tr>
             <tr>
                 <td>Aderência ao Briefing</td>
-                <td colspan="6">O conteúdo seguiu todas as diretrizes e requisitos estabelecidos no briefing. Avalie de 1 a 5, onde 1 é não seguiu nenhuma diretriz e 5 é seguiu todas as diretrizes.</td>
-                <td class="nota">5</td>
+                <td class="score"><input type="number" min="1" max="5" value="3" disabled></td>
             </tr>
             <tr>
                 <td>Tom</td>
-                <td colspan="6">O tom do conteúdo é apropriado e consistente com a marca. Avalie de 1 a 5, onde 1 é muito inadequado e 5 é muito adequado.</td>
-                <td class="nota">4</td>
+                <td class="score"><input type="number" min="1" max="5" value="5" disabled></td>
             </tr>
             <tr>
                 <td>Estrutura</td>
-                <td colspan="6">O conteúdo está organizado de forma lógica e fácil de seguir. Avalie de 1 a 5, onde 1 é muito desorganizado e 5 é muito organizado.</td>
-                <td class="nota">4</td>
+                <td class="score"><input type="number" min="1" max="5" value="4" disabled></td>
             </tr>
             <tr>
                 <td>Erros de Português</td>
-                <td colspan="6">O conteúdo está livre de erros gramaticais, ortográficos e de pontuação. Avalie de 1 a 5, onde 1 é muito cheio de erros e 5 é sem erros.</td>
-                <td class="nota">3</td>
+                <td class="score"><input type="number" min="1" max="5" value="2" disabled></td>
             </tr>
             <tr>
-                <td>Chamada para ação</td>
-                <td colspan="6">A chamada para ação é clara e motivacional. Avalie de 1 a 5, onde 1 é muito fraca e 5 é muito forte.</td>
-                <td class="nota">4</td>
+                <td>Chamada para a Ação</td>
+                <td class="score"><input type="number" min="1" max="5" value="5" disabled></td>
             </tr>
-        </table>
-        <div class="call-to-action">
-            <p>Após avaliar cada categoria, calcule a média das notas para obter a nota final do conteúdo. Utilize essa nota para tomar decisões sobre a aprovação ou revisão do conteúdo.</p>
-        </div>
-    </div>
+        </tbody>
+    </table>
 </body>
 </html>
