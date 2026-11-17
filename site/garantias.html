@@ -10,64 +10,72 @@
             background-color: #121212;
             color: #f5f5f5;
             line-height: 1.6;
+            padding: 20px;
         }
-        .container {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444;
         }
-        h1, h2 {
-            color: #ff9800;
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 25px;
         }
         p {
             font-size: 16px;
         }
-        .section {
-            margin-bottom: 40px;
+        .highlight {
+            color: #ff4d4d;
+            font-weight: bold;
         }
-        .section h2 {
-            margin-top: 30px;
+        .note {
+            color: #666;
+            font-style: italic;
         }
-        .section p {
-            margin-bottom: 15px;
-        }
-        .footer {
+        footer {
             text-align: center;
-            padding: 30px 0;
+            padding-top: 40px;
             font-size: 14px;
             color: #888;
-        }
-        a {
-            color: #ff9800;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Garantias do Serviço</h1>
-        <div class="section">
-            <h2>O que acontece se o entregável não atender o briefing?</h2>
-            <p>Se o entregável não atender às especificações do briefing, o serviço será refeito integralmente sem custos adicionais. Nossa equipe realiza uma revisão rigorosa antes da entrega final, garantindo que todos os pontos do briefing sejam atendidos. Caso haja uma falha significativa, o cliente será notificado imediatamente e o processo será ajustado para corrigir a inconsistência.</p>
-        </div>
-        <div class="section">
-            <h2>Quantos ajustes são permitidos?</h2>
-            <p>Fornece-se até 3 ajustes gratuitos após a entrega do primeiro rascunho. Cada ajuste refere-se a correções menores, como revisão de texto, correção de formatação ou pequenas alterações de estilo. Para ajustes que envolvam mudanças substantivas no conteúdo, estrutura ou direção do projeto, será necessário um novo orçamento e prazo. O cliente deve aprovar qualquer alteração antes de ser aplicada.</p>
-        </div>
-        <div class="section">
-            <h2>Prazo de resposta</h2>
-            <p>Respostas a solicitações de revisão ou ajustes são feitas em até 24 horas úteis após a confirmação da solicitação. Durante períodos de alta demanda, o prazo pode ser estendido para 48 horas, com notificação prévia. Qualquer atraso será comunicado ao cliente para que possa planejar a entrega do projeto com antecedência.</p>
-        </div>
-        <div class="section">
-            <h2>O que não é coberto?</h2>
-            <p>As seguintes situações não estão incluídas no serviço: alterações que envolvam mudanças no escopo original do projeto, como novos conteúdos, elementos gráficos ou direções artísticas não previstos no briefing. Além disso, não há cobertura para danos causados por uso inadequado do entregável, atrasos decorrentes de feedback do cliente após o prazo estipulado, ou integração com terceiros não mencionados no briefing. Qualquer necessidade de suporte adicional será cobrado com base no tempo e recursos gastos.</p>
-        </div>
-        <div class="footer">
-            <p>© 2023 Serviço de Produção. Todos os direitos reservados.</p>
-        </div>
-    </div>
+    </header>
+    <section>
+        <h2>Se o entregável não atender ao briefing</h2>
+        <p>Em caso de não conformidade do entregável com o briefing fornecido, o serviço oferece até <span class="highlight">3 ajustes gratuitos</span> para corrigir falhas ou desvios. Cada ajuste será revisado e validado com base nos critérios estabelecidos no briefing original. Após o terceiro ajuste, será necessário revisar o escopo do serviço e reavaliar o custo, caso o entregável continue incompatível com os requisitos. O cliente será notificado com antecedência sobre a necessidade de reavaliação.</p>
+    </section>
+    <section>
+        <h2>Quantos ajustes são permitidos?</h2>
+        <p>Fornece até <span class="highlight">3 ajustes gratuitos</span> para melhorias ou correções. Qualquer alteração que exceda esse limite, como novos recursos, redesign completo ou redefinição de objetivos, será cobrada como serviço adicional. O cliente será informado sobre os custos antes da implementação de ajustes adicionais.</p>
+    </section>
+    <section>
+        <h2>Prazo de resposta</h2>
+        <p>Os ajustes solicitados serão analisados e respondidos em até <span class="highlight">24 horas úteis</span> após a confirmação da solicitação. Em casos de urgência ou complexidade técnica, será acordado um prazo adicional com o cliente. A resposta incluirá uma estimativa de tempo para implementação e possíveis impactos no cronograma.</p>
+    </section>
+    <section>
+        <h2>O que não é coberto</h2>
+        <p>As seguintes situações não são cobertas pelo serviço: <br>
+        <span class="highlight">1</span> Alterações que ultrapassem o escopo original do briefing;<br>
+        <span class="highlight">2</span> Problemas decorrentes de erros de configuração ou uso inadequado do sistema;<br>
+        <span class="highlight">3</span> Requisitos que dependam de terceiros ou serviços externos não previstos;<br>
+        <span class="highlight">4</span> Revisões de conteúdo ou design que não sejam diretamente relacionadas ao funcionamento do entregável.<br>
+        <span class="note">O cliente é responsável por fornecer informações precisas e completas no briefing para evitar ambiguidades.</span></p>
+    </section>
+    <footer>
+        <p>Este documento é parte do contrato de serviço e está sujeito a revisão conforme necessário. Para dúvidas, entre em contato com nosso suporte.</p>
+    </footer>
 </body>
 </html>
