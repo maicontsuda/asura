@@ -1,85 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Preços do Asura - Lógica e Valores</title>
+    <title>Asura: Lógica de Preços e Valores</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
+        header {
+            background-color: #1a1a1a;
             padding: 20px;
+            text-align: center;
         }
         h1 {
-            text-align: center;
-            margin-bottom: 20px;
+            margin: 0;
+            font-size: 2em;
         }
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        .content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
         }
-        .card {
-            background-color: #2e2e2e;
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .comparison {
+            background-color: #1e1e1e;
             padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: calc(33.33% - 20px);
+            border-left: 4px solid #007BFF;
         }
-        .card h2 {
-            margin-top: 0;
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .card ul {
-            list-style: none;
-            padding: 0;
+        .btn:hover {
+            background-color: #0056b3;
         }
-        .card ul li {
-            margin-bottom: 10px;
-        }
-        .card ul li::before {
-            content: "•";
-            margin-right: 5px;
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaaaaa;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Preços do Asura - Lógica e Valores</h1>
-        <p>A Asura oferece serviços que vão desde ideias criativas até páginas de vendas avançadas. Aqui está a lógica por trás dos nossos preços:</p>
-
-        <div class="content">
-            <div class="card">
-                <h2>5 Ideias por 0,50 USDC</h2>
-                <p>Nossas ideias são geradas por um sistema de inteligência artificial altamente avançado, que considera uma vasta gama de fatores para criar conceitos inovadores e únicos. Cada ideia é um resultado de um processo complexo de análise e síntese. Por isso, acreditamos que 0,50 USDC por ideia é um preço justo, considerando a qualidade e a inovação que oferecemos.</p>
-                <p>Estas ideias podem ser usadas como base para projetos mais amplos, ou como inspiração para a criação de novas soluções. Elas são projetadas para serem flexíveis e adaptáveis, permitindo que você as personalize conforme necessário.</p>
-            </div>
-
-            <div class="card">
-                <h2>Texto por 1 USDC</h2>
-                <p>Texto é a base para quase qualquer projeto de comunicação. Nossa equipe de redatores experientes cria conteúdo de alta qualidade, que é tanto útil quanto atraente para o público-alvo. Cada 1 USDC gera um texto curto e direto ao ponto, perfeito para blogs, redes sociais ou pequenos projetos. Por 1 USDC, você recebe um texto de até 500 palavras, com pesquisa e edição incluídas.</p>
-                <p>Queremos garantir que você tenha um produto final que seja não apenas informativo, mas também cativante, então nosso texto é revisado e aprimorado para garantir a melhor experiência para o leitor.</p>
-            </div>
-
-            <div class="card">
-                <h2>Landing Page por 2 USDC</h2>
-                <p>Uma landing page é uma ferramenta crucial para a conversão de leads e vendas online. Ela é projetada para capturar a atenção do usuário e direcioná-lo a uma ação específica, como fazer um pedido ou se inscrever em uma newsletter. Nossa landing page é personalizada e otimizada para o melhor desempenho, garantindo que seu projeto atinja seu máximo potencial.</p>
-                <p>Com 2 USDC, você recebe uma landing page que inclui design responsivo, formulário de contato, call-to-action forte e otimização para SEO. Nossa equipe testa e refina o design e o conteúdo até que ele esteja pronto para ser lançado.</p>
-            </div>
-        </div>
-
-        <p>Em comparação com freelancers, a Asura oferece uma solução mais eficiente e eficaz, considerando o tempo de desenvolvimento e a qualidade do produto final. Nossos preços refletem a qualidade e a experiência que você pode esperar de um serviço profissional, sem comprometer a inovação e a criatividade.</p>
-        <p>Se você estiver procurando por uma solução que ofereça valor em termos de qualidade, inovação e eficiência, a Asura é a escolha certa para você.</p>
-    </div>
+    <header>
+        <h1>Asura: Lógica de Preços e Valores</h1>
+    </header>
+    <section>
+        <h2>Por que 5 ideias custam 0,50 USDC?</h2>
+        <p>As 5 ideias são a entrada ideal para quem busca validar conceitos de forma acessível. A lógica é simples: oferecemos um valor baixo para permitir que usuários testem a plataforma sem comprometer seu orçamento. Cada ideia é desenvolvida com foco em clareza, concisão e impacto, garantindo que você receba 5 opções robustas para escolher. A taxa de 0,50 USDC reflete o custo de produção de ideias que são criadas com base em sua necessidade específica, sem excessos ou custos ocultos.</p>
+    </section>
+    <section>
+        <h2>Texto: 1 USDC</h2>
+        <p>Um texto completo é uma peça de conteúdo que demanda estrutura, pesquisa, SEO e formatação. A taxa de 1 USDC cobre a elaboração de um texto que vai desde uma descrição concisa até um artigo detalhado, dependendo do propósito. A qualidade é priorizada: o texto é revisado para erros gramaticais, clareza e alinhamento com o objetivo do cliente. Esse valor é calculado com base no tempo de escrita, revisão e ajustes necessários para entregar um resultado profissional.</p>
+    </section>
+    <section>
+        <<br>
+        <h2>Landing Page: 2 USDC</h2>
+        <p>Uma landing page é uma ferramenta de conversão que requer design, copywriting e otimização para o público-alvo. A taxa de 2 USDC inclui a criação de uma página de alta conversão, com elementos como chamadas para ação, formulários de contato e integração com ferramentas de métricas. A complexidade da landing page é maior que a de um texto simples, pois envolve não apenas conteúdo, mas também a experiência do usuário e a eficácia de conversão. Esse valor é justo, já que oferece um produto funcional e profissional.</p>
+    </section>
+    <section class="comparison">
+        <h2>Comparação com Freelancers</h2>
+        <p>Freelancers costumam cobrar entre 20 a 50 USDC por hora, dependendo da experiência e da especialização. Para uma landing page, o custo pode variar de 500 a 2.000 USDC, considerando horas de trabalho, revisões e ajustes. Asura oferece um modelo escalável: o valor pago é diretamente proporcional ao resultado entregue, sem custos adicionais por tempo de espera ou revisões. Isso torna o serviço mais acessível e transparente, especialmente para quem busca soluções práticas sem excessos.</p>
+    </section>
+    <footer>
+        &copy; 2023 Asura. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
