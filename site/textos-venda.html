@@ -5,101 +5,73 @@
     <title>Modelos de Venda para Pequenos Negócios</title>
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #ffffff;
+            background-color: #121212;
+            color: #f0f0f0;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            text-align: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         .container {
+            width: 80%;
             max-width: 800px;
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(30, 30, 30, 0.9);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .modelos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
-        .modelo {
-            flex: 1 1 48%;
+            text-align: center;
             margin-bottom: 20px;
-            padding: 20px;
-            background-color: rgba(45, 45, 45, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .modelo h2 {
-            font-size: 1.5em;
+        .header {
+            font-size: 24px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
-        .modelo p {
-            font-size: 1em;
-            line-height: 1.5;
-            margin-bottom: 15px;
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
-        .modelo a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff6f69;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
+        .call-to-action {
+            font-weight: bold;
+            color: #007BFF;
         }
-        .modelo a:hover {
-            background-color: #ff5a54;
+        .footer {
+            font-size: 14px;
+            color: #8a8a8a;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Modelos de Texto de Venda para Pequenos Negócios</h1>
-        <div class="modelos">
-            <div class="modelo">
-                <h2>Cafeteria</h2>
-                <p>Conheça nossas receitas de café feitas com os melhores grãos do mundo. Oferecemos uma experiência única com aromas irresistíveis e sabores intenses. Experimente já a nossa seleção de cafés especiais, croissants caseiros e bolos artesanais. Vem provar!</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="modelo">
-                <h2>Doceria</h2>
-                <p>Desfrute de nossas delícias artesanais feitas com ingredientes frescos e cuidadosamente selecionados. Fromages, brigadeiros, biscoitos e muito mais. Cada pedaço é uma obra de arte culinária. Experimente nossos doces saborosos e leve um pedaço para casa.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="modelo">
-                <h2>Floicultura</h2>
-                <p>Encontre flores e plantas exuberantes perfeitas para presentear ou decorar sua casa. Nossas plantas são cuidadas com carinho e entregues em perfeitas condições. Adquira um lindo arranjo floral ou um canteiro de ervas aromáticas. Faça a diferença com a nossa seleção de plantas.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="modelo">
-                <h2>Barbearia</h2>
-                <p>Entre no clima de luxo e conforto com nossos cortes e serviços de barbearia. Nossos profissionais especializados oferecem uma experiência impecável, desde o corte de cabelo até a barba perfeita. Venha experimentar a qualidade e o atendimento de nossos barbeiros experientes.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="modelo">
-                <h2>Petshop</h2>
-                <p>Seu pet merece o melhor! Nossos produtos e serviços são pensados para oferecer o máximo de cuidado e conforto. Cachorros, gatos, pássaros e roedores podem contar com uma ampla gama de serviços de banho e tosa, alimentação especial e consultas com veterinário. Visite-nos e surpreenda seu animal de estimação.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="modelo">
-                <h2>Loja de Roupa</h2>
-                <p>Descubra a moda que combina com seu estilo. Nossas coleções são compreendidas com os melhores materiais e tendências atuais. Experimente uma experiência de compra única com nossas roupas versáteis e acessórios. Visite-nos e surpreenda-se com as opções de moda.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-        </div>
+        <div class="header">Café da manhã irresistível</div>
+        <div class="content">Chegou a hora de acordar com um café que vai te deixar acordado! Nossas refeições rápidas são feitas com ingredientes frescos e saborosos. Experimente já e sinta a diferença!</div>
+        <div class="call-to-action">Vem probar!</div>
+    </div>
+    <div class="container">
+        <div class="header">Doces delícias para todos os momentos</div>
+        <div class="content">Oferecemos doces para todos os momentos do dia. Que tal começar o dia com um bolinho refrescante ou terminar o dia com um delicioso bolo? Faça seu pedido agora e surpreenda-se com os sabores!</div>
+        <div class="call-to-action">Experimente nossos doces!</div>
+    </div>
+    <div class="container">
+        <div class="header">Flores para todos os dias</div>
+        <div class="content">Oferecemos uma variedade de flores para todos os momentos. Que tal presentear alguém especial com um lindo arranjo? Faça seu pedido agora e surpreenda com nossas flores frescas e bonitas!</div>
+        <div class="call-to-action">Faça seu pedido agora!</div>
+    </div>
+    <div class="container">
+        <div class="header">Barba perfeita a cada dia</div>
+        <div class="content">Cuide da sua barba com os produtos profissionais que nós oferecemos. Que tal testar nossos produtos e ver a diferença? Faça seu pedido agora e inicie o seu dia com uma barba perfeita!</div>
+        <div class="call-to-action">Cuide da sua barba com a gente!</div>
+    </div>
+    <div class="container">
+        <div class="header">Petshop com amor por animais</div>
+        <div class="content">Oferecemos cuidados completos para os seus pets. Que tal trazer o seu pet para um banho e tosa especial? Faça o seu agendamento agora e garanta o melhor cuidado para o seu animal de estimação!</div>
+        <div class="call-to-action">Agende já seu pet!</div>
+    </div>
+    <div class="container">
+        <div class="header">Roupas para todos os estilos</div>
+        <div class="content">Oferecemos uma variedade de roupas para todos os gostos e estilos. Que tal experimentar nossas peças e ver a diferença? Faça seu pedido agora e surpreenda-se com nossas roupas de qualidade!</div>
+        <div class="call-to-action">Experimente nossas roupas!</div>
     </div>
 </body>
 </html>
