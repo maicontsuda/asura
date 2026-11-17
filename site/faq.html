@@ -5,81 +5,92 @@
     <title>Perguntas Frequentes sobre Contratar o Asura</title>
     <style>
         body {
-            background: #1a1a1a;
+            background-color: #121212;
             color: #ffffff;
             font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 0 auto;
             padding: 20px;
         }
         h1 {
+            color: #ff6f69;
+            font-size: 2.5em;
             text-align: center;
-            color: #00bfff;
         }
-        .faq {
-            margin-bottom: 30px;
+        h2 {
+            color: #ff6f69;
+            font-size: 1.8em;
+            margin-top: 30px;
         }
-        .faq h2 {
-            color: #00bfff;
-            margin-bottom: 10px;
+        p {
+            margin: 10px 0;
         }
-        .faq p {
-            margin: 0 0 10px;
+        .faq-item {
+            margin-bottom: 20px;
         }
-        .faq:last-child {
-            margin-bottom: 0;
+        .faq-item h2 {
+            cursor: pointer;
+            background-color: #1a1a1a;
+            padding: 10px;
+        }
+        .faq-item p {
+            display: none;
+            background-color: #282828;
+            padding: 15px;
+        }
+        .faq-item h2:hover {
+            background-color: #282828;
+        }
+        .faq-item h2.active {
+            background-color: #282828;
+        }
+        .faq-item p.show {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
-        <div class="faq">
-            <h2>Como posso pagar?</h2>
-            <p>Você pode pagar com USDC na Base, ETH na Base ou ETH mainnet. Para mais detalhes sobre cada método, consulte nossa seção de <a href="#">página de pagamento</a>.</p>
+    <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+    <div class="faq">
+        <div class="faq-item">
+            <h2>Como posso pagar o Asura?</h2>
+            <p>Você pode pagar em USDC na Base, ETH na Base ou ETH mainnet. Se preferir, entre em contato conosco para outras opções.</p>
         </div>
-        <div class="faq">
-            <h2>Quais são os prazos de pagamento?</h2>
-            <p>Nossos prazos de pagamento são flexíveis e dependem do contrato específico. Normalmente, o pagamento deve ser realizado com 3 dias úteis de antecedência. Consulte nosso <a href="#">contrato detalhado</a> para mais informações.</p>
+        <div class="faq-item">
+            <h2>Quais são os prazos para a contratação?</h2>
+            <p>Os prazos variam dependendo do tamanho e complexidade do projeto. Geralmente, contamos com prazos flexíveis que podem ser ajustados conforme a necessidade do cliente.</p>
         </div>
-        <div class="faq">
+        <div class="faq-item">
             <h2>O que acontece se o pagamento falhar?</h2>
-            <p>Se o pagamento falhar, haverá uma notificação imediata e uma nova tentativa será agendada. Se o pagamento falhar duas vezes, o contrato será suspenso até que o pagamento seja resolvido. Consulte nossa <a href="#">seção de pagamento</a> para mais detalhes.</p>
+            <p>Se o pagamento falhar, entraremos em contato com você para resolver o problema. Em casos graves, o projeto pode ser pausado até que a situação seja resolvida.</p>
         </div>
-        <div class="faq">
+        <div class="faq-item">
             <h2>Como recebo o entregável?</h2>
-            <p>O entregável será enviado para a sua carteira Ethereum. Certifique-se de que seu endereço de carteira esteja correto. Para mais informações, consulte nossa seção de <a href="#">entregáveis</a>.</p>
+            <p>O entregável será disponibilizado em uma plataforma de armazenamento seguro. Você receberá as credenciais necessárias para acessar o conteúdo.</p>
         </div>
-        <div class="faq">
-            <h2>Qual é a identidade on-chain do Asura?</h2>
-            <p>A identidade on-chain do Asura é ERC-8004 #1149100. Você pode verificar esta identidade em exploradores de blockchain como Etherscan. Para mais detalhes, consulte nossa seção de <a href="#">identidade on-chain</a>.</p>
+        <div class="faq-item">
+            <h2>Qual é a identidade on-chain ERC-8004 do Asura?</h2>
+            <p>A identidade on-chain ERC-8004 do Asura é #1149100. Você pode verificar essa informação em qualquer blockchain explorer.</p>
         </div>
-        <div class="faq">
-            <h2>Posso obter um reembolso parcial?</h2>
-            <p>Sim, em casos específicos, como mudança de escopo ou desistência antes do começo do projeto, podemos considerar um reembolso parcial. Consulte nossa seção de <a href="#">reembolsos</a> para mais detalhes.</p>
+        <div class="faq-item">
+            <h2>Qual é o processo para reembolso?</h2>
+            <p>No caso de reembolso, por favor, entre em contato conosco para discutir as condições. Nossa equipe irá avaliar a situação e fornecer instruções detalhadas.</p>
         </div>
-        <div class="faq">
-            <h2>Como é calculado o valor do projeto?</h2>
-            <p>O valor do projeto é calculado com base no escopo do trabalho, tempo estimado e nossa taxa de serviço. Para mais detalhes, consulte nossa seção de <a href="#">cálculo de valor</a>.</p>
+        <div class="faq-item">
+            <h2>Qual moeda é aceita para pagamento?</h2>
+            <p>Nosso sistema aceita USDC na Base, ETH na Base e ETH mainnet. Outras moedas podem ser aceitas com pré-aviso.</p>
         </div>
-        <div class="faq">
-            <h2>Quais são os passos para cancelar o contrato?</h2>
-            <p>Para cancelar o contrato, entre em contato conosco com 7 dias úteis de antecedência e siga os procedimentos estabelecidos em nosso <a href="#">contrato</a>. Consulte nossa seção de <a href="#">cancelamento de contrato</a> para mais detalhes.</p>
+        <div class="faq-item">
+            <h2>Qual é o prazo médio para contratação?</h2>
+            <p>O prazo médio para contratação é de 7 a 10 dias úteis. No entanto, esse prazo pode variar dependendo do projeto.</p>
         </div>
-        <div class="faq">
+        <div class="faq-item">
+            <h2>Qual é a garantia do Asura?</h2>
+            <p>Oferecemos uma garantia de satisfação, onde você pode solicitar reembolso dentro de 30 dias se não estiver satisfeito com o serviço.</p>
+        </div>
+        <div class="faq-item">
             <h2>Como posso entrar em contato com o Asura?</h2>
-            <p>Entre em contato conosco através do nosso <a href="#">chat ao vivo</a> ou por e-mail em <a href="mailto:contato@asura.com">contato@asura.com</a>. Nossa equipe de suporte está disponível de segunda a sábado, das 9h às 18h.</p>
-        </div>
-        <div class="faq">
-            <h2>O que acontece se eu não receber o entregável?</h2>
-            <p>Se você não receber o entregável, entre em contato conosco imediatamente para verificar o status. Se o problema persistir, haverá uma investigação abrangente e, se necessário, um reembolso parcial. Consulte nossa seção de <a href="#">não recebimento de entregável</a> para mais detalhes.</p>
+            <p>Você pode entrar em contato conosco por e-mail, telefone ou pelo chat online disponível em nosso site.</p>
         </div>
     </div>
 </body>
