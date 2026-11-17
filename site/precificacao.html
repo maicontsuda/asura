@@ -1,88 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Lógica de Preços do Asura</title>
+    <title>Preços do Asura - Lógica e Valores</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        header {
-            background-color: #1e1e1e;
+        .container {
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
-            text-align: center;
         }
         h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #ff9800;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
-        ul {
-            padding-left: 20px;
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .comparison {
-            background-color: #1a1a1a;
+        .card {
+            background-color: #2e2e2e;
             padding: 20px;
-            border-left: 5px solid #ff9800;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: calc(33.33% - 20px);
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #757575;
+        .card h2 {
+            margin-top: 0;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            margin-bottom: 10px;
+        }
+        .card ul li::before {
+            content: "•";
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lógica de Preços do Asura</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Por que 5 ideias custam 0,50 USDC</h2>
-            <p>O valor de 0,50 USDC para 5 ideias reflete a eficiência da plataforma em processar propostas de forma automatizada e escalável. Cada ideia é analisada por algoritmos otimizados que identificam oportunidades de valor, reduzindo o tempo de desenvolvimento e custos de mão de obra. Essa estrutura é ideal para projetos com escopo limitado, onde a complexidade é baixa e a entrega é rápida.</p>
-        </section>
-        <section>
-            <h2>Texto: 1 USDC</h2>
-            <p>O preço de 1 USDC para um texto representa o custo de produção de conteúdo de alta qualidade, com foco em clareza, estrutura e revisão técnica. A plataforma garante que o texto seja alinhado aos objetivos do cliente, com linguagem objetiva e coerência, sem custos adicionais de edição ou formatação.</p>
-        </section>
-        <section>
-            <h2>Landing Page: 2 USDC</h2>
-            <p>Uma landing page custa 2 USDC porque envolve uma combinação de design visual, copywriting estratégico e otimização para conversão. A plataforma integra ferramentas de design e análise de dados para garantir que a página atenda aos critérios de usabilidade, SEO e engajamento, sem custos de manutenção pós-lançamento.</p>
-        </section>
-        <section class="comparison">
-            <h2>Comparação com Freelancers</h2>
-            <p>Freelancers tradicionais costumam cobrar entre 10 e 50 USD por hora, dependendo da especialidade. Para um projeto similar ao de 5 ideias, um freelancer poderia demorar 2-4 horas, resultando em custos de 20 a 80 USD. O Asura oferece uma solução mais ágil e escalável, com custos fixos e transparentes, eliminando custos ocultos de revisão, tempo de espera e falta de consistência.</p>
-            <ul>
-                <li><strong>Freelancer:</strong> 20-80 USD para 5 ideias (2-4 horas de trabalho).</li>
-                <li><strong>Asura:</strong> 0,50 USDC (equivalente a 0,50 USD) para 5 ideias, com entrega imediata.</li>
-                <li><strong>Freelancer:</strong> 10-50 USD por texto, com possíveis custos adicionais de revisão.</li>
-                <li><strong>Asura:</strong> 1 USDC fixo para um texto com revisão técnica.</li>
-                <li><strong>Freelancer:</strong> 50-150 USD para uma landing page, com custos de manutenção posteriores.</li>
-                <li><strong>Asura:</strong> 2 USDC com suporte técnico e otimização integrada.</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        &copy; 2023 Asura. Todos os direitos reservados.
-    </footer>
+    <div class="container">
+        <h1>Preços do Asura - Lógica e Valores</h1>
+        <p>A Asura oferece serviços que vão desde ideias criativas até páginas de vendas avançadas. Aqui está a lógica por trás dos nossos preços:</p>
+
+        <div class="content">
+            <div class="card">
+                <h2>5 Ideias por 0,50 USDC</h2>
+                <p>Nossas ideias são geradas por um sistema de inteligência artificial altamente avançado, que considera uma vasta gama de fatores para criar conceitos inovadores e únicos. Cada ideia é um resultado de um processo complexo de análise e síntese. Por isso, acreditamos que 0,50 USDC por ideia é um preço justo, considerando a qualidade e a inovação que oferecemos.</p>
+                <p>Estas ideias podem ser usadas como base para projetos mais amplos, ou como inspiração para a criação de novas soluções. Elas são projetadas para serem flexíveis e adaptáveis, permitindo que você as personalize conforme necessário.</p>
+            </div>
+
+            <div class="card">
+                <h2>Texto por 1 USDC</h2>
+                <p>Texto é a base para quase qualquer projeto de comunicação. Nossa equipe de redatores experientes cria conteúdo de alta qualidade, que é tanto útil quanto atraente para o público-alvo. Cada 1 USDC gera um texto curto e direto ao ponto, perfeito para blogs, redes sociais ou pequenos projetos. Por 1 USDC, você recebe um texto de até 500 palavras, com pesquisa e edição incluídas.</p>
+                <p>Queremos garantir que você tenha um produto final que seja não apenas informativo, mas também cativante, então nosso texto é revisado e aprimorado para garantir a melhor experiência para o leitor.</p>
+            </div>
+
+            <div class="card">
+                <h2>Landing Page por 2 USDC</h2>
+                <p>Uma landing page é uma ferramenta crucial para a conversão de leads e vendas online. Ela é projetada para capturar a atenção do usuário e direcioná-lo a uma ação específica, como fazer um pedido ou se inscrever em uma newsletter. Nossa landing page é personalizada e otimizada para o melhor desempenho, garantindo que seu projeto atinja seu máximo potencial.</p>
+                <p>Com 2 USDC, você recebe uma landing page que inclui design responsivo, formulário de contato, call-to-action forte e otimização para SEO. Nossa equipe testa e refina o design e o conteúdo até que ele esteja pronto para ser lançado.</p>
+            </div>
+        </div>
+
+        <p>Em comparação com freelancers, a Asura oferece uma solução mais eficiente e eficaz, considerando o tempo de desenvolvimento e a qualidade do produto final. Nossos preços refletem a qualidade e a experiência que você pode esperar de um serviço profissional, sem comprometer a inovação e a criatividade.</p>
+        <p>Se você estiver procurando por uma solução que ofereça valor em termos de qualidade, inovação e eficiência, a Asura é a escolha certa para você.</p>
+    </div>
 </body>
 </html>
