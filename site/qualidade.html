@@ -1,159 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Checklist de Qualidade Asura</title>
+    <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
         }
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background-color: #242424;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #ffffff;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #cccccc;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 60px;
         }
-        .section h2 {
-            margin-bottom: 10px;
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
-        .criteria, .errors, .review {
-            margin-bottom: 10px;
+        .section ul li::before {
+            content: "✓";
+            color: #4caf50;
+            margin-right: 10px;
         }
-        .criteria ul, .errors ul, .review ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        .section .error::before {
+            content: "⚠";
+            color: #ff5252;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Checklist de Qualidade Asura</h1>
-        <div class="section">
+    <header>
+        <h1>Checklist de Qualidade para Serviços do Asura</h1>
+    </header>
+    <main>
+        <section class="section">
             <h2>Landing Page</h2>
-            <div class="criteria">
-                <p><strong>Critérios de Aceite:</strong></p>
-                <ul>
-                    <li>Design responsivo e adaptado para diferentes dispositivos</li>
-                    <li>Conteúdo claro e direto ao ponto</li>
-                    <li>Chamada à ação clara e visível</li>
-                </ul>
-            </div>
-            <div class="errors">
-                <p><strong>Erros Comuns a Evitar:</strong></p>
-                <ul>
-                    <li>Design complexo e confuso</li>
-                    <li>Conteúdo confuso ou não informativo</li>
-                    <li>Chamada à ação oculta ou não clara</li>
-                </ul>
-            </div>
-            <div class="review">
-                <p><strong>Como Revisar Antes de Entregar:</strong></p>
-                <ul>
-                    <li>Teste a landing page em diferentes dispositivos e navegadores</li>
-                    <li>Verifique a legibilidade do texto e os elementos visuais</li>
-                    <li>Confirme que a chamada à ação é clara e direta</li>
-                </ul>
-            </div>
-        </div>
-        <div class="section">
+            <p>Antes de entregar uma landing page, verifique os seguintes critérios de aceite:</p>
+            <ul>
+                <li>Objetivo claro e definido (conversão, inscrição, download, etc).</li>
+                <li>Conteúdo direto e bem estruturado, sem informações irrelevantes.</li>
+                <li>Call-to-action (CTA) visível e bem posicionado.</li>
+                <li>Formulário de contato ou inscrição com campos relevantes e obrigatórios.</li>
+                <li>Imagens e elementos visuais alinhados com a proposta do serviço.</li>
+                <li>SEO básico (meta description, título relevante).</li>
+            </ul>
+            <p><strong>Erros comuns a evitar:</strong></p>
+            <ul>
+                <li>Texto muito longo sem foco.</li>
+                <li>CTA pouco visível ou confuso.</li>
+                <li>Imagens de baixa qualidade ou irrelevantes.</li>
+                <li>Formulário incompleto ou mal estruturado.</li>
+            </ul>
+            <p><strong>Como revisar:</strong></p>
+            <ul>
+                <li>Verifique a usabilidade e a navegação.</li>
+                <li>Teste o formulário em diferentes dispositivos.</li>
+                <li>Confirme que o CTA está alinhado com o objetivo da landing page.</li>
+            </ul>
+        </section>
+
+        <section class="section">
             <h2>Texto de Apresentação</h2>
-            <div class="criteria">
-                <p><strong>Critérios de Aceite:</strong></p>
-                <ul>
-                    <li>Linguagem clara e concisa</li>
-                    <li>Conteúdo informativo e relevante</li>
-                    <li>Ética e transparência na apresentação dos serviços</li>
-                </ul>
-            </div>
-            <div class="errors">
-                <p><strong>Erros Comuns a Evitar:</strong></p>
-                <ul>
-                    <li>Linguagem obscura ou confusa</li>
-                    <li>Conteúdo vago ou sem informação relevante</li>
-                    <li>Práticas enganosas ou manipulativas</li>
-                </ul>
-            </div>
-            <div class="review">
-                <p><strong>Como Revisar Antes de Entregar:</strong></p>
-                <ul>
-                    <li>Ler o texto várias vezes para garantir clareza e precisão</li>
-                    <li>Verificar se a informação apresentada é completa e precisa</li>
-                    <li>Revisar para garantir que a ética e a transparência estejam presentes</li>
-                </ul>
-            </div>
-        </div>
-        <div class="section">
+            <p>Um texto de apresentação deve ser envolvente e informativo. Confira:</p>
+            <ul>
+                <li>Identidade do cliente clara e objetiva.</li>
+                <li>Valor único do serviço destacado.</li>
+                <li>Conexão emocional com o público-alvo.</li>
+                <li>Uso adequado de palavras-chave e termos técnicos.</li>
+                <li>Estilo coeso e alinhado com a marca.</li>
+            </ul>
+            <p><strong>Erros comuns a evitar:</strong></p>
+            <ul>
+                <li>Frase repetitiva ou excessivamente técnica.</li>
+                <li>Texto muito longo sem pausas ou divisão.</li>
+                <li>Falta de personalização para o público-alvo.</li>
+            </ul>
+            <p><strong>Como revisar:</strong></p>
+            <ul>
+                <li>Verifique a clareza e o impacto do texto.</li>
+                <li>Teste com diferentes perfis do público-alvo.</li>
+                <li>Confirme se o tom está alinhado com a identidade da marca.</li>
+            </ul>
+        </section>
+
+        <section class="section">
             <h2>Revisão de Texto</h2>
-            <div class="criteria">
-                <p><strong>Critérios de Aceite:</strong></p>
-                <ul>
-                    <li>Sintaxe e gramática corretas</li>
-                    <li>Estilo coerente e adequado ao público-alvo</li>
-                    <li>Conteúdo relevante e informativo</li>
-                </ul>
-            </div>
-            <div class="errors">
-                <p><strong>Erros Comuns a Evitar:</strong></p>
-                <ul>
-                    <li>Sintaxe ou gramática errada</li>
-                    <li>Estilo inconsistente ou inadequado</li>
-                    <li>Conteúdo não relevante ou desatualizado</li>
-                </ul>
-            </div>
-            <div class="review">
-                <p><strong>Como Revisar Antes de Entregar:</strong></p>
-                <ul>
-                    <li>Utilizar ferramentas de correção gramatical</li>
-                    <li>Verificar a consistência do estilo</li>
-                    <li>Revisar o conteúdo para garantir relevância e atualização</li>
-                </ul>
-            </div>
-        </div>
-        <div class="section">
+            <p>Antes de entregar um texto revisado, confira:</p>
+            <ul>
+                <li>Correções gramaticais e ortográficas.</li>
+                <li>Consistência de termos e estilo.</li>
+                <li>Clareza e coesão do conteúdo.</li>
+                <li>Respeito aos prazos e formatos solicitados.</li>
+                <li>Identificação de erros de formatação e de pontuação.</li>
+            </ul>
+            <p><strong>Erros comuns a evitar:</strong></p>
+            <ul>
+                <li>Erros de concordância ou regência.</li>
+                <li>Uso incorreto de palavras ou termos técnicos.</li>
+                <li>Falta de revisão de metadados e tags.</li>
+            </ul>
+            <p><strong>Como revisar:</strong></p>
+            <ul>
+                <li>Leia o texto em voz alta para identificar erros.</li>
+                <li>Use ferramentas de correção gramatical como o Google Docs.</li>
+                <li>Confirme que o texto respeita o objetivo e o público-alvo.</li>
+            </ul>
+        </section>
+
+        <section class="section">
             <h2>5 Ideias de Conteúdo</h2>
-            <div class="criteria">
-                <p><strong>Critérios de Aceite:</strong></p>
-                <ul>
-                    <li>Conteúdo original e inovador</li>
-                    <li>Relevância para o público-alvo</li>
-                    <li>Uso eficaz de recursos visuais</li>
-                </ul>
-            </div>
-            <div class="errors">
-                <p><strong>Erros Comuns a Evitar:</strong></p>
-                <ul>
-                    <li>Conteúdo repetitivo ou não original</li>
-                    <li>Relevância duvidosa para o público-alvo</li>
-                    <li>Uso inadequado de recursos visuais</li>
-                </ul>
-            </div>
-            <div class="review">
-                <p><strong>Como Revisar Antes de Entregar:</strong></p>
-                <ul>
-                    <li>Verificar a originalidade e inovação do conteúdo</li>
-                    <li>Testar a relevância do conteúdo para o público-alvo</li>
-                    <li>Revisar a utilização de recursos visuais para garantir eficácia</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            <p>Para criar conteúdo de qualidade, siga estas ideias:</p>
+            <ul>
+                <li>Guia prático para iniciantes no assunto.</li>
+                <li>Comparativo entre produtos ou serviços.</li>
+                <li>Case de sucesso ou estudo de mercado.</li>
+                <li>Artigo de opinião ou análise crítica.</li>
+                <li>Lista de dicas ou checklist para o público-alvo.</li>
+            </ul>
+            <p><strong>Erros comuns a evitar:</strong></p>
+            <ul>
+                <li>Conteúdo genérico ou sem profundidade.</li>
+                <li>Falta de dados ou referências confiáveis.</li>
+                <li>Texto sem estrutura ou divisão clara.</li>
+            </ul>
+            <p><strong>Como revisar:</strong></p>
+            <ul>
+                <li>Verifique a originalidade e a relevância do conteúdo.</li>
+                <li>Confirme que o conteúdo está alinhado com o objetivo da marca.</li>
+                <li>Teste o conteúdo com diferentes perfis do público-alvo.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Asura - Checklist de Qualidade
+    </footer>
 </body>
 </html>
