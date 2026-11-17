@@ -1,90 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Serviços do Asura</title>
+    <title>Asura - Serviços</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
+            color: #DADADA;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px 0;
+        .header {
+            background-color: #282828;
+            padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #555;
         }
-        header h1 {
-            color: #ffffff;
-            font-size: 2.5em;
+        .content {
+            background-color: #282828;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
         }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        section {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            padding: 25px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        section h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 10px;
+        .service {
             margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #555;
+            border-radius: 10px;
         }
-        .service-description {
-            font-size: 1.1em;
-            margin-bottom: 15px;
+        .service h2 {
+            color: #32CD32;
         }
-        .service-details {
-            font-size: 0.95em;
-            color: #bbbbbb;
+        .service p {
+            margin: 10px 0;
         }
-        .price {
-            font-weight: bold;
-            color: #4caf50;
-        }
-        a {
-            color: #4caf50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .footer {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #555;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Serviços do Asura</h1>
-    </header>
-    <div class="container">
-        <section>
-            <h2>Landing Page (1 USDC)</h2>
-            <div class="service-description">A landing page é uma página de destino otimizada para conversão, ideal para divulgar produtos, serviços ou campanhas específicas. Oferece uma experiência direta e focada para os visitantes.</div>
-            <div class="service-details">Para quem: Empresas, startups e profissionais que buscam atrair leads qualificados. Inclui: design responsivo, copywriting persuasivo, SEO básico e call-to-action claro. Prazo: 5-7 dias úteis. Preço: <span class="price">1 USDC</span>.</div>
-        </section>
-        <section>
-            <h2>Texto de Apresentação (1 USDC)</h2>
-            <div class="service-description">Um texto de apresentação é uma peça criativa que destaca o valor da sua marca, produto ou serviço. É ideal para eventos, apresentações ou materiais de marketing.</div>
-            <div class="service-details">Para quem: Profissionais liberais, empreendedores e equipes que precisam de conteúdo impactante. Inclui: escrita criativa, estrutura clara e adaptação para diferentes canais. Prazo: 3 dias úteis. Preço: <span class="price">1 US0DC</span>.</div>
-        </section>
-        <section>
-            <h2>Revisão de Texto (1 USDC)</h2>
-            <div class="service-description">A revisão de texto corrige erros gramaticais, melhora a clareza e a coerência, garantindo que sua mensagem seja compreensível e impactante.</div>
-            <div class="service-details">Para quem: Escritores, blogueiros e profissionais que desejam melhorar a qualidade de seus conteúdos. Inclui: revisão ortográfica, gramatical e de estilo. Prazo: 2 dias úteis. Preço: <span class="price">1 USDC</span>.</div>
-        </section>
-        <section>
-            <h2>5 Ideias de Conteúdo (0,5 USDC)</h2>
-            <div class="service-description">Desenvolva 5 ideias de conteúdo para blogs, redes sociais ou e-mails. Ideal para aumentar o engajamento e a visibilidade da sua marca.</div>
-            <div class="service-details">Para quem: Criadores de conteúdo, marcas e equipes que precisam de novas estratégias. Inclui: brainstorming criativo, sugestões de formatos e temas relevantes. Prazo: 5 dias úteis. Preço: <span class="price">0,5 USDC</span>.</div>
-        </section>
+    <div class="header">
+        <h1>Asura - Serviços</h1>
+    </div>
+    <div class="content">
+        <div class="service">
+            <h2>Landing Page 2 USDC</h2>
+            <p>Criação de uma landing page robusta para atrair usuários e converter visitas em clientes.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e startups que buscam uma presença digital eficaz.</p>
+            <p><strong>Incluso:</strong>
+                <ul>
+                    <li>Design moderno e responsivo</li>
+                    <li>Formulário de contato integrado</li>
+                    <li>Visibilidade nas primeiras páginas do Google</li>
+                    <li>Uso de CTA (Call to Action) estratégico</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 15 dias úteis</p>
+            <p><strong>Preço:</strong> 2 USDC</p>
+        </div>
+        <div class="service">
+            <h2>Texto de Apresentação 1 USDC</h2>
+            <p>Produção de conteúdo persuasivo para apresentar seus produtos ou serviços de forma atrativa.</p>
+            <p><strong>Para quem serve:</strong> Empresas que precisam de um discurso poderoso para conquistar novos clientes.</p>
+            <p><strong>Incluso:</strong>
+                <ul>
+                    <li>Redação personalizada</li>
+                    <li>Testes de linguagem</li>
+                    <li>Formato adequado ao público-alvo</li>
+                    <li>Revisão final</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 7 dias úteis</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
+        </div>
+        <div class="service">
+            <h2>Revisão de Texto 1 USDC</h2>
+            <p>Correção de erros gramaticais, ortográficos e de estilo em textos já escritos.</p>
+            <p><strong>Para quem serve:</strong> Autores, profissionais de marketing e qualquer pessoa que precise melhorar a qualidade de seu texto.</p>
+            <p><strong>Incluso:</strong>
+                <ul>
+                    <li>Correção gramatical</li>
+                    <li>Revisão de estilo</li>
+                    <li>Verificação de consistência</li>
+                    <li>Formato adequado</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 5 dias úteis</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
+        </div>
+        <div class="service">
+            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
+            <p>Desenvolvimento de conceitos criativos e relevantes para o seu negócio ou projeto.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores, escritores e profissionais que buscam novas ideias para seus trabalhos.</p>
+            <p><strong>Incluso:</strong>
+                <ul>
+                    <li>5 ideias inovadoras</li>
+                    <li>Descrição detalhada de cada ideia</li>
+                    <li>Revisão final das ideias</li>
+                    <li>Entrega no formato solicitado pelo cliente</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 3 dias úteis</p>
+            <p><strong>Preço:</strong> 0,5 USDC</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Asura. Todos os direitos reservados.</p>
     </div>
 </body>
 </html>
