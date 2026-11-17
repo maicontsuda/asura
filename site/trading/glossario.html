@@ -6,156 +6,162 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            padding: 20px;
+        }
+        h1 {
+            color: #81ecec;
+            text-align: center;
         }
         .glossario {
             max-width: 800px;
-            width: 100%;
+            margin: 0 auto;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 1em;
+            background-color: #282828;
+            border-radius: 8px;
         }
         .termo {
-            margin-bottom: 1.5em;
+            margin-bottom: 20px;
         }
         .termo h2 {
+            color: #81ecec;
             font-size: 1.5em;
-            margin-bottom: 0.5em;
+            margin-bottom: 5px;
         }
         .termo p {
-            font-size: 1em;
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <h1>Glossário de Termos de Mercado</h1>
     <div class="glossario">
-        <h1>Glossário de Termos de Mercado</h1>
         <div class="termo">
-            <h2>pip</h2>
-            <p>Pequena unidade de medida de variação de preço em moedas de câmbio. Por exemplo, um pip em um par de moedas de câmbio como o EUR/USD é 0,0001.</p>
+            <h2>Pip</h2>
+            <p>Pequena unidade de variação no preço de uma moeda. Por exemplo, um pip em EUR/USD é 0,0001.</p>
         </div>
         <div class="termo">
-            <h2>spread</h2>
-            <p>Diferença entre o preço de compra e venda de um ativo. É o lucro que o corretor ganha com cada transação.</p>
+            <h2>Spread</h2>
+            <p>Diferença entre o preço de compra e venda de uma moeda. Por exemplo, EUR/USD pode ter um spread de 0,1 pip.</p>
         </div>
         <div class="termo">
-            <h2>lote</h2>
-            <p>Quantidade padrão de um ativo negociado em um mercado de derivativos. Por exemplo, um lote padrão de ouro é 100 onças.</p>
+            <h2>Lote</h2>
+            <p>Quantidade padrão de moedas negociadas em uma transação. Um lote padrão é 100.000 unidades da moeda.</p>
         </div>
         <div class="termo">
-            <h2>alavancagem</h2>
-            <p>Fator que permite aos traders negociar uma quantidade maior de dinheiro do que o depositado em sua conta. Por exemplo, 10:1 significa que você pode negociar 10 vezes mais do que o dinheiro depositado.</p>
+            <h2>Alavancagem</h2>
+            <p>Multiplicador financeiro que permite aos traders negociar com mais dinheiro do que têm em conta.</p>
         </div>
         <div class="termo">
-            <h2>margin</h2>
-            <p>Depósito inicial necessário para abrir uma posição. É usado para garantir que o corretor tenha direito de liquidar a posição se o cliente estiver em perda.</p>
+            <h2>Margem</h2>
+            <p>Depósito de garantia exigido para manter uma posição aberta em uma conta de negociação.</p>
         </div>
         <div class="termo">
-            <h2>stop</h2>
-            <p>Ordem de venda ou compra que é executada quando o preço atinge um determinado nível. Serve como uma proteção para minimizar perdas.</p>
+            <h2>Stop</h2>
+            <p>Ordem que define o preço em que uma posição deve ser automaticamente fechada para limitar perdas.</p>
         </div>
         <div class="termo">
-            <h2>take profit</h2>
-            <p>Ordem de venda ou compra que é executada quando o preço atinge um determinado nível. Serve como um ganho de liquidação para proteger lucros.</p>
+            <h2>Take Profit</h2>
+            <p>Ordem que define o preço em que uma posição deve ser automaticamente fechada para maximizar ganhos.</p>
         </div>
         <div class="termo">
-            <h2>long</h2>
-            <p>Posição de compra em uma ação ou moeda, esperando que o preço suba.</p>
+            <h2>Long</h2>
+            <p>Posição comprada, onde o trader espera que o preço suba.</p>
         </div>
         <div class="termo">
-            <h2>short</h2>
-            <p>Posição de venda em uma ação ou moeda, esperando que o preço desça.</p>
+            <h2>Short</h2>
+            <p>Posição vendida, onde o trader espera que o preço desça.</p>
         </div>
         <div class="termo">
-            <h2>gap</h2>
-            <p>Diferença de preços entre sessões de negociação. Pode indicar um movimento de preço súbito.</p>
+            <h2>Gap</h2>
+            <p>Diferença entre o fechamento do mercado em um dia e o abertura no próximo, sem transação.</p>
         </div>
         <div class="termo">
-            <h2>volume</h2>
-            <p>Quantidade total de negócios realizada em um determinado período de tempo.</p>
+            <h2>Volume</h2>
+            <p>Quantidade total de transações feitas durante um determinado período.</p>
         </div>
         <div class="termo">
             <h2>RSI</h2>
-            <p>Índice de Força Relativa, usado para analisar a força do preço de um ativo. Valores acima de 70 indicam sobrecompra, enquanto valores abaixo de 30 indicam sobrevenda.</p>
+            <p>Indicador técnico que mede a velocidade e a magnitude das mudanças de preço recentes.</p>
         </div>
         <div class="termo">
             <h2>MACD</h2>
-            <p>Índice de Diferença de Médias Móveis, usado para identificar tendências e potenciais pontos de inversão. É composto por duas linhas de médias móveis e uma linha de sinal.</p>
+            <p>Indicador técnico que compara duas médias móveis e fornece sinais de compra e venda.</p>
         </div>
         <div class="termo">
-            <h2>suporte</h2>
-            <p>Nível de preço onde o mercado tende a parar de cair, pois há compradores interessados.</p>
+            <h2>Suporte</h2>
+            <p>Nível de preço em que a compra é forte o suficiente para impedir o movimento de baixa.</p>
         </div>
         <div class="termo">
-            <h2>resistência</h2>
-            <p>Nível de preço onde o mercado tende a parar de subir, pois há vendedores interessados.</p>
+            <h2>Resistência</h2>
+            <p>Nível de preço em que a venda é forte o suficiente para impedir o movimento de alta.</p>
         </div>
         <div class="termo">
-            <h2>drawdown</h2>
-            <p>A diferença entre o valor máximo atingido e o valor mínimo atingido após a máxima. Serve como uma medida do risco máximo de uma carteira ou ativo.</p>
+            <h2>Drawdown</h2>
+            <p>A diferença entre o pico mais recente e o mínimo subsequente de um ativo ou estratégia.</p>
         </div>
         <div class="termo">
-            <h2>equity</h2>
-            <p>Patrimônio líquido do trader, que é a diferença entre o valor total dos ativos e o total das obrigações (dívidas) do trader.</p>
+            <h2>Equity</h2>
+            <p>Saldo total em uma conta de negociação, incluindo depósitos e lucros menos perdas e margem.</p>
         </div>
         <div class="termo">
-            <h2>margem livre</h2>
-            <p>Quantidade de margem disponível para novas posições. É calculado subtraindo das posições existentes e das ordens pendentes o valor da margem.</p>
+            <h2>Margem Livre</h2>
+            <p>Saldo disponível em uma conta de negociação para novas posições, sem considerar margem utilizada.</p>
         </div>
         <div class="termo">
-            <h2>ordem limitada</h2>
-            <p>Ordem que especifica um preço exato para entrada na negociação. É executada apenas quando o preço atinge o valor especificado.</p>
+            <h2>Ordem Limitada</h2>
+            <p>Ordem que especifica o preço exato em que uma posição deve ser aberta ou fechada.</p>
         </div>
         <div class="termo">
-            <h2>spread bid-ask</h2>
-            <p>Diferença entre o preço de compra (bid) e o preço de venda (ask) de um ativo. É um indicador do custo de negociação.</p>
+            <h2>Ordem Stop-Limit</h2>
+            <p>Combinação de stop e limit, onde a ordem só pode ser executada se o preço atinge um determinado nível.</p>
         </div>
         <div class="termo">
-            <h2>backtest</h2>
-            <p>Processo de testar estratégias de negociação em dados históricos para avaliar seu desempenho.</p>
+            <h2>Ordem Stop-Loss</h2>
+            <p>Ordem que define o preço em que uma posição deve ser automaticamente fechada para limitar perdas.</p>
         </div>
         <div class="termo">
-            <h2>forward test</h2>
-            <p>Processo de testar estratégias de negociação em dados futuros para avaliar seu desempenho. É menos comum e mais difícil de implementar.</p>
+            <h2>Ordem Take-Profit</h2>
+            <p>Ordem que define o preço em que uma posição deve ser automaticamente fechada para maximizar ganhos.</p>
         </div>
         <div class="termo">
-            <h2>volatilidade</h2>
-            <p>Medida da variação do preço de um ativo. Alta volatilidade indica maior incerteza e risco.</p>
+            <h2>Ordem Stop-Market</h2>
+            <p>Ordem que será executada imediatamente em um determinado preço após atingir o preço de stop.</p>
         </div>
         <div class="termo">
-            <h2>hedging</h2>
-            <p>Técnica de investimento que é usada para minimizar o risco. Inclui aposição em direções opostas para neutralizar a exposição a um risco específico.</p>
+            <h2>Ordem Market</h2>
+            <p>Ordem que será executada imediatamente no preço de mercado atual.</p>
         </div>
         <div class="termo">
-            <h2>break-even</h2>
-            <p>Ponto em que a posição se torna lucrativa ou perdedora. É o preço em que a perda total é igual ao lucro total.</p>
+            <h2>Ordem Market-On-Open (MOO)</h2>
+            <p>Ordem que será executada no primeiro preço de mercado após a abertura do mercado.</p>
         </div>
         <div class="termo">
-            <h2>pip value</h2>
-            <p>Valor monetário de um pip. Diferencia-se dependendo da moeda negociada.</p>
+            <h2>Ordem Market-On-Close (MOC)</h2>
+            <p>Ordem que será executada no último preço de mercado antes do fechamento do mercado.</p>
         </div>
         <div class="termo">
-            <h2>leverage</h2>
-            <p>Outro termo para alavancagem, usado comumente em contextos financeiros.</p>
+            <h2>Ordem One-Cancels-Other (OCO)</h2>
+            <p>Ordem que cancela outra ordem se uma delas for executada.</p>
         </div>
         <div class="termo">
-            <h2>swing trading</h2>
-            <p>Técnica de negociação que envolve manter posições abertas por vários dias ou semanas, aproveitando movimentos de preços a curto prazo.</p>
+            <h2>Ordem One-Triggers-Other (OTO)</h2>
+            <p>Ordem que é criada quando outra ordem é executada.</p>
         </div>
         <div class="termo">
-            <h2>day trading</h2>
-            <p>Técnica de negociação que envolve abertura e fechamento de posições no mesmo dia, aproveitando movimentos de preços intradiários.</p>
+            <h2>Ordem Pending Order</h2>
+            <p>Ordem que é pendente e só será executada em determinadas condições.</p>
+        </div>
+        <div class="termo">
+            <h2>Ordem Fill-or-Kill (FOK)</h2>
+            <p>Ordem que deve ser executada imediatamente e integralmente, ou não será executada.</p>
+        </div>
+        <div class="termo">
+            <h2>Ordem Iceberg</h2>
+            <p>Ordem que revela apenas uma parte do tamanho total, mantendo a maior parte oculta.</p>
         </div>
     </div>
 </body>
