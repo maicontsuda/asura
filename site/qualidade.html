@@ -1,157 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Checklist de Qualidade Asura</title>
+    <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f9f9f9;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
-        .container {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
+        header {
+            background-color: #2a2a2a;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        section {
+            padding: 30px 20px;
+            margin: 20px 0;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #ffffff;
+            margin-top: 0;
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            padding-left: 20px;
         }
-        li {
-            margin: 10px 0;
-            font-size: 1.2em;
+        .criteria {
+            color: #00ffcc;
         }
-        .criteria, .common-errors, .review-process {
-            margin-bottom: 20px;
+        .errors {
+            color: #ff4d4d;
         }
-        .criteria, .common-errors {
-            font-size: 1.1em;
+        .review {
+            color: #00ccff;
         }
-        .review-process {
-            font-size: 1.0em;
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
+    </header>
+    <section>
         <h2>Landing Page</h2>
-        <div class="criteria">
-            <p>Critérios de Aceite:</p>
-            <ul>
-                <li>Design responsivo e atraente</li>
-                <li>Texto claro e conciso</li>
-                <li>Botões de call-to-action visíveis e funcionais</li>
-            </ul>
-        </div>
-        <div class="common-errors">
-            <p>Erros Comuns a Evitar:</p>
-            <ul>
-                <li>Imagens mal dimensionadas ou fora de lugar</li>
-                <li>Texto confuso ou desnecessariamente longo</li>
-                <li>Botões ocultos ou mal posicionados</li>
-            </ul>
-        </div>
-        <div class="review-process">
-            <p>Revisão Antes de Entregar:</p>
-            <ul>
-                <li>Verifique a legibilidade da fonte e o contraste com o fundo</li>
-                <li>Teste a funcionalidade de todos os botões e links</li>
-                <li>Confira a responsividade em diferentes dispositivos</li>
-                <li>Peça feedback de outros membros da equipe</li>
-            </ul>
-        </div>
+        <p><span class="criteria">Critérios de Aceite:</span> Proposta de valor clara, hierarquia visual eficiente, CTA direto e engajador, conteúdo relevante para o público-alvo.</p>
+        <p><span class="errors">Erros Comuns:</span> Design excessivamente carregado, falta de foco no objetivo principal, CTA ambíguo ou invisível, inconsistência visual.</p>
+        <p><span class="review">Como Revisar:</span> Verificar alinhamento com a marca, testar mobilidade, validar fluxo de conversão, analisar tempo de carregamento.</p>
+    </section>
+    <section>
         <h2>Texto de Apresentação</h2>
-        <div class="criteria">
-            <p>Critérios de Aceite:</p>
-            <ul>
-                <li>Informações precisas e atualizadas</li>
-                <li>Texto fluido e cativante</li>
-                <li>Uso adequado de termos técnicos</li>
-            </ul>
-        </div>
-        <div class="common-errors">
-            <p>Erros Comuns a Evitar:</p>
-            <ul>
-                <li>Informações desatualizadas ou incorretas</li>
-                <li>Texto confuso ou incoerente</li>
-                <li>Uso excessivo de termos técnicos sem explicação</li>
-            </ul>
-        </div>
-        <div class="review-process">
-            <p>Revisão Antes de Entregar:</p>
-            <ul>
-                <li>Confira a precisão das informações</li>
-                <li>Releia o texto para garantir a clareza e a fluidez</li>
-                <li>Verifique se os termos técnicos são explicados corretamente</li>
-                <li>Peça feedback de outros membros da equipe</li>
-            </ul>
-        </div>
+        <p><span class="criteria">Critérios de Aceite:</span> Estrutura lógica (introdução, corpo, conclusão), linguagem clara e envolvente, dados ou exemplos concretos, tom adequado ao público.</p>
+        <p><span class="errors">Erros Comuns:</span> Jargão excessivo, falta de foco principal, informações redundantes, erros de gramática ou ortografia.</p>
+        <p><span class="review">Como Revisar:</span> Ler em voz alta, verificar coerência, testar compreensão de um leitor médio, alinhar ao objetivo da comunicação.</p>
+    </section>
+    <section>
         <h2>Revisão de Texto</h2>
-        <div class="criteria">
-            <p>Critérios de Aceite:</p>
-            <ul>
-                <li>Sintaxe e gramática corretas</li>
-                <li>Texto claro e compreensível</li>
-                <li>Conformidade com a marca</li>
-            </ul>
-        </div>
-        <div class="common-errors">
-            <p>Erros Comuns a Evitar:</p>
-            <ul>
-                <li>Sintaxe ou gramática incorretas</li>
-                <li>Texto confuso ou ambiguo</li>
-                <li>Desconformidade com a identidade visual da marca</li>
-            </ul>
-        </div>
-        <div class="review-process">
-            <p>Revisão Antes de Entregar:</p>
-            <ul>
-                <li>Corrija quaisquer erros de sintaxe ou gramática</li>
-                <li>Confira a clareza e a compreensão do texto</li>
-                <li>Verifique a conformidade com a identidade visual da marca</li>
-                <li>Peça feedback de outros membros da equipe</li>
-            </ul>
-        </div>
+        <p><span class="criteria">Critérios de Aceite:</span> Texto gramaticalmente correto, coerência lógica, estilo consistente, tom adequado ao público e contexto.</p>
+        <p><span class="errors">Erros Comuns:</span> Redundâncias, palavras repetidas, erros de concordância, estrutura desorganizada, falta de clareza.</p>
+        <p><span class="review">Como Revisar:</span> Utilizar ferramentas de gramática, analisar fluxo do texto, verificar consistência de termos, validar objetivos de cada parágrafo.</p>
+    </section>
+    <section>
         <h2>5 Ideias de Conteúdo</h2>
-        <div class="criteria">
-            <p>Critérios de Aceite:</p>
-            <ul>
-                <li>Relevância para o público-alvo</li>
-                <li>Informações úteis e atualizadas</li>
-                <li>Engajamento do leitor</li>
-            </ul>
-        </div>
-        <div class="common-errors">
-            <p>Erros Comuns a Evitar:</p>
-            <ul>
-                <li>Inconsistência com o público-alvo</li>
-                <li>Informações desatualizadas ou irrelevantes</li>
-                <li>Falta de engajamento do leitor</li>
-            </ul>
-        </div>
-        <div class="review-process">
-            <p>Revisão Antes de Entregar:</p>
-            <ul>
-                <li>Confira a relevância do conteúdo para o público-alvo</li>
-                <li>Verifique a atualidade e a utilidade das informações</li>
-                <li>Teste o engajamento do conteúdo com o público-alvo</li>
-                <li>Peça feedback de outros membros da equipe</li>
-            </ul>
-        </div>
-    </div>
+        <p><strong>Ideia 1:</strong> Guia prático para criar landing pages eficazes. Público: empreendedores. Objetivo: ensinar técnicas de conversão.</p>
+        <p><strong>Ideia 2:</strong> Casos de sucesso de marcas que transformaram sua comunicação. Público: gestores de marketing. Objetivo: inspirar e demonstrar resultados.</p>
+        <p><strong>Ideia 3:</strong> Dicas para revisar textos de forma rápida e eficiente. Público: profissionais de redação. Objetivo: otimizar produtividade.</p>
+        <p><strong>Ideia 4:</strong> Como alinhar a comunicação da marca com a estratégia de negócios. Público: equipes de marketing. Objetivo: integrar ações de comunicação.</p>
+        <p><strong>Ideia 5:</strong> Tendências de conteúdo em 2024: o que funciona e o que não funciona. Público: criadores de conteúdo. Objetivo: orientar decisões de produção.</p>
+    </section>
+    <footer>
+        © 2023 Asura. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
