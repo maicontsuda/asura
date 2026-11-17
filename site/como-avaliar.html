@@ -1,115 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Critérios de Avaliação de Conteúdo</title>
+    <title>Avaliação de Conteúdo - Critérios Objetivos</title>
     <style>
         body {
             background-color: #121212;
             color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 16px;
         }
-        header {
-            background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+        .container {
+            background-color: #222222;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
         }
         h1 {
-            color: #ffffff;
-            margin: 0;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
-        main {
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        p {
+            margin-bottom: 10px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #2a2a2a;
-            border-radius: 8px;
-            overflow: hidden;
         }
         th, td {
-            padding: 15px;
+            border: 1px solid #333;
+            padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #444;
         }
         th {
-            background-color: #3a3a3a;
+            background-color: #333;
+            color: #ffffff;
         }
-        tr:nth-child(even) {
-            background-color: #2a2a2a;
+        td {
+            background-color: #444;
         }
-        .score {
+        .nota {
+            color: #ff6b6b;
             font-weight: bold;
-            color: #00ffcc;
         }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #aaaaaa;
+        .call-to-action {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Critérios de Avaliação de Conteúdo</h1>
-    </header>
-    <main>
-        <p>Esta página fornece critérios objetivos para avaliar a qualidade de um conteúdo recebido. Os critérios são baseados em parâmetros específicos que garantem a clareza, relevância e eficácia da comunicação. A pontuação em cada item varia de 0 a 10, com 10 sendo a nota máxima.</p>
-        <p>Antes de iniciar a avaliação, é essencial revisar o briefing original para garantir que o conteúdo esteja alinhado aos objetivos propostos. A análise deve ser feita com base em uma leitura crítica e objetiva, sem julgamentos subjetivos.</p>
+    <div class="container">
+        <h1>Avaliação de Conteúdo - Critérios Objetivos</h1>
+        <p>Este documento fornece critérios objetivos para avaliar um conteúdo recebido. O conteúdo será analisado com base nas seguintes categorias:</p>
+        <p>1. Clareza: A mensagem é clara e compreensível para o público-alvo.</p>
+        <p>2. Aderência ao Briefing: O conteúdo seguiu todas as diretrizes e requisitos estabelecidos no briefing.</p>
+        <p>3. Tom: O tom do conteúdo é apropriado e consistente com a marca.</p>
+        <p>4. Estrutura: O conteúdo está organizado de forma lógica e fácil de seguir.</p>
+        <p>5. Erros de Português: O conteúdo está livre de erros gramaticais, ortográficos e de pontuação.</p>
+        <p>6. Chamada para ação: A chamada para ação é clara e motivacional.</p>
         <table>
-            <thead>
-                <tr>
-                    <th>Critério</th>
-                    <th>Descrição</th>
-                    <th>Pontuação (0-10)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Clareza</td>
-                    <td>O conteúdo deve ser compreensível, com linguagem direta e sem ambiguidades. Evite jargões excessivos ou termos técnicos sem explicação.</td>
-                    <td class="score">0</td>
-                </tr>
-                <tr>
-                    <td>Aderência ao briefing</td>
-                    <td>O conteúdo deve seguir rigorosamente os pontos principais do briefing, incluindo objetivos, público-alvo e mensagens-chave.</td>
-                    <td class="score">0</td>
-                </tr>
-                <tr>
-                    <td>Tom</td>
-                    <td>O tom deve ser adequado ao público-alvo e ao propósito do conteúdo. Evite linguagem inadequada, excessivamente formal ou informal.</td>
-                    <td class="score">0</td>
-                </tr>
-                <tr>
-                    <td>Estrutura</td>
-                    <td>O conteúdo deve ter uma organização lógica, com introdução, desenvolvimento e conclusão claros. Evite saltos de lógica ou falta de sequência.</td>
-                    <td class="score">0</td>
-                </tr>
-                <tr>
-                    <td>Erros de português</td>
-                    <td>Verifique a gramática, ortografia, pontuação e uso adequado da língua. Erros frequentes ou graves reduzem a credibilidade do conteúdo.</td>
-                    <td class="score">0</td>
-                </tr>
-                <tr>
-                    <td>Chamada para ação</td>
-                    <td>O conteúdo deve conter uma chamada para ação clara e direta, incentivando o público a tomar uma decisão ou ação específica.</td>
-                    <td class="score">0</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Categoria</th>
+                <th>Clareza</th>
+                <th>Aderência ao Briefing</th>
+                <th>Tom</th>
+                <th>Estrutura</th>
+                <th>Erros de Português</th>
+                <th>Chamada para ação</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>Clareza</td>
+                <td colspan="6">O conteúdo é compreensível e direto ao ponto. Avalie de 1 a 5, onde 1 é muito confuso e 5 é muito claro.</td>
+                <td class="nota">4</td>
+            </tr>
+            <tr>
+                <td>Aderência ao Briefing</td>
+                <td colspan="6">O conteúdo seguiu todas as diretrizes e requisitos estabelecidos no briefing. Avalie de 1 a 5, onde 1 é não seguiu nenhuma diretriz e 5 é seguiu todas as diretrizes.</td>
+                <td class="nota">5</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td colspan="6">O tom do conteúdo é apropriado e consistente com a marca. Avalie de 1 a 5, onde 1 é muito inadequado e 5 é muito adequado.</td>
+                <td class="nota">4</td>
+            </tr>
+            <tr>
+                <td>Estrutura</td>
+                <td colspan="6">O conteúdo está organizado de forma lógica e fácil de seguir. Avalie de 1 a 5, onde 1 é muito desorganizado e 5 é muito organizado.</td>
+                <td class="nota">4</td>
+            </tr>
+            <tr>
+                <td>Erros de Português</td>
+                <td colspan="6">O conteúdo está livre de erros gramaticais, ortográficos e de pontuação. Avalie de 1 a 5, onde 1 é muito cheio de erros e 5 é sem erros.</td>
+                <td class="nota">3</td>
+            </tr>
+            <tr>
+                <td>Chamada para ação</td>
+                <td colspan="6">A chamada para ação é clara e motivacional. Avalie de 1 a 5, onde 1 é muito fraca e 5 é muito forte.</td>
+                <td class="nota">4</td>
+            </tr>
         </table>
-        <p>Após avaliar todos os critérios, some as pontuações para obter a pontuação total. Um conteúdo ideal teria 60 pontos (10 em cada critério). A pontuação final deve ser comunicada ao cliente com base nos critérios estabelecidos.</p>
-    </main>
-    <footer>
-        <p>© 2023 - Critérios de Avaliação de Conteúdo. Todos os direitos reservados.</p>
-    </footer>
+        <div class="call-to-action">
+            <p>Após avaliar cada categoria, calcule a média das notas para obter a nota final do conteúdo. Utilize essa nota para tomar decisões sobre a aprovação ou revisão do conteúdo.</p>
+        </div>
+    </div>
 </body>
 </html>
