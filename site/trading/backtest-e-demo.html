@@ -2,75 +2,62 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Testando Estratégias de Investimento</title>
+    <title>Testando Estratégias Financeiras: Backtest, Forward Test e Conta Demo</title>
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
+        .container {
             width: 80%;
             max-width: 800px;
             padding: 20px;
             background-color: #282828;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
         }
         h1, h2, p {
             margin: 10px 0;
         }
         h1 {
-            color: #00bfff;
+            font-size: 2.5em;
         }
         h2 {
-            color: #34e1e1;
+            font-size: 1.8em;
         }
         p {
-            line-height: 1.6;
+            font-size: 1.2em;
         }
-        .content-section {
+        .section {
             margin-bottom: 20px;
-        }
-        .highlight {
-            background-color: #1a1a1a;
-            padding: 10px;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Testando Estratégias de Investimento</h1>
-        <p>Entenda Backtest, Forward Test e Conta Demo</p>
-    </header>
-    <main>
-        <section class="content-section">
-            <h2>Backtest: Testando a Estratégia no Passado</h2>
-            <p>O backtest é um processo que permite testar uma estratégia de investimento usando dados históricos. É uma ferramenta essencial para avaliar a viabilidade de uma estratégia antes de colocá-la em prática. Durante um backtest, você pode analisar métricas como a taxa de acerto, payoff e drawdown, que ajudam a entender o desempenho potencial da estratégia.</p>
-        </section>
-        <section class="content-section">
-            <h2>Forward Test: Testando a Estratégia no Presente</h2>
-            <p>O forward test é uma extensão do backtest, mas em vez de usar dados históricos, ele utiliza dados futuros para avaliar a estratégia. Isso permite verificar se a estratégia continua a funcionar bem com novos dados. Como no backtest, o forward test também inclui a análise de métricas como a taxa de acerto, payoff e drawdown, além de acompanhar o drawdown para entender os momentos de maior perda.</p>
-        </section>
-        <section class="content-section">
-            <h2>Conta Demo: Testando Sem Arriscar Dinheiro</h2>
-            <p>A conta demo é uma ferramenta crucial para testar estratégias de investimento sem colocar dinheiro real em risco. Ela oferece um ambiente virtual onde você pode aplicar a estratégia, fazer operações e analisar os resultados. A conta demo permite criar e documentar um diário de operações, onde você pode registrar todas as decisões e resultados, ajudando a identificar os pontos fortes e fracos da estratégia.</p>
-        </section>
-        <section class="content-section">
-            <h2>Critérios para Passar da Demo para o Real</h2>
-            <p>Para passar da conta demo para a operação real, é importante seguir alguns critérios. Primeiramente, avalie se a estratégia tem consistentemente bom desempenho em backtest e forward test. Em seguida, verifique se o diário de operações mostra uma execução consistente e se as decisões foram tomadas com base em regras claras. Finalmente, considere a diversificação das estratégias e o risco gerenciado para minimizar perdas potenciais.</p>
-            <p>Aviso importante: A conta demo não garante resultados reais. É essencial entender que o mercado pode apresentar comportamentos diferentes, e a estratégia deve ser testada em uma variedade de condições para garantir sua viabilidade.</p>
-        </section>
-    </main>
+    <div class="container">
+        <h1>Testando Estratégias Financeiras: Backtest, Forward Test e Conta Demo</h1>
+        <p>O backtest é uma ferramenta essencial para avaliar a eficácia de uma estratégia de investimento antes de aplicá-la em mercados reais. Com ele, é possível simular as operações e obter insights valiosos sobre o desempenho potencial da estratégia. Para realizar um backtest, é necessário ter uma conta demo, onde você pode testar e aprimorar a estratégia sem arriscar dinheiro real.</p>
+        <h2>Backtest</h2>
+        <p>O backtest envolve a simulação de operações passadas com base em um conjunto de dados históricos. Isso permite avaliar a rentabilidade e o risco associado à estratégia, bem como identificar possíveis problemas ou melhorias. As métricas mais comuns incluem a taxa de acerto, o payoff e o drawdown.</p>
+        <h2>Forward Test</h2>
+        <p>Um forward test é a próxima etapa após o backtest. É um teste em tempo real, onde a estratégia é aplicada a um conjunto de dados futuros. Isso ajuda a verificar se a estratégia continua a funcionar bem após a simulação histórica. O forward test é crucial para validar a robustez da estratégia antes de ser aplicada em uma conta real.</p>
+        <h2>Conta Demo</h2>
+        <p>Uma conta demo é uma ferramenta essencial para testar estratégias de investimento sem risco financeiro. Ela oferece uma interface de negociação virtual onde você pode aplicar a estratégia simulada, com recursos semelhantes aos de uma conta real. Dados históricos, ferramentas de análise e operações virtuais permitem que você pratique e aperfeiçoe a estratégia antes de aplicá-la em mercados reais.</p>
+        <p>Para passar da conta demo para a conta real, é importante considerar alguns critérios:</p>
+        <ul>
+            <li>Desempenho consistente no backtest e forward test</li>
+            <li>Compreensão profunda dos riscos envolvidos</li>
+            <li>Capacidade de gerenciamento de capital</li>
+            <li>Teste de operações de negociação</li>
+            <li>Atualização regular da estratégia com base em novos dados</li>
+        </ul>
+        <p>É importante notar que a conta demo não garante resultados reais, pois fatores como o emocional envolvido nas decisões e a volatilidade do mercado podem afetar o desempenho na conta real. No entanto, a conta demo é uma excelente ferramenta para preparar-se para o mundo real da negociação financeira.</p>
+    </div>
 </body>
 </html>
