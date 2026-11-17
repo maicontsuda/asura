@@ -1,84 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Guia Completo</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin-top: 50px;
+        header {
+            background-color: #1e1e1e;
             padding: 20px;
-            background-color: rgba(33, 33, 33, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #1e1e1e;
+            border-left: 4px solid #880000;
+        }
+        h2 {
+            color: #ffffff;
+            margin-top: 0;
         }
         p {
-            font-size: 1.1em;
             line-height: 1.6;
-            margin-bottom: 15px;
         }
-        ol, ul {
-            margin-bottom: 20px;
-        }
-        ol li, ul li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
+        ul {
+            padding-left: 20px;
         }
         .checklist {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff4081;
+        }
+        .checklist h3 {
+            color: #ffffff;
         }
         .checklist li {
             margin-bottom: 10px;
         }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
+        .template {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #00ff99;
+        }
+        .template h3 {
+            color: #ffffff;
+        }
+        .template table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .template th, .template td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: center;
+        }
+        .template th {
+            background-color: #333;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            color: #ff4081;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Plano de Trade - Guia Completo</h1>
-        <p>Este guia é um modelo de plano de trade para auxiliar na tomada de decisões financeiras. É importante lembrar que este conteúdo é apenas educacional e não deve ser considerado uma recomendação para ações específicas. Sempre consulte um profissional financeiro antes de tomar decisões importantes.</p>
+    <header>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
+    </header>
+    <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos do seu trade. Isso pode incluir lucros desejados, tempo de trade, risco tolerado, entre outros. Objetivos claros ajudarão a manter sua estratégia focada e consistente.</p>
+        <p>Defina claramente os objetivos de curto, médio e longo prazo. Por exemplo: obter uma taxa de sucesso de 60%, manter um risco/recompensa de 1:3, e atingir um ROI anual de 20%.</p>
+    </section>
+    <section>
         <h2>Mercados</h2>
-        <p>Identifique os mercados em que você deseja operar. Considere fatores como liquidez, volatilidade e oportunidades de lucro. Realize uma pesquisa cuidadosa sobre os mercados escolhidos antes de começar a trade.</p>
-        <h2>Horários</h2>
-        <p>Especifique os horários de trade. Alguns investidores preferem trade durante o dia, enquanto outros preferem operar durante a noite ou nos finais de semana. O horário pode afetar a estratégia de trade.</p>
-        <h2>Regras de Entrada/Saída</h2>
-        <p>Estabeleça regras claras para a entrada e saída do mercado. Isso pode incluir sinais técnicos, notícias econômicas, patamares de preço, entre outros. Ter regras definidas ajudará a minimizar a emoção na tomada de decisões.</p>
+        <p>Selecione os mercados em que você planeja operar. Exemplo: ações (ETFs), forex (EUR/USD), criptomoedas (BTC/USD), ou futuros (Índice S&P 500).</p>
+    </section>
+    <section>
+        < <h2>Horários de Operação</h2>
+        <p>Defina os horários em que você será ativo no mercado. Exemplo: operações de 8h às 15h no horário de Brasília, com pausas para análise e gestão de risco.</p>
+    </section>
+    <section>
+        <h2>Regras de Entrada e Saída</h2>
+        <p>
+            <ul>
+                <li>Entrada: Só abra posições quando os indicadores de confirmação estiverem alinhados com o plano.</li>
+                <li>Saída: Use limites de stop loss e take profit definidos, mantendo sempre o risco/recompensa adequado.</li>
+                <li>Reentrada: Só reentra após uma análise completa da situação do mercado.</li>
+            </ul>
+        </p>
+    </section>
+    <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina um limite de perdas diário. Isso ajuda a manter o risco sob controle e evitar perdas excessivas em um único dia. Certifique-se de que este limite seja alinhado com seus objetivos financeiros e risco tolerado.</p>
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ol class="checklist">
-            <li>Verifique se as regras de trade foram seguidas.</li>
-            <li>Confira as condições do mercado.</li>
-            <li>Analise os sinais técnicos e fundamentais.</li>
-            <li>Verifique o horário de trade.</li>
-            <li>Confirme o volume de negociação.</li>
-        </ol>
-        <h2>Template de Registro</h2>
-        <p>Crie um template de registro para documentar suas operações. Isso pode incluir datas, horários, preços de entrada/saída, lucros/perdas, observações, entre outros. Documentação detalhada ajudará a melhorar a consistência e a aprendizagem.</p>
-    </div>
-    <div class="footer">
-        <p>Conteúdo educacional. Não é uma recomendação financeira. Consulte um profissional financeiro antes de tomar decisões. © 2023 Plano de Trade.</p>
-    </div>
+        <p>Defina o limite máximo de perdas que você aceita por dia. Exemplo: 2% do capital total, com reabertura do dia apenas se o limite não for ultrapassado.</p>
+    </section>
+    <section class="checklist">
+        <h3>Checklist Antes de Abrir Operação</h3>
+        <ul>
+            <li>Verificar condições do mercado (volatilidade, tendências, notícias).</li>
+            <li>Confirmar que o plano está alinhado com a estratégia escolhida.</li>
+            <li>Confirmar que os níveis de stop loss e take profit estão definidos.</li>
+            <li>Verificar se há espaço para operar sem interferir em outros posicionamentos.</li>
+            <li>Confirmar que o capital disponível não ultrapassa o limite de risco diário.</li>
+        </ul>
+    </section>
+    <section class="template">
+        <h3>Template de Registro</h3>
+        <table>
+            <tr>
+                <th>Data/Hora</th>
+                <th>Ativo</th>
+                <th>Entrada</th>
+                <th>Stop Loss</th>
+                <th>Take Profit</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>09/05/2025 10:00</td>
+                <td>EUR/USD</td>
+                <td>1.0850</td>
+                <td>1.0780</td>
+                <td>1.0920</td>
+                <td>+120 pips</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>⚠️ Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem risco de perda.</p>
+    </footer>
 </body>
 </html>
