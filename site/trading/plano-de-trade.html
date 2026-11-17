@@ -1,118 +1,114 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo Completo</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #282828;
-            width: 80%;
-            max-width: 800px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .checklist {
-            margin-top: 20px;
-        }
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Plano de Trade: Modelo Completo</h1>
-        <p>Este plano de trade é um guia para ajudá-lo a organizar e estruturar suas operações de trade. Lembre-se sempre que este conteúdo é educacional e não deve ser considerado uma recomendação de investimento.</p>
-
-        <h2>Objetivos</h2>
-        <p>Defina seus objetivos claros e mensuráveis. Por exemplo, "obter retornos médios de 8% ao mês" ou "alcançar uma posição de 5% no mercado de ações em 6 meses".</p>
-
-        <h2>Mercados</h2>
-        <p>Identifique os mercados onde você deseja operar. Por exemplo, "ações de tecnologia", "futuros de commodities", "moedas emergentes".</p>
-
-        <h2>Horários</h2>
-        <p>Estabeleça horários específicos para a análise e execução de operações. Por exemplo, "analisar e executar operações de 9h às 17h de segunda a sexta-feira".</p>
-
-        <h2>Regras de Entrada/Saída</h2>
-        <p>Defina as condições específicas para entrar e sair de uma posição. Por exemplo, "entrar quando o preço atinge uma resistência técnica" e "sair quando o preço atinge uma suporte técnico".</p>
-
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Estabeleça um limite máximo de perdas que você está disposto a aceitar por dia. Por exemplo, "não permitir perdas superiores a 2% do capital diário".</p>
-
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul class="checklist">
-            <li>Verificar o cenário macroeconômico e geopolítico</li>
-            <li>Analizar os indicadores técnicos do mercado</li>
-            <li>Verificar as notícias relevantes do setor</li>
-            <li>Revisar as regras de entrada/saída</li>
-            <li>Confirmar o limite de perdas diário</li>
-        </ul>
-
-        <h2>Template de Registro</h2>
-        <p>Manter um registro detalhado de suas operações para análise posterior. Por exemplo:</p>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Ativo</th>
-                <th>Tipo de Operação</th>
-                <th>Preço de Entrada</th>
-                <th>Preço de Saída</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>01/01/2023</td>
-                <td>14:00</td>
-                <td>IBM</td>
-                <td>Compra</td>
-                <td>$150,00</td>
-                <td>$155,00</td>
-                <td>+3%</td>
-            </tr>
-            <tr>
-                <td>02/01/2023</td>
-                <td>15:30</td>
-                <td>GOOGL</td>
-                <td>Venda</td>
-                <td>$2700,00</td>
-                <td>$2650,00</td>
-                <td>-2%</td>
-            </tr>
-        </table>
-    </div>
-    <div class="footer">
-        <p>Conteúdo educacional. Não é recomendação de investimento. Consulte sempre um profissional financeiro antes de tomar decisões.</p>
-    </div>
-</body>
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Plano de Trade - Modelo para Operações</title>  
+    <style>  
+        body {  
+            background-color: #1e1e1e;  
+            color: #ffffff;  
+            font-family: Arial, sans-serif;  
+            padding: 20px;  
+            line-height: 1.6;  
+        }  
+        h1, h2 {  
+            color: #ff9900;  
+        }  
+        section {  
+            margin-bottom: 40px;  
+        }  
+        .container {  
+            max-width: 1000px;  
+            margin: 0 auto;  
+        }  
+        .checklist, .registro {  
+            background-color: #2d2d2d;  
+            padding: 20px;  
+            border-radius: 8px;  
+        }  
+        .checklist ul, .registro table {  
+            margin: 0;  
+            padding: 0;  
+        }  
+        .checklist ul li {  
+            padding: 8px 0;  
+            border-bottom: 1px solid #444;  
+        }  
+        .registro table, .registro th, .registro td {  
+            border: 1px solid #444;  
+            padding: 10px;  
+        }  
+        .registro th {  
+            background-color: #333;  
+        }  
+        .aviso {  
+            background-color: #2d2d2d;  
+            padding: 15px;  
+            border: 1px solid #ff9900;  
+            margin-top: 30px;  
+            font-weight: bold;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Plano de Trade - Modelo para Operações</h1>  
+        <section>  
+            <h2>Objetivos</h2>  
+            <p>Estabelecer metas claras de crescimento de capital, gestão de risco e consistência nas operações. Priorizar a preservação do capital e a busca por rentabilidade a longo prazo, com foco em estratégias com margem de segurança. Alcançar uma taxa de sucesso mínima de 60% em operações de longo prazo e 40% em operações de curto prazo.</p>  
+        </section>  
+        <section>  
+            <h2>Mercados</h2>  
+            <p>Operar em mercados de alta liquidez como forex (EUR/USD, USD/JPY, GBP/USD) e commodities (ouro, petróleo). Priorizar ativos com volatilidade moderada e tendências definidas. Evitar mercados de baixa liquidez ou com forte volatilidade imprevisível.</p>  
+        </section>  
+        <section>  
+            <h2>Horários</h2>  
+            <p>Operar entre 08:00 e 16:00 (horário de Brasília), com pausas para análise de tendências e ajustes de parâmetros. Evitar operações em horários de alta volatilidade (ex: 15:00-16:00) a menos que haja confirmação de padrões técnicos.</p>  
+        </section>  
+        <section>  
+            <h2>Regras de Entrada/Saída</h2>  
+            <p>Entrada apenas com confirmação de breakout de níveis de suporte/resistência ou formação de padrões técnicos (ex: triangulação, reversão de velas). Saída automática após 5% de ganho ou 3% de perda. Usar stop-loss fixo em 2% do capital e take-profit em 5% para operações de curto prazo.</p>  
+        </section>  
+        <section>  
+            <h2>Limite de Perdas Diárias</h2>  
+            <p>Não ultrapassar 2% do capital em operações diárias. Se houver perda acumulada de 3%, interromper as operações do dia e revisar a estratégia. Manter um fundo de segurança de 10% do capital para situações de mercado adverso.</p>  
+        </section>  
+        <section class="checklist">  
+            <h2>Checklist Antes de Abrir Operação</h2>  
+            <ul>  
+                <li>Verificar condições de mercado (tendência, volatilidade, notícias)</li>  
+                <li>Confirmar alinhamento com o plano de trade e estratégias definidas</li>  
+                <li>Avaliar risco em relação ao capital disponível</li>  
+                <li>Confirmar que o sinal técnico é consistente com os níveis de suporte/resistência</li>  
+                <li>Verificar a disponibilidade de ordens de stop-loss e take-profit</li>  
+            </ul>  
+        </section>  
+        <section class="registro">  
+            <h2>Template de Registro</h2>  
+            <table>  
+                <tr>  
+                    <th>Data</th>  
+                    <th>Símbolo</th>  
+                    <th>Hora de Entrada</th>  
+                    <th>Preço de Entrada</th>  
+                    <th>Stop-Loss</th>  
+                    <th>Take-Profit</th>  
+                    <th>Resultado</th>  
+                </tr>  
+                <tr>  
+                    <td>01/05/2024</td>  
+                    <td>EUR/USD</td>  
+                    <td>09:15</td>  
+                    <td>1.0850</td>  
+                    <td>1.0830</td>  
+                    <td>1.0870</td>  
+                    <td>GANHO 2%</td>  
+                </tr>  
+            </table>  
+        </section>  
+        <div class="aviso">  
+            <p><strong>AVISO:</strong> O conteúdo aqui apresentado é educacional e não constitui recomendação de investimento. As estratégias e métodos descritos não garantem resultados e devem ser testados em ambiente de prática antes de serem aplicados em operações reais. O investimento em mercados financeiros envolve riscos e pode resultar em perdas.</p>  
+        </div>  
+    </div>  
+</body>  
 </html>
