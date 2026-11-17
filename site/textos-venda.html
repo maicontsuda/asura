@@ -1,77 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Modelos de Venda para Pequenos Negócios</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            padding: 20px;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
-            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .modelo {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 5px solid #ff6b6b;
+            background-color: #2a2a2a;
+        }
+        .modelo h2 {
+            color: #ff6b6b;
+            margin-top: 0;
+        }
+        .modelo .hook {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .modelo .corpo {
+            font-size: 1em;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
-        .header {
-            font-size: 24px;
+        .modelo .acao {
+            font-size: 1.2em;
             font-weight: bold;
-            margin-bottom: 10px;
+            color: #ff6b6b;
         }
-        .content {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 10px;
+        .modelo .acao a {
+            color: #ff6b6b;
+            text-decoration: none;
         }
-        .call-to-action {
-            font-weight: bold;
-            color: #007BFF;
-        }
-        .footer {
-            font-size: 14px;
-            color: #8a8a8a;
+        .modelo .acao a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">Café da manhã irresistível</div>
-        <div class="content">Chegou a hora de acordar com um café que vai te deixar acordado! Nossas refeições rápidas são feitas com ingredientes frescos e saborosos. Experimente já e sinta a diferença!</div>
-        <div class="call-to-action">Vem probar!</div>
-    </div>
-    <div class="container">
-        <div class="header">Doces delícias para todos os momentos</div>
-        <div class="content">Oferecemos doces para todos os momentos do dia. Que tal começar o dia com um bolinho refrescante ou terminar o dia com um delicioso bolo? Faça seu pedido agora e surpreenda-se com os sabores!</div>
-        <div class="call-to-action">Experimente nossos doces!</div>
-    </div>
-    <div class="container">
-        <div class="header">Flores para todos os dias</div>
-        <div class="content">Oferecemos uma variedade de flores para todos os momentos. Que tal presentear alguém especial com um lindo arranjo? Faça seu pedido agora e surpreenda com nossas flores frescas e bonitas!</div>
-        <div class="call-to-action">Faça seu pedido agora!</div>
-    </div>
-    <div class="container">
-        <div class="header">Barba perfeita a cada dia</div>
-        <div class="content">Cuide da sua barba com os produtos profissionais que nós oferecemos. Que tal testar nossos produtos e ver a diferença? Faça seu pedido agora e inicie o seu dia com uma barba perfeita!</div>
-        <div class="call-to-action">Cuide da sua barba com a gente!</div>
-    </div>
-    <div class="container">
-        <div class="header">Petshop com amor por animais</div>
-        <div class="content">Oferecemos cuidados completos para os seus pets. Que tal trazer o seu pet para um banho e tosa especial? Faça o seu agendamento agora e garanta o melhor cuidado para o seu animal de estimação!</div>
-        <div class="call-to-action">Agende já seu pet!</div>
-    </div>
-    <div class="container">
-        <div class="header">Roupas para todos os estilos</div>
-        <div class="content">Oferecemos uma variedade de roupas para todos os gostos e estilos. Que tal experimentar nossas peças e ver a diferença? Faça seu pedido agora e surpreenda-se com nossas roupas de qualidade!</div>
-        <div class="call-to-action">Experimente nossas roupas!</div>
+        <div class="modelo">
+            <h2>Cafeteria</h2>
+            <div class="hook">Você está cansado de cafés chatos e com sabor desapontador?</div>
+            <div class="corpo">Na nossa cafeteria, cada xícara é preparada com torra artesanal e café 100% arábico, garantindo um sabor intenso e uma experiência única. Combinamos o frescor de leite especial com o equilíbrio perfeito de açúcar, criando um delicioso equilíbrio de sabores. Venha experimentar nossa especialidade e descubra por que os nossos clientes repetem a visita.</div>
+            <div class="acao">Experimente agora e descubra a diferença! <a href="#">Pedir café</a></div>
+        </div>
+        <div class="modelo">
+            <h2>Doceria</h2>
+            <div class="hook">Que tal um doce que faz o coração bater mais forte?</div>
+            <div class="corpo">Nossa doceria oferece sabores que desafiam o paladar, com receitas tradicionais adaptadas para atender a todos os gostos. Do bombom clássico ao bolo de chocolate com cobertura de brigadeiro, cada peça é feita com ingredientes premium e cuidado especial. Aproveite o sabor da tradição e da inovação em um ambiente acolhedor.</div>
+            <div class="acao">Venha saborear nossos delícias! <a href="#">Pedir doces</a></div>
+        </div>
+        <div class="modelo">
+            <<br><br>
+            <h2>Floricultura</h2>
+            <div class="hook">Que tal uma flor que traz alegria para sua casa?</div>
+            <div class="corpo">Na nossa floricultura, cada arranjo é pensado com carinho para transmitir sentimentos e emoções. Com flores frescas, folhagens exóticas e vasos modernos, criamos combinações que deslumbram os olhos e encantam o coração. Seja para um presente especial ou para decorar seu lar, encontramos a solução perfeita.</div>
+            <div class="acao">Compre agora e receba 10% de desconto! <a href="#">Ver catalogo</a></div>
+        </div>
+        <div class="modelo">
+            <h2>Barbearia</h2>
+            <div class="hook">Você já se perguntou como um corte perfeito pode mudar sua autoestima?</div>
+            <div class="corpo">Na nossa barbearia, cada corte é feito com precisão e cuidado, usando ferramentas de ponta e produtos hipoalergênicos. Nossos barbeiros são especialistas em cortes modernos e clássicos, adaptados ao estilo de cada cliente. Venha sentir a diferença de um serviço que valoriza sua beleza e conforto.</div>
+            <div class="acao">Agende seu corte hoje mesmo! <a href="#">Agendar</a></div>
+        </div>
+        <div class="modelo">
+            <h2>Petshop</h2>
+            <div class="hook">Que tal um pet que brilha com alegria e saúde?</div>
+            <div class="corpo">Na nossa loja, encontramos os melhores produtos para seu peludo, desde ração de alta qualidade até brinquedos que estimulam o desenvolvimento. Com uma equipe especializada em cuidados caninos e felinos, oferecemos consultas gratuitas e orientações para garantir que seu pet viva com conforto e felicidade.</div>
+            <div class="acao">Garanta produtos de qualidade para seu pet! <a href="#">Comprar agora</a></div>
+        </div>
+        <div class="modelo">
+            <h2>Loja de Roupa</h2>
+            <div class="hook">Você já imaginou um estilo que se adapta a qualquer ocasião?</div>
+            <div class="corpo">Na nossa loja, você encontrará roupas modernas e confortáveis, com designs exclusivos que atendem a todos os gostos e necessidades. Do casual ao elegante, nossas peças são feitas com materiais de alta qualidade e cuidadoso detalhamento. Venha descobrir seu estilo com peças que combinam conforto e sofisticação.</div>
+            <div class="acao">Visite nossa loja e descubra seu estilo! <a href="#">Ir para loja</a></div>
+        </div>
     </div>
 </body>
 </html>
