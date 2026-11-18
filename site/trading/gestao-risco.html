@@ -5,11 +5,11 @@
     <title>Gestão de Risco em Operações</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            margin: 0;
-            padding: 0;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
@@ -26,10 +26,12 @@
             margin: auto;
         }
         h2 {
-            color: #ff9800;
+            color: #ffffff;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
         }
         p {
-            line-height: 1.6;
+            font-size: 1.1em;
         }
         ul {
             margin-left: 20px;
@@ -37,18 +39,17 @@
         .aviso {
             background-color: #1e1e1e;
             padding: 15px;
-            margin-top: 20px;
             border-left: 5px solid #ff9800;
+            margin: 30px 0;
         }
         .aviso p {
-            font-style: italic;
+            font-weight: bold;
         }
-        a {
-            color: #ff9800;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
         }
     </style>
 </head>
@@ -58,26 +59,28 @@
     </header>
     <section>
         <h2>Risco por Operação</h2>
-        <p>Em operações de investimento ou trading, é essencial limitar o risco de cada operação a um pequeno percentual do capital total. Geralmente, o risco por operação deve ser entre 1% e 2% do capital. Isso significa que, em caso de perda, você não compromete uma parte significativa de seus recursos, permitindo que continue operando com segurança.</p>
-        
+        <p>Em operações de investimento ou trading, é fundamental limitar o risco por operação a um pequeno percentual do seu capital total, geralmente entre 1% e 2%. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1% ou 2% do seu capital, independentemente do resultado. Essa prática ajuda a proteger o capital e a evitar perdas significativas em operações que podem não dar certo.</p>
+
         <h2>Stop Loss e Take Profit</h2>
-        <p>Os stop loss e take profit são ferramentas essenciais para controlar o risco e definir objetivos de lucro. O stop loss é um limite de perda que, ao ser atingido, encerra a operação para evitar perdas maiores. O take profit, por sua vez, define o ponto em que a operação é encerrada para capturar o lucro esperado.</p>
-        
+        <p>Os stop loss e take profit são ferramentas essenciais para controlar o risco e definir objetivos de lucro. O stop loss é um limite de stop que limita as perdas em uma operação, enquanto o take profit é o ponto onde você decide encerrar a operação com lucro. Esses limites devem ser definidos com base na análise técnica e no risco aceitável, garantindo que você não fique exposto a perdas excessivas.</p>
+
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco aceitável por operação, garantindo que mesmo em operações que não saiam conforme o planejado, você não comprometa seu capital.</p>
-        
+        <p>O position sizing refere-se ao tamanho da posição que você entra em uma operação. Ele deve ser calculado com base no risco por operação e no nível de stop loss. Por exemplo, se você tem um capital de R$100.000 e o risco por operação é de 1%, você deve limitar a perda a R$1.000. Com isso, o tamanho da posição será ajustado para que, em caso de stop loss, você não ultrapasse esse limite.</p>
+
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a relação entre o risco assumido e o potencial de lucro. Uma relação equilibrada, como 1:3 ou 1:5, indica que você está assumindo um risco menor para obter um retorno maior, aumentando as chances de sucesso a longo prazo.</p>
-        
+        <p>O risco/retorno é a relação entre o risco de uma operação e o potencial lucro. É importante que essa relação seja favorável, geralmente acima de 1:2. Isso significa que, para cada unidade de risco, você deve ter pelo menos duas unidades de potencial lucro. Isso aumenta as chances de sucesso a longo prazo.</p>
+
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda acumulada em relação ao valor máximo atingido em um período. Um drawdown controlado é sinal de gestão de risco eficiente, enquanto um drawdown elevado pode indicar falta de disciplina ou falta de planejamento.</p>
-        
+        <p>O drawdown é a perda máxima acumulada em um período de tempo. Ele é um indicador importante para medir a volatilidade e a capacidade de recuperação de uma estratégia. Um drawdown alto pode indicar riscos elevados, e é essencial monitorar esse indicador para avaliar a saúde financeira da sua operação.</p>
+
         <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por não seguir regras de gestão de risco. Fazem operações com risco excessivo, não definem stop loss, ou entram em posições muito grandes. Além disso, a falta de disciplina emocional e a tentação de recuperação de perdas levam a decisões irracionais.</p>
-        
-        <div class="aviso">
-            <p><strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações de mercado envolvem riscos e podem resultar em perdas.</p>
-        </div>
+        <p>Muitas pessoas perdem dinheiro em operações por não seguir regras de gestão de risco. Fazem operações com risco excessivo, não definem stop loss e take profit, ou não respeitam o position sizing. Além disso, a falta de disciplina e o emocionalismo podem levar a decisões irracionais. É essencial ter uma estratégia clara e seguir a disciplina para aumentar as chances de sucesso.</p>
     </section>
+    <div class="aviso">
+        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento ou trading. As estratégias apresentadas não garantem lucro e devem ser testadas em ambientes de prática antes de serem aplicadas com capital real.</p>
+    </div>
+    <footer>
+        &copy; 2025 - Educação em Finanças
+    </footer>
 </body>
 </html>
