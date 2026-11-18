@@ -9,6 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
+            line-height: 1.6;
         }
 
         header {
@@ -19,82 +20,102 @@
 
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
             color: #ffffff;
         }
 
-        .container {
+        section {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
+            border-bottom: 1px solid #333;
         }
 
-        .case-study {
+        section:last-child {
+            border-bottom: none;
+        }
+
+        .case {
             background-color: #1e1e1e;
-            border: 1px solid #333;
+            padding: 20px;
             border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 40px;
         }
 
-        .case-study h2 {
+        .case h2 {
             color: #ffffff;
             margin-top: 0;
         }
 
-        .case-study p {
-            color: #cccccc;
-            line-height: 1.6;
+        .case p {
+            margin: 10px 0;
         }
 
-        .case-study .highlight {
-            color: #ff6b6b;
-            font-weight: bold;
-        }
-
-        .case-study .result {
-            color: #4caf50;
-            font-weight: bold;
+        .case .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #2a2a2a;
+            border-radius: 6px;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
             font-size: 0.9em;
+            color: #aaa;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
+        <p>Exemplos reais de clientes que contrataram o Asura</p>
     </header>
-    <div class="container">
-        <div class="case-study">
-            <h2>Loja de Plantas - Renovação de Site</h2>
-            <p>Um cliente que administra uma loja de plantas e jardinagem buscou modernizar seu site para atrair mais clientes e facilitar a compra. O objetivo era melhorar a experiência do usuário e exibir com clareza seus produtos, além de incluir uma seção de dicas de jardinagem.</p>
-            <p><span class="highlight">Pedido:</span> Reestruturação do site, inclusão de galeria de plantas, seção de dicas, e integração de um carrinho de compras funcional.</p>
-            <p><span class="highlight">Entregue:</span> Um site responsivo com design moderno, galeria de alta qualidade, seção de dicas interativa e funcionalidade de carrinho de compras integrada ao sistema de pagamento.</p>
-            <p><span class="result">Resultado Esperado:</span> Aumento de 40% nas vendas em 3 meses e melhor engajamento do público.</p>
+
+    <section>
+        <div class="case">
+            <h2>Loja de Plantas - Jardim da Natureza</h2>
+            <p><strong> Pedido:</strong> A loja de plantas desejava um site moderno, com foco em qualidade e sustentabilidade, que fosse capaz de expor seus produtos de forma visualmente atraente e informativa.</p>
+            <p><strong>Entregue:</strong> Foi desenvolvido um site com design minimalista, usando tons de verde e tons terrosos. Cada produto tem uma imagem de alta qualidade, descrição detalhada e opção de compra rápida.</p>
+            <div class="result">
+                <p><strong>Resultado Esperado:</strong> Aumento de 30% nas vendas em 3 meses após o lançamento do site.</p>
+            </div>
         </div>
-        <div class="case-study">
-            <h2>Doceria Artesanal - Rebranding e E-commerce</h2>
-            <p>Uma doceria artesanal local buscou expandir sua marca para além do mercado local. O principal objetivo era rebranding com uma identidade visual mais moderna, além de criar um e-commerce para vendas online.</p>
-            <p><span class="highlight">Pedido:</span> Rebranding da marca, desenvolvimento de uma loja virtual com catálogo de produtos, e sistema de pedidos online.</p>
-            <p><,span class="highlight">Entregue:</span> Um site com identidade visual alinhada à marca, catálogo interativo com imagens e descrições dos produtos, e sistema de pedidos integrado com pagamento seguro.</p>
-            <p><span class="result">Resultado Esperado:</span> Expansão de 30% no número de clientes e aumento de 25% nas vendas online em 6 meses.</p>
+    </section>
+
+    <section>
+        <div class="case">
+            <h2>Doceria Artesanal - Doce do Sol</h2>
+            <p><strong> Pedido:</strong> A doceria queria um site que destacasse a origem artesanal dos seus produtos, com um toque de autenticidade e calor humano.</p>
+            <p><strong>Entregue:</strong> Um site com design quente e aconchegante, com imagens de produtos em processo de preparação e clientes satisfeitos. Também foi incluído um menu interativo e um sistema de agendamento de pedidos.</p>
+            <div class="result">
+                <p><strong>Resultado Esperado:</strong> Aumento de 40% nas vendas online e maior reconhecimento da marca na região.</p>
+            </div>
         </div>
-        <div class="case-study">
-            <h2>Estúdio de Tatuagem - Portfólio Online</h2>
-            <p>Um estúdio de tatuagem local queria exibir seu portfólio de forma profissional e atrair novos clientes online. O foco era destacar o trabalho do artista e facilitar a agendamento de serviços.</p>
-            <p><span class="highlight">Pedido:</span> Desenvolvimento de um portfólio online com galeria de tatuagens, seção de serviços, e sistema de agendamento online.</p>
-            <p><span class="highlight">Entregue:</span> Um site com galeria de alta qualidade, descrição dos serviços, e sistema de agendamento integrado com calendário de disponibilidade.</p>
-            <p><span class="result">Resultado Esperado:</span> Aumento de 20% nas consultas e maior visibilidade da marca em redes sociais.</p>
+    </section>
+
+    <section>
+        <div class="case">
+            <h2>Estúdio de Tatuagem - Arte da Pele</h2>
+            <p><strong> Pedido:</strong> O estúdio de tatuagem precisava de um site que fosse profissional, com portfólio de obras, informações sobre o processo de tatuar e contato direto com o artista.</p>
+            <p><strong>Entregue:</strong> Um site com portfólio em alta resolução, descrição de cada tatuagem, informações sobre o processo e agendamento online. O design é clean e moderno, com tons de preto e branco com destaque em tons de azul.</p>
+            <div class="result">
+                <p><strong>Resultado Esperado:</strong> Aumento de 25% nas agendamentos e maior visibilidade do estúdio na região.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
     <footer>
-        <p>Exemplos de estudos de caso. Todos os direitos reservados.</p>
+        <p>Exemplos reais de clientes que contrataram o Asura</p>
+        <p><a href="#">Voltar ao topo</a></p>
     </footer>
 </body>
 </html>
