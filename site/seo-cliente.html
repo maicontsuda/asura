@@ -7,54 +7,50 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         h1 {
-            margin: 0;
+            color: #ffffff;
             font-size: 2.5em;
-            color: #00ffcc;
         }
         section {
-            padding: 30px;
+            padding: 30px 20px;
             max-width: 1000px;
-            margin: auto;
-            border: 1px solid #2e2e2e;
-            border-radius: 8px;
-            background-color: #1e1e1e;
+            margin: 0 auto;
         }
         h2 {
-            color: #00ffcc;
-            margin-top: 40px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         li {
-            background-color: #2e2e2e;
+            background-color: #1e1e1e;
             margin: 10px 0;
             padding: 15px;
-            border-radius: 6px;
+            border-radius: 8px;
         }
-        .aviso {
-            background-color: #2e2e2e;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 30px;
+        .danger {
+            background-color: #2e0000;
+            color: #fff;
         }
-        .aviso h3 {
-            color: #00ffcc;
+        .success {
+            background-color: #008000;
+            color: #fff;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
             font-size: 0.9em;
             color: #888;
         }
@@ -66,53 +62,37 @@
     </header>
     <section>
         <h2>1. Title Tag</h2>
-        <ul>
-            <li>Use um título único e relevante para cada página, com no máximo 60 caracteres.</li>
-            <li>Inclua palavras-chave principais e o nome da marca, se relevante.</li>
-            <li>Evite repetir títulos entre páginas.</li>
-        </ul>
+        <p>O título da página é a primeira informação que o motor de busca exibe. Deve ser curto, direto e incluir palavras-chave relevantes. Exemplo: “Curso de Marketing Digital – Aprenda Agora”.</p>
+
         <h2>2. Meta Description</h2>
-        <ul>
-            <li>Crie uma descrição única, atraente e com no máximo 160 caracteres.</li>
-            <li>Use palavras-chave naturais e inclua uma chamada para a ação.</li>
-            <li>Evite duplicar descrições entre páginas.</li>
-        </ul>
+        <p>A meta description é um resumo do conteúdo da página. Ela deve ser única, entre 155 e 160 caracteres, e conter palavras-chave. Exemplo: “Descubra como dominar o marketing digital com um curso prático e focado em resultados.”</p>
+
         <h2>3. Headings (H1, H2, H3)</h2>
-        <ul>
-            <li>Use H1 apenas uma vez por página e para o título principal.</li>
-            <li>Use H2 e H3 para estruturar o conteúdo e melhorar a legibilidade.</li>
-            <li>Evite usar H1 em subseções para não confundir o motor de busca.</li>
-        </ul>
+        <p>Use headings para estruturar o conteúdo. O H1 deve ser único e representar o tema da página. Use H2 e H3 para seções e subseções. Evite repetir os mesmos headings.</p>
+
         <h2>4. Texto Alternativo (Alt Text)</h2>
-        <ul>
-            <li>Descrição clara e concisa para cada imagem, com no máximo 155 caracteres.</li>
-            <li>Inclua palavras-chave relevantes, mas sem repetição excessiva.</li>
-            <li>Evite escrever apenas palavras-chave, o texto deve ser descritivo.</li>
-        </ul>
+        <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso ajuda o motor de busca a entender o conteúdo da imagem e também beneficia os usuários que usam leitores de tela.</p>
+
         <h2>5. Velocidade de Carregamento</h2>
-        <ul>
-            <li>Optimize imagens com ferramentas como TinyPNG ou ImageOptim.</li>
-            <li>Use formatos de imagem modernos como WebP ou AVIF.</li>
-            <li>Reduza o uso de scripts e recursos externos que podem lentificar a página.</li>
-        </ul>
+        <p>Uma landing page lenta pode afastar os visitantes. Use ferramentas como Google PageSpeed Insights para otimizar imagens, scripts e recursos. Reduza o uso de elementos externos e escolha um bom plano de hospedagem.</p>
+
         <h2>6. Links Internos</h2>
-        <ul>
-            <li>Conecte páginas relevantes da mesma site para melhorar a navegação e o SEO.</li>
-            <li>Use links internos para artigos, produtos ou páginas de contato.</li>
-            <li>Evite links quebrados ou que não levam a conteúdo relevante.</li>
-        </ul>
-        <div class="aviso">
-            <h3>O que NÃO fazer</h3>
+        <p>Links internos ajudam a navegação e melhoram a experiência do usuário. Conecte páginas relevantes da sua própria site, como sobre, contato ou outras landing pages.</p>
+
+        <h2>7. O Que Não Fazer</h2>
+        <p>
             <ul>
-                <li>Não use palavras-chave de forma excessiva ou forçada (keyword stuffing).</li>
-                <li>Não inclua links quebrados ou não relevantes.</li>
-                <li>Não use meta tags duplicadas ou com conteúdo repetido.</li>
-                <li>Não ignore a experiência do usuário, pois o SEO também considera fatores de UX.</li>
+                <li class="danger">Evite palavras-chave forçadas e conteúdo duplicado.</li>
+                <li class="danger">Não use meta tags duplicadas ou irrelevantes.</li>
+                <li class="danger">Evite links quebrados e páginas que não contribuem para o objetivo da landing page.</li>
+                <li class="danger">Não abuse de pop-ups e elementos que distraem o usuário.</li>
+                <li class="danger">Não escreva em português com erros gramaticais ou ortográficos.</li>
+                <li class="danger">Evite conteúdo que não se alinha ao objetivo da landing page.</li>
             </ul>
-        </div>
+        </p>
     </section>
     <footer>
-        &copy; 2025 Checklist de SEO - Direitos Reservados
+        &copy; 2025 Checklist SEO Básico. Todos os direitos reservados.
     </footer>
 </body>
 </html>
