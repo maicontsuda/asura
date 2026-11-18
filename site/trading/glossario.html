@@ -1,139 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Glossário de Termos de Mercado</title>
     <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 1.6;
-            font-size: 1em;
-        }
-        .termo {
-            font-weight: bold;
-            color: #00ffcc;
-        }
-        .definicao {
-            margin-top: 5px;
-        }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-            color: #888;
-        }
+      body {
+        background-color: #121212;
+        color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        max-width: 800px;
+        margin: 50px auto;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        color: #4CAF50;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      .glossario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .termo {
+        background-color: #333;
+        margin: 10px 0;
+        padding: 20px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .termo h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      .termo p {
+        margin: 0;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Glossário de Termos de Mercado</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Pip</h2>
-            <p><span class="termo">Pip</span> é a unidade mínima de movimento de um par de moedas. Por exemplo, se o USD/JPY move de 110,50 para 110,51, houve um movimento de 1 pip.</p>
-        </section>
-        <section>
-            <h2>Spread</h2>
-            <p><span class="termo">Spread</span> é a diferença entre o preço de compra e venda de um ativo. Exemplo: se o EUR/USD está a 1,1200 (compra) e 1,1202 (venda), o spread é de 2 pips.</p>
-        </section>
-        <section>
-            <h2>Lote</h2>
-            <p><span class="termo">Lote</span> é a unidade padrão de negociação. Um lote padrão é 100.000 unidades da moeda base. Um mini-lote é 10.000 e um micro-lote é 1.000.</p>
-        </section>
-        <section>
-            <h2>Alavancagem</h2>
-            <p><span class="termo">Alavancagem</span> é o uso de capital alheio para aumentar o potencial de ganho. Por exemplo, uma alavancagem de 1:100 significa que você pode controlar $100.000 com $1.000.</p>
-        </section>
-        <section>
-            <h2>Margem</h2>
-            <p><span class="termo">Margem</span> é o capital depositado em conta para operar com alavancagem. A margem é calculada com base na alavancagem e no valor do lote.</p>
-        </section>
-        <section>
-            <h2>Stop</h2>
-            <p><span class="termo">Stop</span> é uma ordem que limita as perdas ao definir um nível de venda automática. Exemplo: se o preço cai a 1,1200, o stop é acionado e a posição é fechada.</p>
-        </section>
-        <section>
-            <h2>Take Profit</h2>
-            <p><span class="termo">Take Profit</span> é uma ordem que limita os ganhos ao definir um nível de venda automática. Exemplo: se o preço sobe a 1,1300, o take profit é acionado e a posição é fechada.</p>
-        </section>
-        <section>
-            <h2>Long</h2>
-            <p><span class="termo">Long</span> é uma posição comprada, ou seja, o investidor espera que o preço suba para vender com lucro.</p>
-        </section>
-        <section>
-            <h2>Short</h2>
-            <p><span class="termo">Short</span> é uma posição vendida, ou seja, o investidor espera que o preço desça para comprar com lucro.</p>
-        </section>
-        <section>
-            <h2>Gap</h2>
-            <p><span class="termo">Gap</span> é uma lacuna no gráfico de preços, onde o preço salta de um nível para outro sem fechar no anterior. Pode ocorrer em mercados fechados.</p>
-        </section>
-        <section>
-            <h2>Volume</h2>
-            <p><span class="termo">Volume</span> é a quantidade de negociações em um determinado período. É usado para medir a liquidez e a força de uma tendência.</p>
-        </section>
-        <section>
-            <h2>RSI</h2>
-            <p><span class="termo">RSI</span> (Relatório de Força Relativa) é um indicador que mede a força e a velocidade de um ativo. Valores acima de 70 indicam sobrecompra, abaixo de 30 indicam sobrecarência.</p>
-        </section>
-        <section>
-            <h2>MACD</h2>
-            <p><span class="termo">MACD</span> (Moving Average Convergence Divergence) é um indicador que compara médias móveis para identificar tendências e sinais de reversão.</p>
-        </section>
-        <section>
-            <h2>Suporte</h2>
-            <p><span class="termo">Suporte</span> é um nível de preço onde o ativo tende a encontrar resistência para cair. É um nível de compra esperada.</p>
-        </section>
-        <section>
-            <h2>Resistência</h2>
-            <p><span class="termo">Resistência</span> é um nível de preço onde o ativo tende a encontrar resistência para subir. É um nível de venda esperada.</p>
-        </section>
-        <section>
-            <h2>Drawdown</h2>
-            <p><span class="termo">Drawdown</span> é a perda máxima acumulada de um investimento em relação ao seu valor inicial. É um indicador de risco.</p>
-        </section>
-        <section>
-            <h2>Equity</h2>
-            <p><span class="termo">Equity</span> é o valor do patrimônio líquido de uma conta de trading. É calculado como o saldo mais os ganhos menos as perdas.</p>
-        </section>
-        <section>
-            <h2>Margem Livre</h2>
-            <p><span class="termo">Margem Livre</span> é a parte do saldo da conta que pode ser usada para operar. É calculada com base na alavancagem e no valor do lote.</p>
-        </section>
-        <section>
-            <h2>Ordem Limitada</h2>
-            <p><span class="termo">Ordem Limitada</span> é uma ordem que é executada apenas se o preço atingir um nível específico. Exemplo: comprar a 1,1200.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Glossário de Mercado - Todos os direitos reservados.
-    </footer>
-</body>
+  </head>
+  <body>
+    <h1>Glossário de Termos de Mercado</h1>
+    <div class="glossario">
+      <div class="termo">
+        <h2>PIP</h2>
+        <p>Pequena unidade de medida do movimento de uma moeda. Por exemplo, em um par de moedas como o EUR/USD, um pip equivale a 0,0001.</p>
+      </div>
+      <div class="termo">
+        <h2>Spread</h2>
+        <p>Diferença entre o preço de compra (bid) e o preço de venda (ask) de um ativo. Também pode se referir à diferença entre o preço de compra e o preço de venda.</p>
+      </div>
+      <div class="termo">
+        <h2>Lote</h2>
+        <p>Unidade de negociação padrão em mercados financeiros, geralmente 100.000 unidades da moeda de menor valor.</p>
+      </div>
+      <div class="termo">
+        <h2>Alavancagem</h2>
+        <p>Mecanismo que permite que os traders operem com um montante maior de dinheiro do que o que eles realmente possuem em suas contas.</p>
+      </div>
+      <div class="termo">
+        <h2>Margem</h2>
+        <p>Depósito necessário para realizar uma operação de trading. É usada para garantir que o trader possa cumprir com suas obrigações financeiras.</p>
+      </div>
+      <div class="termo">
+        <h2>Stop</h2>
+        <p>Ordem de venda ou compra que se ativa automaticamente em um preço definido, limitando as perdas ou garantindo lucros.</p>
+      </div>
+      <div class="termo">
+        <h2>Take Profit</h2>
+        <p>Ordem de venda ou compra que se ativa automaticamente em um preço definido, limitando as perdas ou garantindo lucros.</p>
+      </div>
+      <div class="termo">
+        <h2>Long</h2>
+        <p>Posição de compra de uma moeda ou ativo, esperando que o preço suba para obter lucro.</p>
+      </div>
+      <div class="termo">
+        <h2>Short</h2>
+        <p>Posição de venda de uma moeda ou ativo, esperando que o preço caia para obter lucro.</p>
+      </div>
+      <div class="termo">
+        <h2>Gap</h2>
+        <p>Diferença no preço entre as sessões de negociação, onde o preço saltou sem ser negociado em um determinado intervalo de tempo.</p>
+      </div>
+      <div class="termo">
+        <h2>Volume</h2>
+        <p>Quantidade total de um ativo negociado em um determinado período de tempo.</p>
+      </div>
+      <div class="termo">
+        <h2>RSI</h2>
+        <p>Índice de Força Relativa, indicador técnico usado para identificar possíveis pontos de entrada e saída nos mercados financeiros.</p>
+      </div>
+      <div class="termo">
+        <h2>MACD</h2>
+        <p>Índice de Diferença de Média, indicador técnico usado para identificar possíveis pontos de entrada e saída nos mercados financeiros.</p>
+      </div>
+      <div class="termo">
+        <h2>Suporte</h2>
+        <p>Nível de preço abaixo do qual a moeda ou ativo não deve cair, geralmente formado por um grande volume de compra.</p>
+      </div>
+      <div class="termo">
+        <h2>Resistência</h2>
+        <p>Nível de preço acima do qual a moeda ou ativo não deve subir, geralmente formado por um grande volume de venda.</p>
+      </div>
+      <div class="termo">
+        <h2>Drawdown</h2>
+        <p>Perda máxima relativa de valor de uma posição ou de um ativo em um período de tempo, expresso como um percentual.</p>
+      </div>
+      <div class="termo">
+        <h2>Equity</h2>
+        <p>Patrimônio líquido do trader, que é a soma do valor das posições abertas, menos as posições vendidas, mais o saldo da conta.</p>
+      </div>
+      <div class="termo">
+        <h2>Margem Livre</h2>
+        <p>Quantia de dinheiro disponível na conta do trader para novas operações, calculada subtraindo a margem utilizada de seu saldo total.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Limitada</h2>
+        <p>Ordem de venda ou compra que se ativa apenas se o preço do ativo atingir um determinado nível.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Stop-Limit</h2>
+        <p>Combinação de ordem de stop e ordem limitada. A ordem de stop é ativada quando o preço atinge um determinado nível, então a ordem limitada é enviada.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Stop-Loss</h2>
+        <p>Ordem de venda de um ativo que se ativa automaticamente em um preço definido, limitando as perdas.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Take-Profit</h2>
+        <p>Ordem de compra de um ativo que se ativa automaticamente em um preço definido, limitando as perdas ou garantindo lucros.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Take-Profit Limit</h2>
+        <p>Combinação de ordem de take-profit e ordem limitada. A ordem de take-profit é ativada quando o preço atinge um determinado nível, então a ordem limitada é enviada.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Market</h2>
+        <p>Ordem de venda ou compra que é executada imediatamente no preço atual.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Limit</h2>
+        <p>Ordem de venda ou compra que se ativa apenas se o preço do ativo atingir um determinado nível.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Stop-Limit</h2>
+        <p>Combinação de ordem de stop e ordem limitada. A ordem de stop é ativada quando o preço atinge um determinado nível, então a ordem limitada é enviada.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Stop-Loss</h2>
+        <p>Ordem de venda de um ativo que se ativa automaticamente em um preço definido, limitando as perdas.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Take-Profit</h2>
+        <p>Ordem de compra de um ativo que se ativa automaticamente em um preço definido, limitando as perdas ou garantindo lucros.</p>
+      </div>
+      <div class="termo">
+        <h2>Ordem Take-Profit Limit</h2>
+        <p>Combinação de ordem de take-profit e ordem limitada. A ordem de take-profit é ativada quando o preço atinge um determinado nível, então a ordem limitada é enviada.</p>
+      </div>
+    </div>
+  </body>
 </html>
