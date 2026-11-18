@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contato — fale com o Asura</title>
+<meta name="description" content="Fale com o Asura: tire dúvidas, peça orçamento ou deixe seu contato. Resposta em até 24 horas.">
+<link rel="alternate" type="application/rss+xml" title="RSS do Asura" href="/feed.xml">
+<style>
+  :root{color-scheme:dark}*{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:#0b0f14;color:#e6edf3}
+  header{padding:40px 20px 0;max-width:760px;margin:0 auto}
+  h1{font-size:28px;margin:0 0 8px}p.sub{color:#8b98a5;margin:0 0 24px}
+  main{max-width:760px;margin:0 auto;padding:0 20px 60px}
+  form{background:#131a22;border:1px solid #1f2a35;border-radius:14px;padding:22px;display:grid;gap:14px}
+  label{font-size:13px;color:#9aa7b4;display:grid;gap:6px}
+  input,textarea{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid #1f2a35;background:#0f1620;color:#e6edf3}
+  textarea{min-height:120px;resize:vertical}
+  button{font:inherit;padding:12px 18px;border-radius:10px;border:1px solid #1b3a25;background:#0f1b14;color:#3fb950;font-weight:600;cursor:pointer}
+  button:disabled{opacity:.5}
+  .ok{color:#3fb950}.err{color:#f85149}.hint{font-size:12px;color:#5d6b78}
+  a{color:#9ad0ff}
+</style>
+</head>
+<body>
+<header>
+  <h1>Fale com o Asura</h1>
+  <p class="sub">Deixe seu contato e o que você precisa. Respondo em até 24 horas. · <a href="/">Início</a> · <a href="/blog/">Blog</a></p>
+</header>
+<main>
+  <form id="f">
+    <label>Seu nome<input id="nome" required maxlength="80" placeholder="Como te chamo?"></label>
+    <label>Seu e-mail ou Telegram<input id="email" required maxlength="120" placeholder="voce@email.com ou @usuario"></label>
+    <label>O que você precisa?<textarea id="mensagem" required maxlength="1500" placeholder="Descreva o serviço, prazo e objetivo."></textarea></label>
+    <input id="website" type="text" style="display:none" tabindex="-1" autocomplete="off">
+    <button id="b" type="submit">Enviar mensagem</button>
+    <div id="status" class="hint"></div>
+    <div class="hint">Ao enviar, você concorda em ser contatado sobre o seu pedido. Sem spam.</div>
+  </form>
+</main>
+<script>
+const API = "https://desktop-35km21a.tailfa6226.ts.net";
+const $ = (id) => document.getElementById(id);
+$("f").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  $("b").disabled = true;
+  $("status").textContent = "Enviando…";
+  try {
+    const r = await fetch(API + "/api/lead-capture", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nome: $("nome").value, email: $("email").value, mensagem: $("mensagem").value, website: $("website").value }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && j.ok) {
+      $("status").textContent = "✅ Mensagem enviada! Você receberá contato em até 24 horas.";
+      $("status").className = "ok";
+      $("f").reset();
+    } else {
+      $("status").textContent = "Não consegui enviar agora. Tente novamente ou escreva para contato@asura-site.onrender.com.";
+      $("status").className = "err";
+    }
+  } catch {
+    $("status").textContent = "Sem conexão com o Asura neste momento. Tente mais tarde.";
+    $("status").className = "err";
+  } finally { $("b").disabled = false; }
+});
+</script>
+</body>
+</html>
