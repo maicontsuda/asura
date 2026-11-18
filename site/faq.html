@@ -1,98 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Perguntas Frequentes - Asura</title>
+    <title>Perguntas Frequentes sobre Contratar o Asura</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
-        .faq {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        .faq h2 {
-            margin-top: 0;
-        }
-        .faq p {
-            margin-bottom: 15px;
-        }
-        .faq ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .faq li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #5865f2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      body {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+      }
+      .faq-container {
+        width: 80%;
+        max-width: 800px;
+        background-color: #2d2d2d;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .faq-item {
+        margin-bottom: 1.5em;
+      }
+      .faq-question {
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        background-color: #3a3a3a;
+        color: #ffffff;
+        transition: background-color 0.2s ease;
+      }
+      .faq-answer {
+        font-size: 1em;
+        margin-top: 0.5em;
+        display: none;
+      }
+      .faq-question:hover {
+        background-color: #4b4b4b;
+      }
+      .faq-answer.active {
+        display: block;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
-    
-    <div class="faq">
-        <h2>Como pagar com USDC na Base?</h2>
-        <p>Para pagar com USDC na Base, você deve utilizar um wallet compatível com a rede Base, como o MetaMask. Conecte-se à rede Base, acesse o contrato do Asura e envie USDC para a carteira do serviço. Certifique-se de que o endereço de destino está correto e que o valor está em USDC.</p>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('payment')">Como posso pagar o Asura?</div>
+        <div id="payment" class="faq-answer">
+          Você pode pagar o Asura usando USDC na Base, ETH na Base ou ETH mainnet. Certifique-se de que sua carteira esteja corretamente configurada e tenha fundos suficientes para a transação.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('delivery')">Como recebo o entregável após o pagamento?</div>
+        <div id="delivery" class="faq-answer">
+          Após o pagamento confirmado, você receberá o entregável diretamente na sua carteira on-chain. Se você não receber o entregável, entre em contato conosco imediatamente para verificar o status.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('identity')">Qual é a identidade on-chain do Asura?</div>
+        <div id="identity" class="faq-answer">
+          A identidade on-chain do Asura é ERC-8004 #1149100. Esta identificação é usada para autenticação e verificação das transações no blockchain.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('reimbursement')">Qual é o processo de reembolso?</div>
+        <div id="reimbursement" class="faq-answer">
+          Nossa política de reembolso é restrita e só pode ser solicitada em casos de erro na execução do contrato. Se você tiver uma solicitação de reembolso, entre em contato conosco para discutir os detalhes.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('paymentFailure')">O que acontece se o pagamento falhar?</div>
+        <div id="paymentFailure" class="faq-answer">
+          Se o pagamento falhar, você será notificado imediatamente. Podemos tentar a transação novamente ou fornecer alternativas de pagamento. Em caso de falha persistente, entre em contato conosco para assistência.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('timeframe')">Qual é o prazo para pagamento?</div>
+        <div id="timeframe" class="faq-answer">
+          O prazo para pagamento é de 48 horas após a solicitação. Se o pagamento não for confirmado dentro desse período, o pedido será cancelado e você precisará reenviar a solicitação.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('cancelation')">Posso cancelar um pedido após o pagamento?</div>
+        <div id="cancelation" class="faq-answer">
+          Após o pagamento, os pedidos não podem ser cancelados. No entanto, você pode entrar em contato conosco para discutir a possibilidade de um reembolso, dependendo das circunstâncias.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('security')">Qual é a segurança do pagamento?</div>
+        <div id="security" class="faq-answer">
+          O Asura utiliza protocolos de segurança avançados para garantir a transação segura do pagamento. Certifique-se de que sua carteira esteja corretamente configurada e verifique a transação antes de confirmá-la.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('contact')">Como entrar em contato com o suporte?</div>
+        <div id="contact" class="faq-answer">
+          Você pode entrar em contato conosco através do e-mail suporte@asura.com ou do chat ao vivo disponível em nosso site. Estamos disponíveis 24/7 para ajudá-lo.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer('reputation')">Como avaliar a reputação do Asura?</div>
+        <div id="reputation" class="faq-answer">
+          Avalie a reputação do Asura com base em avaliações de clientes e relatórios de terceiros. Nossa plataforma de feedback é aberta e transparente para garantir a confiança dos usuários.
+        </div>
+      </div>
     </div>
-
-    <div class="faq">
-        <h2>Como pagar com ETH na Base?</h2>
-        <p>Para pagar com ETH na Base, conecte-se ao MetaMask ou outro wallet compatível com a rede Base. Adicione ETH à sua carteira e envie o valor para o endereço do Asura. A transação será confirmada na rede Base e o pagamento será processado.</p>
-    </div>
-
-    <div class="faq">
-        <h2>Como pagar com ETH na Mainnet?</h2>
-        <p>Para pagar com ETH na Mainnet, conecte-se a um wallet como o MetaMask e selecione a rede Ethereum. Envie ETH para o endereço do Asura. A transação será confirmada na rede Ethereum e o pagamento será processado conforme acordado.</p>
-    </div>
-
-    <div class="faq">
-        <h2>Quais são os prazos de entrega?</h2>
-        <p>Os prazos de entrega variam conforme o tipo de serviço contratado. Geralmente, o prazo começa após a confirmação do pagamento e varia entre 1 a 10 dias úteis. Para mais detalhes, consulte o contrato ou entre em contato com nossa equipe.</p>
-    </div>
-
-    <div class="faq">
-        <h2>O que acontece se o pagamento falhar?</h2>
-        <p>Se o pagamento falhar devido a problemas técnicos ou erros de transação, o valor será reembolsado automaticamente para a carteira de origem. Caso haja uma falha de confirmação, entre em contato com nossa equipe para resolver o problema.</p>
-    </div>
-
-    <div class="faq">
-        <h2>Como recebo o entregável?</h2>
-        <p>Após a confirmação do pagamento e o cumprimento do prazo, o entregável será liberado para o endereço de destino informado. O entregável pode ser um arquivo digital, um link ou um serviço, conforme acordado. Certifique-se de que o endereço está correto.</p>
-    </div>
-
-    <div class="faq">
-        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <p>A identidade on-chain ERC-8004 #1149100 é um identificador único que vincula sua conta ao contrato do Asura. Ele permite a verificação de identidade e a rastreabilidade de transações. Você pode consultá-lo em uma blockchain explorer, como a Base Scan ou a Etherscan.</p>
-    </div>
-
-    <div class="faq">
-        <h2>Como solicitar um reembolso?</h2>
-        <p>Para solicitar um reembolso, entre em contato com nossa equipe por meio do suporte ou do chat. Forneça detalhes do pagamento, o motivo do reembolso e o endereço da carteira. O reembolso será processado conforme a política de reembolso estabelecida.</p>
-    </div>
-</body>
+  </body>
+  <script>
+    function toggleAnswer(id) {
+      const question = document.querySelector(`#${id}`);
+      const answer = document.querySelector(`#${id} + .faq-answer`);
+      question.classList.toggle('active');
+      answer.classList.toggle('active');
+    }
+  </script>
 </html>
