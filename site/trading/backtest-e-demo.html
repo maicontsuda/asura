@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Como Testar uma Estratégia de Trading</title>
+    <title>Como Testar Estratégias de Investimento Sem Arriscar Dinheiro</title>
     <style>
         body {
             margin: 0;
@@ -17,106 +17,102 @@
             text-align: center;
         }
         h1 {
-            margin: 0;
             color: #ffffff;
         }
-        main {
+        section {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
+            margin: 20px auto;
+            max-width: 900px;
         }
         h2 {
             color: #ffffff;
-            border-bottom: 2px solid #555;
+            border-bottom: 2px solid #4caf50;
             padding-bottom: 5px;
         }
         p {
-            margin: 10px 0;
+            font-size: 16px;
         }
         ul {
-            margin: 10px 0;
-            padding-left: 20px;
+            margin-left: 20px;
         }
         .metricas {
-            background-color: #222;
+            background-color: #1e1e1e;
             padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
+            border-left: 4px solid #4caf50;
         }
         .metricas h3 {
-            margin: 0 0 10px 0;
             color: #ffffff;
         }
         .metricas p {
             margin: 5px 0;
         }
-        .diario {
-            background-color: #222;
+        .aviso {
+            background-color: #2e2e2e;
             padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
+            border-left: 4px solid #f44336;
+            margin: 30px auto;
+            max-width: 800px;
         }
-        .diario h3 {
-            margin: 0 0 10px 0;
+        .aviso h3 {
             color: #ffffff;
         }
-        .diario ul {
-            padding-left: 20px;
-        }
-        .aviso {
-            background-color: #222;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-style: italic;
+        .aviso p {
+            margin: 10px 0;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 14px;
             color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Como Testar uma Estratégia de Trading: Backtest, Forward Test e Conta Demo</h1>
+        <h1>Como Testar Estratégias de Investimento Sem Arriscar Dinheiro</h1>
     </header>
-    <main>
-        <p>Antes de investir dinheiro real, é fundamental testar uma estratégia de trading de forma rigorosa. O processo de validação inclui a utilização de <strong>backtest</strong>, <strong>forward test</strong> e <strong>conta demo</strong>, que permitem analisar o desempenho sem arriscar capital. Este guia explica como fazer isso de maneira eficiente e segura.</p>
-
-        <h2>Backtest: Simulação do Passado</h2>
-        <p>O <strong>backtest</strong> é a análise de uma estratégia em dados históricos para verificar se ela seria lucrativa se tivesse sido aplicada no passado. Isso permite identificar padrões e avaliar métricas como <strong>taxa de acerto</strong>, <strong>payoff</strong> e <strong>drawdown</strong>. É essencial usar dados reais e não "optimizar" a estratégia apenas para o passado.</p>
-
+    <section>
+        <h2>Backtest, Forward Test e Conta Demo: O que são e como funcionam</h2>
+        <p>Antes de investir com dinheiro real, é essencial testar suas estratégias de forma rigorosa. Isso pode ser feito por meio de <strong>backtest</strong>, <strong>forward test</strong> e <strong>conta demo</strong>. Cada uma dessas técnicas tem um propósito específico e ajuda a minimizar riscos.</p>
+        <p>O <strong>backtest</strong> é a análise de uma estratégia usando dados históricos. Ele simula como a estratégia teria se comportado no passado, permitindo que você avalie métricas como <strong>taxa de acerto</strong>, <strong>payoff</strong> e <strong>drawdown</strong>.</p>
+        <p>O <strong>forward test</strong> é a aplicação da estratégia em tempo real, mas com o uso de uma <strong>conta demo</strong>, ou seja, com dinheiro virtual. Isso permite que você observe como a estratégia se comporta em condições reais, sem arriscar capital.</p>
+        <p>Uma <strong>conta demo</strong> é uma ferramenta poderosa, mas ela não garante resultados no mercado real. É importante compreender que a performance em uma conta demo pode não refletir exatamente o que acontecerá com dinheiro real devido a fatores como liquidez, spreads e variações de mercado.</p>
+    </section>
+    <section>
+        <h2>Métricas para Avaliar uma Estratégia</h2>
         <div class="metricas">
-            <h3>Métricas Chave</h3>
-            <p><strong>Taxa de Acerto:</strong> A porcentagem de operações que resultaram em ganho.</p>
-            <p><strong>Payoff:</strong> A relação entre ganho e perda média.</p>
-            <p><strong>Drawdown:</strong> A queda máxima percentual do capital em um período.</p>
+            <h3>Taxa de Acerto</h3>
+            <p>Quantas operações da estratégia resultaram em lucro. É um indicador básico, mas não é o único que define a qualidade da estratégia.</p>
+            <h3>Payoff</h3>
+            <p>Relação entre lucro e perda. Indica a eficiência da estratégia em termos de recompensa por risco assumido.</p>
+            <h3>Drawdown</h3>
+            <p>Quanto o capital da estratégia caiu em períodos de perda. É um indicador de risco importante.</p>
         </div>
-
-        <h2>Forward Test: Teste no Tempo Real</h2>
-        <p>Após o backtest, o <strong>forward test</strong> envolve a aplicação da estratégia em condições reais, mas sem usar dinheiro. Nesse estágio, a estratégia é monitorada para observar como se comporta em mercados dinâmicos e sob pressão psicológica.</p>
-
+    </section>
+    <section>
         <h2>Diário de Operações</h2>
-        <div class="diario">
-            <h3>Exemplo de Registros</h3>
-            <ul>
-                <li><strong>Data:</strong> 2023-10-05 | <strong>Ativo:</strong> EUR/USD | <strong>Sinal:</strong> Compra</li>
-                <li><strong>Stop Loss:</strong> 1.0800 | <strong>Take Profit:</strong> 1.0950</li>
-                <li><strong>Resultado:</strong> Ganho de 15 pips</li>
-            </ul>
-        </div>
-
-        <h2>Passar da Conta Demo para o Real</h2>
-        <p>Para passar da conta demo para o real, é necessário comprovar consistência de resultados, estabilidade emocional e compreensão do risco. A demo não garante resultado real, pois o ambiente é diferente.</p>
-
-        <div class="aviso">
-            <p>⚠️ A conta demo não garante resultados reais. O mercado financeiro é volátil e envolve riscos. Invista com responsabilidade.</p>
-        </div>
-    </main>
+        <p>Manter um <strong>diário de operações</strong> é essencial para acompanhar o desempenho da estratégia. Nele, você deve registrar cada operação, incluindo data, horário, ativo, direção, stop loss, take profit e resultado. Isso ajuda a identificar padrões e aperfeiçoar a estratégia.</p>
+    </section>
+    <section>
+        <h2>Critérios para Passar da Conta Demo para o Real</h2>
+        <ul>
+            <li>Resultado consistente em pelo menos 3 meses de operação;</li>
+            <li>Drawdown máximo inferior a 10%;</li>
+            <li>Taxa de acerto acima de 60%;</li>
+            <li>Payoff acima de 1:2;</li>
+            <li>Conhecimento sólido sobre os fundamentos e a psicologia do trading.</li>
+        </ul>
+    </section>
+    <div class="aviso">
+        <h3>Aviso Importante</h3>
+        <p>A conta demo não garante resultados reais. Mesmo com uma performance positiva em simulações, o mercado real é imprevisível e pode apresentar riscos significativos. Invista com responsabilidade e sempre busque orientação profissional.</p>
+    </div>
     <footer>
-        © 2025 - Guia de Trading Educacional
+        <p>© 2025 - Guia Prático de Teste de Estratégias de Investimento</p>
     </footer>
 </body>
 </html>
