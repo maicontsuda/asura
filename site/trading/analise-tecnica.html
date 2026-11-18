@@ -1,87 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Análise Técnica - Ferramentas de Leitura</title>
+    <title>Análise Técnica em Trading - Ferramentas Básicas</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        h1, h2, p {
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            color: #ffffff;
-        }
-        section {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
+        h1 {
+            font-size: 3rem;
         }
         h2 {
-            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
         p {
-            line-height: 1.6;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
         }
-        .aviso {
-            background-color: #1a1a1a;
-            border: 1px solid #444;
-            padding: 15px;
-            margin: 25px 0;
-            border-radius: 8px;
+        a {
+            color: #007bff;
+            text-decoration: none;
         }
-        .aviso h3 {
-            color: #ff4d4d;
+        a:hover {
+            text-decoration: underline;
         }
-        .aviso p {
-            margin: 10px 0 0 0;
+        .section {
+            margin-bottom: 50px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
-            margin-top: 40px;
+        .section h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Análise Técnica: Ferramentas de Leitura</h1>
-    </header>
-    <section>
-        <p>A análise técnica é uma abordagem utilizada por traders e investidores para avaliar o desempenho de ativos financeiros com base em gráficos e indicadores técnicos. Ela se baseia na ideia de que os preços das ações e outros ativos seguem padrões e tendências que podem ser identificados e analisados para tomar decisões de compra e venda. Importante destacar que essas ferramentas são <strong>fermentas de leitura</strong>, não previsões garantidas.</p>
-
-        <h2>Tendência, Suporte e Resistência</h2>
-        <p>A tendência é a direção geral em que o preço está se movendo, podendo ser ascendente, descendente ou lateral. Os níveis de suporte e resistência são pontos de referência onde o preço tende a encontrar resistência ou suporte, influenciando a continuidade ou reversão da tendência.</p>
-
+    <div class="container">
+        <h1>Análise Técnica em Trading: Ferramentas Básicas</h1>
+        <p class="section">
+            A análise técnica é uma ferramenta utilizada pelos traders para prever o movimento dos preços de ativos financeiros, como ações, commodities, criptomoedas e moedas. É baseada na análise de gráficos e padrões históricos de preços. É importante ressaltar que a análise técnica não é uma garantia de sucesso e deve ser usada em conjunto com estratégias e decisões informadas.
+        </p>
+        <h2>Tendência</h2>
+        <p>
+            A tendência é a direção geral do mercado, que pode ser ascendente, descendente ou lateral. Ela é identificada através de linhas de tendência e padrões de formação de preços. O reconhecimento da tendência ajuda a definir direções de investimento.
+        </p>
+        <h2>Suporte e Resistência</h2>
+        <p>
+            Suporte e resistência são níveis onde o preço tende a encontrar dificuldades para avançar ou recuar. O suporte é um nível onde o preço tende a encontrar resistência para cair, enquanto a resistência é um nível onde o preço tende a encontrar suporte para subir. Estes níveis são importantes para identificar possíveis pontos de entrada e saída.
+        </p>
         <h2>Candlestick</h2>
-        <p>Os gráficos candlestick são uma forma de visualizar as ações de preços ao longo do tempo, mostrando a abertura, fechamento, máximo e mínimo de cada período. Eles ajudam a identificar padrões de comportamento do mercado.</p>
-
+        <p>
+            Os candlesticks são diagramas gráficos que representam o preço de um ativo em um determinado período de tempo. Cada "candle" mostra o preço de abertura, fechamento, máximo e mínimo. Eles fornecem uma visão rápida e visual do mercado e são úteis para identificar padrões e tendências.
+        </p>
         <h2>Médias Móveis</h2>
-        <p>As médias móveis são indicadores que mostram a média dos preços ao longo de um período específico, ajudando a identificar tendências e sinais de reversão.</p>
-
-        <h2>RSI e Volume</h2>
-        <p>O RSI (Índice de Força Relativa) mede a força relativa de um ativo, indicando se está em sobrecompra ou sobreaviso. O volume, por sua vez, mostra a intensidade do movimento de preços, indicando confirmação ou negação de tendências.</p>
-
+        <p>
+            As médias móveis são indicadores que mostram a tendência de preços ao longo do tempo. Elas são calculadas como a média aritmética de um determinado número de preços, sendo atualizados continuamente. As médias móveis ajudam a identificar a direção geral do mercado e a confirmar a tendência.
+        </p>
+        <h2>RSI (Índice de Força Relativa)</h2>
+        <p>
+            O RSI é um indicador de momentum que mede a velocidade e o nível de mudança de preço. Ele varia entre 0 e 100, com valores acima de 70 indicando overbought (comprado demais) e valores abaixo de 30 indicando oversold (vendido demais). Ele ajuda a identificar pontos de entrada e saída.
+        </p>
+        <h2>VOLUME</h2>
+        <p>
+            O volume é a quantidade de ativos negociados em um período de tempo. Ele é uma ferramenta poderosa para confirmar a força de um movimento de preço. Um aumento no volume durante uma tendência de alta pode indicar a força do movimento, enquanto um aumento no volume durante uma tendência de baixa pode indicar fraqueza.
+        </p>
         <h2>Padrões Comuns</h2>
-        <p>Padrões como cabeça e ombros, formações de triangulação e reversão são frequentemente analisados para identificar possíveis mudanças de direção no mercado.</p>
-
-        <div class="aviso">
-            <h3>AVISO LEGAL</h3>
-            <p>Este conteúdo é educacional e não constitui recomendação ou conselho financeiro. As ferramentas de análise técnica não garantem lucro nem evitam perdas. Invista com responsabilidade e procure orientação profissional.</p>
-        </div>
-    </section>
-    <footer>
-        &copy; 2025 - Conteúdo Educacional sobre Análise Técnica
-    </footer>
+        <p>
+            Padrões de candlestick são formas que os preços formam, que podem indicar a direção futura do mercado. Alguns dos padrões mais comuns incluem o Engulfing, Harami, Doji e as figuras de formação de cabeça e ombros. Cada padrão tem suas características únicas e pode ser usado para prever movimentos de preços.
+        </p>
+        <p>
+            Lembre-se, a análise técnica é uma ferramenta educacional e não uma garantia de sucesso. É essencial complementá-la com estratégias de gerenciamento de risco e uma compreensão abrangente do mercado.
+        </p>
+    </div>
 </body>
 </html>
