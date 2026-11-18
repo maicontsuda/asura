@@ -1,103 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Estudos de Caso - Asura</title>
+    <title>Estudos de Caso Asura</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-
-        header {
-            background-color: #1e1e1e;
-            padding: 20px 0;
+        .case-study {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            width: 80%;
+            max-width: 600px;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ffffff;
+        h1 {
+            color: #00bfff;
+            margin-bottom: 20px;
         }
-
-        .container {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .case {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 30px 25px;
-            margin-bottom: 40px;
-        }
-
-        .case h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .case p {
-            margin: 5px 0;
-        }
-
-        .case .client {
-            font-style: italic;
-            color: #bbbbbb;
+        .title {
+            font-size: 24px;
             margin-bottom: 10px;
         }
-
-        .case .result {
-            font-weight: bold;
-            color: #00ffcc;
-            margin-top: 20px;
+        .description {
+            font-size: 16px;
+            margin-bottom: 10px;
         }
-
-        footer {
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer {
             text-align: center;
-            padding: 20px;
-            color: #888;
-            font-size: 0.9em;
+            margin-top: 20px;
+            color: #7f7f7f;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Estudos de Caso - Asura</h1>
-    </header>
-    <div class="container">
-        <div class="case">
-            <h2>Loja de Plantas - Renovação de Site</h2>
-            <p><span class="client">Cliente: Jardim Verde S/A</span></p>
-            <p>O cliente precisava de um site moderno e intuitivo para vender plantas e acessórios de jardinagem. A loja tinha um site antigo e desatualizado que não atraía novos clientes.</p>
-            <p>O pedido envolveu a criação de uma interface responsiva com categorias de plantas, filtros de preços e uma seção de dicas de cultivo. Foi integrado um carrinho de compras e sistema de login para clientes frequentes.</p>
-            <p><span class="result">Resultado esperado: Aumento de 40% nas vendas nos primeiros 3 meses, maior engajamento e experiência do cliente.</span></p>
-        </div>
-
-        <div class="case">
-            <h2>Doceria Artesanal - Rebranding e E-commerce</h2>
-            <p><span class="client">Cliente: Doce da Vovó</span></p>
-            <p>A doceria precisava de uma identidade visual nova e um canal de vendas online para atender clientes em outras cidades. O site antigo era simples, mas não refletia a qualidade e o carinho da marca.</p>
-            <p>O projeto incluiu a criação de um site com fotos de qualidade, descrições detalhadas dos produtos e uma loja virtual integrada. Foi desenvolvido um layout que destacava a personalidade da marca e os ingredientes artesanais.</p>
-            <p><span class="result">Resultado esperado: Expansão para novas regiões e aumento de 50% nas vendas online em 6 meses.</span></p>
-        </div>
-
-        <div class="case">
-            < <h2>Estúdio de Tatuagem - Site de Agendamento</h2>
-            <p><span class="client">Cliente: Tatuagem do Beto</span></p>
-            <p>O estúdio precisava de um site que permitisse agendamento online, exibição de portfólio e contato direto com o artista. O site anterior era apenas um portfólio estático, sem funcionalidades.</p>
-            <p>Foi desenvolvido um site com sistema de agendamento, galeria de tatuagens, informações sobre o processo e um formulário de contato. O design foi moderno e acessível, com foco em experiência do usuário.</p>
-            <p><span class="result">Resultado esperado: Redução de 30% no tempo de agendamento e aumento de 60% na demanda de serviços.</span></p>
-        </div>
+    <div class="case-study">
+        <h1>Estudo de Caso 1</h1>
+        <div class="title">Loja de Plantas</div>
+        <div class="description">A Asura foi contratada para redesenhar o layout do site de uma loja de plantas. O cliente desejava uma interface mais intuitiva e responsiva, além de um design mais moderno e atraente. A Asura entregou um site que não apenas atendeu às expectativas, mas também aumentou a conversão em 30%.</div>
+        <div class="result">O resultado foi um aumento significativo na conversão e na satisfação do cliente.</div>
     </div>
-    <footer>
-        &copy; 2025 Asura - Exemplos de estudos de caso. Todos os direitos reservados.
-    </footer>
+
+    <div class="case-study">
+        <h1>Estudo de Caso 2</h1>
+        <div class="title">Doceria Artesanal</div>
+        <div class="description">Um pequeno negócio de doces artesanais precisava de um site para promover seus produtos. A Asura desenvolveu um site com um design minimalista, que destacava a qualidade dos doces. Além disso, a Asura implementou uma funcionalidade de encomenda online, facilitando a vida dos clientes. O resultado foi um aumento de 25% nas vendas online.</div>
+        <div class="result">A Asura entregou um site que não apenas agradou aos clientes, mas também aumentou as vendas online do negócio.</div>
+    </div>
+
+    <div class="case-study">
+        <h1>Estudo de Caso 3</h1>
+        <div class="title">Estúdio de Tatuagem</div>
+        <div class="description">Um estúdio de tatuagem estava com seu site em desuso e precisava de uma atualização completa. A Asura foi contratada para criar um novo site que não apenas mostrasse o trabalho do estúdio, mas também facilitasse a consulta de preços e agendamento de consultas. O site entregue foi um sucesso, com uma melhor experiência do usuário e uma melhor visualização do trabalho do estúdio. O resultado foi um aumento de 40% nas consultas e agendamentos online.</div>
+        <div class="result">A Asura entregou um site que superou as expectativas do cliente, aumentando significativamente as consultas e agendamentos online.</div>
+    </div>
+
+    <div class="footer">
+        <p>Estes são exemplos fictícios-mas-realistas de estudos de caso. A Asura oferece soluções personalizadas para cada cliente.</p>
+    </div>
 </body>
 </html>
