@@ -5,9 +5,9 @@
     <title>Critérios para Avaliação de Conteúdo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -18,52 +18,38 @@
         }
         h1 {
             margin: 0;
-            font-size: 24px;
+            color: #ffffff;
         }
-        main {
+        section {
             padding: 20px;
-        }
-        h2 {
-            color: #ff9800;
-            margin-bottom: 10px;
         }
         p {
             line-height: 1.6;
-            margin-bottom: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #1e1e1e;
         }
         th, td {
             border: 1px solid #444;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
         }
         th {
             background-color: #2e2e2e;
         }
-        .nota {
+        tr:nth-child(even) {
+            background-color: #222;
+        }
+        .total {
             background-color: #2e2e2e;
+            font-weight: bold;
         }
-        .nota0 {
-            background-color: #ff4d4d;
-        }
-        .nota1 {
-            background-color: #ff9800;
-        }
-        .nota2 {
-            background-color: #ffeb3b;
-        }
-        .nota3 {
-            background, color: #c8e6c9;
-        }
-        .nota4 {
-            background-color: #81d4fa;
-        }
-        .nota5 {
-            background-color: #81d4fa;
+        .media {
+            font-weight: bold;
+            color: #ff9800;
         }
     </style>
 </head>
@@ -71,57 +57,50 @@
     <header>
         <h1>Critérios para Avaliação de Conteúdo</h1>
     </header>
-    <main>
-        <p>Avaliar um conteúdo é essencial para garantir que ele atenda aos objetivos propostos e seja eficaz para o público-alvo. A seguir, apresentamos critérios objetivos que podem ser utilizados para avaliar a qualidade e a adequação de um conteúdo recebido.</p>
+    <section>
+        <p>Avaliar conteúdo é uma etapa essencial para garantir que a mensagem transmitida ao público seja clara, relevante e eficaz. A seguir, apresentamos critérios objetivos que o cliente pode utilizar para avaliar um conteúdo recebido. Esses critérios ajudam a medir a qualidade do material, identificar pontos fortes e áreas de melhoria, garantindo que o conteúdo atenda às expectativas e ao objetivo proposto.</p>
 
-        <h2>Clareza</h2>
-        <p>A clareza do conteúdo refere-se à facilidade com que o leitor compreende a mensagem principal. Um conteúdo claro evita ambiguidades, linguagem confusa e termos técnicos sem explicações. A clareza também inclui a organização das ideias e a coesão entre as partes do texto.</p>
+        <p>Para uma avaliação completa, os critérios abrangem a clareza da comunicação, a aderência ao briefing, o tom adequado, a estrutura organizada, a ausência de erros de português e a presença de uma chamada para ação clara e direcionada. Cada critério é pontuado em uma escala de 0 a 5, e a soma total dos pontos é utilizada para calcular a média final, que indica o desempenho geral do conteúdo.</p>
 
-        <h2>Aderência ao Briefing</h2>
-        <p>O conteúdo deve estar alinhado com os objetivos e diretrizes definidos no briefing. Isso inclui o cumprimento das metas, o alinhamento com o público-alvo, o tom adequado e a inclusão de elementos específicos solicitados. A falta de aderência pode comprometer a eficácia do conteúdo.</p>
-
-        <h2>Tom</h2>
-        <p>O tom do conteúdo define o estilo e o tom de voz que o autor adota. Ele deve ser consistente com o público-alvo e o propósito do conteúdo. Um tom inadequado pode gerar desinteresse, confusão ou até desrespeito com o público.</p>
-
-        <h2>Estrutura</h2>
-        <p>A estrutura do conteúdo refere-se à organização do texto, incluindo introdução, desenvolvimento e conclusão. Um conteúdo bem estruturado facilita a leitura e a compreensão, garantindo que as ideias sejam apresentadas de forma lógica e coesa.</p>
-
-        <h2>Erros de Português</h2>
-        <p>Erros gramaticais, ortográficos ou de pontuação podem comprometer a credibilidade do conteúdo. A gramática e a pontuação corretas são fundamentais para transmitir informações com precisão e profissionalismo.</p>
-
-        <h2>Chamada para a Ação</h2>
-        <p>A chamada para a ação é um elemento essencial para engajar o público. Ela deve ser clara, direta e motivadora, incentivando o leitor a tomar uma ação específica, como visitar um site, assinar um e-mail ou compartilhar o conteúdo.</p>
-
-        <table>
-            <tr>
-                <th>Critério</th>
-                <th>Nota</th>
-            </tr>
-            <tr>
-                <td>Clareza</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td>Aderência ao Briefing</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td>Tom</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td>Estrutura</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td>Erros de Português</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td>Chamada para a Ação</td>
-                <td class="nota"><input type="number" min="0" max="5" value="0" readonly></td>
-            </tr>
-        </table>
-    </main>
+        <p>Essa avaliação não apenas oferece uma visão quantitativa do conteúdo, mas também contribui para a melhoria contínua da qualidade do material produzido. Ao aplicar esses critérios, é possível identificar padrões, reforçar práticas eficazes e corrigir erros recorrentes, garantindo que o conteúdo entregue ao cliente seja sempre de alta qualidade.</p>
+    </section>
+    <table>
+        <tr>
+            <th>Critério</th>
+            <th>Nota (0-5)</th>
+        </tr>
+        <tr>
+            <td>Clareza da comunicação</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Aderência ao briefing</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Tom adequado</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            < <td>Estrutura organizada</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Erros de português</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Chamada para ação clara</td>
+            <td>4</td>
+        </tr>
+        <tr class="total">
+            <td>Total</td>
+            <td>25</td>
+        </tr>
+        <tr class="media">
+            <td>Média Final</td>
+            <td>4,17</td>
+        </tr>
+    </table>
 </body>
 </html>
