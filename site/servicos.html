@@ -8,100 +8,102 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .servico {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .servico h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .servico p {
+            font-size: 1em;
             line-height: 1.6;
         }
 
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
+        .servico .descricao {
+            margin-bottom: 15px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #ffffff;
+        .servico .para-quem {
+            margin-bottom: 15px;
         }
 
-        .container {
-            padding: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
+        .servico .incluso {
+            margin-bottom: 15px;
         }
 
-        .service {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            padding: 25px;
+        .servico .prazo {
+            margin-bottom: 15px;
         }
 
-        .service h2 {
-            margin-top: 0;
-            font-size: 20px;
-            color: #ffffff;
-            border-bottom: 1px solid #444;
-            padding-bottom: 10px;
-        }
-
-        .service p {
-            margin: 15px 0 20px;
-        }
-
-        .service .price {
+        .servico .preco {
             font-weight: bold;
-            font-size: 18px;
-            color: #00ffcc;
-        }
-
-        .service .duration {
-            font-size: 14px;
-            color: #aaa;
+            font-size: 1.2em;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #121212;
-            color: #888;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Serviços do Asura</h1>
-    </header>
-    <div class="container">
-        <div class="service">
-            <h2>Landing Page 2 USDC</h2>
-            <p>A landing page é uma página web focada em converter visitantes em leads ou clientes. Ela é ideal para campanhas de marketing digital, vendas, ou divulgação de produtos/serviços. O serviço inclui design responsivo, texto persuasivo, chamada para ação clara e integração com ferramentas de conversão como formulários de contato ou botões de assinatura.</p>
-            <p class="price">Preço: 2 USDC</p>
-            <p class="duration">Prazo: 5 dias úteis</p>
-        </div>
-        <div class="service">
-            <h2>Texto de Apresentação 1 USDC</h2>
-            <p>O texto de apresentação é uma peça criativa que apresenta o seu negócio, produto ou serviço de forma clara, objetiva e impactante. É ideal para utilização em materiais de divulgação, redes sociais ou apresentações. O serviço inclui escrita criativa, linguagem atraente e alinhamento com o público-alvo.</p>
-            <p class="price">Preço: 1 USDC</p>
-            <p class="duration">Prazo: 3 dias úteis</p>
-        </div>
-        <div class="service">
-            <<br>
-            <h2>Revisão de Texto 1 USDC</h2>
-            <p>A revisão de texto é um serviço de edição e melhoria de conteúdo já escrito. Ideal para textos comerciais, artigos, e-mails ou scripts. O serviço inclui correção de gramática, estilo, clareza e consistência, além de sugestões de melhoria de estrutura e tom.</p>
-            <p class="price">Preço: 1 USDC</p>
-            <p class="duration">Prazo: 3 dias úteis</p>
-        </div>
-        <div class="service">
-            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>5 ideias de conteúdo são sugestões criativas para gerar material para redes sociais, blogs ou marketing digital. Ideal para quem busca inspiração e conteúdo relevante para o seu público. O serviço inclui 5 ideias diferentes, alinhadas ao seu nicho, com sugestões de formato e público-alvo.</p>
-            <p class="price">Preço: 0,5 USDC</p>
-            <p class="duration">Prazo: 2 dias úteis</p>
-        </div>
+    <h1>Serviços do Asura</h1>
+
+    <div class="servico">
+        <h2>Landing Page 2 USDC</h2>
+        <div class="descricao">A landing page é uma página de destino que visa converter visitantes em leads ou clientes. Ela é projetada para destacar um único objetivo, como a compra de um produto ou o registro para um serviço.</div>
+        <div class="para-quem">Serve para empresas que desejam aumentar a conversão de visitas em leads, startups que precisam de uma presença online focada, ou profissionais que querem captar clientes específicos.</div>
+        <div class="incluso">Inclui design moderno, texto persuasivo, botão de ação clara, chamada para ação (CTA), integração com formulários de contato e otimização para mobile e SEO básico.</div>
+        <div class="prazo">Prazo de entrega: 5 dias úteis após a aprovação do briefing.</div>
+        <div class="preco">Preço: 2 USDC</div>
     </div>
-    <footer>
-        <p>© 2025 Asura - Serviços de Marketing Digital</p>
-    </footer>
+
+    <div class="servico">
+        <h2>Texto de Apresentação 1 USDC</h2>
+        <div class="descricao">Um texto de apresentação é um conteúdo curto e impactante, ideal para apresentações, redes sociais ou portfólios. Ele responde à pergunta "Por que você é especial?" de forma clara e persuasiva.</div>
+        <div class="para-quem">Serve para profissionais liberais, empreendedores, startups e marcas que precisam de uma identidade clara e envolvente para atrair clientes ou investidores.</div>
+        <div class="incluso">Inclui estrutura de 3 parágrafos, tom de voz alinhado ao público-alvo, palavras-chave estratégicas e tom de voz impactante e profissional.</div>
+        <div class="prazo">Prazo de entrega: 2 dias úteis após a aprovação do briefing.</div>
+        <div class="preco">Preço: 1 USDC</div>
+    </div>
+
+    <div class="servico">
+        <h2>Revisão de Texto 1 USDC</h2>
+        <div class="descricao">A revisão de texto é um serviço que corrige erros gramaticais, ortográficos e de pontuação, além de melhorar a clareza e a coerência do conteúdo. É ideal para textos que precisam de um toque profissional.</div>
+        <div class="para-quem">Serve para escritores, empreendedores, profissionais que publicam conteúdo online, ou empresas que precisam revisar documentos ou comunicações oficiais.</div>
+        <div class="incluso">Inclui revisão gramatical, ortográfica, pontuação, clareza e coerência, sugestões de melhoria de tom e formatação de texto.</div>
+        <div class="prazo">Prazo de entrega: 1 dia útil após a aprovação do briefing.</div>
+        <div class="preco">Preço: 1 USDC</div>
+    </div>
+
+    <div class="servico">
+        <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
+        <div class="descricao">Este serviço oferece 5 ideias de conteúdo criativas e relevantes para o público-alvo. Ideal para quem precisa inspirar, gerar leads ou aumentar o engajamento em redes sociais e blogs.</div>
+        <div class="para-quem">Serve para marcas, influenciadores, blogueiros e profissionais que buscam conteúdo original e impactante para divulgar seus produtos ou serviços.</div>
+        <div class="incluso">Inclui 5 ideias de conteúdo com direção de tom, público-alvo e potencial de engajamento, além de sugestões de formatos (artigo, vídeo, infográfico, etc.).</div>
+        <div class="prazo">Prazo de entrega: 1 dia útil após a aprovação do briefing.</div>
+        <div class="preco">Preço: 0,5 USDC</div>
+    </div>
+
+    <footer>© 2025 Asura. Todos os direitos reservados.</footer>
 </body>
 </html>
