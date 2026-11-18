@@ -14,108 +14,90 @@
 
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
             color: #ffffff;
         }
 
-        section {
+        .container {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
-            border-bottom: 1px solid #333;
-        }
-
-        section:last-child {
-            border-bottom: none;
         }
 
         .case {
-            background-color: #1e1e1e;
-            padding: 20px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 8px;
+            padding: 30px 25px;
+            margin-bottom: 40px;
         }
 
         .case h2 {
             color: #ffffff;
-            margin-top: 0;
+            margin-bottom: 15px;
         }
 
         .case p {
-            margin: 10px 0;
+            margin: 5px 0;
+        }
+
+        .case .client {
+            font-style: italic;
+            color: #bbbbbb;
+            margin-bottom: 10px;
         }
 
         .case .result {
+            font-weight: bold;
+            color: #00ffcc;
             margin-top: 20px;
-            padding: 15px;
-            background-color: #2a2a2a;
-            border-radius: 6px;
         }
 
         footer {
             text-align: center;
             padding: 20px;
+            color: #888;
             font-size: 0.9em;
-            color: #aaa;
-        }
-
-        a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
-        <p>Exemplos reais de clientes que contrataram o Asura</p>
     </header>
-
-    <section>
+    <div class="container">
         <div class="case">
-            <h2>Loja de Plantas - Jardim da Natureza</h2>
-            <p><strong> Pedido:</strong> A loja de plantas desejava um site moderno, com foco em qualidade e sustentabilidade, que fosse capaz de expor seus produtos de forma visualmente atraente e informativa.</p>
-            <p><strong>Entregue:</strong> Foi desenvolvido um site com design minimalista, usando tons de verde e tons terrosos. Cada produto tem uma imagem de alta qualidade, descrição detalhada e opção de compra rápida.</p>
-            <div class="result">
-                <p><strong>Resultado Esperado:</strong> Aumento de 30% nas vendas em 3 meses após o lançamento do site.</p>
-            </div>
+            <h2>Loja de Plantas - Renovação de Site</h2>
+            <p><span class="client">Cliente: Jardim Verde S/A</span></p>
+            <p>O cliente precisava de um site moderno e intuitivo para vender plantas e acessórios de jardinagem. A loja tinha um site antigo e desatualizado que não atraía novos clientes.</p>
+            <p>O pedido envolveu a criação de uma interface responsiva com categorias de plantas, filtros de preços e uma seção de dicas de cultivo. Foi integrado um carrinho de compras e sistema de login para clientes frequentes.</p>
+            <p><span class="result">Resultado esperado: Aumento de 40% nas vendas nos primeiros 3 meses, maior engajamento e experiência do cliente.</span></p>
         </div>
-    </section>
 
-    <section>
         <div class="case">
-            <h2>Doceria Artesanal - Doce do Sol</h2>
-            <p><strong> Pedido:</strong> A doceria queria um site que destacasse a origem artesanal dos seus produtos, com um toque de autenticidade e calor humano.</p>
-            <p><strong>Entregue:</strong> Um site com design quente e aconchegante, com imagens de produtos em processo de preparação e clientes satisfeitos. Também foi incluído um menu interativo e um sistema de agendamento de pedidos.</p>
-            <div class="result">
-                <p><strong>Resultado Esperado:</strong> Aumento de 40% nas vendas online e maior reconhecimento da marca na região.</p>
-            </div>
+            <h2>Doceria Artesanal - Rebranding e E-commerce</h2>
+            <p><span class="client">Cliente: Doce da Vovó</span></p>
+            <p>A doceria precisava de uma identidade visual nova e um canal de vendas online para atender clientes em outras cidades. O site antigo era simples, mas não refletia a qualidade e o carinho da marca.</p>
+            <p>O projeto incluiu a criação de um site com fotos de qualidade, descrições detalhadas dos produtos e uma loja virtual integrada. Foi desenvolvido um layout que destacava a personalidade da marca e os ingredientes artesanais.</p>
+            <p><span class="result">Resultado esperado: Expansão para novas regiões e aumento de 50% nas vendas online em 6 meses.</span></p>
         </div>
-    </section>
 
-    <section>
         <div class="case">
-            <h2>Estúdio de Tatuagem - Arte da Pele</h2>
-            <p><strong> Pedido:</strong> O estúdio de tatuagem precisava de um site que fosse profissional, com portfólio de obras, informações sobre o processo de tatuar e contato direto com o artista.</p>
-            <p><strong>Entregue:</strong> Um site com portfólio em alta resolução, descrição de cada tatuagem, informações sobre o processo e agendamento online. O design é clean e moderno, com tons de preto e branco com destaque em tons de azul.</p>
-            <div class="result">
-                <p><strong>Resultado Esperado:</strong> Aumento de 25% nas agendamentos e maior visibilidade do estúdio na região.</p>
-            </div>
+            < <h2>Estúdio de Tatuagem - Site de Agendamento</h2>
+            <p><span class="client">Cliente: Tatuagem do Beto</span></p>
+            <p>O estúdio precisava de um site que permitisse agendamento online, exibição de portfólio e contato direto com o artista. O site anterior era apenas um portfólio estático, sem funcionalidades.</p>
+            <p>Foi desenvolvido um site com sistema de agendamento, galeria de tatuagens, informações sobre o processo e um formulário de contato. O design foi moderno e acessível, com foco em experiência do usuário.</p>
+            <p><span class="result">Resultado esperado: Redução de 30% no tempo de agendamento e aumento de 60% na demanda de serviços.</span></p>
         </div>
-    </section>
-
+    </div>
     <footer>
-        <p>Exemplos reais de clientes que contrataram o Asura</p>
-        <p><a href="#">Voltar ao topo</a></p>
+        &copy; 2025 Asura - Exemplos de estudos de caso. Todos os direitos reservados.
     </footer>
 </body>
 </html>
