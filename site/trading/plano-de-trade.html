@@ -5,9 +5,9 @@
     <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -21,7 +21,7 @@
             margin: 0;
         }
         section {
-            margin: 20px 10px;
+            margin: 20px;
             padding: 20px;
             background-color: #1e1e1e;
             border-radius: 8px;
@@ -34,43 +34,25 @@
             line-height: 1.6;
         }
         ul {
-            margin: 10px 0;
             padding-left: 20px;
         }
-        .checklist {
-            list-style-type: none;
-            padding: 0;
-        }
-        .checklist li {
-            margin: 5px 0;
-        }
-        .checklist li::before {
-            content: "✓";
-            color: #4caf50;
-            margin-right: 10px;
-        }
         .aviso {
-            background-color: #1e1e1e;
+            background-color: #2a2a2a;
             padding: 15px;
-            border-left: 5px solid #ff9800;
             margin-top: 20px;
+            border-left: 5px solid #ff4081;
         }
         .aviso p {
+            font-style: italic;
+        }
+        .checklist {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #4caf50;
+        }
+        .checklist p {
             font-weight: bold;
-            color: #ff9800;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #2e2e2e;
         }
     </style>
 </head>
@@ -80,65 +62,36 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir metas claras e mensuráveis para cada operação, como ganho esperado, tempo de duração e risco tolerável. Exemplo: "Objetivo de 5% de ganho em 3 dias com risco máximo de 2% por operação."</p>
+        <p>Defina claramente o que você deseja atingir com suas operações. Exemplos: ganhar 10% mensal, minimizar perdas, aumentar consistência. Objetivos devem ser SMART (Específicos, Mensuráveis, Atingíveis, Relevantes, Temporais).</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identificar o mercado alvo, como forex, ações, criptomoedas ou índices. Especificar o par de moedas ou ativo, como EUR/USD, AAPL ou BTC/USD.</p>
+        <p>Escolha os mercados que você deseja operar. Exemplos: ações, forex, criptomoedas, índices. Defina o horizonte de tempo (curto, médio, longo prazo) e o estilo de negociação (day trade, swing trade, investimento).</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Definir os horários de operação, como "Operar entre 08:00 e 16:00 (horário de Brasília) em dias úteis", ou "Operar apenas em horários de alta volatilidade, como 15:00 a 17:00."</p>
+        <p>Determine os horários em que você vai operar. Exemplo: 08:00 às 16:00 (mercado financeiro), 20:00 às 02:00 (criptomoedas). Considere fuso horário e horários de operação dos mercados escolhidos.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabelecer condições claras para entrar e sair do mercado. Exemplo: "Entrar quando a média móvel de 50 dias cruza a de 200 dias para cima e confirmado por candle de alta volatilidade. Sair quando atingir o objetivo ou ocorrer um stop-loss de 2%."</p>
+        <p>Defina claramente as condições para entrar e sair do mercado. Exemplos: entrada em níveis de suporte, saída com lucro fixo, stop loss em 2% da posição. Use indicadores e padrões de análise técnica como base.</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Definir o limite máximo de perdas diários, como "Não ultrapassar 3% do capital total por dia" ou "Mantiver um stop-loss de 1% em cada operação para evitar perdas excessivas."</p>
+        <p>Estabeleça um limite máximo de perdas diárias que você está disposto a aceitar. Exemplo: 1% do capital total. Este limite deve ser rígido e não ultrapassado em nenhuma situação.</p>
     </section>
-    <section>
+    <section class="checklist">
         <h2>Checklist Antes de Abrir Operação</h2>
-        <ul class="checklist">
-            <li>Verificar se o mercado está em tendência clara</li>
-            <li>Confirmar que as condições de entrada foram atendidas</li>
-            <li>Verificar o limite de perdas diário e operacional</li>
-            <li>Assegurar que o capital está adequado para a operação</li>
-            <li>Confirmar que a estratégia está alinhada com o plano de trade</li>
+        <ul>
+            <li>Verificar se o mercado está em tendência ou em range.</li>
+            <li>Confirmar as condições de entrada definidas no plano.</li>
+            <li>Verificar se o stop loss e take profit estão posicionados corretamente.</li>
+            <li>Assegurar que o capital disponível não ultrapasse o limite diário.</li>
+            <li>Confirmar que não há emoções interferindo na decisão.</li>
         </ul>
     </section>
-    <section>
-        <h2>Template de Registro</h2>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Operação</th>
-                <th>Entrada</th>
-                <th>Saída</th>
-                <th>Ganho/Perda</th>
-                <th>Observações</th>
-            </tr>
-            <tr>
-                <td>01/10/2025</td>
-                <td>Compra EUR/USD</td>
-                <td>1.0820</td>
-                <td>1.0850</td>
-                <td>+0.30%</td>
-                <td>Atingiu objetivo de 2%</td>
-            </tr>
-            <tr>
-                <td>02/10/2025</td>
-                <td>Venda GBP/USD</td>
-                <td>1.2850</td>
-                <td>1.2800</td>
-                <td>-0.40%</td>
-                <td>Stop-loss acionado</td>
-            </tr>
-        </table>
+    <section class="aviso">
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. Negociação envolve riscos e pode resultar em perdas. Consulte um profissional antes de investir.</p>
     </section>
-    <div class="aviso">
-        <p><strong>Aviso:</strong> O conteúdo aqui apresentado é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas.</p>
-    </div>
 </body>
 </html>
