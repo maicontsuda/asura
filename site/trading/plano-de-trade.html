@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -15,133 +15,127 @@
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #333;
         }
         h1 {
-            color: #ffffff;
+            margin: 0;
+            font-size: 24px;
         }
         section {
             padding: 20px;
             margin: 20px 0;
             background-color: #1e1e1e;
-            border-left: 4px solid #880000;
+            border-left: 4px solid #4caf50;
         }
         h2 {
-            color: #ffffff;
+            color: #4caf50;
             margin-top: 0;
         }
         p {
             line-height: 1.6;
         }
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        .checklist {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 4px solid #4caf50;
-        }
-        .checklist h3 {
-            color: #ffffff;
-        }
-        .checklist p {
-            margin: 5px 0;
-        }
-        .registro {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 4px solid #ff9800;
-        }
-        .registro h3 {
-            color: #ffffff;
-        }
-        .registro table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .registro th, .registro td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: center;
-        }
-        .registro th {
-            background-color: #333;
-        }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
         .aviso {
-            background-color: #2a2a2a;
+            background-color: #121212;
+            border: 1px solid #4caf50;
             padding: 15px;
-            border-left: 4px solid #ff5722;
             margin-top: 20px;
+            border-radius: 5px;
         }
         .aviso p {
-            color: #ffffff;
+            font-style: italic;
+        }
+        .checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checklist input {
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #444;
+        }
+        th {
+            background-color: #2a2a2a;
+        }
+        .registro {
+            margin-top: 30px;
+        }
+        .registro h3 {
+            margin-top: 20px;
+        }
+        .registro table {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade – Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir claramente os objetivos de curto, médio e longo prazo para cada operação. Exemplo: acumular 10% de lucro mensal, reduzir risco de perdas acima de 2%, manter uma posição de 50% do capital em ativos em carteira.</p>
+        <p>Defina claramente os objetivos de sua estratégia de trade. Exemplo: "Alcançar uma taxa de sucesso de 60% com média de 1% por operação." Estabeleça metas de lucro, limites de perdas e horizonte de tempo.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Selecionar mercados com base em análise técnica e fundamentalista. Exemplo: operar no mercado de ações brasileiro (B3), forex (EUR/USD), ou criptomoedas (BTC/USDT). Priorizar mercados com liquidez e volatilidade adequada ao perfil de risco.</p>
+        <p>Selecione os mercados que você pretende operar. Exemplo: "Forex (EUR/USD), ações (NASDAQ), criptomoedas (BTC/USD)." Especifique se é operação a curto, médio ou longo prazo.</p>
     </section>
     <section>
-        < <h2>Horários de Operação</h2>
-        <p>Definir horários de entrada e saída com base nas condições de mercado e horários de alta volatilidade. Exemplo: operar entre 10h e 15h no mercado de ações, ou entre 08h e 12h no forex. Respeitar limites de tempo para evitar sobrecarga de decisões.</p>
+        <h2>Horários</h2>
+        <p>Defina os horários em que você planeja operar. Exemplo: "Operações de 8h às 16h no horário de Brasília, com pausas para análise e refeições." Inclua dias da semana e horários de fechamento de operações.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabelecer regras claras para entrada e saída com base em indicadores técnicos, níveis de suporte/resistência e análise de tendências. Exemplo: entrar em uma tendência de curto prazo com confirmação de candle de alta, sair com stop loss de 2% e take profit de 5%.</p>
+        <p>Estabeleça regras claras para entrada e saída de operações. Exemplo: "Entrada quando a média móvel de 50 dias cruza a de 200 dias para cima. Saída em 5% de ganho ou 3% de perda." Use indicadores, níveis de suporte/resistência e padrões de candlestick.</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Definir um limite máximo de perdas diárias para proteger o capital. Exemplo: não permitir que a perda exceda 1% do capital total por dia. Em caso de ultrapassar, suspender as operações até o próximo dia útil.</p>
+        <p>Defina o limite máximo de perdas que você permite por dia. Exemplo: "Não ultrapassar 2% do capital em perdas diárias." Isso ajuda a proteger seu capital contra perdas inesperadas.</p>
     </section>
-    <div class="checklist">
-        <h3>Checklist Antes de Abrir Operação</h3>
-        <p>Verificar se todas as condições de entrada estão atendidas.</p>
-        <p>Confirmar que o capital disponível está dentro dos limites estabelecidos.</p>
-        <p>Verificar se o horário de operação está alinhado com as condições do mercado.</p>
-        <p>Confirmar que o plano de trade está em vigor e sem alterações recentes.</p>
-        <p>Revisar os indicadores técnicos e confirmações de tendência.</p>
-    </div>
-    <div class="registro">
-        <h3>Template de Registro de Operações</h3>
+    <section>
+        <h2>Checklist Antes de Abrir Operação</h2>
+        <div class="checklist">
+            <input type="checkbox"> Confirmar condições técnicas e fundamentais
+            <input type="checkbox"> Verificar níveis de suporte/resistência
+            <input type="checkbox"> Analisar tendências e padrões
+            <input type="checkbox"> Confirmar alinhamento com objetivos
+            <input type="checkbox"> Verificar limites de perdas e ganhos
+            <input type="checkbox"> Confirmar horário de operação
+        </div>
+    </section>
+    <section>
+        <h2>Template de Registro</h2>
         <table>
             <tr>
-                <th>Data</th>
+                <th>Data/Hora</th>
                 <th>Ativo</th>
                 <th>Entrada</th>
                 <th>Saída</th>
                 <th>Resultado</th>
-                <th>Observações</th>
+                <th>Comentário</th>
             </tr>
             <tr>
-                <td>01/04/2025</td>
+                <td>10/10/2025 14:30</td>
                 <td>EUR/USD</td>
                 <td>1.0850</td>
                 <td>1.0920</td>
                 <td>+0.7%</td>
-                <td>Confirmação de tendência de curto prazo.</td>
+                <td>Entrada em cruzamento de médias, saída em ganho.</td>
             </tr>
         </table>
-    </div>
+    </section>
     <div class="aviso">
-        <p><strong>Aviso Legal:</strong> O conteúdo apresentado é apenas educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Consulte um profissional antes de investir.</p>
+        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem risco e podem resultar em perdas. Consulte um profissional antes de investir.</p>
     </div>
-    <footer>
-        <p>&copy; 2025 - Plano de Trade - Modelo para Operações</p>
-    </footer>
 </body>
 </html>
