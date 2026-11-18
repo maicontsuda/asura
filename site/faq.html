@@ -13,43 +13,42 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            color: #ffffff;
+        header h1 {
             margin: 0;
+            font-size: 24px;
+            color: #ffffff;
         }
-        section {
-            padding: 30px;
+        main {
+            padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
-            background-color: #1e1e1e;
-            border-radius: 10px;
         }
-        h2 {
+        .faq {
+            margin-bottom: 40px;
+        }
+        .faq h2 {
+            margin-top: 0;
+            font-size: 20px;
             color: #ffffff;
-            margin-top: 40px;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+        .faq p {
+            margin: 10px 0;
+            font-size: 16px;
         }
-        li {
-            margin-bottom: 15px;
+        .faq ul {
+            margin: 0;
+            padding-left: 20px;
         }
-        .faq-item {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
+        .faq li {
+            margin-bottom: 10px;
         }
-        .faq-question {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        .faq-answer {
-            color: #cccccc;
+        .faq li::before {
+            content: "•";
+            color: #00ffcc;
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -57,39 +56,39 @@
     <header>
         <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <section>
-        <div class="faq-item">
-            <div class="faq-question">Como pagar com USDC na Base?</div>
-            <div class="faq-answer">Para pagar com USDC na Base, você deve usar um serviço de bridge compatível, como o Bridge da Base, para transferir os USDC para a rede Base. Após a transferência, envie o valor para a carteira do Asura, garantindo que a transação seja confirmada e o pagamento seja processado.</div>
+    <main>
+        <div class="faq">
+            <h2>Como pagar com USDC na Base?</h2>
+            <p>Para pagar com USDC na Base, você deve conectar sua carteira compatível com a rede Base e transferir os USDC para o endereço fornecido pelo Asura. Certifique-se de que o endereço está correto e que a transação seja confirmada antes de considerar o pagamento concluído.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Como pagar com ETH na Base?</div>
-            <div class="faq-answer">Para pagar com ETH na Base, você deve transferir os ETH para a rede Base via bridge, como o Bridge da Base, e depois depositar na carteira do Asura. Confirme a transação para garantir que o pagamento seja registrado e processado.</div>
+        <div class="faq">
+            <h2>Como pagar com ETH na Base?</h2>
+            <p>Para pagar com ETH na Base, conecte sua carteira compatível com a rede Base e envie os ETH para o endereço especificado pelo Asura. A transação deve ser confirmada para que o pagamento seja processado.</p>
         </div>
-        <div class="faq-item">
-            < <div class="faq-question">Como pagar com ETH na Mainnet?</div>
-            <div class="faq-answer">Para pagar com ETH na Mainnet, você deve realizar a transação diretamente na rede Ethereum, usando uma carteira compatível. Após a confirmação da transação, o valor será processado no sistema do Asura.</div>
+        <div class="faq">
+            < <h2>Como pagar com ETH na Mainnet?</h2>
+            <p>Para pagar com ETH na Mainnet, conecte sua carteira compatível com a rede Ethereum e envie os ETH para o endereço fornecido pelo Asura. A transação deve ser confirmada antes de considerar o pagamento concluído.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Quais são os prazos para processar o pagamento?</div>
-            <div class="faq-answer">O prazo de processamento varia de acordo com a rede e o método de pagamento. Geralmente, o Asura processa o pagamento em até 1 hora após a confirmação da transação, mas pode levar até 3 horas em casos de congestionamento de rede.</div>
+        <div class="faq">
+            <h2>Quais são os prazos para o pagamento?</h2>
+            <p>Os prazos para o pagamento variam conforme o tipo de serviço contratado. Geralmente, o prazo para o início do processo é de 24 horas após a confirmação do pagamento. Caso o pagamento não seja confirmado dentro desse prazo, o contrato pode ser cancelado.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">O que acontece se o pagamento falhar?</div>
-            <div class="faq-answer">Se o pagamento falhar, o valor será reembolsado automaticamente para a carteira de origem, após a verificação da falha no sistema do Asura. Caso haja um problema técnico, entre em contato com o suporte para resolver a questão.</div>
+        <div class="faq">
+            <h2>O que acontece se o pagamento falhar?</h2>
+            <p>Se o pagamento falhar, o contrato será cancelado e o valor será devolvido à sua carteira, desde que a transação tenha sido rejeitada ou não tenha sido confirmada. Caso contrário, o valor pode ser retido conforme políticas da rede.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Como recebo o entregável?</div>
-            <div class="faq-answer">Após o processamento bem-sucedido do pagamento, o entregável será liberado automaticamente para a carteira vinculada ao seu perfil no Asura. Confirme a recepção e verifique a disponibilidade do conteúdo no seu portfólio.</div>
+        <div class="faq">
+            <h2>Como recebo o entregável?</h2>
+            <p>Após a confirmação do pagamento, o entregável será liberado para você conforme os termos acordados. Isso pode incluir documentos, acesso a plataformas ou outros bens digitais, que serão enviados para o endereço especificado em seu contrato.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Qual é a identidade on-chain ERC-8004 #1149100?</div>
-            <div class="faq-answer">A identidade on-chain ERC-8004 #1149100 é um token representativo da identidade digital do usuário no Asura. Ele é usado para autenticar e validar transações e interações com o sistema, garantindo a segurança e a integridade dos dados.</div>
+        <div class="faq">
+            <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
+            <p>Sua identidade on-chain é representada pelo token ERC-8004 #1149100, que atua como seu identificador único na rede. Esse token é utilizado para validar sua participação e acesso a serviços exclusivos no ecossistema Asura.</p>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Como solicitar um reembolso?</div>
-            <div class="faq-answer">Para solicitar um reembolso, entre em contato com o suporte do Asura por meio do canal de atendimento e forneça detalhes sobre a transação e a razão do reembolso. O suporte analisará o caso e procederá com a devolução do valor, caso seja válido.</div>
+        <div class="faq">
+            <h2>Como solicitar reembolso?</h2>
+            <p>Para solicitar reembolso, entre em contato com a equipe do Asura através do suporte indicado no contrato. Você precisará fornecer comprovação de que o pagamento foi rejeitado ou que o serviço não foi entregue conforme acordado. O reembolso será processado conforme as políticas da rede e do contrato.</p>
         </div>
-    </section>
+    </main>
 </body>
 </html>
