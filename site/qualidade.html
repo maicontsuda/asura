@@ -13,47 +13,46 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        h1 {
             color: #ffffff;
+            margin: 0;
         }
         .container {
             max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
             background-color: #1e1e1e;
-            border-radius: 10px;
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
             color: #ffffff;
-            margin-top: 40px;
-        }
-        h3 {
-            color: #ffffff;
-            margin-top: 20px;
+            margin-top: 30px;
         }
         ul {
+            list-style-type: disc;
             padding-left: 20px;
         }
         li {
             margin-bottom: 10px;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 5px solid #ff4d4d;
-            margin-top: 20px;
+        .criterios, .erros, .revisao {
+            margin-bottom: 20px;
         }
-        .aviso p {
-            margin: 0;
+        .criterios h3, .erros h3, .revisao h3 {
+            color: #ffffff;
+        }
+        .criterios p, .erros p, .revisao p {
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
             color: #888;
             font-size: 0.9em;
         }
@@ -64,51 +63,105 @@
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
     </header>
     <div class="container">
-        <h2>Landing Page</h2>
-        <p>As landing pages devem ser diretas, com objetivo claro e CTA bem definido. Verifique que:</p>
-        <ul>
-            <li>Tem título e subtitulo claros e impactantes;</li>
-            <li>Os botões de ação estão visíveis e bem posicionados;</li>
-            <li>Conteúdo é conciso e direto, sem excessos de texto;</li>
-            <li>Imagens e ícones são relevantes e de alta qualidade;</li>
-            <li>Formulários estão completos e funcionais;</li>
-            <li>Seu site é responsivo e funciona em todos os dispositivos.</li>
-        </ul>
-        <div class="aviso">
-            <p><strong>Aviso:</strong> Evite linguagem excessivamente técnica, frases longas e elementos que não contribuam para o objetivo da landing page.</p>
-        </div>
-
-        <h2>Texto de Apresentação</h2>
-        <p>Todo texto de apresentação deve ser claro, objetivo e persuasivo. Confira:</p>
-        <ul>
-            <li>Tem uma estrutura lógica (introdução, desenvolvimento, conclusão);</li>
-            <li>Usa linguagem simples e direta, sem jargões;</li>
-            <li>Destaca benefícios e valor para o público-alvo;</li>
-            <li>Evita erros gramaticais e ortográficos;</li>
-            <li>Tem tom de voz consistente (formal, informal, técnico, etc.).</li>
-        </ul>
-
-        <h2>Revisão de Texto</h2>
-        <p>Antes de entregar, revise o conteúdo com atenção:</p>
-        <ul>
-            <li>Verifique coerência e coesão do texto;</li>
-            <li>Confira concordância nominal e verbal;</li>
-            <li>Reveja pontuação e uso de acentos;</li>
-            <li>Evite repetições e frases sem sentido;</li>
-            <li>Releia o texto em voz alta para identificar possíveis falhas.</li>
-        </ul>
-
-        <h2>5 Ideias de Conteúdo</h2>
-        <ul>
-            <li>Blog sobre tendências do mercado;</li>
-            <li>Guia prático para utilização de ferramentas digitais;</li>
-            <li>Case de sucesso de um cliente;</li>
-            <li>Artigo técnico com explicações simplificadas;</li>
-            <li>Lista de dicas para otimizar produtividade.</li>
-        </ul>
+        <section>
+            <h2>Landing Page</h2>
+            <div class="criterios">
+                <h3>Critérios de Aceite</h3>
+                <p>• A landing page deve ter um objetivo claro e direcionado para a conversão.</p>
+                <p>• O conteúdo deve ser conciso, sem excesso de informações.</p>
+                <p>• O formulário de contato ou botão de ação deve ser visível e acessível.</p>
+                <p>• A imagem de destaque deve ser relevante e de alta qualidade.</p>
+            </div>
+            <div class="erros">
+                <h3>Erros Comuns a Evitar</h3>
+                <p>• Texto longo e sem foco.</p>
+                <p>• Formulário de contato com campos excessivos ou mal definidos.</p>
+                <p>• Imagem de baixa qualidade ou não relacionada ao conteúdo.</p>
+                <p>• Faltam links ou CTA (call to action) claros.</p>
+            </div>
+            <div class="revisao">
+                <h3>Como Revisar Antes de Entregar</h3>
+                <p>• Verifique se o objetivo da landing page está alinhado com a meta do cliente.</p>
+                <p>• Confirme se o formulário está otimizado para conversão.</p>
+                <p>• Teste a imagem para garantir que ela esteja carregando corretamente.</p>
+                <p>• Revise o texto para eliminar erros gramaticais e redundâncias.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Texto de Apresentação</h2>
+            <div class="criterios">
+                <h3>Critérios de Aceite</h3>
+                <p>• O texto deve ser claro, direto e persuasivo.</p>
+                <p>• Deve destacar os diferenciais do serviço ou da marca.</p>
+                <p>• A linguagem deve ser amigável e profissional, conforme o público-alvo.</p>
+                <p>• A estrutura deve ter introdução, desenvolvimento e conclusão.</p>
+            </div>
+            <div class="erros">
+                <h3>Erros Comuns a Evitar</h3>
+                <p>• Texto sem foco ou com excesso de informações.</p>
+                <p>• Faltam dados relevantes sobre os benefícios do serviço.</p>
+                <p>• Linguagem excessivamente técnica ou muito informal.</p>
+                <p>• Faltam palavras-chave ou SEO otimizado.</p>
+            </div>
+            <div class="revisao">
+                <h3>Como Revisar Antes de Entregar</h3>
+                <p>• Verifique se o texto está alinhado com a identidade da marca.</p>
+                <p>• Confirme se as palavras-chave estão inseridas de forma natural.</p>
+                <p>• Revise gramática, pontuação e coerência do conteúdo.</p>
+                <p>• Teste a leitura do texto para garantir que seja fluído e envolvente.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Revisão de Texto</h2>
+            <div class="criterios">
+                <h3>Critérios de Aceite</h3>
+                <p>• O texto revisado deve ser claro, coerente e gramaticalmente correto.</p>
+                <p>• A estrutura deve ser lógica e com fluxo natural.</p>
+                <p>• Deve haver consistência no tom e no estilo.</p>
+                <p>• O texto deve ser revisado para adequação do público-alvo.</p>
+            </div>
+            <div class="erros">
+                <h3>Erros Comuns a Evitar</h3>
+                <p>• Erros de concordância, regência e crase.</p>
+                <p>• Texto redundante ou repetitivo.</p>
+                <p>• Faltam parágrafos ou divisões claras.</p>
+                <p>• Erros de formatação como falta de espaçamento ou quebras de linha.</p>
+            </div>
+            <div class="revisao">
+                <h3>Como Revisar Antes de Entregar</h3>
+                <p>• Leia o texto em voz alta para identificar erros de pronúncia.</p>
+                <p>• Verifique se o estilo e o tom estão alinhados com o projeto.</p>
+                <p>• Confirme que o texto respeita as normas gramaticais e ortográficas.</p>
+                <p>• Revise a formatação, espaçamento e pontuação.</p>
+            </div>
+        </section>
+        <section>
+            <h2>5 Ideias de Conteúdo</h2>
+            <div class="criterios">
+                <h3>Critérios de Aceite</h3>
+                <p>• Cada ideia deve ser clara, objetiva e alinhada ao público-alvo.</p>
+                <p>• O conteúdo deve ser relevante e útil para o público.</p>
+                <p>• Cada ideia deve ter um objetivo de conversão ou engajamento.</p>
+                <p>• Deve haver diversidade de formatos (artigo, vídeo, infográfico, etc.).</p>
+            </div>
+            <div class="erros">
+                <h3>Erros Comuns a Evitar</h3>
+                <p>• Ideias genéricas ou sem valor real para o público.</p>
+                <p>• Faltam dados concretos ou estatísticas.</p>
+                <p>• Ideias que não resolvem um problema ou atendem uma necessidade.</p>
+                <p>• Faltam detalhes sobre a execução ou o resultado esperado.</p>
+            </div>
+            <div class="revisao">
+                <h3>Como Revisar Antes de Entregar</h3>
+                <p>• Verifique se cada ideia atende ao objetivo do cliente.</p>
+                <p>• Confirme se o conteúdo é relevante e de alta qualidade.</p>
+                <p>• Revise a estrutura e o fluxo das ideias.</p>
+                <p>• Teste a clareza e o impacto de cada sugestão.</p>
+            </div>
+        </section>
     </div>
     <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
+        © 2025 Asura - Todos os direitos reservados
     </footer>
 </body>
 </html>
