@@ -8,7 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0d0d0d;
-            color: #f5f5f5;
+            color: #f1f1f1;
             line-height: 1.6;
         }
         header {
@@ -19,32 +19,39 @@
         header h1 {
             margin: 0;
             font-size: 2em;
+            color: #ffffff;
         }
-        section {
-            padding: 40px 20px;
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-        section h2 {
-            color: #ff8a00;
-            margin-bottom: 15px;
-        }
-        .servico {
+        .service {
             background-color: #1e1e1e;
-            padding: 20px;
+            border: 1px solid #2a2a2a;
             border-radius: 8px;
+            padding: 25px 30px;
             margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-        .servico p {
+        .service h2 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+        .service p {
             margin: 10px 0;
         }
-        .servico strong {
+        .service .price {
+            font-weight: bold;
+            font-size: 1.2em;
             color: #00ffcc;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #888;
+            padding: 20px 0;
             font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
@@ -52,48 +59,38 @@
     <header>
         <h1>Serviços do Asura</h1>
     </header>
-    <section>
-        <div class="servico">
+    <div class="container">
+        <div class="service">
             <h2>Landing Page 2 USDC</h2>
-            <p>O serviço de Landing Page é ideal para quem deseja atrair visitantes específicos para uma única página com objetivo claro, como converter leads ou vender um produto. A Landing Page é otimizada para conversão, com design moderno e elementos que incentivam a ação do usuário.</p>
-            <p><strong>Para quem serve:</strong> Empresas que buscam captar leads, marcas que desejam aumentar a conversão de visitas em sites, e profissionais que querem divulgar um produto ou serviço.</p>
-            <p><strong>O que está incluso:</strong> Design responsivo, formulário de contato, botão de ação, SEO básico, e links de compartilhamento.</p>
-            <p><strong>Prazo:</strong> 3 dias úteis após a confirmação do pagamento.</p>
-            <p><strong>Preço:</strong> 2 USDC</p>
+            <p>A landing page é uma página de destino estratégica que visa converter visitantes em leads ou clientes. Ela é ideal para campanhas de marketing digital, vendas e divulgação de novos produtos ou serviços.</p>
+            <p>Para quem serve: Empresas que desejam aumentar suas conversões, startups que querem divulgar seus produtos e profissionais que precisam de uma presença online eficaz.</p>
+            <p>O que está incluso: Texto de venda direto, chamada para ação clara, formulário de contato, botão de download, layout responsivo e otimização para SEO.</p>
+            <p>Prazo: 5 dias úteis. Preço: 2 USDC</p>
         </div>
-    </section>
-    <section>
-        <div class="servico">
+        <div class="service">
             <h2>Texto de Apresentação 1 USDC</h2>
-            <p>O Texto de Apresentação é um conteúdo conciso e impactante que destaca a proposta de valor de uma marca, produto ou serviço. É ideal para uso em materiais de divulgação, banners ou apresentações.</p>
-            <p><strong>Para quem serve:</strong> Empresas que precisam de um texto persuasivo para divulgar seus serviços, profissionais que desejam destacar suas habilidades, e marcas que querem simplificar sua comunicação.</p>
-            <p><de><strong>O que está incluso:</strong> Redação de texto de até 300 palavras, uso de linguagem clara e impactante, e revisão de concordância e clareza.</p>
-            <p><strong>Prazo:</strong> 2 dias úteis após a confirmação do pagamento.</p>
-            <p><strong>Preço:</strong> 1 USDC</p>
+            <p>Um texto de apresentação é um conteúdo conciso e persuasivo que destaca os principais pontos de um produto, serviço ou ideia. É ideal para uso em materiais promocionais, apresentações e campanhas de marketing.</p>
+            <p>Para quem serve: Empresas que precisam de um texto curto e impactante, profissionais que buscam destacar suas habilidades e criadores de conteúdo que querem otimizar suas mensagens.</p>
+            <p>O que está incluso: Texto de 100 a 200 palavras, tom persuasivo, estrutura clara e adaptação para diferentes formatos (como banners, e-mails e redes sociais).</p>
+            <p>Prazo: 3 dias úteis. Preço: 1 USDC</p>
         </div>
-    </section>
-    <section>
-        <div class="servico">
+        <div class="service">
             <h2>Revisão de Texto 1 USDC</h2>
-            <p>A Revisão de Texto é um serviço de edição e melhoria de conteúdo já existente, com foco em clareza, gramática, estrutura e tom adequado ao público-alvo. Ideal para textos de marketing, artigos, apresentações e outros formatos.</p>
-            <p><strong>Para quem serve:</strong> Profissionais que precisam melhorar a qualidade de seus textos, empresas que desejam revisar materiais de divulgação, e autores que querem otimizar suas obras.</p>
-            <p><strong>O que está incluso:</strong> Revisão gramatical, ajuste de tom, correção de concordância e sugestões de melhoria de conteúdo.</p>
-            <p><strong>Prazo:</strong> 2 dias úteis após a confirmação do pagamento.</p>
-            <p><strong>Preço:</strong> 1 USDC</p>
+            <p>A revisão de texto é um serviço que busca aprimorar a clareza, coesão e qualidade de um conteúdo já escrito. Ideal para garantir que seu texto esteja alinhado com seus objetivos de comunicação.</p>
+            <p>Para quem serve: Profissionais que desejam melhorar seus textos, empresas que querem otimizar seus materiais e autores que precisam de feedback técnico e criativo.</p>
+            <p>O que está incluso: Revisão gramatical, de estilo, de clareza e de tom. Inclui sugestões de melhoria e adaptação para diferentes públicos.</p>
+            <p>Prazo: 3 dias úteis. Preço: 1 USDC</p>
         </div>
-    </section>
-    <section>
-        <div class="servico">
-            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>O serviço de 5 Ideias de Conteúdo oferece sugestões criativas para gerar conteúdo relevante e atraente para o público-alvo. Ideal para blogueiros, marcas que desejam aumentar o engajamento e profissionais que buscam novas formas de se comunicar.</p>
-            <p><strong>Para quem serve:</strong> Criadores de conteúdo, marcas que querem aumentar a interação, e profissionais que buscam inspiração para suas publicações.</p>
-            <p><strong>O que está incluso:</strong> 5 ideias de conteúdo para diferentes formatos (artigos, vídeos, imagens, etc.), com foco em engajamento e relevância.</p>
-            <p><strong>Prazo:</strong> 1 dia útil após a confirmação do pagamento.</p>
-            <p><strong>Preço:</strong> 0,5 USDC</p>
+        <div class="service">
+            <<P>5 Ideias de Conteúdo 0,5 USDC</P>
+            <p>Essas ideias de conteúdo são sugestões criativas para gerar material útil e envolvente para seu público. Podem ser usadas em blogs, redes sociais, e-mails e outros canais de comunicação.</p>
+            <p>Para quem serve: Criadores de conteúdo, profissionais de marketing e empreendedores que buscam inspiração para suas estratégias de comunicação.</p>
+            <p>O que está incluso: 5 ideias distintas, adaptadas para diferentes formatos e públicos. Cada ideia é complementada com sugestões de tom, estrutura e destaque.</p>
+            <p>Prazo: 2 dias úteis. Preço: 0,5 USDC</p>
         </div>
-    </section>
+    </div>
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
+        &copy; 2025 Asura. Todos os direitos reservados.
     </footer>
 </body>
 </html>
