@@ -8,7 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             line-height: 1.6;
         }
         header {
@@ -23,25 +23,32 @@
         section {
             padding: 20px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: auto;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
         }
         h2 {
             color: #ff9800;
             margin-top: 30px;
         }
         p {
-            font-size: 1em;
+            margin-bottom: 15px;
         }
-        ul {
-            padding-left: 20px;
+        a {
+            color: #ff9800;
+            text-decoration: none;
         }
-        .aviso {
-            background-color: #1e1e1e;
-            border-top: 1px solid #555;
-            padding: 15px;
-            margin-top: 40px;
-            font-style: italic;
-            color: #aaa;
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -50,27 +57,28 @@
         <h1>Gestão de Risco em Operações</h1>
     </header>
     <section>
+        <p>A gestão de risco é um pilar fundamental na prática de investimentos e operações financeiras. A maioria dos traders perde dinheiro não por falta de habilidade, mas por não aplicar corretamente estratégias de risco. Conhecer e implementar técnicas como risco por operação, stop loss, take profit, position sizing, risco/retorno, drawdown e entender por que a maioria falha é essencial para construir uma estratégia sólida.</p>
+        
         <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do seu capital, geralmente entre 1% e 2%. Isso significa que, em uma única operação, você não deve arriscar mais do que 1% a 2% do dinheiro que você tem disponível. Esse princípio é essencial para preservar o capital e permitir que você continue operando mesmo com perdas ocasionais.</p>
+        <p>É comum que traders exponham até 1–2% do seu capital em cada operação. Isso limita o impacto de uma perda e permite que o trader mantenha a posição em múltiplas operações sem comprometer o capital. A regra do 1–2% é uma forma de proteger o capital e facilitar a recuperação após perdas.</p>
 
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ordem que limita as perdas em uma operação, enquanto o take profit define o ponto em que você sai do mercado para garantir lucros. Esses limites são ferramentas fundamentais para manter a disciplina e evitar emoções durante o trading.</p>
+        <p>O stop loss é a ordem que limita as perdas em uma operação, enquanto o take profit define o ponto de venda para aproveitar lucros. Essas ferramentas ajudam a manter disciplina emocional e evitar decisões impulsivas.</p>
 
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você toma em uma operação. Ele deve ser calculado com base no risco que você está disposto a assumir, garantindo que nenhuma operação comprometa significativamente seu capital.</p>
+        <p>Position sizing refere-se ao tamanho da posição que o trader entra em cada operação. Ele deve ser calculado com base no risco por operação e no stop loss, garantindo que a exposição seja controlada.</p>
 
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é uma métrica que compara o potencial de ganho com o risco de perda. Uma boa relação risco/retorno é geralmente acima de 1:2, o que significa que por cada unidade de risco, você pode obter duas de retorno.</p>
+        <p>O risco/retorno é a proporção entre o potencial de perda e o potencial de ganho. Uma boa estratégia busca um risco/retorno de 1:2 ou maior, ou seja, para cada unidade de risco, o retorno esperado é de duas ou mais unidades.</p>
 
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda máxima acumulada de um investimento ou operação. Ele é um indicador importante para entender o impacto das perdas em seu portfólio e planejar melhor sua estratégia.</p>
+        <p>O drawdown é a queda percentual do capital em relação ao valor máximo atingido. Ele mede o risco de capital e ajuda a entender a volatilidade e a sustentabilidade de uma estratégia.</p>
 
         <h2>Por que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por não seguir regras de gestão de risco. Eles operam com posições muito grandes, ignoram stop loss, ou não controlam o risco por operação. Além disso, a falta de disciplina e a emoção levam a decisões irracionais.</p>
-
-        <div class="aviso">
-            *Este conteúdo é educacional e não constitui recomendação de investimento. A gestão de risco é essencial, mas não garante lucros nem protege contra perdas.
-        </div>
+        <p>Muitos traders perdem dinheiro por não seguir regras de risco, emocionalizar as decisões, ou não ter um plano de operação claramente definido. A falta de disciplina e o excesso de risco são fatores comuns em operações que resultam em perdas.</p>
     </section>
+    <footer>
+        <p>Este conteúdo é educacional e não constitui recomendação financeira. Invista com responsabilidade.</p>
+    </footer>
 </body>
 </html>
