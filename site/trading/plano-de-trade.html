@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
-            background-color: #121212;
-            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
@@ -15,21 +15,19 @@
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
         h1 {
-            margin: 0;
-            font-size: 24px;
+            color: #ffffff;
         }
         section {
+            margin: 20px;
             padding: 20px;
-            margin: 20px 0;
-            background-color: #1e1e1e;
-            border-left: 4px solid #7cfc00;
+            background-color: #1a1a1a;
+            border-radius: 8px;
         }
         h2 {
+            color: #ffffff;
             margin-top: 0;
-            color: #00ff99;
         }
         p {
             line-height: 1.6;
@@ -38,91 +36,82 @@
             padding-left: 20px;
         }
         .checklist {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #00ffcc;
         }
-        .checklist input {
-            margin-right: 10px;
-        }
-        .checklist label {
-            font-weight: bold;
+        .checklist h3 {
+            margin-top: 0;
         }
         .registro {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 20px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff9500;
         }
-        .registro input, .registro select, .registro textarea {
-            padding: 10px;
-            background-color: #2e2e2e;
-            color: #e0e0e0;
-            border: 1px solid #444;
-            border-radius: 5px;
+        .registro h3 {
+            margin-top: 0;
         }
         footer {
+            background-color: #1e1e1e;
             text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-top: 1px solid #333;
-        }
-        .aviso {
-            margin-top: 30px;
-            background-color: #1e1e1e;
             padding: 15px;
-            border-left: 4px solid #ff4757;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos do seu plano de trade, como a busca por lucro consistente, gestão de risco e disciplina operacional. Exemplo: “Alcançar uma rentabilidade de 5% mensal com risco máximo de 1% por operação.”</p>
+        <p>Objetivo principal: Gerar rendimento consistente com base em estratégias bem definidas e disciplina. Alcançar um retorno médio de 2% por mês com risco controlado. Focar em mercados com alta volatilidade e liquidez.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Selecione os mercados que você pretende operar, como ações, forex, criptomoedas ou índices. Exemplo: “Operações em pares de moedas (EUR/USD, GBP/USD) e índices (Dow Jones, Nifty 50).”</p>
+        <p>Ativos: EUR/USD, BTC/USD, SP500, DAX. Intervalos de tempo: D1, H1. Estratégias baseadas em padrões de candlestick, médias móveis e indicadores de volume.</p>
     </section>
     <section>
-        < <h2>Horários</h2>
-        <p>Defina os horários de operação e os horários de pausa. Exemplo: “Operações de segunda a sexta, das 08:00 às 16:00 (horário de Brasília).”</p>
+        <h2>Horários</h2>
+        <p>Operações permitidas entre 08:00 e 16:00 (horário de Brasília). Exceções para eventos macroeconômicos. Não operar em horários de alta volatilidade sem análise prévia.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça condições claras para entrada e saída das operações. Exemplo: “Entrada em níveis de suporte com confirmação de candle. Saída em níveis de resistência ou stop loss de 2%.”</p>
+        <ul>
+            <li>Entrada: Apenas em candle fechado com forma de "doji" ou "pin bar" em zona de suporte/resistência.</li>
+            <li>Saída: Stop Loss de 1% e Take Profit de 2%, com reentrada em caso de retração de 1,5%.</li>
+            <li>Regra de 3: Máximo de 3 operações abertas simultâneas.</li>
+        </ul>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você está disposto a aceitar diariamente. Exemplo: “Limite de perdas de 1% por dia, com parada imediata em caso de ultrapassagem.”</p>
+        <p>Perda máxima diária limitada a 1,5% do capital. Parar operações em caso de superar esse limite e aguardar 2 dias para reavaliação.</p>
     </section>
-    <section>
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <div class="checklist">
-            <label><input type="checkbox"> Verificar condições de mercado</label>
-            <label><input type="checkbox"> Confirmar análise técnica</label>
-            <label><input type="checkbox"> Verificar confirmação de candle</label>
-            <label><input type="checkbox"> Confirmar limites de risco</label>
-            <label><input type="checkbox"> Verificar disponibilidade de capital</label>
-        </div>
+    <section class="checklist">
+        <h3>Checklist Antes de Abrir Operação</h3>
+        <ul>
+            <li>Verificar análise técnica completa.</li>
+            <li>Confirmar condições de mercado.</li>
+            <li>Verificar posição em aberto.</li>
+            <li>Confirmar limite de perdas diária.</li>
+            <li>Confirmar alinhamento com o plano de trade.</li>
+        </ul>
     </section>
-    <section>
-        <h2>Template de Registro</h2>
-        <div class="registro">
-            <label>Data:</label><input type="date">
-            <label>Hora:</label><input type="time">
-            <label>Par:</label><select><option>EUR/USD</option><option>GBP/USD</option><option>USD/JPY</option></select>
-            <label>Entrada:</label><input type="number" step="0.01">
-            <label>Stop Loss:</label><input type="number" step="0.01">
-            <label>Tamanho da posição:</label><input type="number">
-            <label>Resultado:</label><textarea rows="3" cols="40"></textarea>
-        </div>
+    <section class="registro">
+        <h3>Template de Registro</h3>
+        <p>Data: [Inserir data]<br>
+        Ativo: [Inserir ativo]<br>
+        Tipo: [Compra/Venda]<br>
+        Preço de entrada: [Inserir valor]<br>
+        Stop Loss: [Inserir valor]<br>
+        Take Profit: [Inserir valor]<br>
+        Resultado: [Inserir resultado]<br>
+        Observações: [Inserir observações]</p>
     </section>
-    <div class="aviso">
-        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações de mercado envolvem riscos e você deve fazer sua própria pesquisa e consultar um profissional antes de investir.</p>
-    </div>
+    <footer>
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. O trade envolve riscos e você deve buscar orientação profissional antes de operar.</p>
+    </footer>
 </body>
 </html>
