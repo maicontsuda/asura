@@ -5,83 +5,52 @@
     <title>Gestão de Risco em Operações</title>
     <style>
         body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #ffffff;
-            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #1e1e1e;
+            background-color: #2e2e2e;
             border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
         }
-        h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
         p {
             line-height: 1.6;
-            font-size: 16px;
-        }
-        .aviso {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 5px solid #ff9800;
-            margin-top: 25px;
-        }
-        .aviso p {
-            font-style: italic;
-            font-size: 14px;
-        }
-        a {
-            color: #4caf50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Gestão de Risco em Operações</h1>
-    </header>
     <div class="container">
-        <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é fundamental limitar o risco de cada operação a um máximo de 1–2% do capital total. Essa prática garante que, mesmo em operações que não saiam conforme o planejado, o impacto no capital não será significativo. A regra do 1–2% é uma base para a gestão de risco e ajuda a proteger o investidor contra perdas irreversíveis.</p>
-
-        <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é um limite automático que define o ponto em que uma operação é encerrada para evitar perdas maiores. Já o take profit é o ponto de venda que define o lucro esperado. Esses limites são essenciais para disciplinar o comportamento do trader e evitar emoções que podem levar a decisões irracionais.</p>
-
+        <h1>Gestão de Risco em Operações</h1>
+        <p>O gerenciamento de risco é fundamental para qualquer investidor, pois ajuda a proteger o capital investido e aumentar as chances de sucesso. Vamos explorar alguns conceitos importantes para a gestão de risco em operações:</p>
+        <h2>Risco por Operação (1-2% do Capital)</h2>
+        <p>A regra geral é limitar o risco por operação a 1-2% do seu capital total. Isso significa que se você tem R$ 100.000,00, você deve limitar cada operação a R$ 2.000,00. Esse percentual pode variar dependendo do seu perfil de investidor e da volatilidade do mercado.</p>
+        <h2>Stop Loss</h2>
+        <p>O stop loss é um nível de preço abaixo do qual você decide vender uma ação ou opção, limitando a perda potencial. É uma estratégia para proteger o capital em caso de movimento adverso. É importante definir stop loss com base em um nível de preço que você acredita que será respeitado no mercado.</p>
+        <h2>Take Profit</h2>
+        <p>O take profit é o nível de preço acima do qual você decide vender uma ação ou opção, garantindo uma certa rentabilidade. Define o ponto de saída desejado para a operação. É importante escolher o take profit com base em um nível de preço que você acredita que será atingido no futuro.</p>
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que o trader decide abrir em uma operação. Ele está diretamente ligado ao risco por operação e deve ser calculado com base no capital disponível e no risco tolerável. Uma posição muito grande pode levar a perdas irreparáveis, enquanto uma posição muito pequena pode limitar o potencial de lucro.</p>
-
+        <p>A position sizing é a técnica de determinar o tamanho da posição a ser tomada em uma operação. Ela considera o risco por operação, o stop loss e o take profit. A posição deve ser ajustada para garantir que o risco por operação permaneça dentro dos limites estabelecidos.</p>
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a relação entre o risco assumido e o potencial de lucro em uma operação. Uma boa relação risco/retorno é geralmente de 1:2 ou superior, ou seja, para cada unidade de risco, o trader espera ganhar duas ou mais unidades. Essa métrica ajuda a identificar operações mais favoráveis.</p>
-
+        <p>A relação entre risco e retorno é crucial na gestão de operações. Operações com alto retorno podem ter alto risco. É importante balancear esses dois aspectos para maximizar a rentabilidade com o menor risco possível. Avalie sempre a correlação entre os retornos esperados e o risco assumido.</p>
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda máxima acumulada de um investimento em um determinado período. Ele é uma medida da volatilidade e da exposição ao risco. Um drawdown alto pode indicar que o sistema de operações está submetido a riscos excessivos e precisa ser revisado.</p>
-
-        <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por não seguir regras de gestão de risco. Eles tendem a ignorar o stop loss, abrir posições muito grandes, ou não respeitar o risco/retorno. Além disso, a falta de disciplina e a emoção são fatores que levam a decisões ruins, resultando em perdas constantes.</p>
-
-        <div class="aviso">
-            <p><strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e podem resultar em perdas.</p>
-        </div>
+        <p>O drawdown é o período em que o valor do investimento cai abaixo de um nível de referência e mantém-se nesse nível. É um indicador importante para avaliar a volatilidade e o risco associado a uma estratégia de investimento. Menor drawdown geralmente indica uma estratégia mais estável.</p>
+        <h2>Por que a Maioria Perde Dinheiro</h2>
+        <p>A maioria dos investidores perde dinheiro porque não segue as regras de gestão de risco, toma decisões emocionais, não diversifica sua carteira e não faz um planejamento a longo prazo. Além disso, muitos investidores não têm uma estratégia clara ou não monitoram suas operações com frequência.</p>
+        <p>Este conteúdo é apenas educacional e não deve ser considerado como recomendação de investimento. Seja sempre cauteloso e faça suas próprias investigações antes de investir.</p>
     </div>
 </body>
 </html>
