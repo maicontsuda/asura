@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo de Estratégia de Investimento</title>
+    <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -17,16 +17,16 @@
             text-align: center;
         }
         h1 {
-            color: #00ffcc;
+            color: #ffffff;
         }
         section {
             margin: 20px;
             padding: 20px;
             background-color: #1e1e1e;
-            border-left: 4px solid #00ffcc;
+            border-radius: 8px;
         }
         h2 {
-            color: #00ffcc;
+            color: #ffffff;
             margin-top: 0;
         }
         p {
@@ -39,94 +39,64 @@
             background-color: #2a2a2a;
             padding: 15px;
             border-left: 4px solid #00ffcc;
+            margin-top: 15px;
+        }
+        .checklist h3 {
+            color: #ffffff;
         }
         .checklist li {
-            margin: 10px 0;
+            margin: 8px 0;
         }
-        .registro {
-            background-color: #2a2a2a;
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
             padding: 15px;
-            border-left: 4px solid #00ffcc;
-        }
-        .registro table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .registro th, .registro td {
-            border: 1px solid #444;
-            padding: 8px;
-        }
-        .registro th {
-            background-color: #333;
-        }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 4px solid #00ffcc;
-            margin-top: 30px;
-        }
-        .aviso p {
-            font-style: italic;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo de Estratégia de Investimento</h1>
+        <h1>Plano de Trade - Modelo para Operações</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir metas claras para o investimento, como a rentabilidade esperada, o tempo de operação e o risco máximo aceitável. Exemplo: Objetivo de 10% de rentabilidade mensal com risco máximo de 5%.</p>
+        <p>Defina claramente os objetivos de cada operação, como: proteger o capital, gerar rendimento consistente, ou maximizar lucros em determinados mercados. Exemplo: "Operar com alavancagem de 2x em ações de alta volatilidade, visando lucro de 5% por operação, com stop loss de 2%."</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Escolher os mercados em que será aplicado o plano, como ações, forex, criptomoedas ou índices. Definir os pares de ativos e os horizontes de tempo (ex: ações do Brasil, pares de forex EUR/USD, horizonte de 1 a 5 dias).</p>
+        <p>Selecione os mercados que serão operados, como ações, forex, criptomoedas ou índices. Exemplo: "Operar com pares de moedas forex (EUR/USD, GBP/USD) e ações de tecnologia (AAPL, MSFT) no horário de mercado europeu."</p>
     </section>
     <section>
-        <h2>Horários de Operação</h2>
-        <p>Definir os períodos em que será feito o trade. Ex: operações de abertura entre 08:00 e 10:00 (horário de Brasília) e encerramento entre 15:00 e 16:00. Evitar operar em horários de alta volatilidade ou em dias de notícias.</p>
+        <h2>Horários</h2>
+        <p>Estabeleça os horários em que as operações serão abertas e fechadas. Exemplo: "Operar entre 08:00 e 16:00 (horário de Brasília), com fechamento de operações após o fechamento do mercado."</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabelecer condições claras para entrada e saída. Ex: entrada em níveis de suporte com volume elevado, saída em níveis de resistência ou quando a tendência muda. Utilizar limites de stop loss e take profit.</p>
+        <p>Defina as condições específicas para abrir e fechar operações. Exemplo: "Entrar com uma ordem de stop limit após a confirmação de um breakout em níveis de resistência. Sair com lucro de 5% ou stop loss de 2%."</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Definir o máximo de perdas que será suportado por dia. Ex: 2% do capital total ou 50 pontos percentuais em operações de curto prazo. Evitar ultrapassar esse limite para preservar o capital.</p>
+        <p>Estabeleça um limite máximo de perdas por dia para proteger o capital. Exemplo: "Não permitir perdas superiores a 3% do capital investido em um único dia."</p>
     </section>
     <section class="checklist">
-        <h2>Checklist Antes de Abrir Operação</h2>
+        <h3>Checklist Antes de Abrir Operação</h3>
         <ul>
-            <li>Verificar se o mercado está em tendência clara.</li>
-            <li>Confirmar as condições de entrada definidas no plano.</li>
-            <li>Verificar o nível de risco em relação ao capital.</li>
-            <li>Confirmar a disponibilidade de capital para operar.</li>
-            <li>Revisar as regras de saída e stop loss.</li>
+            <li>Verificar se o mercado está em tendência.</li>
+            <li>Confirmar níveis de suporte/resistência.</li>
+            <li>Verificar condições técnicas e fundamentais.</li>
+            <li>Confirmar o limite de perda e ganho.</li>
+            <li>Verificar se há ordens em aberto e sua relação com a nova operação.</li>
         </ul>
     </section>
-    <section class="registro">
+    <section>
         <h2>Template de Registro</h2>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Ativo</th>
-                <th>Entrada</th>
-                <th>Saída</th>
-                <th>Resultado</th>
-                <th>Comentário</th>
-            </tr>
-            <tr>
-                <td>01/10/2025</td>
-                <td>EUR/USD</td>
-                <td>1.0850</td>
-                <td>1.0920</td>
-                <td>+0.7%</td>
-                <td>Entrada em suporte, saída em alta de tendência.</td>
-            </tr>
-        </table>
+        <p>Use este modelo para registrar cada operação: Data, Hora, Mercado, Tipo (compra/venda), Preço de entrada, Stop Loss, Take Profit, Resultado e Análise.</p>
     </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As estratégias apresentadas são ilustrativas e devem ser adaptadas conforme o perfil e conhecimento do investidor.</p>
-    </section>
+    <footer>
+        <p>Conteúdo educacional. Não é recomendação de investimento. As operações financeiras envolvem risco.</p>
+    </footer>
 </body>
 </html>
