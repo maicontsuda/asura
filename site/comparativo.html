@@ -8,7 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
+            color: #f5f5f5;
             line-height: 1.6;
         }
         header {
@@ -17,69 +17,90 @@
             text-align: center;
         }
         h1 {
-            color: #ffffff;
+            margin: 0;
+            font-size: 2.5em;
         }
         section {
             padding: 30px;
-            border-bottom: 1px solid #333;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
         }
         h2 {
-            color: #ffffff;
+            border-bottom: 2px solid #6a1b9a;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
             margin-bottom: 15px;
         }
-        p {
-            margin-bottom: 15px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .option {
-            margin-bottom: 30px;
+            flex: 1;
+            margin: 0 10px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
         }
         .option h3 {
-            color: #ffffff;
+            margin-top: 0;
         }
         .option p {
             margin-bottom: 10px;
         }
         footer {
-            background-color: #1e1e1e;
             text-align: center;
             padding: 20px;
+            background-color: #1e1e1e;
             margin-top: 40px;
-            color: #aaaaaa;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Comparação: Asura, Freelancer e Agência</h1>
+        <h1>Comparação: Contratar o Asura, um Freelancer ou uma Agência</h1>
     </header>
     <section>
+        <p>Escolher entre contratar o Asura, um freelancer ou uma agência pode ser uma decisão complexa. Cada opção traz vantagens e limitações específicas, dependendo do projeto, da escala e dos recursos disponíveis. Abaixo, uma comparação honesta sobre preço, prazo, processo, vantagens e limitações de cada opção.</p>
+    </section>
+    <section class="container">
         <div class="option">
-            <h2>Asura</h2>
-            <p><strong>Preço relativo:</strong> O Asura é uma solução de custo fixo, com preços que variam conforme o escopo e a complexidade do projeto. Geralmente mais previsível do que contratar um freelancer.</p>
-            <p><strong>Prazo:</strong> O prazo é definido no início do projeto, com uma entrega programada. Isso oferece maior controle sobre os tempos.</p>
-            <p><strong>Processo:</strong> O processo envolve uma fase de planejamento, definição de requisitos, desenvolvimento e revisão. É mais estruturado e com mais níveis de supervisão.</p>
-            <p><strong>Vantagens:</strong> Maior transparência, responsabilidade definida e suporte contínuo. Ideal para projetos complexos e que exigem alinhamento com objetivos estratégicos.</p>
-            <p><strong>Limitações:</strong> Pode ser mais caro do que contratar um freelancer, especialmente para projetos menores ou que não exigem escopo amplo.</p>
+            <h3>Asura</h3>
+            <p><strong>Preço relativo:</strong> O Asura oferece um custo fixo, com planos mensais que incluem uma equipe de profissionais especializados. É uma opção mais cara do que um freelancer, mas mais previsível.</p>
+            <p><strong>Prazo:</strong> O prazo é estabelecido com antecedência e é mais flexível, permitindo ajustes conforme o projeto evolui.</p>
+            <p><strong>Processo:</strong> O processo é mais estruturado, com suporte de gerenciamento de projetos, revisões e relatórios constantes.</p>
+            <p><strong>Vantagens:</strong> Suporte completo, escala de recursos, menos risco de atrasos e maior qualidade.</p>
+            <p><strong>Limitações:</strong> Maior custo, menos flexibilidade em termos de escopo e possíveis custos ocultos de manutenção.</p>
         </div>
         <div class="option">
-            <h2>Freelancer</h2>
-            <p><strong>Preço relativo:</strong> O preço varia conforme a habilidade e experiência do profissional, mas geralmente é mais baixo do que contratar uma agência ou o Asura.</p>
-            <p><strong>Prazo:</strong> O prazo é mais flexível, mas pode variar conforme a disponibilidade e prioridades do freelancer.</p>
-            <p><strong>Processo:</strong> O processo é mais direto, com menos níveis de supervisão e maior liberdade criativa, mas pode gerar menos controle sobre o resultado final.</p>
-            <p><strong>Vantagens:</strong> Baixo custo, liberdade criativa e flexibilidade. Ideal para projetos menores ou que exigem uma abordagem personalizada.</p>
-            <p><strong>Limitações:</strong> Menor transparência, risco de entrega atrasada e menos suporte contínuo. Pode ser mais difícil de gerenciar em projetos complexos.</p>
+            <h3>Freelancer</h3>
+            <p><strong>Preço relativo:</strong> É a opção mais acessível, com custos variáveis baseados no tempo e no escopo do projeto.</p>
+            <p><strong>Prazo:</strong> O prazo é mais flexível, mas pode ser menos previsível, dependendo da disponibilidade e da carga do profissional.</p>
+            <p><strong>Processo:</strong> O processo é mais direto, mas pode exigir mais supervisão e comunicação constante.</p>
+            <p><strong>Vantagens:</strong> Custo baixo, personalização e liberdade de escolha.</p>
+            <p><strong>Limitações:</strong> Menor escala de recursos, risco de atrasos e menor suporte em caso de problemas.</p>
         </div>
         <div class="option">
-            <h2>Agência</h2>
-            <p><strong>Preço relativo:</strong> As agências têm preços mais altos, pois cobram por equipe, infraestrutura e recursos. É a opção mais cara.</p>
-            <p><strong>Prazo:</strong> O prazo é definido com base em recursos e prioridades da agência. Geralmente mais longo, mas com entregas mais estruturadas.</p>
-            <p><strong>Processo:</strong> O processo é mais formal, com planejamento, execução e revisão em múltiplas etapas. Oferece maior qualidade e suporte.</p>
-            <p><strong>Vantagens:</strong> Alta qualidade, suporte especializado e entrega mais alinhada com objetivos estratégicos. Ideal para grandes projetos ou marcas que buscam profissionalismo.</p>
-            <p><strong>Limitações:</strong> Maior custo, menor flexibilidade e maior tempo de entrega. Pode ser excessiva para projetos menores ou que exigem abordagem mais direta.</p>
+            <h3>Agência</h3>
+            <p><strong>Preço relativo:</strong> A agência é a opção mais cara, pois envolve uma equipe de profissionais com custos de operação e margem de lucro.</p>
+            <p><strong>Prazo:</strong> O prazo é geralmente mais longo e menos flexível, pois envolve múltiplas etapas e revisões.</p>
+            <p><strong>Processo:</strong> O processo é mais formal, com gestão de projetos, planejamento e relatórios detalhados.</p>
+            <p><strong>Vantagens:</strong> Expertise em conjunto, suporte completo e maior qualidade.</p>
+            <p><strong>Limitações:</strong> Alto custo, menos flexibilidade e maior tempo de entrega.</p>
         </div>
     </section>
     <footer>
-        <p>© 2025 Comparação entre Asura, Freelancer e Agência</p>
+        &copy; 2025 - Comparação de Serviços de Desenvolvimento
     </footer>
 </body>
 </html>
