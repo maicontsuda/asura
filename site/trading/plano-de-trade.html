@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo de Operação</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -20,8 +20,8 @@
             color: #ffffff;
         }
         section {
-            margin: 20px;
             padding: 20px;
+            margin: 20px 0;
             background-color: #1e1e1e;
             border-radius: 8px;
         }
@@ -39,64 +39,87 @@
             background-color: #2a2a2a;
             padding: 15px;
             border-left: 4px solid #00ffcc;
-            margin-top: 15px;
         }
-        .checklist h3 {
-            color: #ffffff;
+        .checklist p {
+            margin: 5px 0;
         }
-        .checklist li {
-            margin: 8px 0;
+        .registro {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff9800;
+        }
+        .registro p {
+            margin: 5px 0;
         }
         footer {
             background-color: #1e1e1e;
             text-align: center;
             padding: 15px;
             margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
+        }
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff00ff;
+            margin-top: 20px;
+        }
+        .aviso p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo de Operação</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de cada operação, como: proteger o capital, gerar rendimento consistente, ou maximizar lucros em determinados mercados. Exemplo: "Operar com alavancagem de 2x em ações de alta volatilidade, visando lucro de 5% por operação, com stop loss de 2%."</p>
+        <p>Objetivo principal: acumular ganhos consistentes ao longo do tempo, mantendo o risco em níveis controláveis. Alcançar um ROI de 10% mensal com base em um capital inicial de R$10.000,00.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Selecione os mercados que serão operados, como ações, forex, criptomoedas ou índices. Exemplo: "Operar com pares de moedas forex (EUR/USD, GBP/USD) e ações de tecnologia (AAPL, MSFT) no horário de mercado europeu."</p>
+        <p>Operações serão realizadas no mercado de ações brasileiro, focando em empresas de capital aberto listadas na B3. Priorizamos setores como tecnologia, finanças e consumo.</p>
     </section>
     <section>
-        <h2>Horários</h2>
-        <p>Estabeleça os horários em que as operações serão abertas e fechadas. Exemplo: "Operar entre 08:00 e 16:00 (horário de Brasília), com fechamento de operações após o fechamento do mercado."</p>
+        < <h2>Horários</h2>
+        <p>Operações serão abertas entre 09:00 e 10:00, com fechamento até 15:30. Não há operações em horários de alta volatilidade ou durante eventos macroeconômicos.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Defina as condições específicas para abrir e fechar operações. Exemplo: "Entrar com uma ordem de stop limit após a confirmação de um breakout em níveis de resistência. Sair com lucro de 5% ou stop loss de 2%."</p>
-    </section>
-    <section>
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Estabeleça um limite máximo de perdas por dia para proteger o capital. Exemplo: "Não permitir perdas superiores a 3% do capital investido em um único dia."</p>
-    </section>
-    <section class="checklist">
-        <h3>Checklist Antes de Abrir Operação</h3>
         <ul>
-            <li>Verificar se o mercado está em tendência.</li>
-            <li>Confirmar níveis de suporte/resistência.</li>
-            <li>Verificar condições técnicas e fundamentais.</li>
-            <li>Confirmar o limite de perda e ganho.</li>
-            <li>Verificar se há ordens em aberto e sua relação com a nova operação.</li>
+            <li>Entrada: apenas após confirmação de tendência e breakout de nível de suporte.</li>
+            <li>Saída: com lucro fixo de 5% ou quando o preço atinge um nível de resistência previsto.</li>
+            <li>Stop Loss: 2% do capital em risco por operação.</li>
         </ul>
     </section>
     <section>
+        <h2>Limite de Perdas Diárias</h2>
+        <p>Limite máximo de perdas diárias: 1% do capital total. Caso o limite seja ultrapassado, a operação é suspensa até o próximo dia útil.</p>
+    </section>
+    <section class="checklist">
+        <h2>Checklist Antes de Abrir Operação</h2>
+        <p>✔ Verificar análise técnica e fundamentalista</p>
+        <p>✔ Confirmar volume de negociação</p>
+        <p>✔ Verificar condições de mercado</p>
+        <p>✔ Confirmar stop loss e alvo de lucro</p>
+        <p>✔ Verificar capital disponível e limite de perdas</p>
+    </section>
+    <section class="registro">
         <h2>Template de Registro</h2>
-        <p>Use este modelo para registrar cada operação: Data, Hora, Mercado, Tipo (compra/venda), Preço de entrada, Stop Loss, Take Profit, Resultado e Análise.</p>
+        <p>Empresa: ___________________________</p>
+        <p>Data e Hora: ___________________________</p>
+        <p>Preço de entrada: ___________________________</p>
+        <p>Stop Loss: ___________________________</p>
+        <p>Alvo de lucro: ___________________________</p>
+        <p>Resultado final: ___________________________</p>
+        <p>Observações: ___________________________</p>
+    </section>
+    <section class="aviso">
+        <h2>Aviso Legal</h2>
+        <p>Este conteúdo é educacional e não constitui recomendação ou conselho financeiro. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Consulte um profissional antes de investir.</p>
     </section>
     <footer>
-        <p>Conteúdo educacional. Não é recomendação de investimento. As operações financeiras envolvem risco.</p>
+        <p>© 2025 Plano de Trade - Modelo de Operação</p>
     </footer>
 </body>
 </html>
