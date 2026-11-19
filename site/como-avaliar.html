@@ -6,7 +6,7 @@
     <style>
         body {
             background-color: #121212;
-            color: #f5f5f5;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -17,39 +17,42 @@
             text-align: center;
         }
         h1 {
-            margin: 0;
             color: #ffffff;
         }
         section {
             padding: 20px;
         }
-        p {
-            line-height: 1.6;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #1e1e1e;
         }
         th, td {
             border: 1px solid #444;
             padding: 12px;
-            text-align: center;
+            text-align: left;
         }
         th {
-            background-color: #2e2e2e;
+            background-color: #2a2a2a;
         }
         tr:nth-child(even) {
-            background-color: #222;
+            background-color: #1e1e1e;
         }
-        .total {
-            background-color: #2e2e2e;
-            font-weight: bold;
+        .avaliacao {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #555;
         }
-        .media {
+        .avaliacao h2 {
+            margin-top: 0;
+        }
+        .avaliacao p {
+            margin: 10px 0;
+        }
+        .avaliacao .total {
             font-weight: bold;
-            color: #ff9800;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -58,49 +61,48 @@
         <h1>Critérios para Avaliação de Conteúdo</h1>
     </header>
     <section>
-        <p>Avaliar conteúdo é uma etapa essencial para garantir que a mensagem transmitida ao público seja clara, relevante e eficaz. A seguir, apresentamos critérios objetivos que o cliente pode utilizar para avaliar um conteúdo recebido. Esses critérios ajudam a medir a qualidade do material, identificar pontos fortes e áreas de melhoria, garantindo que o conteúdo atenda às expectativas e ao objetivo proposto.</p>
-
-        <p>Para uma avaliação completa, os critérios abrangem a clareza da comunicação, a aderência ao briefing, o tom adequado, a estrutura organizada, a ausência de erros de português e a presença de uma chamada para ação clara e direcionada. Cada critério é pontuado em uma escala de 0 a 5, e a soma total dos pontos é utilizada para calcular a média final, que indica o desempenho geral do conteúdo.</p>
-
-        <p>Essa avaliação não apenas oferece uma visão quantitativa do conteúdo, mas também contribui para a melhoria contínua da qualidade do material produzido. Ao aplicar esses critérios, é possível identificar padrões, reforçar práticas eficazes e corrigir erros recorrentes, garantindo que o conteúdo entregue ao cliente seja sempre de alta qualidade.</p>
+        <p>Avaliar um conteúdo é essencial para garantir que ele atenda às expectativas do cliente e ao propósito do projeto. Abaixo, você encontrará critérios objetivos que podem ser utilizados para avaliar a qualidade e a relevância de um conteúdo recebido. Esses critérios ajudam a identificar pontos fortes e áreas de melhoria, garantindo que o material entregue seja claro, coerente e eficaz.</p>
+        <p>Os critérios incluem clareza, aderência ao briefing, tom, estrutura, erros de português e chamada para ação. Cada critério é avaliado com uma nota que varia de 0 a 10, sendo 10 a nota máxima. A soma das notas dividida por 6 fornece a média geral do conteúdo, que é uma indicação de sua qualidade geral.</p>
     </section>
     <table>
-        <tr>
-            <th>Critério</th>
-            <th>Nota (0-5)</th>
-        </tr>
-        <tr>
-            <td>Clareza da comunicação</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Aderência ao briefing</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Tom adequado</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            < <td>Estrutura organizada</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Erros de português</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Chamada para ação clara</td>
-            <td>4</td>
-        </tr>
-        <tr class="total">
-            <td>Total</td>
-            <td>25</td>
-        </tr>
-        <tr class="media">
-            <td>Média Final</td>
-            <td>4,17</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Critério</th>
+                <th>Nota (0-10)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Clareza</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Aderência ao briefing</td>
+                <td></td>
+            </tr>
+            <tr>
+                < <td>Tom</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Estrutura</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Erros de português</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chamada para ação</td>
+                <td></td>
+            </tr>
+        </tbody>
     </table>
+    <section class="avaliacao">
+        <h2>Avaliação Total</h2>
+        <p>A avaliação total é calculada somando as notas de todos os critérios e dividindo pelo número total de critérios (6). Essa média fornece uma visão geral da qualidade do conteúdo.</p>
+        <p class="total">Média geral: 0</p>
+        <p>Com base na média, é possível determinar se o conteúdo atende aos padrões desejados ou se requer ajustes.</p>
+    </section>
 </body>
 </html>
