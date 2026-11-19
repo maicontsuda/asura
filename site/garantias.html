@@ -8,70 +8,85 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
+            color: #ffffff;
+            padding: 20px;
         }
         header {
-            background-color: #1e1e1e;
-            padding: 20px;
             text-align: center;
+            margin-bottom: 40px;
         }
         header h1 {
+            font-size: 2.5em;
             margin: 0;
-            font-size: 2em;
-            color: #ffffff;
         }
         section {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-            border-left: 4px solid #888;
-            border-right: 4px solid #888;
+            margin-bottom: 40px;
         }
-        h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
         p {
-            margin: 10px 0;
+            font-size: 1em;
+            line-height: 1.6;
         }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
+        .container {
+            max-width: 900px;
+            margin: auto;
         }
-        a:hover {
-            text-decoration: underline;
+        .highlight {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-left: 4px solid #ff4081;
+            margin-bottom: 20px;
+        }
+        .highlight h3 {
+            margin-top: 0;
+            color: #ff4081;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
             font-size: 0.9em;
+            color: #aaa;
+            margin-top: 60px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Garantias do Serviço</h1>
-    </header>
-    <section>
-        <h2>Se o entregável não atender o briefing</h2>
-        <p>Se o entregável final não atender às especificações descritas no briefing, o serviço será reavaliado e ajustado conforme necessário. No entanto, é importante ressaltar que o resultado final depende da clareza e da precisão das informações fornecidas no briefing. Caso haja uma divergência significativa ou uma falta de detalhamento, o ajuste será limitado ao que for possível com base nas instruções disponíveis.</p>
-
-        <h2>Quantos ajustes são permitidos?</h2>
-        <p>Após o envio do primeiro entregável, são permitidos até três ajustes gratuitos, limitados ao que for possível implementar com base no briefing original. Caso o cliente solicite mais ajustes após esse limite, será necessário revisar o escopo do projeto e acordar uma nova taxa ou prazo adicional.</p>
-
-        <h2>Prazo de resposta</h2>
-        <p>Os ajustes solicitados serão respondidos em até 48 horas úteis após a confirmação do recebimento da solicitação. Em casos de urgência ou complexidade elevada, o prazo pode ser ajustado previamente com o cliente.</p>
-
-        <h2>O que não é coberto?</h2>
-        <p>Não há cobertura para ajustes que envolvam mudanças de conceito, redefinição de escopo, ou alterações que não estejam alinhadas com o briefing original. Além disso, não são cobertos custos com ferramentas externas, integrações, ou qualquer serviço que exija recursos além do escopo definido no projeto.</p>
-
-        <p>Para garantir a qualidade e a clareza do serviço, é essencial que o briefing esteja bem definido e que as expectativas sejam realistas. Caso tenha dúvidas ou precise de esclarecimentos, entre em contato com nossa equipe.</p>
-    </section>
-    <footer>
-        © 2025 Serviços de Produção e Design. Todos os direitos reservados.
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Garantias do Serviço</h1>
+        </header>
+        <section>
+            <h2>O que acontece se o entregável não atender o briefing?</h2>
+            <p>Se o entregável não atender ao briefing fornecido, o serviço será reavaliado e ajustado dentro do prazo acordado. Caso o conteúdo não atenda às expectativas após o ajuste, o cliente poderá solicitar uma nova revisão ou, se for o caso, cancelar o serviço com reembolso parcial conforme os termos acordados.</p>
+        </section>
+        <section>
+            <h2>Quantos ajustes são permitidos?</h2>
+            <p>Podem ser feitos até 3 ajustes gratuitos no conteúdo entregue, desde que os mesmos estejam alinhados com o briefing inicial. Caso sejam necessários mais de 3 ajustes, será cobrado um valor adicional por ajuste adicional, conforme tarifa acordada previamente.</p>
+        </section>
+        <section>
+            <h2>Prazo de resposta para ajustes</h2>
+            <p>Os ajustes serão respondidos em até 48 horas úteis após a solicitação, exceto em casos de urgência, que serão acordados previamente. O prazo pode ser estendido em até 24 horas para ajustes complexos ou que envolvam múltiplas revisões.</p>
+        </section>
+        <section>
+            <h2>O que não é coberto</h2>
+            <div class="highlight">
+                <h3>Revisões de conteúdo já finalizado</h3>
+                <p>Revisões de conteúdo que já tenha sido entregue e finalizado não são cobradas, a menos que sejam solicitadas como ajustes específicos.</p>
+            </div>
+            <div class="highlight">
+                <h3>Revisões de estilo ou formatação</h3>
+                <p>Revisões de estilo, formatação ou layout não são incluídas no serviço padrão. Caso haja necessidade de ajustes nesses aspectos, será cobrado um valor adicional.</p>
+            </div>
+            <div class="highlight">
+                <h3>Revisões de conteúdo que não estejam alinhadas ao briefing</h3>
+                <p>Revisões de conteúdo que não estejam alinhadas ao briefing inicial não são cobradas, a menos que sejam solicitadas como ajustes específicos.</p>
+            </div>
+        </section>
+        <footer>
+            Este documento é uma garantia do serviço e não constitui contrato vinculante. As condições podem ser revisadas a qualquer momento.
+        </footer>
+    </div>
 </body>
 </html>
