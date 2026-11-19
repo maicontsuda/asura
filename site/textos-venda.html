@@ -7,52 +7,57 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            color: #ff9800;
-            font-size: 2.5em;
+        header h1 {
+            color: #ffffff;
+            font-size: 2em;
         }
         .container {
             max-width: 1000px;
             margin: 40px auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 10px;
+            padding: 0 20px;
         }
         .model {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
             margin-bottom: 40px;
-            padding: 20px;
-            background-color: #2a2a2a;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         .model h2 {
-            color: #ff9800;
-            margin-bottom: 10px;
+            color: #ffffff;
+            margin-top: 0;
         }
-        .model p {
-            line-height: 1.6;
-            font-size: 1em;
-        }
-        .model .call-to-action {
-            margin-top: 20px;
+        .model .hook {
             font-weight: bold;
             font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .model .body {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .model .cta {
+            font-weight: bold;
+            font-size: 1.1em;
             color: #ff9800;
+            text-decoration: underline;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
-            margin-top: 40px;
+            color: #888;
         }
     </style>
 </head>
@@ -63,37 +68,43 @@
     <div class="container">
         <div class="model">
             <h2>Cafeteria</h2>
-            <p>Imagine um dia de café fresco, aroma de torrada e o sabor de um bom chocolate. Na nossa cafeteria, cada xícara é preparada com carinho, usando ingredientes de qualidade e ingredientes locais. Aproveite o momento em que você se sente bem, com um ambiente acolhedor e um serviço rápido. Nossa cafeteria é mais do que um lugar para tomar um café — é um espaço para refletir, trabalhar e se sentir à vontade. Venha experimentar a diferença da qualidade em cada xícara. Sinta o sabor da simplicidade e da excelência.</p>
-            <p class="call-to-action">Venha nos visitar e descubra o sabor da verdadeira experiência!</p>
+            <p class="hook">Você já imaginou um café da manhã que acalma e inspira?</p>
+            <p class="body">Na nossa cafeteria, cada xícara é uma experiência sensorial. Com ingredientes frescos, especialistas em preparo e um ambiente acolhedor, estamos aqui para transformar seu dia em algo especial. Seja para um café da manhã tranquilo, um lanche rápido ou um momento de descontração, temos algo para você. Não importa se você é um profissional estressado ou um estudante com poucas horas, nossa equipe está pronta para servir com dedicação e carinho. Venha experimentar e descubra o sabor da qualidade.</p>
+            <p class="cta">Reserve seu espaço hoje mesmo!</p>
         </div>
         <div class="model">
             <h2>Doceria</h2>
-            <p>Doce, doce, doce — é a essência da nossa doceria, onde cada biscoito, cada brigadeiro e cada bombom são feitos com amor e dedicação. Nossos produtos são feitos com ingredientes naturais, sem conservantes, e com um toque de personalidade que só uma doceria verdadeira pode oferecer. Seja para um lanche rápido, um presente especial ou um momento de relaxamento, temos algo para todos. Aproveite a doçura da vida em cada mordida. Sinta o sabor da tradição e da inovação.</p>
-            <p class="call-to-action">Experimente agora e descubra o verdadeiro sabor do doce!</p>
+            <p class="hook">Doce como o amor, mas feito com amor!</p>
+            <p class="body">A doceria é mais do que um lugar para comprar doces — é um espaço de sabores, tradições e momentos memoráveis. Cada bolo, cada brigadeiro e cada pote de sorvete são feitos com ingredientes de qualidade e carinho. Seja para um presente especial, um lanche de domingo ou uma sobremesa de luxo, estamos aqui para tornar seu dia mais doce. Experimente nossos sabores e deixe-se levar pela magia da doçura.</p>
+            <p class="cta">Venha saborear a doçura do momento!</p>
         </div>
         <div class="model">
-            < <h2>Floricultura</h2>
-            <p>Que tal iluminar o seu dia com um arranjo de flores frescas e cheirosas? Na nossa floricultura, cada buquê é feito com carinho e atenção aos detalhes, usando flores de alta qualidade e combinando cores e texturas para criar beleza e harmonia. Seja para um presente especial, um ambiente mais aconchegante ou um momento de alegria, temos a flor perfeita para você. Aproveite a beleza natural e o aroma de flores frescas em cada arranjo. Sinta a magia da natureza em cada flor.</p>
-            <p class="call-to-action">Faça um presente especial com a beleza de nossas flores!</p>
+            < nadia</h2>
+            <p class="hook">Flores que trazem beleza e significado para sua vida.</p>
+            <p class="body">Na nossa floricultura, cada flor é escolhida com cuidado para contar uma história de amor, congratulação ou conforto. Seja para um presente surpresa, uma decoração especial ou uma homenagem a alguém especial, temos a combinação perfeita para cada ocasião. Com uma equipe dedicada e produtos frescos, estamos prontos para transformar suas ideias em realidade. Que tal fazer uma surpresa com flores?</p>
+            <p class="cta">Escolha suas flores e surpreenda alguém!</p>
         </div>
         <div class="model">
             <h2>Barbearia</h2>
-            <p>Seja para um corte de precisão, um tratamento de cuidados ou um momento de relaxamento, nossa barbearia é o lugar certo para você. Com profissionais qualificados e equipamentos de alta qualidade, cada corte é feito com cuidado e precisão. Aproveite um ambiente moderno e acolhedor, onde a beleza e o conforto são prioridades. Seja para um dia de cuidado ou um momento de relaxamento, nossa barbearia é o seu lugar de confiança. Descubra a diferença da qualidade em cada corte.</p>
-            <p class="call-to-action">Venha se sentir bem com o melhor da barbearia!</p>
+            <p class="hook">Corte perfeito, estilo inigualável.</p>
+            <p class="body">Na nossa barbearia, cuidamos do que importa: sua aparência e sua confiança. Com profissionais certificados, equipamentos de alta qualidade e um ambiente acolhedor, cada corte é um ato de cuidado. Seja para um corte de rotina, uma barba bem feita ou um cabelo bem modelado, nossa equipe está aqui para transformar seu visual. Aprenda a valorizar o cuidado com o seu cabelo e descubra o que é realmente um corte perfeito.</p>
+            <p class="cta">Agende sua próxima visita!</p>
         </div>
         <div class="model">
             <h2>Petshop</h2>
-            <p>Seu pet merece o melhor! Na nossa petshop, cada produto é escolhido com cuidado, pensando no bem-estar e conforto do seu animal de estimação. Do alimento de qualidade, passando por brinquedos e acessórios, cada item é pensado para atender às necessidades do seu pet. Aproveite um ambiente acolhedor e um atendimento personalizado, onde sua felicidade é a prioridade. Seja para cuidados diários ou um presente especial, temos algo para todos os pets. Sinta a diferença da qualidade em cada produto.</p>
-            <p class="call-to-action">Descubra o melhor para seu pet!</p>
+            <p class="hook">Cuidar da sua família é cuidar do seu melhor amigo.</p>
+            <p class="body">Na nossa petshop, temos tudo o que seu pet precisa para ser feliz. Desde ração de qualidade, brinquedos divertidos, cuidados veterinários e até serviços de banho e tosa, oferecemos um ambiente seguro e acolhedor para seus animais. Seja para um passeio, um tratamento especial ou uma simples caminhada, nossa equipe está aqui para garantir que seu pet se sinta amado e bem cuidado. Venha descobrir como podemos fazer a diferença na vida do seu melhor amigo.</p>
+            <p class="cta">Venha conhecer o melhor para seu pet!</p>
         </div>
         <div class="model">
             <h2>Loja de Roupa</h2>
-            <p>Na nossa loja de roupas, cada peça é escolhida com atenção, pensando na qualidade, conforto e estilo. Seja para um look diário, um evento especial ou um dia de descanso, temos a roupa perfeita para você. Aproveite um ambiente moderno e um atendimento personalizado, onde a sua satisfação é a prioridade. Seja para presentes ou para si mesmo, temos algo que vai se encaixar perfeitamente em você. Sinta a diferença da qualidade em cada peça.</p>
-            <p class="call-to-action">Encontre o estilo que combina com você!</p>
+            <p class="hook">Estilo, conforto e qualidade em cada peça.</p>
+            <p class="body">Na nossa loja de roupas, encontramos o equilíbrio perfeito entre moda e conforto. Com uma seleção variada de roupas para todos os estilos e ocasiões, estamos aqui para ajudar você a se sentir confiante e elegante. Seja para um dia de trabalho, um evento especial ou um passeio casual, temos peças que se adaptam ao seu estilo. Com atendimento personalizado e produtos de qualidade, descubra como o vestir certo pode mudar o seu dia.</p>
+            <p class="cta">Encontre sua nova peça favorita!</p>
         </div>
     </div>
     <footer>
-        <p>© 2025 Modelos de Venda - Todos os direitos reservados.</p>
+        © 2025 Modelos de Venda - Todos os direitos reservados.
     </footer>
 </body>
 </html>
