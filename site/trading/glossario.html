@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,44 +6,44 @@
     <style>
         body {
             background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #ffffff;
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-        }
-        .termo {
-            margin-bottom: 25px;
-        }
-        .termo h2 {
-            color: #ffffff;
-            margin-bottom: 5px;
-        }
-        .termo p {
-            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
             line-height: 1.6;
         }
+        header {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .glossario {
+            padding: 2rem;
+        }
+        .termo {
+            margin-bottom: 1rem;
+            background-color: #222;
+            color: #FFFFFF;
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .termo .definicao {
+            margin-right: 1rem;
+        }
         .termo .exemplo {
-            font-style: italic;
-            margin-top: 10px;
+            font-size: 0.9rem;
         }
         footer {
-            background-color: #1e1e1e;
+            background-color: #333;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-            color: #888;
+            padding: 1rem;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -51,105 +51,130 @@
     <header>
         <h1>Glossário de Termos de Mercado</h1>
     </header>
-    <main>
+    <div class="glossario">
         <div class="termo">
-            <h2>Pip</h2>
-            <p>Unidade de medida de movimento de preços em mercados financeiros. Representa 0,0001 em pares de moeda.</p>
-            <p class="exemplo">Um movimento de 100 pips no EUR/USD equivale a uma variação de 0,0100.</p>
+            <div class="definicao">Pip</div>
+            <div class="exemplo">É a unidade de medida mais pequena para uma taxa de câmbio, geralmente 0,0001 para moedas principais.</div>
         </div>
         <div class="termo">
-            <h2>Spread</h2>
-            <p>Diferença entre o preço de compra e venda de um ativo, geralmente expressa em pips.</p>
-            <p class="exemplo">O spread do EUR/USD pode ser de 1,5 pip.</p>
+            <div class="definicao">Spread</div>
+            <div class="exemplo">A diferença entre a oferta e a demanda de um ativo.</div>
         </div>
         <div class="termo">
-            <h2>Lote</h2>
-            <p>Unidade padrão de negociação, geralmente 10.000 unidades da moeda base.</p>
-            <p class="exemplo">Comprar 1 lote de EUR/USD significa adquirir 10.000 EUR.</p>
+            <div class="definicao">Lote</div>
+            <div class="exemplo">A quantidade padrão de um ativo negociado em uma transação.</div>
         </div>
         <div class="termo">
-            <h2>Alavancagem</h2>
-            <p>Capacidade de controlar um maior volume de ativo com um capital menor.</p>
-            <p class="exemplo">Com alavancagem de 1:100, R$ 100 permite controlar R$ 10.000.</p>
+            <div class="definicao">Alavancagem</div>
+            <div class="exemplo">O uso de financiamento para aumentar a exposição a um ativo.</div>
         </div>
         <div class="termo">
-            <h2>Margem</h2>
-            <p>Valor mínimo de capital que o investidor deve manter em sua conta.</p>
-            <p class="exemplo">A margem de 5% significa que o investidor deve ter 5% do valor do lote.</p>
+            <div class="definicao">Margem</div>
+            <div class="exemplo">O dinheiro depositado para garantir as operações de negociação.</div>
         </div>
         <div class="termo">
-            <h2>Stop</h2>
-            <p>Ordem que limita perdas ao definir um ponto de venda automática em caso de queda de preços.</p>
-            <p class="exemplo">Um stop de 50 pips protege o investidor contra quedas abruptas.</p>
+            <div class="definicao">Stop</div>
+            <div class="exemplo">Um pedido para fechar uma posição em um preço específico.</div>
         </div>
         <div class="termo">
-            <h2>Take Profit</h2>
-            <p>Ordem que limita ganhos ao definir um ponto de venda automática em caso de alta de preços.</p>
-            <p class="exemplo">Um take profit de 100 pips garante lucro após uma tendência positiva.</p>
+            <div class="definicao">Take Profit</div>
+            <div class="exemplo">Um pedido para fechar uma posição em um preço lucrativo.</div>
         </div>
         <div class="termo">
-            <h2>Long</h2>
-            <p>Posição de compra, onde o investidor espera que o ativo suba.</p>
-            <p class="exemplo">Comprar 1 lote de BTC/USD em long é esperar que o preço suba.</p>
+            <div class="definicao">Long</div>
+            <div class="exemplo">A compra de um ativo esperando que ele suba de valor.</div>
         </div>
         <div class="termo">
-            <h2>Short</h2>
-            <p>Posição de venda, onde o investidor espera que o ativo desça.</p>
-            <p class="exemplo">Vender 0,5 lote de BTC/USD em short é esperar que o preço caia.</p>
+            <div class="definicao">Short</div>
+            <div class="exemplo">A venda de um ativo esperando que ele desça de valor.</div>
         </div>
         <div class="termo">
-            <h2>Gap</h2>
-            <p>Variação abrupta de preços entre o fechamento da sessão anterior e o início da nova.</p>
-            <p class="exemplo">Um gap de 100 pips pode ocorrer em mercados fechados.</p>
+            <div class="definicao">Gap</div>
+            <div class="exemplo">A diferença entre os preços de abertura e fechamento de um ativo.</div>
         </div>
         <div class="termo">
-            <h2>Volume</h2>
-            <p>Quantidade de ativos negociados em um determinado período.</p>
-            <p class="exemplo">Um volume alto pode indicar maior liquidez.</p>
+            <div class="definicao">Volume</div>
+            <div class="exemplo">A quantidade total de um ativo negociada em um período de tempo.</div>
         </div>
         <div class="termo">
-            <h2>RSI</h2>
-            <p>Índice de Força Relativa que mede a força de uma tendência.</p>
-            <p class="exemplo">RSI acima de 70 indica sobrecompra.</p>
+            <div class="definicao">RSI</div>
+            <div class="exemplo">Índice de Força Relativa, usado para identificar overbought ou oversold.</div>
         </div>
         <div class="termo">
-            <h2>MACD</h2>
-            <p>Indicador que compara a média móvel exponencial com a média móvel simples.</p>
-            <p class="exemplo">MACD positivo indica tendência de alta.</p>
+            <div class="definicao">MACD</div>
+            <div class="exemplo">Índice de Diferença Móvel Média, usado para identificar tendências e divergências.</div>
         </div>
         <div class="termo">
-            <h2>Suporte</h2>
-            <p>Nível de preços onde o ativo tende a encontrar demanda.</p>
-            <p class="exemplo">O suporte é um nível de compra potencial.</p>
+            <div class="definicao">Suporte</div>
+            <div class="exemplo">Um nível de preço abaixo do qual um ativo não cai.</div>
         </div>
         <div class="termo">
-            <h2>Resistência</h2>
-            <p>Nível de preços onde o ativo tende a encontrar oferta.</p>
-            <p class="exemplo">A resistência é um nível de venda potencial.</p>
+            <div class="definicao">Resistência</div>
+            <div class="exemplo">Um nível de preço acima do qual um ativo não sobe.</div>
         </div>
         <div class="termo">
-            <h2>Drawdown</h2>
-            <p>Perda acumulada em relação ao valor máximo atingido.</p>
-            <p class="exemplo">Um drawdown de 20% indica uma perda de 20% do capital máximo.</p>
+            <div class="definicao">Drawdown</div>
+            <div class="exemplo">A perda máxima relativa de valor em um período de tempo.</div>
         </div>
         <div class="termo">
-            <h2>Equity</h2>
-            <p>Valor total da conta, incluindo lucros e perdas.</p>
-            <p class="exemplo">Equity de R$ 50.000 inclui todos os ganhos e perdas.</p>
+            <div class="definicao">Equity</div>
+            <div class="exemplo">O valor total de uma conta, incluindo saldo e posição.</div>
         </div>
         <div class="termo">
-            <h2>Margem Livre</h2>
-            <p>Valor disponível para negociação, calculado pela margem total menos o uso da alavancagem.</p>
-            <p class="exemplo">Com margem livre de R$ 10.000, é possível negociar com alavancagem.</p>
+            <div class="definicao">Margem Livre</div>
+            <div class="exemplo">A quantidade de margem disponível para novas operações.</div>
         </div>
         <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-            <p class="exemplo">Uma ordem limitada a 1,2000 só é executada se o preço chegar a esse nível.</p>
+            <div class="definicao">Ordem Limitada</div>
+            <div class="exemplo">Um pedido para comprar ou vender a um preço específico.</div>
         </div>
-    </main>
+        <div class="termo">
+            <div class="definicao">Ordem Stop-Limit</div>
+            <div class="exemplo">Um pedido que se torna uma ordem limitada quando atingido.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Stop-Market</div>
+            <div class="exemplo">Um pedido para fechar uma posição em um preço de mercado.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Market-On-Open (OMO)</div>
+            <div class="exemplo">Um pedido para comprar ou vender a abertura de mercado.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Market-On-Close (MOC)</div>
+            <div class="exemplo">Um pedido para comprar ou vender a fechamento de mercado.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Limit-On-Open (LOO)</div>
+            <div class="exemplo">Um pedido que se torna uma ordem limitada na abertura de mercado.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Limit-On-Close (LOC)</div>
+            <div class="exemplo">Um pedido que se torna uma ordem limitada na fechamento de mercado.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem One-Cancels-Other (OCO)</div>
+            <div class="exemplo">Duas ordens onde uma cancela a outra.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem One-Triggers-Other (OTO)</div>
+            <div class="exemplo">Duas ordens onde uma ativa a outra.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Trailing Stop</div>
+            <div class="exemplo">Um stop que se move com o preço do ativo.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Trailing Limit</div>
+            <div class="exemplo">Um limit que se move com o preço do ativo.</div>
+        </div>
+        <div class="termo">
+            <div class="definicao">Ordem Trailing Stop-Limit</div>
+            <div class="exemplo">Um stop-limit que se move com o preço do ativo.</div>
+        </div>
+    </div>
     <footer>
-        © 2025 Glossário de Mercado
+        <p>Desenvolvido por Qwen</p>
     </footer>
 </body>
 </html>
