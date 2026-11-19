@@ -5,80 +5,61 @@
     <title>Fundamentos do Mercado Forex</title>
     <style>
         body {
-            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0e0e0e;
-            color: #f5f5f5;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #1a1a1a;
+            background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
         h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #00bfff;
-        }
-        h2 {
-            color: #00bfff;
-            margin-top: 40px;
-        }
-        p {
-            font-size: 1em;
-            margin-bottom: 15px;
+            color: #ffffff;
         }
         .aviso {
-            background-color: #111;
-            border: 1px solid #00bfff;
+            background-color: #2a2a2a;
             padding: 15px;
-            margin: 30px 0;
-            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 5px solid #ff4081;
+            font-weight: bold;
         }
-        .sessoes {
-            margin-top: 30px;
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
         }
-        .sessoes h3 {
-            color: #00bfff;
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #ff4081;
+            padding-bottom: 5px;
         }
-        .sessoes ul {
-            list-style-type: none;
-            padding: 0;
+        p {
+            line-height: 1.6;
         }
-        .sessoes li {
-            margin: 10px 0;
+        ul {
+            padding-left: 20px;
         }
-        .sessoes li::before {
-            content: "•";
-            color: #00bfff;
-            margin-right: 10px;
+        .horarios {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #4caf50;
         }
-        .participantes {
-            margin-top: 30px;
+        .horarios h3 {
+            color: #ffffff;
         }
-        .participantes h3 {
-            color: #00bfff;
-        }
-        .participantes ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .participantes li {
-            margin: 10px 0;
-        }
-        .participantes li::before {
-            content: "•";
-            color: #00bfff;
-            margin-right: 10px;
+        .horarios p {
+            color: #cccccc;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1a1a1a;
-            margin-top: 40px;
+            background-color: #1e1e1e;
+            color: #888888;
             font-size: 0.9em;
-            color: #aaa;
         }
     </style>
 </head>
@@ -87,59 +68,27 @@
         <h1>Fundamentos do Mercado Forex</h1>
     </header>
     <section>
-        <h2>O que é o Forex?</h2>
-        <p>O mercado cambial (ou Forex) é o maior mercado financeiro do mundo, onde as moedas são compradas e vendidas. Ele opera 24 horas por dia, 5 dias por semana, e envolve a troca de pares de moedas entre diferentes países. O Forex é essencial para o comércio internacional e é movido por fatores como juros, inflação e políticas monetárias.</p>
-    </section>
-    <section>
-        <h2>Pares de Moedas</h2>
-        <p>Os pares de moedas são combinações de duas moedas, como USD/EUR (dólar norte-americano contra euro). O primeiro moeda é chamada de moeda base, e a segunda é a moeda contra. O mercado mais líquido inclui pares como EUR/USD, GBP/USD, USD/JPY e USD/CHF.</p>
-    </section>
-    <section>
-        <h2>Pip</h2>
-        <p>Um pip é a unidade de medida de movimento de preços no Forex. Representa 0,0001 em pares de moedas com quatro casas decimais. Por exemplo, se o EUR/USD sobe de 1,1200 para 1,1201, o movimento foi de 1 pip.</p>
-    </section>
-    <section>
-        <h2>Lote</h2>
-        <p>Um lote é a unidade de negociação no Forex. Um lote padrão equivale a 100.000 unidades da moeda base. Existem também lotes menores, como mini (10.000) e micro (1.000), que permitem maior flexibilidade para traders de menor capital.</p>
-    </section>
-    <section>
-        <h2>Alavancagem</h2>
-        <p>A alavancagem é um recurso que permite que traders abram posições com capital menor do que o necessário. Por exemplo, uma alavancagem de 1:100 significa que você pode negociar com 1.000 unidades da moeda base usando apenas 10 unidades de capital.</p>
-    </section>
-    <section>
-        <h2>Spread</h2>
-        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. Ele representa o custo de transação para o trader. No Forex, o spread é geralmente expresso em pips e varia conforme o par de moedas e a plataforma de negociação.</p>
-    </section>
-    <section class="sessoes">
+        <p>O mercado forex, ou mercado cambial, é o maior mercado financeiro do mundo em termos de volume de transações diárias. Ele permite a compra e venda de moedas em tempo real, sendo um dos principais canais de especulação e investimento global. O forex é composto por pares de moedas, onde a taxa de câmbio indica o valor relativo entre duas moedas, como USD/JPY (dólar americano contra iene japonês).</p>
+        <div class="aviso">
+            <strong>Este conteúdo é educacional e não constitui recomendação de investimento.</strong>
+        </div>
+        <h2>Pip e Lote</h2>
+        <p>O <strong>pip</strong> é a unidade de medida mais comum no forex, representando uma mudança de 0,0001 em uma cotação. Por exemplo, se o USD/JPY passa de 110,50 para 110,51, houve um movimento de 1 pip. Já o <strong>lote</strong> é a quantidade de moedas negociada. Um lote padrão equivale a 100.000 unidades da moeda base, enquanto um mini-lote é 10.000 e um micro-lote é 1.000.</p>
+        <h2>Alavancagem e Spread</h2>
+        <p>A <strong>alavancagem</strong> permite que traders negociem com capital reduzido, ampliando o potencial de ganho (e perda). Por exemplo, uma alavancagem de 1:100 significa que o trader pode controlar $100.000 com $1.000. Já o <strong>spread</strong> é a diferença entre a cotação de compra e venda de uma moeda, indicando o custo de entrada em uma posição.</p>
         <h2>Horários de Sessão</h2>
-        <h3>Tóquio</h3>
-        <ul>
-            <li>Abre às 10:00 (horário do Brasil) e fecha às 22:00.</li>
-        </ul>
-        <h3>Londres</h3>
-        <ul>
-            <li>Abre às 15:00 (horário do Brasil) e fecha às 02:00 (próximo dia).</li>
-        </ul>
-        <h3>Nova York</h3>
-        <ul>
-            <li>Abre às 13:00 (horário do Brasil) e fecha às 22:00.</li>
-        </ul>
+        <div class="horarios">
+            <h3>Horários de Sessão</h3>
+            <p><strong>Tóquio:</strong> 20:00 - 06:00 (horário de Brasília)</p>
+            <p><strong>Londres:</strong> 08:00 - 16:00 (horário de Brasília)</p>
+            <p><strong>Nova York:</strong> 12:00 - 20:00 (horário de Brasília)</p>
+            <p>O mercado forex é 24 horas, 5 dias por semana, com horários de sessão sobrepostos.</p>
+        </div>
+        <h2>Participantes do Mercado</h2>
+        <p>O mercado forex é composto por diversos participantes, incluindo <strong>banca central</strong> (que influencia taxas de juros), <strong>corretoras</strong> (que facilitam as transações), <strong>investidores institucionais</strong> (como fundos de investimento), <strong>traders</strong> (que operam em diferentes horizontes de tempo) e <strong>comerciantes</strong> (que buscam lucro com as flutuações cambiais).</p>
     </section>
-    <section class="participantes">
-        <h2>Quem são os Participantes?</h2>
-        <ul>
-            <li>Bancos Centrais (ex: Banco Central do Brasil)</li>
-            <li>Bancos comerciais e instituições financeiras</li>
-            <li>Corretoras e brokers</li>
-            <li>Investidores institucionais e particulares</li>
-            <li>Empresas e governos que importam/exportam</li>
-        </ul>
-    </section>
-    <div class="aviso">
-        <p><strong>AVISO:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. O mercado forex é volátil e pode gerar perdas.</p>
-    </div>
     <footer>
-        &copy; 2025 - Conteúdo sobre Fundamentos do Mercado Forex
+        &copy; 2025 - Conteúdo educacional sobre o mercado forex. Não é recomendação de investimento.
     </footer>
 </body>
 </html>
