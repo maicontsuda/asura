@@ -11,44 +11,60 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             margin: 0;
             font-size: 2em;
+            color: #ffffff;
         }
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
+
         h2 {
-            color: #ff9800;
-            margin-top: 30px;
+            color: #ffffff;
+            margin-top: 40px;
         }
+
         p {
-            margin-bottom: 15px;
+            font-size: 1em;
         }
+
+        .section {
+            margin: 30px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .aviso {
+            margin: 40px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-left: 4px solid #4ecdc4;
+            font-style: italic;
+        }
+
         a {
-            color: #ff9800;
+            color: #00ffcc;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #121212;
+            background-color: #1e1e1e;
+            margin-top: 40px;
             color: #888;
-            font-size: 0.9em;
-            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -56,29 +72,35 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <section>
-        <p>A gestão de risco é um pilar fundamental na prática de investimentos e operações financeiras. A maioria dos traders perde dinheiro não por falta de habilidade, mas por não aplicar corretamente estratégias de risco. Conhecer e implementar técnicas como risco por operação, stop loss, take profit, position sizing, risco/retorno, drawdown e entender por que a maioria falha é essencial para construir uma estratégia sólida.</p>
-        
+    <div class="section">
         <h2>Risco por Operação</h2>
-        <p>É comum que traders exponham até 1–2% do seu capital em cada operação. Isso limita o impacto de uma perda e permite que o trader mantenha a posição em múltiplas operações sem comprometer o capital. A regra do 1–2% é uma forma de proteger o capital e facilitar a recuperação após perdas.</p>
-
+        <p>Em operações de investimento, é fundamental limitar o risco por operação a um mínimo de 1 a 2% do capital total. Isso garante que, mesmo em operações com perda, o impacto no portfólio seja controlado. A regra é simples: você não deve arriscar mais do que pode perder sem comprometer a continuidade do seu capital.</p>
+    </div>
+    <div class="section">
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é a ordem que limita as perdas em uma operação, enquanto o take profit define o ponto de venda para aproveitar lucros. Essas ferramentas ajudam a manter disciplina emocional e evitar decisões impulsivas.</p>
-
+        <p>O stop loss é uma ferramenta essencial para limitar perdas em operações que não seguem o plano previsto. Ele define o ponto em que você sai do mercado para evitar perdas maiores. Já o take profit é o ponto de venda que você define com base no seu objetivo de lucro. Ambos são ferramentas que ajudam a manter disciplina e evitar emoções.</p>
+    </div>
+    <div class="section">
         <h2>Position Sizing</h2>
-        <p>Position sizing refere-se ao tamanho da posição que o trader entra em cada operação. Ele deve ser calculado com base no risco por operação e no stop loss, garantindo que a exposição seja controlada.</p>
-
+        <p>O position sizing refere-se ao tamanho da posição que você entra no mercado. Ele deve ser calculado com base no risco por operação e no nível de stop loss. Isso garante que, mesmo com uma perda, você não comprometa seu capital. Por exemplo, se você tem um capital de R$100.000 e quer riscar 1%, você deve limitar sua operação a R$1.000.</p>
+    </div>
+    <div class="section">
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a proporção entre o potencial de perda e o potencial de ganho. Uma boa estratégia busca um risco/retorno de 1:2 ou maior, ou seja, para cada unidade de risco, o retorno esperado é de duas ou mais unidades.</p>
-
+        <p>O risco/retorno é uma métrica que compara o risco de uma operação com o potencial de lucro. É calculado dividindo-se o lucro potencial pelo risco assumido. Uma boa estratégia busca um risco/retorno de 1:2 ou superior, ou seja, para cada unidade de risco, o potencial de lucro é de duas unidades.</p>
+    </div>
+    <div class="section">
         <h2>Drawdown</h2>
-        <p>O drawdown é a queda percentual do capital em relação ao valor máximo atingido. Ele mede o risco de capital e ajuda a entender a volatilidade e a sustentabilidade de uma estratégia.</p>
-
-        <h2>Por que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por não seguir regras de risco, emocionalizar as decisões, ou não ter um plano de operação claramente definido. A falta de disciplina e o excesso de risco são fatores comuns em operações que resultam em perdas.</p>
-    </section>
+        <p>O drawdown é a perda acumulada de um investimento em relação ao seu valor máximo. Ele mede a volatilidade e o risco de perda em um período de tempo. Um drawdown alto pode indicar que a estratégia não é estável, e é importante monitorá-lo para ajustar a gestão de risco.</p>
+    </div>
+    <div class="section">
+        <h2>Por Que a Maioria Perde Dinheiro</h2>
+        <p>A maioria dos investidores perde dinheiro por falta de disciplina e gestão de risco. Eles entram em operações sem planejamento, ignoram o stop loss, e não controlam o tamanho das posições. Além disso, muitos operam com emoções, como medo e ganância, o que leva a decisões irracionalmente tomadas.</p>
+    </div>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não constitui recomendação financeira. As estratégias apresentadas devem ser testadas em ambientes de simulação antes de serem aplicadas em operações reais.</p>
+    </div>
     <footer>
-        <p>Este conteúdo é educacional e não constitui recomendação financeira. Invista com responsabilidade.</p>
+        &copy; 2025 Gestão de Risco em Operações
     </footer>
 </body>
 </html>
