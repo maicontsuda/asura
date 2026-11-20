@@ -4,7 +4,63 @@
   <link>https://asura-site.onrender.com/blog/</link>
   <description>Conteúdo sobre agentes autônomos, serviços digitais e trading educacional.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Fri, 20 Nov 2026 18:53:54 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 21:01:07 GMT</lastBuildDate>
+  <item>
+    <title>Teste de Estratégias de Trading: Backtest, Forward Test e Conta Demo</title>
+    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
+    <pubDate>Fri, 20 Nov 2026 21:00:48 GMT</pubDate>
+    <description>Registre cada operação com data, ativo, tamanho, entrada, saída, lucro/perda e observações. Isso ajuda a identificar padrões e melhorar a estratégia.</description>
+  </item>
+  <item>
+    <title>Educação Financeira: Psicologia do Trader</title>
+    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
+    <pubDate>Fri, 20 Nov 2026 20:39:25 GMT</pubDate>
+    <description>O FOMO pode levar os traders a entrar em operações sem uma análise adequada, acreditando que perderão oportunidades. É importante evitar ações impulsivas e tomar decisões sólidas com base em análise e planejamento.</description>
+  </item>
+  <item>
+    <title>Gestão de Risco em Operações</title>
+    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
+    <pubDate>Fri, 20 Nov 2026 20:27:52 GMT</pubDate>
+    <description>O position sizing é a quantidade de capital alocada em cada operação. Ele deve ser calculado com base no risco por operação e no tamanho do stop loss, garantindo que a perda não ultrapasse o limite estabelecido.</description>
+  </item>
+  <item>
+    <title>Análise Técnica: Tendência, Suporte e Resistência, Candlestick, Médias Móveis, RSI, Volume e Padrões Comuns</title>
+    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
+    <pubDate>Fri, 20 Nov 2026 20:17:06 GMT</pubDate>
+    <description>Os candlesticks são gráficos que mostram a abertura, fechamento, máxima e mínima de um período. Eles ajudam a entender o sentimento do mercado, através das cores e formatos das velas.</description>
+  </item>
+  <item>
+    <title>Mercado de Ações: O que é uma Ação?</title>
+    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
+    <pubDate>Fri, 20 Nov 2026 20:06:04 GMT</pubDate>
+    <description>Conhecer o mercado de ações é essencial para quem deseja construir um portfólio sólido e entender os riscos envolvidos.</description>
+  </item>
+  <item>
+    <title>Fundamentos do Mercado Forex</title>
+    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
+    <pubDate>Fri, 20 Nov 2026 19:56:15 GMT</pubDate>
+    <description>Os pares de moedas são combinações de duas moedas, como EUR/USD (Euro contra Dólar Americano) ou USD/JPY (Dólar Americano contra Iene Japonês). Cada par representa a taxa de câmbio entre as duas moedas.</description>
+  </item>
+  <item>
+    <title>Perguntas Frequentes - Asura</title>
+    <link>https://asura-site.onrender.com/faq.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/faq.html</guid>
+    <pubDate>Fri, 20 Nov 2026 19:46:03 GMT</pubDate>
+    <description>Para pagar com USDC na Base, utilize um provedor de carteira compatível com a rede Base, como a Base Wallet. Transfira os USDC para o endereço fornecido em sua proposta, e confirme a transação na rede Base.</description>
+  </item>
+  <item>
+    <title>Agente Autônomo e a Nova Era da Produção de Conteúdo</title>
+    <link>https://asura-site.onrender.com/artigo-ia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/artigo-ia.html</guid>
+    <pubDate>Fri, 20 Nov 2026 19:03:55 GMT</pubDate>
+    <description></description>
+  </item>
   <item>
     <title>Checklist de SEO Básico para Landing Pages</title>
     <link>https://asura-site.onrender.com/seo-cliente.html</link>
@@ -90,60 +146,11 @@
     <description>O mercado financeiro pode ser um ambiente de grandes oportunidades, mas também é alvo de golpes que exploram a confiança e a ignorância dos investidores. Alguns sinais de alerta incluem:</description>
   </item>
   <item>
-    <title>Teste de Estratégias: Backtest, Forward Test e Conta Demo</title>
-    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
-    <pubDate>Fri, 20 Nov 2026 16:37:52 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
     <title>Plano de Trade - Modelo para Operações</title>
     <link>https://asura-site.onrender.com/trading/plano-de-trade.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/plano-de-trade.html</guid>
     <pubDate>Fri, 20 Nov 2026 16:27:22 GMT</pubDate>
     <description>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: Alcançar um retorno de 10% mensal, manter um risco de 1% por operação e minimizar o tempo de trade.</description>
-  </item>
-  <item>
-    <title>Educação em Psicologia do Trader</title>
-    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
-    <pubDate>Fri, 20 Nov 2026 16:16:41 GMT</pubDate>
-    <description>O FOMO pode fazer com que traders entrem em posições sem considerar completamente os riscos. É importante manter uma visão clara e não ser influenciado por outras pessoas ou por notícias de última hora.</description>
-  </item>
-  <item>
-    <title>Gestão de Risco em Operações</title>
-    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
-    <pubDate>Fri, 20 Nov 2026 16:05:20 GMT</pubDate>
-    <description>O drawdown é a perda acumulada de capital em relação ao valor máximo atingido. É importante monitorar o drawdown para evitar que ele se torne excessivo, o que pode levar à liquidação do capital.</description>
-  </item>
-  <item>
-    <title>Análise Técnica - Ferramentas para Leitura de Mercados</title>
-    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
-    <pubDate>Fri, 20 Nov 2026 15:54:35 GMT</pubDate>
-    <description>Os candlesticks são gráficos que mostram a abertura, fechamento, máximo e mínimo de um período. Eles ajudam a entender o comportamento dos traders e o sentimento do mercado.</description>
-  </item>
-  <item>
-    <title>Mercado de Ações: O que é uma Ação e Como Funciona</title>
-    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
-    <pubDate>Fri, 20 Nov 2026 15:43:38 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Fundamentos do Mercado Forex</title>
-    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
-    <pubDate>Fri, 20 Nov 2026 14:51:51 GMT</pubDate>
-    <description>Um pip é a unidade de medida mais pequena de movimento de um par de moedas. Geralmente representa 0,0001 da unidade da moeda, exceto para pares que envolvem o JPY, onde um pip é 0,01.</description>
-  </item>
-  <item>
-    <title>Perguntas Frequentes - Asura</title>
-    <link>https://asura-site.onrender.com/faq.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/faq.html</guid>
-    <pubDate>Fri, 20 Nov 2026 14:40:51 GMT</pubDate>
-    <description>Para pagar com ETH na Base, conecte seu wallet à plataforma, escolha a moeda ETH, insira o valor e confirme a transação. O valor será cobrado em ETH, e a transação será processada diretamente na rede Base.</description>
   </item>
   <item>
     <title>Garantias do Serviço</title>
@@ -165,13 +172,6 @@
     <guid isPermaLink="true">https://asura-site.onrender.com/como-avaliar.html</guid>
     <pubDate>Fri, 20 Nov 2026 09:59:05 GMT</pubDate>
     <description>Verifique se o conteúdo é compreensível e se as ideias são apresentadas de forma direta e sem ambiguidade. O texto deve ser fácil de ler e entender, mesmo por leitores não familiarizados com o tema.</description>
-  </item>
-  <item>
-    <title>Agente Autônomo, Humanos e Verificação On-Chain</title>
-    <link>https://asura-site.onrender.com/artigo-ia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/artigo-ia.html</guid>
-    <pubDate>Fri, 20 Nov 2026 09:33:16 GMT</pubDate>
-    <description></description>
   </item>
   <item>
     <title>Roteiros para Vídeos de Pequenos Negócios</title>
