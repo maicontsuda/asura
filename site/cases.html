@@ -9,99 +9,83 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
-            line-height: 1.6;
+            padding: 20px;
         }
-
         header {
-            background-color: #1e1e1e;
-            padding: 20px 40px;
             text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #444;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.5em;
             color: #ffffff;
         }
-
-        .container {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
+        .case-study {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
         }
-
-        .case {
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .case h2 {
+        .case-study h2 {
             color: #ffffff;
             margin-top: 0;
         }
-
-        .case p {
+        .case-study p {
+            line-height: 1.6;
             margin: 10px 0;
         }
-
-        .case .client {
+        .case-study .client {
             font-style: italic;
-            color: #bbbbbb;
+            color: #999;
+            margin-top: 15px;
         }
-
-        .case .result {
+        .case-study .result {
+            margin-top: 20px;
             font-weight: bold;
             color: #00ffcc;
         }
-
         footer {
-            background-color: #1e1e1e;
             text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-            color: #999;
-        }
-
-        footer p {
-            margin: 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
-        <p>Exemplos reais de clientes que confiaram no Asura</p>
     </header>
-    <div class="container">
-        <div class="case">
-            <h2>Loja de Plantas - Renovação de Loja</h2>
-            <p>Um cliente que administra uma loja de plantas em São Paulo buscou um redesign completo da loja física. O objetivo era modernizar o espaço, atrair mais clientes e melhorar a experiência de compra.</p>
-            <p class="client">Cliente: Jardim Verde S/A</p>
-            <p>Nossa equipe reestruturou o layout da loja, incluindo novos arranjos de plantas, iluminação natural e um balcão de atendimento moderno. Fornecemos também um sistema de gestão de estoque integrado para facilitar o controle de produtos.</p>
-            <p class="result">Resultado esperado: Aumento de 30% nas vendas após 3 meses e maior satisfação dos clientes.</p>
-        </div>
 
-        <div class="case">
-            <h2>Doceria Artesanal - Reforma de Loja</h2>
-            <p>Uma doceria artesanal em Curitiba precisava de uma reforma para se adaptar à nova demanda de clientes que buscam produtos mais sofisticados e um ambiente agradável para degustação.</p>
-            <p class="client">Cliente: Doce de Maria</p>
-            <p>Nossa equipe projetou um ambiente com tons quentes, iluminação acolhedora e novos layouts para exibição dos produtos. Também criamos um menu digital interativo para os clientes.</p>
-            <p class="result">Resultado esperado: Aumento de 40% nas vendas e maior engajamento com os clientes.</p>
-        </div>
-
-        <div class="case">
-            < <h2>Estúdio de Tatuagem - Rebranding</h2>
-            <p>Um estúdio de tatuagem em Rio de Janeiro desejava rebranding completo para se diferenciar no mercado e atrair mais clientes, especialmente os que buscam tatuagens exclusivas e personalizadas.</p>
-            <p class="client">Cliente: Ink Studio</p>
-            <p>Nossa equipe redesenhou a identidade visual do estúdio, incluindo nova marca, cartões de visita, portfólio online e um sistema de agendamento digital. Também criamos um conteúdo de marketing para redes sociais.</p>
-            <p class="result">Resultado esperado: Aumento de 25% no número de clientes e maior reconhecimento da marca.</p>
-        </div>
+    <div class="case-study">
+        <h2>Loja de Plantas - Renovação de Loja</h2>
+        <p>O cliente, dono de uma loja de plantas em São Paulo, precisava de uma renovação completa da loja para atrair mais clientes e modernizar o visual. A loja estava desatualizada e precisava de um layout mais atraente e funcional.</p>
+        <p>Nossa equipe realizou uma reformulação do layout da loja, incluindo novas prateleiras, arranjos de plantas estilizados e uma área de atendimento moderna. Também foram criados displays com informações sobre as plantas e seus cuidados.</p>
+        <p class="client">Cliente: João Silva</p>
+        <p class="result">Resultado esperado: Aumento de 40% nas vendas e maior engajamento dos clientes.</p>
     </div>
+
+    <div class="case-study">
+        <h2>Doceria Artesanal - Site e Marketing Digital</h2>
+        <p>A doceria artesanal "Doce e Aroma" precisava de um site profissional para vender seus produtos online e divulgar a marca. A loja física estava crescendo, mas a falta de presença digital estava limitando o crescimento.</p>
+        <p>Nós desenvolvemos um site responsivo com galeria de produtos, informações sobre os ingredientes e um sistema de checkout integrado. Também criamos campanhas de marketing digital que aumentaram o tráfego orgânico em 60%.</p>
+        <p class="client">Cliente: Maria Oliveira</p>
+        <p class="result">Resultado esperado: Crescimento de 50% nas vendas online e maior visibilidade da marca.</p>
+    </div>
+
+    <div class="case-study">
+        < <h2>Estúdio de Tatuagem - Rebranding e Site</h2>
+        <p>O estúdio de tatuagem "Sinais de Cor" queria se rebrandar para atrair mais clientes e se posicionar como uma marca de qualidade. O antigo site estava desatualizado e não refletia a identidade da marca.</p>
+        <p>Realizamos um rebranding completo, incluindo nova identidade visual, logo e cores. Também desenvolvemos um site moderno com portfólio de trabalhos, agendamento online e conteúdo sobre tatuagem e arte.</p>
+        <p class="client">Cliente: Lucas Mendes</p>
+        <p class="result">Resultado esperado: Aumento de 35% na demanda de agendamentos e maior reconhecimento da marca.</p>
+    </div>
+
     <footer>
-        <p>© 2025 Asura - Estudos de Caso</p>
+        &copy; 2025 Asura - Exemplos de Estudos de Caso
     </footer>
 </body>
 </html>
