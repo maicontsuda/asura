@@ -8,57 +8,52 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
+            color: #e0e0e0;
             line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 5px solid #ff4d4d;
-        }
-        .aviso p {
-            font-weight: bold;
-        }
-        section {
+        .container {
             padding: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
+        section {
+            margin-bottom: 40px;
+        }
         h2 {
-            color: #ffcc00;
-            border-bottom: 2px solid #ffcc00;
-            padding-bottom: 5px;
+            color: #00ffcc;
+            margin-top: 30px;
         }
         p {
-            margin-bottom: 15px;
+            font-size: 1em;
         }
-        ul {
-            margin: 10px 0;
+        ul, ol {
+            margin-left: 20px;
+            font-size: 1em;
         }
-        .sessoes {
-            background-color: #2a2a2a;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 5px solid #00ff99;
+        .aviso {
+            background-color: #222;
+            padding: 20px;
+            border-left: 6px solid #00ffcc;
+            margin-top: 40px;
+            font-weight: bold;
         }
-        .sessoes h3 {
-            margin-top: 0;
+        .aviso p {
+            margin: 0;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
             font-size: 0.9em;
-            color: #aaa;
+            color: #777;
         }
     </style>
 </head>
@@ -66,41 +61,56 @@
     <header>
         <h1>Fundamentos do Mercado Forex</h1>
     </header>
-    <div class="aviso">
-        <p><strong>Conteúdo educacional. Não é recomendação de investimento.</strong></p>
-    </div>
-    <section>
-        <h2>O que é o Forex?</h2>
-        <p>O mercado cambial, ou Forex (sigla para Foreign Exchange), é o maior mercado financeiro do mundo, onde as moedas de diferentes países são compradas e vendidas. Ele funciona 24 horas por dia, cinco dias por semana, e envolve a compra e venda de pares de moedas, como USD/EUR ou BRL/USD.</p>
-
-        <h2>Pares de Moedas</h2>
-        <p>Os pares de moedas são combinações de duas moedas, sendo uma a base e a outra a cotada. Exemplos comuns incluem USD/EUR, EUR/JPY e GBP/USD. Cada par representa a taxa de troca entre as duas moedas.</p>
-
-        <h2>Pip</h2>
-        <p>Um pip é a unidade de movimento mínima de um par de moedas. Geralmente representa 0,0001 em pares como USD/EUR, mas em pares com moeda JPY, pode ser 0,01. O cálculo do pip é essencial para medir ganhos e perdas em operações.</p>
-
-        <h2>Lote</h2>
-        <p>Um lote é a quantidade padrão de moedas negociada no mercado. Um lote padrão equivale a 100.000 unidades da moeda base. Existem também lotes menores, como mini-lotes (10.000) e micro-lotes (1.000).</p>
-
-        <h2>Alavancagem</h2>
-        <p>A alavancagem permite que os investidores negociem com um capital menor, aumentando o potencial de ganho e perda. Por exemplo, com alavancagem de 1:100, um investidor pode controlar um lote com apenas 1.000 unidades de moeda.</p>
-
-        <h2>Spread</h2>
-        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. Ele representa a taxa de custos do operador e é geralmente expresso em pips. Quanto menor o spread, maior a eficiência da negociação.</p>
-
-        <div class="sessoes">
-            <h3>Horários de Sessão</h3>
-            <p><strong>Tóquio:</strong> Abre às 12h (horário de Brasília) e fecha às 22h.</p>
-            <p><strong>Londres:</strong> Abre às 15h e fecha às 01h (horário de Brasília).</p>
-            <p><strong>Nova York:</strong> Abre às 19h e fecha às 05h (horário de Brasília).</p>
-            <p>Esses horários permitem que o mercado opere em diferentes fusos horários, aumentando a liquidez.</p>
+    <div class="container">
+        <section>
+            <h2>O que é o Forex?</h2>
+            <p>O mercado cambial, ou Forex (sigla para Foreign Exchange), é o maior mercado financeiro do mundo, onde as moedas de diferentes países são compradas e vendidas. Ele funciona 24 horas por dia, cinco dias por semana, e envolve a troca de moedas entre investidores, bancos, instituições e corretores. O Forex é caracterizado por sua liquidez, alta volatilidade e a possibilidade de ganhar ou perder dinheiro rapidamente.</p>
+        </section>
+        <section>
+            <h2>Pares de Moedas</h2>
+            <p>No Forex, as transações ocorrem em pares de moedas, como EUR/USD (Euro contra Dólar Americano) ou GBP/JPY (Libra Esterlina contra Iene Japonês). O par mais negociado é o EUR/USD, seguido pelo USD/JPY e GBP/USD.</p>
+        </</section>
+        <section>
+            <h2>Pip</h2>
+            <p>O pip é a unidade de medida mais comum no Forex para expressar a variação de preços. Um pip representa 0,0001 em uma cotação, ou seja, 1 pip = 0,0001. Em moedas como o USD/JPY, o pip é calculado como 1 Iene.</p>
+        </section>
+        <section>
+            <h2>Lote</h2>
+            <p>Um lote é a unidade de negociação padrão no Forex. Um lote padrão equivale a 100.000 unidades da moeda base do par. Existem também lotes menores, como mini-lotes (10.000 unidades) e micro-lotes (1.000 unidades).</p>
+        </section>
+        <section>
+            <h2>Alavancagem</h2>
+            <p>A alavancagem permite que os investidores negociem grandes quantidades com um capital pequeno, aumentando o potencial de lucro – mas também o risco de perda. Geralmente, a alavancagem varia entre 1:50 e 1:1000, dependendo do broker e do país.</p>
+        </section>
+        <section>
+            <h2>Spread</h2>
+            <p>O spread é a diferença entre o preço de compra e venda de uma moeda. É a maior fonte de receita dos corretores e representa o custo de transação para o investidor. Em moedas líquidas, o spread pode ser de 0,001 ou menos.</p>
+        </section>
+        <section>
+            <h2>Horários de Sessão</h2>
+            <p>O mercado Forex é dividido em três sessões principais:</p>
+            <ul>
+                <li><strong>Sessão de Tóquio:</strong> 22:00 até 08:00 (horário de Brasília).</li>
+                <li><strong>Sessão de Londres:</strong> 08:00 até 16:00 (horário de Brasília).</li>
+                <li><strong>Sessão de Nova York:</strong> 13:00 até 21:00 (horário de Brasília).</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Participantes do Mercado Forex</h2>
+            <p>O mercado Forex é composto por uma variedade de participantes, incluindo:</p>
+            <ul>
+                <li><strong>Instituições financeiras:</strong> Bancos, fundos de investimento e hedge funds.</li>
+                <li><strong>Corretoras:</strong> Que oferecem acesso ao mercado para investidores individuais.</li>
+                <li><strong>Investidores particulares:</strong> Pessoas físicas que negociam com pequenos volumes.</li>
+                <li><strong>Carregadores de moedas (Carry Traders):</strong> Que aproveitam as diferenças de juros entre moedas.</li>
+            </ul>
+        </section>
+        <div class="aviso">
+            <p>Este conteúdo é educacional e não constitui recomendação de investimento. A negociação no mercado Forex envolve riscos significativos, e você deve buscar orientação profissional antes de investir.</p>
         </div>
-
-        <h2>Participantes do Mercado</h2>
-        <p>O mercado forex envolve diversos participantes, como investidores individuais, bancos centrais, corretoras, fundos de investimento, hedge funds e traders profissionais. Cada um desempenha um papel na formação dos preços e na liquidez do mercado.</p>
-    </section>
+    </div>
     <footer>
-        © 2025 Fundamentos do Mercado Forex – Conteúdo educacional
+        © 2025 - Fundamentos do Mercado Forex
     </footer>
 </body>
 </html>
