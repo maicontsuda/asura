@@ -29,37 +29,41 @@
             color: #ffffff;
             margin-top: 0;
         }
-        ul, ol {
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
             padding-left: 20px;
+            margin: 10px 0;
         }
-        .checklist li {
-            margin-bottom: 10px;
-        }
-        .checklist input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
+        .checklist {
             background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #00ffcc;
+        }
+        .checklist h3 {
+            margin-top: 0;
+        }
+        .registro {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff9500;
+        }
+        .registro h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 30px;
         }
         .aviso {
             background-color: #1e1e1e;
             padding: 15px;
-            margin-top: 20px;
-            border-left: 4px solid #ff4757;
-        }
-        .aviso p {
-            font-style: italic;
-            color: #ff4757;
+            border-left: 4px solid #ff0000;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -69,78 +73,47 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <ul>
-            <li>Comprar e vender ativos com base em um plano estruturado.</li>
-            <li>Obter retornos consistentes com risco controlado.</li>
-            <li>Mantener disciplina e evitar emoções durante as operações.</li>
-        </ul>
+        <p>Objetivo principal é desenvolver uma estratégia de trade consistente e disciplinada, com foco em preservar capital e maximizar retornos ao longo do tempo. A estratégia deve ser baseada em regras claras, testadas e replicáveis.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <ul>
-            <li>Forex (ex: EUR/USD, GBP/USD)</li>
-            <li>Índices (ex: S&P 500, DAX 30)</li>
-            <li>Ativos digitais (ex: BTC/USD, ETH/USD)</li>
-        </ul>
+        <p>Os mercados elegíveis para operação são: Forex (EUR/USD, GBP/USD, USD/JPY), CFDs de ações (ex: AAPL, GOOG) e índices (ex: S&P 500, DAX). A estratégia será aplicada exclusivamente em mercados de alta liquidez e volatilidade moderada.</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <ul>
-            <li>Operações diárias: 08:00 às 16:00 (horário de Brasília)</li>
-            <li>Horário de fechamento: 16:00</li>
-            <li>Revisão de estratégia: 18:00</li>
-        </ul>
+        <p>Operações serão realizadas de segunda-feira a sexta-feira, entre 08:00 e 16:00 (horário de Brasília), com pausas para almoço (12:00 a 13:00). Não são permitidas operações fora desse período.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
         <ul>
-            <li>Entrada: Quando a tendência é clara e os níveis de suporte/resistência são respeitados.</li>
-            <li>Saída: Com lucro fixo de 2-3% ou quando o stop loss é acionado.</li>
-            <li>Stop loss: 1-2% do valor da posição.</li>
-            <li>Take profit: 2-3% do valor da posição.</li>
+            <li>Entrada: Apenas após sinal de confirmação técnica (ex: breakout, candle de alta volatilidade).</li>
+            <li>Saída: Quando o stop loss for atingido, ou quando o objetivo de lucro for atingido (ex: 2x o stop loss).</li>
+            <li>Regra de stop loss: 2% do capital investido por operação.</li>
         </ul>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Máximo de 1% do capital total por dia. Caso exceda, interromper as operações até o próximo dia útil.</p>
+        <p>O limite máximo de perdas diárias é de 1% do capital total. Caso a perda exceda esse limite, a operação é interrompida e não são feitas novas operações até o próximo dia útil.</p>
     </section>
-    <section>
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul class="checklist">
-            <li><input type="checkbox"> Verificar condições do mercado (tendência, volatilidade).</li>
-            <li><input type="checkbox"> Confirmar níveis técnicos e indicadores.</li>
-            <li><input type="checkbox"> Verificar capital disponível e limite de perdas.</li>
-            <li><input type="checkbox"> Confirmar horário e condições do trade.</li>
-            <li><input type="checkbox"> Revisar estratégia e ajustar conforme necessário.</li>
+    <section class="checklist">
+        <h3>Checklist Antes de Abrir Operação</h3>
+        <ul>
+            <li>Verificar se o mercado está em alinhamento com a estratégia.</li>
+            <li>Confirmar que as condições técnicas estão satisfeitas.</li>
+            <li>Verificar o capital disponível e o limite de perdas diária.</li>
+            <li>Assegurar que o stop loss está configurado corretamente.</li>
+            <li>Confirmar que o tempo de operação está dentro do horário permitido.</li>
         </ul>
     </section>
-    <section>
-        <h2>Template de Registro</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Data</th>
-                    <th>Ativo</th>
-                    <th>Entrada</th>
-                    <th>Saída</th>
-                    <th>Resultado</th>
-                    <th>Observações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01/05/2025</td>
-                    <td>EUR/USD</td>
-                    <td>1.0850</td>
-                    <td>1.0870</td>
-                    <td>+0.20%</td>
-                    <td>Operação bem-sucedida com stop loss ativo.</td>
-                </tr>
-            </tbody>
-        </table>
+    <section class="registro">
+        <h3>Template de Registro</h3>
+        <p>Operação: [Nome da operação] | Mercado: [Mercado] | Data: [Data] | Horário: [Horário] | Tipo: [Compra/Venda] | Preço de entrada: [Preço] | Stop Loss: [Preço] | Take Profit: [Preço] | Resultado: [Lucro/Prejuízo] | Comentário: [Observações]</p>
     </section>
+    <footer>
+        <p>© 2025 - Plano de Trade Modelo</p>
+    </footer>
     <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As estratégias apresentadas podem não ser adequadas para todos os traders e devem ser testadas em ambiente simulado antes de serem aplicadas no mercado real.</p>
+        <p><strong>AVISO DE RISCO:</strong> O conteúdo apresentado é apenas educacional e não constitui recomendação de investimento. O trading envolve riscos e pode resultar em perdas financeiras. Antes de investir, consulte um profissional qualificado.</p>
     </section>
 </body>
 </html>
