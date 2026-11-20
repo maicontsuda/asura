@@ -7,12 +7,12 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
             line-height: 1.6;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             padding: 20px 0;
             text-align: center;
         }
@@ -23,32 +23,49 @@
         }
         section {
             padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
         }
-        .service {
+        section h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        section p {
+            font-size: 1em;
+        }
+        .servico {
             background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
+            border-left: 4px solid #00ffcc;
             padding: 20px;
             margin-bottom: 30px;
         }
-        .service h2 {
-            color: #ffffff;
-            margin-top: 0;
-        }
-        .service p {
-            margin: 10px 0;
-        }
-        .service .price {
-            font-weight: bold;
+        .servico h3 {
             color: #00ffcc;
         }
+        .servico .destinatario {
+            color: #00ffcc;
+            margin-top: 10px;
+        }
+        .servico .incluso {
+            margin-top: 15px;
+        }
+        .servico .incluso p {
+            margin: 5px 0;
+        }
+        .servico .prazo {
+            margin-top: 10px;
+            color: #00ffcc;
+        }
+        .servico .preco {
+            margin-top: 10px;
+            color: #00ffcc;
+            font-weight: bold;
+        }
         footer {
+            background-color: #1a1a1a;
             text-align: center;
-            padding: 20px;
-            background-color: #121212;
-            color: #888;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
             font-size: 0.9em;
         }
     </style>
@@ -58,41 +75,57 @@
         <h1>Serviços do Asura</h1>
     </header>
     <section>
-        <div class="service">
-            <h2>Landing Page 2 USDC</h2>
-            <p>A landing page é uma página de destino específica para converter visitantes em leads ou clientes. Ela é ideal para campanhas de marketing digital, produtos ou serviços novos, e é projetada para atrair o público-alvo com uma mensagem clara e chamativa.</p>
-            <p><strong>Para quem serve:</strong> Empresas que desejam divulgar um novo produto, serviço ou campanha específica.</p>
-            <p><strong>O que está incluso:</strong> Design responsivo, formulário de contato, botão de ação, texto persuasivo, otimização para SEO e integração com ferramentas de conversão.</p>
-            <p><strong>Prazo:</strong> 5 dias úteis.</p>
-            <p><strong>Preço:</strong> <span class="price">2 USDC</span></p>
+        <div class="servico">
+            <h3>Landing Page 2 USDC</h3>
+            <p>A landing page é uma página web específica para captar leads, promover um produto ou serviço e converter visitantes em clientes. O serviço inclui criação de uma página com design moderno, chamada para ação e elementos de conversão, como formulários de contato ou botões de inscrição.</p>
+            <div class="destinatario">Para quem serve:</div>
+            <p>Empresas que buscam aumentar o engajamento e conversões em seus canais digitais, como startups, freelancers e marcas de nicho.</p>
+            <div class="incluso">O que está incluso:</div>
+            <p>Design responsivo, texto de valor, chamadas para ação, formulário de contato e integração com ferramentas de CRM.</p>
+            <div class="prazo">Prazo:</div>
+            <p>3 a 5 dias úteis.</p>
+            <div class="preco">Preço:</div>
+            <p>2 USDC</p>
         </div>
-        <div class="service">
-            <h2>Texto de Apresentação 1 USDC</h2>
-            <p>O texto de apresentação é uma forma de destacar o valor da marca ou do serviço de forma breve e impactante. Ele é usado em materiais promocionais, apresentações ou campanhas para transmitir a essência da proposta com clareza.</p>
-            <p><strong>Para quem serve:</strong> Empresas que precisam de uma comunicação direta e impactante para eventos, divulgação ou marketing.</p>
-            <p>< nad><strong>O que está incluso:</strong> Texto de até 300 palavras, estilo profissional e adaptado ao público-alvo.</p>
-            <p><strong>Prazo:</strong> 3 dias úteis.</p>
-            <p><strong>Preço:</strong> <span class="price">1 USDC</span></p>
+        <div class="servico">
+            <h3>Texto de Apresentação 1 USDC</h3>
+            <p>O texto de apresentação é uma forma de destacar os principais benefícios e valor da sua marca, ideal para uso em redes sociais, e-mails ou materiais de marketing. É uma ferramenta para construir confiança e demonstrar o que você oferece.</p>
+            <div class="destinatario">Para quem serve:</div>
+            <p>Empreendedores, profissionais liberais e equipes que desejam comunicar de forma clara e impactante o valor de seus serviços ou produtos.</p>
+            <div class="incluso">O que está incluso:</div>
+            <p>Texto de até 200 palavras, com linguagem direta, valor proposto e chamada para ação.</p>
+            <div class="prazo">Prazo:</div>
+            < <p>1 dia útil.</p>
+            <div class="preco">Preço:</div>
+            <p>1 USDC</p>
         </div>
-        <div class="service">
-            <h2>Revisão de Texto 1 USDC</h2>
-            <p>A revisão de texto é um serviço de edição e correção de gramática, ortografia e estilo. Ideal para melhorar a qualidade de textos, e-books, relatórios ou materiais promocionais.</p>
-            <p><strong>Para quem serve:</strong> Autores, profissionais que produzem conteúdo ou empresas que buscam qualidade em seus materiais.</p>
-            <p><strong>O que está incluso:</strong> Revisão de gramática, pontuação, estilo e sugestões de melhoria.</p>
-            <p><strong>Prazo:</strong> 2 dias úteis.</p>
-            <p><strong>Preço:</strong> <span class="price">1 USDC</span></p>
+        <div class="servico">
+            <h3>Revisão de Texto 1 USDC</h3>
+            <p>A revisão de texto é uma análise crítica e aprimoradora do conteúdo existente, visando melhorar a clareza, fluidez e impacto do seu material. Ideal para textos de marketing, artigos, e-books e apresentações.</p>
+            <div class="destinatario">Para quem serve:</div>
+            <p>Autores, profissionais de marketing, equipes de conteúdo e pessoas que desejam refinar seus textos para obter melhores resultados.</p>
+            <div class="incluso">O que está incluso:</div>
+            <p>Revisão gramatical, de estilo, estrutura e clareza, com sugestões de melhorias e ajustes.</p>
+            <div class="prazo">Prazo:</div>
+            <p>1 dia útil.</p>
+            <div class="preco">Preço:</div>
+            <p>1 USDC</p>
         </div>
-        <div class="service">
-            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>Essa oferta oferece 5 ideias de conteúdo para marketing digital, como posts de Instagram, artigos, vídeos ou campanhas de e-mail marketing. Cada ideia é criada com base no público-alvo e no objetivo da campanha.</p>
-            <p><strong>Para quem serve:</strong> Empresas que precisam de novas ideias de conteúdo para engajar o público e aumentar a visibilidade.</p>
-            <p><strong>O que está incluso:</strong> 5 ideias de conteúdo, com descrição clara e sugestões de formatação.</p>
-            <p><strong>Prazo:</strong> 1 dia útil.</p>
-            <p><strong>Preço:</strong> <span class="price">0,5 USDC</span></p>
+        <div class="servico">
+            <h3>5 Ideias de Conteúdo 0,5 USDC</h3>
+            <p>Essa oferta inclui 5 ideias de conteúdo criativas e relevantes para diferentes plataformas, como Instagram, Facebook, LinkedIn ou blogs. O objetivo é ajudar a construir uma estratégia de conteúdo consistente e impactante.</p>
+            <div class="destinatario">Para quem serve:</div>
+            <p>Empreendedores, criadores de conteúdo, marcas e profissionais que buscam inspiração para gerar conteúdo regular e envolvente.</p>
+            <div class="incluso">O que está incluso:</div>
+            <p>5 ideias de conteúdo, com sugestões de formatos, temas e objetivos específicos.</p>
+            <div class="prazo">Prazo:</div>
+            <p>1 dia útil.</p>
+            <div class="preco">Preço:</div>
+            <p>0,5 USDC</p>
         </div>
     </section>
     <footer>
-        © 2025 Asura. Todos os direitos reservados.
+        <p>© 2025 Asura - Serviços de Marketing Digital</p>
     </footer>
 </body>
 </html>
