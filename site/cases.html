@@ -7,100 +7,101 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f1723;
-            color: #f3f4f6;
+            background-color: #121212;
+            color: #f5f5f5;
             line-height: 1.6;
         }
 
         header {
-            background-color: #1e293b;
-            padding: 20px 0;
+            background-color: #1e1e1e;
+            padding: 20px 40px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2em;
-            color: #f97316;
+            font-size: 2.5rem;
+            color: #ffffff;
         }
 
-        section {
+        .container {
+            padding: 40px 20px;
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #111827;
+            margin: auto;
+        }
+
+        .case {
+            background-color: #1a1a1a;
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        section h2 {
-            color: #f97316;
-            margin-bottom: 15px;
+        .case h2 {
+            color: #ffffff;
+            margin-top: 0;
         }
 
-        .cliente {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #1e293b;
-            border-radius: 8px;
+        .case p {
+            margin: 10px 0;
         }
 
-        .cliente h3 {
-            color: #f97316;
-            margin-bottom: 10px;
+        .case .client {
+            font-style: italic;
+            color: #bbbbbb;
         }
 
-        .cliente p {
-            margin: 5px 0;
+        .case .result {
+            font-weight: bold;
+            color: #00ffcc;
         }
 
         footer {
+            background-color: #1e1e1e;
             text-align: center;
             padding: 20px;
-            background-color: #0f1723;
-            color: #9ca3af;
-            font-size: 0.9em;
+            margin-top: 60px;
+            color: #999;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
-        <p>Exemplos reais de clientes que utilizaram o Asura</p>
+        <p>Exemplos reais de clientes que confiaram no Asura</p>
     </header>
-
-    <section>
-        <h2>Estudo de Caso 1: Loja de Plantas</h2>
-        <div class="cliente">
-            <h3>João Silva - Loja de Plantas</h3>
-            <p>João procurou o Asura para criar uma loja virtual de plantas, com destaque para espécies raras e sustentáveis. Ele precisava de um site moderno e intuitivo que apresentasse as plantas com alta qualidade, além de facilitar a compra e a entrega.</p>
-            <p>O Asura desenvolveu um site com galeria de fotos, descrições detalhadas, opções de pagamento e entrega rápida. O site foi integrado com um sistema de cadastro de clientes e um gerenciador de estoque.</p>
-            <p>O resultado esperado era aumentar a visibilidade da loja e reduzir a dependência de lojas físicas. Hoje, João tem um crescimento de 60% nas vendas e uma base de clientes fiéis.</p>
+    <div class="container">
+        <div class="case">
+            <h2>Loja de Plantas - Renovação de Loja</h2>
+            <p>Um cliente que administra uma loja de plantas em São Paulo buscou um redesign completo da loja física. O objetivo era modernizar o espaço, atrair mais clientes e melhorar a experiência de compra.</p>
+            <p class="client">Cliente: Jardim Verde S/A</p>
+            <p>Nossa equipe reestruturou o layout da loja, incluindo novos arranjos de plantas, iluminação natural e um balcão de atendimento moderno. Fornecemos também um sistema de gestão de estoque integrado para facilitar o controle de produtos.</p>
+            <p class="result">Resultado esperado: Aumento de 30% nas vendas após 3 meses e maior satisfação dos clientes.</p>
         </div>
-    </section>
 
-    <section>
-        <h2>Estudo de Caso 2: Doceria Artesanal</h2>
-        <div class="cliente">
-            <h3>Maria Oliveira - Doceria Artesanal</h3>
-            <p>Maria, dona de uma doceria artesanal, precisava de um site que mostrasse seus doces de forma atraente e envolvente. Ela queria destacar a qualidade dos ingredientes e a personalização dos pedidos.</p>
-            <p>O Asura criou um site com design elegante, destacando cada produto com fotos de alta qualidade, ingredientes e opções de personalização. Foi incluído um sistema de agendamento de pedidos e um espaço para avaliações dos clientes.</p>
-            <p>O resultado esperado era atrair clientes de fora da cidade e aumentar as vendas online. Maria conseguiu expandir sua clientela em 40% e reduzir o tempo de espera para pedidos.</p>
+        <div class="case">
+            <h2>Doceria Artesanal - Reforma de Loja</h2>
+            <p>Uma doceria artesanal em Curitiba precisava de uma reforma para se adaptar à nova demanda de clientes que buscam produtos mais sofisticados e um ambiente agradável para degustação.</p>
+            <p class="client">Cliente: Doce de Maria</p>
+            <p>Nossa equipe projetou um ambiente com tons quentes, iluminação acolhedora e novos layouts para exibição dos produtos. Também criamos um menu digital interativo para os clientes.</p>
+            <p class="result">Resultado esperado: Aumento de 40% nas vendas e maior engajamento com os clientes.</p>
         </div>
-    </section>
 
-    <section>
-        < <h2>Estudo de Caso 3: Estúdio de Tatuagem</h2>
-        <div class="cliente">
-            <h3>Lucas Fernandes - Estúdio de Tatuagem</h3>
-            <p>Lucas, tatuador profissional, precisava de um site que mostrasse seu portfólio de tatuagens, com alta resolução e categorias claras. Ele também queria um sistema de agendamento de consultas e informações sobre o processo de tatuar.</p>
-            <p>O Asura desenvolveu um site com galeria de tatuagens, descrições detalhadas de cada estilo, informações sobre o processo e um sistema de agendamento integrado. Foi incluído também um espaço para clientes deixarem feedbacks.</p>
-            <p>O resultado esperado era atrair novos clientes e melhorar a experiência do cliente. Lucas viu um aumento de 50% nas consultas e uma melhoria na satisfação dos clientes.</p>
+        <div class="case">
+            < <h2>Estúdio de Tatuagem - Rebranding</h2>
+            <p>Um estúdio de tatuagem em Rio de Janeiro desejava rebranding completo para se diferenciar no mercado e atrair mais clientes, especialmente os que buscam tatuagens exclusivas e personalizadas.</p>
+            <p class="client">Cliente: Ink Studio</p>
+            <p>Nossa equipe redesenhou a identidade visual do estúdio, incluindo nova marca, cartões de visita, portfólio online e um sistema de agendamento digital. Também criamos um conteúdo de marketing para redes sociais.</p>
+            <p class="result">Resultado esperado: Aumento de 25% no número de clientes e maior reconhecimento da marca.</p>
         </div>
-    </section>
-
+    </div>
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
+        <p>© 2025 Asura - Estudos de Caso</p>
     </footer>
 </body>
 </html>
