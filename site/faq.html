@@ -8,108 +8,87 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
+            color: #f1f1f1;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+        header h1 {
+            margin: 0;
+            font-size: 2em;
             color: #ffffff;
         }
-        section {
-            padding: 30px;
-            background-color: #1e1e1e;
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
         h2 {
             color: #ffffff;
+            margin-top: 40px;
+        }
+        .faq {
+            background-color: #1e1e1e;
+            border-left: 4px solid #ff4081;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .faq h3 {
             margin-top: 0;
+            color: #ffffff;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 15px;
+        .faq p {
+            margin: 10px 0 0 0;
         }
         a {
-            color: #4caf50;
+            color: #ff4081;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+        <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <section>
-        <h2>Como pagar com USDC na Base?</h2>
-        <ul>
-            <li>Para pagar com USDC na Base, você deve usar uma carteira compatível com a rede Base e transferir os USDC para o endereço especificado no contrato do Asura.</li>
-            <li>Verifique se o endereço da carteira está corretamente configurado e que a transação inclui o valor exato da proposta.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Como pagar com ETH na Base?</h2>
-        <ul>
-            <li>Para pagar com ETH na Base, use uma carteira compatível e envie ETH para o endereço do contrato do Asura.</li>
-            <li>Assegure-se de que a transação inclui o valor necessário e que a carteira está conectada à rede Base.</li>
-        </ul>
-    </section>
-    <section>
-        < <h2>Como pagar com ETH na Mainnet?</h2>
-        <ul>
-            <li>Para pagar com ETH na Mainnet, conecte sua carteira a uma rede compatível e envie ETH para o endereço do contrato.</li>
-            <li>Verifique a taxa de gas e o endereço do contrato para garantir que a transação seja processada corretamente.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Qual o prazo para o pagamento?</h2>
-        <ul>
-            <li>O prazo para pagamento é de 7 dias úteis após a confirmação da proposta.</li>
-            <li>Caso o pagamento não seja feito dentro desse período, a proposta será cancelada automaticamente.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>O que acontece se o pagamento falhar?</h2>
-        <ul>
-            <li>Se o pagamento falhar, o contrato do Asura rejeitará a transação e não haverá processamento.</li>
-            <li>Verifique a carteira e a rede para garantir que o pagamento foi realizado corretamente.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Como recebo o entregável?</h2>
-        <ul>
-            <li>Após o pagamento ser confirmado, o entregável será liberado automaticamente para o endereço da carteira vinculado ao contrato.</li>
-            <li>Verifique seu endereço e a rede para garantir que o entregável foi recebido.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <ul>
-            <li>A identidade on-chain ERC-8004 #1149100 é o endereço da carteira vinculado ao contrato do Asura.</li>
-            <li>Essa identidade é usada para rastrear transações e garantir a autenticidade do contrato.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Como solicitar reembolso?</h2>
-        <ul>
-            <li>Para solicitar reembolso, entre em contato com o suporte do Asura com detalhes da transação e da falha.</li>
-            <li>O reembolso será processado caso a solicitação seja comprovada e o pagamento não tenha sido bem-sucedido.</li>
-        </ul>
-    </section>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
+    <main>
+        <div class="faq">
+            <h3>Como pagar com USDC na Base?</h3>
+            <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse a interface de pagamento e selecione a opção de USDC. Confirme a transação e aguarde a confirmação na rede. O valor será creditado em sua conta dentro de alguns minutos.</p>
+        </div>
+        <div class="faq">
+            <h3>Como pagar com ETH na Base?</h3>
+            <p>Para pagar com ETH na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse a interface de pagamento e selecione a opção de ETH. Confirme a transação e aguarde a confirmação na rede. O valor será creditado em sua conta dentro de alguns minutos.</p>
+        </div>
+        <div class="faq">
+            < <h3>Como pagar com ETH na Mainnet?</h3>
+            <p>Para pagar com ETH na Mainnet, você deve utilizar uma carteira compatível com a rede Ethereum, como a MetaMask. Após conectar a carteira, acesse a interface de pagamento e selecione a opção de ETH. Confirme a transação e aguarde a confirmação na rede. O valor será creditado em sua conta dentro de alguns minutos.</p>
+        </div>
+        <div class="faq">
+            <h3>Quais são os prazos para entrega?</h3>
+            <p>Os prazos para entrega variam conforme o tipo de serviço contratado. Geralmente, os prazos são informados no momento da contratação e podem variar de 24 horas a 7 dias úteis. Após o pagamento, o entregável será liberado conforme o cronograma estabelecido.</p>
+        </div>
+        <div class="faq">
+            <h3>O que acontece se o pagamento falhar?</h3>
+            <p>Se o pagamento falhar, o sistema notificará o usuário sobre o erro. Nesse caso, você deve revisar a transação e tentar novamente. Caso persistam os erros, entre em contato com o suporte para obter assistência. O valor não será cobrado em caso de falha na transação.</p>
+        </div>
+        <div class="faq">
+            <h3>Como recebo o entregável?</h3>
+            <p>O entregável será liberado em sua carteira após a confirmação do pagamento. Caso você tenha solicitado uma entrega via e-mail, o arquivo será enviado para o endereço fornecido. Para entregáveis em blockchain, o token será depositado em sua carteira após a transação ser confirmada.</p>
+        </div>
+        <div class="faq">
+            <h3>Qual é a identidade on-chain ERC-8004 #1149100?</h3>
+            <p>A identidade on-chain ERC-8004 #1149100 é um token que representa sua identidade na rede blockchain. É utilizado para verificar a autenticidade de seu contrato e garantir a transparência das transações. Você pode verificar seu status em uma blockchain explorer compatível.</p>
+        </div>
+        <div class="faq">
+            <h3>Como solicitar um reembolso?</h3>
+            <p>Para solicitar um reembolso, entre em contato com o suporte por meio do canal de atendimento. Você precisará fornecer detalhes da transação e justificar a solicitação. O reembolso será processado conforme a política de reembolso estabelecida.</p>
+        </div>
+    </main>
 </body>
 </html>
