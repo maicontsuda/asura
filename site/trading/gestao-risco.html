@@ -13,41 +13,38 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
+        h1 {
             margin: 0;
             font-size: 2em;
         }
-        section {
-            padding: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #1a1a1a;
-            border-left: 4px solid #ff6f61;
-            border-right: 4px solid #ff6f61;
-        }
         h2 {
-            color: #ff6f61;
-            margin-top: 40px;
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         p {
             font-size: 1em;
         }
-        ul {
-            margin: 20px 0;
-            padding-left: 20px;
-        }
-        .aviso {
-            margin-top: 40px;
+        .section {
             padding: 20px;
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+            margin: 20px auto;
+            max-width: 900px;
         }
-        .aviso p {
+        footer {
+            text-align: center;
+            padding: 20px;
             font-size: 0.9em;
+            color: #aaa;
+        }
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -55,27 +52,32 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <section>
+    <div class="section">
         <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso ajuda a proteger o capital e evitar perdas significativas em caso de falhas ou imprevistos.</p>
-        
-        <h2>Stop Loss e Take Profit</h2>
-        <p>Stop Loss é uma ordem que limita as perdas ao fechar uma posição quando o preço atinge um nível específico. Já o Take Profit é o ponto em que a operação é encerrada para capturar lucros. Ambos são ferramentas essenciais para controlar o risco e maximizar o retorno.</p>
-
-        <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que será aberta em uma operação. Ele deve ser calculado com base no risco aceitável, garantindo que a operação não comprometa o capital disponível.</p>
-
-        <h2>Risco/Retorno</h2>
-        <p>A relação risco/retorno é uma métrica que compara o potencial de lucro com o risco assumido. Uma boa relação é quando o retorno potencial é significativamente maior que o risco assumido, garantindo que a operação seja rentável a longo prazo.</p>
-
-        <h2>Drawdown</h2>
-        <p>O drawdown é a perda máxima acumulada em um período, geralmente expressa como percentual do capital. É importante monitorar o drawdown para avaliar o impacto emocional e financeiro de uma operação.</p>
-
-        <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro devido à falta de disciplina, gestão de risco inadequada e falta de conhecimento técnico. A maioria também não segue um plano de operações consistente, o que leva a decisões impulsivas e perdas contínuas.</p>
-    </section>
-    <div class="aviso">
-        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações financeiras envolvem riscos e você deve buscar orientação profissional antes de investir.</p>
+        <p>Na gestão de risco, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% a 2%. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1% ou 2% do seu capital. Essa prática ajuda a proteger seu capital contra perdas significativas e permite que você continue operando mesmo em sequências de perdas.</p>
     </div>
+    <div class="section">
+        <h2>Stop Loss e Take Profit</h2>
+        <p>O stop loss é uma ordem que limita as perdas em uma operação, enquanto o take profit define o ponto em que você encerrará a operação com lucro. Ambos são ferramentas essenciais para manter controle sobre o risco e garantir que você não perca mais do que planejou. A posição de stop loss deve ser definida com base em níveis de suporte e resistência, enquanto o take profit pode ser calculado com base no risco/retorno.</p>
+    </div>
+    <div class="section">
+        <h2>Position Sizing</h2>
+        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco por operação e no stop loss. Por exemplo, se seu capital é de R$100.000 e seu risco por operação é 1%, você pode perder até R$1.000. Se o stop loss estiver em R$500, você deve posicionar apenas 2 contratos para não ultrapassar o limite de risco.</p>
+    </div>
+    <div class="section">
+        <h2>Risco/Retorno</h2>
+        <p>O risco/retorno é a relação entre o risco de uma operação e o potencial de lucro. É recomendável que essa relação seja de no mínimo 1:2 ou 1:3, ou seja, para cada unidade de risco, você deve ter pelo menos duas ou três unidades de lucro potencial. Isso aumenta a probabilidade de que as operações que você entra sejam rentáveis no longo prazo.</p>
+    </div>
+    <div class="section">
+        <h2>Drawdown</h2>
+        <p>O drawdown é a perda máxima acumulada em um período de tempo. Ele mede a volatilidade e o risco de um portfólio. Um drawdown alto pode indicar que a estratégia está exposta a riscos excessivos. É importante monitorar o drawdown para garantir que ele permaneça dentro dos limites aceitáveis para o seu perfil de investidor.</p>
+    </div>
+    <div class="section">
+        <h2>Por que a Maioria Perde Dinheiro</h2>
+        <p>Muitos traders perdem dinheiro porque não seguem uma estratégia de gestão de risco. Eles entram com posições muito grandes, não definem stop loss, e não respeitam o risco/retorno. Além disso, a falta de disciplina e a emoção muitas vezes levam a decisões impulsivas que comprometem a estratégia. A educação e a prática contínua são essenciais para melhorar as chances de sucesso.</p>
+    </div>
+    <footer>
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. As operações financeiras envolvem riscos, e você deve buscar orientação profissional antes de investir.</p>
+    </footer>
 </body>
 </html>
