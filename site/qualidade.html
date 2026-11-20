@@ -11,41 +11,54 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+
+        h1 {
             margin: 0;
             font-size: 2em;
         }
-        main {
-            padding: 20px;
-        }
+
         section {
-            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333;
         }
+
         h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 5px;
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
+
         ul {
-            margin: 10px 0;
+            list-style-type: disc;
             padding-left: 20px;
         }
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
+
         .subtitulo {
             font-size: 1.2em;
-            color: #cccccc;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-left: 4px solid #ff4136;
             margin-top: 15px;
         }
-        .destaque {
-            font-weight: bold;
-            color: #4caf50;
+
+        .aviso p {
+            margin: 0;
         }
     </style>
 </head>
@@ -53,31 +66,113 @@
     <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
     </header>
-    <main>
-        <section>
-            <h2>Landing Page</h2>
-            <p><span class="destaque">Critérios de Aceite:</span> A landing page deve conter um objetivo claro, chamada para ação (CTA) direta, informações relevantes do serviço, design responsivo e tempo de carregamento rápido.</p>
-            <p><span class="destaque">Erros Comuns:</span> Texto excessivo, falta de CTA, elementos gráficos que distraem, conteúdo duplicado ou não alinhado ao público-alvo.</p>
-            <p><span class="destaque">Como Revisar:</span> Verifique se o CTA está visível e claro, o tempo de carregamento não ultrapassa 3 segundos, e que o conteúdo esteja alinhado com o público-alvo.</p>
-        </section>
-        <section>
-            <h2>Texto de Apresentação</h2>
-            <p><span class="destaque">Critérios de Aceite:</span> O texto deve ser claro, direto, persuasivo e alinhado com o público-alvo, com uma estrutura lógica e linguagem adequada.</p>
-            <p><span class="destaque">Erros Comuns:</span> Redundâncias, linguagem ambígua, falta de tom adequado, excesso de jargão ou informações irrelevantes.</p>
-            <p><span class="destaque">Como Revisar:</span> Leia o texto em voz alta, verifique a coerência e o impacto no leitor, e garanta que cada parágrafo tenha um objetivo claro.</p>
-        </section>
-        <section>
-            <h2>Revisão de Texto</h2>
-            <p><span class="destaque">Critérios de Aceite:</span> O texto revisado deve manter o tom original, corrigir erros gramaticais, melhorar a clareza e manter a intenção do autor.</p>
-            <p><span class="destaque">Erros Comuns:</span> Alterações que mudam o significado, falta de respeito ao estilo original, erros de pontuação e inconsistências de formatação.</p>
-            <p><span class="destaque">Como Revisar:</span> Compare o texto original com a versão revisada, verifique se as mudanças são justificadas e mantêm o propósito do conteúdo.</p>
-        </section>
-        <section>
-            <h2>5 Ideias de Conteúdo</h2>
-            <p><span class="destaque">Critérios de Aceite:</span> Cada ideia deve ser clara, direta, alinhada ao público-alvo e com potencial de engajamento e conversão.</p>
-            <p><span class="destaque">Erros Comuns:</span> Ideias genéricas, falta de foco, não alinhadas com o público, ou que não oferecem valor real ao leitor.</p>
-            <p><span class="destaque">Como Revisar:</span> Avalie se cada ideia é específica, se oferece valor e se é alinhada com as metas do serviço.</p>
-        </section>
-    </main>
+
+    <section>
+        <h2>Landing Page</h2>
+        <p>As landing pages devem ser diretas, com objetivo claro e chamada para ação. O conteúdo deve ser conciso e alinhado com a campanha.</p>
+        <div class="subtitulo">Critérios de Aceite</div>
+        <ul>
+            <li>Objetivo principal definido e destacado na primeira tela.</li>
+            <li>Formulário de contato ou link de conversão visível e acessível.</li>
+            <li>Imagens de alta qualidade e relevantes ao conteúdo.</li>
+            <li>Texto com tom de voz alinhado ao público-alvo.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns</div>
+        <ul>
+            <li>Conteúdo excessivamente longo e sem foco.</li>
+            <li>Imagens de baixa qualidade ou irrelevantes.</li>
+            <li>Falta de chamada para ação clara e direta.</li>
+            <li>Texto sem tom de voz ou alinhamento com o público.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar</div>
+        <ul>
+            <li>Verificar se o objetivo foi atingido e se o público está claro.</li>
+            <li>Testar o formulário de contato e garantir que funcione.</li>
+            <li>Revisar a usabilidade e a navegação do site.</li>
+            <li>Verificar a compatibilidade com diferentes dispositivos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Texto de Apresentação</h2>
+        <p>O texto de apresentação deve ser persuasivo, informativo e transmitir confiança. Deve ser curto, objetivo e alinhado com o propósito da campanha.</p>
+        <div class="subtitulo">Critérios de Aceite</div>
+        <ul>
+            <li>Clareza e objetividade no apresentação do serviço.</li>
+            <li>Destaque para os benefícios e diferenciais do serviço.</li>
+            <li>Tom de voz profissional e envolvente.</li>
+            <li>Uso de palavras-chave relevantes e naturais.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns</div>
+        <ul>
+            <li>Excesso de jargão ou linguagem técnica sem contexto.</li>
+            <li>Texto muito longo sem divisão clara de ideias.</li>
+            <li>Frases repetitivas ou sem impacto.</li>
+            <li>Falta de palavras-chave ou alinhamento com o público.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar</div>
+        <ul>
+            <li>Verificar se o texto transmite clareza e propósito.</li>
+            <li>Testar a leitura em voz alta para identificar falhas de fluidez.</li>
+            <li>Revisar a coerência e a estrutura do texto.</li>
+            <li>Analizar a presença de palavras-chave e seu uso natural.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Revisão de Texto</h2>
+        <p>A revisão de texto deve garantir qualidade gramatical, ortográfica e de estilo. O conteúdo deve ser claro, coerente e alinhado com o objetivo da campanha.</p>
+        <div class="subtitulo">Critérios de Aceite</div>
+        <ul>
+            <li>Texto gramaticalmente correto e sem erros.</li>
+            <li>Coerência entre as ideias e o objetivo da campanha.</li>
+            <li>Tom de voz consistente e alinhado ao público-alvo.</li>
+            <li>Uso adequado de pontuação e formatação.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns</div>
+        <ul>
+            <li>Erros gramaticais ou de concordância.</li>
+            <li>Repetição excessiva de palavras ou frases.</li>
+            <li>Falta de divisão clara de parágrafos.</li>
+            <li>Uso inadequado de pontuação e formatação.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar</div>
+        <ul>
+            <li>Revisar cada parágrafo para clareza e coerência.</li>
+            <li>Verificar a gramática, ortografia e pontuação.</li>
+            <li>Testar a leitura em voz alta para identificar falhas de fluidez.</li>
+            <li>Comparar o texto com o objetivo da campanha para garantir alinhamento.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5 Ideias de Conteúdo</h2>
+        <p>As ideias de conteúdo devem ser relevantes, atraentes e alinhadas com o público-alvo. Cada ideia deve ter um objetivo claro e uma estrutura bem definida.</p>
+        <div class="subtitulo">Critérios de Aceite</div>
+        <ul>
+            <li>Cada ideia deve ter um objetivo claro e relevante.</li>
+            <li>Conteúdo estruturado e dividido em partes lógicas.</li>
+            <li>Tom de voz consistente e alinhado ao público-alvo.</li>
+            <li>Uso de palavras-chave e termos técnicos adequados.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns</div>
+        <ul>
+            <li>Ideias sem foco ou sem propósito claro.</li>
+            <li>Conteúdo desorganizado ou sem divisão clara.</li>
+            <li>Falta de palavras-chave ou alinhamento com o público.</li>
+            <li>Excesso de jargão ou linguagem técnica sem contexto.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar</div>
+        <ul>
+            <li>Verificar se cada ideia tem propósito e foco claro.</li>
+            <li>Revisar a estrutura e a divisão do conteúdo.</li>
+            <li>Testar a leitura em voz alta para identificar falhas de fluidez.</li>
+            <li>Comparar o conteúdo com o objetivo da campanha para garantir alinhamento.</li>
+        </ul>
+    </section>
+
+    <section class="aviso">
+        <p><strong>AVISO:</strong> Este checklist é apenas um guia de qualidade. A revisão final deve ser feita por um revisor especializado, para garantir a qualidade do conteúdo entregue.</p>
+    </section>
 </body>
 </html>
