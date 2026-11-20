@@ -9,105 +9,152 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             color: #ffffff;
         }
+
         section {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 900px;
+            margin: 20px 0;
         }
+
         h2 {
             color: #ffffff;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
         }
+
         p {
-            line-height: 1.6;
+            font-size: 16px;
         }
-        ul {
-            margin-left: 20px;
-        }
+
         .metricas {
             background-color: #1e1e1e;
             padding: 15px;
-            border-left: 4px solid #00ffcc;
+            border-radius: 8px;
+            margin-top: 15px;
         }
+
         .metricas h3 {
-            color: #00ffcc;
+            color: #ffffff;
         }
-        .avisos {
+
+        .metricas p {
+            margin: 5px 0;
+        }
+
+        .diario {
             background-color: #1e1e1e;
             padding: 15px;
-            border-left: 4px solid #ff4d4d;
+            border-radius: 8px;
+            margin-top: 15px;
         }
-        .avisos h3 {
-            color: #ff4d4d;
+
+        .diario h3 {
+            color: #ffffff;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
+
+        .diario ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .diario li {
+            margin: 5px 0;
+        }
+
+        .critérios {
             background-color: #1e1e1e;
-            color: #888;
-            font-size: 0.9em;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .critérios h3 {
+            color: #ffffff;
+        }
+
+        .critérios ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .critérios li {
+            margin: 5px 0;
+        }
+
+        .aviso {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #ff4757;
+        }
+
+        .aviso h3 {
+            color: #ffffff;
+        }
+
+        .aviso p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Como Testar uma Estratégia Sem Arriscar Dinheiro</h1>
+        <h1>Como Testar uma Estratégia sem Arriscar Dinheiro</h1>
     </header>
     <section>
-        <h2>Backtest: Teste da Estratégia no Passado</h2>
-        <p>O <strong>backtest</strong> é a etapa inicial para validar uma estratégia. Ele consiste em aplicar a estratégia a dados históricos para verificar se ela seria rentável se tivesse sido usada no passado. Esse processo ajuda a identificar padrões, métricas e possíveis falhas.</p>
-        <p>As métricas mais comuns incluem:</p>
+        <h2>Backtest, Forward Test e Conta Demo: O Que São e Como Funcionam</h2>
+        <p>O backtest é o processo de testar uma estratégia com dados históricos, para verificar se ela teria sido lucrativa no passado. Já o forward test é a aplicação da estratégia em tempo real, sem investir dinheiro real, usando uma conta demo. Ambos são ferramentas essenciais para entender o comportamento de uma estratégia antes de investir.</p>
+        <p>A conta demo é uma ferramenta virtual que simula o mercado, permitindo que traders pratiquem operações sem risco financeiro. É ideal para testar estratégias, ajustar parâmetros e desenvolver confiança no método escolhido.</p>
+    </section>
+    <section>
+        <h2>Métricas de Avaliação</h2>
         <div class="metricas">
-            <h3>Métricas Principais</h3>
+            <h3>Indicadores Importantes</h3>
+            <p><strong>Taxa de Acerto:</strong> Porcentagem de operações que resultaram em ganho.</p>
+            <p><strong>Payoff:</strong> Relação entre o lucro e o risco de uma operação.</p>
+            <p><strong>Drawdown:</strong> Perda máxima acumulada de um capital ao longo do tempo.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Diário de Operações</h2>
+        <div class="diario">
+            <h3>Exemplo de Registros</h3>
             <ul>
-                <li><strong>Taxa de Acerto:</strong> Porcentagem de operações bem-sucedidas.</li>
-                <li><strong>Payoff:</strong> Ganho médio por operação bem-sucedida.</li>
-                <li><strong>Drawdown:</strong> Perda máxima acumulada em um período.</li>
+                <li><strong>Data:</strong> 01/04/2025 | <strong>Ativo:</strong> EUR/USD | <strong>Tipo:</strong> Compra | <strong>Stop Loss:</strong> 1.0850 | <strong>Take Profit:</strong> 1.0950</li>
+                <li><strong>Data:</strong> 03/04/2025 | <strong>Ativo:</strong> GBP/USD | <strong>Tipo:</strong> Venda | <strong>Stop Loss:</strong> 1.2800 | <strong>Take Profit:</strong> 1.2700</li>
             </ul>
         </div>
-        <p>Apesar da utilidade, o backtest não garante resultados futuros, pois o mercado é imprevisível e condições passadas não se repetem.</p>
     </section>
     <section>
-        <h2>Forward Test: Teste no Presente</h2>
-        <p>O <strong>forward test</strong> é a aplicação da estratégia em condições reais, mas sem investir dinheiro. Ele simula operações com contas de demo, permitindo observar como a estratégia se comporta em tempo real.</p>
-        <p>Essa fase é essencial para:</p>
-        <ul>
-            <li>Verificar se a estratégia funciona em ambientes reais.</li>
-            <li>Identificar erros de implementação ou lógica.</li>
-            <li>Testar a psicologia do trader em situações reais.</li>
-        </ul>
-        <p>Um diário de operações deve registrar:</p>
-        <ul>
-            <li>Data e horário da operação.</li>
-            <li>Entrada e saída.</li>
-            <li>Resultado (lucro/perda).</li>
-            <li>Análise da decisão.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Conta Demo: Simulação de Mercado</h2>
-        <p>As <strong>contas de demo</strong> oferecem um ambiente virtual para testar estratégias com dinheiro simulado. Elas replicam condições reais, como spreads e ordens, mas sem risco financeiro.</p>
-        <p>Para passar da conta demo para o real, é necessário:</p>
-        <ul>
-            <li>Consistência de resultados em diferentes períodos.</li>
-            <li>Comportamento disciplinado e respeito às regras.</li>
-            <li>Controle emocional e gestão de risco.</li>
-        </ul>
-        <div class="avisos">
-            <h3>Aviso Importante</h3>
-            <p>A conta demo não garante resultados reais. O mercado é volátil e as condições podem mudar drasticamente. Teste com responsabilidade e saiba que a simulação não substitui o risco real.</p>
+        <h2>Critérios para Passar da Conta Demo para o Real</h2>
+        <div class="critérios">
+            <h3>Requisitos para o Passo para o Real</h3>
+            <ul>
+                <li>Consistência nas operações por pelo menos 30 dias.</li>
+                <li>Resultado positivo com taxa de acerto acima de 60%.</li>
+                <li>Drawdown máximo inferior a 15%.</li>
+                <li>Validação de estratégia em diferentes condições de mercado.</li>
+            </ul>
         </div>
     </section>
-    <footer>
-        © 2025 - Guia Prático para Teste de Estratégias
-    </footer>
+    <section>
+        <h2>Aviso Importante</h2>
+        <div class="aviso">
+            <h3>Contas Demo Não Garantem Resultados Reais</h3>
+            <p>A conta demo é uma ferramenta educacional e não garante resultados no mercado real. Fatores como spreads, slippage e condições de mercado podem influenciar significativamente o desempenho. Sempre que possível, use a demo para testar, mas nunca substitua a prática real por apenas simulações.</p>
+        </div>
+    </section>
 </body>
 </html>
