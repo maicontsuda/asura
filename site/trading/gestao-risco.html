@@ -1,70 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Gestão de Risco em Operações Financeiras</title>
+    <title>Gestão de Risco em Operações</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
         }
-        .container {
-            background-color: #282828;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        header {
+            background-color: #1e1e1e;
             padding: 20px;
-            width: 80%;
-            max-width: 800px;
+            text-align: center;
         }
-        h1 {
-            color: #61dafb;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        p {
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        section p {
             line-height: 1.6;
+            font-size: 1em;
         }
-        .section {
-            margin-bottom: 20px;
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 5px solid #ff4d4d;
+            margin: 30px 0;
         }
-        .section-title {
-            color: #00b4d9;
+        .aviso p {
+            font-weight: bold;
+            margin: 0;
         }
-        .section-content {
-            margin: 10px 0;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 0.9em;
+            color: #bbbbbb;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Gestão de Risco em Operações Financeiras</h1>
-        <p class="section-title">Risco por Operação (1-2% do Capital)</p>
-        <p>Uma das práticas mais fundamentais na gestão de risco em operações financeiras é definir um risco por operação. Isso significa que cada trade deve ser limitado a um nível de risco específico, geralmente entre 1% a 2% do capital total disponível. Isso ajuda a evitar perdas excessivas em uma única operação, mantendo o capital sob controle.</p>
+    <header>
+        <h1>Gestão de Risco em Operações</h1>
+    </header>
+    <section>
+        <h2>Risco por Operação</h2>
+        <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso garante que mesmo em caso de perda, o impacto no capital seja mínimo e que o trader possa continuar operando sem comprometer sua posição financeira.</p>
         
-        <p class="section-title">Stop Loss</p>
-        <p>O stop loss é uma ordem de venda que é colocada para limitar as perdas em uma operação. É recomendado estabelecer um stop loss a um nível onde você está disposto a cortar a posição, mesmo que a situação se torne adversa. Isso ajuda a proteger o capital disponível e evitar perdas desnecessárias.</p>
+        <h2>Stop Loss e Take Profit</h2>
+        <p>O stop loss é uma ordem que limita as perdas ao definir um ponto de venda automática em caso de movimento adverso. Já o take profit é a ordem que define o lucro desejado, garantindo que o trader não fique exposto a reversões. Essas ferramentas são essenciais para manter a disciplina no mercado.</p>
         
-        <p class="section-title">Take Profit</p>
-        <p>O take profit é uma ordem de venda que é colocada para garantir lucros. É importante definir um take profit antes de abrir uma posição, para garantir que você não perca lucros potenciais. Isso ajuda a tornar a gestão de risco mais previsível e controlada.</p>
+        <h2>Position Sizing</h2>
+        <p>O position sizing refere-se ao tamanho da posição que o trader decide abrir em cada operação. Ele deve ser calculado com base no risco tolerável, garantindo que o capital em risco não exceda os limites estabelecidos. Isso evita que uma única operação prejudique significativamente o portfólio.</p>
         
-        <p class="section-title">Position Sizing</p>
-        <p>A position sizing, ou tamanho da posição, é a estratégia de determinar o tamanho da posição com base no risco desejado. É uma ferramenta importante para gerir o risco de forma consistente, permitindo que você mantenha a gestão de risco sob controle mesmo em condições voláteis do mercado.</p>
+        <h2>Risco/Retorno</h2>
+        <p>O risco/retorno é uma métrica que compara o potencial de lucro com o risco assumido. Operações com risco/retorno de 1:3 ou superior são consideradas mais seguras, pois oferecem maior probabilidade de sucesso em comparação ao potencial de perda.</p>
         
-        <p class="section-title">Risco/Retorno</p>
-        <p>A relação entre risco e retorno é crucial na gestão de operações financeiras. É importante encontrar um equilíbrio entre os dois, onde você pode maximizar os lucros sem correr riscos desnecessários. Isso pode ser alcançado através de estratégias de diversificação e análise técnica.</p>
+        <h2>Drawdown</h2>
+        <p>O drawdown é a perda acumulada de capital em relação ao valor máximo atingido. É importante monitorar o drawdown para evitar que ele se torne excessivo, o que pode levar à liquidação do capital.</p>
         
-        <p class="section-title">Drawdown</p>
-        <p>O drawdown é a medida da perda máxima de valor de uma operação ou investimento, medida em relação ao valor máximo anterior. É uma métrica importante para avaliar o quanto você pode suportar uma queda no valor do investimento. A gestão de drawdown é crucial para manter o controle emocional e financeiro durante períodos de mercado volátil.</p>
-        
-        <p class="section-title">Por que a Maioria Perde Dinheiro</p>
-        <p>Muitos traders e investidores perdem dinheiro devido a falhas na gestão de risco. A falta de planejamento, a não aplicação de stop loss, a tentativa de maximizar lucros sem gerir o risco de forma adequada, e a emocionalidade no mercado são alguns dos principais fatores. Adotar uma abordagem sistemática e disciplinada na gestão de risco pode ajudar a aumentar as chances de sucesso no mercado financeiro.</p>
-        
-        <p>*Aviso: O conteúdo apresentado aqui é meramente educacional e não constitui recomendação financeira. É importante buscar conselhos profissionais antes de tomar decisões financeiras.</p>
+        <h2>Por Que a Maioria Perde Dinheiro</h2>
+        <p>Muitos traders perdem dinheiro devido à falta de disciplina, ao não seguir regras de gestão de risco, ou por operar com emoções. A maioria também não tem um plano de negociação claro, o que leva a decisões impulsivas e a perdas frequentes.</p>
+    </section>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento.</p>
     </div>
+    <footer>
+        <p>© 2025 - Gestão de Risco em Operações</p>
+    </footer>
 </body>
 </html>
