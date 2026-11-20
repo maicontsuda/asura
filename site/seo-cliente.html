@@ -7,7 +7,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
@@ -16,50 +16,44 @@
             padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            font-size: 2.5em;
+        header h1 {
             margin: 0;
+            font-size: 2em;
         }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
+        main {
             padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
-            font-size: 1.8em;
+            color: #ffcc00;
             margin-top: 30px;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
         }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
         li {
-            margin-bottom: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
         }
-        .alert {
-            background-color: #2a2a2a;
-            border-left: 5px solid #ff4d4d;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        li:last-child {
+            border-bottom: none;
         }
-        .success {
-            background-color: #2a2a2a;
-            border-left: 5px solid #4caf50;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        .not-do {
+            margin-top: 40px;
+        }
+        .not-do h2 {
+            color: #ff4d4d;
         }
         footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
-            color: #aaa;
+            color: #888;
         }
     </style>
 </head>
@@ -67,35 +61,65 @@
     <header>
         <h1>Checklist de SEO Básico para Landing Pages</h1>
     </header>
-    <div class="container">
-        <h2>1. Title (Título da Página)</h2>
-        <p>O título da página é o primeiro elemento que aparece nos resultados de busca. Ele deve ser conciso, incluir palavras-chave relevantes e atrair o usuário a clicar. Exemplo: "Curso de Marketing Digital - Aprenda Agora!". Evite títulos longos ou repetitivos.</p>
-
-        <h2>2. Meta Description</h2>
-        <p>A meta description é o resumo da página que aparece nos resultados de busca. Ela deve ser única, entre 155 e 160 caracteres, e incluir palavras-chave e um chamado à ação. Exemplo: "Aprenda marketing digital de forma prática e eficaz com nosso curso gratuito. Inscreva-se agora!".</p>
-
-        <h2>3. Headings (Títulos)</h2>
-        <p>Use headings de H1 a H6 de forma hierárquica. O H1 deve ser único e incluir a palavra-chave principal. Os H2 e H3 ajudam a organizar o conteúdo e melhoram a navegação para os motores de busca.</p>
-
-        <h2>4. Texto Alternativo (Alt Text)</h2>
-        <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso ajuda o motor de busca a entender o conteúdo da imagem e também beneficia os usuários que usam leitores de tela. Exemplo: "Imagem de um curso de marketing digital em ação."</p>
-
-        <h2>5. Velocidade de Carregamento</h2>
-        <p>A velocidade da página é um fator importante para o SEO. Use imagens otimizadas, minimize o uso de scripts e evite a sobrecarga de elementos. Ferramentas como Google PageSpeed Insights podem ajudar a medir e melhorar a velocidade.</p>
-
-        <h2>6. Links Internos</h2>
-        <p>Os links internos ajudam a distribuir a autoridade da página e melhoram a navegação. Conecte as páginas relevantes e use nomes de links descritivos. Exemplo: "Saiba mais sobre os benefícios do marketing digital."</p>
-
-        <h2>7. O Que Não Fazer</h2>
-        <div class="alert">
-            <p><strong>Evite:</strong> Títulos e meta descriptions duplicados, texto alternativo vazio, imagens não otimizadas, páginas muito lentas e links internos que não levam a conteúdo relevante.</p>
-        </div>
-        <div class="success">
-            <p>Seguir esse checklist de SEO básico ajuda a melhorar a visibilidade da sua landing page nos motores de busca e a aumentar a conversão dos visitantes.</p>
-        </div>
-    </div>
+    <main>
+        <section>
+            <h2>1. Título da Página (<title>)</h2>
+            <ul>
+                <li>Use um título curto e descritivo que inclua palavras-chave relevantes.</li>
+                <li>Evite títulos muito longos ou com palavras repetidas.</li>
+                <li>Seja específico, por exemplo: "Como Criar um Site de Alto Tráfego" em vez de "Como Criar um Site".</li>
+                <li>Evite usar caracteres especiais, espaços em branco ou palavras com acentos.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Meta Description</h2>
+            <ul>
+                <li>A meta description é o resumo da página que aparece nos resultados de busca.</li>
+                <li>Seja clara, concisa e inclua palavras-chave relevantes.</li>
+                <li>Evite repetir palavras e mantenha o texto entre 155 e 160 caracteres.</li>
+                <li>Seja atrativo para aumentar o clique.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Headings (H1, H2, H3)</h2>
+            <ul>
+                <li>Use o H1 apenas uma vez para o título principal da página.</li>
+                <li>Os H2 e H3 devem ser usados para estruturar o conteúdo em tópicos.</li>
+                <li>Evite usar H1 em subseções e não use H2 para títulos principais.</li>
+                <li>Use palavras-chave em headings para melhorar a relevância.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>4. Texto Alternativo para Imagens</h2>
+            <ul>
+                <li>Todo imagem deve ter um atributo alt descritivo e relevante.</li>
+                <li>O texto alternativo deve ser claro e incluir palavras-chave, se relevante.</li>
+                <li>Evite usar palavras como "imagem" ou "foto" sem contexto.</li>
+                <li>Imagens não descritivas podem prejudicar a experiência do usuário e a SEO.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>5. Velocidade de Carregamento</h2>
+            <ul>
+                <li>A velocidade da página é um fator importante para experiência do usuário e SEO.</li>
+                <li>Use imagens otimizadas, evite scripts desnecessários e utilize CDN.</li>
+                <li>Evite carregar scripts de terceiros que podem afetar o tempo de carregamento.</li>
+                <li>Use ferramentas como Google PageSpeed Insights para medir e melhorar.</li>
+            </ul>
+        </section>
+        <section class="not-do">
+            <h2>6. O Que NÃO Fazer</h2>
+            <ul>
+                <li>Não use palavras-chave de forma excessiva (keyword stuffing).</li>
+                <li>Não crie títulos ou meta descriptions falsos ou enganosos.</li>
+                <li>Não use tags H1 repetidas ou em subseções.</li>
+                <li>Não inclua texto alternativo vazio ou irrelevante.</li>
+                <li>Não deixe a página carregar muito lentamente ou com erros de renderização.</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        &copy; 2025 Checklist SEO - Todos os direitos reservados.
+        &copy; 2025 Checklist de SEO - Direitos Reservados
     </footer>
 </body>
 </html>
