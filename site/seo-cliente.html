@@ -13,12 +13,11 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        h1 {
+            color: #00e676;
         }
         main {
             padding: 20px;
@@ -29,31 +28,30 @@
             margin-bottom: 40px;
         }
         h2 {
-            color: #ffcc00;
-            margin-top: 30px;
+            color: #00e676;
+            margin-bottom: 10px;
         }
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style-type: disc;
+            padding-left: 20px;
         }
         li {
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
+            margin-bottom: 10px;
         }
-        li:last-child {
-            border-bottom: none;
+        .alert {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-left: 5px solid #00e676;
+            margin-bottom: 20px;
         }
-        .not-do {
-            margin-top: 40px;
-        }
-        .not-do h2 {
-            color: #ff4d4d;
+        .alert h3 {
+            margin-top: 0;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -63,63 +61,45 @@
     </header>
     <main>
         <section>
-            <h2>1. Título da Página (<title>)</h2>
-            <ul>
-                <li>Use um título curto e descritivo que inclua palavras-chave relevantes.</li>
-                <li>Evite títulos muito longos ou com palavras repetidas.</li>
-                <li>Seja específico, por exemplo: "Como Criar um Site de Alto Tráfego" em vez de "Como Criar um Site".</li>
-                <li>Evite usar caracteres especiais, espaços em branco ou palavras com acentos.</li>
-            </ul>
+            <h2>1. Title (Título da Página)</h2>
+            <p>O título da página é o primeiro elemento que o motor de busca exibe. Ele deve ser conciso, incluir palavras-chave relevantes e atrair o usuário. Exemplo: "Como Criar um Negócio Online com Baixo Investimento".</p>
         </section>
         <section>
             <h2>2. Meta Description</h2>
-            <ul>
-                <li>A meta description é o resumo da página que aparece nos resultados de busca.</li>
-                <li>Seja clara, concisa e inclua palavras-chave relevantes.</li>
-                <li>Evite repetir palavras e mantenha o texto entre 155 e 160 caracteres.</li>
-                <li>Seja atrativo para aumentar o clique.</li>
-            </ul>
+            <p>A meta description é a descrição da página que aparece nos resultados de busca. Ela deve ser única, incluir palavras-chave e ter entre 155 e 160 caracteres. Exemplo: "Descubra como criar um negócio online com baixo investimento. Passo a passo para gerar receita online em 2025."</p>
         </section>
         <section>
-            <h2>3. Headings (H1, H2, H3)</h2>
-            <ul>
-                <li>Use o H1 apenas uma vez para o título principal da página.</li>
-                <li>Os H2 e H3 devem ser usados para estruturar o conteúdo em tópicos.</li>
-                <li>Evite usar H1 em subseções e não use H2 para títulos principais.</li>
-                <li>Use palavras-chave em headings para melhorar a relevância.</li>
-            </ul>
+            <h2>3. Headings (Títulos e Subtítulos)</h2>
+            <p>Use os headings de forma hierárquica (h1, h2, h3, etc.) para organizar o conteúdo. O h1 deve ser o título da página e deve conter a palavra-chave principal. Os h2 e h3 ajudam a estruturar o conteúdo e facilitam a navegação para os motores de busca.</p>
         </section>
         <section>
-            <h2>4. Texto Alternativo para Imagens</h2>
-            <ul>
-                <li>Todo imagem deve ter um atributo alt descritivo e relevante.</li>
-                <li>O texto alternativo deve ser claro e incluir palavras-chave, se relevante.</li>
-                <li>Evite usar palavras como "imagem" ou "foto" sem contexto.</li>
-                <li>Imagens não descritivas podem prejudicar a experiência do usuário e a SEO.</li>
-            </ul>
+            <h2>4. Texto Alternativo (Alt Text)</h2>
+            <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso ajuda a pessoas que usam leitores de tela e também auxilia no SEO. Exemplo: "Gráfico mostrando o crescimento do e-commerce em 2024".</p>
         </section>
         <section>
             <h2>5. Velocidade de Carregamento</h2>
-            <ul>
-                <li>A velocidade da página é um fator importante para experiência do usuário e SEO.</li>
-                <li>Use imagens otimizadas, evite scripts desnecessários e utilize CDN.</li>
-                <li>Evite carregar scripts de terceiros que podem afetar o tempo de carregamento.</li>
-                <li>Use ferramentas como Google PageSpeed Insights para medir e melhorar.</li>
-            </ul>
+            <p>Uma landing page lenta pode afetar o posicionamento no Google. Use imagens otimizadas, minimize o uso de scripts e evite elementos que demorem para carregar. Ferramentas como Google PageSpeed Insights podem ajudar a melhorar a performance.</p>
         </section>
-        <section class="not-do">
-            <h2>6. O Que NÃO Fazer</h2>
-            <ul>
-                <li>Não use palavras-chave de forma excessiva (keyword stuffing).</li>
-                <li>Não crie títulos ou meta descriptions falsos ou enganosos.</li>
-                <li>Não use tags H1 repetidas ou em subseções.</li>
-                <li>Não inclua texto alternativo vazio ou irrelevante.</li>
-                <li>Não deixe a página carregar muito lentamente ou com erros de renderização.</li>
-            </ul>
+        <section>
+            <h2>6. Links Internos</h2>
+            <p>Links internos ajudam a distribuir a autoridade da página e melhoram a experiência do usuário. Conecte páginas relevantes, como "Como Começar com o E-commerce" ou "Dicas para SEO de Landing Pages".</p>
+        </section>
+        <section>
+            <h2>7. O Que NÃO Fazer</h2>
+            <div class="alert">
+                <h3>Evite:</h3>
+                <ul>
+                    <li>Usar palavras-chave de forma excessiva (keyword stuffing).</li>
+                    <li>Usar textos alternativos vazios ou genéricos.</li>
+                    <li>Ter páginas com conteúdo duplicado ou não relevante.</li>
+                    <li>Ignorar a experiência do usuário (UX) e a navegação.</li>
+                    <li>Ter imagens sem texto alternativo ou com descrições irrelevantes.</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        &copy; 2025 Checklist de SEO - Direitos Reservados
+        <p>© 2025 Checklist SEO Básico. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
