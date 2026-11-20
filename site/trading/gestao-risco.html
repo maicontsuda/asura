@@ -11,60 +11,43 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
-
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
-            color: #ffffff;
         }
-
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            border-left: 4px solid #ff6f61;
+            border-right: 4px solid #ff6f61;
+        }
         h2 {
-            color: #ffffff;
+            color: #ff6f61;
             margin-top: 40px;
         }
-
         p {
             font-size: 1em;
         }
-
-        .section {
-            margin: 30px auto;
-            max-width: 900px;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-left: 4px solid #ff6b6b;
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
         }
-
         .aviso {
-            margin: 40px auto;
-            max-width: 900px;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-left: 4px solid #4ecdc4;
-            font-style: italic;
-        }
-
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
             margin-top: 40px;
-            color: #888;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+        }
+        .aviso p {
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -72,35 +55,27 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <div class="section">
+    <section>
         <h2>Risco por Operação</h2>
-        <p>Em operações de investimento, é fundamental limitar o risco por operação a um mínimo de 1 a 2% do capital total. Isso garante que, mesmo em operações com perda, o impacto no portfólio seja controlado. A regra é simples: você não deve arriscar mais do que pode perder sem comprometer a continuidade do seu capital.</p>
-    </div>
-    <div class="section">
+        <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso ajuda a proteger o capital e evitar perdas significativas em caso de falhas ou imprevistos.</p>
+        
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ferramenta essencial para limitar perdas em operações que não seguem o plano previsto. Ele define o ponto em que você sai do mercado para evitar perdas maiores. Já o take profit é o ponto de venda que você define com base no seu objetivo de lucro. Ambos são ferramentas que ajudam a manter disciplina e evitar emoções.</p>
-    </div>
-    <div class="section">
+        <p>Stop Loss é uma ordem que limita as perdas ao fechar uma posição quando o preço atinge um nível específico. Já o Take Profit é o ponto em que a operação é encerrada para capturar lucros. Ambos são ferramentas essenciais para controlar o risco e maximizar o retorno.</p>
+
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você entra no mercado. Ele deve ser calculado com base no risco por operação e no nível de stop loss. Isso garante que, mesmo com uma perda, você não comprometa seu capital. Por exemplo, se você tem um capital de R$100.000 e quer riscar 1%, você deve limitar sua operação a R$1.000.</p>
-    </div>
-    <div class="section">
+        <p>O position sizing refere-se ao tamanho da posição que será aberta em uma operação. Ele deve ser calculado com base no risco aceitável, garantindo que a operação não comprometa o capital disponível.</p>
+
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é uma métrica que compara o risco de uma operação com o potencial de lucro. É calculado dividindo-se o lucro potencial pelo risco assumido. Uma boa estratégia busca um risco/retorno de 1:2 ou superior, ou seja, para cada unidade de risco, o potencial de lucro é de duas unidades.</p>
-    </div>
-    <div class="section">
+        <p>A relação risco/retorno é uma métrica que compara o potencial de lucro com o risco assumido. Uma boa relação é quando o retorno potencial é significativamente maior que o risco assumido, garantindo que a operação seja rentável a longo prazo.</p>
+
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda acumulada de um investimento em relação ao seu valor máximo. Ele mede a volatilidade e o risco de perda em um período de tempo. Um drawdown alto pode indicar que a estratégia não é estável, e é importante monitorá-lo para ajustar a gestão de risco.</p>
-    </div>
-    <div class="section">
+        <p>O drawdown é a perda máxima acumulada em um período, geralmente expressa como percentual do capital. É importante monitorar o drawdown para avaliar o impacto emocional e financeiro de uma operação.</p>
+
         <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>A maioria dos investidores perde dinheiro por falta de disciplina e gestão de risco. Eles entram em operações sem planejamento, ignoram o stop loss, e não controlam o tamanho das posições. Além disso, muitos operam com emoções, como medo e ganância, o que leva a decisões irracionalmente tomadas.</p>
-    </div>
+        <p>Muitos traders perdem dinheiro devido à falta de disciplina, gestão de risco inadequada e falta de conhecimento técnico. A maioria também não segue um plano de operações consistente, o que leva a decisões impulsivas e perdas contínuas.</p>
+    </section>
     <div class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação financeira. As estratégias apresentadas devem ser testadas em ambientes de simulação antes de serem aplicadas em operações reais.</p>
+        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações financeiras envolvem riscos e você deve buscar orientação profissional antes de investir.</p>
     </div>
-    <footer>
-        &copy; 2025 Gestão de Risco em Operações
-    </footer>
 </body>
 </html>
