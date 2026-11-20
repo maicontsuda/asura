@@ -13,32 +13,45 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 2em;
             color: #ffffff;
         }
-        main {
+        .faq {
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
         }
-        section {
-            margin-bottom: 40px;
+        .faq h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
-        section h2 {
-            color: #ffffff;
+        .faq ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq li {
+            margin-bottom: 20px;
+        }
+        .faq h3 {
+            font-size: 1.2em;
             margin-bottom: 10px;
         }
-        section p {
-            font-size: 16px;
+        .faq p {
+            font-size: 1em;
         }
-        footer {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #888;
+        a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -46,42 +59,27 @@
     <header>
         <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <main>
-        <section>
-            <h2>Como pagar com USDC na Base?</h2>
-            <p>Para pagar com USDC na Base, você precisa ter um wallet compatível com a rede Base e possuir USDC. Conecte seu wallet à plataforma, selecione a moeda USDC, insira o valor e confirme a transação. A transação será processada automaticamente na rede Base.</p>
-        </section>
-        <section>
-            <h2>Como pagar com ETH na Base?</h2>
-            <p>Para pagar com ETH na Base, conecte seu wallet à plataforma, escolha a moeda ETH, insira o valor e confirme a transação. O valor será cobrado em ETH, e a transação será processada diretamente na rede Base.</p>
-        </section>
-        <section>
-            <h2>Como pagar com ETH na Mainnet?</h2>
-            <p>Para pagar com ETH na Mainnet, conecte seu wallet à plataforma, selecione ETH como moeda, insira o valor e confirme a transação. A cobrança será feita na rede Ethereum Mainnet, e o valor será processado conforme a taxa da rede.</p>
-        </section>
-        <section>
-            <h2>Qual é o prazo de pagamento?</h2>
-            <p>O prazo de pagamento é de 7 dias após a confirmação do contrato. Caso não haja pagamento dentro desse período, o contrato será considerado cancelado e o projeto será liberado para outro solicitante.</p>
-        </section>
-        <section>
-            <h2>O que acontece se o pagamento falhar?</h2>
-            <p>Se o pagamento falhar, o contrato será automaticamente cancelado e o projeto será liberado para outro solicitante. O valor pago será reembolsado caso a falha seja atribuída ao sistema ou à rede.</p>
-        </section>
-        <section>
-            <h2>Como recebo o entregável?</h2>
-            <p>O entregável será liberado automaticamente após o pagamento ser confirmado e o prazo estabelecido. Você receberá uma notificação via email e também pode verificar o status no painel do seu wallet.</p>
-        </section>
-        <section>
-            <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-            <p>A identidade on-chain ERC-8004 #1149100 é um token representativo da identidade digital do contrato. É utilizado para confirmar a autenticidade e a conformidade do projeto com os padrões da plataforma Asura.</p>
-        </section>
-        <section>
-            <h2>Qual é o processo de reembolso?</h2>
-            <p>O reembolso é processado automaticamente caso o pagamento falhe ou o contrato seja cancelado. O valor será devolvido para a carteira original dentro de 7 dias úteis após a confirmação do cancelamento.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
+    <div class="faq">
+        <h2>Como pagar o serviço?</h2>
+        <ul>
+            <li><h3>Como pagar com USDC na Base?</h3><p>Para pagar com USDC na Base, utilize um provedor de carteira compatível com a rede Base, como a Base Wallet. Transfira os USDC para o endereço fornecido em sua proposta, e confirme a transação na rede Base.</p></li>
+            <li><h3>Como pagar com ETH na Base?</h3><p>Para pagar com ETH na Base, siga o mesmo procedimento do USDC, mas com a rede ETH. Certifique-se de que o endereço de destino aceita transações na rede Base e que o valor seja suficiente para cobrir o pagamento e a taxa de rede.</p></li>
+            <li><3>Como pagar com ETH na Mainnet?</h3><p>Se sua proposta exigir pagamento em ETH na Mainnet, utilize uma carteira Ethereum compatível, como MetaMask. Envie o ETH para o endereço fornecido, garantindo que a transação seja confirmada na rede Ethereum.</p></li>
+        </ul>
+        <h2>Prazos e entregáveis</h2>
+        <ul>
+            <li><h3>Quais são os prazos para entregar o serviço?</h3><p>Os prazos são definidos na proposta e estão vinculados ao cronograma acordado. Caso haja atrasos, notificaremos você com antecedência e redefiniremos os prazos conforme necessário.</p></li>
+            <li><h3>O que acontece se o pagamento falhar?</h3><p>Se o pagamento não for processado com sucesso, o contrato inteligente será bloqueado até que a transação seja confirmada. Se houver falha na transação, entre em contato com nossa equipe para resolver a situação.</p></li>
+            <li><h3>Como recebo o entregável?</h3><p>Após a confirmação do pagamento, o entregável será liberado para você conforme definido no contrato inteligente. Você receberá uma notificação quando a entrega estiver concluída e poderá acessá-la via seu provedor de carteira.</p></li>
+        </ul>
+        <h2>Identidade On-Chain</h2>
+        <ul>
+            <li><h3>Qual é minha identidade on-chain?</h3><p>Sua identidade on-chain é representada pelo endereço ERC-8004 #1149100. Esse endereço é vinculado à sua conta e será usado para verificar sua identidade e autorizar transações no sistema.</p></li>
+        </ul>
+        <h2>Reembolso</h2>
+        <ul>
+            <li><h3>Como solicitar um reembolso?</h3><p>Para solicitar um reembolso, entre em contato com nossa equipe e forneça detalhes sobre a solicitação. O reembolso será processado conforme os termos definidos na proposta e o status da transação.</p></li>
+        </ul>
+    </div>
 </body>
 </html>
