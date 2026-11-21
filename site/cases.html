@@ -9,83 +9,88 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
-            line-height: 1.6;
         }
 
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
+            font-size: 2em;
             color: #ffffff;
         }
 
-        section {
-            padding: 40px 20px;
-            background-color: #1a1a1a;
-            border-bottom: 1px solid #2a2a2a;
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        h2 {
+        .case {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .case h2 {
             color: #ffffff;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
-        p {
-            margin: 0 0 15px 0;
+        .case p {
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
 
-        .cliente {
+        .case .result {
             font-weight: bold;
-            color: #ff9800;
-        }
-
-        .resultado {
-            font-style: italic;
-            color: #cccccc;
+            color: #00ffcc;
+            margin-top: 20px;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #121212;
-            color: #888888;
+            padding: 20px 0;
             font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
-        <p>Exemplos reais de clientes que já utilizaram nossos serviços</p>
     </header>
 
-    <section>
-        <h2>Cliente 1: Loja de Plantas "Verde & Co."</h2>
-        <p><span class="cliente">Verde & Co.</span> é uma loja de plantas que buscava transformar sua imagem para atrair mais clientes em áreas urbanas. Eles precisavam de um site moderno, com galeria de plantas e um sistema de agendamento de visitas.</p>
-        <p>O que foi entregue: Um site responsivo com galeria de plantas, formulário de agendamento, e um sistema de login para administradores. O design foi escuro com tons de verde para destacar a natureza.</p>
-        <p><span class="resultado">Resultado esperado: Aumento de 40% nas visitas e maior engajamento com o público. O site tornou-se uma ferramenta de marketing essencial.</span></p>
-    </section>
+    <div class="container">
+        <div class="case">
+            <h2>Loja de Plantas - Crescimento de 30%</h2>
+            <p>O cliente, uma loja de plantas urbana, procurou a Asura para aumentar sua presença online. O objetivo era gerar mais leads e aumentar as vendas de plantas em ambientes internos. A Asura desenvolveu uma estratégia de marketing digital com foco em redes sociais, SEO e e-mail marketing.</p>
+            <p>Entregamos uma campanha de conteúdo educativo sobre cuidados com plantas, além de um site responsivo com um catálogo interativo. Também criamos um sistema de cadastro para clientes que desejam receber dicas semanais de jardinagem.</p>
+            <p class="result">Resultado esperado: aumento de 30% nas vendas em 6 meses, com mais de 500 novos clientes cadastrados.</p>
+        </div>
 
-    <section>
-        <h2>Cliente 2: Doceria Artesanal "Doce de Raiz"</h2>
-        <p><span class="cliente">Doce de Raiz</span> é uma doceria artesanal que queria expandir sua presença online. Eles precisavam de um site com menu interativo, informações sobre ingredientes e uma loja virtual.</p>
-        <p>O que foi entregue: Um site com menu interativo, galeria de produtos, e um sistema de compra online integrado a um sistema de estoque. O design foi escuro com tons de marrom e dourado para destacar a sofisticação.</p>
-        <p><span class="resultado">Resultado esperado: Aumento de 30% nas vendas online e maior reconhecimento da marca. A loja virtual se tornou um ponto de venda essencial.</span></p>
-    </section>
+        <div class="case">
+            <h2>Doceria Artesanal - Expansão para Nova Região</h2>
+            <p>A doceria artesanal, que já tinha uma presença sólida na região sul, buscou a Asura para expandir para o norte do país. O objetivo era criar uma identidade visual forte e uma estratégia de marketing digital que fosse compatível com o estilo artesanal da marca.</p>
+            <p>Entregamos uma identidade visual completa com branding, um site com conteúdo de receitas e um plano de divulgação em redes sociais. Também criamos um sistema de delivery integrado à plataforma.</p>
+            <p class="result">Resultado esperado: crescimento de 40% nas vendas na nova região e aumento de 200% nas interações nas redes sociais em 3 meses.</p>
+        </div>
 
-    <section>
-        < <h2>Cliente 3: Estúdio de Tatuagem "Tatuagem de Alma"</h2>
-        <p><span class="cliente">Tatuagem de Alma</span> é um estúdio de tatuagem que precisava de um site para divulgar seus serviços, mostrar obras e agendar consultas. O objetivo era atrair clientes de todos os perfis.</p>
-        <p>O que foi entregue: Um site com portfólio de tatuagens, galeria de clientes, e um formulário de agendamento online. O design foi escuro com tons de preto e branco para destacar a arte e a precisão.</p>
-        <p><span class="resultado">Resultado esperado: Aumento de 50% nas consultas e maior presença nas redes sociais. O site se tornou um portfólio digital completo e profissional.</span></p>
-    </section>
+        <div class="case">
+            < <h2>Estúdio de Tatuagem - Aumento de Agendamentos</h2>
+            <p>O estúdio de tatuagem, que enfrentava dificuldades de divulgação, procurou a Asura para aumentar sua visibilidade e agendamentos. O foco era atrair novos clientes e melhorar a experiência do cliente na plataforma.</p>
+            <p>Entregamos um site com agendamento online, um sistema de avaliação de tatuagens e uma campanha de divulgação com influenciadores locais. Também criamos uma estratégia de conteúdo educativo sobre tatuagem e segurança.</p>
+            <p class="result">Resultado esperado: aumento de 50% nos agendamentos em 6 meses e 80% de satisfação dos clientes com o novo sistema de agendamento.</p>
+        </div>
+    </div>
 
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
+        &copy; 2025 Asura - Exemplos de Estudos de Caso
     </footer>
 </body>
 </html>
