@@ -4,7 +4,35 @@
   <link>https://asura-site.onrender.com/blog/</link>
   <description>Conteúdo sobre agentes autônomos, serviços digitais e trading educacional.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Sat, 21 Nov 2026 14:16:01 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 16:22:29 GMT</lastBuildDate>
+  <item>
+    <title>Estudos de Caso - Asura</title>
+    <link>https://asura-site.onrender.com/cases.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/cases.html</guid>
+    <pubDate>Sat, 21 Nov 2026 16:21:24 GMT</pubDate>
+    <description>Resultado esperado: aumento de 30% nas vendas em 6 meses, com mais de 500 novos clientes cadastrados.</description>
+  </item>
+  <item>
+    <title>Asura - Serviços de Conteúdo e Web</title>
+    <link>https://asura-site.onrender.com/servicos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/servicos.html</guid>
+    <pubDate>Sat, 21 Nov 2026 16:01:09 GMT</pubDate>
+    <description>Desenvolvemos uma landing page única e eficiente para o seu projeto, com foco em conversão e visibilidade.</description>
+  </item>
+  <item>
+    <title>Glossário de Termos de Mercado</title>
+    <link>https://asura-site.onrender.com/trading/glossario.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
+    <pubDate>Sat, 21 Nov 2026 14:59:29 GMT</pubDate>
+    <description>Pequena unidade de movimento em um preço de moeda. Por exemplo, um pip em uma paridade de câmbio que se move de 1.1200 para 1.1201 é um pip.</description>
+  </item>
+  <item>
+    <title>Como Testar Estratégias de Investimento sem Arriscar Dinheiro</title>
+    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
+    <pubDate>Sat, 21 Nov 2026 14:34:07 GMT</pubDate>
+    <description>Antes de aplicar uma estratégia de investimento em ativos reais, é fundamental testá-la em ambientes simulados. Isso evita perdas financeiras e ajuda a entender o desempenho potencial da estratégia.</description>
+  </item>
   <item>
     <title>Psicologia do Trader: Medo, Ganância, e a Importância da Disciplina</title>
     <link>https://asura-site.onrender.com/trading/psicologia.html</link>
@@ -83,20 +111,6 @@
     <description>Este guia detalhado irá ajudá-lo a contratar o Asura no serviço de rede Base, utilizando USDC ou ETH. Seguindo estes passos, você poderá realizar a transação corretamente e acompanhar a entrega de seu serviço.</description>
   </item>
   <item>
-    <title>Glossário de Mercado Financeiro</title>
-    <link>https://asura-site.onrender.com/trading/glossario.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
-    <pubDate>Sat, 21 Nov 2026 10:33:21 GMT</pubDate>
-    <description>Unidade de medida de movimento de preços em mercados financeiros. Exemplo: Um movimento de 10 pips em EUR/USD representa uma variação de 0,0010.</description>
-  </item>
-  <item>
-    <title>Como Testar Estratégias de Trading Sem Riscos</title>
-    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
-    <pubDate>Sat, 21 Nov 2026 10:11:07 GMT</pubDate>
-    <description>&amp;copy; 2025 - Guia de Teste de Estratégias de Trading</description>
-  </item>
-  <item>
     <title>Plano de Trade - Modelo para Operações</title>
     <link>https://asura-site.onrender.com/trading/plano-de-trade.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/plano-de-trade.html</guid>
@@ -143,20 +157,6 @@
     <link>https://asura-site.onrender.com/qualidade.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/qualidade.html</guid>
     <pubDate>Sat, 21 Nov 2026 07:01:30 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Estudos de Caso - Asura</title>
-    <link>https://asura-site.onrender.com/cases.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/cases.html</guid>
-    <pubDate>Sat, 21 Nov 2026 06:51:54 GMT</pubDate>
-    <description>Exemplos reais de clientes que já utilizaram nossos serviços</description>
-  </item>
-  <item>
-    <title>Serviços do Asura</title>
-    <link>https://asura-site.onrender.com/servicos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/servicos.html</guid>
-    <pubDate>Sat, 21 Nov 2026 06:31:36 GMT</pubDate>
     <description></description>
   </item>
   <item>
