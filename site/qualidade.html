@@ -1,94 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Checklist de Qualidade para Serviços do Asura</title>
+    <title>Checklist de Qualidade do Asura</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            font-size: 2em;
-            color: #ffffff;
-        }
-        section {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
-            background-color: #1a1a1a;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #ff9800;
-            padding-bottom: 10px;
-        }
-        ul {
-            list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        li {
-            padding: 10px 0;
-        }
-        .critérios {
-            color: #ff9800;
-        }
-        .erros {
-            color: #e53935;
-        }
-        .revisar {
-            color: #4caf50;
-        }
-        footer {
-            text-align: center;
+        .container {
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
-            background-color: #121212;
-            color: #888;
+            background-color: #282828;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #FFFFFF;
+        }
+        td {
+            background-color: #444;
+        }
+        pre {
+            background-color: #333;
+            color: #FFFFFF;
+            padding: 10px;
+            white-space: pre-wrap;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Checklist de Qualidade para Serviços do Asura</h1>
-    </header>
-    <section>
-        <h2>Landing Page</h2>
-        <ul>
-            <li><span class="critérios">Critérios de Aceite:</span> Texto claro e direto, chamada para ação visível, layout responsivo, imagens de alta qualidade e links funcionais.</li>
-            <li><span class="erros">Erros Comuns:</span> Texto confuso, layout desorganizado, imagens de baixa resolução, links quebrados ou sem conteúdo.</li>
-            <li><span class="revisar">Como Revisar:</span> Verifique todos os links, testes de responsividade, leia o conteúdo para garantir clareza e evite termos técnicos excessivos.</li>
-        </ul>
-        <h2>Texto de Apresentação</h2>
-        <ul>
-            <li><span class="critérios">Critérios de Aceite:</span> Estrutura clara com introdução, desenvolvimento e conclusão, linguagem formal e objetiva, sem erros gramaticais.</li>
-            <li><span class="erros">Erros Comuns:</span> Frases ambíguas, uso incorreto de pontuação, falta de coesão e uso excessivo de jargão.</li>
-            <li><span class="revisar">Como Revisar:</span> Leia em voz alta, revise a coesão e a coerência, e use ferramentas de gramática para corrigir erros.</li>
-        </ul>
-        <h2>Revisão de Texto</h2>
-        <ul>
-            <li><span class="critérios">Critérios de Aceite:</span> Texto revisado com correções gramaticais, ortográficas e de pontuação, mantendo o tom original e o conteúdo original.</li>
-            <li><span class="erros">Erros Comuns:</span> Ignorar erros de concordância, usar palavras repetidas, ou não manter o tom da escrita original.</li>
-            <li><span class="revisar">Como Revisar:</span> Use ferramentas de revisão, faça uma leitura crítica e verifique se o texto mantém o significado original.</li>
-        </ul>
-        <h2>5 Ideias de Conteúdo</h2>
-        <ul>
-            <li><span class="critérios">Critérios de Aceite:</span> Ideias relevantes ao público-alvo, com estrutura clara, e com potencial de engajamento e conversão.</li>
-            <li><span class="erros">Erros Comuns:</span> Ideias genéricas, falta de personalização, ausência de valor para o leitor ou não alinhamento com o propósito da marca.</li>
-            <li><span class="revisar">Como Revisar:</span> Verifique se cada ideia tem um objetivo claro, se é alinhada ao público e se apresenta uma proposta de valor clara.</li>
-        </ul>
-    </section>
-    <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
-    </footer>
+    <div class="container">
+        <h1>Checklist de Qualidade do Asura</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Critérios de Aceite</th>
+                    <th>Erros Comuns a Evitar</th>
+                    <th>Como Revisar Antes de Entregar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Landing Page</td>
+                    <td>
+                        <ul>
+                            <li>Design responsivo e adaptável a diferentes dispositivos</li>
+                            <li>Texto claro e conciso que destaque os benefícios</li>
+                            <li>Chamadas à ação claras e visíveis</li>
+                            <li>Carregamento rápido e otimizado para SEO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Erros gramaticais ou de ortografia</li>
+                            <li>Design confuso ou não intuível</li>
+                            <li>Chamadas à ação que não são claras</li>
+                            <li>Falhas de SEO que afetam o ranking no Google</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Testar a landing page em diferentes dispositivos</li>
+                            <li>Revisar o texto para garantir clareza e eficácia</li>
+                            <li>Verificar a visibilidade e clicabilidade das chamadas à ação</li>
+                            <li>Optimizar o código para melhorar o carregamento</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Texto de Apresentação</td>
+                    <td>
+                        <ul>
+                            <li>Conteúdo original e relevante</li>
+                            <li>Uso adequado de termos técnicos</li>
+                            <li>Formato claro e estruturado</li>
+                            <li>Referências claras e precisas</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Conteúdo copiado do site concorrente</li>
+                            <li>Uso excessivo de termos técnicos sem explicação</li>
+                            <li>Estrutura confusa que dificulta a compreensão</li>
+                            <li>Referências imprecisas ou irrelevantes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Revisar a originalidade do conteúdo</li>
+                            <li>Verificar a adequação dos termos técnicos</li>
+                            <li>Revisar a estrutura e a clareza do texto</li>
+                            <li>Verificar a precisão das referências</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Revisão de Texto</td>
+                    <td>
+                        <ul>
+                            <li>Texto sem erros gramaticais ou ortográficos</li>
+                            <li>Fluxo natural e coeso</li>
+                            <li>Uso apropriado de pontuação e marcações</li>
+                            <li>Conteúdo claro e direto ao ponto</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Erros gramaticais ou ortográficos</li>
+                            <li>Fluxo desordenado ou incoerente</li>
+                            <li>Uso excessivo ou inadequado de pontuação</li>
+                            <li>Conteúdo vago ou ambíguo</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ler o texto em voz alta para verificar a fluidez</li>
+                            <li>Revisar a estrutura e a coesão do texto</li>
+                            <li>Verificar a precisão e a adequação das marcas de pontuação</li>
+                            <li>Verificar a clareza e a concisão do conteúdo</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5 Ideias de Conteúdo</td>
+                    <td>
+                        <ul>
+                            <li>Ideias inovadoras e relevantes</li>
+                            <li>Uso adequado de dados e estatísticas</li>
+                            <li>Estrutura clara e organizada</li>
+                            <li>Conteúdo relevante e útil para o público-alvo</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ideias repetitivas ou sem frescor</li>
+                            <li>Uso excessivo de dados sem contexto</li>
+                            <li>Estrutura confusa ou desorganizada</li>
+                            <li>Conteúdo que não responde às necessidades do público-alvo</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Revisar as ideias para garantir originalidade e relevância</li>
+                            <li>Verificar a adequação e a precisão dos dados e estatísticas</li>
+                            <li>Revisar a estrutura e a clareza do conteúdo</li>
+                            <li>Verificar a relevância do conteúdo para o público-alvo</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
