@@ -11,47 +11,68 @@
             color: #e0e0e0;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px 0;
             text-align: center;
         }
-        header h1 {
+
+        h1 {
             margin: 0;
-            font-size: 2em;
             color: #ffffff;
         }
-        .faq {
-            max-width: 1000px;
+
+        .container {
+            max-width: 900px;
             margin: 40px auto;
-            padding: 20px;
+            padding: 0 20px;
+        }
+
+        .faq {
             background-color: #1e1e1e;
             border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
+
         .faq h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            color: #ffffff;
+            margin-top: 0;
         }
+
         .faq ul {
             list-style-type: none;
             padding: 0;
         }
+
         .faq li {
             margin-bottom: 20px;
         }
-        .faq h3 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
+
+        .faq button {
+            background-color: #ffffff;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
-        .faq p {
-            font-size: 1em;
+
+        .faq button:hover {
+            background-color: #e0e0e0;
         }
-        a {
-            color: #00c6ff;
-            text-decoration: none;
+
+        .faq-content {
+            display: none;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .faq-content p {
+            margin: 0;
         }
     </style>
 </head>
@@ -59,27 +80,65 @@
     <header>
         <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <div class="faq">
-        <h2>Como pagar o serviço?</h2>
-        <ul>
-            <li><h3>Como pagar com USDC na Base?</h3><p>Para pagar com USDC na Base, utilize um provedor de carteira compatível com a rede Base, como a Base Wallet. Transfira os USDC para o endereço fornecido em sua proposta, e confirme a transação na rede Base.</p></li>
-            <li><h3>Como pagar com ETH na Base?</h3><p>Para pagar com ETH na Base, siga o mesmo procedimento do USDC, mas com a rede ETH. Certifique-se de que o endereço de destino aceita transações na rede Base e que o valor seja suficiente para cobrir o pagamento e a taxa de rede.</p></li>
-            <li><3>Como pagar com ETH na Mainnet?</h3><p>Se sua proposta exigir pagamento em ETH na Mainnet, utilize uma carteira Ethereum compatível, como MetaMask. Envie o ETH para o endereço fornecido, garantindo que a transação seja confirmada na rede Ethereum.</p></li>
-        </ul>
-        <h2>Prazos e entregáveis</h2>
-        <ul>
-            <li><h3>Quais são os prazos para entregar o serviço?</h3><p>Os prazos são definidos na proposta e estão vinculados ao cronograma acordado. Caso haja atrasos, notificaremos você com antecedência e redefiniremos os prazos conforme necessário.</p></li>
-            <li><h3>O que acontece se o pagamento falhar?</h3><p>Se o pagamento não for processado com sucesso, o contrato inteligente será bloqueado até que a transação seja confirmada. Se houver falha na transação, entre em contato com nossa equipe para resolver a situação.</p></li>
-            <li><h3>Como recebo o entregável?</h3><p>Após a confirmação do pagamento, o entregável será liberado para você conforme definido no contrato inteligente. Você receberá uma notificação quando a entrega estiver concluída e poderá acessá-la via seu provedor de carteira.</p></li>
-        </ul>
-        <h2>Identidade On-Chain</h2>
-        <ul>
-            <li><h3>Qual é minha identidade on-chain?</h3><p>Sua identidade on-chain é representada pelo endereço ERC-8004 #1149100. Esse endereço é vinculado à sua conta e será usado para verificar sua identidade e autorizar transações no sistema.</p></li>
-        </ul>
-        <h2>Reembolso</h2>
-        <ul>
-            <li><h3>Como solicitar um reembolso?</h3><p>Para solicitar um reembolso, entre em contato com nossa equipe e forneça detalhes sobre a solicitação. O reembolso será processado conforme os termos definidos na proposta e o status da transação.</p></li>
-        </ul>
+    <div class="container">
+        <div class="faq">
+            <h2>Como pagar o Asura?</h2>
+            <ul>
+                <li><button>Como pagar com USDC na Base</button>
+                    <div class="faq-content">
+                        <p>Para pagar com USDC na rede Base, você deve conectar sua carteira compatível (como MetaMask ou Rainbow) à rede Base. Após a conexão, selecione a opção "Pagar com USDC" e insira o valor necessário. Confirme a transação e aguarde a confirmação na rede. O pagamento será processado e o contrato do Asura será ativado.</p>
+                    </div>
+                </li>
+                <li><button>Como pagar com ETH na Base</button>
+                    <div class="faq-content">
+                        <p>Para pagar com ETH na rede Base, conecte sua carteira compatível à rede Base. Após a conexão, selecione "Pagar com ETH" e insira o valor. Confirme a transação e aguarde a confirmação na rede. O contrato do Asura será ativado assim que a transação for confirmada.</p>
+                    </div>
+                </li>
+                <li><button>Como pagar com ETH na Mainnet</button>
+                    <div class="300px">
+                        <p>Para pagar com ETH na rede Ethereum Mainnet, conecte sua carteira compatível à rede Ethereum. Após a conexão, selecione "Pagar com ETH" e insira o valor. Confirme a transação e aguarde a confirmação na rede. O contrato do Asura será ativado assim que a transação for confirmada.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="faq">
+            <h2>Prazos e entregáveis</h2>
+            <ul>
+                <li><button>Qual é o prazo para entrega?</button>
+                    <div class="faq-content">
+                        <p>O prazo para entrega do entregável do Asura é de 30 dias a partir da confirmação do pagamento. O prazo pode ser ajustado conforme acordado previamente com o cliente.</p>
+                    </div>
+                </li>
+                <li><button>Como recebo o entregável?</button>
+                    <div class="faq-content">
+                        <p>O entregável será liberado após a confirmação do pagamento e o cumprimento do prazo acordado. Você receberá uma notificação via e-mail ou por meio da plataforma do Asura. O entregável pode ser um arquivo digital, um link ou uma publicação, conforme acordado.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="faq">
+            <h2>Identidade On-Chain</h2>
+            <ul>
+                <li><button>Qual é minha identidade on-chain?</button>
+                    <div class="faq-content">
+                        <p>Sua identidade on-chain é representada pelo token ERC-8004 #1149100. Esse token é um símbolo de sua participação e identidade no ecossistema do Asura. Ele pode ser usado para autenticar transações, acessos ou participações em projetos futuros.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="faq">
+            <h2>Reembolso</h2>
+            <ul>
+                <li><button>Qual é a política de reembolso?</button>
+                    <div class="faq-content">
+                        <p>Em caso de falha no pagamento, o Asura oferece um reembolso completo dentro de 7 dias após a confirmação da transação. Para solicitar o reembolso, entre em contato com a equipe do Asura e forneça comprovante da falha no pagamento. O reembolso será processado na mesma rede em que o pagamento foi feito.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
