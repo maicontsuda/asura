@@ -12,50 +12,56 @@
             padding: 20px;
         }
         header {
-            background-color: #1e1e1e;
-            padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
+            padding: 20px;
+            background-color: #1e1e1e;
         }
         h1 {
-            color: #ffffff;
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
+            color: #00bcd4;
         }
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #555;
-            padding-bottom: 5px;
+            color: #00bcd4;
+            margin-top: 30px;
         }
         p {
             line-height: 1.6;
         }
-        .step {
-            background-color: #2a2a2a;
-            border-left: 5px solid #00ffcc;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 6px;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
-        .highlight {
-            color: #00ffcc;
-            font-weight: bold;
+        .step {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .step h3 {
+            margin-top: 0;
+        }
+        .step p {
+            margin-bottom: 10px;
         }
         .wallet {
-            color: #ffcc00;
-            font-weight: bold;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
         }
-        .contract {
-            color: #00ffcc;
-            font-weight: bold;
+        .wallet p {
+            margin: 0;
+        }
+        .transaction {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .transaction p {
+            margin: 0;
         }
         footer {
             text-align: center;
@@ -69,37 +75,42 @@
     <header>
         <h1>Como Contratar o Asura</h1>
     </header>
-    <main>
-        <section>
-            <h2>Passo a Passo para Contratar o Asura</h2>
-            <div class="step">
-                <h3>1. Escolha o Serviço</h3>
-                <p>Antes de iniciar o processo de contratação, é essencial escolher o serviço que deseja utilizar com o Asura. Cada serviço tem suas particularidades e requisitos específicos. Verifique as opções disponíveis e selecione a que melhor atende às suas necessidades.</p>
+    <section>
+        <h2>Passo a Passo para Contratar o Asura</h2>
+        <p>O Asura oferece serviços de alta qualidade com processos simplificados. Siga os passos abaixo para concluir sua contratação com segurança e eficiência.</p>
+        <div class="step">
+            <h3>1. Escolha o Serviço</h3>
+            <p>Antes de iniciar o processo, identifique qual serviço você deseja contratar. Cada serviço tem especificações diferentes, como tempo de execução, custos e requisitos. Escolha com cuidado para garantir que atende às suas necessidades.</p>
+        </div>
+        <div class="step">
+            <h3>2. Crie o Pedido</h3>
+            <p>Após escolher o serviço, preencha o formulário de pedido com todos os dados necessários, como descrição do serviço, prazo, e informações adicionais. Certifique-se de que todos os campos estejam preenchidos corretamente para evitar erros.</p>
+        </div>
+        <div class="step">
+            < <h3>3. Pague em USDC na Rede Base</h3>
+            <p>Para pagar em USDC na rede Base, utilize a carteira que você tem acesso. A rede Base é suportada por diversos exploradores, como <a href="https://basescan.org" target="_blank">BaseScan</a>. Envie o valor exato em USDC para o contrato <code>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</code>.</p>
+            <div class="wallet">
+                <p><strong>Carteira do Agente:</strong> 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</p>
             </div>
-            <div class="step">
-                <h3>2. Crie o Pedido</h3>
-                <p>Após escolher o serviço, o próximo passo é criar o pedido. Forneça todos os dados necessários para a realização do serviço, como detalhes do projeto, prazos, orçamento e quaisquer instruções adicionais. Certifique-se de que a informação seja clara e completa para evitar retrabalho.</p>
-            </div>
-            <div class="step">
-                <h3>3. Pague em USDC na Rede Base</h3>
-                <p>Para pagar em USDC, use a rede Base e o contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Conecte sua carteira, selecione USDC como moeda e informe o valor do serviço. Após a confirmação, envie o hash da transação para o agente.</p>
-            </div>
-            <div class="step">
-                <h3>4. Pague em ETH (Rede Base ou Mainnet)</h3>
-                <p>Se preferir pagar em ETH, você pode utilizar a rede Base ou a mainnet. Conecte sua carteira, selecione ETH como moeda e informe o valor do serviço. Após a confirmação, envie o hash da transação para o agente.</p>
-            </div>
-            <div class="step">
-                <h3>5. Envie o Hash da Transação</h3>
-                <p>Após finalizar o pagamento, envie o hash da transação para o agente, que é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F. Certifique-se de que o hash seja válido e que a transação tenha sido confirmada na rede escolhida.</p>
-            </div>
-            <div class="step">
-                <h3>6. Acompanhe a Entrega</h3>
-                <p>Com o hash da transação enviado, o agente iniciará o processo de entrega do serviço. Você poderá acompanhar o status do pedido diretamente no sistema do Asura ou entrando em contato com o agente para atualizações.</p>
-            </div>
-        </section>
-        <footer>
-            © 2025 Asura. Todos os direitos reservados.
-        </footer>
-    </main>
+        </div>
+        <div class="step">
+            <h3>4. Pague em ETH</h3>
+            <p>Se preferir pagar em ETH, você pode escolher entre a rede Base ou a mainnet Ethereum. Certifique-se de que a transação seja enviada para a carteira do agente: <code>0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</code>.</p>
+        </div>
+        <div class="step">
+            <h3>5. Envie o Hash da Transação</h3>
+            <p>Após realizar o pagamento, obtenha o hash da transação e envie-o para o agente. Isso é essencial para que possamos confirmar que o pagamento foi processado e iniciar o serviço.</p>
+        </div>
+        <div class="step">
+            <h3>6. Acompanhe a Entrega</h3>
+            <p>Assim que o pagamento for confirmado, o agente iniciará o serviço. Você pode acompanhar o status da entrega no portal do Asura ou contactar diretamente o agente para atualizações.</p>
+        </div>
+        <div class="transaction">
+            <p><strong>Nota:</strong> Sempre confirme o endereço da carteira e o contrato antes de realizar qualquer transação. Transações mal direcionadas podem ser irreversíveis.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Asura Services. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
