@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
@@ -20,36 +20,34 @@
             color: #ffffff;
         }
         section {
-            background-color: #1e1e1e;
+            margin: 30px auto;
+            max-width: 900px;
             padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #ff4081;
+            background-color: #1a1a1a;
+            border-left: 5px solid #4caf50;
         }
         h2 {
             color: #ffffff;
             margin-top: 0;
         }
-        p {
-            line-height: 1.6;
-        }
         ul {
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
         }
         .checklist {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 4px solid #4caf50;
+            margin-top: 20px;
         }
         .checklist h3 {
             color: #ffffff;
         }
         .checklist li {
-            margin: 8px 0;
+            margin: 5px 0;
         }
         .registro {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 4px solid #2196f3;
+            margin-top: 30px;
         }
         .registro h3 {
             color: #ffffff;
@@ -57,86 +55,99 @@
         .registro table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .registro th, .registro td {
             border: 1px solid #555;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         .aviso {
             background-color: #1e1e1e;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 4px solid #ff9800;
-        }
-        .aviso p {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
             font-style: italic;
-            color: #ff9800;
+            color: #cccccc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: Alcançar um retorno de 10% mensal, manter um risco de 1% por operação e minimizar o tempo de trade.</p>
-    </section>
-    <section>
+        <ul>
+            <li>Alcançar uma rentabilidade mensal de 10% com base em operações bem-sucedidas.</li>
+            <li>Manter um risco de perda diária máximo de 1% do capital.</li>
+            <li>Consolidar hábitos de trade com disciplina e planejamento.</li>
+        </ul>
         <h2>Mercados</h2>
-        <p>Escolha os mercados que você será ativo. Exemplo: Forex (EUR/USD), ações (B3), criptomoedas (BTC/USD), índices (Dow Jones), ou commodities (ouro).</p>
-    </section>
-    <section>
-        < <h2>Horários</h2>
-        <p>Defina os horários de operação de acordo com o mercado escolhido. Exemplo: Operar entre 08:00 e 16:00 no horário de Brasília para o Forex; ou entre 09:30 e 15:30 para ações.</p>
-    </section>
-    <section>
+        <ul>
+            <li>Forex: EUR/USD, GBP/USD, USD/JPY</li>
+            <li>Índices: DAX, NASDAQ 100, S&P 500</li>
+            <li>Cryptomoedas: BTC/USD, ETH/USD</li>
+        </ul>
+        <h2>Horários</h2>
+        <ul>
+            <li>Operações em horários de liquidez alta: 08:00 - 16:00 (horário de Brasília).</li>
+            <li>Não operar em horários de baixa volatilidade ou durante eventos macroeconômicos.</li>
+        </ul>
         <h2>Regras de Entrada e Saída</h2>
         <ul>
-            <li>Entrada: Apenas quando a condição técnica e fundamental está alinhada com o plano.</li>
-            <li>Saída: Defina stop loss e take profit com base no risco e potencial retorno.</li>
-            <li>Regras de correção: Ajuste de posição se houver desvio de 20% ou mais do plano.</li>
+            <li>Entrada: Confirmar padrões técnicos (suporte/resistência, velas, indicadores) e confirmação de tendência.</li>
+            <li>Saída: Encerrar operação no lucro previsto ou proteger com stop loss.</li>
+            <li>Regra de 2%: Não investir mais do que 2% do capital em uma única operação.</li>
         </ul>
-    </section>
-    <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você está disposto a aceitar em um dia. Exemplo: 1% do capital total ou 50 pontos percentuais.</p>
-    </section>
-    <section class="checklist">
-        <h3>Checklist Antes de Abrir Operação</h3>
         <ul>
-            <li>Verificar se o plano está alinhado com o objetivo.</li>
-            <li>Confirmar que o mercado está em tendência ou em range.</li>
-            <li>Verificar condições técnicas e fundamentais.</li>
-            <li>Confirmar que o stop loss e take profit estão definidos.</li>
-            <li>Verificar o capital disponível e o limite diário de perdas.</li>
+            <li>Perda máxima diária: 1% do capital.</li>
+            <li>Se atingido, interromper operações do dia e revisar estratégia.</li>
         </ul>
+        <div class="checklist">
+            <h3>Checklist Antes de Abrir Operação</h3>
+            <ul>
+                <li>Verificar condições de mercado.</li>
+                <li>Confirmar alinhamento com o plano de trade.</li>
+                <li>Verificar que o capital está disponível.</li>
+                <li>Confirmar que as regras de entrada e saída foram respeitadas.</li>
+            </ul>
+        </div>
+        <div class="registro">
+            <h3>Template de Registro</h3>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Resultado</th>
+                    <th>Observação</th>
+                </tr>
+                <tr>
+                    <td>01/10/2025</td>
+                    <td>EUR/USD</td>
+                    <td>1.0800</td>
+                    <td>1.0850</td>
+                    <td>+50 pips</td>
+                    <td>Operação bem-sucedida com confirmação de tendência.</td>
+                </tr>
+            </table>
+        </div>
     </section>
-    <section class="registro">
-        <h3>Template de Registro</h3>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Operação</th>
-                <th>Entrada</th>
-                <th>Saída</th>
-                <th>Resultado</th>
-                <th>Anotações</th>
-            </tr>
-            <tr>
-                <td>01/10/2025</td>
-                <td>Compra EUR/USD</td>
-                <td>1.0850</td>
-                <td>1.0920</td>
-                <td>+70 pips</td>
-                <td>Confirmação de tendência de alta.</td>
-            </tr>
-        </table>
-    </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações com mercados financeiros envolvem risco de perda de capital.</p>
-    </section>
+    <div class="aviso">
+        * Conteúdo educacional. Não é recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Faça sua própria pesquisa e consulte um profissional antes de investir.
+    </div>
+    <footer>
+        © 2025 - Plano de Trade - Modelo de Estratégia
+    </footer>
 </body>
 </html>
