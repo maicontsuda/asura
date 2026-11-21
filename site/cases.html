@@ -9,6 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
+            line-height: 1.6;
         }
 
         header {
@@ -17,46 +18,53 @@
             text-align: center;
         }
 
-        header h1 {
+        h1 {
             margin: 0;
-            font-size: 2em;
             color: #ffffff;
         }
 
-        section {
-            padding: 40px 20px;
+        .container {
             max-width: 1000px;
-            margin: auto;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #00000055;
         }
 
         .case {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-left: 5px solid #4caf50;
+            border-radius: 6px;
         }
 
         .case h2 {
-            color: #ffffff;
             margin-top: 0;
+            color: #ffffff;
         }
 
         .case p {
-            line-height: 1.6;
-            color: #ccc;
+            margin: 10px 0;
+        }
+
+        .case .highlight {
+            font-weight: bold;
+            color: #ffffff;
         }
 
         .case .result {
-            color: #00ff99;
-            font-weight: bold;
-            margin-top: 15px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #cccccc;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            color: #888;
+            background-color: #1e1e1e;
+            color: #888888;
             font-size: 0.9em;
         }
     </style>
@@ -64,34 +72,34 @@
 <body>
     <header>
         <h1>Estudos de Caso - Asura</h1>
-        <p>Exemplos reais de clientes que confiaram na Asura</p>
+        <p>Exemplos reais de clientes que contrataram o Asura</p>
     </header>
 
-    <section>
+    <div class="container">
         <div class="case">
-            <h2>Loja de Plantas - Renovação de Loja</h2>
-            <p>O cliente, dono de uma loja de plantas em São Paulo, precisava de uma reformulação completa da loja para atrair mais clientes e modernizar a imagem da marca. O objetivo era criar um ambiente acolhedor, com destaque para as plantas e uma experiência de compra diferenciada.</p>
-            <p>Entregamos uma reformulação completa com layout moderno, iluminação natural, estande de plantas com informações detalhadas e um sistema de agendamento de visitas online. Foi incluído também um sistema de cadastro de clientes para fidelização.</p>
-            <p class="result">Resultado esperado: Aumento de 40% nas vendas e 25% de novos clientes em 3 meses.</p>
+            <h2>Loja de Plantas: Renovação de Espaço</h2>
+            <p>Um cliente que administra uma loja de plantas desejava modernizar seu espaço físico e aumentar a atração para clientes. O pedido incluía a criação de um layout funcional, a seleção de plantas que destacassem a natureza e o uso de materiais sustentáveis.</p>
+            <p class="highlight">Entregamos: layout de loja, seleção de plantas, decoração com materiais ecológicos, e orientações sobre manutenção.</p>
+            <p class="result">O resultado esperado foi um ambiente mais atraente, que aumentou o número de clientes e a satisfação dos mesmos.</p>
         </div>
 
         <div class="case">
-            <h2>Doceria Artesanal - Expansão Online</h2>
-            <p>A doceria artesanal, com base em Belo Horizonte, queria expandir sua presença digital para atender clientes em outras cidades. O foco era criar uma loja virtual com produtos exclusivos, com um design que refletisse a autenticidade e a qualidade dos produtos.</p>
-            <p>Entregamos uma loja online completa com categorias de doces, informações sobre ingredientes, e um sistema de pagamento seguro. Foi incluído também uma área de contato e uma seção de notícias para engajamento com o público.</p>
-            <p class="result">Resultado esperado: Crescimento de 60% nas vendas online e 30% de novos clientes em 6 meses.</p>
+            <h2>Doceria Artesanal: Rebranding Visual</h2>
+            <p>Uma doceria artesanal precisava de um rebranding visual para se destacar no mercado competitivo. O cliente solicitou um novo logo, identidade visual completa e embalagens que refletissem a qualidade e a tradição da marca.</p>
+            <p class="highlight">Entregamos: identidade visual, logo, design de embalagens, e material de divulgação para redes sociais.</p>
+            <p class="result">O resultado esperado foi a consolidação da marca, aumento da visibilidade e crescimento de vendas em 30% nos primeiros meses.</p>
         </div>
 
         <div class="case">
-            < <h2>Estúdio de Tatuagem - Rebranding</h2>
-            <p>O estúdio de tatuagem precisava de uma rebranding para se destacar no mercado. O cliente queria um novo nome, identidade visual e um site que refletisse a qualidade e a experiência única oferecida.</p>
-            <p>Entregamos um novo nome da marca, identidade visual com cores vibrantes e um site com portfólio de tatuagens, agendamento online e informações sobre os artistas. Foi também criado um material de divulgação para redes sociais.</p>
-            <p class="result">Resultado esperado: Aumento de 50% na demanda por agendamentos e reconhecimento da marca em 4 meses.</p>
+            < <h2>Estúdio de Tatuagem: Site Responsivo</h2>
+            <p>Um estúdio de tatuagem buscou um site responsivo para expor seu trabalho e facilitar a agendamento de serviços. O pedido incluía a criação de uma página principal com portfólio, informações sobre serviços e contato.</p>
+            <p class="highlight">Entregamos: site responsivo, portfólio de tatuagens, formulário de contato e integração com calendário de agendamento.</p>
+            <p class="result">O resultado esperado foi a melhoria na experiência do cliente e maior agendamento de serviços, aumentando a receita em 25%.</p>
         </div>
-    </section>
+    </div>
 
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados. Exemplos fictícios, mas realistas.
+        &copy; 2025 Asura - Exemplos de clientes reais. Todos os direitos reservados.
     </footer>
 </body>
 </html>
