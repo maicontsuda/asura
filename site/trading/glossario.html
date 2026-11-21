@@ -1,141 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
             padding: 20px;
         }
         h1 {
             text-align: center;
-            color: #00a0e9;
-        }
-        .glossario {
-            max-width: 800px;
-            margin: auto;
-            text-align: justify;
-        }
-        .termo {
+            color: #ffffff;
             margin-bottom: 20px;
         }
+        .glossario {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .termo {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
         .termo h2 {
-            color: #00a0e9;
-            margin-bottom: 5px;
+            margin-top: 0;
+            color: #ffffff;
         }
         .termo p {
-            margin: 0;
+            margin: 10px 0 0 0;
+            font-size: 0.95em;
         }
-        .termo .exemplo {
-            color: #00e676;
+        .termo strong {
+            color: #00ffcc;
         }
     </style>
 </head>
 <body>
+    <h1>Glossário de Termos de Mercado</h1>
     <div class="glossario">
-        <h1>Glossário de Termos de Mercado</h1>
-        
         <div class="termo">
-            <h2>pip</h2>
-            <p>Pequena unidade de medida para valores cambiais, geralmente igual a 0,0001 (1 ponto). Exemplo: Uma alteração de 0,0001 no valor de 1.23456 equivale a um movimento de 1 pip.</p>
+            <h2>Pip</h2>
+            <p>Unidade de medida de variação de preços em operações de forex. Exemplo: Se o EUR/USD sobe de 1.1200 para 1.1205, houve um movimento de 5 pips.</p>
         </div>
-        
         <div class="termo">
-            <h2>spread</h2>
-            <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se um câmbio está sendo negociado a 1.10000/1.10010, o spread é de 1 pip.</p>
+            <h2>Spread</h2>
+            <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se o spread do EUR/USD é 1.5 pips, o mercado compra a 1.1200 e vende a 1.1201.5.</p>
         </div>
-        
         <div class="termo">
-            <h2>lote</h2>
-            <p>Unidade de negociação para ações, futuros e outros instrumentos financeiros. Exemplo: Um lote padrão em forex equivale a 100.000 unidades da moeda.</p>
+            <h2>Lote</h2>
+            <p>Unidade de tamanho de uma operação. Um lote padrão é 100.000 unidades da moeda base. Exemplo: Comprar 1 lote de EUR/USD equivale a 100.000 euros.</p>
         </div>
-        
         <div class="termo">
-            <h2>alavancagem</h2>
-            <p>Mecanismo que permite aos investidores negociar uma quantidade maior de ativos do que o capital disponível. Exemplo: Com alavancagem 100:1, um investidor pode controlar $100.000 com apenas $1.000.</p>
+            <h2>Alavancagem</h2>
+            <p>Capacidade de aumentar o potencial de ganhos (e perdas) ao operar com capital menor. Exemplo: Com alavancagem de 1:100, um investidor pode operar com 100 vezes o capital disponível.</p>
         </div>
-        
         <div class="termo">
-            <h2>margem</h2>
-            <p>Depósito de garantia necessário para abrir uma posição. Exemplo: Para abrir uma posição de $100.000 em forex, pode ser necessário um depósito de margem de $1.000.</p>
+            <h2>Margem</h2>
+            <p>Quantia de dinheiro depositada como garantia para operações de alavancagem. Exemplo: Se a margem é de 10.000 USD, um investidor pode operar com até 100.000 USD em ativos.</p>
         </div>
-        
         <div class="termo">
-            <h2>stop</h2>
-            <p>Ordem que define o preço a partir do qual uma posição será automaticamente fechada. Exemplo: Um stop-loss de $1.23000 protege a posição de ser vendida abaixo desse preço.</p>
+            <h2>Stop</h2>
+            <p>Ordem que limita as perdas ao encerrar uma operação. Exemplo: Um stop de 50 pips em uma operação de venda protege o investidor contra movimentos adversos.</p>
         </div>
-        
         <div class="termo">
-            <h2>take profit</h2>
-            <p>Ordem que define o preço a partir do qual uma posição será automaticamente fechada com lucro. Exemplo: Um take profit de $1.24500 garante que a posição seja fechada se o preço alcance esse nível.</p>
+            <h2>Take Profit</h2>
+            <p>Ordem que fixa o lucro máximo em uma operação. Exemplo: Um take profit de 100 pips em uma operação de compra garante o lucro quando o mercado atinge esse nível.</p>
         </div>
-        
         <div class="termo">
-            <h2>long</h2>
-            <p>Posição de compra em que o investidor espera um aumento no preço do ativo. Exemplo: Abrir uma posição longa em um índice acionário esperando um aumento nos preços.</p>
+            <h2>Long</h2>
+            <p>Operação de compra, esperando que o preço suba. Exemplo: Um investidor compra o EUR/USD acreditando que o euro subirá.</p>
         </div>
-        
         <div class="termo">
-            <h2>short</h2>
-            <p>Posição de venda em que o investidor espera um decréscimo no preço do ativo. Exemplo: Abrir uma posição short em uma ação esperando um declínio nos preços.</p>
+            <h2>Short</h2>
+            <p>Operação de venda, esperando que o preço desça. Exemplo: Um investidor vende o USD/JPY acreditando que o dólar japonês cairá.</p>
         </div>
-        
         <div class="termo">
-            <h2>gap</h2>
-            <p>Diferença entre o preço de fechamento e abertura de um ativo em dias consecutivos. Exemplo: Uma alta de 200 pips entre dois dias de negociação.</p>
+            <h2>Gap</h2>
+            <p>Variação brusca de preços entre o fechamento de uma sessão e o início da próxima, sem transição. Exemplo: Um gap de 50 pips pode ocorrer em horários de fechamento de mercados.</p>
         </div>
-        
         <div class="termo">
-            <h2>volume</h2>
-            <p>Número total de contratos negociados em um determinado período. Exemplo: Um grande volume de negociação em uma ação indica alta liquidez.</p>
+            <h2>Volume</h2>
+            <p>Quantidade de negócios realizados em um ativo durante um período. Exemplo: Um alto volume pode indicar maior interesse no ativo.</p>
         </div>
-        
         <div class="termo">
             <h2>RSI</h2>
-            <p>Relacionamento entre o ganho e perda recentes de um ativo para determinar o overbought ou oversold. Exemplo: Um RSI de 70 sugere que um ativo pode estar sobrecomprado.</p>
+            <p>Índice de Força Relativa, que mede a força e a velocidade de um ativo. Exemplo: RSI acima de 70 indica sobrecompra, enquanto abaixo de 30 indica sobre venda.</p>
         </div>
-        
         <div class="termo">
             <h2>MACD</h2>
-            <p>Moving Average Convergence Divergence, que compara duas médias móveis para identificar tendências. Exemplo: Quando o MACD cruza acima da linha de sinal, pode indicar uma tendência de alta.</p>
+            <p>Medidor de Força e Direção do Mercado, que compara médias móveis. Exemplo: Quando a linha MACD cruza a linha sinal, pode indicar uma mudança de tendência.</p>
         </div>
-        
         <div class="termo">
-            <h2>suporte</h2>
-            <p>Nível de preço abaixo do qual é menos provável que um ativo caia. Exemplo: Uma ação que frequentemente se recupera acima de $50 tem $50 como suporte.</p>
+            <h2>Suporte</h2>
+            <p>Nível de preço onde o ativo tende a encontrar demanda. Exemplo: Se o preço cai até o nível de suporte e reage, isso pode ser um sinal de reversão.</p>
         </div>
-        
         <div class="termo">
-            <h2>resistência</h2>
-            <p>Nível de preço acima do qual é menos provável que um ativo suba. Exemplo: Uma ação que frequentemente se recusa a subir acima de $100 tem $100 como resistência.</p>
+            <h2>Resistência</h2>
+            <p>Nível de preço onde o ativo tende a encontrar oferta. Exemplo: Se o preço sobe até o nível de resistência e reage, isso pode ser um sinal de reversão.</p>
         </div>
-        
         <div class="termo">
-            <h2>drawdown</h2>
-            <p>Redução no valor total de uma carteira de investimento em comparação com seu valor máximo histórico. Exemplo: Uma carteira que caiu de $100.000 para $80.000 teve um drawdown de 20%.</p>
+            <h2>Drawdown</h2>
+            <p>Perda acumulada em relação ao valor máximo atingido em um período. Exemplo: Um drawdown de 20% indica que o investidor perdeu 20% do capital em comparação ao pico.</p>
         </div>
-        
         <div class="termo">
-            <h2>equity</h2>
-            <p>Patrimônio líquido de um investidor, que é a diferença entre seu ativo e passivo. Exemplo: Se um investidor tem $100.000 em ativos e $50.000 em passivos, seu equity é de $50.000.</p>
+            <h2>Equity</h2>
+            <p>Valor total do portfólio de um investidor, incluindo lucros e perdas. Exemplo: Se o equity é de 50.000 USD, isso representa o valor total do investidor na plataforma.</p>
         </div>
-        
         <div class="termo">
-            <h2>margem livre</h2>
-            <p>Margem disponível para novas negociações, excluindo a margem já usada em posições abertas. Exemplo: Se a margem total for $10.000 e a margem usada for $5.000, a margem livre é de $5.000.</p>
+            <h2>Margem Livre</h2>
+            <p>Quantia disponível para operar após o uso da margem. Exemplo: Se a margem é de 10.000 USD e 5.000 são usados, a margem livre é de 5.000 USD.</p>
         </div>
-        
         <div class="termo">
-            <h2>ordem limitada</h2>
-            <p>Ordem que estabelece um preço específico para a compra ou venda de um ativo. Exemplo: Uma ordem limitada para comprar ações a $50.00 garantirá que a compra seja feita apenas se o preço atingir esse nível.</p>
+            <h2>Ordem Limitada</h2>
+            <p>Ordem que é executada apenas se o preço atingir um nível específico. Exemplo: Uma ordem limitada de compra a 1.1200 será executada se o preço atingir esse nível.</p>
         </div>
-        
-        <!-- Outros termos podem ser adicionados aqui -->
     </div>
 </body>
 </html>
