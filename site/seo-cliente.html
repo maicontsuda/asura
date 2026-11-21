@@ -13,48 +13,45 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.5em;
             margin: 0;
         }
-        .container {
+        main {
+            padding: 30px;
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+            margin: auto;
         }
-        .section {
-            margin-bottom: 40px;
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
-        .section h2 {
-            color: #ff9800;
-            margin-bottom: 15px;
-        }
-        .section ul {
-            list-style-type: disc;
+        ul {
+            list-style-type: square;
             padding-left: 20px;
         }
-        .section li {
+        li {
             margin-bottom: 10px;
         }
-        .section p {
-            line-height: 1.6;
+        .highlight {
+            color: #ff9800;
+            font-weight: bold;
         }
-        .section .warning {
-            background-color: #2e2e2e;
-            padding: 15px;
-            border-left: 5px solid #ff9800;
-            margin-top: 20px;
+        .important {
+            color: #e53935;
+            font-weight: bold;
         }
         footer {
+            background-color: #1e1e1e;
             text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #aaa;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -62,42 +59,34 @@
     <header>
         <h1>Checklist de SEO Básico para Landing Pages</h1>
     </header>
-    <div class="container">
-        <div class="section">
-            <h2>1. Title Tag</h2>
-            <p>O título da página (title tag) é o primeiro elemento que aparece nos resultados de busca. Ele deve ser conciso, relevante e incluir palavras-chave principais. Exemplo: “Melhor Plano de Marketing Digital para Pequenas Empresas – [Nome da Empresa]”.</p>
-        </div>
-        <div class="section">
-            <h2>2. Meta Description</h2>
-            <p>A meta description é um resumo da página que aparece nos resultados de busca. Deve ter entre 155 e 160 caracteres e incluir palavras-chave. Exemplo: “Descubra o melhor plano de marketing digital para pequenas empresas com estratégias eficazes, custos baixos e resultados reais.”</p>
-        </div>
-        <div class="section">
-            <h2>3. Headings (H1, H2, H3)</h2>
-            <p>Use os headings para estruturar o conteúdo. O H1 deve ser único e conter a palavra-chave principal. Os H2 e H3 ajudam a organizar o conteúdo e melhoram a legibilidade. Evite usar H1 em mais de uma seção.</p>
-        </div>
-        <div class="section">
-            <h2>4. Texto Alternativo (Alt Text)</h2>
-            <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso ajuda o motor de busca a entender o conteúdo da imagem e também beneficia os usuários com acessibilidade. Exemplo: “Gráfico de crescimento de vendas em 2023.”</p>
-        </div>
-        <div class="section">
-            <h2>5. Velocidade de Carregamento</h2>
-            <p>O tempo de carregamento da página é um fator importante para o SEO. Use imagens otimizadas, minimize o uso de scripts e evite excesso de elementos. Ferramentas como Google PageSpeed Insights ajudam a medir e melhorar a velocidade.</p>
-        </div>
-        <div class="section">
-            <h2>6. Links Internos</h2>
-            <p>Links internos ajudam a navegação e distribuem autoridade entre as páginas. Use-os para conectar conteúdo relevante, como “Descubra mais sobre marketing digital” ou “Como escolher o melhor plano de marketing digital”.</p>
-        </div>
-        <div class="section">
-            <h2>7. O Que NÃO Fazer</h2>
-            <div class="warning">
-                <p><strong>Não use palavras-chave de forma excessiva</strong> – isso pode levar ao penalizamento por spam.</p>
-                <p><strong>Não ignore a experiência do usuário</strong> – páginas lentas e mal estruturadas afetam o SEO e a retenção de visitantes.</p>
-                <p><strong>Não use meta tags duplicadas</strong> – isso confunde os motores de busca e pode prejudicar a posição na busca.</p>
-            </div>
-        </div>
-    </div>
+    <main>
+        <p>Um site de landing page precisa ser otimizado para o SEO (Search Engine Optimization) para atrair o máximo de tráfego orgânico e converter os visitantes. Aqui está um checklist com os principais pontos de SEO básico que devem ser considerados:</p>
+
+        <h2>1. Título (Title)</h2>
+        <p>O título da página é o primeiro elemento que os motores de busca exibem. Ele deve ser conciso, incluir palavras-chave relevantes e atrair o usuário. Exemplo: <strong>"Como Criar uma Landing Page Eficaz – Guia Completo"</strong>.</p>
+
+        <h2>2. Meta Description</h2>
+        <p>A meta description é uma breve descrição da página, que aparece nos resultados de busca. Ela deve ser única, incluir palavras-chave e estimular o clique. Exemplo: <strong>"Descubra como criar uma landing page eficaz com dicas práticas e estratégias de conversão."</strong></p>
+
+        <h2>3. Headings (H1, H2, H3)</h2>
+        <p>Os headings ajudam a estruturar o conteúdo e melhoram a navegação. O H1 deve ser único e representar o conteúdo da página. Os H2 e H3 devem ser usados para seções e subseções, com palavras-chave estratégicas.</p>
+
+        <h2>4. Texto Alternativo (Alt Text)</h2>
+        <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso melhora a acessibilidade e também ajuda no SEO. Exemplo: <strong>"Imagem de um laptop com uma landing page em destaque"</strong>.</p>
+
+        <h2>5. Velocidade de Carregamento</h2>
+        <p>Uma landing page lenta pode levar à alta taxa de abandono. Use ferramentas como Google PageSpeed Insights para otimizar imagens, scripts e recursos externos.</p>
+
+        <h2>6. Links Internos</h2>
+        <p>Links internos conectam as páginas do site e ajudam a distribuir o autoridade. Eles também melhoram a experiência do usuário e a navegação. Exemplo: <strong>"Saiba mais sobre SEO no nosso blog"</strong>.</p>
+
+        <h2>O Que NÃO Fazer</h2>
+        <p>Evite usar palavras-chave de forma excessiva (keyword stuffing), copiar conteúdo de outros sites, usar meta tags duplicadas e não otimizar imagens. Isso pode prejudicar o SEO e a reputação do site.</p>
+
+        <p>Com esses pontos em mente, sua landing page estará em melhor posição para ser encontrada pelas pessoas certas e converter visitantes em clientes.</p>
+    </main>
     <footer>
-        © 2025 Checklist SEO Básico – Direitos Reservados
+        &copy; 2025 SEO Checklist – Direitos Reservados
     </footer>
 </body>
 </html>
