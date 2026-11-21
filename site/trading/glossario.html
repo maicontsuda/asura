@@ -1,143 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Glossário de Mercado Financeiro</title>
+    <title>Glossário de Termos de Mercado</title>
     <style>
         body {
             background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
         }
         h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        main {
-            padding: 20px;
+            color: #00bfff;
+            text-align: center;
         }
         .glossario {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 10px;
         }
         .termo {
-            background-color: #1e1e1e;
-            border: 1px solid #444;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
         }
         .termo h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.2em;
+            color: #00bfff;
         }
         .termo p {
-            font-size: 0.95em;
-            line-height: 1.5;
+            margin: 5px 0;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #888;
+        .termo .exemplo {
+            color: #ff69b4;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Glossário de Mercado Financeiro</h1>
-    </header>
-    <main>
-        <div class="glossario">
-            <div class="termo">
-                <h2>Pip</h2>
-                <p>Unidade de medida de movimento de preços em mercados financeiros. Exemplo: Um movimento de 10 pips em EUR/USD representa uma variação de 0,0010.</p>
-            </div>
-            <div class="termo">
-                <h2>Spread</h2>
-                <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se o spread de EUR/USD é 1,5 pips, o preço de compra é 1,1200 e o de venda é 1,12015.</p>
-            </</div>
-            <div class="termo">
-                <h2>Lote</h2>
-                <p>Unidade de transação padrão em mercados financeiros, geralmente equivalente a 100.000 unidades da moeda base. Exemplo: Comprar 1 lote de EUR/USD significa comprar 100.000 euros.</p>
-            </div>
-            <div class="termo">
-                <h2>Alavancagem</h2>
-                <p>Capacidade de controlar grandes posições com capital reduzido. Exemplo: Com alavancagem de 1:100, um investidor pode controlar um lote com apenas US$ 1.000.</p>
-            </div>
-            <div class="termo">
-                <h2>Margem</h2>
-                <p>Capital depositado em conta para garantir posições abertas. Exemplo: Para uma posição de 1 lote com alavancagem 1:100, a margem necessária é US$ 1.000.</p>
-            </div>
-            <div class="termo">
-                <h2>Stop</h2>
-                <p>Ordem que limita perdas ao fechar uma posição quando o preço atinge um nível específico. Exemplo: Um stop de 50 pips em uma posição longa protege contra quedas bruscas.</p>
-            </div>
-            <div class="termo">
-                <h2>Take Profit</h2>
-                <p>Ordem que limita ganhos ao fechar uma posição quando o preço atinge um nível desejado. Exemplo: Um take profit de 100 pips em uma posição short garante lucros ao atingir o objetivo.</p>
-            </div>
-            <div class="termo">
-                <h2>Long</h2>
-                <p>Posição comprada, esperando que o preço suba. Exemplo: Comprar EUR/USD com o objetivo de vender ao preço mais alto.</p>
-            </div>
-            <div class="termo">
-                <h2>Short</h2>
-                <p>Posição vendida, esperando que o preço caia. Exemplo: Vender EUR/USD com o objetivo de comprar ao preço mais baixo.</p>
-            </div>
-            <div class="termo">
-                <h2>Gap</h2>
-                <p>Variação abrupta de preços entre fechamento de uma sessão e abertura da próxima. Exemplo: Um gap de 50 pips em uma ação pode ocorrer após uma notícia impactante.</p>
-            </div>
-            <div class="termo">
-                <h2>Volume</h2>
-                <p>Quantidade de contratos negociados em um período. Exemplo: Um alto volume em uma ação pode indicar maior interesse dos investidores.</p>
-            </div>
-            <div class="termo">
-                <h2>RSI</h2>
-                <p>Índice de Força Relativa que mede a velocidade e o volume de mudanças de preços. Exemplo: RSI acima de 70 indica sobrecompra.</p>
-            </div>
-            <div class="termo">
-                <h2>MACD</h2>
-                <p>Índice de médias móveis convergentes e divergentes que ajuda a identificar tendências. Exemplo: Quando a linha MACD cruza a linha zero, pode indicar uma mudança de tendência.</p>
-            </div>
-            <div class="termo">
-                <h2>Suporte</h2>
-                <p>Nível de preço onde o ativo tende a encontrar resistência à queda. Exemplo: Um suporte em R$ 100,00 pode ser rompido se o preço cair abaixo.</p>
-            </div>
-            <div class="termo">
-                <h2>Resistência</h2>
-                <p>Nível de preço onde o ativo tende a encontrar resistência ao aumento. Exemplo: Uma resistência em R$ 120,00 pode ser rompida se o preço subir acima.</p>
-            </div>
-            <div class="termo">
-                <h2>Drawdown</h2>
-                <p>Perda acumulada de capital em um período de tempo. Exemplo: Um drawdown de 20% em um ano pode indicar um desempenho ruim.</p>
-            </div>
-            <div class="termo">
-                <h2>Equity</h2>
-                <p>Valor total do patrimônio líquido de uma conta de investimento. Exemplo: Se a conta tem US$ 10.000 e uma posição aberta de US$ 5.000, a equity é US$ 15.000.</p>
-            </div>
-            <div class="termo">
-                <h2>Margem Livre</h2>
-                <p>Capital disponível para abrir novas posições. Exemplo: Se a margem total é US$ 10.000 e a margem usada é US$ 5.000, a margem livre é US$ 5.000.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Limitada</h2>
-                <p>Ordem que é executada apenas no preço especificado. Exemplo: Comprar uma ação a R$ 20,00, mas apenas se o preço atingir ou cair abaixo desse valor.</p>
-            </div>
+    <h1>Glossário de Termos de Mercado</h1>
+    <div class="glossario">
+        <div class="termo">
+            <h2>pip</h2>
+            <p>Pequena unidade de movimento em um preço de moeda. Por exemplo, um pip em uma paridade de câmbio que se move de 1.1200 para 1.1201 é um pip.</p>
+            <p><span class="exemplo">Exemplo:</span> No mercado de câmbio, 1 pip equivale a 0,0001 no valor nominal.</p>
         </div>
-    </main>
-    <footer>
-        © 2025 Glossário de Mercado Financeiro
-    </footer>
-</body>
-</html>
+        <div class="termo">
+            <h2>spread</h2>
+            <p>Distância entre a oferta e a demanda de uma ação ou moeda. Também chamado de margem de comissão.</p>
+            <p><span class="exemplo">Exemplo:</span> O spread entre a compra e venda de um ativo pode ser de 0,0001.</p>
+        </div>
+        <div class="termo">
+            <h2>lote</h2>
+            <p>Quantidade mínima de uma ação ou instrumento financeiro negociado em uma transação. Também chamado de contrato padrão.</p>
+            <p><span class="exemplo">Exemplo:</span> Um lote padrão em forex é geralmente 100.000 unidades da moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>alavancagem</h2>
+            <p>Relação entre o capital próprio e o capital financiado. Permite a amplificação do potencial lucro, mas também o risco.</p>
+            <p><span class="exemplo">Exemplo:</span> Com uma alavancagem de 1:10, a posição pode ser 10 vezes maior que o capital próprio.</p>
+        </div>
+        <div class="termo">
+            <h2> margem</h2>
+            <p>Fundos depositados em uma conta corrente para garantir uma posição aberta. Também chamado de margem inicial.</p>
+            <p><span class="exemplo">Exemplo:</span> Para abrir uma posição de 1 lote, é necessário depositar uma margem inicial.</p>
+        </div>
+        <div class="termo">
+            <h2>stop</h2>
+            <p>Ordem de venda ou compra que se activa automaticamente quando o preço atinge um determinado nível. Serve para proteger-se contra perdas.</p>
+            <p><span class="exemplo">Exemplo:</span> Um stop loss pode ser colocado a 10 pips abaixo do preço atual para proteger-se contra perdas.</p>
+        </div>
+        <div class="termo">
+            <h2>take profit</h2>
+            <p>Ordem de venda ou compra que se activa automaticamente quando o preço atinge um determinado nível. Serve para maximizar os lucros.</p>
+            <p><span class="exemplo">Exemplo:</span> Um take profit pode ser colocado a 50 pips acima do preço atual para garantir lucros.</p>
+        </div>
+        <div class="termo">
+            <h2>long</h2>
+            <p>Posição comprada ou compra de uma ação ou instrumento financeiro. Indica a expectativa de que o preço subirá.</p>
+            <p><span class="exemplo">Exemplo:</span> Comprar ações de uma empresa que está em crescimento é uma posição longa.</p>
+        </div>
+        <div class="termo">
+            <h2>short</h2>
+            <p>Posição vendida ou venda de uma ação ou instrumento financeiro. Indica a expectativa de que o preço descerá.</p>
+            <p><span class="exemplo">Exemplo:</span> Vender ações de uma empresa que está em declínio é uma posição short.</p>
+        </div>
+        <div class="termo">
+            <h2>gap</h2>
+            <p>Intervalo de preços que se forma quando um ativo não é negociado em uma certa faixa de preços durante um período de tempo.</p>
+            <p><span class="exemplo">Exemplo:</span> Um gap pode ocorrer durante o fim de semana ou feriados quando o mercado está fechado.</p>
+        </div>
+        <div class="termo">
+            <h2>volume</h2>
+            <p>Quantidade total de um ativo negociado em um determinado período de tempo. Serve para medir a liquidez do mercado.</p>
+            <p><span class="exemplo">Exemplo:</span> Um volume alto indica que muitos investidores estão negociando o ativo.</p>
+        </div>
+        <div class="termo">
+            <h2>RSI</h2>
+            <p>Índice de Força Relativa (RSI) é um indicador de oscilador usado para determinar se um ativo está sobrecomprado ou sobrevendido.</p>
+            <p><span class="exemplo">Exemplo:</span> Um RSI acima de 70 pode indicar sobrecompra, enquanto abaixo de 30 pode indicar sobrevenda.</p>
+        </div>
+        <div class="termo">
+            <h2>MACD</h2>
+            <p>Índice de Diferença Móvel Combinada (MACD) é um indicador técnico usado para identificar tendências e possíveis reversões de tendência.</p>
+            <p><span class="exemplo">Exemplo:</span> Um cruzamento positivo do MACD pode indicar a entrada em uma posição longa.</p>
+        </div>
+        <div class="termo">
+            <h2>suporte</h2>
+            <p>Nível de preço abaixo do qual um ativo não caiu durante um determinado período de tempo. Serve como resistência para a queda de preços.</p>
+            <p><span class="exemplo">Exemplo:</span> Se um ativo bate em um suporte, é possível que o preço comece a subir.</p>
+        </div>
+        <div class="termo">
+            <h2>resistência</h2>
+            <p>Nível de preço acima do qual um ativo não subiu durante um determinado período de tempo. Serve como resistência para a alta de preços.</p>
+            <p><span class="exemplo">Exemplo:</span> Se um ativo bate em uma resistência, é possível que o preço comece a descer.</p>
+        </div>
+        <div class="termo">
+            <h2>drawdown</h2>
+            <p>Perda relativa máxima de um ativo ou portfólio de ativos desde o pico mais recente. Serve para medir a volatilidade do ativo.</p>
+            <p><span class="exemplo">Exemplo:</span> Um drawdown de 10% significa que o ativo perdeu 10% desde seu ponto mais alto.</p>
+        </div>
+        <div class="termo">
+            <h2>equity</h2>
+            <p>Patrimônio líquido de um investidor, que é a diferença entre o valor dos ativos e a dívida total.</p>
+            <p><span class="exemplo">Exemplo:</span> A equidade de um investidor é calculada subtraindo suas dívidas de seus ativos.</p>
+        </div>
+        <div class="termo">
+            <h2>margem livre</h2>
+            <p>Fundos disponíveis em uma conta corrente para novas posições, após a dedução das margens já utilizadas.</p>
+            <p><span class="exemplo">Exemplo:</span> Se uma conta tem 100.000 unidades e a margem utilizada é 50.000, a margem livre é 50.000.</p>
+        </div>
+        <div class="termo">
+            <h2>ordem limitada</h2>
+            <p>Ordem de compra ou venda que se activa apenas se o preço atinge um determinado nível.</p>
+            <p><span class="exemplo">Exemplo:</span> Uma ordem de compra limitada pode ser colocada a 10 pips acima do preço atual.</p>
+        </div>
+        <div class="termo">
+            <h2>spread betting</h2>
+            <p>Método de investimento em que o investidor faz uma aposta sobre o movimento de um ativo, sem possuir o ativo em si.</p>
+            <p><span class="exemplo">Exemplo:</span> Um investidor pode apostar que o preço de uma ação subirá ou descerá sem ter que comprar a ação.</p>
+        </div>
+        <div class="termo">
+            <h2>forward curve</h2>
+            <p>Curva de futuros que mostra os preços futuros de um ativo em uma série de datas.</p>
+            <p><span class="exemplo">Exemplo:</span> A forward curve de uma moeda pode mostrar os futuros preços de câmbio em diferentes datas.</p>
+        </div>
+        <div class="termo">
+            <h2>liquidez</h2>
+            <p>Capacidade de um ativo ser negociado rapidamente sem alterar seu preço.</p>
+            <p><span class="exemplo">Exemplo:</span> Ativos com alta liquidez são negociados com facilidade e sem grandes movimentos de preços.</p>
+        </div>
+        <div class="termo">
+            <h2>spread</h2>
+            <p>Distância entre a oferta e a demanda de uma ação ou moeda. Também chamado de margem de comissão.</p>
+            <p><span class="exemplo">Exemplo:</span> O spread entre a compra e venda de um ativo pode ser de 0,0001.</p>
+        </div>
+        <div class="termo">
+            <h2>hedging</h2>
+            <p>Técnica de mitigação de risco através da contratação de posições opost
