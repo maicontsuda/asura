@@ -7,46 +7,51 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
+            background-color: #0f0f0f;
             color: #e0e0e0;
             line-height: 1.6;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #333;
         }
         h1 {
             margin: 0;
             font-size: 2em;
         }
         section {
-            padding: 20px;
+            padding: 30px;
             max-width: 1000px;
-            margin: auto;
-            background-color: #1e1e1e;
-            border: 1px solid #333;
+            margin: 0 auto;
         }
         h2 {
             color: #ffffff;
-            border-bottom: 2px solid #555;
+            border-bottom: 2px solid #444;
             padding-bottom: 5px;
         }
         p {
-            font-size: 1em;
+            font-size: 1.1em;
         }
         ul {
-            padding-left: 20px;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         .aviso {
-            background-color: #2a2a2a;
-            border: 1px solid #555;
+            background-color: #1e1e1e;
+            border-left: 5px solid #ff4d4d;
             padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
+            margin: 30px 0;
+            font-style: italic;
         }
-        .aviso p {
-            font-size: 0.95em;
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
@@ -55,27 +60,29 @@
         <h1>Gestão de Risco em Operações</h1>
     </header>
     <section>
-        <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é fundamental limitar o risco por operação a um máximo de 1–2% do capital total. Isso garante que, mesmo em perdas consecutivas, o capital não seja comprometido de forma irreversível. Por exemplo, se você possui um capital de R$ 100.000, cada operação deve ter um risco máximo de R$ 1.000 a R$ 2.000.</p>
+        <h2>Risco por Operação (1–2% do Capital)</h2>
+        <p>Um dos pilares da gestão de risco é limitar o risco por operação a um máximo de 1 a 2% do capital total. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1 a 2% do seu capital. Essa regra ajuda a proteger o capital e evita que uma única perda grave comprometa sua estratégia.</p>
         
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ordem de venda que limita as perdas em caso de movimento adverso. Já o take profit é uma ordem de venda que garante lucro ao atingir um nível específico. Esses limites são fundamentais para manter disciplina e evitar emoções durante as operações.</p>
+        <p>Stop Loss é o limite de preços que você define para encerrar uma operação com perda, enquanto o Take Profit é o limite de preços para encerrar com lucro. Esses limites são essenciais para controlar o risco e garantir que as operações sejam feitas de forma disciplinada.</p>
         
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco máximo por operação e no stop loss. Por exemplo, se o stop loss for de R$ 1.000 e o risco permitido for de 2% do capital, a posição deve ser ajustada para que a perda máxima não ultrapasse esse limite.</p>
+        <p>O position sizing refere-se ao tamanho da posição que você toma em cada operação. Ele deve ser calculado com base no risco por operação e no nível de stop loss. Uma posição muito grande pode levar a perdas significativas, enquanto uma posição muito pequena pode reduzir o potencial de lucro.</p>
         
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a proporção entre o risco de uma operação e o potencial lucro. Um bom risco/retorno geralmente é de 1:3 ou 1:5, ou seja, você aceita um risco de 1 unidade para obter um lucro de 3 ou 5 unidades. Isso cria uma vantagem estatística a longo prazo.</p>
+        <p>O risco/retorno é a relação entre o risco assumido e o potencial de lucro. Para uma operação ser viável, o retorno deve ser maior que o risco. Por exemplo, se você está disposto a perder 1% do capital, o retorno deve ser pelo menos 2% para que a operação seja rentável.</p>
         
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda máxima acumulada em um período específico. É importante monitorar o drawdown para entender o impacto emocional e financeiro das perdas. Um drawdown controlado é sinal de um sistema de gestão de risco bem estruturado.</p>
+        <p>Drawdown é a perda acumulada em relação ao valor máximo atingido por um portfólio. É uma métrica importante para medir o risco de capital em operações contínuas. Um drawdown elevado pode indicar que a estratégia não está bem estruturada.</p>
         
         <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por falta de disciplina, falta de planejamento e ausência de gestão de risco. Eles entram em operações sem definir limites, ignoram o stop loss e não respeitam o risco por operação. Além disso, a maioria não tem um plano de trade claro e age com emoções, como medo e ganância.</p>
-        
-        <div class="aviso">
-            <p><strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e você deve buscar orientação profissional antes de investir.</p>
-        </div>
+        <p>Muitos traders perdem dinheiro por falta de disciplina, emocionalidade e falta de planejamento. Operar sem um plano de risco, sem limites de perdas e sem seguir um sistema consistente leva à falência. A gestão de risco é a chave para sobreviver e prosperar no mercado.</p>
     </section>
+    <div class="aviso">
+        Este conteúdo é educacional e não é uma recomendação de investimento. A negociação de ativos financeiros envolve risco de perda de capital.
+    </div>
+    <footer>
+        © 2025 - Gestão de Risco em Operações
+    </footer>
 </body>
 </html>
