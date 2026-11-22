@@ -6,7 +6,7 @@
     <style>
         body {
             background-color: #121212;
-            color: #f8f8f8;
+            color: #f0f0f0;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -16,119 +16,95 @@
             height: 100vh;
         }
         .container {
-            background-color: #212121;
+            background-color: #282828;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
             width: 80%;
             max-width: 800px;
-            text-align: center;
         }
         h1 {
-            color: #444;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            text-align: center;
+            color: #bada55;
         }
-        ul {
-            list-style-type: none;
+        .checklist {
+            margin-top: 20px;
+            list-style: none;
             padding: 0;
         }
-        li {
-            margin-bottom: 10px;
+        .checklist li {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .criteria {
-            color: #f0ad4e;
+        .checklist li label {
+            font-size: 18px;
+            flex: 1;
         }
-        .common-errors {
-            color: #d9534f;
+        .checklist li .actions {
+            display: flex;
+            gap: 10px;
         }
-        .review-instructions {
-            color: #5cb85c;
+        .checklist li .actions button {
+            background-color: #4a4a4a;
+            border: none;
+            color: #bada55;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .checklist li .actions button:hover {
+            background-color: #3a3a3a;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
-        <ul>
-            <li><strong>Landing Page:</strong>
-                <p class="criteria">Critérios de Aceite:</p>
+        <ul class="checklist">
+            <li>
+                <label for="landing-page">Landing Page</label>
+                <div class="actions">
+                    <button>Verificar</button>
+                </div>
                 <ul>
-                    <li>Design responsivo e atraente</li>
-                    <li>Informações claras e fáceis de entender</li>
-                    <li>Botões de CTA (Call to Action) visíveis e relevantes</li>
-                </ul>
-                <p class="common-errors">Erros Comuns a Evitar:</p>
-                <ul>
-                    <li>Design excessivamente complexo ou confuso</li>
-                    <li>Inconsistências visuais ou de estilo</li>
-                    <li>Texto confuso ou mal estruturado</li>
-                </ul>
-                <p class="review-instructions">Como Revisar Antes de Entregar:</p>
-                <ul>
-                    <li>Testar a responsividade em diferentes dispositivos e navegadores</li>
-                    <li>Verificar a legibilidade do texto e dos elementos visuais</li>
-                    <li>Examinar o fluxo do usuário e garantir que todas as etapas sejam claramente visíveis</li>
+                    <li><strong>Critérios de Aceite:</strong> Layout responsivo, conteúdo claro, chamada a ação clara, carregamento rápido.</li>
+                    <li><strong>Erros Comuns a Evitar:</strong> Demasiado texto, imagens mal dimensionadas, carregamento lento.</li>
+                    <li><strong>Como Revisar:</strong> Testar em diferentes dispositivos, usar ferramentas de análise de SEO, garantir que o design é responsivo.</li>
                 </ul>
             </li>
-            <li><strong>Texto de Apresentação:</strong>
-                <p class="criteria">Critérios de Aceite:</p>
+            <li>
+                <label for="texto-de-apresentacao">Texto de Apresentação</label>
+                <div class="actions">
+                    <button>Verificar</button>
+                </div>
                 <ul>
-                    <li>Texto conciso e informativo</li>
-                    <li>Compreensão clara do serviço oferecido</li>
-                    <li>Usabilidade e experiência do leitor</li>
-                </ul>
-                <p class="common-errors">Erros Comuns a Evitar:</p>
-                <ul>
-                    <li>Texto confuso ou mal estruturado</li>
-                    <li>Excesso de informações desnecessárias</li>
-                    <li>Erros gramaticais ou ortográficos</li>
-                </ul>
-                <p class="review-instructions">Como Revisar Antes de Entregar:</p>
-                <ul>
-                    <li>Revisar a estrutura e a clareza do texto</li>
-                    <li>Corrigir erros gramaticais e ortográficos</li>
-                    <li>Verificar a consistência e a coerência do conteúdo</li>
+                    <li><strong>Critérios de Aceite:</strong> Conciso, informativo, chamada a ação clara, sem erros gramaticais ou ortográficos.</li>
+                    <li><strong>Erros Comuns a Evitar:</strong> Texto longo e confuso, uso excessivo de jargões, erros gramaticais.</li>
+                    <li><strong>Como Revisar:</strong> Ler em voz alta, usar ferramentas de detecção de erros gramaticais, pedir feedback de colegas ou clientes.</li>
                 </ul>
             </li>
-            <li><strong>Revisão de Texto:</strong>
-                <p class="criteria">Critérios de Aceite:</p>
+            <li>
+                <label for="revisao-de-texto">Revisão de Texto</label>
+                <div class="actions">
+                    <button>Verificar</button>
+                </div>
                 <ul>
-                    <li>Textos sem erros gramaticais ou ortográficos</li>
-                    <li>Estilo consistente com a marca</li>
-                    <li>Fluxo natural do texto</li>
-                </ul>
-                <p class="common-errors">Erros Comuns a Evitar:</p>
-                <ul>
-                    <li>Erros gramaticais ou ortográficos</li>
-                    <li>Estilo inconsistente com a marca</li>
-                    <li>Fluxo de texto desordenado</li>
-                </ul>
-                <p class="review-instructions">Como Revisar Antes de Entregar:</p>
-                <ul>
-                    <li>Revisar e corrigir todos os erros gramaticais e ortográficos</li>
-                    <li>Verificar a consistência do estilo com a marca</li>
-                    <li>Examinar o fluxo do texto e melhorar a clareza</li>
+                    <li><strong>Critérios de Aceite:</strong> Sem erros gramaticais, ortográficos ou de pontuação, conteúdo coerente, claramente estruturado.</li>
+                    <li><strong>Erros Comuns a Evitar:</strong> Erros gramaticais, uso de jargões, falta de coesão entre parágrafos.</li>
+                    <li><strong>Como Revisar:</strong> Ler o texto em voz alta, usar ferramentas de detecção de erros, pedir feedback de colegas ou clientes, revisar várias vezes.</li>
                 </ul>
             </li>
-            <li><strong>5 Ideias de Conteúdo:</strong>
-                <p class="criteria">Critérios de Aceite:</p>
+            <li>
+                <label for="ideias-de-conteudo">5 Ideias de Conteúdo</label>
+                <div class="actions">
+                    <button>Verificar</button>
+                </div>
                 <ul>
-                    <li>Conteúdo original e relevante</li>
-                    <li>Estilo consistente com a marca</li>
-                    <li>Informações úteis e valiosas</li>
-                </ul>
-                <p class="common-errors">Erros Comuns a Evitar:</p>
-                <ul>
-                    <li>Conteúdo duplicado ou não original</li>
-                    <li>Estilo inconsistente com a marca</li>
-                    <li>Informações irrelevantes ou desatualizadas</li>
-                </ul>
-                <p class="review-instructions">Como Revisar Antes de Entregar:</p>
-                <ul>
-                    <li>Verificar a originalidade e a relevância do conteúdo</li>
-                    <li>Examinar a consistência do estilo com a marca</li>
-                    <li>Corrigir erros de informação e garantir a atualidade</li>
+                    <li><strong>Critérios de Aceite:</strong> Relevantes para o público-alvo, úteis, criativas, bem estruturadas, sem erros gramaticais ou ortográficos.</li>
+                    <li><strong>Erros Comuns a Evitar:</strong> Conteúdo pouco relevante, falta de criatividade, erros gramaticais, falta de coesão entre as ideias.</li>
+                    <li><strong>Como Revisar:</strong> Ligar para o público-alvo para entender suas necessidades, pesquisar sobre o tema, revisar várias vezes, usar ferramentas de detecção de erros.</li>
                 </ul>
             </li>
         </ul>
