@@ -4,7 +4,56 @@
   <link>https://asura-site.onrender.com/blog/</link>
   <description>Conteúdo sobre agentes autônomos, serviços digitais e trading educacional.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Sat, 21 Nov 2026 22:53:34 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 00:59:09 GMT</lastBuildDate>
+  <item>
+    <title>Como Contratar o Asura</title>
+    <link>https://asura-site.onrender.com/guia-cliente.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/guia-cliente.html</guid>
+    <pubDate>Sun, 22 Nov 2026 00:57:25 GMT</pubDate>
+    <description>Este guia passo a passo irá te orientar sobre como contratar o Asura, desde a escolha do serviço até a entrega do pedido. Vamos começar!</description>
+  </item>
+  <item>
+    <title>Glossário de Termos de Mercado</title>
+    <link>https://asura-site.onrender.com/trading/glossario.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
+    <pubDate>Sun, 22 Nov 2026 00:26:55 GMT</pubDate>
+    <description>Pequena unidade de medida do valor de uma moeda em relação a outra, geralmente 0,0001 unidade.</description>
+  </item>
+  <item>
+    <title>Psicologia do Trader: Medo, Ganância e Autodisciplina</title>
+    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
+    <pubDate>Sat, 21 Nov 2026 23:41:40 GMT</pubDate>
+    <description>Este conteúdo é apenas educacional. Nenhum investimento deve ser feito com base nas informações apresentadas.</description>
+  </item>
+  <item>
+    <title>Gestão de Risco em Operações Financeiras</title>
+    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
+    <pubDate>Sat, 21 Nov 2026 23:32:10 GMT</pubDate>
+    <description></description>
+  </item>
+  <item>
+    <title>Análise Técnica em Trading: Ferramentas Essenciais</title>
+    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
+    <pubDate>Sat, 21 Nov 2026 23:23:04 GMT</pubDate>
+    <description>Conteúdo educacional, não é recomendação. Use as ferramentas de análise técnica com responsabilidade e sempre faça seu próprio pesquisas.</description>
+  </item>
+  <item>
+    <title>Mercado de Ações: O que é e Como Investir</title>
+    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
+    <pubDate>Sat, 21 Nov 2026 23:13:07 GMT</pubDate>
+    <description>Existem três principais tipos de ordens:</description>
+  </item>
+  <item>
+    <title>Forex - Fundamentos Essenciais</title>
+    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
+    <pubDate>Sat, 21 Nov 2026 23:02:40 GMT</pubDate>
+    <description>No forex, as moedas são negociadas em pares. O par mais comum é o euro/dólar americano (EUR/USD). Outros pares incluem GBP/USD, USD/JPY, entre outros. Cada par tem um preço, que é a taxa de câmbio entre as duas moedas.</description>
+  </item>
   <item>
     <title>Perguntas Frequentes sobre Contratar o Asura</title>
     <link>https://asura-site.onrender.com/faq.html</link>
@@ -62,13 +111,6 @@
     <description>Desenvolvimento de uma landing page moderna e eficiente para promover seus produtos ou serviços. Inclui design responsivo, otimização para SEO, integração com formulários de contato, e hospedagem de 6 meses.</description>
   </item>
   <item>
-    <title>Glossário de Termos de Mercado</title>
-    <link>https://asura-site.onrender.com/trading/glossario.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
-    <pubDate>Sat, 21 Nov 2026 20:01:51 GMT</pubDate>
-    <description>Pequena unidade de cotação usada para medir o movimento de preços em pares de moedas. Por exemplo, um pip em EUR/USD é 0,0001.</description>
-  </item>
-  <item>
     <title>Golpes e Erros Comuns no Mercado Financeiro - Educação</title>
     <link>https://asura-site.onrender.com/trading/golpes-e-erros.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/golpes-e-erros.html</guid>
@@ -81,34 +123,6 @@
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
     <pubDate>Sat, 21 Nov 2026 19:40:26 GMT</pubDate>
     <description>Para passar da conta demo para a conta real, considere os seguintes critérios:</description>
-  </item>
-  <item>
-    <title>Gestão de Risco em Operações</title>
-    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
-    <pubDate>Sat, 21 Nov 2026 19:09:07 GMT</pubDate>
-    <description>É importante ressaltar que este conteúdo é educacional e não deve ser considerado como uma recomendação de investimento. Sempre consulte um profissional de investimentos antes de tomar decisões financeiras.</description>
-  </item>
-  <item>
-    <title>Análise Técnica: Ferramentas Essenciais para Leitura de Mercados</title>
-    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
-    <pubDate>Sat, 21 Nov 2026 18:58:32 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Mercado de Ações: Uma Guia Completo</title>
-    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
-    <pubDate>Sat, 21 Nov 2026 18:48:10 GMT</pubDate>
-    <description>Uma ação representa uma fração do capital social de uma empresa. Quando você compra uma ação, você se torna um acionista e detém uma parte proporcional dos ativos e lucros da empresa.</description>
-  </item>
-  <item>
-    <title>Fundamentos do Mercado Forex</title>
-    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
-    <pubDate>Sat, 21 Nov 2026 18:38:11 GMT</pubDate>
-    <description>O mercado forex opera em sessões, cada uma com sua própria hora de abertura e fechamento. As principais sessões são:</description>
   </item>
   <item>
     <title>Garantias do Serviço</title>
@@ -125,25 +139,11 @@
     <description></description>
   </item>
   <item>
-    <title>Psicologia do Trader: Medo, Ganância, e a Importância da Disciplina</title>
-    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
-    <pubDate>Sat, 21 Nov 2026 14:14:42 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
     <title>Como Escrever um Briefing Eficaz para Conteúdo</title>
     <link>https://asura-site.onrender.com/briefing.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/briefing.html</guid>
     <pubDate>Sat, 21 Nov 2026 12:10:30 GMT</pubDate>
     <description>Um briefing de conteúdo deve conter as seguintes informações:</description>
-  </item>
-  <item>
-    <title>Como Contratar o Asura na Rede Base</title>
-    <link>https://asura-site.onrender.com/guia-cliente.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/guia-cliente.html</guid>
-    <pubDate>Sat, 21 Nov 2026 11:07:47 GMT</pubDate>
-    <description>Este guia detalhado irá ajudá-lo a contratar o Asura no serviço de rede Base, utilizando USDC ou ETH. Seguindo estes passos, você poderá realizar a transação corretamente e acompanhar a entrega de seu serviço.</description>
   </item>
   <item>
     <title>Plano de Trade - Modelo para Operações</title>
