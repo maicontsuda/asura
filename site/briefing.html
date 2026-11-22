@@ -7,53 +7,73 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            font-size: 2em;
+
+        header h1 {
             margin: 0;
+            font-size: 2rem;
         }
-        section {
+
+        main {
             padding: 20px;
-            margin: 20px 0;
-            background-color: #1e1e1e;
-            border-radius: 8px;
+            max-width: 900px;
+            margin: auto;
         }
+
+        section {
+            margin-bottom: 40px;
+        }
+
         h2 {
-            color: #f5f5f5;
-            margin-top: 0;
+            color: #ffcc00;
+            margin-bottom: 10px;
         }
+
         p {
             line-height: 1.6;
         }
+
         ul, ol {
             margin: 10px 0;
             padding-left: 20px;
         }
-        code {
-            background-color: #2e2e2e;
-            padding: 3px 6px;
-            border-radius: 4px;
-            color: #00ffcc;
-        }
-        .checklist {
-            background-color: #2e2e2e;
+
+        .exemplo {
+            background-color: #1e1e1e;
             padding: 15px;
-            border-left: 4px solid #00ffcc;
+            border-left: 5px solid #ffcc00;
+            margin: 20px 0;
         }
+
+        .checklist {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-left: 5px solid #ffcc00;
+            margin: 20px 0;
+        }
+
         .checklist ul {
-            list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
+
         .checklist li {
-            margin: 5px 0;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
         }
     </style>
 </head>
@@ -61,44 +81,57 @@
     <header>
         <h1>Como Escrever um Briefing Eficaz para Pedir Conteúdo</h1>
     </header>
-    <section>
-        <h2>O Que Incluir em um Briefing?</h2>
-        <p>Um briefing bem estruturado ajuda o criador de conteúdo a entender exatamente o que é esperado. Ele deve conter as seguintes informações:</p>
-        <ul>
-            <li><strong>Público-alvo:</strong> Quem é o público? Ex: jovens de 18 a 25 anos, profissionais de marketing, etc.</li>
-            <li><strong>Tom da mensagem:</strong> O tom deve ser formal, informal, empolgado, técnico, etc.</li>
-            <li><strong>Objetivo:</strong> Qual é o objetivo do conteúdo? Informar, vender, engajar, etc.</li>
-            <li><strong>Exemplos:</strong> Quais conteúdos já existem que você gostaria que fossem seguidos? Ex: artigos do site <code>blog.com</code>.</li>
-            <li><strong>Restrições:</strong> Quais limites existem? Ex: não usar imagens, não usar termos técnicos, evitar certas palavras.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Exemplo de Briefing Bom</h2>
-        <p>Objetivo: Criar um artigo de blog para atrair novos clientes ao serviço de consultoria de marketing digital.</p>
-        <p>Público: Empresários em fase de crescimento com interesse em aumentar a visibilidade de suas marcas.</p>
-        <p>Tom: Profissional, empolgado, informativo.</p>
-        <p>Exemplos: Artigos sobre otimização de SEO, estratégias de conteúdo, e cases de sucesso.</p>
-        <p>Restrições: Evitar termos técnicos excessivos, manter o tom acessível, não usar imagens.</p>
-    </section>
-    <section>
-        <h2>Exemplo de Briefing Ruim</h2>
-        <p>Objetivo: Criar um artigo sobre marketing digital.</p>
-        <p>Público: Empreendedores.</p>
-        <p>Tom: Informal.</p>
-        <p>Exemplos: Artigos do <code>blog.com</code> e do <code>site.com</code>.</p>
-        <p>Restrições: Não usar imagens.</p>
-        <p>Observação: Esse briefing é vago e não fornece informações específicas sobre o que o conteúdo deve abordar ou o tom correto. É importante definir o objetivo claramente e fornecer exemplos concretos.</p>
-    </section>
-    <section class="checklist">
-        <h2>Checklist Final</h2>
-        <ul>
-            <li>Escreva o objetivo do conteúdo com clareza.</li>
-            <li>Defina o público-alvo com precisão.</li>
-            <li>Escolha o tom da mensagem.</li>
-            <li>Inclua exemplos de conteúdo que você gostaria que fossem seguidos.</li>
-            <li>Destaque as restrições ou limites.</li>
-            <li>Revise o briefing para garantir que não faltam informações.</li>
-        </ul>
-    </section>
+    <main>
+        <section>
+            <h2>O que Incluir em um Briefing?</h2>
+            <p>Um briefing é uma ferramenta essencial para comunicar claramente suas necessidades a um profissional de conteúdo. Ele deve ser claro, objetivo e completo. Veja os elementos que devem estar presentes:</p>
+            <ul>
+                <li><strong>Público-alvo:</strong> Quem é o leitor? Idade, localização, interesses, nível de conhecimento.</li>
+                <li><strong>Tom da mensagem:</strong> Formal, informal, técnico, criativo, etc.</li>
+                <li><strong>Objetivo do conteúdo:</strong> Informar, persuadir, entreter, educar, etc.</li>
+                <li><strong>Exemplos de conteúdo:</strong> Links, textos, imagens que servem como referência.</li>
+                <li><strong>Restrições:</strong> Palavras proibidas, formatos aceitáveis, prazos, etc.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplo de Briefing Bom</h2>
+            <div class="exemplo">
+                <p><strong>Objetivo:</strong> Criar um artigo informativo sobre os benefícios da meditação para pessoas acima de 30 anos.</p>
+                <p><strong>Público:</strong> Adultos com interesse em saúde mental e bem-estar.</p>
+                <p><strong>Tom:</strong> Amigável e empático, com dados científicos.</p>
+                <p><strong>Exemplo:</strong> <a href="https://exemplo.com/meditação">Artigo sobre meditação</a>.</p>
+                <p><strong>Restrições:</strong> Não usar termos técnicos, evitar imagens de pessoas meditando em ambientes religiosos.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exemplo de Briefing Ruim</h2>
+            <div class="exemplo">
+                <p><strong>Objetivo:</strong> Escrever sobre meditação.</p>
+                <p><strong>Público:</strong> Pessoas.</p>
+                <p><strong>Tom:</strong> Claro.</p>
+                <p><strong>Exemplo:</strong> Não fornecido.</p>
+                <p><strong>Restrições:</strong> Não há.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Checklist Final</h2>
+            <div class="checklist">
+                <ul>
+                    <li>Definiu claramente o objetivo do conteúdo.</li>
+                    <li>Identificou o público-alvo com precisão.</li>
+                    <li>Escolheu o tom adequado para o público.</li>
+                    <li>Incluiu exemplos de conteúdo que servem como referência.</li>
+                    <li>Definiu restrições e limites claros.</li>
+                    <li>Verificou que o briefing é conciso e direto.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 - Guia Prático para Briefing de Conteúdo
+    </footer>
 </body>
 </html>
