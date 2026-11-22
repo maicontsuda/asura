@@ -5,38 +5,36 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
-            background-color: #121212;
+            background-color: #1a1a1a;
             color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: auto;
-        }
-        .glossario {
-            width: 80%;
-            max-width: 800px;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
         }
         h1 {
-            text-align: center;
-            margin-bottom: 20px;
+            color: #8c8c8c;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .glossario {
+            max-width: 800px;
+            margin: 0 auto;
         }
         .termo {
             margin-bottom: 20px;
         }
         .termo h2 {
+            color: #00bfff;
             font-size: 1.5em;
             margin-bottom: 5px;
         }
         .termo p {
             margin: 0;
-            font-size: 1em;
+        }
+        .termo .exemplo {
+            color: #ff9900;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,124 +43,116 @@
         <h1>Glossário de Termos de Mercado</h1>
         <div class="termo">
             <h2>Pip</h2>
-            <p>Pequena unidade de medida do valor de uma moeda em relação a outra, geralmente 0,0001 unidade.</p>
+            <p>Pequena unidade de medida para o grau de movimento de um determinado ativo financeiro. Por exemplo, em moedas, 1 pip equivale a 0,0001 unidades da segunda moeda. Exemplo: 0,0001 USD.</p>
         </div>
         <div class="termo">
             <h2>Spread</h2>
-            <p>Diferença entre a taxa de compra e a taxa de venda de uma moeda.</p>
+            <p>Diferença entre o preço de compra (bid) e o preço de venda (ask) de um ativo. Exemplo: Comprando a USD/JPY a 110.00 e vendendo a 110.02, o spread é de 2 pips.</p>
         </div>
         <div class="termo">
             <h2>Lote</h2>
-            <p>Unidade de medida padrão para quantificar a quantidade de uma moeda.</p>
+            <p>Quantidade padrão de uma moeda ou índice negociada em uma transação. Por exemplo, 1 lote de USD/JPY é 100.000 unidades de USD.</p>
         </div>
         <div class="termo">
             <h2>Alavancagem</h2>
-            <p>Mecanismo que permite operar com uma quantidade maior de dinheiro do que o depositado.</p>
+            <p>Relação entre o capital próprio e o capital financiado. Exemplo: Usando alavancagem 1:10, um investimento de $100 pode controlar $1.000 em ativos.</p>
         </div>
         <div class="termo">
             <h2>Margem</h2>
-            <p>Depósito de garantia exigido para abrir uma posição.</p>
+            <p>Depósito inicial necessário para abrir uma posição em uma conta de negociação. Exemplo: Uma margem de 2% para um lote de 100.000 USD/JPY equivale a $2.000.</p>
         </div>
         <div class="termo">
             <h2>Stop</h2>
-            <p>Ordem que define o preço de saída em caso de perda.</p>
+            <p>Ordem de negociação que é automaticamente executada quando o preço atinge um determinado nível. Exemplo: Stop loss de 100 pips abaixo do preço atual.</p>
         </div>
         <div class="termo">
             <h2>Take Profit</h2>
-            <p>Ordem que define o preço de saída em caso de lucro.</p>
+            <p>Ordem de negociação que é automaticamente executada quando o preço atinge um determinado nível, limitando o lucro. Exemplo: Take profit de 200 pips acima do preço atual.</p>
         </div>
         <div class="termo">
             <h2>Long</h2>
-            <p>Posição comprada, esperando o preço subir.</p>
+            <p>Negociação de compra de um ativo financeiro, esperando que o preço suba. Exemplo: Comprando a USD/JPY a 110.00, esperando que o preço suba.</p>
         </div>
         <div class="termo">
             <h2>Short</h2>
-            <p>Posição vendida, esperando o preço cair.</p>
+            <p>Negociação de venda de um ativo financeiro, esperando que o preço desça. Exemplo: Vendendo a USD/JPY a 110.00, esperando que o preço desça.</p>
         </div>
         <div class="termo">
             <h2>Gap</h2>
-            <p>Diferença no preço de abertura e fechamento de um mercado.</p>
+            <p>Intervalo de preço que ocorre quando uma sessão de negociação termina e a próxima sessão não abre no mesmo nível. Exemplo: Um gap de 100 pips entre o final do dia e o começo do dia seguinte.</p>
         </div>
         <div class="termo">
             <h2>Volume</h2>
-            <p>Quantidade total de uma moeda negociada em um determinado período de tempo.</p>
+            <p>Quantidade total de negociações que ocorreram em um determinado período de tempo. Exemplo: Volume diário de 1.000.000 de lances de ação XYZ.</p>
         </div>
         <div class="termo">
             <h2>RSI</h2>
-            <p>Índice de Força Relativa, usado para identificar sobrecompra e sobrevenda.</p>
+            <p>Índice de Força Relativa, uma métrica de análise técnica que mede a velocidade e a magnitude das mudanças de preço recentes. Exemplo: RSI de 70 indicando sobrecompra.</p>
         </div>
         <div class="termo">
             <h2>MACD</h2>
-            <p>Índice de Diferença de Médias Móveis, usado para identificar tendências e divergências.</p>
+            <p>Moving Average Convergence Divergence, um indicador técnico que consiste em três linhas: as duas primeiras são médias móveis e a terceira é a diferença entre elas. Exemplo: MACD cruzando acima da linha de sinal sinalizando um possível upturn.</p>
         </div>
         <div class="termo">
             <h2>Suporte</h2>
-            <p>Nível de preço onde a oferta prevalece sobre a demanda.</p>
+            <p>Nível de preço em que uma moeda ou índice tende a encontrar compradores e, portanto, a parar de cair. Exemplo: Um suporte em 110.00 no gráfico USD/JPY.</p>
         </div>
         <div class="termo">
             <h2>Resistência</h2>
-            <p>Nível de preço onde a demanda prevalece sobre a oferta.</p>
+            <p>Nível de preço em que uma moeda ou índice tende a encontrar vendedores e, portanto, a parar de subir. Exemplo: Uma resistência em 115.00 no gráfico USD/JPY.</p>
         </div>
         <div class="termo">
             <h2>Drawdown</h2>
-            <p>Perda máxima de valor relativa a um pico histórico.</p>
+            <p>A perda máxima de valor entre um pico e o próximo pico de um ativo. Exemplo: Um drawdown de 10% no investimento em ações XYZ.</p>
         </div>
         <div class="termo">
             <h2>Equity</h2>
-            <p>Valor total do investimento, incluindo lucros e perdas.</p>
+            <p>Valor total de uma conta de negociação, incluindo margem e lucros/perdas. Exemplo: Equity de $15.000 após lucros e perdas.</p>
         </div>
         <div class="termo">
             <h2>Margem Livre</h2>
-            <p>Margem disponível para novas posições após a alocação para uma posição existente.</p>
+            <p>Margem disponível para novas negociações, calculada subtraindo as posições abertas e os lucros/perdas da margem total. Exemplo: Margem livre de $3.000 após abertura de uma posição.</p>
         </div>
         <div class="termo">
             <h2>Ordem Limitada</h2>
-            <p>Ordem que especifica um preço exato para entrar ou sair de uma posição.</p>
+            <p>Ordem de negociação que é executada apenas quando o preço atinge um determinado nível. Exemplo: Comprar a USD/JPY a 111.00, limitando a entrada a esse preço.</p>
         </div>
         <div class="termo">
-            <h2>Spread Bid-Ask</h2>
-            <p>Diferença entre o preço de venda e o preço de compra de uma moeda.</p>
+            <h2>Ordem Stop-Limit</h2>
+            <p>Combinação de uma ordem stop e uma ordem limitada, executada apenas se o preço atingir um determinado nível e permanecer lá por algum tempo. Exemplo: Stop-Limit de 100 pips abaixo do preço atual, limitando a venda a 110.00.</p>
         </div>
         <div class="termo">
-            <h2>Liquidez</h2>
-            <p>Capacidade de comprar ou vender uma moeda rapidamente sem afetar seu preço.</p>
+            <h2>Ordem Stop-Loss</h2>
+            <p>Ordem de negociação que é automaticamente executada quando o preço atinge um determinado nível, limitando as perdas. Exemplo: Stop loss de 100 pips abaixo do preço atual.</p>
         </div>
         <div class="termo">
-            <h2>Paridade de Mercado</h2>
-            <p>Preço de uma moeda relativo a outra, geralmente referente ao mercado.</p>
+            <h2>Ordem Take-Profit</h2>
+            <p>Ordem de negociação que é automaticamente executada quando o preço atinge um determinado nível, limitando o lucro. Exemplo: Take profit de 200 pips acima do preço atual.</p>
         </div>
         <div class="termo">
-            <h2>Flutuação</h2>
-            <p>Movimento de preços de uma moeda.</p>
+            <h2>Ordem Limit-Stop</h2>
+            <p>Combinação de uma ordem stop e uma ordem limitada, executada apenas se o preço atingir um determinado nível e permanecer lá por algum tempo. Exemplo: Limit-Stop de 100 pips acima do preço atual, limitando a compra a 112.00.</p>
         </div>
         <div class="termo">
-            <h2>Volatilidade</h2>
-            <p>Medida da incerteza ou flutuação dos preços de uma moeda.</p>
+            <h2>Ordem Stop-Loss Limit</h2>
+            <p>Combinação de uma ordem stop e uma ordem limitada, executada apenas se o preço atingir um determinado nível e permanecer lá por algum tempo. Exemplo: Stop-Loss Limit de 100 pips abaixo do preço atual, limitando a venda a 109.00.</p>
         </div>
         <div class="termo">
-            <h2>Contra-Posição</h2>
-            <p>Posição oposta a uma posição existente.</p>
+            <h2>Ordem Stop-Limit-Stop</h2>
+            <p>Combinação de uma ordem stop, uma ordem limitada e outra stop, executada apenas se o preço atingir um determinado nível e permanecer lá por algum tempo. Exemplo: Stop-Limit-Stop de 100 pips abaixo do preço atual, limitando a venda a 109.00 e a venda a 108.00 se o preço atingir 109.00.</p>
         </div>
         <div class="termo">
-            <h2>Fluxo de Mercado</h2>
-            <p>Direção geral do mercado.</p>
+            <h2>Ordem Trailing Stop</h2>
+            <p>Ordem de negociação que move automaticamente a linha de stop em direção ao preço atual, protegendo lucros. Exemplo: Trailing Stop de 50 pips acima do preço atual.</p>
         </div>
         <div class="termo">
-            <h2>Desconforto</h2>
-            <p>Situação onde o mercado está em movimento, mas não há clareza sobre a direção.</p>
+            <h2>Ordem Trailing Take-Profit</h2>
+            <p>Ordem de negociação que move automaticamente a linha de take profit em direção ao preço atual, aumentando os lucros. Exemplo: Trailing Take-Profit de 50 pips acima do preço atual.</p>
         </div>
         <div class="termo">
-            <h2>Correlação</h2>
-            <p>Nível de relação entre os movimentos de preço de duas moedas.</p>
-        </div>
-        <div class="termo">
-            <h2>Correção</h2>
-            <p>Movimento de preços em direção oposta a uma tendência principal.</p>
-        </div>
-        <div class="termo">
-            <h2>Previsão</h2>
-            <p>Estimativa futura dos movimentos de preços de uma moeda.</p>
+            <h2>Ordem One-Cancels-Other (OCO)</h2>
+            <p>Dois pedidos que são cancelados se um deles for executado. Exemplo: Um OCO de stop loss e take profit em 50 pips.</p>
         </div>
     </div>
 </body>
-</html>
+</
