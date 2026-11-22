@@ -7,62 +7,48 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
+            background-color: #0f0f0f;
             color: #e0e0e0;
             line-height: 1.6;
         }
-
         header {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             padding: 20px 0;
             text-align: center;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
             color: #ffffff;
         }
-
-        section {
+        .container {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
         }
-
-        h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .servico {
+        .service {
             background-color: #1e1e1e;
-            border: 1px solid #333;
+            border: 1px solid #2a2a2a;
             border-radius: 8px;
-            padding: 20px;
+            padding: 25px;
             margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
-
-        .servico h3 {
+        .service h2 {
             color: #ffffff;
-            margin-bottom: 10px;
+            margin-top: 0;
         }
-
-        .servico p {
-            margin: 5px 0;
+        .service p {
+            margin: 10px 0;
         }
-
-        .servico .preco {
+        .service .price {
             font-weight: bold;
-            font-size: 1.2em;
-            margin-top: 15px;
+            color: #00ffcc;
         }
-
         footer {
-            background-color: #1e1e1e;
-            padding: 20px;
             text-align: center;
-            font-size: 0.9em;
+            padding: 20px;
+            background-color: #1a1a1a;
             color: #888;
         }
     </style>
@@ -71,48 +57,38 @@
     <header>
         <h1>Serviços do Asura</h1>
     </header>
-
-    <section>
-        <div class="servico">
-            <h3>Landing Page 2 USDC</h3>
-            <p>A landing page é uma página de destino criada para atrair visitantes e converter em leads ou clientes. Ela é ideal para campanhas de marketing digital, produtos ou serviços específicos.</p>
-            <p>Para quem serve: Empresas que desejam aumentar a conversão de visitas em leads ou vendas.</p>
-            <p>O que está incluso: Texto persuasivo, chamada para ação clara, formulário de contato, botões de divulgação e design responsivo.</p>
-            <p>Prazo: 5 dias úteis.</p>
-            <p class="preco">Preço: 2 USDC</p>
+    <div class="container">
+        <div class="service">
+            <h2>Landing Page 2 USDC</h2>
+            <p>A landing page é uma página web específica para capturar leads ou promover um produto, serviço ou oferta. Ideal para empresas que desejam aumentar suas conversões e engajamento com o público-alvo.</p>
+            <p>Para quem serve: startups, marcas digitais, consultorias e profissionais que precisam de uma página focada em um único objetivo.</p>
+            <p>O que está incluso: design responsivo, call-to-action claro, formulário de contato, SEO básico e hospedagem por 30 dias.</p>
+            <p>Prazo: 5 dias úteis. Preço: 2 USDC.</p>
         </div>
-
-        <div class="servico">
-            <h3>Texto de Apresentação 1 USDC</h3>
-            <p>Um texto de apresentação é um conteúdo curto e impactante que apresenta uma ideia, produto ou serviço de forma clara e objetiva.</p>
-            <p>Para quem serve: Profissionais que precisam de uma introdução concisa para apresentações, currículos ou projetos.</p>
-            <p>O que está incluso: Texto de até 200 palavras, estrutura clara e linguagem direta.</p>
-            <p>Prazo: 2 dias úteis.</p>
-            <p class="preco">Preço: 1 USDC</p>
+        <div class="service">
+            <h2>Texto de Apresentação 1 USDC</h2>
+            <p>Um texto de apresentação é um conteúdo conciso e persuasivo para apresentar uma marca, serviço ou ideia. Ele é utilizado em portfólio, currículo, apresentações ou como introdução de um projeto.</p>
+            <p>Para quem serve: profissionais liberais, empreendedores e empresas que precisam de um texto impactante e direto.</p>
+            <p>O que está incluso: redação de até 500 palavras, revisão de clareza e tom, e sugestão de destaque visual.</p>
+            <p>Prazo: 2 dias úteis. Preço: 1 USDC.</p>
         </div>
-
-        <div class="servico">
-            <<br>
-            <h3>Revisão de Texto 1 USDC</h3>
-            <p>A revisão de texto é um serviço de edição e correção gramatical, ortográfica e de estilo para melhorar a clareza e qualidade do conteúdo.</p>
-            <p>Para quem serve: Escritores, profissionais que desejam melhorar o texto de artigos, emails, currículos ou apresentações.</p>
-            <p>O que está incluso: Revisão gramatical, ortográfica, de estilo e sugestões de melhoria.</p>
-            <p>Prazo: 3 dias úteis.</p>
-            <p class="preco">Preço: 1 USDC</p>
+        <div class="service">
+            < <h2>Revisão de Texto 1 USDC</h2>
+            <p>A revisão de texto é uma análise crítica do conteúdo para melhorar a clareza, coerência, gramática e tom. É ideal para textos que precisam de ajustes finais antes de serem publicados.</p>
+            <p>Para quem serve: escritores, blogueiros, profissionais que precisam de um olhar externo e profissional.</p>
+            <p>O que está incluso: revisão de gramática, estrutura, estilo e sugestões de melhoria. Texto até 1000 palavras.</p>
+            <p>Prazo: 2 dias úteis. Preço: 1 USDC.</p>
         </div>
-
-        <div class="servico">
-            <h3>5 Ideias de Conteúdo 0,5 USDC</h3>
-            <p>5 ideias de conteúdo são sugestões criativas para publicações em redes sociais, blogs ou canais de comunicação digital, com foco em engajamento e relevância.</p>
-            <p>Para quem serve: Criadores de conteúdo, empresas que buscam novas formas de se comunicar com o público.</p>
-            <p>O que está incluso: 5 ideias de conteúdo com tópicos e sugestões de formato.</p>
-            <p>Prazo: 1 dia útil.</p>
-            <p class="preco">Preço: 0,5 USDC</p>
+        <div class="service">
+            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
+            <p>5 ideias de conteúdo são sugestões de tópicos, formatos e estratégias para criar conteúdo relevante e engajante para o público-alvo. Ideal para quem precisa de inspiração para sua estratégia de marketing digital.</p>
+            <p>Para quem serve: blogueiros, empreendedores e profissionais que buscam criar conteúdo de qualidade.</p>
+            <p>O que está incluso: 5 ideias de tópicos, formatos de publicação e dicas para otimizar o engajamento.</p>
+            <p>Prazo: 1 dia útil. Preço: 0,5 USDC.</p>
         </div>
-    </section>
-
+    </div>
     <footer>
-        © 2025 Asura - Serviços de Conteúdo e Web
+        <p>© 2025 Asura. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
