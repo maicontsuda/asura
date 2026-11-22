@@ -7,51 +7,66 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         h1 {
-            color: #ffffff;
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
         }
         section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+            margin-bottom: 30px;
         }
         h2 {
             color: #ffffff;
-            margin-top: 0;
+            margin-bottom: 10px;
         }
         p {
             line-height: 1.6;
         }
-        ul, ol {
-            padding-left: 20px;
+        .checklist, .registro {
+            border-top: 1px solid #444;
+            padding-top: 15px;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 6px;
-        }
-        .aviso p {
-            font-style: italic;
-        }
-        .checklist {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 6px;
+        .checklist ul, .registro table {
+            margin: 0;
+            padding: 0;
         }
         .checklist ul {
-            list-style-type: square;
+            list-style-type: none;
+        }
+        .checklist li {
+            padding: 5px 0;
+        }
+        .registro table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .registro th, .registro td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        .aviso {
+            background-color: #222;
+            padding: 20px;
+            border-top: 3px solid #ff4444;
+            margin-top: 40px;
+            font-style: italic;
+            text-align: center;
         }
     </style>
 </head>
@@ -59,58 +74,63 @@
     <header>
         <h1>Plano de Trade - Modelo para Operações</h1>
     </header>
-
-    <section>
-        <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de cada operação. Exemplo: "Comprar ações da empresa XYZ com objetivo de 10% de lucro em 3 dias" ou "Vender opções de venda com alvo de 5 pontos de lucro".</p>
-    </section>
-
-    <section>
-        <h2>Mercados</h2>
-        <p>Identifique os mercados que você planeja operar. Exemplo: "Operações no mercado de ações brasileiro (B3) e no mercado de criptomoedas (Binance)".</p>
-    </section>
-
-    <section>
-        <h2>Horários</h2>
-        <p>Defina os horários de abertura e fechamento das operações. Exemplo: "Operações de abertura das 9h às 15h nos dias úteis" ou "Operações de 22h às 4h no mercado de criptomoedas".</p>
-    </section>
-
-    <section>
-        <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída. Exemplo: "Entrar apenas em candle de fechamento acima da média móvel de 50 períodos" ou "Sair com lucro de 3% ou com perda de 2%".</p>
-    </section>
-
-    <section>
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você aceita por dia. Exemplo: "Não permitir perdas acima de 5% do capital diário" ou "Máximo de 2 operações por dia com perdas inferiores a 3% cada".</p>
-    </section>
-
-    <section class="checklist">
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul>
-            <li>Verificar se o mercado está em tendência ou em range.</li>
-            <li>Confirmar os níveis de suporte e resistência.</li>
-            <li>Verificar se todas as regras de entrada foram atendidas.</li>
-            <li>Confirmar o limite de perda e lucro pré-definidos.</li>
-            <li>Assegurar que há espaço emocional para seguir o plano.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Template de Registro</h2>
-        <p>Registre cada operação com os seguintes campos:</p>
-        <ul>
-            <li>Data e hora da operação.</li>
-            <li>Ativo negociado.</li>
-            <li>Preço de entrada.</li>
-            <li>Preço de saída.</li>
-            <li>Lucro ou perda.</li>
-            <li>Observações.</li>
-        </ul>
-    </section>
-
+    <div class="container">
+        <section>
+            <h2>Objetivos</h2>
+            <p>Definir claramente os objetivos de cada operação é essencial para manter a disciplina. Exemplo: Obter um lucro de 5% em 2 dias, proteger o capital e evitar emoções que possam comprometer o plano.</p>
+        </section>
+        <section>
+            <h2>Mercados</h2>
+            <p>Selecione o mercado a ser operado com base em sua experiência e análise. Exemplo: Forex (EUR/USD), ações (B3SA3), ou criptomoedas (BTC/USDT). Defina também o horizonte de tempo: curto, médio ou longo prazo.</p>
+        </section>
+        <section>
+            < <h2>Horários</h2>
+            <p>Estabeleça horários de abertura e fechamento do trade. Exemplo: Operar de 08:00 às 16:00 (horário de Brasília), com pausas para análise e reavaliação do plano.</p>
+        </section>
+        <section>
+            <h2>Regras de Entrada e Saída</h2>
+            <p>Defina condições claras para entrar e sair de uma operação. Exemplo: Entrar em uma tendência de alta com confirmação de candle de alta e sair com stop loss em 2% de perda ou take profit em 5% de lucro.</p>
+        </section>
+        <section>
+            <h2>Limite de Perdas Diárias</h2>
+            <p>Estabeleça um limite de perdas diários para proteger seu capital. Exemplo: Não perder mais de 2% do capital em um único dia, com reavaliação diária do plano.</p>
+        </section>
+        <section class="checklist">
+            <h2>Checklist Antes de Abrir Operação</h2>
+            <ul>
+                <li>Verificar se o plano está alinhado com os objetivos.</li>
+                <li>Analise o mercado e confirmar condições técnicas.</li>
+                <li>Confirmar que o limite de perdas não foi ultrapassado.</li>
+                <li>Verificar se há fatores externos que possam impactar a operação.</li>
+                <li>Manter a disciplina e evitar emoções.</li>
+            </ul>
+        </section>
+        <section class="registro">
+            <h2>Template de Registro</h2>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Mercado</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Lucro/Perda</th>
+                    <th>Comentário</th>
+                </tr>
+                <tr>
+                    <td>2025-04-05</td>
+                    <td>08:30</td>
+                    <td>EUR/USD</td>
+                    <td>1.0845</td>
+                    <td>1.0860</td>
+                    <td>+0.15%</td>
+                    <td>Tendência de alta confirmada com candle de alta.</td>
+                </tr>
+            </table>
+        </section>
+    </div>
     <div class="aviso">
-        <p>Este conteúdo é educacional e não é uma recomendação de investimento. As operações financeiras envolvem riscos e devem ser realizadas com cuidado e responsabilidade.</p>
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas.</p>
     </div>
 </body>
 </html>
