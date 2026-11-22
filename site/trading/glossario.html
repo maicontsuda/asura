@@ -5,90 +5,163 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #d4d4d4;
+            background-color: #121212;
+            color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
         }
-        .container {
+        .glossario {
+            width: 80%;
             max-width: 800px;
-            margin: 50px auto;
             padding: 20px;
-            background-color: #282828;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
         h1 {
-            color: #61dafb;
-        }
-        .termos {
-            margin: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
         }
         .termo {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            background-color: #2a2a2a;
-            border-radius: 10px;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
         }
-        .definicao {
-            margin-top: 10px;
-            color: #949494;
+        .termo h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
         }
-        .exemplo {
-            font-style: italic;
-            color: #c9c9c9;
+        .termo p {
+            margin: 0;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="glossario">
         <h1>Glossário de Termos de Mercado</h1>
-        <div class="termos">
-            <div class="termo">
-                <p><strong>Pip</strong></p>
-                <p class="definicao">Pequena unidade de cotação usada para medir o movimento de preços em pares de moedas. Por exemplo, um pip em EUR/USD é 0,0001.</p>
-                <p class="exemplo">Se a taxa de câmbio de EUR/USD cai de 1.1000 para 1.0999, houve uma queda de 1 pip.</p>
-            </div>
-            <div class="termo">
-                <p><strong>Spread</strong></p>
-                <p class="definicao">A diferença entre o preço de compra (bid) e o preço de venda (ask) de um instrumento financeiro.</p>
-                <p class="exemplo">No EUR/USD, se o preço de compra é 1.1000 e o preço de venda é 1.1005, o spread é 5 pips.</p>
-            </div>
-            <!-- Adicione mais termos aqui -->
-            <div class="termo">
-                <p><strong>Short</strong></p>
-                <p class="definicao">Técnica de negociação onde o investidor vende uma moeda ou ativo que ainda não possui, esperando que o preço caia para poder comprar de volta mais barato e lucrar com a diferença.</p>
-                <p class="exemplo">O trader vende 1.000 euros a 1.1500 e espera que o preço caia para comprar de volta a 1.1400, obtendo um lucro de 100 pips.</p>
-            </div>
-            <div class="termo">
-                <p><strong>Long</strong></p>
-                <p class="definicao">Técnica de negociação onde o investidor compra uma moeda ou ativo, esperando que o preço suba para vender de volta e lucrar com a diferença.</p>
-                <p class="exemplo">O trader compra 1.000 euros a 1.1500 e espera que o preço suba para vender a 1.1600, obtendo um lucro de 100 pips.</p>
-            </div>
-            <div class="termo">
-                <p><strong>Gap</strong></p>
-                <p class="definicao">Diferença entre o preço de fechamento do mercado anterior e o preço de abertura do mercado atual, geralmente causada por eventos inesperados ou falta de liquidez.</p>
-                <p class="exemplo">Se o EUR/USD fechou a 1.1500 na véspera e abriu a 1.1600 na manhã seguinte, houve um gap de 100 pips.</p>
-            </div>
-            <div class="termo">
-                <p><strong>Volume</strong></p>
-                <p class="definicao">Quantidade total de um ativo negociado durante um período específico de tempo.</p>
-                <p class="exemplo">O volume de negociação do EUR/USD na sessão europeia foi de 10 milhões de pares.</p>
-            </div>
-            <div class="termo">
-                <p><strong>RSI (Índice de Força Relativa)</strong></p>
-                <p class="definicao">Medida de força de um ativo, calculada como uma média móvel da força relativa ao longo de um período de tempo.</p>
-                <p class="exemplo">Um RSI de 70 sugere que o ativo está supercomprado, enquanto um RSI de 30 sugere supervendido.</p>
-            </div>
-            <div class="termo">
-                <p><strong>MACD (Índice de Diferença do Máximo e do Mínimo de Médias Móveis)</strong></p>
-                <p class="definicao">Índice de linha de tendência com linha de sinal que ajuda a identificar a força, direção, momentum e reversões de tendência.</p>
-                <p class="exemplo">Um cruzamento acima da linha de sinal no MACD pode indicar o início de uma tendência de alta.</p>
-            </div>
-            <!-- Adicione mais termos aqui -->
+        <div class="termo">
+            <h2>Pip</h2>
+            <p>Pequena unidade de medida do valor de uma moeda em relação a outra, geralmente 0,0001 unidade.</p>
+        </div>
+        <div class="termo">
+            <h2>Spread</h2>
+            <p>Diferença entre a taxa de compra e a taxa de venda de uma moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>Lote</h2>
+            <p>Unidade de medida padrão para quantificar a quantidade de uma moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>Alavancagem</h2>
+            <p>Mecanismo que permite operar com uma quantidade maior de dinheiro do que o depositado.</p>
+        </div>
+        <div class="termo">
+            <h2>Margem</h2>
+            <p>Depósito de garantia exigido para abrir uma posição.</p>
+        </div>
+        <div class="termo">
+            <h2>Stop</h2>
+            <p>Ordem que define o preço de saída em caso de perda.</p>
+        </div>
+        <div class="termo">
+            <h2>Take Profit</h2>
+            <p>Ordem que define o preço de saída em caso de lucro.</p>
+        </div>
+        <div class="termo">
+            <h2>Long</h2>
+            <p>Posição comprada, esperando o preço subir.</p>
+        </div>
+        <div class="termo">
+            <h2>Short</h2>
+            <p>Posição vendida, esperando o preço cair.</p>
+        </div>
+        <div class="termo">
+            <h2>Gap</h2>
+            <p>Diferença no preço de abertura e fechamento de um mercado.</p>
+        </div>
+        <div class="termo">
+            <h2>Volume</h2>
+            <p>Quantidade total de uma moeda negociada em um determinado período de tempo.</p>
+        </div>
+        <div class="termo">
+            <h2>RSI</h2>
+            <p>Índice de Força Relativa, usado para identificar sobrecompra e sobrevenda.</p>
+        </div>
+        <div class="termo">
+            <h2>MACD</h2>
+            <p>Índice de Diferença de Médias Móveis, usado para identificar tendências e divergências.</p>
+        </div>
+        <div class="termo">
+            <h2>Suporte</h2>
+            <p>Nível de preço onde a oferta prevalece sobre a demanda.</p>
+        </div>
+        <div class="termo">
+            <h2>Resistência</h2>
+            <p>Nível de preço onde a demanda prevalece sobre a oferta.</p>
+        </div>
+        <div class="termo">
+            <h2>Drawdown</h2>
+            <p>Perda máxima de valor relativa a um pico histórico.</p>
+        </div>
+        <div class="termo">
+            <h2>Equity</h2>
+            <p>Valor total do investimento, incluindo lucros e perdas.</p>
+        </div>
+        <div class="termo">
+            <h2>Margem Livre</h2>
+            <p>Margem disponível para novas posições após a alocação para uma posição existente.</p>
+        </div>
+        <div class="termo">
+            <h2>Ordem Limitada</h2>
+            <p>Ordem que especifica um preço exato para entrar ou sair de uma posição.</p>
+        </div>
+        <div class="termo">
+            <h2>Spread Bid-Ask</h2>
+            <p>Diferença entre o preço de venda e o preço de compra de uma moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>Liquidez</h2>
+            <p>Capacidade de comprar ou vender uma moeda rapidamente sem afetar seu preço.</p>
+        </div>
+        <div class="termo">
+            <h2>Paridade de Mercado</h2>
+            <p>Preço de uma moeda relativo a outra, geralmente referente ao mercado.</p>
+        </div>
+        <div class="termo">
+            <h2>Flutuação</h2>
+            <p>Movimento de preços de uma moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>Volatilidade</h2>
+            <p>Medida da incerteza ou flutuação dos preços de uma moeda.</p>
+        </div>
+        <div class="termo">
+            <h2>Contra-Posição</h2>
+            <p>Posição oposta a uma posição existente.</p>
+        </div>
+        <div class="termo">
+            <h2>Fluxo de Mercado</h2>
+            <p>Direção geral do mercado.</p>
+        </div>
+        <div class="termo">
+            <h2>Desconforto</h2>
+            <p>Situação onde o mercado está em movimento, mas não há clareza sobre a direção.</p>
+        </div>
+        <div class="termo">
+            <h2>Correlação</h2>
+            <p>Nível de relação entre os movimentos de preço de duas moedas.</p>
+        </div>
+        <div class="termo">
+            <h2>Correção</h2>
+            <p>Movimento de preços em direção oposta a uma tendência principal.</p>
+        </div>
+        <div class="termo">
+            <h2>Previsão</h2>
+            <p>Estimativa futura dos movimentos de preços de uma moeda.</p>
         </div>
     </div>
 </body>
