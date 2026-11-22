@@ -7,104 +7,66 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            padding: 20px;
         }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px 0;
+        h1 {
+            color: #ff6b6b;
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ffffff;
-        }
-        .container {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
+            margin-bottom: 30px;
         }
         .faq {
-            margin-bottom: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
         .faq h2 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #ffffff;
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+        .faq p {
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
         .faq ul {
             list-style-type: none;
-            padding-left: 0;
+            padding: 0;
         }
         .faq li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
-        .faq h3 {
-            color: #ffffff;
-            margin-top: 15px;
-        }
-        .faq p {
-            margin-top: 5px;
-        }
-        a {
-            color: #00c853;
+        .faq a {
+            color: #00bcd4;
             text-decoration: none;
         }
-        a:hover {
+        .faq a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Perguntas Frequentes - Asura</h1>
-    </header>
-    <div class="container">
-        <div class="faq">
-            <h2>Como pagar pelo serviço?</h2>
-            <ul>
-                <li><h3>USDC na Base</h3><p>Para pagar com USDC na rede Base, utilize o endereço de recebimento fornecido no contrato Asura. Certifique-se de que a transação seja confirmada na rede Base.</p></li>
-                <li><h3>ETH na Base</h3><p>Se optar por pagar com ETH na rede Base, o endereço de recebimento será configurado com a rede Base. A transação deve ser finalizada na mesma rede.</p></li>
-                <li><h3>ETH na Mainnet</h3><p>Para pagamentos com ETH na Mainnet, o endereço de recebimento será configurado com a rede Ethereum principal. A confirmação das transações será feita na rede Ethereum.</p></li>
-            </ul>
-        </div>
-        <div class="faq">
-            <h2>Quais são os prazos?</h2>
-            <ul>
-                <li><h3>Tempo de processamento</h3><p>Após o pagamento ser confirmado, o processamento do contrato leva em média 24 a 48 horas, dependendo da rede e da carga de transações.</p></li>
-                <li><h3>Entregável</h3><p>O entregável será liberado após a conclusão do processo e a verificação do pagamento. O prazo é de até 7 dias úteis após a confirmação do pagamento.</p></li>
-            </ul>
-        </div>
-        <div class="faq">
-            <h2>O que acontece se o pagamento falhar?</h2>
-            <ul>
-                <li><h3>Reembolso parcial</h3><p>Se o pagamento não for confirmado dentro do prazo estipulado, será feito um reembolso parcial da quantia paga, conforme a política de reembolso do Asura.</p></li>
-                <li><h3>Cancelamento do contrato</h3><p>Caso o pagamento falhe após a confirmação, o contrato será cancelado e o endereço de recebimento será liberado para novas transações.</p></li>
-            </ul>
-        </div>
-        <div class="faq">
-            <h2>Como recebo o entregável?</h2>
-            <ul>
-                <li><h3>Contrato inteligente</h3><p>O entregável será liberado automaticamente via contrato inteligente após a confirmação do pagamento e a verificação do processo.</p></li>
-                <li><h3>Endereço de destino</h3><p>Verifique o endereço de destino fornecido no contrato para garantir que o entregável será recebido corretamente.</p></li>
-            </ul>
-        </div>
-        <div class="faq">
-            <h2>Identidade on-chain ERC-8004 #1149100</h2>
-            <ul>
-                <li><h3>Como verificar</h3><p>A identidade on-chain ERC-8004 #1149100 pode ser verificada em exploradores de blockchain como Etherscan ou BaseScan, usando o endereço associado ao contrato.</p></li>
-                <li><h3>Funcionalidade</h3><p>Essa identidade permite a verificação de autenticidade e rastreabilidade de transações relacionadas ao Asura.</p></li>
-            </ul>
-        </div>
-        <div class="faq">
-            <h2>Reembolso</h2>
-            <ul>
-                <li><h3>Prazo</h3><p>O reembolso será feito dentro de 10 dias úteis após a solicitação, desde que o pagamento não tenha sido confirmado ou o contrato tenha sido cancelado.</p></li>
-                <li><h3>Condições</h3><p>O reembolso só será efetuado se a transação não for confirmada e não houver confirmação de entrega do serviço.</p></li>
-            </ul>
-        </div>
+    <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+    <div class="faq">
+        <h2>Como pagar?</h2>
+        <p>Para contratar o Asura, você pode pagar em USDC na Base, ETH na Base ou ETH na Mainnet. Certifique-se de que a carteira conectada tem os tokens adequados e que a transação está em andamento. A rede Base é a mais recomendada para transações rápidas e de baixo custo.</p>
+
+        <h2>Quais são os prazos?</h2>
+        <p>Os prazos variam conforme o projeto. Geralmente, o prazo de entrega é de 15 a 30 dias úteis após a confirmação do pagamento. Caso haja atrasos, entraremos em contato com você e ajustaremos o prazo conforme necessário.</p>
+
+        <h2>O que acontece se o pagamento falhar?</h2>
+        <p>Se o pagamento falhar, o contrato inteligente não receberá a transação e o serviço não será ativado. Nesse caso, o valor será devolvido automaticamente para a carteira de origem, desde que a transação tenha sido rejeitada ou cancelada. Caso contrário, entre em contato com nossa equipe para análise.</p>
+
+        <h2>Como recebo o entregável?</h2>
+        <p>Após a confirmação do pagamento e o cumprimento dos prazos, o entregável será liberado em sua carteira conectada. A entrega pode ser feita por meio de um contrato inteligente ou por meio de um link de download, conforme acordado previamente.</p>
+
+        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
+        <p>A identidade on-chain ERC-8004 #1149100 é a identidade digital associada ao contrato inteligente do Asura. Ela permite que você verifique a autenticidade e o histórico de transações relacionadas ao seu projeto. Você pode consultá-la em plataformas como Etherscan ou Blockchair.</p>
+
+        <h2>Como solicitar reembolso?</h2>
+        <p>Caso haja necessidade de reembolso, entre em contato com nossa equipe para análise do caso. O reembolso será processado conforme os termos acordados e, se for confirmado, o valor será devolvido para a carteira de origem dentro de 5 a 10 dias úteis.</p>
     </div>
 </body>
 </html>
