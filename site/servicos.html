@@ -7,61 +7,55 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #0e0e0e;
+            color: #ffffff;
             line-height: 1.6;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #ffffff;
+            color: #00ffcc;
         }
-        section {
+        .container {
             padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
-        section h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-        section p {
-            margin-bottom: 15px;
-        }
-        .servico {
+        .service {
             background-color: #1e1e1e;
-            padding: 20px;
-            margin-bottom: 30px;
+            border: 1px solid #2a2a2a;
             border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
         }
-        .servico h3 {
-            color: #ffffff;
-            margin-bottom: 10px;
+        .service h2 {
+            margin-top: 0;
+            color: #00ffcc;
+            font-size: 1.8em;
         }
-        .servico .descricao {
-            color: #cccccc;
+        .service p {
+            margin: 10px 0;
         }
-        .servico .destinatario {
-            color: #ffffff;
-        }
-        .servico .incluso {
-            color: #ffffff;
-        }
-        .servico .prazo {
-            color: #ffffff;
-        }
-        .servico .preco {
-            color: #00ff99;
+        .service .price {
+            font-size: 1.2em;
             font-weight: bold;
+            color: #00ffcc;
+        }
+        .service .duration {
+            font-style: italic;
+            color: #cccccc;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -69,42 +63,46 @@
     <header>
         <h1>Serviços do Asura</h1>
     </header>
-    <section>
-        <div class="servico">
-            <h3>Landing Page 2 USDC</h3>
-            <p class="descricao">A landing page é uma página de destino criada para capturar leads e promover um produto ou serviço específico. O modelo "2 USDC" inclui um layout moderno e otimizado para conversão.</p>
-            <p class="destinatario">Ideal para empreendedores, startups e profissionais que desejam criar uma presença digital eficaz.</p>
-            <p class="incluso">Inclui design responsivo, elementos de chamada para ação, formulário de contato e integração com ferramentas de automação de marketing.</p>
-            <p class="prazo">Entrega em até 5 dias úteis após a confirmação do projeto.</p>
-            <p class="preco">Preço: 2 USDC</p>
+    <div class="container">
+        <div class="service">
+            <h2>Landing Page 2 USDC</h2>
+            <p>A landing page é uma página única com o objetivo de converter visitantes em leads ou clientes. Ela é ideal para campanhas de marketing digital, vendas ou divulgação de novos produtos.</p>
+            <p>Para quem serve: Empresas que desejam criar uma landing page para capturar leads, promover um produto ou serviço, ou aumentar conversões de campanhas de marketing.</p>
+            <p>O que está incluso: Design responsivo, chamada para ação clara, formulário de contato, botão de download, SEO básico e integração com ferramentas de CRM.</p>
+            <p>Prazo: 5 dias úteis.</p>
+            <p class="price">Preço: 2 USDC</p>
+            <p class="duration">Duração: 5 dias úteis</p>
         </div>
-        <div class="servico">
-            <h3>Texto de Apresentação 1 USDC</h3>
-            <p class="descricao">Um texto de apresentação é uma forma de comunicar de maneira clara e impactante a essência de um produto, serviço ou marca. Este serviço oferece um texto conciso e persuasivo.</p>
-            <p class="destinatario">Destinado a empreendedores, profissionais liberais e marcas que desejam se destacar em sua área de atuação.</p>
-            <p class="incluso">Inclui redação, revisão de clareza, tom de voz adequado e adaptação para diferentes canais de comunicação.</p>
-            <p class="prazo">Entrega em até 3 dias úteis após a confirmação do projeto.</p>
-            <p class="preco">Preço: 1 USDC</p>
+        <div class="service">
+            <h2>Texto de Apresentação 1 USDC</h2>
+            <p>O texto de apresentação é um conteúdo curto e direto, ideal para apresentar uma empresa, produto, serviço ou ideia de forma clara e impactante.</p>
+            <p>Para quem serve: Empresas que querem criar um texto de apresentação para seu site, redes sociais ou materiais de divulgação.</p>
+            <p>O que está incluso: Redação profissional, tom de voz adequado ao público-alvo, estrutura clara e linguagem persuasiva.</p>
+            <p>Prazo: 2 dias úteis.</p>
+            <p class="price">Preço: 1 USDC</p>
+            <p class="duration">Duração: 2 dias úteis</p>
         </div>
-        <div class="servico">
-            <h3>Revisão de Texto 1 USDC</h3>
-            <p class="descricao">Revisão de texto é o processo de revisão e melhoria de um texto existente para aumentar sua clareza, qualidade e impacto. O serviço inclui correções gramaticais, de estilo e de coerência.</p>
-            <p class="destinatario">Ideal para escritores, profissionais liberais, marcas e equipes que desejam melhorar a qualidade de seus textos.</p>
-            <p class="incluso">Inclui correção de gramática, pontuação, estilo e sugestões de melhoria de conteúdo.</p>
-            <p class="prazo">Entrega em até 2 dias úteis após a confirmação do projeto.</p>
-            <p class="preco">Preço: 1 USDC</p>
+        <div class="service">
+            <h2>Revisão de Texto 1 USDC</h2>
+            <p>A revisão de texto é um serviço de edição e correção de erros gramaticais, ortográficos e de estilo, garantindo que o conteúdo esteja claro, profissional e livre de erros.</p>
+            <p>Para quem serve: Autores, blogueiros, empresas que desejam revisar textos antes de publicar em seus canais.</p>
+            <p>O que está incluso: Revisão gramatical, ortográfica, de estilo e de clareza. Não inclui reescrita ou reestruturação significativa.</p>
+            <p>Prazo: 1 dia útil.</p>
+            <p class="price">Preço: 1 USDC</p>
+            <p class="duration">Duração: 1 dia útil</p>
         </div>
-        <div class="servico">
-            <h3>5 Ideias de Conteúdo 0,5 USDC</h3>
-            <p class="descricao">Este serviço oferece cinco ideias de conteúdo para ajudar você a criar estratégias de marketing digital, blog, redes sociais ou outros canais de comunicação. As ideias são focadas em valor e engajamento.</p>
-            <p class="destinatario">Destinado a empreendedores, blogueiros, marcas e equipes que buscam inspiração e estrutura para criar conteúdo relevante.</p>
-            <p class="incluso">Inclui 5 ideias de conteúdo com sugestões de público-alvo, formato e benefício para o leitor.</p>
-            <p class="prazo">Entrega em até 1 dia útil após a confirmação do projeto.</p>
-            <p class="preco">Preço: 0,5 USDC</p>
+        <div class="service">
+            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
+            <p>Essa oferta oferece 5 ideias de conteúdo criativas e relevantes para diferentes canais de comunicação, como blogs, redes sociais e e-mails.</p>
+            <p>Para quem serve: Criadores de conteúdo, empresas que buscam ideias para novas publicações, ou profissionais que precisam de inspiração para suas estratégias de marketing.</p>
+            <p>O que está incluso: Ideias de conteúdo para diferentes formatos, como posts, vídeos, infográficos, e-mails e artigos. Inclui sugestões de temas e objetivos de engajamento.</p>
+            <p>Prazo: 1 dia útil.</p>
+            <p class="price">Preço: 0,5 USDC</p>
+            <p class="duration">Duração: 1 dia útil</p>
         </div>
-    </section>
+    </div>
     <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
+        © 2025 Asura. Todos os direitos reservados.
     </footer>
 </body>
 </html>
