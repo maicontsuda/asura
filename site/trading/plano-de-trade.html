@@ -2,143 +2,189 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo Personalizado</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #1e1e1e;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #1e1e1e;
-            padding: 20px;
+            background-color: #2a2a2a;
+            padding: 20px 30px;
             text-align: center;
         }
+
         h1 {
-            color: #ffffff;
+            margin: 0;
+            font-size: 24px;
         }
+
         section {
             margin: 20px;
             padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 8px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
         }
+
         h2 {
-            color: #ffffff;
+            color: #00ffcc;
             margin-top: 0;
         }
+
         p {
             line-height: 1.6;
         }
+
         ul {
             padding-left: 20px;
         }
+
         .checklist {
-            background-color: #2a2a2a;
-            border-left: 4px solid #00ffcc;
-            padding: 15px;
-            margin-top: 15px;
+            list-style-type: none;
+            padding: 0;
         }
-        .checklist h3 {
-            color: #00ffcc;
-        }
+
         .checklist li {
-            margin-bottom: 8px;
+            background-color: #3a3a3a;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 8px 0;
         }
+
+        .checklist li::before {
+            content: "✅";
+            color: #00ffcc;
+            margin-right: 10px;
+        }
+
         .aviso {
-            background-color: #2a2a2a;
-            border: 1px solid #555;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 8px;
+            background-color: #151515;
+            padding: 20px;
+            border-top: 2px solid #00ffcc;
+            margin-top: 30px;
+        }
+
+        .aviso p {
             font-style: italic;
+            font-size: 14px;
         }
-        .registro {
-            background-color: #2a2a2a;
-            padding: 15px;
+
+        .template {
+            background-color: #3a3a3a;
+            padding: 20px;
+            border-radius: 10px;
             margin-top: 20px;
-            border-radius: 8px;
         }
-        .registro h3 {
+
+        .template h3 {
             color: #00ffcc;
         }
-        .registro table {
+
+        .template table {
             width: 100%;
             border-collapse: collapse;
         }
-        .registro th, .registro td {
-            border: 1px solid #555;
-            padding: 8px;
+
+        .template th, .template td {
+            border: 1px solid #444;
+            padding: 10px;
             text-align: center;
         }
-        .registro th {
-            background-color: #333;
+
+        .template th {
+            background-color: #2a2a2a;
+        }
+
+        .template tr:nth-child(even) {
+            background-color: #3a3a3a;
+        }
+
+        .template tr:hover {
+            background-color: #444;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo Personalizado</h1>
     </header>
+
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos da sua operação, como o lucro esperado por operação, o número de operações por semana e o tempo estimado de sustentação do capital. Exemplo: "Alcançar 10% de lucro mensal com 5 operações por semana, mantendo um capital mínimo de R$10.000,00".</p>
+        <p>Definir metas claras e mensuráveis para cada operação. Exemplo: Alcance de 5% de lucro por operação, manter uma taxa de acerto de 60%.</p>
     </section>
+
     <section>
         <h2>Mercados</h2>
-        <p>Selecione os mercados que você planeja operar. Exemplo: "Operar apenas no mercado de ações, focando em ativos de alta liquidez e baixa volatilidade, como PETR4 e B3SAO".</p>
+        <p>Selecionar os mercados que serão negociados. Exemplo: Forex (EUR/USD), Ações (B3), Criptomoedas (BTC/USDT).</p>
     </section>
+
     <section>
         <h2>Horários</h2>
-        <p>Defina os horários em que você realizará as operações. Exemplo: "Operar apenas entre 10h e 15h, de segunda a sexta-feira, com pausas para análise e planejamento".</p>
+        <p>Definir horários de abertura e fechamento de operações. Exemplo: Operações entre 08:00 e 15:00 (horário de Brasília), sem operações no período de 15:00 a 17:00.</p>
     </section>
+
     <section>
-        <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída de operações. Exemplo: "Entrar quando o preço romper a média móvel de 50 dias com volume acima da média. Sair com lucro de 3% ou com perda de 1%, sempre com stop-loss a 2% abaixo do preço de entrada".</p>
+        <h2>Regras de Entrada/Saída</h2>
+        <p>Estabelecer condições claras para entrar e sair do mercado. Exemplo: Entrar com confirmação de tendência (candle de alta ou baixa), sair com stop loss de 2% ou take profit de 5%.</p>
     </section>
+
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você está disposto a aceitar diariamente. Exemplo: "Não permitir perdas diárias acima de 1%, com reabertura de posição apenas após análise de risco e retração do mercado".</p>
+        <p>Definir o limite máximo de perdas diárias para proteger o capital. Exemplo: Limite de -2% do capital total por dia, com interrupção imediata caso esteja atingido.</p>
     </section>
-    <section class="checklist">
-        <h3>Checklist Antes de Abrir Operação</h3>
-        <ul>
-            <li>Verificar se o mercado está em tendência clara.</li>
-            <li>Confirmar que todas as regras de entrada estão satisfeitas.</li>
-            <li>Verificar o volume de negociação e sua consistência.</li>
-            <li>Confirmar que o stop-loss está posicionado corretamente.</li>
-            <li>Revisar o plano de trade e não alterar regras no momento da operação.</li>
+
+    <section>
+        <h2>Checklist Antes de Abrir Operação</h2>
+        <ul class="checklist">
+            <li>Verificar se o mercado está em tendência.</li>
+            <li>Confirmar que o nível de risco está dentro do limite estabelecido.</li>
+            <li>Verificar se há fatores fundamentais que possam impactar o mercado.</li>
+            <li>Confirmar que o stop loss e take profit estão alinhados com o plano.</li>
+            <li>Revisar os indicadores técnicos e o gráfico.</li>
         </ul>
     </section>
-    <section class="registro">
-        <h3>Template de Registro de Operação</h3>
+
+    <section class="template">
+        <h3>Template de Registro de Operações</h3>
         <table>
             <thead>
                 <tr>
-                    <th>Data</th>
+                    <th>Data/Hora</th>
                     <th>Ativo</th>
                     <th>Entrada</th>
                     <th>Saída</th>
-                    <th>Lucro/Perda</th>
-                    <th>Observações</th>
+                    <th>Resultado</th>
+                    <th>Comentário</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>01/05/2025</td>
-                    <td>PETR4</td>
-                    <td>R$ 30,50</td>
-                    <td>R$ 31,20</td>
-                    <td>+2,3%</td>
-                    <td>Entrada com confirmação de tendência</td>
+                    <td>2025-04-05 10:30</td>
+                    <td>EUR/USD</td>
+                    <td>1.0850</td>
+                    <td>1.0880</td>
+                    <td>+0.30%</td>
+                    <td>Confirmação de tendência de alta</td>
+                </tr>
+                <tr>
+                    <td>2025-04-05 11:15</td>
+                    <td>USDT/USD</td>
+                    <td>1.0800</td>
+                    <td>1.0770</td>
+                    <td>-0.30%</td>
+                    <td>Stop loss ativo por ruptura de suporte</td>
                 </tr>
             </tbody>
         </table>
     </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Consulte um profissional antes de investir.</p>
-    </section>
+
+    <div class="aviso">
+        <p>Conteúdo educacional, não é recomendação. O uso de estratégias de negociação envolve riscos e não garante lucros.</p>
+    </div>
 </body>
 </html>
