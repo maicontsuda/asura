@@ -1,114 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Serviços do Asura</title>
+    <title>Asura - Serviços</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
             color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #4c4c4c;
+            text-align: center;
+            margin-bottom: 20px;
         }
         .service {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .service h2 {
-            color: #ffffff;
-            margin-top: 0;
+            color: #e5e5e5;
+            margin-bottom: 10px;
         }
         .service p {
-            margin: 10px 0;
+            color: #bfbfbf;
+            line-height: 1.6;
+        }
+        .service ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .service ul li {
+            color: #bfbfbf;
+            margin-bottom: 5px;
         }
         .service .price {
-            color: #00ffcc;
+            color: #4c4c4c;
             font-weight: bold;
             margin-top: 10px;
         }
-        .service .info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 15px;
-            font-size: 0.9em;
+        .service .details {
+            color: #bfbfbf;
         }
-        .service .info span {
-            color: #888;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #555;
+        .service .prazo {
+            color: #e5e5e5;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Serviços do Asura</h1>
-    </header>
     <div class="container">
+        <h1>Serviços do Asura</h1>
         <div class="service">
             <h2>Landing Page 2 USDC</h2>
-            <p>A landing page é uma página dedicada a promover um produto, serviço ou campanha específica. Ela é criada para captar leads, converter visitantes em clientes e direcionar o público-alvo para uma ação clara, como a compra, inscrição ou contato. A landing page 2 USDC é ideal para empresas que desejam construir uma presença digital rápida e eficaz, com foco em conversão.</p>
-            <p>Para quem serve: Empresas que precisam de uma página de destino para campanhas específicas, como lançamentos, parcerias ou eventos.</p>
-            <p>O que está incluso: Design responsivo, formulário de contato, botão de ação, SEO básico, integração com ferramentas de analytics.</p>
-            <div class="info">
-                <span>Tempo estimado: 5 dias úteis</span>
-                <span class="price">2 USDC</span>
+            <p>Desenvolvemos uma landing page eficaz para apresentar seu produto ou serviço. Inclui design moderno, formulário de inscrição, botão de chamada à ação e otimização para SEO.</p>
+            <ul>
+                <li>Design responsivo e adaptado para diferentes dispositivos</li>
+                <li>Formulário de inscrição personalizado</li>
+                <li>Botão de chamada à ação destacado</li>
+                <li>Otimização para SEO</li>
+                <li>Integração com Google Analytics (se necessário)</li>
+            </ul>
+            <div class="details">
+                <span class="prazo">Prazo: 10 dias úteis</span>
+                <span class="price">Preço: 2 USDC</span>
             </div>
         </div>
         <div class="service">
             <h2>Texto de Apresentação 1 USDC</h2>
-            <p>Um texto de apresentação é um conteúdo curto e objetivo que apresenta a marca, o produto ou o serviço de forma clara e persuasiva. Ele é ideal para ser usado em materiais de comunicação, como portfólio, site, redes sociais ou apresentações.</p>
-            <p>Para quem serve: Profissionais, startups, empresas que precisam de um texto conciso e impactante para divulgar sua proposta.</p>
-            <p>O que está incluso: Redação clara, tom de voz adequado, estrutura lógica, revisão de conteúdo e ajuste de linguagem.</p>
-            <div class="info">
-                <span>Tempo estimado: 3 dias úteis</span>
-                <span class="price">1 USDC</span>
+            <p>Criamos um texto de apresentação impactante para seu produto ou serviço. Este texto será usado em sua landing page, site ou qualquer outro material de marketing.</p>
+            <ul>
+                <li>Texto de até 500 palavras</li>
+                <li>Estilo e tom personalizados de acordo com a sua marca</li>
+                <li>Revisão e edição gramatical</li>
+                <li>Formato e estrutura aprovado</li>
+                <li>Entrega do texto final e sugestões de melhoria (se necessário)</li>
+            </ul>
+            <div class="details">
+                <span class="prazo">Prazo: 5 dias úteis</span>
+                <span class="price">Preço: 1 USDC</span>
             </div>
         </div>
         <div class="service">
-            < <h2>Revisão de Texto 1 USDC</h2>
-            <p>A revisão de texto é um serviço de edição e correção de conteúdo já escrito. O objetivo é garantir que o texto esteja gramaticalmente correto, claro e com coerência, sem alterar o tom ou a mensagem original.</p>
-            <p>Para quem serve: Escritores, profissionais de marketing, empresas que precisam de um texto revisado antes de publicar.</p>
-            <p>O que está incluso: Revisão gramatical, ortográfica, de estilo e coerência, sugestões de melhoria e formatação adequada.</p>
-            <div class="info">
-                <span>Tempo estimado: 2 dias úteis</span>
-                <span class="price">1 USDC</span>
+            <h2>Revisão de Texto 1 USDC</h2>
+            <p>Realizamos a revisão e edição de um texto existente para garantir a coesão, clareza e perfeição gramatical. Ideal para artigos, posts de blog, e-mails promocionais, etc.</p>
+            <ul>
+                <li>Revisão completa do texto</li>
+                <li>Correção gramatical e ortográfica</li>
+                <li>Revisão de estilo e tom</li>
+                <li>Formato e estrutura aprovado</li>
+                <li>Entrega do texto revisado e sugestões de melhoria (se necessário)</li>
+            </ul>
+            <div class="details">
+                <span class="prazo">Prazo: 3 dias úteis</span>
+                <span class="price">Preço: 1 USDC</span>
             </div>
         </div>
         <div class="service">
             <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>5 ideias de conteúdo são sugestões criativas de temas e formatos para publicações em redes sociais, blogs, e-mail marketing ou outros canais digitais. O objetivo é gerar conteúdo relevante, engajador e que gere tráfego e conversões.</p>
-            <p>Para quem serve: Empresas que buscam aumentar a presença digital, blogs que precisam de novos temas, influenciadores que querem diversificar seu conteúdo.</p>
-            <p>O que está incluso: 5 ideias de conteúdo, formatos variados, sugestões de plataformas e estratégias de divulgação.</p>
-            <div class="info">
-                <span>Tempo estimado: 1 dia útil</span>
-                <span class="price">0,5 USDC</span>
+            <p>Geramos 5 ideias criativas para conteúdo que pode ser usado em sua landing page, site ou mídias sociais. Ideal para promover seu produto ou serviço de forma inovadora.</p>
+            <ul>
+                <li>5 ideias criativas e únicas</li>
+                <li>Descrição detalhada de cada ideia</li>
+                <li>Sugestões de implementação</li>
+                <li>Acompanhamento e aprimoramento das ideias (se necessário)</li>
+            </ul>
+            <div class="details">
+                <span class="prazo">Prazo: 2 dias úteis</span>
+                <span class="price">Preço: 0,5 USDC</span>
             </div>
         </div>
     </div>
-    <footer>
-        © 2025 Asura. Todos os direitos reservados.
-    </footer>
 </body>
 </html>
