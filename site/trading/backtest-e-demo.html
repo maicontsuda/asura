@@ -2,13 +2,13 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Teste de Estratégias: Backtest, Forward Test e Conta Demo</title>
+    <title>Teste de Estratégias de Trading: Backtest, Forward Test e Conta Demo</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
+            color: #ffffff;
             line-height: 1.6;
         }
         header {
@@ -16,98 +16,88 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            color: #ffffff;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 900px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         h2 {
-            color: #ffffff;
-            margin-top: 30px;
+            color: #00ffcc;
+            margin-top: 40px;
         }
         p {
-            font-size: 16px;
+            font-size: 1.1em;
         }
         ul {
-            margin-left: 20px;
+            margin-top: 15px;
+            padding-left: 20px;
         }
         .metricas {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 4px solid #00ffcc;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
         }
         .metricas h3 {
-            color: #00ffcc;
-        }
-        .diario {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 4px solid #ffcc00;
-        }
-        .diario h3 {
-            color: #ffcc00;
+            margin-top: 0;
         }
         .aviso {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 4px solid #ff4444;
-            margin-top: 30px;
-        }
-        .aviso h3 {
-            color: #ff4444;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            font-style: italic;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1e1e1e;
-            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Teste de Estratégias: Backtest, Forward Test e Conta Demo</h1>
+        <h1>Teste de Estratégias de Trading: Backtest, Forward Test e Conta Demo</h1>
     </header>
     <section>
-        <h2>O que é um Backtest?</h2>
-        <p>O backtest é o processo de testar uma estratégia de trading usando dados históricos. Ele permite avaliar como uma estratégia teria se comportado no passado, antes de ser aplicada ao mercado real. É uma ferramenta essencial para identificar padrões, métricas e possíveis falhas em uma estratégia.</p>
-    </section>
-    <section>
-        <h2>O que é um Forward Test?</h2>
-        <p>O forward test é uma extensão do backtest, mas com dados mais recentes e em tempo real. Ele simula a aplicação de uma estratégia em condições reais, mas ainda sem arriscar dinheiro real. O objetivo é validar a consistência da estratégia em cenários que não foram considerados no backtest.</p>
-    </section>
-    <section>
-        <h2>Conta Demo: Teste sem Riscos</h2>
-        <p>A conta demo é uma conta virtual que simula o mercado com dinheiro fictício. É ideal para praticar operações, testar novas estratégias e familiarizar-se com o ambiente de trading sem expor capital real. É um passo fundamental antes de passar para o mercado real.</p>
+        <h2>O que é Backtest?</h2>
+        <p>O backtest é o processo de testar uma estratégia de trading com dados históricos para verificar se ela seria lucrativa no passado. Essa etapa é fundamental para identificar padrões, otimizar parâmetros e entender o desempenho potencial da estratégia.</p>
+        <p>É importante lembrar que o backtest não garante resultados futuros, pois o mercado é imprevisível. Ele é apenas uma ferramenta de análise.</p>
+
+        <h2>O que é Forward Test?</h2>
+        <p>O forward test é a aplicação da estratégia em um período de tempo recente, geralmente sem interrupção de dados. Ele simula como a estratégia funcionaria no mundo real, mas com menos riscos do que na conta real.</p>
+        <p>Esse teste é mais confiável do que o backtest, pois utiliza dados mais atualizados e testa a estratégia em condições de mercado reais.</p>
+
+        <h2>Conta Demo: Como Testar sem Arriscar Dinheiro</h2>
+        <p>A conta demo é uma ferramenta oferecida por corretoras que permite ao trader praticar operações com dinheiro virtual. É ideal para testar estratégias, aprender a usar ferramentas de análise e desenvolver hábitos de trading sem expor patrimônio.</p>
+        <p>Com uma conta demo, é possível simular operações, medir métricas e treinar decisões em ambientes controlados.</p>
+
         <div class="metricas">
-            <h3>Métricas Importantes</h3>
+            <h3>Métricas para Avaliação</h3>
             <ul>
-                <li><strong>Taxa de Acerto:</strong> Porcentagem de operações que resultaram em lucro.</li>
-                <li><strong>Payoff:</strong> Relação entre lucro e perda, indicando a eficiência da estratégia.</li>
-                <li><strong>Drawdown:</strong> Perda máxima acumulada durante um período, que mostra a volatilidade da estratégia.</li>
+                <li><strong>Taxa de Acerto:</strong> Porcentagem de operações com resultado positivo.</li>
+                <li><strong>Payoff:</strong> Relação entre ganhos e perdas de uma estratégia.</li>
+                <li><strong>Drawdown:</strong> Perda máxima acumulada de um portfólio durante um período.</li>
             </ul>
         </div>
-    </section>
-    <section>
+
         <h2>Diário de Operações</h2>
-        <div class="diario">
-            <h3>Registre cada operação</h3>
-            <p>Manter um diário de operações é essencial para acompanhar o desempenho da estratégia e identificar padrões. Registre detalhes como data, ativo, entrada, saída, motivo da operação e resultado.</p>
-        </div>
-    </section>
-    <section>
-        <h2>Passando da Conta Demo para o Real</h2>
-        <p>Para passar da conta demo para o mercado real, é necessário atingir critérios estabelecidos, como taxa de acerto mínima, payoff positivo e drawdown controlado. Além disso, é importante ter experiência prática e confiança na estratégia.</p>
+        <p>Manter um diário de operações é essencial para acompanhar o desempenho da estratégia. Ele deve incluir: data e hora da operação, símbolo, entrada e saída, motivo da operação, resultado e análise.</p>
+
+        <h2>Critérios para Passar da Demo para o Real</h2>
+        <p>Para migrar para a conta real, é necessário atingir metas estabelecidas, como taxa de acerto mínima, drawdown aceitável e consistência de resultados. Além disso, o trader deve ter clareza sobre sua estratégia e confiança para operar com capital real.</p>
+
         <div class="aviso">
-            <h3>Aviso Importante</h3>
-            <p>Embora a conta demo seja uma ferramenta valiosa, ela não garante resultados reais. O mercado é imprevisível e fatores como liquidez, spreads e custos podem alterar significativamente o desempenho da estratégia em condições reais.</p>
+            <p>A conta demo não garante resultados reais. O mercado é volátil e as condições de demo podem não refletir as realidades do mercado financeiro.</p>
         </div>
     </section>
     <footer>
-        <p>© 2025 - Direitos Reservados. Este conteúdo é educacional e não é uma recomendação de investimento.</p>
+        &copy; 2025 - Guia de Teste de Estratégias de Trading
     </footer>
 </body>
 </html>
