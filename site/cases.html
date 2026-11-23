@@ -5,76 +5,90 @@
     <title>Estudos de Caso - Asura</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
+            color: #e0e0e0;
+            padding: 20px;
         }
-        header {
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .case {
             background-color: #1e1e1e;
-            padding: 20px 0;
-            text-align: center;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        .ficticio {
-            font-style: italic;
+
+        .case h2 {
+            color: #ff9800;
             margin-bottom: 10px;
         }
-        .estudo {
-            background-color: #1e1e1e;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            border-left: 5px solid #4caf50;
-        }
-        .estudo h2 {
-            margin-top: 0;
-            color: #4caf50;
-        }
-        .estudo p {
+
+        .case p {
             line-height: 1.6;
         }
+
+        .case .cliente {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .case .pedido {
+            color: #ffeb3b;
+        }
+
+        .case .entregue {
+            color: #81d4fa;
+        }
+
+        .case .resultado {
+            color: #64b5f6;
+        }
+
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #121212;
+            margin-top: 40px;
+            font-size: 0.9em;
             color: #888;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Estudos de Caso - Asura</h1>
-        <p class="ficticio">Todos os estudos de caso são fictícios e criados para ilustrar o funcionamento da plataforma.</p>
-    </header>
+    <h1>Estudos de Caso - Asura</h1>
 
-    <div class="estudo">
-        <h2>Loja de Plantas - "Verde e Fresco"</h2>
-        <p>Cliente: Loja de plantas especializada em ambientes internos e jardins. Pediu um site para destacar as plantas, mostrar como cuidar delas e facilitar a compra online.</p>
-        <p>Entregue: Um site com galeria de plantas, tutoriais de manutenção, informações sobre cuidados e um sistema de compra integrado. A interface foi desenvolvida com foco em usabilidade e design moderno.</p>
-        <p>Resultado esperado: Aumento de 50% nas vendas online no primeiro trimestre, maior engajamento com os clientes e melhor experiência de navegação.</p>
+    <div class="case">
+        <h2>Loja de Plantas - Renovação de Loja</h2>
+        <p><span class="cliente">Cliente:</span> Loja Verde, Curitiba</p>
+        <p><span class="pedido">Pedido:</span> Rebranding da loja física com design moderno e sustentável, incluindo layout, identidade visual e elementos de decoração.</p>
+        <p><span class="entregue">Entregue:</span> Novo layout com tons de verde e terra, painéis de madeira, iluminação natural e exposição de produtos em estantes temáticas. Identidade visual com logotipo e cores alinhadas à sustentabilidade.</p>
+        <p><span class="resultado">Resultado Esperado:</span> Aumento de 40% nas vendas em 3 meses, maior engajamento com clientes e reconhecimento da marca como referência em plantas sustentáveis.</p>
     </div>
 
-    <div class="estudo">
-        <h2>Doceria Artesanal - "Doce Aventura"</h2>
-        <p>Cliente: Doceria que produz doces artesanais e oferece delivery em bairros da cidade. Pediu um site para divulgar os produtos, mostrar a história da marca e facilitar os pedidos.</p>
-        <p>Entregue: Página com apresentação da marca, menu com descrição dos produtos, fotos de ingredientes e um sistema de pedido online. O site foi otimizado para mobile e incluiu uma seção de depoimentos.</p>
-        <p>Resultado esperado: Aumento de 40% nas vendas online, maior visibilidade da marca e melhoria da experiência do cliente em 70% dos usuários.</p>
+    <div class="case">
+        <h2>Doceria Artesanal - Reformulação de Site</h2>
+        <p><span class="cliente">Cliente:</span> Doces de Maria, São Paulo</p>
+        <p><span class="pedido">Pedido:</span> Desenvolvimento de site com experiência de usuário intuitiva, galeria de produtos, sistema de pedidos online e integração com redes sociais.</p>
+        <p><span class="entregue">Entregue:</span> Site responsivo com navegação simplificada, galeria interativa, sistema de checkout seguro e compartilhamento de receitas em redes sociais.</p>
+        <p><<span class="resultado">Resultado Esperado:</span> Crescimento de 60% nas vendas online em 6 meses, maior visibilidade da marca e aumento de 30% nas interações nas redes sociais.</p>
     </div>
 
-    <div class="estudo">
-        < <h2>Estúdio de Tatuagem - "Pele e Caneta"</h2>
-        <p>Cliente: Estúdio de tatuagem com foco em designs personalizados e técnicas modernas. Pediu um site para mostrar portfólio, agendar consultas e expor o processo de criação de designs.</p>
-        <p>Entregue: Site com galeria de tatuagens, seção de portfólio com filtros por estilo, agendamento online e um blog com dicas sobre tatuagem e cuidados pós-procedimento. O design foi moderno e com tons suaves para transmitir confiança.</p>
-        <p>Resultado esperado: Aumento de 30% nas agendamentos online, maior reconhecimento da marca e aumento de 25% nas consultas agendadas por meio do site.</p>
+    <div class="case">
+        <h2>Estúdio de Tatuagem - Branding e Marketing</h2>
+        <p><span class="cliente">Cliente:</span> Tatuagem da Alma, Rio de Janeiro</p>
+        <p><span class="pedido">Pedido:</span> Criação de identidade visual, redes sociais e campanhas de marketing para atrair novos clientes e consolidar a marca no mercado.</p>
+        <p><span class="entregue">Entregue:</span> Branding com logotipo, cores e tipografia alinhados ao estilo artístico do estúdio, gestão de redes sociais com conteúdo criativo e campanhas de divulgação em parcerias locais.</p>
+        <p><span class="resultado">Resultado Esperado:</span> Aumento de 50% no número de clientes em 5 meses, maior reconhecimento da marca e parcerias com influenciadores locais.</p>
     </div>
 
     <footer>
-        <p>© 2025 Asura - Todos os direitos reservados</p>
+        © 2025 Asura - Todos os direitos reservados. Exemplos de estudos de caso.
     </footer>
 </body>
 </html>
