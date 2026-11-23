@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo para Operações de Investimento</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,87 +32,130 @@
         p {
             line-height: 1.6;
         }
-        .checklist, .registro {
+        .checklist {
             background-color: #2a2a2a;
             padding: 15px;
             border-radius: 6px;
             margin-top: 10px;
         }
-        .checklist h3, .registro h3 {
-            color: #ffffff;
-        }
-        .checklist ul, .registro ul {
+        .checklist ul {
             list-style-type: none;
             padding: 0;
         }
-        .checklist li, .registro li {
-            margin: 8px 0;
+        .checklist li {
+            margin: 5px 0;
         }
-        .checklist li::before, .registro li::before {
-            content: "✓";
-            color: #00ff99;
+        .checklist li::before {
+            content: "✅";
             margin-right: 8px;
+            color: #4caf50;
+        }
+        .template {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .template table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .template th, .template td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .template th {
+            background-color: #2a2a2a;
         }
         .aviso {
             background-color: #1e1e1e;
             padding: 15px;
             border-radius: 6px;
             margin-top: 20px;
-        }
-        .aviso p {
             font-style: italic;
-            color: #cccccc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo para Operações de Investimento</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: <strong>Objetivo de curto prazo</strong>: Alcance de 2% de lucro por operação em 5 dias. <strong>Objetivo de médio prazo</strong>: Realizar 3 operações bem-sucedidas por semana. <strong>Objetivo de longo prazo</strong>: Crescimento de 10% no capital em 12 meses.</p>
+        <p>Defina claramente o objetivo do plano de trade. Exemplo: Gerar rendimento mensal de 10% com risco controlado, operar em ações de alta liquidez e evitar operações de alto risco.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Escolha os mercados que você deseja operar. Exemplo: <strong>Forex</strong>: EUR/USD, GBP/USD. <strong>Áreas de atuação</strong>: Dívida e crescimento. <strong>Características</strong>: Volatilidade moderada, tendências claras.</p>
+        <p>Identifique os mercados que você pretende operar. Exemplo: Mercado acionário brasileiro (B3), mercado forex (USD/BRL), ou criptomoedas (BTC/USDT).</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Defina os horários em que você será ativo. Exemplo: <strong>Horários de operação</strong>: 08:00 às 14:00 (horário de Brasília). <strong>Período de análise</strong>: 18:00 às 08:00. <strong>Horários de pausa</strong>: 14:00 às 18:00 e 22:00 às 08:00.</p>
+        <p>Determine os horários de operação. Exemplo: Operar de segunda a sexta-feira, entre 09h00 e 17h00, com pausas para análise e tomada de decisão.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída. Exemplo: <strong>Entrada</strong>: Sinal de alta com confirmação de candle. <strong>Saída</strong>: Alcance de 2% de lucro ou 3% de perda. <strong>Stop Loss</strong>: 2% do capital da operação.</p>
+        <p>Defina regras claras para entrar e sair de operações. Exemplo: Entrar em operações com confirmação de tendência, sair com lucro de 5% ou perda de 2%.</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas diárias. Exemplo: <strong>Limite de perdas</strong>: 1% do capital total. <strong>Regra de recuperação</strong>: Não operar no dia seguinte a uma perda superior a 1%.</p>
+        <p>Estabeleça um limite máximo de perdas diárias. Exemplo: Não investir mais do que 2% do capital total em uma única operação.</p>
     </section>
-    <section class="checklist">
-        <h3>Checklist Antes de Abrir Operação</h3>
-        <ul>
-            <li>Verificar se o mercado está em tendência clara.</li>
-            <li>Confirmar o sinal com indicadores técnicos.</li>
-            <li>Verificar se o capital disponível permite a operação.</li>
-            <li>Avaliar se as regras de entrada e saída foram respeitadas.</li>
-            <li>Confirmar que não há conflito com outras operações.</li>
-        </ul>
+    <section>
+        <h2>Checklist Antes de Abrir Operação</h2>
+        <div class="checklist">
+            <ul>
+                <li>Verifique se o mercado está em tendência clara.</li>
+                <li>Confirme os níveis de suporte/resistência.</li>
+                <li>Analise os indicadores técnicos relevantes.</li>
+                <li>Verifique se há notícias relevantes para o ativo.</li>
+                <li>Confirme o limite de perda e lucro.</li>
+                <li>Verifique o capital disponível e o risco assumido.</li>
+            </ul>
+        </div>
     </section>
-    <section class="registro">
-        <h3>Template de Registro</h3>
-        <ul>
-            <li>Data e Hora da Operação.</li>
-            <li>Par ou Ativo.</li>
-            <li>Tipo de Operação (Compra/Venda).</li>
-            <li>Preço de Entrada.</li>
-            <li>Preço de Saída.</li>
-            <li>Lucro/Perda.</li>
-            <li>Observações.</li>
-        </ul>
+    <section>
+        <h2>Template de Registro</h2>
+        <div class="template">
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Lucro/Perda</th>
+                    <th>Observações</th>
+                </tr>
+                <tr>
+                    <td>01/04/2025</td>
+                    <td>Ações - PETR4</td>
+                    <td>R$ 35,00</td>
+                    <td>R$ 36,50</td>
+                    <td>+4,29%</td>
+                    <td>Confirmação de tendência alcista.</td>
+                </tr>
+                <tr>
+                    <td>02/04/2025</td>
+                    <td>Forex - USD/BRL</td>
+                    <td>5,20</td>
+                    <td>5,15</td>
+                    <td>-0,96%</td>
+                    <td>Reversão técnica após notícia.</td>
+                </tr>
+            </table>
+        </div>
     </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. A operação em mercados financeiros envolve riscos.</p>
-    </section>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações de mercado envolvem risco de perda de capital. É essencial que você consulte um profissional qualificado antes de investir.</p>
+    </div>
+    <footer>
+        © 2025 - Plano de Trade - Modelo para Operações de Investimento
+    </footer>
 </body>
 </html>
