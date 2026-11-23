@@ -16,36 +16,32 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
         main {
             padding: 20px;
         }
-        .termo {
-            margin-bottom: 30px;
+        section {
+            margin-bottom: 40px;
         }
-        .termo h2 {
-            margin-top: 0;
-            font-size: 1.5em;
+        h2 {
             color: #ffcc00;
+            margin-top: 30px;
         }
-        .termo p {
-            font-size: 1em;
+        p {
             line-height: 1.6;
         }
-        .termo .exemplo {
-            margin-top: 10px;
-            font-style: italic;
-            color: #ccc;
+        ul {
+            padding-left: 20px;
         }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: #999;
+        li {
+            margin-bottom: 10px;
+        }
+        .termo {
+            font-weight: bold;
+            color: #ff9800;
         }
     </style>
 </head>
@@ -54,99 +50,82 @@
         <h1>Glossário de Termos de Mercado</h1>
     </header>
     <main>
-        <div class="termo">
+        <section>
             <h2>Pip</h2>
-            <p>Unidade de medida de variação de preços em mercados financeiros. Representa 0,0001 em moedas como USD/JPY e 0,001 em pares como EUR/USD.</p>
-            <p class="exemplo">Se o USD/JPY sobe de 110,50 para 110,55, houve um ganho de 5 pips.</p>
-        </div>
-        <div class:
+            <p>O <span class="termo">pip</span> é a unidade de medida mais pequena de movimento de um par de moedas. Por exemplo, se o EUR/USD passa de 1.1200 para 1.1201, houve um movimento de 1 pip.</p>
+        </section>
+        <section>
             <h2>Spread</h2>
-            <p>Diferença entre o preço de compra e venda de um ativo. Representa o custo de entrada em uma posição.</p>
-            <p class="exemplo">O spread do EUR/USD pode ser de 1,5 pips, ou seja, o comprador paga 1,5 pips a mais que o vendedor.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">spread</span> é a diferença entre o preço de compra e venda de um ativo. Exemplo: se o spread do EUR/USD for 1.5 pips, o mercado compra a 1.1200 e vende a 1.1201.5.</p>
+        </section>
+        <section>
             <h2>Lote</h2>
-            <p>Unidade de negociação padrão em mercados financeiros, geralmente representando 100.000 unidades da moeda base.</p>
-            <p class="exemplo">Comprar 1 lote de EUR/USD significa adquirir 100.000 euros.</p>
-        </div>
-        <div class="termo">
+            <p>Um <span class="termo">lote</span> é a unidade padrão de negociação. Geralmente representa 100.000 unidades da moeda base. Um lote menor é chamado de mini-lote (10.000) ou micro-lote (1.000).</p>
+        </section>
+        <section>
             <h2>Alavancagem</h2>
-            <p>Facilita a entrada em posições com capital menor, ampliando os ganhos e os riscos.</p>
-            <p class="exemplo">Com alavancagem de 1:100, um investidor com R$ 1.000 pode controlar R$ 100.000 em ativos.</p>
-        </div>
-        <div class="termo">
+            <p>A <span class="termo">alavancagem</span> é o aumento do risco e do potencial de ganho ao usar capital alheio. Por exemplo, com alavancagem de 1:100, um investidor pode controlar um lote com apenas 1.000 USD.</p>
+        </section>
+        <section>
             <h2>Margem</h2>
-            <p>Quantia de dinheiro que o investidor mantém em sua conta para cobrir possíveis perdas.</p>
-            <p class="exemplo">A margem livre é o valor disponível para negociação, enquanto a margem usada é o que está em aberto.</p>
-        </div>
-        <div class="termo">
+            <p>A <span class="termo">margem</span> é o dinheiro depositado no conta para garantir operações. É o capital que o trader pode usar para abrir posições com alavancagem.</p>
+        </section>
+        <section>
             <h2>Stop</h2>
-            <p>Ordem que limita perdas ao fechar uma posição quando o preço atinge um nível específico.</p>
-            <p class="exemplo">Um stop de 50 pips abaixo do preço de entrada protege contra quedas bruscas.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">stop</span> é uma ordem que limita as perdas. Por exemplo, se um trader compra o EUR/USD a 1.1200 e coloca um stop em 1.1150, a posição será fechada automaticamente se o preço cair para esse nível.</p>
+        </section>
+        <section>
             <h2>Take Profit</h2>
-            <p>Ordem que limita ganhos ao fechar uma posição quando o preço atinge um nível desejado.</p>
-            <p class="exemplo">Um take profit de 100 pips acima do preço de entrada garante lucro em movimentos positivos.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">take profit</span> é a ordem que define o nível de lucro. Se o EUR/USD sobe para 1.1300, uma posição comprada com take profit em 1.1300 será automaticamente encerrada.</p>
+        </section>
+        <section>
             <h2>Long</h2>
-            <p>Posição comprada com a expectativa de que o preço subirá.</p>
-            <p class="exemplo">Comprar EUR/USD em um long é apostar que o euro subirá em relação ao dólar.</p>
-        </div>
-        <div class="termo">
+            <p><span class="termo">Long</span> significa comprar um ativo com a expectativa de que o preço subirá. Exemplo: comprar o BTC/USD com a expectativa de que o preço aumentará.</p>
+        </section>
+        <section>
             <h2>Short</h2>
-            <p>Posição vendida com a expectativa de que o preço cairá.</p>
-            <p class="exemplo">Vender GBP/USD em um short é apostar que o libra esterlina cairá em relação ao dólar.</p>
-        </div>
-        <div class="termo">
+            <p><span class="termo">Short</span> significa vender um ativo com a expectativa de que o preço cairá. Exemplo: vender o BTC/USD com a expectativa de que o preço diminuirá.</p>
+        </section>
+        <section>
             <h2>Gap</h2>
-            <p>Variação brusca de preços entre sessões, geralmente causada por notícias ou eventos relevantes.</p>
-            <p class="exemplo">Um gap de 100 pips pode ocorrer após um anúncio inesperado de uma economia.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">gap</span> é uma lacuna no gráfico de preços, geralmente causada por notícias importantes. Por exemplo, se o EUR/USD abre em 1.1205 depois de fechar em 1.1195, há um gap de 10 pips.</p>
+        </section>
+        <section>
             <h2>Volume</h2>
-            <p>Número de contratos negociados em um período, indicando liquidez e interesse do mercado.</p>
-            <p class="exemplo">Um volume elevado pode sinalizar uma tendência forte e duradoura.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">volume</span> é a quantidade de negociações em um determinado período. Um volume alto pode indicar maior interesse no ativo.</p>
+        </section>
+        <section>
             <h2>RSI</h2>
-            <p>Índice de Força Relativa que mede a velocidade e o volume de mudanças de preços.</p>
-            <p class="exemplo">RSI acima de 70 indica sobrecompra, enquanto abaixo de 30 indica sobreaviso.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">RSI</span> (Relative Strength Index) é um indicador que mede a força relativa de um ativo. Valores acima de 70 indicam sobrecompra, enquanto abaixo de 30 indicam sobre venda.</p>
+        </section>
+        <section>
             <h2>MACD</h2>
-            <p>Indicador que compara a média móvel exponencial de curto e longo prazo para identificar tendências.</p>
-            <p class="exemplo">Quando o MACD cruza a linha zero, pode sinalizar uma mudança de tendência.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">MACD</span> (Moving Average Convergence Divergence) é um indicador que mostra a relação entre médias móveis. Ele ajuda a identificar tendências e possíveis reversões.</p>
+        </section>
+        <section>
             <h2>Suporte</h2>
-            <p>Nível de preço onde o mercado tende a encontrar demanda e parar uma queda.</p>
-            <p class="exemplo">Um suporte rompido pode indicar uma nova tendência de alta.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">suporte</span> é o nível de preço onde o ativo tende a encontrar resistência para cair. É um nível de compra popular.</p>
+        </section>
+        <section>
             <h2>Resistência</h2>
-            <p>Nível de preço onde o mercado tende a encontrar oferta e parar uma subida.</p>
-            <p class="exemplo">Uma resistência quebrada pode sinalizar uma nova tendência de baixa.</p>
-        </div>
-        <div class="termo">
+            <p>A <span class="termo">resistência</span> é o nível de preço onde o ativo tende a encontrar resistência para subir. É um nível de venda popular.</p>
+        </section>
+        <section>
             <h2>Drawdown</h2>
-            <p>Perda percentual em relação ao valor máximo atingido em uma estratégia de investimento.</p>
-            <p class="exemplo">Um drawdown de 20% pode indicar um período de baixa performance.</p>
-        </div>
-        <div class="termo">
+            <p>O <span class="termo">drawdown</span> é a perda máxima de capital desde o último ponto de máxima. É uma métrica importante para avaliar risco.</p>
+        </section>
+        <section>
             <h2>Equity</h2>
-            <p>Valor total da conta, incluindo lucros e perdas acumulados.</p>
-            <p class="exemplo">A equity pode ser calculada como o saldo da conta mais os lucros.</p>
-        </div>
-        <div class="termo">
+            <p>A <span class="termo">equity</span> é o valor total do capital no conta, incluindo lucros e perdas. É o capital disponível para operar.</p>
+        </section>
+        <section>
+            <h2>Margem Livre</h2>
+            <p>A <span class="termo">margem livre</span> é o dinheiro disponível para operar após a reserva para cobrir posições abertas. É calculada como capital menos margem usada.</p>
+        </section>
+        <section>
             <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas se o preço atingir um nível específico.</p>
-            <p class="exemplo">Uma ordem limitada de compra em 1,1000 só será executada se o preço atingir esse valor.</p>
-        </div>
+            <p>Uma <span class="termo">ordem limitada</span> é uma ordem para comprar ou vender a um preço específico. Por exemplo, comprar o EUR/USD a 1.1200 se o preço atingir esse nível.</p>
+        </section>
     </main>
-    <footer>
-        &copy; 2025 Glossário de Termos de Mercado
-    </footer>
 </body>
 </html>
