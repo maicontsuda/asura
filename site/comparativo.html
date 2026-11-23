@@ -14,7 +14,7 @@
 
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
 
@@ -24,51 +24,44 @@
         }
 
         section {
-            padding: 30px 20px;
+            padding: 30px;
+            margin: 20px auto;
             max-width: 1000px;
-            margin: auto;
+            background-color: #1a1a1a;
+            border-radius: 10px;
         }
 
         h2 {
-            margin-top: 40px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 15px;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .option {
-            flex: 1 1 300px;
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
-
-        .option h3 {
+            color: #ffffff;
             margin-top: 0;
-            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #444;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2a2a2a;
+        }
+
+        .descricao {
+            margin-top: 20px;
+            font-size: 0.95em;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
+            color: #888;
             margin-top: 40px;
         }
     </style>
@@ -79,104 +72,106 @@
     </header>
     <section>
         <h2>Preço Relativo</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Preço fixo por projeto, com custo de manutenção e suporte incluídos.</li>
-                    <li>Valor geralmente mais alto, mas com escala e eficiência.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Preço por hora ou por tarefa, com custo variável conforme demanda.</li>
-                    <li>Menor custo inicial, mas pode variar conforme expertise e carga horária.</li>
-                </ul>
-            </div>
-            <div class="option">
-                < <h3>Agência</h3>
-                <ul>
-                    <li>Preço variável, com custos fixos de operação e equipe.</li>
-                    <li>Costuma ser mais caro, mas oferece escala e suporte integral.</li>
-                </ul>
-            </div>
+        <table>
+            <tr>
+                <th>Opção</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Asura</td>
+                <td>Preço fixo por projeto, com custos de manutenção e suporte</td>
+            </tr>
+            <tr>
+                <td>Freelancer</td>
+                <td>Valor hora ou por tarefa, com custos variáveis</td>
+            </tr>
+            <tr>
+                <td>Agência</td>
+                <td>Preço por projeto, com custos elevados de estrutura e equipe</td>
+            </tr>
+        </table>
+        <div class="descricao">
+            O Asura oferece preços mais previsíveis e escaláveis, enquanto freelancers podem ser mais acessíveis, mas com riscos de inconsistência. Agências são mais caras, mas oferecem mais recursos e suporte.
         </div>
+    </section>
+    <section>
         <h2>Prazo</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Prazo definido com antecedência, com planejamento e prioridades claras.</li>
-                    <li>Evita imprevistos com metas e cronogramas estabelecidos.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Prazo mais flexível, mas depende da disponibilidade e carga do profissional.</li>
-                    <li>Pode apresentar atrasos se houver demanda excessiva ou mudanças no projeto.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Agência</h3>
-                <ul>
-                    <li>Prazo geralmente mais longo devido à complexidade da gestão e escala da equipe.</li>
-                    <li>Pode gerar atrasos se houver sobrecarga ou falta de alinhamento.</li>
-                </ul>
-            </div>
+        <table>
+            <tr>
+                <th>Opção</th>
+                <th>Prazo</th>
+            </tr>
+            <tr>
+                <td>Asura</td>
+                <td>Geralmente com prazos flexíveis, ajustáveis conforme demanda</td>
+            </tr>
+            <tr>
+                < <td>Freelancer</td>
+                <td>Prazos variáveis, dependendo da disponibilidade e do projeto</td>
+            </tr>
+            <tr>
+                <td>Agência</td>
+                <td>Prazos definidos no início, com planejamento rigoroso</td>
+            </tr>
+        </table>
+        <div class="descricao">
+            Agências tendem a ter prazos mais estruturados, enquanto freelancers podem ser mais flexíveis, mas com maior risco de atrasos.
         </div>
+    </section>
+    <section>
         <h2>Processo</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Processo ágil com foco em resultados, com feedback contínuo e ajustes rápidos.</li>
-                    <li>Mais eficiente e direto, com menos burocracia.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Processo mais informal, mas pode ter falta de estrutura e comunicação clara.</li>
-                    <li>Requer maior envolvimento do cliente para manter o alinhamento.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Agência</h3>
-                <ul>
-                    <li>Processo detalhado e estruturado, com gestão de riscos e relatórios constantes.</li>
-                    <li>Pode ser mais burocrático, mas oferece maior transparência e controle.</li>
-                </ul>
-            </div>
+        <table>
+            <tr>
+                <th>Opção</th>
+                <th>Processo</th>
+            </tr>
+            <tr>
+                <td>Asura</td>
+                <td>Contrato direto, com comunicação simplificada e foco no resultado</td>
+            </tr>
+            <tr>
+                <td>Freelancer</td>
+                <td>Contrato individual, com maior necessidade de supervisão e gestão</td>
+            </tr>
+            <tr>
+                <td>Agência</td>
+                <td>Processo formal, com etapas de briefing, planejamento e revisões</td>
+            </tr>
+        </table>
+        <div class="descricao">
+            O processo com agência é mais formal e estruturado, enquanto o Asura é mais ágil e descentralizado.
         </div>
+    </section>
+    <section>
         <h2>Vantagens e Limitações</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Vantagens: Escala, eficiência, suporte contínuo e alinhamento de metas.</li>
-                    <li>Limitações: Custo mais alto e menor flexibilidade em mudanças.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Vantagens: Custo mais baixo e flexibilidade de contrato.</li>
-                    <li>Limitações: Menor escala, risco de inconsistência e falta de suporte contínuo.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Agência</h3>
-                <ul>
-                    <li>Vantagens: Suporte completo, gestão de riscos e escala.</li>
-                    <li>Limitações: Custo elevado e maior tempo para resultados.</li>
-                </ul>
-            </div>
+        <table>
+            <tr>
+                <th>Opção</th>
+                <th>Vantagens</th>
+                <th>Limitações</th>
+            </tr>
+            <tr>
+                <td>Asura</td>
+                <td>Flexibilidade, custo previsível, foco em resultados</td>
+                <td>Menos recursos de suporte, dependência de uma única pessoa</td>
+            </tr>
+            <tr>
+                <td>Freelancer</td>
+                <td>Menor custo, maior liberdade de escolha</td>
+                <td>Menor comprometimento, risco de inconsistência</td>
+            </tr>
+            <tr>
+                <td>Agência</td>
+                <td>Recursos completos, suporte especializado, estrutura sólida</td>
+                <td>Preço elevado, processo mais lento, menor flexibilidade</td>
+            </tr>
+        </table>
+        <div class="descricao">
+            A escolha depende do tamanho do projeto, da urgência e da complexidade necessária.
         </div>
     </section>
     <footer>
-        <p>© 2025 Comparação de Soluções de Desenvolvimento</p>
+        © 2025 Comparação de Soluções de Desenvolvimento
     </footer>
 </body>
 </html>
