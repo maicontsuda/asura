@@ -2,163 +2,95 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Perguntas Frequentes - Contratar o Asura</title>
+    <title>Perguntas Frequentes - Asura</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f0f0f;
+            background-color: #121212;
             color: #e0e0e0;
-            line-height: 1.6;
         }
         header {
-            background-color: #1a1a1a;
-            padding: 20px 0;
+            background-color: #1e1e1e;
+            padding: 20px 40px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 24px;
+            color: #ffffff;
         }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+        .faq-container {
+            padding: 20px 40px;
         }
-        .faq {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            padding: 20px;
+        .faq-item {
+            margin-bottom: 25px;
         }
-        .faq h2 {
+        .faq-item h3 {
             margin-top: 0;
-            font-size: 1.5em;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
+            font-size: 18px;
+            color: #ffffff;
         }
-        .faq ul {
-            list-style-type: none;
-            padding: 0;
+        .faq-item p {
+            font-size: 14px;
+            line-height: 1.6;
         }
-        .faq li {
-            margin-bottom: 15px;
+        .faq-item ul {
+            padding-left: 20px;
         }
-        .faq li button {
-            background-color: #444;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .faq-item li {
+            margin-bottom: 10px;
         }
-        .faq li button:hover {
-            background-color: #555;
+        a {
+            color: #00ffcc;
+            text-decoration: none;
         }
-        .faq-content {
-            display: none;
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-            color: #888;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+        <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <div class="container">
-        <div class="faq">
-            <h2>Como pagar com USDC na Base?</h2>
-            <ul>
-                <li><button onclick="toggleContent('faq1')">Como realizar o pagamento?</button>
-                    <div id="faq1" class="faq-content">
-                        Para pagar com USDC na Base, você deve usar um wallet compatível com a rede Base, como o MetaMask. Conecte seu wallet, acesse a interface de pagamento do Asura, selecione USDC como moeda, e conclua o pagamento. Certifique-se de que seu saldo de USDC está suficiente e que a transação é confirmada na rede.
-                    </div>
-                </li>
-                <li><button onclick="toggleContent('faq2')">Quais são os prazos para a transação?</button>
-                    <div id="faq2" class="faq-content">
-                        O prazo para a transação varia conforme a velocidade da rede Base. Em média, a confirmação de uma transação de USDC na Base leva entre 1 a 3 minutos. Após a confirmação, o pagamento será processado e o contrato será ativado.
-                    </div>
-                </li>
-            </ul>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>Como pagar com USDC na Base?</h3>
+            <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse o contrato do Asura e transfira os USDC para a conta associada ao serviço. Certifique-se de que o endereço de destino esteja correto para evitar erros. A transação será confirmada em alguns minutos após a validação da rede.</p>
         </div>
-        <div class="faq">
-            <h2>Como pagar com ETH na Base?</h2>
-            <ul>
-                <li><button onclick="toggleContent('faq3')">Como realizar o pagamento?</button>
-                    <div id="faq3" class="faq-content">
-                        Para pagar com ETH na Base, use um wallet compatível com a rede Base. Conecte-o, acesse a interface de pagamento, selecione ETH como moeda, e conclua o pagamento. Certifique-se de que seu saldo de ETH está suficiente e que a transação é confirmada na rede.
-                    </div>
-                </li>
-                <li><
-                    <button onclick="toggleContent('faq4')">Quais são os prazos para a transação?</button>
-                    <div id="faq4" class="faq-content">
-                        O prazo para a transação de ETH na Base é similar ao de USDC, levando entre 1 a 3 minutos para ser confirmada. Após a confirmação, o pagamento será processado e o contrato será ativado.
-                    </div>
-                </li>
-            </ul>
+        <div class="faq-item">
+            <h3>Como pagar com ETH na Base?</h3>
+            <p>Ao pagar com ETH na Base, você deve usar uma carteira compatível com a rede Base, como a MetaMask. Conecte a carteira e acesse o contrato do Asura para realizar o pagamento. O pagamento será feito em ETH, e a transação será confirmada após a validação da rede. É importante garantir que o endereço de destino esteja correto para evitar perdas.</p>
         </div>
-        <div class="faq">
-            <h2>Como pagar com ETH Mainnet?</h2>
-            <ul>
-                <li><button onclick="toggleContent('faq5')">Como realizar o pagamento?</button>
-                    <div id="faq5" class="faq-content">
-                        Para pagar com ETH Mainnet, você deve usar um wallet compatível com a rede Ethereum. Conecte seu wallet, acesse a interface de pagamento do Asura, selecione ETH Mainnet como moeda, e conclua o pagamento. Certifique-se de que seu saldo de ETH Mainnet está suficiente e que a transação é confirmada.
-                    </div>
-                </li>
-                <li><button onclick="toggleContent('faq6')">Quais são os prazos para a transação?</button>
-                    <div id="faq6" class="faq-content">
-                        A transação de ETH Mainnet pode levar entre 10 a 20 minutos para ser confirmada, dependendo da carga da rede. Após a confirmação, o pagamento será processado e o contrato será ativado.
-                    </div>
-                </li>
-            </ul>
+        <div class="faq-item">
+            <h3>Como pagar com ETH na Mainnet?</h3>
+            <p>Para realizar o pagamento com ETH na Mainnet, você deve utilizar uma carteira compatível com a rede Ethereum, como a MetaMask. Após conectar a carteira, acesse o contrato do Asura e transfira os ETH para a conta associada ao serviço. A transação será processada após a validação da rede Ethereum e levará alguns minutos para ser confirmada.</p>
         </div>
-        <div class="faq">
-            <h2>O que acontece se o pagamento falhar?</h2>
-            <ul>
-                <li><button onclick="toggleContent('faq7')">Como posso resolver isso?</button>
-                    <div id="faq7" class="faq-content">
-                        Se o pagamento falhar, você receberá uma notificação sobre a falha da transação. Revise os detalhes do pagamento, como a quantidade, a moeda e a rede. Caso a falha persista, entre em contato com o suporte do Asura para obter assistência. A garantia de pagamento é válida apenas após a confirmação da transação.
-                    </div>
-                </li>
-                <li><button onclick="toggleContent('faq8')">Qual é o prazo para reembolso?</button>
-                    <div id="faq8" class="faq-content">
-                        Em caso de falha do pagamento, o reembolso será realizado em até 24 horas após a confirmação da falha. O reembolso será feito para a mesma rede da transação original e pode levar até 1 hora para ser processado.
-                    </div>
-                </li>
-            </ul>
+        <div class="faq-item">
+            <h3>Quais são os prazos para o serviço?</h3>
+            <p>Os prazos para o serviço dependem da complexidade do projeto e da disponibilidade dos recursos do Asura. Geralmente, o prazo começa a contar a partir da confirmação do pagamento e da entrega do brief. O prazo pode variar entre 15 a 60 dias úteis, sendo que o Asura notifica o cliente regularmente sobre o progresso do projeto.</p>
         </div>
-        <div class="faq">
-            <h2>Como recebo o entregável?</h2>
-            <ul>
-                <li><button onclick="toggleContent('faq9')">Qual é o processo?</button>
-                    <div id="faq9" class="faq-content">
-                        Após o pagamento ser confirmado, o entregável será liberado automaticamente para o endereço do contrato configurado no seu wallet. O processo é automático e não requer ações adicionais por sua parte. Certifique-se de que seu wallet está conectado e atualizado para receber o entregável.
-                    </div>
-                </li>
-                <li><button onclick="toggleContent('faq10')">Qual é o prazo para recebimento?</button>
-                    <div id="faq10" class="faq-content">
-                        O entregável será liberado imediatamente após a confirmação da transação. No entanto, o tempo de recebimento pode variar conforme a velocidade da rede e a atualização do seu wallet. Em alguns casos, pode levar até 10 minutos para o entregável aparecer em seu wallet.
-                    </div>
-                </li>
-            </ul>
+        <div class="faq-item">
+            <h3>O que acontece se o pagamento falhar?</h3>
+            <p>Se o pagamento falhar, o Asura não iniciará o serviço e não realizará nenhuma entrega. O cliente deve verificar a transação e tentar novamente. Caso o erro persista, o Asura entrará em contato para resolver o problema. O cliente também pode reenviar o pagamento ou solicitar uma reavaliação do status da transação.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Como recebo o entregável?</h3>
+            <p>O entregável será enviado por meio de um contrato inteligente vinculado ao serviço. Após a confirmação do pagamento, o Asura libera o acesso ao entregável, que pode ser um link, um arquivo ou uma interface web. O cliente deve verificar o status do contrato para receber o entregável no prazo combinado.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Qual é a identidade on-chain ERC-8004 #1149100?</h3>
+            <p>A identidade on-chain ERC-8004 #1149100 é um identificador único associado ao Asura, registrado na rede blockchain. Este endereço representa a entidade legal e operacional do Asura e é utilizado para validar transações e garantir a autenticidade dos serviços oferecidos. O endereço pode ser verificado em exploradores de blockchain como Etherscan ou BaseScan.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Qual é o processo de reembolso?</h3>
+            <p>O reembolso é realizado caso o serviço não seja concluído conforme acordado ou se houver falha no pagamento. Para solicitar o reembolso, o cliente deve enviar uma solicitação formal ao Asura, comprovando a situação. O reembolso é processado após a análise da solicitação e será devolvido para a carteira original do cliente, seguindo as regras da rede blockchain utilizada.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Como posso contactar o suporte?</h3>
+            <p>O suporte do Asura pode ser solicitado por meio do endereço de e-mail suporte@asura.com ou pelo contrato inteligente de suporte, que está disponível em Etherscan. O suporte está disponível de segunda a sexta-feira, das 9h às 18h, e pode ser usado para resolver dúvidas, solicitar reembolsos ou reportar problemas com transações.</p>
         </div>
     </div>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
-    <script>
-        function toggleContent(id) {
-            const content = document.getElementById(id);
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
 </body>
 </html>
