@@ -6,69 +6,75 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
-            color: #00b8d4;
+            color: #ffffff;
+            font-size: 2em;
         }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
+
+        section {
             padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 900px;
         }
+
         h2 {
-            color: #00b8d4;
+            color: #ffffff;
             margin-top: 30px;
         }
+
         p {
-            line-height: 1.6;
+            font-size: 1em;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #1e1e1e;
+            border: 1px solid #444;
         }
+
         th, td {
-            border: 1px solid #333;
             padding: 12px;
-            text-align: center;
+            text-align: left;
+            border: 1px solid #444;
         }
+
         th {
-            background-color: #2c2c2c;
+            background-color: #2e2e2e;
         }
-        .example {
-            margin-top: 40px;
-            background-color: #2a2a2a;
+
+        tr:nth-child(even) {
+            background-color: #2e2e2e;
+        }
+
+        .nota {
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .comentario {
+            color: #88cc88;
+        }
+
+        footer {
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
-        }
-        .example h3 {
-            color: #00b8d4;
-        }
-        .example p {
-            margin: 10px 0;
-        }
-        .summary {
-            margin-top: 40px;
-            background-color: #2a2a2a;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .summary h3 {
-            color: #00b8d4;
-        }
-        .summary p {
-            margin: 10px 0;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
@@ -76,71 +82,70 @@
     <header>
         <h1>Critérios para Avaliação de Conteúdo</h1>
     </header>
-    <div class="container">
-        <h2>Introdução</h2>
-        <p>A avaliação de conteúdo é um processo essencial para garantir que a mensagem transmitida seja clara, precisa e alinhada aos objetivos do cliente. A seguir, apresentamos critérios objetivos que ajudam a avaliar a qualidade de um conteúdo recebido, permitindo que você analise com base em parâmetros claros e mensuráveis.</p>
+    <section>
+        <h2>Clareza</h2>
+        <p>O conteúdo deve ser fácil de entender, com linguagem direta e objetiva. Evite jargões excessivos, termos técnicos sem explicação e frases ambíguas. O leitor deve compreender o propósito e a mensagem do texto sem esforço.</p>
 
-        <h2>Critérios de Avaliação</h2>
-        <p>Os critérios abaixo devem ser analisados de forma sistemática para garantir que o conteúdo atenda às expectativas do cliente. Cada critério tem um peso e uma pontuação que contribuem para a avaliação geral.</p>
+        <h2>Aderência ao Briefing</h2>
+        <p>Verifique se o conteúdo atende aos objetivos definidos no briefing. Ele deve abordar os pontos principais, incluir as informações solicitadas e manter o foco no público-alvo. Qualquer desvio ou falta de abordagem adequada pode comprometer a eficácia do material.</p>
 
+        <h2>Tom</h2>
+        <p>O tom do conteúdo deve ser adequado ao público e ao propósito da comunicação. Ele deve ser coerente com a identidade da marca, o perfil do público-alvo e o contexto da publicação. Um tom inadequado pode gerar confusão ou desinteresse.</p>
+
+        <h2>Estrutura</h2>
+        <p>A estrutura do conteúdo deve ser clara e lógica, com uma introdução, desenvolvimento e conclusão bem definidos. Use tópicos, listas ou parágrafos curtos para facilitar a leitura. Uma estrutura desorganizada dificulta a compreensão e reduz a eficácia da mensagem.</p>
+
+        <h2>Erros de Português</h2>
+        <p>Verifique a gramática, a ortografia e o uso correto da língua. Erros frequentes ou graves podem comprometer a credibilidade do conteúdo e distraírem o leitor. A precisão linguística é essencial para manter a profissionalidade.</p>
+
+        <h2>Chamada para a Ação</h2>
+        <p>O conteúdo deve conter uma chamada para ação clara e direta, incentivando o leitor a agir. Isso pode ser uma orientação para visitar uma página, fazer uma compra, se inscrever ou compartilhar o conteúdo. A falta de uma chamada para ação pode tornar o conteúdo passivo e ineficaz.</p>
+
+        <h2>Tabela de Notas</h2>
         <table>
             <thead>
                 <tr>
                     <th>Critério</th>
-                    <th>Pontuação</th>
-                    <th>Descrição</th>
+                    <th>Nota (0-10)</th>
+                    <th>Comentário</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Clareza</td>
-                    <td>0 a 10</td>
-                    <td>Verifique se o conteúdo é fácil de entender, sem ambiguidades ou termos técnicos excessivos.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre clareza.</td>
                 </tr>
                 <tr>
                     <td>Aderência ao Briefing</td>
-                    <td>0 a 10</td>
-                    <td>Analise se o conteúdo segue os objetivos, prazos e diretrizes estabelecidas no briefing.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre aderência ao briefing.</td>
                 </tr>
                 <tr>
                     <td>Tom</td>
-                    <td>0 a 10</td>
-                    <td>Verifique se o tom do conteúdo é adequado ao público-alvo e ao propósito da comunicação.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre tom.</td>
                 </tr>
                 <tr>
                     <td>Estrutura</td>
-                    <td>0 a 10</td>
-                    <td>Analise se o conteúdo está bem organizado, com introdução, desenvolvimento e conclusão claros.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre estrutura.</td>
                 </tr>
                 <tr>
                     <td>Erros de Português</td>
-                    <td>0 a 10</td>
-                    <td>Conte o número de erros gramaticais, ortográficos ou de pontuação e avalie a qualidade da linguagem.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre erros de português.</td>
                 </tr>
                 <tr>
                     <td>Chamada para a Ação</td>
-                    <td>0 a 10</td>
-                    <td>Verifique se há uma chamada para ação clara e direcionada, incentivando o público a agir.</td>
+                    <td class="nota">0</td>
+                    <td class="comentario">Comentário sobre chamada para a ação.</td>
                 </tr>
             </tbody>
         </table>
-
-        <div class="example">
-            <h3>Exemplo de Avaliação Prática</h3>
-            <p><strong>Clareza:</strong> 8 – O conteúdo foi bem explicado, mas alguns trechos podiam ser mais simples.</p>
-            <p><strong>Aderência ao Briefing:</strong> 9 – O conteúdo seguiu todas as diretrizes e objetivos estabelecidos.</p>
-            <p><strong>Tom:</strong> 7 – O tom foi adequado ao público, mas algumas partes poderiam ser mais empáticas.</p>
-            <p><strong>Estrutura:</strong> 10 – O conteúdo estava bem organizado e com uma lógica clara.</p>
-            <p><strong>Erros de Português:</strong> 6 – Houve alguns erros de gramática, mas não comprometeram a compreensão.</p>
-            <p><strong>Chamada para a Ação:</strong> 9 – A chamada foi clara e direcionada, incentivando a ação do público.</p>
-        </div>
-
-        <div class="summary">
-            <h3>Cálculo da Média Geral</h3>
-            <p>Para calcular a média geral, some todas as notas e divida por 6 (número de critérios). A média final indica a qualidade geral do conteúdo.</p>
-            <p><strong>Exemplo:</strong> (8 + 9 + 7 + 10 + 6 + 9) / 6 = 8,0</p>
-            <p>Com base nessa média, você pode sugerir melhorias ou aprovar o conteúdo, conforme o resultado.</p>
-        </div>
-    </div>
+    </section>
+    <footer>
+        &copy; 2025 - Critérios para Avaliação de Conteúdo. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
