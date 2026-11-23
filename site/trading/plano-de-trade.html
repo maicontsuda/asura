@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações de Investimento</title>
+    <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -23,139 +23,111 @@
             margin: 20px;
             padding: 20px;
             background-color: #1e1e1e;
-            border-radius: 8px;
+            border-left: 4px solid #ff4081;
         }
         h2 {
-            color: #ffffff;
-            margin-top: 0;
+            color: #ff4081;
         }
         p {
             line-height: 1.6;
         }
-        .checklist {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 10px;
+        ul {
+            margin: 10px 0;
         }
-        .checklist ul {
-            list-style-type: none;
-            padding: 0;
+        .checklist {
+            margin-top: 15px;
         }
         .checklist li {
             margin: 5px 0;
         }
-        .checklist li::before {
-            content: "✅";
-            margin-right: 8px;
-            color: #4caf50;
+        .checklist input[type="checkbox"] {
+            margin-right: 10px;
         }
-        .template {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 15px;
+        .registro {
+            margin-top: 20px;
         }
-        .template table {
+        .registro h3 {
+            color: #ff4081;
+        }
+        .registro table {
             width: 100%;
             border-collapse: collapse;
         }
-        .template th, .template td {
+        .registro th, .registro td {
             border: 1px solid #444;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
-        }
-        .template th {
-            background-color: #2a2a2a;
         }
         .aviso {
             background-color: #1e1e1e;
             padding: 15px;
-            border-radius: 6px;
-            margin-top: 20px;
-            font-style: italic;
+            border-left: 4px solid #00ff99;
+            margin-top: 30px;
         }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
+        .aviso p {
+            color: #00ff99;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações de Investimento</h1>
+        <h1>Plano de Trade - Modelo para Operações</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente o objetivo do plano de trade. Exemplo: Gerar rendimento mensal de 10% com risco controlado, operar em ações de alta liquidez e evitar operações de alto risco.</p>
+        <p>Definir claramente o objetivo de cada operação é essencial para manter a disciplina. Exemplo: "Realizar uma operação de compra de ações do ABC com objetivo de 5% de lucro em 3 dias".</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identifique os mercados que você pretende operar. Exemplo: Mercado acionário brasileiro (B3), mercado forex (USD/BRL), ou criptomoedas (BTC/USDT).</p>
+        <p>Identifique o mercado em que você será operar, como ações, forex, criptomoedas, etc. Exemplo: "Operar no mercado de ações brasileiro (B3) nos horários de 9h às 15h."</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Determine os horários de operação. Exemplo: Operar de segunda a sexta-feira, entre 09h00 e 17h00, com pausas para análise e tomada de decisão.</p>
+        <p>Defina os horários em que você planeja operar. Exemplo: "Operar de segunda a sexta-feira, das 9h às 15h, com pausas para almoço entre 12h e 13h."</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Defina regras claras para entrar e sair de operações. Exemplo: Entrar em operações com confirmação de tendência, sair com lucro de 5% ou perda de 2%.</p>
+        <p>Estabeleça regras claras para entrada e saída de operações. Exemplo: "Entrar com stop loss em 2% abaixo da média móvel de 50 dias e sair com take profit em 5% acima do preço de entrada."</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Estabeleça um limite máximo de perdas diárias. Exemplo: Não investir mais do que 2% do capital total em uma única operação.</p>
+        <p>Defina o limite máximo de perdas que você está disposto a aceitar por dia. Exemplo: "Não aceitar perdas acima de 2% do capital total em um único dia."</p>
     </section>
     <section>
         <h2>Checklist Antes de Abrir Operação</h2>
         <div class="checklist">
             <ul>
-                <li>Verifique se o mercado está em tendência clara.</li>
-                <li>Confirme os níveis de suporte/resistência.</li>
-                <li>Analise os indicadores técnicos relevantes.</li>
-                <li>Verifique se há notícias relevantes para o ativo.</li>
-                <li>Confirme o limite de perda e lucro.</li>
-                <li>Verifique o capital disponível e o risco assumido.</li>
+                <li><input type="checkbox"> Verificar condições do mercado</li>
+                <li><input type="checkbox"> Confirmar regras de entrada e saída</li>
+                <li><input type="checkbox"> Analisar gráficos e indicadores</li>
+                <li><input type="checkbox"> Verificar capital disponível</li>
+                <li><input type="checkbox"> Confirmar alinhamento com o plano de trade</li>
             </ul>
         </div>
     </section>
-    <section>
-        <h2>Template de Registro</h2>
-        <div class="template">
-            <table>
-                <tr>
-                    <th>Data</th>
-                    <th>Ativo</th>
-                    <th>Entrada</th>
-                    <th>Saída</th>
-                    <th>Lucro/Perda</th>
-                    <th>Observações</th>
-                </tr>
-                <tr>
-                    <td>01/04/2025</td>
-                    <td>Ações - PETR4</td>
-                    <td>R$ 35,00</td>
-                    <td>R$ 36,50</td>
-                    <td>+4,29%</td>
-                    <td>Confirmação de tendência alcista.</td>
-                </tr>
-                <tr>
-                    <td>02/04/2025</td>
-                    <td>Forex - USD/BRL</td>
-                    <td>5,20</td>
-                    <td>5,15</td>
-                    <td>-0,96%</td>
-                    <td>Reversão técnica após notícia.</td>
-                </tr>
-            </table>
-        </div>
+    <section class="registro">
+        <h3>Template de Registro</h3>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Ativo</th>
+                <th>Preço de entrada</th>
+                <th>Stop Loss</th>
+                <th>Take Profit</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>01/05/2025</td>
+                <td>ABC</td>
+                <td>R$ 100,00</td>
+                <td>R$ 98,00</td>
+                <td>R$ 105,00</td>
+                <td>Lucro de R$ 5,00</td>
+            </tr>
+        </table>
     </section>
-    <div class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações de mercado envolvem risco de perda de capital. É essencial que você consulte um profissional qualificado antes de investir.</p>
-    </div>
-    <footer>
-        © 2025 - Plano de Trade - Modelo para Operações de Investimento
-    </footer>
+    <section class="aviso">
+        <p><strong>Aviso Legal:</strong> O conteúdo apresentado é apenas educacional e não constitui recomendação de investimento. A tomada de decisões financeiras deve ser feita com cuidado e baseada em sua própria análise e consultoria profissional.</p>
+    </section>
 </body>
 </html>
