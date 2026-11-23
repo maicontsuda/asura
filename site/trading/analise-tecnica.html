@@ -1,98 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Análise Técnica em Trading - Ferramentas Essenciais</title>
+    <title>Análise Técnica - Tendência, Suporte e Resistência</title>
     <style>
         body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            padding: 20px;
         }
         header {
+            background-color: #2a2a2a;
             padding: 20px;
-            background-color: #333;
             text-align: center;
-        }
-        main {
-            padding: 20px;
+            border-bottom: 2px solid #444;
         }
         h1 {
-            color: #e0e0e0;
+            margin: 0;
+            color: #00ffcc;
+        }
+        .aviso {
+            background-color: #222;
+            border: 1px solid #555;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #00ffcc;
         }
         p {
             line-height: 1.6;
         }
-        section {
-            margin-bottom: 20px;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-        }
-        .content h2 {
-            color: #e0e0e0;
-        }
-        .content p {
-            margin-bottom: 10px;
-        }
-        .content a {
-            color: #61dafb;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
+        .destaque {
+            color: #ffcc00;
         }
         footer {
-            padding: 10px;
-            background-color: #333;
             text-align: center;
-            color: #e0e0e0;
+            padding: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Análise Técnica em Trading - Ferramentas Essenciais</h1>
+        <h1>Análise Técnica: Ferramentas para Leitura do Mercado</h1>
     </header>
-    <main>
-        <div class="content">
-            <section>
-                <h2>Tendências</h2>
-                <p>A análise técnica busca identificar tendências de preços através do estudo de gráficos de preços. As tendências podem ser ascendentes, descendentes ou laterais. Elas indicam a direção geral do mercado e podem ajudar o trader a tomar decisões informadas.</p>
-            </section>
-            <section>
-                <h2>Suporte e Resistência</h2>
-                <p>O suporte é um nível de preço abaixo do qual o preço tende a não cair. O resistência, por outro lado, é um nível de preço acima do qual o preço tende a não subir. Estes níveis podem ser importantes para identificar possíveis pontos de entrada e saída no mercado.</p>
-            </section>
-            <section>
-                <h2>Candlestick</h2>
-                <p>O candlestick é uma forma de representar os dados de preços de um ativo. Cada "candelabro" representa um período de tempo e mostra o preço de abertura, fechamento, mínimo e máximo. Este gráfico é extremamente versátil e pode ser usado para identificar padrões e tendências.</p>
-            </section>
-            <section>
-                <h2>Médias Móveis</h2>
-                <p>A média móvel é uma ferramenta que ajuda a identificar a tendência do mercado ao suavizar os picos e baixos do preço. Ela é calculada somando os preços de uma série de períodos e dividindo pelo número de períodos. As médias móveis podem ser usadas para identificar resistências e suportes.</p>
-            </section>
-            <section>
-                <h2>RSI (Índice de Força Relativa)</h2>
-                <p>O RSI é um indicador de momentum que mede o overbought e oversold do mercado. Ele varia de 0 a 100 e é amplamente usado para identificar possíveis pontos de entrada e saída. Um valor acima de 70 sugere overbought, enquanto um valor abaixo de 30 sugere oversold.</p>
-            </section>
-            <section>
-                <h2>Volume</h2>
-                <p>O volume é um indicador que mostra a quantidade de negócios realizados em um determinado período. Ele é útil para confirmar a força de uma tendência ou a validade de um padrão. Um aumento no volume durante um movimento de preços pode indicar uma confirmação da tendência.</p>
-            </section>
-            <section>
-                <h2>Padrões Comuns</h2>
-                <p>Padrões comuns em análise técnica incluem o Triângulo, o Vértice, a Forma de Cauda de Borboleta, o Engolffo, entre outros. Estes padrões podem ser usados para identificar possíveis reversões de tendência e pontos de entrada ou saída.</p>
-            </section>
-            <p>É importante notar que essas ferramentas de análise técnica são ferramentas de leitura do mercado e não garantem previsões precisas. O trader deve sempre usar múltiplas ferramentas e analisar o mercado de maneira abrangente.</p>
-        </div>
-    </main>
+    <div class="aviso">
+        Este conteúdo é educacional e não constitui recomendação ou conselho financeiro. As ferramentas apresentadas são úteis para análise, mas não garantem previsibilidade de resultados.
+    </div>
+    <section>
+        <h2>Tendência</h2>
+        <p>A tendência é a direção geral do preço em um determinado período. Ela pode ser <span class="destaque">ascendente</span>, <span class="destaque">descendente</span> ou <span class="destaque">laterale</span>. Identificar a tendência é fundamental para decidir se o mercado está em alta, baixa ou em equilíbrio.</p>
+    </section>
+    <section>
+        <h2>Suporte e Resistência</h2>
+        <p><span class="destaque">Suporte</span> é um nível de preço onde o mercado tende a encontrar demanda e não cair ainda mais. <span class="destaque">Resistência</span> é o nível onde o mercado tende a encontrar oferta e não subir mais. Esses níveis são importantes para identificar pontos de entrada e saída.</p>
+    </section>
+    <section>
+        <h2>Candlestick</h2>
+        <p>Os <span class="destaque">candlesticks</span> são gráficos que mostram a abertura, fechamento, máxima e mínima de uma sessão. Eles ajudam a identificar padrões de comportamento dos traders, como o <span class="destaque">doji</span> ou <span class="destaque">shinobi</span>.</p>
+    </section>
+    <section>
+        <h2>Médias Móveis</h2>
+        <p>As <span class="destaque">médias móveis</span> são indicadores que mostram a média do preço em um período específico. Elas ajudam a identificar tendências e sinais de reversão, como quando uma média curta corta uma média longa.</p>
+    </section>
+    <section>
+        <h2>RSI</h2>
+        <p>O <span class="destaque">RSI (Índice de Força Relativa)</span> mede a força relativa do mercado. Ele varia de 0 a 100, indicando se o mercado está sobrecarregado (overbought) ou fraco (oversold).</p>
+    </section>
+    <section>
+        <h2>Volume</h2>
+        <p>O <span class="destaque">volume</span> indica a quantidade de ações ou contratos negociados em um período. Ele pode confirmar a força de uma tendência ou sinalizar reversões.</p>
+    </section>
+    <section>
+        <h2>Padrões Comuns</h2>
+        <p>Padrões como <span class="destaque">head and shoulders</span>, <span class="destaque">triângulo</span> e <span class="destaque">formação de falso</span> são formas de prever possíveis movimentos de preços, mas sempre com base em análise e não previsão garantida.</p>
+    </section>
     <footer>
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. Use com responsabilidade e sempre consulte um especialista financeiro antes de tomar decisões.</p>
+        &copy; 2025 - Conteúdo Educacional sobre Análise Técnica
     </footer>
 </body>
 </html>
