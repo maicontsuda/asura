@@ -8,89 +8,117 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px 40px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #ffffff;
-        }
-        .faq-container {
-            padding: 20px 40px;
-        }
-        .faq-item {
-            margin-bottom: 25px;
-        }
-        .faq-item h3 {
-            margin-top: 0;
-            font-size: 18px;
-            color: #ffffff;
-        }
-        .faq-item p {
-            font-size: 14px;
+            color: #f5f5f5;
             line-height: 1.6;
         }
-        .faq-item ul {
-            padding-left: 20px;
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
         }
-        .faq-item li {
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #ffffff;
             margin-bottom: 10px;
         }
-        a {
-            color: #00ffcc;
-            text-decoration: none;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-        a:hover {
-            text-decoration: underline;
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .faq-item p {
+            color: #cccccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes - Asura</h1>
+        <h1>Perguntas Frequentes</h1>
+        <p>Respostas sobre como contratar o Asura</p>
     </header>
-    <div class="faq-container">
+
+    <section>
         <div class="faq-item">
             <h3>Como pagar com USDC na Base?</h3>
-            <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse o contrato do Asura e transfira os USDC para a conta associada ao serviço. Certifique-se de que o endereço de destino esteja correto para evitar erros. A transação será confirmada em alguns minutos após a validação da rede.</p>
+            <p>Para pagar com USDC na rede Base, você deve usar uma carteira compatível com a rede Base, como MetaMask ou WalletConnect. Após conectar a carteira, acesse a interface de pagamento do Asura e selecione a opção de pagamento com USDC. Confirme a transação e aguarde o processamento.</p>
         </div>
+
         <div class="faq-item">
             <h3>Como pagar com ETH na Base?</h3>
-            <p>Ao pagar com ETH na Base, você deve usar uma carteira compatível com a rede Base, como a MetaMask. Conecte a carteira e acesse o contrato do Asura para realizar o pagamento. O pagamento será feito em ETH, e a transação será confirmada após a validação da rede. É importante garantir que o endereço de destino esteja correto para evitar perdas.</p>
+            <p>Para pagar com ETH na rede Base, siga o mesmo procedimento de pagamento que para USDC, mas selecione a opção ETH na Base. Certifique-se de que sua carteira tenha saldo suficiente e que o endereço esteja configurado corretamente para a rede Base.</p>
         </div>
+
         <div class="faq-item">
-            <h3>Como pagar com ETH na Mainnet?</h3>
-            <p>Para realizar o pagamento com ETH na Mainnet, você deve utilizar uma carteira compatível com a rede Ethereum, como a MetaMask. Após conectar a carteira, acesse o contrato do Asura e transfira os ETH para a conta associada ao serviço. A transação será processada após a validação da rede Ethereum e levará alguns minutos para ser confirmada.</p>
+            < <h3>Como pagar com ETH na Mainnet?</h3>
+            <p>Para pagar com ETH na Mainnet, você deve conectar uma carteira compatível com a rede Ethereum, como MetaMask. Acesse a interface de pagamento do Asura, selecione a opção de pagamento com ETH na Mainnet e confirme a transação. O processamento pode levar alguns minutos, dependendo da carga da rede.</p>
         </div>
+
         <div class="faq-item">
-            <h3>Quais são os prazos para o serviço?</h3>
-            <p>Os prazos para o serviço dependem da complexidade do projeto e da disponibilidade dos recursos do Asura. Geralmente, o prazo começa a contar a partir da confirmação do pagamento e da entrega do brief. O prazo pode variar entre 15 a 60 dias úteis, sendo que o Asura notifica o cliente regularmente sobre o progresso do projeto.</p>
+            <h3>Quais são os prazos para o pagamento?</h3>
+            <p>Os prazos variam conforme o tipo de contrato e o projeto. Após o pagamento, o prazo para entrega do entregável geralmente varia entre 7 a 30 dias úteis. Consulte os termos do contrato para obter informações precisas.</p>
         </div>
+
         <div class="faq-item">
             <h3>O que acontece se o pagamento falhar?</h3>
-            <p>Se o pagamento falhar, o Asura não iniciará o serviço e não realizará nenhuma entrega. O cliente deve verificar a transação e tentar novamente. Caso o erro persista, o Asura entrará em contato para resolver o problema. O cliente também pode reenviar o pagamento ou solicitar uma reavaliação do status da transação.</p>
+            <p>Se o pagamento falhar, o contrato pode não ser ativado e o processo de entrega pode ser interrompido. Recomendamos verificar a transação no bloco e garantir que o endereço da carteira esteja correto. Em caso de falha, entre em contato com o suporte do Asura para resolver a questão.</p>
         </div>
+
         <div class="faq-item">
             <h3>Como recebo o entregável?</h3>
-            <p>O entregável será enviado por meio de um contrato inteligente vinculado ao serviço. Após a confirmação do pagamento, o Asura libera o acesso ao entregável, que pode ser um link, um arquivo ou uma interface web. O cliente deve verificar o status do contrato para receber o entregável no prazo combinado.</p>
+            <p>O entregável será fornecido conforme acordado no contrato. Pode ser um arquivo digital, um link de download, ou um serviço de entrega específico. Após a confirmação do pagamento, o entregável será liberado para o endereço de destino configurado no contrato.</p>
         </div>
+
         <div class="faq-item">
             <h3>Qual é a identidade on-chain ERC-8004 #1149100?</h3>
-            <p>A identidade on-chain ERC-8004 #1149100 é um identificador único associado ao Asura, registrado na rede blockchain. Este endereço representa a entidade legal e operacional do Asura e é utilizado para validar transações e garantir a autenticidade dos serviços oferecidos. O endereço pode ser verificado em exploradores de blockchain como Etherscan ou BaseScan.</p>
+            <p>A identidade on-chain ERC-8004 #1149100 é um token que representa a identidade digital do usuário no ecossistema do Asura. Ele é usado para verificar a autenticidade e a identidade do contratante. Para obter mais informações, consulte o documento da especificação do ERC-8004.</p>
         </div>
+
         <div class="faq-item">
-            <h3>Qual é o processo de reembolso?</h3>
-            <p>O reembolso é realizado caso o serviço não seja concluído conforme acordado ou se houver falha no pagamento. Para solicitar o reembolso, o cliente deve enviar uma solicitação formal ao Asura, comprovando a situação. O reembolso é processado após a análise da solicitação e será devolvido para a carteira original do cliente, seguindo as regras da rede blockchain utilizada.</p>
+            <h3>Como solicitar reembolso?</h3>
+            <p>Para solicitar reembolso, entre em contato com o suporte do Asura e forneça detalhes do contrato, transação e motivo da solicitação. O reembolso será processado conforme as condições estabelecidas no contrato e, em alguns casos, pode haver uma taxa de processamento.</p>
         </div>
-        <div class="faq-item">
-            <h3>Como posso contactar o suporte?</h3>
-            <p>O suporte do Asura pode ser solicitado por meio do endereço de e-mail suporte@asura.com ou pelo contrato inteligente de suporte, que está disponível em Etherscan. O suporte está disponível de segunda a sexta-feira, das 9h às 18h, e pode ser usado para resolver dúvidas, solicitar reembolsos ou reportar problemas com transações.</p>
-        </div>
-    </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Asura. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
