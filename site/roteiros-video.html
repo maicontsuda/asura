@@ -7,7 +7,7 @@
         body {
             background-color: #121212;
             color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,63 +15,47 @@
             align-items: center;
             height: 100vh;
         }
-        .roteiro {
-            width: 80%;
-            max-width: 800px;
-            padding: 20px;
-            background-color: #212121;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        .container {
             text-align: center;
-            overflow: hidden;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
         }
-        h1 {
-            font-size: 2.5em;
+        .scene {
+            margin-bottom: 20px;
+        }
+        .scene h2 {
+            font-size: 24px;
             margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2em;
+        .scene p {
+            font-size: 16px;
             line-height: 1.5;
-            margin-bottom: 10px;
-        }
-        .scene, .dialogue, .text {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="roteiro">
-        <h1>Cena 1 - Abertura</h1>
-        <div class="scene">A câmera se move suavemente para mostrar uma loja de artesanato com uma vitrine cheia de produtos únicos e um interior aconchegante com móveis de madeira.</div>
-        <div class="dialogue">Voz Off: Conheça nossa loja de artesanato local, onde cada peça é única e reflete a criatividade de nossos artesãos.</div>
-        <div class="text">Aqui você encontrará itens exclusivos, feitos à mão, que irão deixar sua casa mais acolhedora.</div>
-    </div>
-
-    <div class="roteiro">
-        <h1>Cena 2 - Sobre o Produtor</h1>
-        <div class="scene">A câmera se move para mostrar o artesão trabalhando em sua mesa de trabalho, com vários materiais à sua volta.</div>
-        <div class="dialogue">Voz Off: Conheça o artesão por trás de cada peça, João, um talentoso criador que transforma ideias em produtos belos e únicos.</div>
-        <div class="text">João passa seus dias criando peças com amor e dedicação, garantindo a qualidade e a singularidade de cada item.</div>
-    </div>
-
-    <div class="roteiro">
-        <h1>Cena 3 - Produtos em Ação</h1>
-        <div class="scene">A câmera captura uma cena de uma cliente recebendo um produto, seguida por ela usando o item em casa.</div>
-        <div class="dialogue">Voz Off: Veja como nossos produtos podem transformar sua casa.</div>
-        <div class="text">A cliente enfeita sua mesa com uma luminária, e a câmera mostra a luz suave iluminando a sala com um toque de charme.</div>
-    </div>
-
-    <div class="roteiro">
-        <h1>Cena 4 - Testemunho do Cliente</h1>
-        <div class="scene">A câmera mostra uma cliente conversando com a proprietária da loja.</div>
-        <div class="dialogue">Voz Off: Ouça o que a cliente tem a dizer sobre nossos produtos.</div>
-        <div class="text">A cliente diz: 'Essa luminária é maravilhosa! Adorei a atmosfera que ela criou na minha sala.' A proprietária concorda, destacando a satisfação do cliente.</div>
-    </div>
-
-    <div class="roteiro">
-        <h1>Cena 5 - Conclusão</h1>
-        <div class="scene">A câmera se move para mostrar a loja de novo, desta vez com um banner promocional.</div>
-        <div class="dialogue">Voz Off: Visite nossa loja online e descubra mais sobre nossos artesãos e produtos.</div>
-        <div class="text">O banner promocional diz: 'Promoção especial: 10% de desconto em seu primeiro pedido! Use o código ARTE10 ao finalizar a compra.' A câmera então se move para fora, mostrando a loja sendo fechada para o dia.</div>
+    <div class="container">
+        <div class="scene">
+            <h2>Cena 1: Loja de Artigos para Animais de Estimação</h2>
+            <p>Olá, sou Maria, proprietária da Pet Shop da Avenida. Aqui, encontramos tudo o que seu pet precisa para viver bem e feliz. Desde ração de alta qualidade até brinquedos divertidos, tudo está aqui. Venha nos visitar e descubra como podemos tornar a vida de seu pet ainda mais especial.</p>
+        </div>
+        <div class="scene">
+            <h2>Cena 2: Café Artesanal</h2>
+            <p>Seja bem-vindo ao Café Artesanal da Rua das Flores. Aqui, cada café é preparado com carinho e atenção aos detalhes. Combinamos o melhor do café com a atmosfera relaxante e acolhedora do nosso espaço. Convidamos você a experimentar nossa seleção de cafés especiais e saborear o melhor que a cidade tem a oferecer.</p>
+        </div>
+        <div class="scene">
+            <h2>Cena 3: Confeitaria Ecológica</h2>
+            <p>Olá, sou Ana, proprietária da Confeitaria Ecológica. Aqui, usamos ingredientes orgânicos e naturais para criar nossos doces e salgados. Nossos produtos são feitos com amor e são perfeitos para quem quer saborear a melhor culinária sem prejudicar o meio ambiente. Visite-nos e descubra a verdadeira essência da confeitaria artesanal.</p>
+        </div>
+        <div class="scene">
+            <h2>Cena 4: Estúdio de Fotografia Pessoal</h2>
+            <p>Olá, sou Carlos, fotógrafo do Estúdio Carlos. Capturamos momentos únicos e emocionantes através da fotografia. Oferecemos serviços personalizados para casais, famílias e indivíduos. Nosso objetivo é criar imagens que serão lembradas para sempre. Venha nos visitar e descubra como podemos ajudá-lo a preservar esses momentos especiais.</p>
+        </div>
+        <div class="scene">
+            <h2>Cena 5: Loja de Design de Interiores</h2>
+            <p>Olá, sou Luísa, proprietária da Loja de Design de Interiores. Aqui, encontramos móveis e acessórios que transformam qualquer espaço em um lar. Oferecemos uma ampla gama de opções para todos os gostos e estilos. Venha nos visitar e descubra como podemos ajudar a criar o ambiente perfeito para você e sua família.</p>
+        </div>
     </div>
 </body>
 </html>
