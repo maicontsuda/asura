@@ -1,77 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
         }
-        .container {
-            background-color: rgba(30, 30, 30, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            color: #ff6f69;
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 40px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            padding: 20px 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #888;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: left;
+            padding-left: 0;
         }
         li {
-            margin: 10px 0;
-            color: #bada55;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
         }
-        a {
-            color: #f39c12;
-            text-decoration: none;
+        .section {
+            margin-bottom: 40px;
         }
-        a:hover {
-            text-decoration: underline;
+        .section h3 {
+            margin-top: 20px;
+        }
+        .section p {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 15px 40px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
-        <h2>Landing Page</h2>
-        <ul>
-            <li><strong>Critérios de Aceite:</strong> Design responsivo, conteúdo claro e conciso, chamada à ação clara e persuasiva.</li>
-            <li><strong>Erros Comuns a Evitar:</strong> Layout confuso, imagens pequenas ou de baixa qualidade, conteúdo longo demais ou muito resumido.</li>
-            <li><strong>Como Revisar:</strong> Teste em diferentes dispositivos e tamanhos de tela, verifique o tempo necessário para entender o conteúdo, verifique se a CTA é clara e se chama a atenção.</li>
-        </ul>
-        <h2>Texto de Apresentação</h2>
-        <ul>
-            <li><strong>Critérios de Aceite:</strong> Linguagem clara, concisa e profissional, apresentação do serviço de forma atraente, sem informações desnecessárias.</li>
-            <li><strong>Erros Comuns a Evitar:</strong> Gramática incorreta, uso de jargões ou termos técnicos sem explicação, falta de contextualização ou relevância para o público-alvo.</li>
-            <li><strong>Como Revisar:</strong> Leitura em voz alta para verificar a fluidez, revisão por colegas ou profissionais de redação, verificação da consistência do tom e estilo.</li>
-        </ul>
-        <h2>Revisão de Texto</h2>
-        <ul>
-            <li><strong>Critérios de Aceite:</strong> Texto sem erros gramaticais, ortográficos ou de pontuação, clareza e precisão do conteúdo, adequação do tom ao público-alvo.</li>
-            <li><strong>Erros Comuns a Evitar:</strong> Erros de concordância, uso incorreto de pontuação, falta de coesão e coerência, uso exagerado de jargões ou termos técnicos.</li>
-            <li><strong>Como Revisar:</strong> Leitura minuciosa do texto, uso de ferramentas de correção gramatical, verificação da estrutura e organização do texto, revisão por colegas ou profissionais de redação.</li>
-        </ul>
-        <h2>5 Ideias de Conteúdo</h2>
-        <ul>
-            <li><strong>Critérios de Aceite:</strong> Inovação, relevância, engajamento, consistência com a marca e o público-alvo, relevância e utilidade para o leitor.</li>
-            <li><strong>Erros Comuns a Evitar:</strong> Repetição de informações, falta de originalidade, conteúdo desatualizado, falta de relevância ou interesse para o público-alvo, excesso de termos técnicos sem explicação.</li>
-            <li><strong>Como Revisar:</strong> Verificação da originalidade e relevância do conteúdo, análise do engajamento potencial com o público-alvo, revisão da consistência com a marca e a estratégia de conteúdo, verificação da utilidade e relevância para o leitor.</li>
-        </ul>
-    </div>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Landing Page</h2>
+            <ul>
+                <li><strong>Critérios de Aceite:</strong> Objetivo claro, chamada para ação (CTA) visível, design responsivo, conteúdo otimizado para conversão.</li>
+                <li><strong>Erros Comuns:</strong> Texto confuso, CTA invisível, elementos que não se alinham com a marca, falta de otimização para mobile.</li>
+                <li><strong>Como Revisar:</strong> Verificar se o texto se alinha com a proposta de valor, testar a usabilidade em dispositivos móveis, validar a coerência visual com a identidade da marca.</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Texto de Apresentação</h2>
+            <ul>
+                <li><strong>Critérios de Aceite:</strong> Claro, direto, com tom de voz consistente, com dados ou exemplos que respaldem a mensagem.</li>
+                <li><strong>Erros Comuns:</strong> Excesso de jargão, falta de foco, redundâncias, falta de tom de voz adequado ao público-alvo.</li>
+                <li><��o Revisar:</strong> Revisar a coesão, verificar se o tom se adequa ao público, garantir que todos os dados sejam precisos e relevantes.</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Revisão de Texto</h2>
+            <ul>
+                <li><strong>Critérios de Aceite:</strong> Texto gramaticalmente correto, com coerência lógica, linguagem clara, sem repetições.</li>
+                <li><strong>Erros Comuns:</strong> Erros de concordância, pontuação incorreta, uso inadequado de termos técnicos, frases ambíguas.</li>
+                <li><strong>Como Revisar:</strong> Ler em voz alta, verificar gramática com ferramentas, revisar a fluidez e a coesão do texto.</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>5 Ideias de Conteúdo</h2>
+            <ul>
+                <li><strong>Blog de Dicas:</strong> Textos informativos sobre o assunto da marca, com linguagem acessível e prático.</li>
+                <li><strong>Case de Sucesso:</strong> História real de cliente com resultados mensuráveis, com foco em benefícios e transformação.</li>
+                <li><strong>Guia Prático:</strong> Texto estruturado com passos claros, ideal para ensinar ou orientar o leitor.</li>
+                <li><strong>Artigo de Opinião:</strong> Texto com tom de autoridade, com argumentos sólidos e baseado em dados.</li>
+                <li><strong>Conteúdo Educacional:</strong> Texto com linguagem didática, com exemplos e explicações claras.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Asura - Todos os direitos reservados
+    </footer>
 </body>
 </html>
