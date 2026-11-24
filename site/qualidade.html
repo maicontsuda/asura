@@ -13,12 +13,13 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 40px;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
+            color: #ffffff;
         }
         main {
             padding: 40px 20px;
@@ -28,35 +29,42 @@
         section {
             margin-bottom: 40px;
         }
-        h2 {
+        section h2 {
             color: #ffffff;
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        section p {
+            margin-bottom: 15px;
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            padding-left: 20px;
         }
         li {
-            background-color: #1e1e1e;
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 4px solid #4caf50;
+            margin-bottom: 10px;
         }
-        .erro {
-            background-color: #2e2e2e;
-            border-left: 4px solid #ff9800;
+        .checklist {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
         }
-        .revisao {
-            background-color: #2e2e2e;
-            border-left: 4px solid #2196f3;
+        .checklist h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .checklist ul {
+            padding-left: 20px;
+        }
+        .checklist li {
+            margin-bottom: 8px;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #121212;
+            background-color: #1e1e1e;
             color: #888;
-            font-size: 0.9em;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -67,47 +75,115 @@
     <main>
         <section>
             <h2>Landing Page</h2>
-            <ul>
-                <li><strong>Critérios de Aceite:</strong> Texto claro, objetivo e chamativo; CTA visível e direcionado; Elementos visuais alinhados com a mensagem.</li>
-                <li><strong>Erros Comuns:</strong> Texto confuso, CTA oculto, falta de chamada para ação, elementos visuais discordantes.</li>
-                <li><strong>Como Revisar:</strong> Verificar se a landing page responde a uma única intenção; testar a usabilidade; validar a coerência entre texto e design.</li>
-            </ul>
+            <p>A landing page é a primeira impressão do seu público. Ela deve ser clara, direta e orientada para conversão.</p>
+            <div class="checklist">
+                <h3>Critérios de Aceite</h3>
+                <ul>
+                    <li>Destaque do valor proposto com destaque visual.</li>
+                    <li>Chamada para ação clara e visível.</li>
+                    <li>Conteúdo relevante e alinhado ao público-alvo.</li>
+                    <li>Design responsivo e compatível com dispositivos móveis.</li>
+                </ul>
+                <h3>Erros Comuns a Evitar</h3>
+                <ul>
+                    <li>Texto excessivo e sem foco.</li>
+                    <li>Imagens de baixa qualidade ou irrelevantes.</li>
+                    <li>Falta de call-to-action.</li>
+                    <li>Design desorganizado ou confuso.</li>
+                </ul>
+                <h3>Como Revisar Antes de Entregar</h3>
+                <ul>
+                    <li>Verifique se todos os elementos estão alinhados com o objetivo da landing page.</li>
+                    <li>Teste a navegação e a usabilidade.</li>
+                    <li>Confirme se o texto é conciso e direto.</li>
+                    <li>Verifique a compatibilidade com dispositivos móveis.</li>
+                </ul>
+            </div>
         </section>
         <section>
             <h2>Texto de Apresentação</h2>
-            <ul>
-                <li><strong>Critérios de Aceite:</strong> Estrutura lógica, tom adequado ao público, linguagem clara e impactante.</li>
-                <li><strong>Erros Comuns:</strong> Repetições, linguagem vaga, falta de foco, desalinhamento com o público-alvo.</li>
-                <li><strong>Como Revisar:</strong> Verificar a clareza, a consistência e o impacto do conteúdo; revisar gramática e estilo.</li>
-            </ul>
+            <p>O texto de apresentação é a base da comunicação da marca. Deve ser impactante e transmitir claramente a identidade e os valores da empresa.</p>
+            <div class="checklist">
+                <h3>Critérios de Aceite</h3>
+                <ul>
+                    <li>Clareza e simplicidade na comunicação.</li>
+                    <li>Alinhamento com a identidade da marca.</li>
+                    <li>Destaque do diferencial competitivo.</li>
+                    <li>Estilo consistente e profissional.</li>
+                </ul>
+                <h3>Erros Comuns a Evitar</h3>
+                <ul>
+                    <li>Texto excessivamente técnico ou complexo.</li>
+                    <li>Falta de personalidade ou voz única.</li>
+                    <li>Conteúdo genérico ou sem foco.</li>
+                    <li>Erros gramaticais ou de pontuação.</li>
+                </ul>
+                <h3>Como Revisar Antes de Entregar</h3>
+                <ul>
+                    <li>Verifique a coerência com a identidade da marca.</li>
+                    <li>Releia para garantir clareza e impacto.</li>
+                    <li>Confirme se todos os pontos foram abordados.</li>
+                    <li>Verifique a gramática e a pontuação.</li>
+                </ul>
+            </div>
         </section>
         <section>
             <h2>Revisão de Texto</h2>
-            <ul>
-                <li><strong>Critérios de Aceite:</strong> Gramática correta, coerência, estilo consistente e adequado ao público.</li>
-                <li><s>Erros Comuns:</s> Erros gramaticais, uso inadequado de termos, falta de coesão e clareza.</li>
-                <li><strong>Como Revisar:</strong> Revisar ortografia, gramática e estilo; validar a coerência e o tom do texto.</li>
-            </ul>
+            <p>A revisão de texto é essencial para garantir que o conteúdo esteja em conformidade com as diretrizes e que transmita claramente a mensagem da marca.</p>
+            <div class="checklist">
+                <h3>Critérios de Aceite</h3>
+                <ul>
+                    <li>Textos revisados e livres de erros gramaticais.</li>
+                    <li>Consistência no tom e estilo da comunicação.</li>
+                    <li>Alinhamento com os objetivos da campanha.</li>
+                    <li>Clareza e concisão no conteúdo.</li>
+                </ul>
+                <h3>Erros Comuns a Evitar</h3>
+                <ul>
+                    <li>Erros de gramática e ortografia.</li>
+                    <li>Falta de consistência no tom.</li>
+                    <li>Conteúdo repetitivo ou redundante.</li>
+                    <li>Desvio do foco principal da mensagem.</li>
+                </ul>
+                <h3>Como Revisar Antes de Entregar</h3>
+                <ul>
+                    <li>Releia o texto com atenção para erros gramaticais.</li>
+                    <li>Verifique a coerência e o fluxo da mensagem.</li>
+                    <li>Confirme se o conteúdo está alinhado com o objetivo da campanha.</li>
+                    <li>Verifique a clareza e a concisão do texto.</li>
+                </ul>
+            </div>
         </section>
         <section>
             <h2>5 Ideias de Conteúdo</h2>
-            <ul>
-                <li><strong>Critérios de Aceite:</strong> Ideias relevantes, criativas e alinhadas com o público-alvo.</li>
-                <li><strong>Erros Comuns:</strong> Ideias genéricas, falta de originalidade, desalinhamento com o público.</li>
-                <li><strong>Como Revisar:</strong> Validar a relevância, originalidade e alinhamento com o público-alvo; revisar a viabilidade de execução.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Revisão Final</h2>
-            <ul>
-                <li><strong>Critérios de Aceite:</strong> Todos os itens do checklist foram revisados e aprovados.</li>
-                <li><strong>Erros Comuns:</strong> Falta de revisão completa, ignorar etapas de qualidade, entregar conteúdo não finalizado.</li>
-                <li><strong>Como Revisar:</strong> Revisar todos os itens do checklist; validar a qualidade do conteúdo e a conformidade com os critérios estabelecidos.</li>
-            </ul>
+            <p>Para criar conteúdo de qualidade, é essencial ter ideias claras e alinhadas com o público-alvo. Abaixo estão cinco sugestões de conteúdo para diferentes nichos.</p>
+            <div class="checklist">
+                <h3>Critérios de Aceite</h3>
+                <ul>
+                    <li>Ideias alinhadas com o público-alvo.</li>
+                    <li>Conteúdo relevante e informativo.</li>
+                    <li>Estilo consistente e profissional.</li>
+                    <li>Destaque do valor da marca.</li>
+                </ul>
+                <h3>Erros Comuns a Evitar</h3>
+                <ul>
+                    <li>Ideias genéricas ou sem foco.</li>
+                    <li>Conteúdo irrelevante ou pouco informativo.</li>
+                    <li>Falta de clareza ou direção.</li>
+                    <li>Desvio do objetivo principal.</li>
+                </ul>
+                <h3>Como Revisar Antes de Entregar</h3>
+                <ul>
+                    <li>Verifique se as ideias são alinhadas com o público-alvo.</li>
+                    <li>Confirme se o conteúdo é coerente e informativo.</li>
+                    <li>Verifique a consistência no tom e estilo.</li>
+                    <li>Garanta que o conteúdo destaca o valor da marca.</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
+        &copy; 2025 Asura - Todos os direitos reservados.
     </footer>
 </body>
 </html>
