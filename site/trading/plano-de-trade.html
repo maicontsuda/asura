@@ -5,9 +5,9 @@
     <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -23,10 +23,11 @@
             margin: 20px;
             padding: 20px;
             background-color: #1e1e1e;
-            border-left: 4px solid #ff4081;
+            border-radius: 8px;
         }
         h2 {
-            color: #ff4081;
+            color: #ffffff;
+            margin-top: 0;
         }
         p {
             line-height: 1.6;
@@ -34,38 +35,40 @@
         ul {
             margin: 10px 0;
         }
+        li {
+            margin-bottom: 5px;
+        }
         .checklist {
-            margin-top: 15px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #ff9800;
         }
-        .checklist li {
-            margin: 5px 0;
-        }
-        .checklist input[type="checkbox"] {
-            margin-right: 10px;
+        .checklist h3 {
+            margin-top: 0;
         }
         .registro {
-            margin-top: 20px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
         }
         .registro h3 {
-            color: #ff4081;
+            margin-top: 0;
         }
-        .registro table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .registro th, .registro td {
-            border: 1px solid #444;
-            padding: 8px;
+        footer {
             text-align: center;
+            padding: 20px;
+            background-color: #121212;
+            color: #888;
+            font-size: 0.9em;
         }
         .aviso {
             background-color: #1e1e1e;
             padding: 15px;
-            border-left: 4px solid #00ff99;
-            margin-top: 30px;
+            border-left: 4px solid #ff5722;
+            margin-top: 20px;
         }
-        .aviso p {
-            color: #00ff99;
+        .aviso h3 {
+            color: #ff5722;
         }
     </style>
 </head>
@@ -75,59 +78,50 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir claramente o objetivo de cada operação é essencial para manter a disciplina. Exemplo: "Realizar uma operação de compra de ações do ABC com objetivo de 5% de lucro em 3 dias".</p>
+        <p>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: "Alcançar um ROI de 10% mensal com risco máximo de 2% por operação".</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identifique o mercado em que você será operar, como ações, forex, criptomoedas, etc. Exemplo: "Operar no mercado de ações brasileiro (B3) nos horários de 9h às 15h."</p>
+        <p>Selecione os mercados que você pretende operar, como ações, forex, criptomoedas, índices ou commodities. Descreva os motivos de escolha e os horizontes de operação.</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Defina os horários em que você planeja operar. Exemplo: "Operar de segunda a sexta-feira, das 9h às 15h, com pausas para almoço entre 12h e 13h."</p>
+        <p>Defina os horários de operação. Exemplo: "Operar de 08:00 às 16:00 em horários de mercado de Nova York" ou "Operar apenas em horários de alta volatilidade".</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída de operações. Exemplo: "Entrar com stop loss em 2% abaixo da média móvel de 50 dias e sair com take profit em 5% acima do preço de entrada."</p>
+        <p>Defina condições claras para entrar e sair do mercado. Exemplo: "Entrar com confirmação de breakout em níveis de suporte e sair com stop loss a 5% abaixo da entrada".</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você está disposto a aceitar por dia. Exemplo: "Não aceitar perdas acima de 2% do capital total em um único dia."</p>
+        <p>Estabeleça um limite máximo de perdas que você está disposto a aceitar em um dia. Exemplo: "Não investir mais de 2% do capital total em operações diárias".</p>
     </section>
-    <section>
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <div class="checklist">
-            <ul>
-                <li><input type="checkbox"> Verificar condições do mercado</li>
-                <li><input type="checkbox"> Confirmar regras de entrada e saída</li>
-                <li><input type="checkbox"> Analisar gráficos e indicadores</li>
-                <li><input type="checkbox"> Verificar capital disponível</li>
-                <li><input type="checkbox"> Confirmar alinhamento com o plano de trade</li>
-            </ul>
-        </div>
+    <section class="checklist">
+        <h3>Checklist Antes de Abrir Operação</h3>
+        <ul>
+            <li>Verificar se o plano está alinhado com os objetivos.</li>
+            <li>Confirmar que o mercado está em uma condição compatível com o plano.</li>
+            <li>Revisar os níveis de suporte/resistência e indicadores técnicos.</li>
+            <li>Garantir que o capital disponível respeite o limite de perdas.</li>
+            <li>Confirmar que o sinal de entrada foi validado por pelo menos dois métodos.</li>
+        </ul>
     </section>
     <section class="registro">
         <h3>Template de Registro</h3>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Ativo</th>
-                <th>Preço de entrada</th>
-                <th>Stop Loss</th>
-                <th>Take Profit</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>01/05/2025</td>
-                <td>ABC</td>
-                <td>R$ 100,00</td>
-                <td>R$ 98,00</td>
-                <td>R$ 105,00</td>
-                <td>Lucro de R$ 5,00</td>
-            </tr>
-        </table>
+        <p>Data: [inserir data]<br>
+        Mercado: [inserir mercado]<br>
+        Sinal: [inserir sinal]<br>
+        Entrada: [inserir preço de entrada]<br>
+        Stop Loss: [inserir valor do stop]<br>
+        Take Profit: [inserir valor do take profit]<br>
+        Resultado: [inserir resultado]</p>
     </section>
     <section class="aviso">
-        <p><strong>Aviso Legal:</strong> O conteúdo apresentado é apenas educacional e não constitui recomendação de investimento. A tomada de decisões financeiras deve ser feita com cuidado e baseada em sua própria análise e consultoria profissional.</p>
+        <h3>Aviso Legal</h3>
+        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Consulte um profissional antes de investir.</p>
     </section>
+    <footer>
+        &copy; 2025 Plano de Trade - Modelo para Operações. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
