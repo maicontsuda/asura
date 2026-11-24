@@ -12,14 +12,13 @@
             padding: 0;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #1f1f1f;
             padding: 20px;
             text-align: center;
         }
         h1 {
+            color: #00ffcc;
             margin: 0;
-            font-size: 24px;
-            color: #e0e0e0;
         }
         main {
             padding: 20px;
@@ -27,33 +26,31 @@
             margin: auto;
         }
         h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #555;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            color: #00ffcc;
+            margin-top: 30px;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         li {
-            background-color: #1a1a1a;
-            padding: 12px;
+            background-color: #1e1e1e;
+            padding: 10px;
             margin-bottom: 10px;
-            border-radius: 5px;
+            border-left: 4px solid #00ffcc;
         }
-        .aviso {
-            background-color: #222;
-            padding: 12px;
-            border-left: 4px solid #ff4444;
+        .alert {
+            background-color: #2a2a2a;
+            border-left: 4px solid #ff4081;
+            padding: 10px;
             margin-top: 20px;
         }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -62,51 +59,62 @@
         <h1>Checklist de SEO Básico para Landing Pages</h1>
     </header>
     <main>
-        <h2>1. Title Tag</h2>
+        <h2>1. Título (Title)</h2>
         <ul>
-            <li>Use um título curto e descritivo que inclua palavras-chave principais.</li>
-            <li>Evite títulos muito longos (idealmente até 60 caracteres).</li>
-            <li>Exemplo: "Como Melhorar a Velocidade do Seu Site em 2025 | SEO Básico".</li>
+            <li>O título deve ser curto, descrever o conteúdo e incluir palavras-chave relevantes.</li>
+            <li>Evite usar títulos longos ou repetitivos.</li>
+            <li>Exemplo: "Como aumentar suas vendas em 2024 – Guia Completo".</li>
         </ul>
 
         <h2>2. Meta Description</h2>
         <ul>
-            <li>Escreva uma descrição única e atraente de 155-160 caracteres.</li>
-            <li>Inclua palavras-chave relevantes e um chamado à ação.</li>
-            <li>Exemplo: "Descubra como melhorar a velocidade do seu site e aumentar o tráfego orgânico com dicas de SEO básicas.".</li>
+            <li>A meta description é o resumo do conteúdo da página.</li>
+            <li>Deve ter entre 155 e 160 caracteres e incluir palavras-chave.</li>
+            <li>Evite repetir o título e mantenha o tom persuasivo.</li>
         </ul>
 
-        <h2>3. Headings</h2>
+        <h2>3. Headings (H1, H2, H3)</h2>
         <ul>
-            <li>Use H1 para o título principal da página e H2 para seções principais.</li>
-            <li>Evite usar H1 repetidamente ou em subseções.</li>
-            <li>Evite H3, H4, H5 e H6 para evitar confusão com a estrutura da página.</li>
+            <li>Use H1 para o título principal e H2/H3 para seções menores.</li>
+            <li>Evite usar H1 em mais de uma página.</li>
+            <li>Use palavras-chave em headings, mas mantenha a legibilidade.</li>
         </ul>
 
-        <h2>4. Texto Alternativo</h2>
+        <h2>4. Texto Alternativo (Alt Text)</h2>
         <ul>
-            <li>Adicione descrições claras e relevantes para todas as imagens e vídeos.</li>
-            <li>Evite descrições genéricas como "imagem de pessoas" – use palavras-chave específicas.</li>
-            <li>Exemplo: "Pessoas felizes usando um novo produto de produtividade em um ambiente de escritório moderno."</li>
+            <li>Todo imagem deve ter um texto alternativo descritivo.</li>
+            <li>Evite usar palavras como "imagem" ou "foto" no alt text.</li>
+            <li>Use palavras-chave relevantes sem excesso.</li>
         </ul>
 
-        <h2>5. Velocidade do Site</h2>
+        <h2>5. Velocidade de Carregamento</h2>
         <ul>
-            <li>Use ferramentas como Google PageSpeed Insights para analisar a velocidade.</li>
-            <li>Optimize imagens, use CDN, minimize CSS e JavaScript.</li>
-            <li>Evite carregar scripts externos desnecessários.</li>
+            <li>Otimize imagens com ferramentas como TinyPNG ou ImageOptim.</li>
+            <li>Use formatos como WebP para imagens e SVG para ícones.</li>
+            <li>Evite scripts e CSS não essenciais no carregamento inicial.</li>
         </ul>
 
         <h2>6. Links Internos</h2>
         <ul>
             <li>Conecte páginas relevantes para melhorar a navegação e o SEO.</li>
-            <li>Use URLs amigáveis e inclua palavras-chave relevantes.</li>
-            <li>Exemplo: "Veja também como otimizar meta tags para SEO em nosso guia completo."</li>
+            <li>Use links internos para artigos, sobre nós e outros recursos.</li>
+            <li>Evite links quebrados e mantenha o conteúdo atualizado.</li>
         </ul>
 
-        <div class="aviso">
-            <p><strong>Evite:</strong> Títulos longos, meta descriptions repetidas, uso excessivo de H tags, imagens sem texto alternativo e links que não levam a conteúdo relevante.</p>
+        <div class="alert">
+            <p><strong>Evite:</strong> Texto duplicado, meta descriptions longas, imagens sem texto alternativo, links quebrados e conteúdos irrelevantes.</p>
         </div>
+
+        <h2>7. O Que NÃO Fazer</h2>
+        <ul>
+            <li>Não use palavras-chave de forma forçada ou a ponto de ser penalizado.</li>
+            <li>Não ignore o mobile-first, pois muitos usuários acessam por celular.</li>
+            <li>Não deixe o conteúdo vazio ou sem valor para o leitor.</li>
+            <li>Não ignore a experiência do usuário (UX) e o design responsivo.</li>
+        </ul>
     </main>
+    <footer>
+        &copy; 2025 Checklist SEO Básico – Melhore sua Landing Page com SEO eficaz.
+    </footer>
 </body>
 </html>
