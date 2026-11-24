@@ -1,134 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo de Estratégia</title>
+    <title>Plano de Trade - Guia Completo</title>
     <style>
         body {
             background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        header {
-            background-color: #1e1e1e;
+        .container {
+            background-color: rgba(32, 32, 32, 0.8);
+            border-radius: 8px;
             padding: 20px;
-            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1 {
-            color: #ff9800;
+            text-align: center;
+            color: #f94144;
         }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #1e1e1e;
-            border-radius: 8px;
+        .section {
+            margin-bottom: 20px;
         }
-        h2 {
-            color: #ffeb3b;
-            margin-top: 0;
+        .section h2 {
+            color: #f48fb1;
         }
-        p {
-            line-height: 1.6;
+        .section p {
+            margin: 10px 0;
         }
-        ul {
-            padding-left: 20px;
+        .checklist ul {
+            list-style-type: none;
+            padding: 0;
         }
         .checklist li {
+            background-color: #1c1c1c;
+            border-radius: 4px;
             margin-bottom: 10px;
-        }
-        .checklist li::before {
-            content: "✓";
-            color: #4caf50;
-            margin-right: 10px;
-        }
-        .registro {
-            background-color: #2e2e2e;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .registro h3 {
-            color: #ffeb3b;
-        }
-        .registro table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .registro th, .registro td {
-            border: 1px solid #444;
             padding: 10px;
-            text-align: center;
+            color: #828282;
         }
-        .aviso {
-            background-color: #1e1e1e;
-            padding: 20px;
-            margin-top: 40px;
-            border-left: 5px solid #ffeb3b;
-        }
-        .aviso p {
-            font-style: italic;
-            margin: 0;
+        .template {
+            background-color: #1c1c1c;
+            border-radius: 4px;
+            padding: 10px;
+            color: #828282;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Plano de Trade - Modelo de Estratégia</h1>
-    </header>
-    <section>
-        <h2>Objetivos</h2>
-        <p>Definir objetivos claros para o plano de trade é essencial para manter a disciplina e o foco. Alguns exemplos de objetivos incluem: alcançar uma taxa de sucesso de 60%, obter um retorno anual de 20% ou manter um risco de 2% por operação. Os objetivos devem ser mensuráveis, realistas e alinhados com sua estratégia de investimento.</p>
-    </section>
-    <section>
-        <h2>Mercados</h2>
-        <p>Identifique os mercados que você deseja operar, como ações, forex, criptomoedas ou índices. Cada mercado tem características distintas, e é importante escolher aqueles que se alinham com sua estratégia e conhecimento técnico.</p>
-    </section>
-    <section>
-        <h2>Horários</h2>
-        <p>Defina os horários em que você vai operar. Por exemplo, você pode preferir operar apenas nas ações de abertura do mercado ou durante horários específicos de alta volatilidade. Estabelecer horários ajuda a manter a consistência e a disciplina no trade.</p>
-    </section>
-    <section>
-        <h2>Regras de Entrada e Saída</h2>
-        <p>As regras de entrada e saída devem ser claras e baseadas em indicadores técnicos ou padrões de candlestick. Exemplo: entrar em uma operação quando a média móvel 50 cruza a média móvel 200 para cima e sair quando o preço atinge o nível de resistência. Toda regra deve ser documentada e seguida rigorosamente.</p>
-    </section>
-    <section>
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Estabeleça um limite de perdas diários, como 1% do seu capital. Isso ajuda a proteger seu capital e evitar perdas excessivas em operações que não saem conforme planejado.</p>
-    </section>
-    <section class="checklist">
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul>
-            <li>Verificar se o mercado está em tendência.</li>
-            <li>Confirmar que as regras de entrada foram atendidas.</li>
-            <li>Verificar o nível de risco em relação ao capital.</li>
-            <li>Confirmar a existência de um plano de saída.</li>
-            <li>Verificar se há condições de mercado favoráveis.</li>
-        </ul>
-    </section>
-    <section class="registro">
-        <h2>Template de Registro</h2>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Operação</th>
-                <th>Preço de Entrada</th>
-                <th>Preço de Saída</th>
-                <th>Lucro/Perda</th>
-                <th>Observações</th>
-            </tr>
-            <tr>
-                <td>01/05/2025</td>
-                <td>Compra de AAPL</td>
-                <td>190.50</td>
-                <td>192.30</td>
-                <td>+1.80</td>
-                <td>Confirmação de tendência</td>
-            </tr>
-        </table>
-    </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não é uma recomendação de investimento. Todos os traders devem realizar sua própria pesquisa e consultar um profissional antes de investir.</p>
-    </section>
+    <div class="container">
+        <h1>Plano de Trade - Guia Completo</h1>
+        <p>Este guia foi elaborado para fins educacionais e não substitui aconselhamento financeiro profissional. As informações aqui apresentadas são baseadas em práticas comuns no mercado de trade, mas não devem ser interpretadas como recomendações de investimento.</p>
+        <div class="section">
+            <h2>Objetivos</h2>
+            <p>Determinar os objetivos financeiros e estratégicos do trade. Isso pode incluir ganhos mensais, lucros anuais ou metas específicas de crescimento.</p>
+        </div>
+        <div class="section">
+            <h2>Mercados</h2>
+            <p>Identificar os mercados relevantes para o trade. Isso pode envolver análise de tendências, estudo de volume e comparação com outros ativos.</p>
+        </div>
+        <div class="section">
+            <h2>Horários</h2>
+            <p>Especificar os horários de trade. Considere fatores como fusos horários, atividade do mercado e impacto de eventos.</p>
+        </div>
+        <div class="section">
+            <h2>Regras de Entrada/Saída</h2>
+            <p>Definir critérios claros para entrar e sair das posições. Isso pode incluir indicadores técnicos, análise fundamentalista e análise de risco.</p>
+        </div>
+        <div class="section">
+            <h2>Limite de Perdas Diárias</h2>
+            <p>Estabelecer um limite de perdas que você está disposto a aceitar em um dia. Isso ajuda a proteger sua conta de perdas excessivas.</p>
+        </div>
+        <div class="section">
+            <h2>Checklist Antes de Abrir Operação</h2>
+            <ul class="checklist">
+                <li>Verifique se o horário de trade está adequado.</li>
+                <li>Confira se todas as informações do mercado foram atualizadas.</li>
+                <li>Avalie se as regras de entrada/saída foram seguidas.</li>
+                <li>Verifique se o capital disponível é suficiente.</li>
+                <li>Inspeção rápida de indicadores técnicos.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Template de Registro</h2>
+            <p>Registre todas as operações, incluindo data, horário, tipo de operação, preço de entrada/saída, volume, resultado e observações.</p>
+            <div class="template">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Tipo de Operação</th>
+                            <th>Preço de Entrada</th>
+                            <th>Preço de Saída</th>
+                            <th>Volume</th>
+                            <th>Resultado</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-10-01</td>
+                            <td>14:00</td>
+                            <td>Venda</td>
+                            <td>120.50</td>
+                            <td>119.80</td>
+                            <td>1000</td>
+                            <td>-700</td>
+                            <td>Volatilidade alta</td>
+                        </tr>
+                        <tr>
+                            <td>2023-10-02</td>
+                            <td>15:30</td>
+                            <td>Comprado</td>
+                            <td>118.50</td>
+                            <td>-</td>
+                            <td>500</td>
+                            <td>-</td>
+                            <td>Esperando confirmação de tendência</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
