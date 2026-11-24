@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Como Testar Estratégias de Trading Sem Arriscar Dinheiro</title>
+    <title>Como Testar uma Estratégia de Trading sem Arriscar Dinheiro</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #1e1e1e;
@@ -17,101 +17,73 @@
             text-align: center;
         }
         h1 {
-            margin: 0;
-            font-size: 2.5em;
+            color: #ffffff;
         }
         section {
-            padding: 30px;
-            margin: 20px auto;
-            max-width: 1000px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
         }
         h2 {
-            color: #e0e0e0;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
         }
         p {
-            font-size: 1.1em;
+            line-height: 1.6;
         }
         ul {
             padding-left: 20px;
         }
         .metricas {
-            background-color: #1a1a1a;
+            background-color: #2c2c2c;
             padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .metricas h3 {
-            margin-top: 0;
-        }
-        .diario {
-            background-color: #1a1a1a;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
+            border-radius: 6px;
         }
         .aviso {
-            background-color: #2a2a2a;
+            background-color: #2c2c2c;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 6px;
             margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #999;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Como Testar Estratégias de Trading Sem Arriscar Dinheiro</h1>
+        <h1>Como Testar uma Estratégia de Trading sem Arriscar Dinheiro</h1>
     </header>
     <section>
         <h2>Backtest, Forward Test e Conta Demo: O Que São e Como Funcionam</h2>
-        <p>O trading envolve riscos, mas existem formas de testar estratégias sem expor seu capital. As técnicas de <strong>backtest</strong>, <strong>forward test</strong> e <strong>conta demo</strong> são fundamentais para validar um sistema antes de aplicá-lo no mercado real.</p>
-        <p><strong>Backtest</strong> é a análise de uma estratégia usando dados históricos. Ele simula como a estratégia teria se comportado no passado, permitindo identificar padrões, ganhos e perdas. Já o <strong>forward test</strong> envolve a aplicação da estratégia em um período recente, mas ainda não utilizado para treinamento. A <strong>conta demo</strong> é um ambiente virtual onde você pode operar com dinheiro simulado, aprendendo a gerenciar riscos e ações sem colocar seu patrimônio em risco.</p>
-        <p>Esses métodos ajudam a entender se a estratégia é consistente, se ela gera lucro de longo prazo e se é capaz de lidar com diferentes condições de mercado.</p>
+        <p>O backtest é a análise de uma estratégia em dados históricos, para verificar se ela teria gerado lucro. Já o forward test é a aplicação da estratégia em dados recentes, antes de entrar no mercado real. A conta demo é um ambiente virtual que simula o mercado, permitindo testar estratégias sem risco financeiro.</p>
+        <p>Esses métodos são fundamentais para validar a eficácia de uma estratégia antes de investir dinheiro próprio. A conta demo oferece a oportunidade de praticar com dinheiro virtual, aprender com erros e ajustar a abordagem.</p>
     </section>
     <section>
-        <h2>Métricas Essenciais de uma Estratégia</h2>
+        <h2>Métricas Essenciais para Avaliação da Estratégia</h2>
         <div class="metricas">
-            <h3>1. Taxa de Acerto</h3>
-            <p>Percentual de operações que tiveram resultado positivo. Embora importante, não é o único indicador de qualidade.</p>
-            <h3>2. Payoff</h3>
-            <p>Relação entre ganho e perda. Uma estratégia com bom payoff pode ser mais lucrativa mesmo com taxa de acerto baixa.</p>
-            <h3>3. Drawdown</h3>
-            <p>Máxima perda acumulada em um período. É um indicador da volatilidade e da capacidade de recuperação.</p>
+            <p><strong>Taxa de Acerto:</strong> Relação entre operações vencedoras e perdedoras. Uma taxa de acerto acima de 50% é considerada positiva.</p>
+            <p><strong>Payoff:</strong> Relação entre ganho e perda. Um payoff de 2:1 significa que, por cada 1 unidade perdida, a estratégia ganha 2.</p>
+            <p><strong>Drawdown:</strong> Perda máxima acumulada em um período, que indica a volatilidade da estratégia e a capacidade de recuperação.</p>
         </div>
+        <p>Essas métricas ajudam a entender se a estratégia é consistente, controla riscos e oferece retorno esperado.</p>
     </section>
     <section>
-        <h2>Diário de Operações</h2>
-        <div class="diario">
-            <p>Um diário de operações é fundamental para acompanhar cada decisão e seu desempenho. Ele deve registrar: data, símbolo, entrada, saída, motivo da operação, resultado e lições aprendidas.</p>
-            <ul>
-                <li>Data e horário da operação</li>
-                <li>Condição de entrada e saída</li>
-                <li>Resultado em reais e percentual</li>
-                <li>Observações sobre o comportamento do mercado</li>
-                <li>Comentários sobre o que funcionou ou não</li>
-            </ul>
-        </div>
+        <h2>Diário de Operações: Registre e Aprenda</h2>
+        <p>O diário de operações é um registro detalhado de cada transação, incluindo data, horário, símbolo, entrada, saída, resultado e análise. Ele é essencial para identificar padrões, erros e oportunidades de melhoria.</p>
+        <p>Com o diário, é possível revisar decisões, avaliar o impacto de variáveis externas e ajustar a estratégia com base em dados reais.</p>
     </section>
     <section>
-        <h2>Critérios para Passar da Conta Demo para o Real</h2>
-        <p>Antes de passar para o mercado real, é essencial garantir que a estratégia foi validada em diferentes cenários. Alguns critérios incluem:</p>
+        <h2>Critérios para Passar da Conta Demo para o Mercado Real</h2>
+        <p>Para mudar para o mercado real, é necessário atingir metas claras e consistentes, como:</p>
         <ul>
-            <li>Consistência de resultados em pelo menos 3 períodos diferentes (ex: 1 ano, 6 meses, 3 meses)</li>
-            <li>Payoff razoável (geralmente acima de 1:1)</li>
-            <li>Drawdown máximo aceitável (ex: 20% ou menos)</li>
-            <li>Experiência prática com a operação em conta demo por pelo menos 6 meses</li>
+            <li>Resultado positivo em pelo menos 3 meses de demo com drawdown máximo inferior a 15%;</li>
+            <li>Taxa de acerto acima de 55% e payoff acima de 1:1;</li>
+            <li>Consistência na execução da estratégia e empatia com as regras;</li>
+            <li>Capacidade de gerenciar emoções e não agir por impulso.</li>
         </ul>
         <div class="aviso">
-            <p><strong>Aviso:</strong> A conta demo não garante resultados reais. O mercado é volátil e o desempenho no ambiente virtual não reflete necessariamente o desempenho no mercado real. É essencial ter disciplina e gerenciar riscos de forma adequada.</p>
+            <p><strong>Aviso:</strong> A conta demo não garante resultados reais. Ela não replica o ambiente do mercado, que inclui custos, slippage e fatores emocionais. A transição para o mercado real exige disciplina, gestão de risco e experiência prática.</p>
         </div>
     </section>
-    <footer>
-        &copy; 2025 - Guia de Teste de Estratégias de Trading
-    </footer>
 </body>
 </html>
