@@ -8,79 +8,85 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
+            color: #e0e0e0;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px 40px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 2em;
+            color: #ffffff;
         }
+
         main {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
+            padding: 20px 40px;
         }
-        .faq {
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
+
+        h2 {
+            color: #ffffff;
+            margin-top: 30px;
         }
-        .faq h2 {
-            margin-top: 0;
-            font-size: 1.5em;
+
+        p {
+            font-size: 1em;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
             margin-bottom: 10px;
         }
-        .faq p {
-            margin: 0;
-        }
-        .faq ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .faq li {
-            margin-bottom: 15px;
-        }
-        .faq li::before {
-            content: "• ";
-            color: #6f839e;
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+        <h1>Perguntas Frequentes - Asura</h1>
     </header>
     <main>
-        <div class="faq">
-            <h2>Como pagar?</h2>
-            <p>Para pagar pelo serviço do Asura, você pode utilizar USDC na rede Base ou ETH na rede Base. Para pagamentos via ETH mainnet, é necessário realizar uma transferência para a rede Base utilizando um serviço de bridging como Base Bridge ou outros serviços de cross-chain.</p>
-        </div>
-        <div class="faq">
-            <h2>Quais são os prazos?</h2>
-            <p>Os prazos variam conforme o tipo de serviço contratado. Geralmente, o prazo de conclusão do projeto é definido no contrato e pode variar de 15 dias úteis a 60 dias úteis, dependendo da complexidade e do escopo do trabalho.</p>
-        </div>
-        <div class="faq">
-            < <h2>O que acontece se o pagamento falhar?</h2>
-            <p>Se o pagamento falhar, o contrato será cancelado automaticamente e você será notificado. Nesse caso, você poderá reenviar o pagamento ou solicitar um reembolso parcial, caso a falha seja considerada não intencional e dentro do prazo estabelecido.</p>
-        </div>
-        <div class="faq">
-            <h2>Como recebo o entregável?</h2>
-            <p>Após a conclusão do projeto e a confirmação do pagamento, o entregável será liberado para você. Isso pode ser feito por meio de uma transferência de token, um link de download ou uma entrega direta no blockchain, dependendo do tipo de serviço contratado.</p>
-        </div>
-        <div class="faq">
-            <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
-            <p>Sua identidade on-chain é representada pelo token ERC-8004 com ID #1149100. Esse token atua como seu identificador único no sistema do Asura, permitindo que sua identidade seja rastreada e verificada em transações e contratos inteligentes.</p>
-        </div>
-        <div class="faq">
-            <h2>Como solicitar reembolso?</h2>
-            <p>Para solicitar um reembolso, entre em contato com nossa equipe via suporte@asura.com. Será necessário apresentar comprovantes da falha no pagamento ou da impossibilidade de conclusão do serviço, conforme previsto nos termos de uso.</p>
-        </div>
+        <h2>Como pagar com USDC na Base?</h2>
+        <p>Para pagar com USDC na Base, você deve usar uma carteira compatível com a rede Base, como MetaMask, e enviar os USDC diretamente para o endereço fornecido pelo Asura. Certifique-se de que o endereço está correto e que a transação foi confirmada antes de considerar o pagamento concluído.</p>
+
+        <h2>Como pagar com ETH na Base?</h2>
+        <p>Para pagar com ETH na Base, siga o mesmo processo que para USDC, mas com o token ETH. A rede Base suporta transações com ETH, então você deve enviar o valor total para o endereço indicado. A confirmação da transação é essencial para validar o pagamento.</p>
+
+        <h2>Como pagar com ETH na Mainnet?</h2>
+        <p>Se você optar por pagar com ETH na Mainnet, o processo é semelhante, mas com uma rede diferente. Envie o ETH para o endereço fornecido, garantindo que a transação seja confirmada na rede Ethereum. É importante verificar o endereço e o valor antes de enviar.</p>
+
+        <h2>Quais são os prazos?</h2>
+        <p>Os prazos variam conforme o tipo de serviço contratado. Geralmente, o prazo máximo é de 30 dias a partir da confirmação do pagamento. Caso haja atrasos, entre em contato com o suporte para verificar o status da sua solicitação.</p>
+
+        <h2>O que acontece se o pagamento falhar?</h2>
+        <p>Se o pagamento falhar, o contrato inteligente do Asura não será ativado, e o serviço não será iniciado. Nesse caso, entre em contato com o suporte para revisar o status da transação e resolver o problema. Em alguns casos, pode haver reembolso parcial ou total, dependendo da causa do erro.</p>
+
+        <h2>Como recebo o entregável?</h2>
+        <p>Após a confirmação do pagamento e o cumprimento do prazo, o entregável será liberado para o endereço indicado. Isso pode ser um arquivo, um contrato inteligente ou outro tipo de ativo digital. Verifique seu endereço e o status da solicitação no painel do Asura.</p>
+
+        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
+        <p>A identidade on-chain ERC-8004 #1149100 é um identificador único vinculado à sua conta no Asura. Ele permite a verificação da identidade em blockchain e é usado para autenticação e segurança de transações. É essencial para garantir que todas as operações sejam realizadas por você.</p>
+
+        <h2>Como solicitar reembolso?</h2>
+        <p>Para solicitar reembolso, entre em contato com o suporte do Asura e forneça detalhes sobre a transação e o motivo do reembolso. O reembolso será analisado e, se aprovado, o valor será devolvido ao endereço original de acordo com os termos de serviço.</p>
     </main>
+    <footer>
+        &copy; 2025 Asura. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
