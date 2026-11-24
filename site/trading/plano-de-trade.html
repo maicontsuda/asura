@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo de Operação</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -17,115 +17,118 @@
             text-align: center;
         }
         h1 {
-            color: #ffffff;
+            color: #ff9800;
         }
         section {
-            margin: 20px;
             padding: 20px;
-            background-color: #1a1a1a;
+            margin: 20px 0;
+            background-color: #1e1e1e;
             border-radius: 8px;
         }
         h2 {
-            color: #ffffff;
+            color: #ffeb3b;
             margin-top: 0;
         }
         p {
             line-height: 1.6;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            border-left: 5px solid #ff4d4d;
-            padding: 15px;
-            margin-top: 30px;
-            border-radius: 6px;
+        ul {
+            padding-left: 20px;
         }
-        .aviso p {
-            font-weight: bold;
+        .checklist li {
+            margin-bottom: 10px;
         }
-        .checklist {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .checklist input[type="checkbox"] {
+        .checklist li::before {
+            content: "✓";
+            color: #4caf50;
             margin-right: 10px;
         }
-        table {
+        .registro {
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .registro h3 {
+            color: #ffeb3b;
+        }
+        .registro table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
         }
-        th, td {
+        .registro th, .registro td {
             border: 1px solid #444;
             padding: 10px;
             text-align: center;
         }
-        th {
-            background-color: #2a2a2a;
-        }
-        .template {
+        .aviso {
             background-color: #1e1e1e;
-            border: 1px solid #444;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 40px;
+            border-left: 5px solid #ffeb3b;
         }
-        .template h3 {
-            margin-top: 0;
+        .aviso p {
+            font-style: italic;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo de Operação</h1>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir claramente o objetivo da operação é fundamental para manter a disciplina. Exemplo: "Realizar uma operação de compra de ações da empresa XYZ com objetivo de lucrar 5% nos próximos 3 dias." O objetivo deve ser específico, mensurável e alinhado com a estratégia de longo prazo.</p>
+        <p>Definir objetivos claros para o plano de trade é essencial para manter a disciplina e o foco. Alguns exemplos de objetivos incluem: alcançar uma taxa de sucesso de 60%, obter um retorno anual de 20% ou manter um risco de 2% por operação. Os objetivos devem ser mensuráveis, realistas e alinhados com sua estratégia de investimento.</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identifique o mercado em que você planeja operar. Exemplo: "Operações no mercado acionário brasileiro, focando em ações de empresas de tecnologia com capitalização acima de R$5 bilhões." Escolha o mercado com base em sua experiência e conhecimento.</p>
+        <p>Identifique os mercados que você deseja operar, como ações, forex, criptomoedas ou índices. Cada mercado tem características distintas, e é importante escolher aqueles que se alinham com sua estratégia e conhecimento técnico.</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Defina os horários em que você planeja operar. Exemplo: "Operações de entrada entre 9h e 10h, com saída programada para o final do dia, antes do fechamento do mercado às 17h." Respeite os horários e evite operar em momentos de alta volatilidade sem planejamento.</p>
+        <p>Defina os horários em que você vai operar. Por exemplo, você pode preferir operar apenas nas ações de abertura do mercado ou durante horários específicos de alta volatilidade. Estabelecer horários ajuda a manter a consistência e a disciplina no trade.</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída. Exemplo: "Entrada somente em níveis de suporte com volume positivo e confirmação de tendência. Saída em caso de ruptura da linha de tendência ou atingimento do objetivo de lucro de 5%." Seja rigoroso ao seguir as regras.</p>
+        <p>As regras de entrada e saída devem ser claras e baseadas em indicadores técnicos ou padrões de candlestick. Exemplo: entrar em uma operação quando a média móvel 50 cruza a média móvel 200 para cima e sair quando o preço atinge o nível de resistência. Toda regra deve ser documentada e seguida rigorosamente.</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina um limite máximo de perdas diárias para proteger seu capital. Exemplo: "Não ultrapassar 2% de capital em operações diárias." Respeite esse limite e evite a tentativa de recuperação em operações que já ultrapassaram o limite.</p>
+        <p>Estabeleça um limite de perdas diários, como 1% do seu capital. Isso ajuda a proteger seu capital e evitar perdas excessivas em operações que não saem conforme planejado.</p>
     </section>
-    <section>
+    <section class="checklist">
         <h2>Checklist Antes de Abrir Operação</h2>
-        <div class="checklist">
-            <input type="checkbox"> Confirmar o objetivo da operação
-            <input type="checkbox"> Verificar o mercado e os fundamentos
-            <input type="checkbox"> Analisar gráficos e indicadores técnicos
-            <input type="checkbox"> Confirmar horários e condições de entrada
-            <input type="checkbox"> Verificar o limite de perdas diário
-            <input type="checkbox"> Confirmar que o plano está alinhado com a estratégia
-        </div>
+        <ul>
+            <li>Verificar se o mercado está em tendência.</li>
+            <li>Confirmar que as regras de entrada foram atendidas.</li>
+            <li>Verificar o nível de risco em relação ao capital.</li>
+            <li>Confirmar a existência de um plano de saída.</li>
+            <li>Verificar se há condições de mercado favoráveis.</li>
+        </ul>
     </section>
-    <section>
+    <section class="registro">
         <h2>Template de Registro</h2>
-        <div class="template">
-            <h3>Operação: Ações da empresa XYZ</h3>
-            <table>
-                <tr><th>Data</th><td>2025-04-15</td></tr>
-                <tr><th>Horário de Entrada</th><td>9h30</td></tr>
-                <tr><th>Preço de Entrada</th><td>R$ 25,00</td></tr>
-                <tr><th>Objetivo de Lucro</th><td>5%</td></tr>
-                <tr><th>Limite de Perda</th><td>R$ 2,50</td></tr>
-                <tr><th>Status</th><td>Encerrada</td></tr>
-                <tr><th>Resultado</th><td>Lucro de R$ 2,50</td></tr>
-            </table>
-        </div>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Operação</th>
+                <th>Preço de Entrada</th>
+                <th>Preço de Saída</th>
+                <th>Lucro/Perda</th>
+                <th>Observações</th>
+            </tr>
+            <tr>
+                <td>01/05/2025</td>
+                <td>Compra de AAPL</td>
+                <td>190.50</td>
+                <td>192.30</td>
+                <td>+1.80</td>
+                <td>Confirmação de tendência</td>
+            </tr>
+        </table>
     </section>
-    <div class="aviso">
-        <p><strong>Aviso:</strong> O conteúdo aqui apresentado é educacional e não é uma recomendação de investimento. As operações de mercado envolvem riscos e você deve realizar sua própria análise e consultar um profissional antes de investir.</p>
-    </div>
+    <section class="aviso">
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. Todos os traders devem realizar sua própria pesquisa e consultar um profissional antes de investir.</p>
+    </section>
 </body>
 </html>
