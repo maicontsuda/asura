@@ -6,50 +6,59 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+
+        header h1 {
             margin: 0;
             font-size: 24px;
+            color: #ffffff;
         }
+
         main {
             padding: 30px;
-            max-width: 900px;
+            max-width: 800px;
             margin: auto;
         }
+
+        section {
+            margin-bottom: 30px;
+        }
+
         h2 {
-            margin-top: 40px;
-            font-size: 20px;
-            border-bottom: 2px solid #444;
-            padding-bottom: 8px;
+            color: #ffffff;
+            margin-bottom: 10px;
         }
+
         p {
-            margin: 15px 0;
+            font-size: 16px;
         }
-        ul {
-            margin: 15px 0;
-            padding-left: 20px;
+
+        .alert {
+            background-color: #1e1e1e;
+            border-left: 5px solid #ff4081;
+            padding: 15px;
+            margin-bottom: 20px;
         }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
+
+        .alert p {
+            margin: 0;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
-            color: #999;
+            color: #888;
             font-size: 14px;
         }
     </style>
@@ -59,29 +68,37 @@
         <h1>Garantias do Serviço</h1>
     </header>
     <main>
-        <h2>O que acontece se o entregável não atender o briefing?</h2>
-        <p>Se o entregável não atender ao briefing fornecido, o cliente deve entrar em contato com o fornecedor para verificar o motivo da não conformidade. O fornecedor se compromete a revisar o trabalho e, se for identificada uma falha, a corrigir a questão dentro do prazo acordado, desde que a solicitação seja feita dentro do prazo de resposta estabelecido.</p>
+        <section>
+            <h2>O que acontece se o entregável não atender o briefing?</h2>
+            <p>Se o entregável não atender ao briefing fornecido, o serviço será reavaliado com base nos critérios estabelecidos. Caso haja inconsistências significativas, o cliente poderá solicitar reajustes ou, se necessário, solicitar a revisão total do conteúdo. A responsabilidade final pela conformidade com o briefing cabe ao cliente, que deve revisar e aprovar o resultado antes da entrega final.</p>
+        </section>
 
-        <h2>Quantos ajustes são permitidos?</h2>
-        <p>Os ajustes são limitados a 3 revisões ou modificações, conforme definido no contrato. Cada ajuste deve ser solicitado dentro do prazo de resposta estabelecido. Caso o cliente solicite mais de 3 ajustes, será necessário entrar em acordo sobre novas condições ou custos adicionais.</p>
+        <section>
+            <h2>Quantos ajustes são permitidos?</h2>
+            <p>Podem ser feitos até 3 ajustes de conteúdo, limitados ao que foi solicitado no briefing. Cada ajuste deve ser claro, específico e dentro do escopo do projeto. Após esse número, serão cobrados ajustes adicionais com base no tempo e recursos necessários para realizar as modificações.</p>
+        </section>
 
-        <h2>Qual é o prazo de resposta?</h2>
-        <p>O prazo de resposta para ajustes e correções é de até 48 horas após a solicitação, em dias úteis. Caso haja complexidade ou necessidade de análise adicional, o prazo será comunicado ao cliente com antecedência.</p>
+        <section>
+            <h2>Qual é o prazo de resposta?</h2>
+            <p>Os ajustes serão respondidos em até 48 horas úteis após a solicitação, exceto em dias de feriado ou em casos de demanda muito alta. Caso haja necessidade de prazos mais curtos, o cliente deve solicitar com antecedência, e uma nova data será definida com base na disponibilidade da equipe.</p>
+        </section>
 
-        <h2>O que não é coberto?</h2>
-        <p>As seguintes situações não são cobertas:  
-        <ul>
-            <li>Mudanças que envolvam reestruturação completa do conteúdo, layout ou design;</li>
-            <li>Revisões que exijam reescrita de texto em grande escala;</li>
-            <li>Correções de erros de português ou gramática que sejam considerados subjetivos ou de estilo;</li>
-            <li>Demanda por conteúdo que ultrapasse o escopo inicialmente definido no briefing;</li>
-            <li>Demanda por conteúdo que exija pesquisa ou coleta de dados externos.</li>
-        </ul>
-        </p>
-        <p>Todo serviço é feito com base no briefing fornecido e com o entendimento claro das expectativas do cliente. Não são feitas promessas de resultados definitivos, mas sim garantias de atendimento ao que foi solicitado.</p>
+        <section>
+            <h2>O que não é coberto?</h2>
+            <div class="alert">
+                <p><strong>Revisão de conteúdo não solicitado:</strong> Ajustes que não estejam relacionados ao briefing original não serão cobertos.</p>
+                <p><strong>Repetição de conteúdo:</strong> Revisões que envolvam reescrever ou reorganizar partes já entregues sem alteração de conteúdo ou estrutura são consideradas ajustes e estão sujeitas aos limites estabelecidos.</p>
+                <p><strong>Revisão de terceiros:</strong> A equipe não se responsabiliza por revisões feitas por terceiros ou por erros originados em fontes externas.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Condições gerais</h2>
+            <p>As garantias descritas são válidas para o contrato celebrado e estão sujeitas à análise e aprovação do cliente. Não são feitas promessas de resultados absolutos, e a responsabilidade final pela conformidade com os requisitos do cliente cabe ao cliente.</p>
+        </section>
     </main>
     <footer>
-        &copy; 2025 - Serviços de Produção de Conteúdo. Todos os direitos reservados.
+        © 2025 Serviço de Produção de Conteúdo. Todos os direitos reservados.
     </footer>
 </body>
 </html>
