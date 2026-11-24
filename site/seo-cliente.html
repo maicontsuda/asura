@@ -7,7 +7,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -16,40 +16,52 @@
             padding: 20px 0;
             text-align: center;
         }
-        h1 {
+        header h1 {
+            color: #ffffff;
             font-size: 2.5em;
-            margin: 0;
         }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 10px;
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #1e1e1e;
+            border-radius: 8px;
         }
-        h2 {
-            color: #ff9800;
+        section h2 {
+            color: #ffffff;
             margin-top: 30px;
             font-size: 1.8em;
         }
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
         li {
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
+            margin-bottom: 15px;
         }
-        .highlight {
-            color: #ff5722;
-            font-weight: bold;
+        li::before {
+            content: "✅";
+            color: #4caf50;
+            margin-right: 10px;
+        }
+        .alert {
+            background-color: #2e2e2e;
+            border-left: 5px solid #ff4081;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .alert h3 {
+            color: #ffffff;
+            margin-top: 0;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #121212;
+            background-color: #1e1e1e;
             color: #999;
             font-size: 0.9em;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -57,34 +69,38 @@
     <header>
         <h1>Checklist de SEO Básico para Landing Page</h1>
     </header>
-    <div class="container">
+    <section>
         <h2>1. Title Tag</h2>
-        <p>O título da página é a primeira informação que o motor de busca exibe. Ele deve ser conciso, relevante e incluir palavras-chave principais. Exemplo: "Serviço de Marketing Digital - Aumente Suas Vendas Online".</p>
+        <p>O título da página é o primeiro elemento que o motor de busca exibe. Deve ser conciso, relevante e incluir palavras-chave principais. Evite repetir o nome do site e mantenha-o abaixo de 60 caracteres.</p>
 
         <h2>2. Meta Description</h2>
-        <p>A meta description é um resumo da página que aparece nos resultados de busca. Deve ter entre 155 e 160 caracteres, ser atraente e incluir palavras-chave. Exemplo: "Descubra como o serviço de marketing digital pode aumentar suas vendas online. Consulte um especialista agora!"</p>
+        <p>A meta description é uma breve descrição da página que aparece nos resultados de busca. Deve ser entre 155 e 160 caracteres, incluir palavras-chave e ser persuasiva para aumentar o clique.</p>
 
         <h2>3. Headings (H1, H2, H3)</h2>
-        <p>Use os headings de forma hierárquica. O H1 deve ser único e representar o conteúdo principal da página. Os H2 e H3 devem organizar os tópicos de maneira clara e lógica.</p>
+        <p>Use os headings para estruturar o conteúdo. O H1 deve ser único e relacionado ao tema da página. Os H2 e H3 ajudam na navegação e na indexação, devendo ser usados de forma hierárquica.</p>
 
         <h2>4. Texto Alternativo (Alt Text)</h2>
-        <p>Todo imagem deve ter texto alternativo descritivo e relevante. Isso ajuda os motores de busca a entenderem o conteúdo da imagem e também é essencial para acessibilidade.</p>
+        <p>Todo imagem deve ter texto alternativo descritivo, incluindo palavras-chave relevantes, mas sem ser repetitivo. Isso melhora a acessibilidade e a indexação por motores de busca.</p>
 
-        <h2>5. Velocidade de Carregamento</h2>
-        <p>Uma landing page lenta pode afetar a experiência do usuário e o SEO. Optimize imagens, minimize o uso de scripts e utilize ferramentas como Google PageSpeed Insights para melhorar o desempenho.</p>
+        <h2>5. Velocidade da Página</h2>
+        <p>Velocidade é crucial para o SEO e a experiência do usuário. Use ferramentas como PageSpeed Insights para otimizar imagens, scripts e carregamento de conteúdo. Evite a sobrecarga de recursos.</p>
 
         <h2>6. Links Internos</h2>
-        <p>Links internos ajudam a distribuir a autoridade da página e melhoram a navegação. Conecte páginas relevantes dentro do site, como "Como funciona o marketing digital" ou "Benefícios do serviço de marketing digital".</p>
+        <p>Crie links internos para outras páginas relevantes do site. Isso ajuda a distribuir autoridade e melhora a navegação do usuário. Certifique-se de que os links sejam úteis e contextualmente relevantes.</p>
 
-        <h2>7. O Que NÃO Fazer</h2>
-        <ul>
-            <li><span class="highlight">Evite texto repetitivo ou falso</span>: Não crie conteúdo que não agregue valor ao usuário.</li>
-            <li><span class="highlight">Não use palavras-chave de forma excessiva</span>: Isso pode levar a penalizações por SEO.</li>
-            <li><span class="highlight">Não esqueça de otimizar o mobile</span>: A maioria dos usuários acessa o site pelo celular, então certifique-se de que a página é responsiva.</li>
-        </ul>
-    </div>
+        <div class="alert">
+            <h3>O que NÃO fazer</h3>
+            <ul>
+                <li>Evite tags repetidas ou excessivas.</li>
+                <li>Não use palavras-chave de forma forçada ou spam.</li>
+                <li>Não inclua conteúdo duplicado.</li>
+                <li>Não coloque links internos sem sentido.</li>
+                <li>Não esqueça de otimizar para dispositivos móveis.</li>
+            </ul>
+        </div>
+    </section>
     <footer>
-        &copy; 2025 Checklist SEO Básico - Todos os direitos reservados.
+        &copy; 2025 Checklist SEO - Otimização para Landing Pages
     </footer>
 </body>
 </html>
