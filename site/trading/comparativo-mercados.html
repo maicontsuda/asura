@@ -5,69 +5,51 @@
     <title>Comparação entre Forex, Ações e Cripto</title>
     <style>
         body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+            line-height: 1.6;
         }
-
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-
         h1 {
-            margin: 0;
-            font-size: 2em;
+            color: #ffffff;
         }
-
-        .aviso {
-            background-color: #1e1e1e;
-            border: 1px solid #555;
-            padding: 15px;
+        .container {
+            max-width: 1000px;
             margin: 20px auto;
-            max-width: 800px;
+            padding: 20px;
+            background-color: #1e1e1e;
             border-radius: 8px;
-            font-style: italic;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px auto;
-            background-color: #1e1e1e;
-            border: 1px solid #555;
+            margin-top: 20px;
         }
-
         th, td {
-            padding: 15px;
-            text-align: center;
-            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
         }
-
         th {
-            background-color: #2e2e2e;
+            background-color: #2a2a2a;
         }
-
         tr:nth-child(even) {
-            background-color: #2e2e2e;
+            background-color: #2a2a2a;
         }
-
-        .descricao {
-            margin: 30px auto;
-            max-width: 800px;
-            font-size: 1em;
+        .aviso {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #222;
+            border-left: 5px solid #ff4757;
         }
-
-        a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        .aviso p {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -75,64 +57,67 @@
     <header>
         <h1>Comparação entre Forex, Ações e Cripto</h1>
     </header>
+    <div class="container">
+        <p>O mercado financeiro oferece diversas opções para investir, cada uma com características e riscos diferentes. A seguir, uma comparação entre Forex, Ações e Cripto, com base em critérios como liquidez, volatilidade, horário de negociação, alavancagem, riscos e regulamentação.</p>
 
-    <div class="aviso">
-        Este conteúdo é educacional e não constitui recomendação de investimento. As decisões de investimento devem ser feitas com base em pesquisa própria e orientação profissional.
-    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Forex</th>
+                    <th>Ações</th>
+                    <th>Cripto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Liquidez</td>
+                    <td>Extremamente líquido, devido à grande movimentação global</td>
+                    <td>Líquido, especialmente em mercados principais como NYSE e NASDAQ</td>
+                    <td>Muito líquido em exchanges grandes, mas varia conforme moeda</td>
+                </tr>
+                <tr>
+                    <td>Volatilidade</td>
+                    <td>Alta, especialmente em pares de moedas menores</td>
+                    <td>Média a alta, dependendo do setor e economia</td>
+                    <td>Extremamente volátil, com grandes variações em curto prazo</td>
+                </tr>
+                <tr>
+                    <td>Horário de Negociação</td>
+                    <td>24 horas por dia, 5 dias por semana</td>
+                    <td>Horário fixo, geralmente das 9h às 16h</td>
+                    <td>24 horas por dia, 7 dias por semana</td>
+                </tr>
+                <tr>
+                    <td>Alavancagem Típica</td>
+                    <td>1:100 a 1:500</td>
+                    <td>1:2 a 1:10</td>
+                    <td>1:20 a 1:100</td>
+                </tr>
+                <tr>
+                    <td>Riscos</td>
+                    <td>Risco de mercado e de liquidez</td>
+                    <td>Risco de mercado e de crédito</td>
+                    <td>Risco de mercado, volatilidade e regulatório</td>
+                </tr>
+                <tr>
+                    <td>Regulamentação</td>
+                    <td>Regulado por autoridades como BIS e FED</td>
+                    <td>Regulado por comissões como SEC e CVM</td>
+                    <td>Regulado por entidades como SEC e FCA, mas varia por país</td>
+                </tr>
+                <tr>
+                    <td>Perfil Adequado</td>
+                    <td>Investidores com alto capital e tolerância a risco</td>
+                    <td>Investidores com horizonte de médio a longo prazo</td>
+                    <td>Investidores com alto risco e tolerância a volatilidade</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table>
-        <tr>
-            <th></th>
-            <th>Forex</th>
-            <th>Ações</th>
-            <th>Cripto</th>
-        </tr>
-        <tr>
-            <td><strong>Liquidez</strong></td>
-            <td>Extrema, mercado global 24h</td>
-            <td>Boa, depende do ativo e mercado</td>
-            <td>Alta, especialmente para maiores moedas</td>
-        </tr>
-        <tr>
-            <td><strong>Volatilidade</strong></td>
-            <td>Média a alta, influenciada por macroeconomia</td>
-            <td>Varia conforme setor e empresa</td>
-            <td>Extrema, com variações bruscas</td>
-        </tr>
-        <tr>
-            <td><strong>Horário</strong></td>
-            <td>Disponível 24h/dia, 5 dias/semana</td>
-            <td>Funciona em horários fixos por mercado</td>
-            <td>24h/dia, 7 dias/semana</td>
-        </tr>
-        <tr>
-            <td><strong>Alavancagem típica</strong></td>
-            <td>1:100 a 1:500</td>
-            <td>1:10 a 1:50</td>
-            <td>1:20 a 1:100</td>
-        </tr>
-        <tr>
-            <td><strong>Riscos</strong></td>
-            <td>Alta exposição a mudanças de taxa</td>
-            <td>Risco de perda de capital, dependendo do desempenho da empresa</td>
-            <td>Risco extremo de volatilidade e segurança</td>
-        </tr>
-        <tr>
-            <td><strong>Regulamentação</strong></td>
-            <td>Regulamentado por bancos centrais</td>
-            <td>Regulado por comissões de valores mobiliários</td>
-            <td>Variável, muitas moedas não regulamentadas</td>
-        </tr>
-        <tr>
-            <td><strong>Perfil adequado</strong></td>
-            <td>Investidores com experiência e tolerância a risco</td>
-            <td>Investidores com horizonte médio a longo</td>
-            <td>Investidores com alto risco e disposição para volatilidade</td>
-        </tr>
-    </table>
-
-    <div class="descricao">
-        O mercado de forex envolve a compra e venda de moedas, geralmente com alavancagem, permitindo ganhos rápidos, mas também grandes perdas. As ações representam parte de uma empresa, e seu desempenho está ligado ao desempenho da empresa e do setor. Já as criptomoedas são ativos digitais com alto potencial de crescimento, mas também com risco extremo de perda. Cada um desses mercados tem suas particularidades e exige um entendimento profundo antes de se envolver.
+        <div class="aviso">
+            <p><strong>Aviso:</strong> O conteúdo apresentado é educacional e não constitui recomendação de investimento. Antes de investir, consulte um profissional qualificado e avalie seus próprios riscos e objetivos.</p>
+        </div>
     </div>
 </body>
 </html>
