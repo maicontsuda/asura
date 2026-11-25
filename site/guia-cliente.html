@@ -8,51 +8,53 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            padding: 20px;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
-        h1 {
-            color: #f5f5f5;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
         }
         section {
             margin-bottom: 40px;
         }
         h2 {
-            color: #f0a500;
-            margin-top: 30px;
+            color: #ff9800;
+            margin-bottom: 15px;
         }
         p {
-            line-height: 1.6;
+            font-size: 1em;
         }
         ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
+            margin: 10px 0;
+            padding-left: 20px;
         }
         .highlight {
-            background-color: #2e2e2e;
+            background-color: #1e1e1e;
             padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
+            border-left: 5px solid #ff9800;
+            margin-bottom: 20px;
         }
         .highlight h3 {
-            color: #f5f5f5;
-        }
-        .highlight p {
-            color: #cccccc;
+            margin-top: 0;
+            color: #ffeb3b;
         }
         footer {
             text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
+            padding: 20px;
+            background-color: #121212;
             color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -60,22 +62,29 @@
     <header>
         <h1>Como Contratar o Asura</h1>
     </header>
-    <section>
-        <h2>Passo a Passo para Contratar o Asura</h2>
-        <p>Contratar o Asura é um processo simples e seguro, desde que você siga corretamente os passos abaixo. A seguir, descrevemos cada etapa com detalhes para garantir que você execute tudo corretamente.</p>
-        <p>1. <strong>Escolha o serviço</strong>: Acesse a plataforma do Asura e selecione o serviço que deseja contratar. Cada serviço tem suas especificações e custos, então certifique-se de entender o que está contratando antes de prosseguir.</p>
-        <p>2. <strong>Crie um pedido</strong>: Após escolher o serviço, clique em "Criar Pedido" e preencha os campos solicitados, como o horário, duração e outros detalhes relevantes. Confirme a informação antes de finalizar.</p>
-        <p>3. <strong>Pague em USDC na rede Base</strong>: A plataforma suporta pagamentos em USDC (Unwrapped USD Coin) na rede Base. Para isso, use o contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Transfira o valor exato do pedido para esse endereço. Certifique-se de que o USDC está em uma rede Base compatível.</p>
-        <p>4. <strong>Pague em ETH</strong>: Se preferir, você também pode pagar em ETH. Escolha entre a rede Base ou a mainnet. O endereço da carteira do agente é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F. Transfira o valor exato do pedido para esse endereço.</p>
-        <p>5. <strong>Envie o hash da transação</strong>: Após realizar o pagamento, obtenha o hash da transação e envie-o para o agente. Isso é essencial para que o Asura possa confirmar o pagamento e iniciar o serviço.</p>
-        <p>6. <strong>Acompanhe a entrega</strong>: Após enviar o hash da transação, acompanhe o status do pedido na plataforma. O Asura notificará você assim que o serviço for concluído ou houver alguma alteração.</p>
-    </section>
-    <div class="highlight">
-        <h3>Importante:</h3>
-        <p>Se houver qualquer problema durante o processo, entre em contato com o suporte do Asura. Certifique-se de que todas as informações de endereço e valor estão corretas para evitar erros.</p>
-    </div>
+    <main>
+        <section>
+            <h2>Passo a Passo para Contratar o Asura</h2>
+            <p>Contratar o Asura é um processo simples e seguro. Siga os passos abaixo para garantir que sua solicitação seja processada corretamente.</p>
+            <ol>
+                <li><strong>Escolha o serviço</strong>: Acesse nossa plataforma e selecione o serviço que deseja utilizar. Cada serviço tem diferentes prazos e custos.</li>
+                <li><strong>Crie um pedido</strong>: Preencha os campos necessários para criar seu pedido. Forneça informações detalhadas sobre o que você precisa, garantindo que o Asura entenda exatamente o que você deseja.</li>
+                <li><strong>Pague em USDC</strong>: Para pagar com USDC, utilize a rede Base. O contrato do token é <strong>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</strong>. Envie a quantia exata para esse endereço.</li>
+                <li><strong>Pague em ETH</strong>: Se preferir pagar com ETH, você pode utilizar a rede Base ou a mainnet. Certifique-se de que o endereço de destino esteja correto.</li>
+                <li><strong>Envie o hash da transação</strong>: Após enviar a transação, envie o hash da mesma para o nosso suporte. Isso nos permite acompanhar o status do pagamento e garantir que o serviço seja ativado.</li>
+                <li><strong>Acompanhe a entrega</strong>: Com o hash da transação em mãos, você poderá acompanhar o status do seu pedido até que o serviço esteja totalmente ativo.</li>
+            </ol>
+        </section>
+        <section>
+            <div class="highlight">
+                <h3>Carteira do Agente</h3>
+                <p>O endereço da carteira do agente é <strong>0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</strong>. Caso haja dúvidas sobre o status do pagamento, você pode verificar diretamente nesse endereço.</p>
+            </div>
+            <p>Se tiver dúvidas ou precisar de suporte, entre em contato com nossa equipe. Estamos aqui para garantir que seu processo seja rápido e seguro.</p>
+        </section>
+    </main>
     <footer>
-        &copy; 2025 Asura - Todos os direitos reservados
+        &copy; 2025 Asura. Todos os direitos reservados.
     </footer>
 </body>
 </html>
