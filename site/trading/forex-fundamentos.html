@@ -8,50 +8,58 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
+            color: #f5f5f5;
         }
-
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            color: #00ffcc;
+        h1 {
+            color: #00bfff;
         }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #00ffcc;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
         .aviso {
-            background-color: #2a2a2a;
+            background-color: #222;
+            border: 1px solid #00bfff;
             padding: 15px;
-            margin-top: 30px;
-            border-left: 5px solid #00ffcc;
+            margin: 20px 0;
+            font-style: italic;
         }
-
-        .aviso p {
-            font-weight: bold;
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+        h2 {
+            color: #00bfff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 15px 0;
+        }
+        .sessoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .sessao {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .sessao h3 {
+            color: #00bfff;
+        }
+        .sessao p {
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -59,62 +67,41 @@
     <header>
         <h1>Fundamentos do Mercado Forex</h1>
     </header>
-    <main>
-        <section>
-            <h2>O que é o Mercado Forex?</h2>
-            <p>O mercado forex, ou mercado cambial, é o maior mercado financeiro do mundo, onde as moedas são negociadas 24 horas por dia, 5 dias por semana. Ele é composto por instituições, investidores e traders que buscam ganhar com as flutuações cambiais.</p>
-        </section>
-
-        <section>
-            <h2>Pares de Moedas</h2>
-            <p>Os pares de moedas são combinações de duas moedas que são negociadas simultaneamente. O mais conhecido é o EUR/USD (Euro contra Dólar Americano), mas existem diversos outros, como USD/JPY, GBP/USD, e até pares de moedas menores, chamados de "crosses".</p>
-        </section>
-
-        <section>
-            < <h2>Pip</h2>
-            <p>O pip é a unidade de medida mais pequena de movimento no mercado forex. Geralmente representa 0,0001 em pares de moedas, como EUR/USD. O valor do pip varia conforme o par e o tamanho da posição.</p>
-        </</section>
-
-        <section>
-            <h2>Lote</h2>
-            <p>Um lote é a unidade de negociação no mercado forex. Normalmente, 1 lote é igual a 100.000 unidades da moeda base. Alguns mercados também permitem lotes menores, chamados de mini-lotes e micro-lotes.</p>
-        </section>
-
-        <section>
-            <h2>Alavancagem</h2>
-            <p>A alavancagem permite que traders negociem com capital menor, aumentando o potencial de ganhos, mas também os riscos. Comummente, a alavancagem é de 1:50, 1:100 ou até 1:500, dependendo do broker.</p>
-        </section>
-
-        <section>
-            <h2>Spread</h2>
-            <p>O spread é a diferença entre o preço de compra e venda de uma moeda. É a primeira forma de lucro do broker e varia conforme o par de moedas e o tipo de conta.</p>
-        </section>
-
-        <section>
-            <h2>Horários de Sessão</h2>
-            <p>As principais sessões do mercado forex são:</p>
-            <ul>
-                <li><strong>Sessão de Tóquio:</strong> 22:00 - 06:00 (horário de Brasília)</li>
-                <li><strong>Sessão de Londres:</strong> 00:00 - 12:00 (horário de Brasília)</li>
-                <li><strong>Sessão de Nova York:</strong> 12:00 - 20:00 (horário de Brasília)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Participantes do Mercado Forex</h2>
-            <p>O mercado forex é composto por diversos participantes, incluindo:</p>
-            <ul>
-                <li><strong>Bancos Centrais:</strong> Regulam as taxas de juros e a política monetária.</li>
-                <li><strong>Bancos comerciais:</strong> Negociam grandes volumes de moedas.</li>
-                <li><strong>Corretoras:</strong> Oferecem serviços de negociação para investidores.</li>
-                <li><strong>Investidores institucionais:</strong> Como fundos e hedge funds.</li>
-                <li><strong>Trader individuais:</strong> Pessoas que negociam por conta própria.</li>
-            </ul>
-        </section>
-
+    <section>
+        <p>O mercado forex, ou mercado cambial, é o maior mercado financeiro do mundo, onde as moedas são compradas e vendidas. Ele opera 24 horas por dia, cinco dias por semana, e envolve a troca de pares de moedas, como USD/EUR, EUR/JPY e GBP/USD. O mercado é liquido, global e altamente volátil, sendo acessível a investidores individuais e institucionais.</p>
         <div class="aviso">
-            <p><strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. A negociação no mercado forex envolve riscos significativos e pode resultar em perdas.</p>
+            Este conteúdo é educacional e não é uma recomendação de investimento.
         </div>
-    </main>
+        <h2>Pares de Moedas</h2>
+        <p>Os pares de moedas são combinações de duas moedas, como USD/JPY (Dólar Americano contra Iene Japonês). Eles são classificados em pares principais (major pairs), pares menores (minor pairs) e pares cruzados (cross pairs). O USD é o mais negociado, seguido do EUR e do JPY.</p>
+        <h2>Pip</h2>
+        <p>O pip é a unidade de medida mínima de movimento de uma moeda no mercado forex. Representa 0,0001 em pares com quatro casas decimais, como EUR/USD. Em pares com duas casas, como USD/JPY, um pip equivale a 0,01.</p>
+        <h2>Lote</h2>
+        <p>Um lote é a unidade básica de negociação no forex. Um lote padrão é igual a 100.000 unidades da moeda base. Existem também lotes menores, como mini (10.000) e micro (1.000), que permitem negociações com menor capital.</p>
+        <h2>Alavancagem</h2>
+        <p>A alavancagem permite que os investidores negociem com capital menor, ampliando os ganhos e os riscos. Geralmente oferecida em razões como 1:100 ou 1:50, ela é um recurso poderoso, mas deve ser usada com cuidado.</p>
+        <h2>Spread</h2>
+        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. É o custo de transação e varia conforme a liquidez do par e a corretora. Moedas mais líquidas tendem a ter spreads menores.</p>
+        <h2>Horários de Sessão</h2>
+        <div class="sessoes">
+            <div class="sessao">
+                <h3>Tóquio</h3>
+                <p>Aberta de segunda a sexta-feira, das 10h às 16h (horário de Brasília). É a sessão mais líquida devido à alta participação do Japão.</p>
+            </div>
+            <div class="sessao">
+                <h3>Londres</h3>
+                <p>Aberta de segunda a sexta-feira, das 12h às 18h (horário de Brasília). É uma das sessões mais ativas, com grande volume de transações.</p>
+            </div>
+            <div class="sessao">
+                <h3>Nova York</h3>
+                <p>Aberta de segunda a sexta-feira, das 13h às 21h (horário de Brasília). É a sessão final do dia, com maior volatilidade e influência de fatores macroeconômicos.</p>
+            </div>
+        </div>
+        <h2>Participantes</h2>
+        <p>O mercado forex é composto por vários participantes, incluindo bancos centrais, instituições financeiras, corretoras, traders profissionais e investidores individuais. Ações de grandes bancos e o comportamento de centrais monetárias têm grande impacto nas taxas de câmbio.</p>
+    </section>
+    <footer>
+        © 2025 - Fundamentos do Mercado Forex - Educação Financeira
+    </footer>
 </body>
 </html>
