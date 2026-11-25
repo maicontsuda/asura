@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
-            line-height: 1.6;
+            padding: 20px;
         }
         header {
             background-color: #1e1e1e;
@@ -18,34 +18,35 @@
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
+            font-size: 2em;
         }
         h2 {
-            color: #e0e0e0;
-            border-bottom: 2px solid #444;
-            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.5em;
         }
         p {
-            font-size: 1.1em;
+            line-height: 1.6;
+            font-size: 1em;
         }
-        ul {
-            margin: 15px 0;
+        .section {
+            margin-bottom: 40px;
         }
-        li {
-            margin-bottom: 10px;
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 5px solid #e63946;
+            margin-top: 30px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
-            font-size: 0.9em;
-            margin-top: 40px;
+        .aviso p {
+            font-weight: bold;
+            margin: 0;
+        }
+        a {
+            color: #e63946;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -53,29 +54,32 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <section>
-        <h2>Risco por Operação (1–2% do Capital)</h2>
-        <p>Em operações de trading ou investimento, é fundamental limitar o risco de cada operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso evita que uma única perda comprometa significativamente o patrimônio do investidor. A regra básica é: nunca arriscar mais do que você pode perder.</p>
-        
+    <div class="section">
+        <h2>Risco por Operação</h2>
+        <p>Em operações financeiras, é essencial limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1% ou 2% do seu capital. Esse limite ajuda a proteger o capital e evita que uma única operação comprometa significativamente o seu patrimônio.</p>
+    </div>
+    <div class="section">
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ordem que limita as perdas ao definir um ponto de venda automática em caso de desvalorização. Já o take profit é uma ordem que define o momento de encerrar a operação ao atingir um lucro almejado. Juntos, esses instrumentos ajudam a disciplinar o comportamento do trader.</p>
-        
+        <p>O stop loss é uma ordem que limita as perdas em uma operação, enquanto o take profit define o ponto em que você sairá do mercado para garantir lucros. Esses limites ajudam a manter a disciplina emocional e a evitar decisões impulsivas, garantindo que você respeite seus planos de trading.</p>
+    </div>
+    <div class="section">
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que será aberta em cada operação. Ele deve ser calculado com base no risco aceitável e no potencial de recompensa, garantindo que a operação não seja excessivamente grande ou pequena.</p>
-        
-        <h2>Risco/Retorno (Risk/Reward)</h2>
-        <p>Essa métrica compara o risco assumido com o potencial retorno. Uma relação de 1:2 ou maior é considerada saudável, indicando que o retorno potencial é duas vezes o risco assumido.</p>
-        
+        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco por operação, garantindo que você não exponha mais do que está disposto a perder. Isso é fundamental para manter o equilíbrio entre risco e potencial retorno.</p>
+    </div>
+    <div class="section">
+        <h2>Risco/Retorno</h2>
+        <p>O risco/retorno é uma métrica que compara o potencial de lucro com o risco assumido. Operações com um risco/retorno de 1:2, por exemplo, significam que você espera ganhar dois reais para cada um que está disposto a perder. Esse conceito ajuda a identificar operações mais favoráveis.</p>
+    </div>
+    <div class="section">
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda acumulada de capital em relação ao valor máximo atingido. É importante monitorar o drawdown para entender o impacto emocional e financeiro de uma sequência de perdas.</p>
-        
+        <p>O drawdown é a queda percentual do capital em relação ao seu valor máximo atingido. Ele mede o impacto de uma sequência de perdas e ajuda a entender a volatilidade e a resiliência do seu portfólio. Um drawdown controlado é sinal de gestão de risco eficaz.</p>
+    </div>
+    <div class="section">
         <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por falta de disciplina, emoção, falta de planejamento e não respeitarem as regras de gestão de risco. A maioria não consegue manter consistência, controlar os sentimentos e seguir estratégias comprovadas.</p>
-        
-        <p><strong>Aviso:</strong> Este conteúdo é educacional e não constitui recomendação de investimento.</p>
-    </section>
-    <footer>
-        © 2025 - Gestão de Risco em Operações
-    </footer>
+        <p>Muitos traders perdem dinheiro por falta de disciplina, falta de planejamento e excesso de emoção. Além disso, a maioria não segue regras de gestão de risco, entra com posições muito grandes e não respeita seus stop losses. Compreender e aplicar a gestão de risco é crucial para aumentar as chances de sucesso.</p>
+    </div>
+    <div class="aviso">
+        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. O trading envolve riscos e pode resultar em perdas.</p>
+    </div>
 </body>
 </html>
