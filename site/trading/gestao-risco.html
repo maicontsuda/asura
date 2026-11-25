@@ -11,45 +11,58 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        h1 {
+
+        header h1 {
             margin: 0;
             font-size: 2em;
+            color: #ffffff;
         }
-        section {
+
+        main {
             padding: 20px;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: auto;
         }
+
+        section {
+            margin-bottom: 40px;
+        }
+
         h2 {
-            color: #ff9800;
-            border-bottom: 2px solid #ff9800;
+            color: #ffffff;
+            border-bottom: 2px solid #4caf50;
             padding-bottom: 5px;
         }
+
         p {
             font-size: 1.1em;
         }
+
         ul {
-            padding-left: 20px;
+            margin-left: 20px;
         }
+
         .aviso {
             background-color: #2e2e2e;
             padding: 15px;
-            margin: 20px 0;
             border-left: 5px solid #ff9800;
-        }
-        .aviso p {
+            margin-top: 30px;
             font-style: italic;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-top: 1px solid #333;
+
+        a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -57,30 +70,40 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <section>
-        <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é fundamental limitar o risco por operação a um máximo de 1 a 2% do seu capital total. Isso evita que uma única perda comprometa significativamente seu patrimônio. A regra é simples: cada operação deve ser capaz de suportar uma perda sem impactar sua estratégia a longo prazo.</p>
+    <main>
+        <section>
+            <h2>Risco por Operação</h2>
+            <p>Em operações de investimento, é fundamental limitar o risco por operação a um máximo de 1 a 2% do capital total. Isso evita que uma única perda possa comprometer significativamente o patrimônio do investidor. A regra é simples: cada operação deve ser projetada para não ultrapassar esse limite, garantindo que o investidor tenha margem de segurança para lidar com eventos imprevistos.</p>
+        </section>
 
-        <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é um limite predefinido para encerrar uma operação em caso de perda, protegendo seu capital. Já o take profit é o ponto de venda que define o lucro esperado. Ambos devem ser planejados antes da entrada na posição, garantindo disciplina e evitar emoções.</p>
+        <section>
+            <h2>Stop Loss e Take Profit</h2>
+            <p>O stop loss é um limite de venda automática que protege o investidor contra perdas maiores do que o planejado. Já o take profit é o ponto de venda que garante o lucro esperado. Ambos devem ser definidos antes da entrada na operação, sem influência de emoções ou pressão do mercado.</p>
+        </section>
 
-        <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele é calculado com base no risco por operação e na volatilidade do ativo. Um position sizing adequado garante que você possa lidar com variações de mercado sem comprometer sua estratégia.</p>
+        <section>
+            <h2>Position Sizing</h2>
+            <p>O position sizing refere-se ao tamanho da posição que o investidor decide entrar em uma operação. Ele deve ser calculado com base no risco tolerado, garantindo que o capital em risco seja proporcional ao potencial de retorno. A regra é: nunca colocar mais do que o que pode ser perdido.</p>
+        </section>
 
-        <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a proporção entre a perda potencial e o lucro esperado. Um bom risco/retorno é de 1:2 ou superior, ou seja, para cada 1 unidade de risco, você espera ganhar 2 unidades. Isso garante que, mesmo em operações com baixa probabilidade de sucesso, o lucro médio seja positivo.</p>
+        <section>
+            <h2>Risco/Retorno</h2>
+            <p>A relação risco/retorno é uma métrica essencial para avaliar a viabilidade de uma operação. Ela indica quantas vezes o retorno potencial é maior que o risco assumido. Uma boa relação é geralmente acima de 2:1, o que significa que o retorno previsto é duas vezes maior que o risco assumido.</p>
+        </section>
 
-        <h2>Drawdown</h2>
-        <p>O drawdown é a perda máxima acumulada em um período de tempo. É uma métrica essencial para entender o impacto de uma sequência de perdas. Um drawdown controlado demonstra que sua gestão de risco está funcionando, permitindo que você recupere o capital com mais facilidade.</p>
+        <section>
+            <h2>Drawdown</h2>
+            <p>O drawdown é a queda percentual do capital em relação ao seu valor máximo atingido. Ele mede a perda máxima que um investidor pode sofrer em um período. A gestão de risco busca minimizar o drawdown, evitando que ele se torne irreversível.</p>
+        </section>
 
-        <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por não seguir regras de gestão de risco. Eles entram com posições muito grandes, não definem stop loss, e emocionalmente saem de operações sem seguir o plano. Além disso, muitos não têm disciplina para evitar o overtrading, o que aumenta o risco de perdas.</p>
-    </section>
-    <div class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação ou conselho financeiro. Invista com responsabilidade.</p>
-    </div>
-    <footer>
-        <p>&copy; 2025 Gestão de Risco em Operações</p>
-    </footer>
+        <section>
+            <h2>Por Que a Maioria Perde Dinheiro</h2>
+            <p>Muitos investidores perdem dinheiro por falta de disciplina, gestão de risco e planejamento. Eles entram em operações sem definir limites de stop loss, ignoram o risco/retorno e não controlam o tamanho das posições. Além disso, a emoção e o vício por ganho rápido levam a decisões irracionais.</p>
+        </section>
+
+        <div class="aviso">
+            Este conteúdo é educacional e não constitui recomendação de investimento. Consulte um profissional antes de tomar decisões financeiras.
+        </div>
+    </main>
 </body>
 </html>
