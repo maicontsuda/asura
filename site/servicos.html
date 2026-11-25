@@ -5,7 +5,7 @@
     <title>Asura - Serviços</title>
     <style>
         body {
-            background-color: #1e1e1e;
+            background-color: #121212;
             color: #ffffff;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -14,95 +14,109 @@
             flex-direction: column;
             align-items: center;
         }
-        header {
+        .container {
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
-            background-color: #2c2c2c;
+            box-sizing: border-box;
         }
         h1 {
-            margin: 0;
-            font-size: 36px;
+            color: #f8f8f8;
+            text-align: center;
         }
-        main {
-            width: 80%;
-            max-width: 800px;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        section {
+        .service {
             margin-bottom: 20px;
-            background-color: #3d3d3d;
+            background-color: #222222;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        section h2 {
-            margin: 0 0 10px;
-            font-size: 24px;
+        .service h2 {
+            margin-top: 0;
         }
-        section p {
-            margin: 0;
-            font-size: 16px;
+        .service p {
+            margin-bottom: 10px;
         }
-        .prazo-preco {
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
+        .service ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
-        .prazo-preco p {
-            font-size: 18px;
+        .service li {
+            margin-bottom: 5px;
         }
-        footer {
+        .service footer {
             margin-top: 20px;
-            padding: 10px;
-            background-color: #2c2c2c;
-        }
-        footer p {
-            margin: 0;
-            color: #666666;
-            font-size: 14px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Asura - Serviços</h1>
-    </header>
-    <main>
-        <section>
+    <div class="container">
+        <h1>Serviços do Asura</h1>
+        <div class="service">
             <h2>Landing Page 2 USDC</h2>
-            <p>Criamos uma landing page robusta e moderna para atração de visitantes e conversão em leads. Nossa equipe de designers e desenvolvedores trabalha juntos para garantir que sua landing page seja impactante e eficiente.</p>
-            <p>Para quem serve: Empresas de pequeno e grande porte que precisam aumentar sua visibilidade online e captar leads qualificados.</p>
-            <p>O que está incluso: Design moderno, otimização para SEO, integração com formulários de captura de leads, teste A/B, hospedagem e manutenção básica.</p>
-            <p>Prazo: 15 dias úteis</p>
-            <p>Preço: 2 USDC</p>
-        </section>
-        <section>
-            <h2>Texto de Apresentação 1 USDC</h2>
-            <p>Criamos um texto de apresentação que captura a essência da sua marca e atrai o interesse do público-alvo. Nosso objetivo é criar um conteúdo que ressoe com seus potenciais clientes e os inspire a interagir com sua marca.</p>
-            <p>Para quem serve: Empresas e profissionais que buscam um texto de apresentação impactante e persuasivo para uso em landing pages, sites corporativos ou campanhas de marketing.</p>
-            <p>O que está incluso: Pesquisa de mercado, criação de um texto personalizado, revisão e ajustes.</p>
-            <p>Prazo: 7 dias úteis</p>
-            <p>Preço: 1 USDC</p>
-        </section>
-        <section>
-            <h2>Revisão de Texto 1 USDC</h2>
-            <p>Nossa equipe de revisores profissionais analisa seu texto e oferece sugestões de melhoria em termos de gramática, ortografia, estilo e fluidez. A revisão é realizada por profissionais especializados em diferentes áreas, garantindo uma revisão completa e eficiente.</p>
-            <p>Para quem serve: Empresas e profissionais que precisam garantir a qualidade e a precisão de seus textos.</p>
-            <p>O que está incluso: Revisão completa do texto, sugestões de melhorias, entrega de relatório de revisão.</p>
-            <p>Prazo: 5 dias úteis</p>
-            <p>Preço: 1 USDC</p>
-        </section>
-        <section>
-            <h2>5 Ideias de Conteúdo 0,5 USDC</h2>
-            <p>Criamos cinco ideias criativas e originais de conteúdo que podem ser utilizadas em diferentes canais de marketing, como blogs, redes sociais, e-mail marketing ou eventos. Nosso objetivo é fornecer ideias que sejam relevantes, interessantes e alinhadas com a estratégia de marketing de sua empresa.</p>
-            <p>Para quem serve: Empresas e profissionais que buscam aumentar sua presença online através do conteúdo de qualidade.</p>
-            <p>O que está incluso: Criação de cinco ideias de conteúdo, cada uma com um ponto de vista único e uma proposta de valor clara.</p>
-            <p>Prazo: 3 dias úteis</p>
-            <p>Preço: 0,5 USDC</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Asura. Todos os direitos reservados.</p>
-    </footer>
+            <p><strong>O que é:</strong> Desenvolvimento de uma landing page com design moderno e responsivo, otimizado para conversão.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores, startups e pequenas empresas que precisam de uma página de vendas eficiente.</p>
+            <p><strong>Quais são os serviços incluídos:</strong>
+                <ul>
+                    <li>Design de layout</li>
+                    <li>Desenvolvimento responsivo</li>
+                    <li>Integração de formulários</li>
+                    <li>Testes de performance</li>
+                    <li>Implementação de SEO básico</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 15 dias</p>
+            <p><strong>Preço:</strong> 2 USDC</p>
+            <footer>Contate-nos para mais informações.</footer>
+        </div>
+        <div class="service">
+            <h2>Texto de apresentação 1 USDC</h2>
+            <p><strong>O que é:</strong> Escrever um texto de apresentação de qualidade para seu produto ou serviço.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores que precisam de um texto persuasivo e informativo para seus produtos ou serviços.</p>
+            <p><strong>Quais são os serviços incluídos:</strong>
+                <ul>
+                    <li>Revisão e edição gramatical</li>
+                    <li>Desenvolvimento de conteúdo</li>
+                    <li>Formatação</li>
+                    <li>Entrega de versão final</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 7 dias</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
+            <footer>Contate-nos para mais informações.</footer>
+        </div>
+        <div class="service">
+            <h2>Revisão de texto 1 USDC</h2>
+            <p><strong>O que é:</strong> Correção e aprimoramento de um texto existente, garantindo a clareza e a eficácia da comunicação.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e escritores que precisam aprimorar o conteúdo existente.</p>
+            <p><strong>Quais são os serviços incluídos:</strong>
+                <ul>
+                    <li>Revisão gramatical e ortográfica</li>
+                    <li>Correção de erros de pontuação</li>
+                    <li>Padronização de estilo</li>
+                    <li>Entrega de versão final</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 5 dias</p>
+            <p><strong>Preço:</strong> 1 USDC</p>
+            <footer>Contate-nos para mais informações.</footer>
+        </div>
+        <div class="service">
+            <h2>5 ideias de conteúdo 0,5 USDC</h2>
+            <p><strong>O que é:</strong> Proporcionar cinco ideias criativas e relevantes para conteúdo, como blogs, vídeos ou publicações em redes sociais.</p>
+            <p><strong>Para quem serve:</strong> Empreendedores e criadores de conteúdo que precisam de inspiração para gerar novas ideias.</p>
+            <p><strong>Quais são os serviços incluídos:</strong>
+                <ul>
+                    <li>Identificação de tendências e oportunidades</li>
+                    <li>Criação de ideias originais</li>
+                    <li>Entrega de lista de ideias</li>
+                </ul>
+            </p>
+            <p><strong>Prazo:</strong> 3 dias</p>
+            <p><strong>Preço:</strong> 0,5 USDC</p>
+            <footer>Contate-nos para mais informações.</footer>
+        </div>
+    </div>
 </body>
 </html>
