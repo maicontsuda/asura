@@ -5,166 +5,154 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
-            background-color: #1a1a1a;
+            background: #1a1a1a;
             color: #ffffff;
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #4caf50;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .glossario {
             max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
             padding: 20px;
-            background-color: #212121;
-            border-radius: 10px;
+            background: #222222;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
         .termo {
             margin-bottom: 20px;
         }
         .termo h2 {
-            color: #4caf50;
+            font-size: 1.5em;
+            margin-bottom: 5px;
         }
         .termo p {
-            margin: 5px 0;
-        }
-        .termo code {
-            background-color: #333;
-            color: #ffffff;
-            padding: 2px 5px;
-            border-radius: 3px;
+            margin: 0;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
-    <h1>Glossário de Termos de Mercado</h1>
     <div class="glossario">
+        <h1>Glossário de Termos de Mercado</h1>
         <div class="termo">
-            <h2>pip</h2>
-            <p>O pip é a unidade de medida para o ajuste de preços em mercados de câmbio (forex). Por exemplo, um pip em um par de moedas como o EUR/USD é 0.0001.</p>
+            <h2>Pip</h2>
+            <p>Pequena unidade de medida do movimento de uma taxa de câmbio. Exemplo: 1 pip é igual a 0,0001 na maioria das moedas.</p>
         </div>
         <div class="termo">
-            <h2>spread</h2>
-            <p>O spread é a diferença entre o preço de compra e venda de um ativo. Por exemplo, se você compra um par de moedas a $1.1985 e vende a $1.1987, o spread é 2 pips.</p>
+            <h2>Spread</h2>
+            <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se um contrato tem um spread de 10 pips, o vendedor recebe 10 pips a menos do que o comprador paga.</p>
         </div>
         <div class="termo">
-            <h2>lote</h2>
-            <p>Um lote é a quantidade padrão de um instrumento negociado na maioria das plataformas de negociação. Em forex, um lote padrão equivale a 100.000 unidades da moeda base.</p>
+            <h2>Lote</h2>
+            <p>Unidade padrão de negociação em contratos futuros ou de câmbio. Exemplo: 1 lote de ouro é geralmente 100 onças.</p>
         </div>
         <div class="termo">
-            <h2>alavancagem</h2>
-            <p>A alavancagem permite que os traders negociem posições maior do que suas contas têm de dinheiro disponível. Por exemplo, uma alavancagem de 1:100 significa que você pode negociar 100 vezes mais do que o saldo em sua conta.</p>
+            <h2>Alavancagem</h2>
+            <p>Mecanismo que permite negociar um valor maior do que o investimento inicial. Exemplo: 10:1 alavancagem significa que uma investida de $1 pode controlar $10.</p>
         </div>
         <div class="termo">
-            <h2>margem</h2>
-            <p>A margem é o depósito inicial necessário para abrir uma posição em negociações. Por exemplo, para abrir uma posição de 1 lote em forex, você pode precisar de apenas 1% da alavancagem.</p>
+            <h2>Margem</h2>
+            <p>Depósito inicial exigido para negociar uma posição. Exemplo: Para abrir uma posição de $1000, com alavancagem 10:1, a margem necessária é $100.</p>
         </div>
         <div class="termo">
-            <h2>stop</h2>
-            <p>Um stop é um pedido para fechar uma posição se o mercado atingir um preço específico. Um stop-loss é usado para limitar as perdas, enquanto um stop-profit é usado para garantir lucros.</p>
+            <h2>Stop</h2>
+            <p>Ordem que define o preço a partir do qual uma posição será automaticamente fechada. Exemplo: Um stop-loss de $1,50 venderá automaticamente a posição se o preço cair abaixo desse nível.</p>
         </div>
         <div class="termo">
-            <h2>take profit</h2>
-            <p>O take profit é um pedido para fechar uma posição se o mercado atingir um preço específico, garantindo assim lucros.</p>
+            <h2>Take Profit</h2>
+            <p>Ordem que define o preço a partir do qual uma posição será automaticamente fechada com lucro. Exemplo: Um take profit de $2,00 venderá automaticamente a posição se o preço subir acima desse nível.</p>
         </div>
         <div class="termo">
-            <h2>long</h2>
-            <p>Um trade long é uma posição aberta quando o trader espera que o preço do ativo aumente e, portanto, vende a posição no futuro.</p>
+            <h2>Long</h2>
+            <p>Negociação em direção à alta, esperando que o preço suba. Exemplo: Comprar 100 ações de uma empresa.</p>
         </div>
         <div class="termo">
-            <h2>short</h2>
-            <p>Um trade short é uma posição aberta quando o trader espera que o preço do ativo diminua e, portanto, compra a posição no futuro.</p>
+            <h2>Short</h2>
+            <p>Negociação em direção à baixa, esperando que o preço caia. Exemplo: Vender 100 ações de uma empresa com a intenção de comprar de volta mais barato.</p>
         </div>
         <div class="termo">
-            <h2>gap</h2>
-            <p>Um gap ocorre quando o preço de um ativo salta para um novo nível, sem passar por um intervalo intermediário, geralmente devido a eventos impulsionadores.</p>
+            <h2>Gap</h2>
+            <p>Intervalo vazio no gráfico de preços, geralmente resultado de um movimento de preço significativo que ocorre após um feriado ou fim de semana. Exemplo: Um gap positivo ocorre quando o preço salta para cima após um feriado.</p>
         </div>
         <div class="termo">
-            <h2>volume</h2>
-            <p>O volume é a quantidade total de negociações de um determinado ativo em um período específico. É um indicador de liquidez e força de um mercado.</p>
+            <h2>Volume</h2>
+            <p>Número total de negócios realizados em um determinado período. Exemplo: Um grande volume de negócios indica alta liquidez e confiança no mercado.</p>
         </div>
         <div class="termo">
             <h2>RSI</h2>
-            <p>O RSI (Índice de Força Relativa) é um indicador técnico usado para determinar se um ativo está sobrecomprado ou sobrevendido. Um valor acima de 70 sugere sobrecompra, enquanto um valor abaixo de 30 sugere sobrevendação.</p>
+            <p>Índice de Força Relativa, usado para identificar o overbought ou oversold de um ativo. Exemplo: Um RSI de 70 sugere que o ativo pode estar sobrecomprado.</p>
         </div>
         <div class="termo">
             <h2>MACD</h2>
-            <p>O MACD (Índice de Diferença Moving Average) é um indicador técnico que compara duas médias móveis para fornecer sinais de compra e venda.</p>
+            <p>Índice de Diferença de Médias Móveis, usado para identificar tendências e possíveis reversões. Exemplo: Um cruzamento de linhas MACD sugere uma mudança na tendência.</p>
         </div>
         <div class="termo">
-            <h2>suporte</h2>
-            <p>O suporte é um nível de preço em que o ativo tende a encontrar compradores, impedindo que o preço caia abaixo dele.</p>
+            <h2>Suporte</h2>
+            <p>Nível de preço onde o preço tende a encontrar resistência para cair. Exemplo: Um suporte de $100 no preço de uma ação indica que ele não caiu abaixo desse nível nos últimos tempos.</p>
         </div>
         <div class="termo">
-            <h2>resistência</h2>
-            <p>A resistência é um nível de preço em que o ativo tende a encontrar vendedores, impedindo que o preço suba acima dele.</p>
+            <h2>Resistência</h2>
+            <p>Nível de preço onde o preço tende a encontrar resistência para subir. Exemplo: Uma resistência de $200 no preço de uma ação indica que ele não subiu acima desse nível nos últimos tempos.</p>
         </div>
         <div class="termo">
-            <h2>drawdown</h2>
-            <p>O drawdown é a queda no valor de uma carteira ou ativo desde seu máximo histórico. É uma medida do risco de perda associada a uma carteira ou ativo.</p>
+            <h2>Drawdown</h2>
+            <p>Perda máxima de valor em um período de tempo específico. Exemplo: Um drawdown de 15% indica que o valor máximo perdeu 15% de seu valor.</p>
         </div>
         <div class="termo">
-            <h2>equity</h2>
-            <p>A equidade é o valor total de uma conta de negociação, incluindo o saldo em dinheiro e o valor das posições abertas.</p>
+            <h2>Equity</h2>
+            <p>Patrimônio líquido, ou valor total de uma posição, considerando a margem e os lucros ou perdas. Exemplo: Se a margem é $500 e a perda é $200, a equity é $300.</p>
         </div>
         <div class="termo">
-            <h2>margem livre</h2>
-            <p>A margem livre é a quantidade de dinheiro disponível em sua conta para abertura de novas posições, calculada como o saldo da conta menos a margem já usada.</p>
+            <h2>Margem Livre</h2>
+            <p>Margem disponível para novas posições. Exemplo: Se a margem total é $1000 e a margem usada é $600, a margem livre é $400.</p>
         </div>
         <div class="termo">
-            <h2>ordem limitada</h2>
-            <p>Uma ordem limitada é um pedido para comprar ou vender um ativo a um preço específico ou melhor. É uma ordem que não será executada a menos que o preço atinja o nível especificado.</p>
+            <h2>Ordem Limitada</h2>
+            <p>Ordem para comprar ou vender a um preço específico. Exemplo: Comprar 100 ações a $100.</p>
         </div>
         <div class="termo">
-            <h2>spread betting</h2>
-            <p>O spread betting é uma forma de aposta onde você apostas sobre o movimento do preço de um ativo, sem precisar possuí-lo fisicamente. Você ganha se o preço move na direção esperada e perde se o preço move na direção contrária.</p>
+            <h2>Ordem Stop-Limit</h2>
+            <p>Combinação de stop e limit, que só será executada se o preço atingir o stop e permanecer acima/baixo do limit. Exemplo: Um stop-loss de $100 e um limit de $95 venderá automaticamente a posição se o preço cair para $95.</p>
         </div>
         <div class="termo">
-            <h2>swing trading</h2>
-            <p>O swing trading é uma estratégia de negociação que envolve a compra e venda de ativos com o objetivo de lucrar com movimentos de mercado a curto prazo, geralmente mantendo posições de 2 a 14 dias.</p>
+            <h2>Ordem Stop-Limit-Offset</h2>
+            <p>Ordem que define uma diferença de preço entre o stop e o limit. Exemplo: Um stop-loss de $100 e um offset de 2 pips venderá automaticamente a posição se o preço cair para $98,98.</p>
         </div>
         <div class="termo">
-            <h2>scalping</h2>
-            <p>O scalping é uma estratégia de negociação onde os traders realizam muitas transações pequenas e rápidas, ganhando pequenos lucros em cada uma delas.</p>
+            <h2>Ordem Trailing Stop</h2>
+            <p>Stop que se move conforme o preço do ativo se move. Exemplo: Um trailing stop de 2 pips se move 2 pips acima do preço atual, garantindo que não perca mais do que 2 pips.</p>
         </div>
         <div class="termo">
-            <h2>hedging</h2>
-            <p>O hedging é a prática de tomar uma posição que contraria uma posição existente para proteger-se contra perdas potenciais.</p>
+            <h2>Ordem de Mercado</h2>
+            <p>Ordem para comprar ou vender a melhor preço disponível no mercado. Exemplo: Comprar 100 ações a qualquer preço disponível no mercado.</p>
         </div>
         <div class="termo">
-            <h2>forward curve</h2>
-            <p>A curva forward é uma representação gráfica das expectativas de preços futuros de um ativo, baseada nas taxas forward atuais.</p>
+            <h2>Ordem de Ordem Múltipla</h2>
+            <p>Ordem que envia múltiplas ordens a um preço específico. Exemplo: Comprar 100 ações a $100, 200 ações a $101, e 300 ações a $102.</p>
         </div>
         <div class="termo">
-            <h2>backtest</h2>
-            <p>Um backtest é uma análise retrospectiva de uma estratégia de negociação usando dados históricos. É usado para avaliar o desempenho potencial de uma estratégia antes de ser implementada.</p>
+            <h2>Ordem de Ordem de Lote</h2>
+            <p>Ordem que divide uma posição em lotes para reduzir o risco. Exemplo: Dividir uma posição de 1000 ações em 10 lotes de 100 ações cada.</p>
         </div>
         <div class="termo">
-            <h2>slippage</h2>
-            <p>O slippage ocorre quando a execução de uma ordem de negociação não pode ser realizada no preço desejado, resultando em uma diferença entre o preço pedido e o preço de execução.</p>
+            <h2>Ordem de Ordem de Averaging</h2>
+            <p>Ordem que compara o preço médio de compra e venda. Exemplo: Comprar mais ações se o preço médio de compra for mais baixo do que o preço médio de venda.</p>
         </div>
         <div class="termo">
-            <h2>stop-loss</h2>
-            <p>Um stop-loss é um pedido para fechar uma posição se o mercado atingir um preço específico, limitando as perdas.</p>
+            <h2>Ordem de Ordem de Hedging</h2>
+            <p>Ordem que combina posições para reduzir o risco. Exemplo: Comprar 100 ações e vender 100 ações de uma empresa concorrente.</p>
         </div>
         <div class="termo">
-            <h2>trailing stop</h2>
-            <p>Um trailing stop é um tipo de stop-loss que se move conforme o preço do ativo aumenta, garantindo que o stop só seja atingido se o preço caísse abaixo de um determinado nível.</p>
+            <h2>Ordem de Ordem de Balanceamento</h2>
+            <p>Ordem que garante que o saldo seja equilibrado após uma negociação. Exemplo: Garantir que a margem total seja mantida após uma negociação.</p>
         </div>
         <div class="termo">
-            <h2>pip value</h2>
-            <p>O valor de um pip é o ajuste monetário resultante de um movimento de um pip no preço de um ativo. Varia dependendo do lote negociado e do par de moedas.</p>
-        </div>
-        <div class="termo">
-            <h2>market order</h2>
-            <p>Um market order é uma ordem para comprar ou vender um ativo no preço atual do mercado, sem especificar um preço.</p>
-        </div>
-        <div class="termo">
-            <h2>limit order</h2>
-            <p>Um limit order é uma ordem para comprar ou vender um ativo a um preço específico ou melhor, permitindo que você especifique o preço de entrada desejado.</p>
+            <h2>Ordem de Ordem de Segurança</h2>
+            <p>Ordem que garante a segurança da transação. Exemplo: Verificar se a transação foi bem-sucedida antes de confirmar o pagamento.</p>
         </div>
     </div>
 </body>
