@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -17,18 +17,19 @@
             text-align: center;
         }
         h1 {
-            margin: 0;
-            font-size: 24px;
+            color: #ffffff;
         }
         section {
-            background-color: #1e1e1e;
+            margin: 30px auto;
+            max-width: 900px;
             padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #00ffcc;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
         }
         h2 {
+            color: #ffffff;
             margin-top: 0;
-            color: #00ffcc;
         }
         p {
             line-height: 1.6;
@@ -36,40 +37,47 @@
         ul {
             padding-left: 20px;
         }
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #ff4081;
+        }
+        .aviso p {
+            font-weight: bold;
+        }
         .checklist {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .checklist ul {
             list-style-type: none;
             padding: 0;
         }
         .checklist li {
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
         .checklist li::before {
-            content: "✓";
-            color: #00ffcc;
+            content: "✅";
+            color: #4caf50;
             margin-right: 10px;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            margin: 30px 0;
-            border-left: 4px solid #00ffcc;
-        }
-        .aviso p {
-            font-style: italic;
-        }
         .registro {
-            background-color: #2a2a2a;
-            padding: 20px;
-            margin: 30px 0;
-            border-left: 4px solid #00ffcc;
+            margin-top: 40px;
+        }
+        .registro h3 {
+            color: #ffffff;
         }
         .registro table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #2a2a2a;
+            border: 1px solid #333;
         }
         .registro th, .registro td {
-            border: 1px solid #444;
-            padding: 8px;
+            padding: 12px;
+            border: 1px solid #333;
             text-align: left;
         }
         .registro th {
@@ -79,63 +87,71 @@
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: "Obter lucro mensal de 10% com risco máximo de 2% por operação".</p>
-    </section>
-    <section>
+        <p>Objetivo principal: Ganhar 10% ao mês com operações de curto prazo em ações de alta volatilidade. Parâmetros de sucesso: Retorno positivo em 60% das operações e limitação de perdas diárias em 1% do capital.</p>
+
         <h2>Mercados</h2>
-        <p>Escolha os mercados que deseja operar, seja forex, ações, criptomoedas, etc. Defina quais ativos e períodos de tempo (diário, intradiário, etc.) serão utilizados.</p>
-    </section>
-    <section>
+        <p>Ativos: Ações de empresas de tecnologia e energias renováveis. Mercados: B3 (Brasil), NYSE (EUA) e NASDAQ (EUA). Horizonte de operação: 1 a 5 dias.</p>
+
         <h2>Horários</h2>
-        <p>Determine os horários em que você será ativo no mercado. Exemplo: "Operar de 9h às 15h no horário de Brasília, com pausas para análise técnica e emocional."</p>
-    </section>
-    <section>
+        <p>Horário de operação: 10h às 16h (horário de Brasília). Operações feitas apenas durante horário de negociação. Intervalo de análise: 15 minutos antes do horário de abertura.</p>
+
         <h2>Regras de Entrada e Saída</h2>
-        <p>Defina condições claras para entrar e sair de uma operação. Exemplo: "Entrar com confirmação de candle de 1 hora, sair com stop loss de 2% ou take profit de 5%."</p>
-    </section>
-    <section>
+        <ul>
+            <li>Entrada: Quando o preço rompe a média móvel de 50 dias com volume acima do médio.</li>
+            <li>Saída: Quando o preço atinge a média móvel de 200 dias ou ocorre uma reversão de tendência.</li>
+            <li>Stop Loss: 1% do capital ou 5% do stop de prejuízo.</li>
+            <li>Take Profit: 5% do capital ou 10% do lucro.</li>
+        </ul>
+
         <h2>Limite de Perdas Diárias</h2>
-        <p>Estabeleça um limite máximo de perdas por dia, como 2% do capital ou um valor fixo, para evitar o risco excessivo.</p>
+        <p>Perdas diárias não devem ultrapassar 1% do capital total. Em dias de alta volatilidade, o limite é reduzido para 0,5%.</p>
     </section>
-    <section>
+
+    <section class="checklist">
         <h2>Checklist Antes de Abrir Operação</h2>
-        <ul class="checklist">
-            <li>Verificar se o mercado está em tendência ou range.</li>
-            <li>Confirmar a confiabilidade da entrada.</li>
-            <li>Verificar se o stop loss está alinhado com o plano de risco.</li>
-            <li>Confirmar que o capital está dentro dos limites de risco.</li>
-            <li>Revisar se há fatores externos que possam impactar a operação.</li>
+        <ul>
+            <li>Verificar se o mercado está em tendência clara.</li>
+            <li>Confirmar que o volume está acima do médio.</li>
+            <li>Verificar se o stop loss está alinhado com o capital.</li>
+            <li>Confirmar que não há fatores macroeconômicos adversos.</li>
+            <li>Revisar o plano de trade e garantir que todas as regras estão atendidas.</li>
         </ul>
     </section>
+
     <section class="registro">
-        <h2>Template de Registro</h2>
+        <h2>Template de Registro de Operação</h2>
         <table>
-            <tr>
-                <th>Data</th>
-                <th>Ativo</th>
-                <th>Entrada</th>
-                <th>Stop Loss</th>
-                <th>Take Profit</th>
-                <th>Resultado</th>
-                <th>Comentário</th>
-            </tr>
-            <tr>
-                <td>01/10/2025</td>
-                <td>EUR/USD</td>
-                <td>1.0850</td>
-                <td>1.0830</td>
-                <td>1.0900</td>
-                <td>+50 pips</td>
-                <td>Operação bem-sucedida com confirmação de breakout.</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Preço de Entrada</th>
+                    <th>Stop Loss</th>
+                    <th>Take Profit</th>
+                    <th>Resultado</th>
+                    <th>Comentário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/10/2025</td>
+                    <td>Ações da Empresa X</td>
+                    <td>R$ 25,00</td>
+                    <td>R$ 24,00</td>
+                    <td>R$ 27,00</td>
+                    <td>Lucro de R$ 2,00</td>
+                    <td>Operação bem-sucedida com confirmação de tendência.</td>
+                </tr>
+            </tbody>
         </table>
     </section>
+
     <section class="aviso">
-        <p><strong>Aviso:</strong> O conteúdo aqui apresentado é apenas educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas.</p>
+        <p><strong>Aviso Legal:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As estratégias aqui descritas são ilustrativas e não garantem resultados. Investir em mercados financeiros envolve riscos.</p>
     </section>
 </body>
 </html>
