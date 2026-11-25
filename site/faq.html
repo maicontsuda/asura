@@ -7,52 +7,37 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d0d0d;
-            color: #ffffff;
+            background-color: #121212;
+            color: #e0e0e0;
             line-height: 1.6;
         }
         header {
-            background-color: #1a1a1a;
+            background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+        h1 {
             margin: 0;
-            font-size: 24px;
-            color: #00ffcc;
+            color: #ffffff;
         }
-        main {
+        section {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
+            border-bottom: 1px solid #333;
         }
         h2 {
-            color: #00ffcc;
-            margin-top: 40px;
+            color: #ffffff;
+            margin-top: 0;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            background-color: #1e1e1e;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 16px;
-        }
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        p {
+            margin: 10px 0 0 0;
         }
         footer {
-            background-color: #1a1a1a;
+            background-color: #1e1e1e;
             text-align: center;
             padding: 15px;
             margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
@@ -60,63 +45,42 @@
     <header>
         <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <main>
+    <section>
         <h2>Como pagar com USDC na Base?</h2>
-        <ul>
-            <li>Para pagar com USDC na Base, utilize um wallet compatível com a rede Base, como o MetaMask ou a Wallet Connect. Certifique-se de que a carteira está configurada para a rede Base.</li>
-            <li>Transfira os USDC para o endereço fornecido pelo Asura. O valor deve ser igual à proposta acordada.</li>
-            <li>Após a transferência, aguarde o tempo de confirmação da rede Base, que é geralmente rápido.</li>
-        </ul>
-
+        <p>Para pagar com USDC na Base, você deve enviar o valor total do contrato para o endereço fornecido no contrato Asura. Certifique-se de que o endereço está correto e que a transação seja feita com o token USDC no network Base.</p>
+    </section>
+    <section>
         <h2>Como pagar com ETH na Base?</h2>
-        <ul>
-            <li>Para pagar com ETH na Base, utilize um wallet compatível com a rede Base e com suporte a ETH.</li>
-            <li>Transfira os ETH para o endereço fornecido pelo Asura. O valor deve ser igual à proposta acordada.</li>
-            <li>Confirme a transação e aguarde o tempo de confirmação da rede Base.</li>
-        </ul>
-
-        <h2>Como pagar com ETH na Mainnet?</h2>
-        <ul>
-            <li>Para pagar com ETH na Mainnet, utilize um wallet compatível com a rede Ethereum Mainnet, como o MetaMask.</li>
-            <li>Transfira os ETH para o endereço fornecido pelo Asura. O valor deve ser igual à proposta acordada.</li>
-            <li>Confirme a transação e aguarde o tempo de confirmação da rede Ethereum.</li>
-        </ul>
-
-        <h2>Quais são os prazos?</h2>
-        <ul>
-            <li>Os prazos variam conforme o projeto e a complexidade do entregável. Geralmente, os prazos estão definidos no contrato de trabalho ou na proposta.</li>
-            <li>Se houver atrasos, o Asura notifica o cliente e busca soluções para manter o cronograma.</li>
-            <li>Em caso de atrasos significativos, pode haver ajustes no prazo ou reembolso parcial.</li>
-        </ul>
-
+        <p>Para pagar com ETH na Base, envie o valor total do contrato para o endereço do contrato Asura. A transação deve ser feita com o token ETH no network Base, garantindo que o endereço esteja correto.</p>
+    </section>
+    <section>
+        < <h2>Como pagar com ETH na Mainnet?</h2>
+        <p>Para pagar com ETH na Mainnet, envie o valor total do contrato para o endereço do contrato Asura. A transação deve ser feita com o token ETH no network Ethereum Mainnet, garantindo que o endereço esteja correto.</p>
+    </section>
+    <section>
+        <h2>Como pagar com ETH na Base?</h2>
+        <p>Para pagar com ETH na Base, envie o valor total do contrato para o endereço do contrato Asura. A transação deve ser feita com o token ETH no network Base, garantindo que o endereço esteja correto.</p>
+    </section>
+    <section>
+        <h2>Quais são os prazos para o projeto?</h2>
+        <p>Os prazos variam conforme o escopo do projeto. Após a confirmação do pagamento, o desenvolvimento começa imediatamente e o prazo é definido com base no tamanho da entrega. O prazo é comunicado no início do projeto e pode ser ajustado com antecedência.</p>
+    </section>
+    <section>
         <h2>O que acontece se o pagamento falhar?</h2>
-        <ul>
-            <li>Se o pagamento não for concluído no prazo estabelecido, o contrato pode ser cancelado.</li>
-            <li>O cliente será notificado sobre o status do pagamento e das possíveis consequências.</li>
-            <li>Em alguns casos, pode haver reembolso parcial ou ajustes no contrato.</li>
-        </ul>
-
+        <p>Se o pagamento falhar, o contrato Asura não receberá a transação e, consequentemente, não iniciará o desenvolvimento do projeto. Nesse caso, o cliente deve revisar a transação e tentar novamente, garantindo que o endereço e o token estejam corretos. Caso persistam erros, entre em contato com a equipe para análise técnica.</p>
+    </section>
+    <section>
         <h2>Como recebo o entregável?</h2>
-        <ul>
-            <li>O entregável será enviado por meio de um contrato inteligente ou por meio de um link compartilhado.</li>
-            <li>Após a confirmação do pagamento, o entregável será liberado ou enviado conforme acordado.</li>
-            <li>Para garantir a segurança, o entregável é liberado em etapas ou após verificação de qualidade.</li>
-        </ul>
-
+        <p>Após a conclusão do projeto, o entregável será liberado para você via endereço de contrato ou por meio de um repositório de código, dependendo do tipo de projeto. Você receberá um link ou um endereço para acessar o resultado final. Certifique-se de estar atento ao e-mail de notificação.</p>
+    </section>
+    <section>
         <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <ul>
-            <li>A identidade on-chain ERC-8004 #1149100 é um identificador único associado ao Asura na blockchain.</li>
-            <li>Essa identidade é usada para validar a autenticidade e a credibilidade do Asura em transações e contratos.</li>
-            <li>É importante para garantir a transparência e a segurança de todas as interações.</li>
-        </ul>
-
-        <h2>Como solicitar reembolso?</h2>
-        <ul>
-            <li>Para solicitar reembolso, entre em contato com o suporte do Asura com os detalhes da transação e da solicitação.</li>
-            <li>Apresente comprovações do pagamento e da não entrega do entregável.</li>
-            <li>O reembolso será processado conforme os termos acordados ou conforme a política de reembolso do Asura.</li>
-        </ul>
-    </main>
+        <p>A identidade on-chain ERC-8004 #1149100 é um identificador único associado ao contrato Asura. Ele é usado para rastrear a identidade do contrato no blockchain e garantir a autenticidade das transações. Esse número é essencial para verificar a legitimidade do contrato e para realizar transações seguras.</p>
+    </section>
+    <section>
+        <h2>Como funciona o reembolso?</h2>
+        <p>O reembolso é realizado em caso de cancelamento do projeto ou falha no cumprimento dos termos. Para solicitar o reembolso, entre em contato com a equipe e apresente o motivo. Caso a solicitação seja válida, o valor será reembolsado conforme os termos acordados, seguindo os protocolos do contrato Asura.</p>
+    </section>
     <footer>
         &copy; 2025 Asura. Todos os direitos reservados.
     </footer>
