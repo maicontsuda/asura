@@ -5,9 +5,9 @@
     <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
@@ -15,51 +15,53 @@
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
         h1 {
             margin: 0;
             font-size: 24px;
         }
         section {
-            margin: 20px;
+            background-color: #1e1e1e;
             padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #00ffcc;
         }
         h2 {
             margin-top: 0;
-            color: #ffffff;
+            color: #00ffcc;
         }
         p {
             line-height: 1.6;
         }
         ul {
-            list-style-type: disc;
             padding-left: 20px;
         }
         .checklist {
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .checklist li {
+            margin: 10px 0;
         }
         .checklist li::before {
-            content: "✓ ";
-            color: #00ff99;
+            content: "✓";
+            color: #00ffcc;
+            margin-right: 10px;
         }
         .aviso {
             background-color: #2a2a2a;
             padding: 15px;
-            margin-top: 20px;
-            border-left: 5px solid #00ff99;
+            margin: 30px 0;
+            border-left: 4px solid #00ffcc;
         }
         .aviso p {
             font-style: italic;
-            margin: 0;
         }
         .registro {
             background-color: #2a2a2a;
-            padding: 15px;
-            margin-top: 20px;
-            border-left: 5px solid #00ff99;
+            padding: 20px;
+            margin: 30px 0;
+            border-left: 4px solid #00ffcc;
         }
         .registro table {
             width: 100%;
@@ -68,7 +70,7 @@
         .registro th, .registro td {
             border: 1px solid #444;
             padding: 8px;
-            text-align: center;
+            text-align: left;
         }
         .registro th {
             background-color: #333;
@@ -81,40 +83,39 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Definir metas claras e realistas para cada operação, como alvo de lucro, limite de perda e tempo de execução. Estabelecer um plano de trade que promova a consistência e a disciplina nas decisões de investimento.</p>
+        <p>Defina claramente os objetivos de curto, médio e longo prazo para suas operações. Exemplo: "Obter lucro mensal de 10% com risco máximo de 2% por operação".</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identificar os mercados que serão operados, como ações, forex, criptomoedas ou futuros. Especificar os pares de moedas, índices ou ativos relevantes. Definir o horizonte temporal, como curto, médio ou longo prazo.</p>
+        <p>Escolha os mercados que deseja operar, seja forex, ações, criptomoedas, etc. Defina quais ativos e períodos de tempo (diário, intradiário, etc.) serão utilizados.</p>
     </section>
     <section>
         <h2>Horários</h2>
-        <p>Definir os horários de operação, como de 8h às 17h (horário de mercado) ou 22h às 5h (horário noturno). Considerar férias, feriados e eventos macroeconômicos que possam impactar a volatilidade.</p>
+        <p>Determine os horários em que você será ativo no mercado. Exemplo: "Operar de 9h às 15h no horário de Brasília, com pausas para análise técnica e emocional."</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabelecer critérios objetivos para entrada e saída, como níveis de suporte/resistência, indicadores técnicos (RSI, MACD, EMA) e padrões de candlestick. Definir condições de stop loss e take profit.</p>
+        <p>Defina condições claras para entrar e sair de uma operação. Exemplo: "Entrar com confirmação de candle de 1 hora, sair com stop loss de 2% ou take profit de 5%."</p>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Definir o máximo que se está disposto a perder em um dia, como 2% do capital total. Evitar operações com risco excessivo e manter o controle emocional.</p>
+        <p>Estabeleça um limite máximo de perdas por dia, como 2% do capital ou um valor fixo, para evitar o risco excessivo.</p>
     </section>
     <section>
         <h2>Checklist Antes de Abrir Operação</h2>
         <ul class="checklist">
-            <li>Verificar se o plano de trade está alinhado com os objetivos.</li>
-            <li>Confirmar a análise técnica e fundamentalista.</li>
-            <li>Verificar os níveis de suporte/resistência.</li>
-            <li>Confirmar os níveis de stop loss e take profit.</li>
-            <li>Assegurar que o capital está adequado ao risco.</li>
-            <li>Verificar se há condições de mercado favoráveis.</li>
+            <li>Verificar se o mercado está em tendência ou range.</li>
+            <li>Confirmar a confiabilidade da entrada.</li>
+            <li>Verificar se o stop loss está alinhado com o plano de risco.</li>
+            <li>Confirmar que o capital está dentro dos limites de risco.</li>
+            <li>Revisar se há fatores externos que possam impactar a operação.</li>
         </ul>
     </section>
     <section class="registro">
         <h2>Template de Registro</h2>
         <table>
             <tr>
-                <th>Data/Hora</th>
+                <th>Data</th>
                 <th>Ativo</th>
                 <th>Entrada</th>
                 <th>Stop Loss</th>
@@ -123,18 +124,18 @@
                 <th>Comentário</th>
             </tr>
             <tr>
-                <td>2025-04-05 14:30</td>
+                <td>01/10/2025</td>
                 <td>EUR/USD</td>
                 <td>1.0850</td>
-                <td>1.0820</td>
+                <td>1.0830</td>
                 <td>1.0900</td>
-                <td>Lucro</td>
-                <td>Operação bem-sucedida com confirmação de tendência.</td>
+                <td>+50 pips</td>
+                <td>Operação bem-sucedida com confirmação de breakout.</td>
             </tr>
         </table>
     </section>
-    <div class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e podem resultar em perdas.</p>
-    </div>
+    <section class="aviso">
+        <p><strong>Aviso:</strong> O conteúdo aqui apresentado é apenas educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas.</p>
+    </section>
 </body>
 </html>
