@@ -2,119 +2,146 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Comparação entre Asura, Freelancer e Agência</title>
+    <title>Comparação: Asura, Freelancer e Agência</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
+            line-height: 1.6;
         }
 
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
         }
 
         section {
-            padding: 30px;
-            margin: 20px 0;
-            background-color: #1e1e1e;
+            margin: 2rem auto;
+            max-width: 900px;
+            padding: 1rem;
+            background-color: #1a1a1a;
             border-radius: 8px;
         }
 
         h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
         }
 
-        p {
-            line-height: 1.6;
+        ul {
+            padding-left: 1.5rem;
         }
 
-        .option {
-            margin-bottom: 25px;
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
         }
 
-        .option h3 {
-            color: #ff9800;
-            margin-bottom: 10px;
-        }
-
-        .option .subtitle {
-            color: #cccccc;
-            margin-bottom: 10px;
-        }
-
-        .option .content {
-            margin-bottom: 15px;
-        }
-
-        .option .content span {
-            color: #ffeb3b;
+        .comparison-item {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border-radius: 6px;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
-            font-size: 14px;
-            border-top: 1px solid #333;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
     <header>
-        Comparação entre Asura, Freelancer e Agência
+        <h1>Comparação: Asura, Freelancer e Agência</h1>
     </header>
 
     <section>
-        <div class="option">
-            <h3>Asura</h3>
-            <div class="subtitle">Solução de automação de marketing</div>
-            <div class="content">
-                <p>O Asura é uma plataforma de automação de marketing que oferece ferramentas para gerenciar campanhas, leads e automação de e-mails. Ele é ideal para pequenas e médias empresas que buscam eficiência sem contratar profissionais.</p>
-                <p><span>Preço relativo:</span> Em média, custa entre R$ 200 e R$ 800/mês, dependendo do plano.</p>
-                <p><span>Prazo:</span> A implementação pode levar de 1 a 3 semanas, dependendo da complexidade.</p>
-                <p><span>Processo:</span> Envio de dados, configuração inicial e treinamento.</p>
-                <p><de><span>Vantagens:</span> Redução de custos, automação de tarefas e escalabilidade.</p>
-                <p><span>Limitações:</span> Requer conhecimento técnico e não oferece suporte personalizado.</p>
+        <h2>Preço Relativo</h2>
+        <div class="comparison">
+            <div class="comparison-item">
+                <strong>Asura</strong><br>
+                Custos fixos com base no projeto, sem custos ocultos. Ideal para projetos com escopo bem definido.
+            </div>
+            <div class="comparison-item">
+                <strong>Freelancer</strong><br>
+                Preço por hora ou por tarefa, pode variar conforme a experiência e a demanda do mercado. Menor custo inicial, mas mais incerto.
+            </div>
+            <div class="comparison-item">
+                < <strong>Agência</strong><br>
+                Custos elevados, com despesas fixas e variáveis. Ajusta-se a projetos complexos, mas é caro para tarefas simples.
             </div>
         </div>
+    </section>
 
-        <div class="option">
-            <h3>Freelancer</h3>
-            <div class="subtitle">Profissional autônomo</div>
-            <div class="content">
-                <p>Contratar um freelancer significa ter um profissional especializado em uma área específica, como design, programação ou marketing digital.</p>
-                <p><span>Preço relativo:</span> Custa entre R$ 150 e R$ 1.000/hora, dependendo da experiência.</p>
-                <p><span>Prazo:</span> Pode variar de 1 dia a 1 semana, dependendo do projeto.</p>
-                <p><span>Processo:</span> Contrato direto, definição de metas e entrega do resultado.</p>
-                <p><span>Vantagens:</span> Flexibilidade, custos mais baixos e personalização.</p>
-                <p><span>Limitações:</span> Pode haver inconsistência e falta de suporte contínuo.</p>
+    <section>
+        <h2>Prazo</h2>
+        <div class="comparison">
+            <div class="comparison-item">
+                <strong>Asura</strong><br>
+                Prazo previsível e alinhado ao escopo do projeto. Acompanhamento contínuo e entrega em etapas.
+            </div>
+            <div class="comparison-item">
+                <strong>Freelancer</strong><br>
+                Prazo flexível, mas pode sofrer atrasos se houver mudanças de prioridade ou demanda não prevista.
+            </div>
+            <div class="comparison-item">
+                <strong>Agência</strong><br>
+                Prazo geralmente mais longo devido à estrutura hierárquica e à necessidade de alinhamento interno.
             </div>
         </div>
+    </section>
 
-        <div class="option">
-            <h3>Agência</h3>
-            <div class="subtitle">Equipe especializada</div>
-            <div class="content">
-                <p>Contratar uma agência significa ter acesso a uma equipe de profissionais com expertise em diferentes áreas, como marketing, design, desenvolvimento e análise de dados.</p>
-                <p><span>Preço relativo:</span> Custa entre R$ 3.000 e R$ 10.000/mês, dependendo do escopo.</p>
-                <p><span>Prazo:</span> Pode levar de 2 a 6 meses para implantar uma estratégia completa.</p>
-                <p><span>Processo:</span> Análise de necessidades, planejamento, execução e acompanhamento.</p>
-                <p><span>Vantagens:</span> Resultados mensuráveis, suporte contínuo e expertise coletiva.</p>
-                <p><span>Limitações:</span> Custos elevados e menos flexibilidade.</p>
+    <section>
+        <h2>Processo</h2>
+        <div class="comparison">
+            <div class="comparison-item">
+                <strong>Asura</strong><br>
+                Processo direto e transparente, com comunicação clara e foco na entrega do resultado final.
+            </div>
+            <div class="comparison-item">
+                <strong>Freelancer</strong><br>
+                Processo mais informal e dependente da confiança e da comunicação direta entre partes.
+            </div>
+            <div class="comparison-item">
+                <strong>Agência</strong><br>
+                Processo estruturado com etapas de planejamento, revisão e entrega, mas pode ser mais burocrático.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Vantagens e Limitações</h2>
+        <div class="comparison">
+            <div class="comparison-item">
+                <strong>Asura</strong><br>
+                <strong>Vantagens:</strong> Custos fixos, foco no resultado, suporte contínuo.<br>
+                <strong>Limitações:</strong> Pode não ser ideal para demandas muito específicas ou mudanças frequentes.
+            </div>
+            <div class="comparison-item">
+                <strong>Freelancer</strong><br>
+                <strong>Vantagens:</strong> Flexibilidade e custo inicial mais baixo.<br>
+                <strong>Limitações:</strong> Menor suporte contínuo e maior risco de atrasos ou inconsistências.
+            </div>
+            <div class="comparison-item">
+                <strong>Agência</strong><br>
+                <strong>Vantagens:</strong> Estrutura organizada, expertise em projetos complexos.<br>
+                <strong>Limitações:</strong> Alto custo e menos flexibilidade em relação a mudanças de escopo.
             </div>
         </div>
     </section>
 
     <footer>
-        © 2025 Comparação entre Asura, Freelancer e Agência. Todos os direitos reservados.
+        &copy; 2025 Comparação de Serviços de Desenvolvimento
     </footer>
 </body>
 </html>
