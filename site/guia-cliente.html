@@ -5,11 +5,11 @@
     <title>Como Contratar o Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #f5f5f5;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
@@ -18,46 +18,42 @@
         }
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 2em;
         }
         main {
             padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
+            max-width: 900px;
+            margin: auto;
         }
         h2 {
             color: #ff9800;
-            margin-bottom: 10px;
+            margin-top: 40px;
         }
-        p {
-            line-height: 1.6;
+        .step {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-left: 5px solid #ff9800;
+            margin-bottom: 20px;
         }
-        ul {
-            margin-left: 20px;
+        .step h3 {
+            margin-top: 0;
+            color: #ffeb3b;
         }
-        .cta {
-            background-color: #ff9800;
-            color: #121212;
-            padding: 15px 25px;
-            text-align: center;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 30px;
-            font-weight: bold;
+        .step p {
+            margin: 10px 0;
         }
-        .cta a {
-            color: #121212;
-            text-decoration: none;
+        .step ul {
+            margin: 10px 0;
+            padding-left: 20px;
         }
-        .cta a:hover {
-            text-decoration: underline;
+        .step ul li {
+            margin-bottom: 8px;
         }
         .footer {
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #888;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #ccc;
         }
     </style>
 </head>
@@ -66,36 +62,61 @@
         <h1>Como Contratar o Asura</h1>
     </header>
     <main>
-        <section>
-            <h2>Escolha o Serviço</h2>
-            <p>Antes de iniciar o processo de contratação, é essencial escolher o serviço que melhor atende às suas necessidades. O Asura oferece uma variedade de serviços, desde consultoria até assistência técnica. Identifique o serviço desejado e verifique as especificações, prazos e custos associados.</p>
-        </section>
-        <section>
-            <h2>Crie o Pedido</h2>
-            <p>Após escolher o serviço, você deve criar um pedido no sistema do Asura. Insira todos os detalhes relevantes, como descrição do serviço, prazo, quantidade de horas ou tarefas, e informações de contato. Certifique-se de que todos os dados estejam corretos para evitar erros na execução.</p>
-        </section>
-        <section>
-            < <h2>Pague em USDC na Rede Base</h2>
-            <p>Para pagar em USDC na rede Base, utilize uma carteira compatível com a rede Base, como MetaMask. Conecte a carteira e envie o valor correspondente ao contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. O valor deve ser equivalente ao custo do serviço escolhido. Após a transação, confirme o envio e anote o hash para acompanhamento.</p>
-        </section>
-        <section>
-            <h2>Pague em ETH na Rede Base ou Mainnet</h2>
-            <p>Se optar por pagar em ETH, utilize a mesma carteira e conecte-se à rede Base ou à Mainnet, conforme necessário. Envie o valor correspondente ao contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Após a transação, confirme o envio e anote o hash da transação para acompanhar o status.</p>
-        </section>
-        <section>
-            <h2>Envie o Hash da Transação</h2>
-            <p>Após realizar o pagamento, envie o hash da transação para o agente do Asura, que é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F. Isso permite que o agente valide o pagamento e inicie o processo de atendimento. Certifique-se de que o hash esteja correto e enviado para o endereço correto.</p>
-        </section>
-        <section>
-            <h2>Acompanhe a Entrega</h2>
-            <p>Com o hash da transação enviado e o pagamento confirmado, o agente iniciará o processo de atendimento. Você poderá acompanhar o status do pedido via sistema do Asura. Caso haja qualquer problema, entre em contato com o agente para resolver.</p>
-        </section>
-        <div class="cta">
-            <a href="https://basescan.org/address/0x3ecdD82B0abd76b4B32211d08eE309973760DF6F" target="_blank">Contate o Agente</a>
+        <div class="step">
+            <h3>Passo 1: Escolher o Serviço</h3>
+            <p>Antes de iniciar o processo de contratação, é essencial identificar qual serviço você deseja utilizar. O Asura oferece uma variedade de opções, como transações inteligentes, contratos de segurança, e serviços de verificação de endereços. Escolha com cuidado o serviço adequado para suas necessidades.</p>
+            <p>Para garantir que você esteja optando pela solução correta, consulte a documentação oficial do Asura ou entre em contato com o suporte técnico para obter mais informações sobre cada serviço.</p>
+        </div>
+        <div class="step">
+            <h3>Passo 2: Criar o Pedido</h3>
+            <p>Após escolher o serviço, o próximo passo é criar um pedido. Para isso, acesse o portal do Asura e selecione a opção "Criar Pedido".</p>
+            <p>Na página de criação do pedido, você precisará preencher os seguintes campos:</p>
+            <ul>
+                <li>Detalhes do serviço escolhido;</li>
+                <li>Endereço da carteira do cliente;</li>
+                <li>Descrição do serviço;</li>
+                <li>Valor a ser cobrado;</li>
+                <li>Detalhes adicionais conforme solicitado.</li>
+            </ul>
+            <p>Confira todos os dados antes de enviar o pedido para garantir que não haja erros.</p>
+        </div>
+        <div class="step">
+            < <h3>Passo 3: Pagar em USDC na Rede Base</h3>
+            <p>Para realizar o pagamento em USDC na rede Base, siga os seguintes passos:</p>
+            <ul>
+                <li>Acesse um serviço de carteira compatível com a rede Base, como MetaMask ou Blox.</li>
+                <li>Conecte sua carteira e verifique que a rede está configurada para a rede Base.</li>
+                <li>Busque o contrato do Asura: <strong>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</strong>.</li>
+                <li>Transfira o valor em USDC para o endereço do contrato do Asura.</li>
+                <li>Confirme a transação e espere que ela seja processada.</li>
+            </ul>
+            <p>Após a transferência, guarde o <strong>hash da transação</strong> para uso posterior.</p>
+        </div>
+        <div class="step">
+            <h3>Passo 4: Pagar em ETH na Rede Base ou Mainnet</h3>
+            <p>Se você optar por pagar em ETH, siga as instruções abaixo, dependendo da rede escolhida:</p>
+            <ul>
+                <li><strong>Rede Base:</strong> Conecte sua carteira, selecione a rede Base, e envie ETH para o endereço do contrato do Asura: <strong>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</strong>.</li>
+                <li><strong>Mainnet:</strong> Conecte sua carteira, selecione a rede Mainnet, e envie ETH para o mesmo endereço do contrato.</li>
+                <li>Confirme a transação e guarde o hash da transação para acompanhamento.</li>
+            </ul>
+            <p>Em ambas as redes, o processo é semelhante, mas o endereço da rede deve ser verificado com cuidado para evitar erros.</p>
+        </div>
+        <div class="step">
+            <h3>Passo 5: Enviar o Hash da Transação</h3>
+            <p>Após realizar o pagamento, você deve enviar o hash da transação para o agente do Asura. Para isso, acesse o portal do Asura e encontre a seção "Confirmar Pagamento".</p>
+            <p>Insira o hash da transação que você recebeu após a confirmação da rede. Certifique-se de que o hash está correto e que a transação foi confirmada.</p>
+            <p>Se houver algum problema com a transação, entre em contato com o suporte do Asura para obter ajuda.</p>
+        </div>
+        <div class="step">
+            <h3>Passo 6: Acompanhar a Entrega do Serviço</h3>
+            <p>Após enviar o hash da transação, o Asura iniciará o processamento do serviço solicitado. Para acompanhar o status, acesse o portal do Asura e consulte a seção "Status do Pedido".</p>
+            <p>Se houver algum atraso ou problema, o suporte do Asura entrará em contato com você para resolver a situação. Mantenha-se atento às notificações e responda conforme necessário.</p>
+            <p>Assim que o serviço for concluído, você receberá uma confirmação de entrega e poderá validar o resultado.</p>
         </div>
     </main>
     <footer class="footer">
-        © 2025 Asura. Todos os direitos reservados.
+        <p>Carteira do Agente: <strong>0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</strong></p>
     </footer>
 </body>
 </html>
