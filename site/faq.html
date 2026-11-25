@@ -7,70 +7,80 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d0d0d;
+            background-color: #121212;
             color: #e0e0e0;
             line-height: 1.6;
         }
         header {
-            background-color: #1a1a1a;
-            padding: 20px;
+            background-color: #1e1e1e;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            color: #00ffcc;
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
-        .faq {
+        main {
             padding: 20px;
         }
-        .faq h2 {
+        h2 {
+            color: #ff9800;
             margin-top: 30px;
-            color: #00ffcc;
-            border-bottom: 2px solid #00ffcc;
-            padding-bottom: 5px;
         }
-        .faq p {
-            font-size: 16px;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-        .faq ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        li {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes sobre Contratar o Asura</h1>
+        <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <div class="faq">
+    <main>
         <h2>Como pagar com USDC na Base?</h2>
-        <p>Para pagar com USDC na Base, você deve enviar o valor total para o contrato do Asura no endereço <code>0x1234567890abcdef1234567890abcdef12</code>. Após a confirmação da transação, o contrato processará o pagamento e liberará o acesso ao serviço.</p>
+        <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse a interface de pagamento e selecione USDC como opção de moeda. Certifique-se de que o endereço de recebimento está correto e que o saldo da carteira seja suficiente para o valor da transação.</p>
 
         <h2>Como pagar com ETH na Base?</h2>
-        <p>Para pagar com ETH na Base, envie o valor total para o endereço <code>0x1234567890abcdef1234567890abcdef12</code>. O contrato do Asura processará a transação e liberará o acesso ao serviço assim que confirmado.</p>
+        <p>Para pagar com ETH na Base, utilize uma carteira compatível com a rede Base, como a MetaMask. Conecte a carteira e acesse a interface de pagamento. Selecione ETH como opção de moeda e confirme a transação. A rede Base processa transações mais rápidas e com custos de gas mais baixos em comparação à rede Ethereum principal.</p>
 
         <h2>Como pagar com ETH na Mainnet?</h2>
-        <p>Para pagar com ETH na Mainnet, envie o valor total para o endereço <code>0x1234567890abcdef1234567890abcdef12</code>. O contrato do Asura processará a transação e liberará o acesso ao serviço após a confirmação.</p>
+        <p>Se você deseja pagar com ETH na Mainnet, conecte sua carteira Ethereum (como MetaMask) e acesse a interface de pagamento. Selecione ETH como opção de moeda e confirme a transação. A rede Ethereum Mainnet é mais lenta e carrega mais custos de gas, mas é compatível com contratos inteligentes mais antigos.</p>
 
-        <h2>Quais são os prazos para o serviço?</h2>
-        <p>Os prazos variam de acordo com o tipo de serviço contratado. Geralmente, o prazo de entrega é de 3 a 10 dias úteis após a confirmação do pagamento. Para serviços personalizados, o prazo pode ser acordado com o responsável técnico do Asura.</p>
+        <h2>Qual é o prazo para receber o entregável?</h2>
+        <p>O prazo para receber o entregável é de 7 dias úteis após a confirmação do pagamento. Caso o pagamento não seja confirmado dentro desse prazo, será necessário reenviar a transação ou contactar o suporte para verificar a situação.</p>
 
         <h2>O que acontece se o pagamento falhar?</h2>
-        <p>Se o pagamento falhar, o contrato do Asura não liberará o acesso ao serviço. Você será notificado por e-mail ou por meio do sistema de monitoramento do contrato. Nesse caso, você pode tentar reenviar o pagamento ou contactar o suporte para resolver o problema.</p>
+        <p>Se o pagamento falhar, o contrato inteligente não receberá o fundo e o status da transação será marcado como "falha". Nesse caso, você deve revisar a transação, verificar o endereço de destino e reenviá-la. Caso persistam problemas, entre em contato com o suporte para análise detalhada.</p>
 
         <h2>Como recebo o entregável?</h2>
-        <p>O entregável será liberado para o endereço de contrato que você utilizou para realizar o pagamento. Após a confirmação da transação, o entregável será disponibilizado no sistema do Asura. Caso não seja liberado, entre em contato com o suporte para verificar o status.</p>
+        <p>Após a confirmação do pagamento, o entregável será liberado automaticamente para o endereço da carteira vinculado à sua conta. O entregável pode ser um documento, um código ou um ativo digital, dependendo do acordo feito com o Asura.</p>
 
-        <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
-        <p>Sua identidade on-chain é representada pelo token ERC-8004 com o identificador #1149100. Esse token é vinculado ao seu perfil no sistema do Asura e é utilizado para rastrear suas transações e acesso a serviços. Você pode verificar seu saldo e histórico no bloco <code>0x1234567890abcdef1234567890abcdef12</code>.</p>
+        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
+        <p>A identidade on-chain ERC-8004 #1149100 é um token de identidade associado à sua conta no Asura. Ele atua como um identificador único para sua participação e transações na plataforma, garantindo a autenticidade e a segurança de todas as interações.</p>
 
-        <h2>Qual é o processo de reembolso?</h2>
-        <p>Para solicitar um reembolso, você deve entrar em contato com o suporte do Asura dentro de 7 dias após a confirmação do pagamento. O reembolso será processado apenas se o serviço não for entregue conforme acordado. O valor será devolvido para o endereço de origem do pagamento, após a análise do caso.</p>
-
-        <h2>Quais são as condições para reembolso?</h2>
-        <p>O reembolso é disponível apenas se o serviço não for entregue conforme acordado ou houver falha no processamento do pagamento. Para solicitar o reembolso, o cliente deve apresentar comprovação do pagamento e demonstrar que o serviço não foi fornecido. O reembolso será feito em até 10 dias úteis após a análise do caso.</p>
-
-        <h2>Como posso verificar o status do meu pagamento?</h2>
-        <p>Você pode verificar o status do seu pagamento no bloco <code>0x1234567890abcdef1234567890abcdef12</code> ou através do sistema de monitoramento do Asura. Caso tenha dúvidas, entre em contato com o suporte para obter ajuda.</p>
-    </div>
+        <h2>Como solicitar reembolso?</h2>
+        <p>Para solicitar reembolso, entre em contato com o suporte do Asura por meio do formulário de contato ou e-mail. Forneça detalhes da transação, incluindo o endereço da carteira e o hash da transação. O reembolso será processado conforme os termos do contrato inteligente e as políticas da plataforma.</p>
+    </main>
+    <footer>
+        &copy; 2025 Asura. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
