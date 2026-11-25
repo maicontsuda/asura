@@ -1,159 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Como Escrever um Briefing Eficaz para Pedir Conteúdo</title>
+    <title>Como Escrever um Briefing Eficaz para Conteúdo</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1e1e2f;
-            color: #f5f5f5;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-
-        header {
-            background-color: #2a2a40;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #ffffff;
-        }
-
-        main {
+        .container {
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
-            max-width: 900px;
-            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #282828;
+            border-radius: 8px;
         }
-
-        section {
-            margin-bottom: 40px;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
-
-        h2 {
-            color: #ffffff;
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        ol {
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 1.1rem;
+            line-height: 1.6;
             margin-bottom: 10px;
         }
-
-        p {
+        .example {
+            margin-bottom: 20px;
+        }
+        .example h2 {
+            font-size: 1.8rem;
+            color: #ff8c00;
+        }
+        .example p {
+            font-size: 1.1rem;
             line-height: 1.6;
         }
-
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
         .checklist {
-            background-color: #2a2a40;
-            padding: 15px;
-            border-left: 4px solid #00ffcc;
+            margin-top: 30px;
         }
-
-        .checklist h3 {
-            margin: 0;
-            color: #00ffcc;
-        }
-
-        .checklist ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
         .checklist li {
-            margin-bottom: 8px;
-        }
-
-        code {
-            background-color: #1e1e2f;
-            color: #00ffcc;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-
-        .exemplo {
-            background-color: #2a2a40;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 4px solid #00ffcc;
-        }
-
-        .exemplo h3 {
-            margin: 0;
-            color: #00ffcc;
-        }
-
-        .exemplo pre {
-            background-color: #1e1e2f;
-            color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
-            white-space: pre-wrap;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Como Escrever um Briefing Eficaz para Pedir Conteúdo</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Por Que um Briefing é Importante?</h2>
-            <p>Um briefing é um documento que define o que o cliente precisa do conteúdo. Ele ajuda o criador a compreender o objetivo, o público-alvo e as diretrizes. Um briefing bem estruturado evita retrabalho e garante que o conteúdo atenda às expectativas.</p>
-        </section>
-
-        <section>
-            <h2>O Que Incluir no Briefing?</h2>
-            <ul>
-                <li><strong>Público-alvo:</strong> Quem é o leitor? Idade, interesses, localização.</li>
-                <li><strong>Objetivo:</strong> O que o conteúdo precisa conquistar? Vender, informar, engajar.</li>
-                <de><strong>Tom:</strong> Formal, informal, técnico, criativo.</li>
-                <li><strong>Exemplos de conteúdo:</strong> Links, imagens, textos que servem como referência.</li>
-                <li><strong>Restrições:</strong> Palavras-chave a evitar, tonalidade, limitações de estilo.</li>
-            </ul>
-        </section>
-
-        <section>
+    <div class="container">
+        <h1>Como Escrever um Briefing Eficaz para Conteúdo</h1>
+        <p>Um briefing eficaz é crucial para garantir que o conteúdo produzido atenda às expectativas do cliente. Aqui estão as principais informações a serem incluídas em um briefing:</p>
+        <ol>
+            <li><strong>Público-alvo</strong>: Descreva quem é o público-alvo do conteúdo. Quem são eles? Qual é a sua idade, gênero, interesses, etc.</li>
+            <li><strong>Tom e estilo</strong>: Defina o tom e o estilo do conteúdo. É formal, informal, sério, humorístico, etc?</li>
+            <li><strong>Exemplos</strong>: Forneça exemplos de conteúdo similar que você gostaria de ver. Isso pode incluir links, imagens, textos ou outros materiais.</li>
+            <li><strong>Restrições</strong>: Liste quaisquer restrições ou considerações importantes. Isso pode incluir limitações de tempo, orçamento, ou questões de privacidade.</li>
+        </ol>
+        <div class="example">
             <h2>Exemplo de Briefing Bom</h2>
-            <div class="exemplo">
-                <h3>Briefing para Artigo de Blog</h3>
-                <pre>
-Público: Profissionais de marketing e empreendedores
-Objetivo: Explicar como usar métricas de conversão para aumentar vendas
-Tom: Profissional e direto
-Exemplos: Artigos sobre conversão e ROI
-Restrições: Não usar jargões técnicos, evitar termos como "lead" sem explicação
-                </pre>
-            </div>
-        </section>
-
-        <section>
+            <p>Publicidade para um aplicativo de fitness voltado para pessoas acima de 30 anos, interessadas em treinos de alta intensidade. Tom: motivacional e inspirador. Estilo: combina imagens de pessoas ativas com textos curtos e empolgantes. Exemplos: publicidades do Instagram do aplicativo FitLife. Restrições: deve conter informações corretas sobre treinamento, sem promessas não cumpríveis.</p>
+        </div>
+        <div class="example">
             <h2>Exemplo de Briefing Ruim</h2>
-            <div class="exemplo">
-                <h3>Briefing Vago</h3>
-                <pre>
-Preciso de um artigo sobre marketing
-                </pre>
-            </div>
-        </section>
-
-        <section>
+            <p>Publicidade de um aplicativo de fitness para jovens. Tom: descontraído. Estilo: não definido. Exemplos: nenhum fornecido. Restrições: sem especificações.</p>
+        </div>
+        <div class="checklist">
             <h2>Checklist Final</h2>
-            <div class="checklist">
-                <h3>Verifique antes de enviar:</h3>
-                <ul>
-                    <li>Objetivo do conteúdo está claro?</li>
-                    <li>Definiu o público-alvo?</li>
-                    <li>Estabeleceu o tom e estilo?</li>
-                    <li>Incluiu exemplos relevantes?</li>
-                    <li>Definiu restrições e limites?</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+            <ol>
+                <li>Verifique se todas as informações necessárias estão incluídas.</li>
+                <li>Revisite o público-alvo para garantir que é claro e preciso.</li>
+                <li>Confira se o tom e o estilo estão alinhados com a marca e o público-alvo.</li>
+                <li>Examine se os exemplos são relevantes e inspiradores.</li>
+                <li>Verifique se as restrições são claras e não contradizem o briefing.</li>
+            </ol>
+        </div>
+    </div>
 </body>
 </html>
