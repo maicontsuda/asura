@@ -5,84 +5,121 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
         }
 
-        .glossario {
-            display: flex;
-            flex-direction: column;
+        h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        main {
             padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
         }
 
         .termo {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            padding: 15px;
-        }
-
-        .termo h3 {
-            margin: 0 0 10px 0;
-            font-size: 18px;
+            font-weight: bold;
             color: #ffffff;
+            margin-bottom: 5px;
         }
 
-        .termo p {
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.5;
+        .definicao {
+            font-size: 16px;
+            line-height: 1.6;
         }
 
-        .termo .exemplo {
-            margin-top: 10px;
+        .exemplo {
             font-style: italic;
-            color: #cccccc;
+            margin-top: 10px;
         }
 
         footer {
+            background-color: #1e1e1e;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
+            padding: 15px;
+            margin-top: 30px;
             color: #888;
         }
     </style>
 </head>
 <body>
-    <header>Glossário de Termos de Mercado</header>
-    <div class="glossario">
-        <div class="termo"><h3>Pip</h3><p>Unidade de medida de variação de preços em mercados financeiros. Representa 0,0001 em pares de moedas.</p><p class="exemplo">Se o EUR/USD sobe de 1,1200 para 1,1205, houve um movimento de 5 pips.</p></div>
-        <div class="termo"><h3>Spread</h3><p>Diferença entre o preço de compra e venda de um ativo, representando a comissão cobrada pelo broker.</p><p class="exemplo">O spread do EUR/USD pode ser de 1,5 pips.</p></div>
-        <div class="termo"><h3>Lote</h3><p>Unidade de transação padrão, geralmente equivalente a 100.000 unidades da moeda base.</p><p class="exemplo">Um lote de EUR/USD representa 100.000 euros.</p></div>
-        <div class="termo"><h3>Alavancagem</h3><p>Capacidade de operar com capital maior do que o que se possui, ampliando potencial de ganhos e perdas.</p><p class="exemplo">Com alavancagem de 1:100, um investidor pode operar com 100 vezes o capital disponível.</p></div>
-        <div class="termo"><h3>Margem</h3><p>Quantia de dinheiro que o investidor deve ter em sua conta para garantir as operações com alavancagem.</p><p class="exemplo">Se a margem exigida é de 10.000 USD, o investidor precisa ter pelo menos esse valor na conta.</p></div>
-        <div class="termo"><h3>Stop</h3><p>Ordem de venda automática que limita as perdas ao atingir um preço específico.</p><p class="exemplo">Um stop de 50 pips pode ser colocado abaixo do preço de entrada.</p></div>
-        <div class="termo"><h3>Take Profit</h3><p>Ordem de venda automática que limita os ganhos ao atingir um preço específico.</p><p class="exemplo">Um take profit de 100 pips pode ser colocado acima do preço de entrada.</p></div>
-        <div class="termo"><h3>Long</h3><p>Operação de compra, esperando que o preço suba.</p><p class="exemplo">Um investidor pode abrir uma posição longa no EUR/USD.</p></div>
-        <div class="termo"><h3>Short</h3><p>Operação de venda, esperando que o preço desça.</p><p class="exemplo">Um investidor pode abrir uma posição short no GBP/USD.</p></div>
-        <div class="termo"><h3>Gap</h3><p>Variação súbita do preço que ocorre entre o fechamento de uma sessão e o início da próxima.</p><p class="exemplo">Um gap negativo pode indicar uma notícia negativa inesperada.</p></div>
-        <div class="termo"><h3>Volume</h3><p>Número de contratos negociados em um determinado período, indicando liquidez e interesse.</p><p class="exemplo">Um volume alto pode indicar uma tendência consolidada.</p></div>
-        <div class="termo"><h3>RSI</h3><p>Índice de Força Relativa que mede a velocidade e o volume de preços, indicando sobrecompra ou sobreaviso.</p><p class="exemplo">RSI acima de 70 indica sobrecompra.</p></div>
-        <div class="termo"><h3>MACD</h3><p>Indicador que compara a média móvel exponencial de curto e longo prazo, indicando tendências.</p><p class="exemplo">Um MACD positivo indica tendência de alta.</p></div>
-        <div class="termo"><h3>Suporte</h3><p>Nível de preço onde o ativo tende a encontrar demanda e parar de cair.</p><p class="exemplo">O preço pode encontrar suporte em 1,1200.</p></div>
-        <div class="termo"><h3>Resistência</h3><p>Nível de preço onde o ativo tende a encontrar oferta e parar de subir.</p><p class="exemplo">O preço pode encontrar resistência em 1,1300.</p></div>
-        <div class="termo"><h3>Drawdown</h3><p>Perda acumulada de capital em comparação com o valor inicial de uma estratégia.</p><p class="exemplo">Um drawdown de 30% pode indicar uma estratégia arriscada.</p></div>
-        <div class="termo"><h3>Equity</h3><p>Valor total da conta, incluindo lucros e perdas acumulados.</p><p class="exemplo">A equity da conta pode ser de 10.000 USD.</p></div>
-        <div class="termo"><h3>Margem Livre</h3><p>Quantia disponível para operar com alavancagem, calculada com base na margem exigida.</p><p class="exemplo">Se a margem livre é de 5.000 USD, o investidor pode operar com 50.000 USD.</p></div>
-        <div class="termo"><h3>Ordem Limitada</h3><p>Ordem que é executada apenas se o preço atingir um nível específico.</p><p class="exemplo">Uma ordem limitada de venda a 1,1200 será executada se o preço atingir esse nível.</p></div>
-    </div>
-    <footer>© 2025 Glossário de Mercado</footer>
+    <header>
+        <h1>Glossário de Termos de Mercado</h1>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="termo">Pip</div>
+                <div class="definicao">Unidade de medida de movimento de preços em forex e criptomoedas. Representa 0,0001 em pares como EUR/USD.</div>
+                <div class="exemplo">Um movimento de 100 pips em EUR/USD equivale a R$10,00 em uma posição de 1 lote.</div>
+            </li>
+            <li>
+                <div class="termo">Spread</div>
+                <div class="definicao">Diferença entre a cotação de compra e venda de um ativo, geralmente expressa em pips.</div>
+                <div class="exemplo">O spread do EUR/USD pode variar entre 0,5 e 1,5 pips dependendo do broker e da volatilidade.</div>
+            </li>
+            <li>
+                <div class="termo">Lote</div>
+                <div class="definicao">Unidade de negociação padrão em forex, que varia entre 10.000, 1.000 e 100 unidades de moeda.</div>
+                <div class="exemplo">Um lote de EUR/USD equivale a 100.000 unidades de euro.</div>
+            </li>
+            <li>
+                <div class="termo">Alavancagem</div>
+                <div class="definicao">Multiplicador que aumenta o potencial de ganho e perda de uma posição.</div>
+                <div class="exemplo">Com alavancagem de 1:100, um movimento de 1 pip pode gerar um lucro de 100 pips.</div>
+            </li>
+            <li>
+                <div class="termo">Margem</div>
+                <div class="definicao">Quantia de dinheiro depositada em conta para garantir as posições abertas.</div>
+                <div class="exemplo">Para uma posição de 1 lote com alavancagem 1:100, a margem necessária é de R$100,00.</div>
+            </li>
+            <li>
+                <div class="termo">Stop</div>
+                <div class="definicao">Ordem que limita perdas ao fechar uma posição quando o preço atinge um nível específico.</div>
+                <div class="exemplo">Um stop de 50 pips protege contra perdas em uma posição comprada.</div>
+            </li>
+            <li>
+                <div class="termo">Take Profit</div>
+                <div class="definicao">Ordem que limita ganhos ao fechar uma posição quando o preço atinge um nível desejado.</div>
+                <div class="exemplo">Um take profit de 100 pips maximiza ganhos em uma posição vendida.</div>
+            </li>
+            <li>
+                <div class="termo">Long</div>
+                <div class="definicao">Posição comprada com expectativa de aumento de preço.</div>
+                <div class="exemplo">Comprar EUR/USD em uma tendência de alta é uma posição long.</div>
+            </li>
+            <li>
+                <div class="termo">Short</div>
+                <div class="definicao">Posição vendida com expectativa de queda de preço.</div>
+                <div class="exemplo">Vender EUR/USD em uma tendência de baixa é uma posição short.</div>
+            </li>
+            <li>
+                <div class="termo">Gap</div>
+                <div class="definicao">Movimento abrupto de preço sem preenchimento entre o fechamento e o abertura do mercado.</div>
+                <div class="exemplo">Um gap negativo pode indicar uma notícia negativa no mercado.</div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        &copy; 2025 - Glossário de Termos de Mercado
+    </footer>
 </body>
 </html>
