@@ -11,42 +11,45 @@
             color: #e0e0e0;
             line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 24px;
+            color: #ffffff;
         }
+
         main {
             padding: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
+
         h2 {
-            color: #ff9800;
-            margin-top: 30px;
+            color: #ffffff;
+            margin-top: 40px;
         }
+
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            margin: 10px 0;
         }
+
         li {
-            margin-bottom: 15px;
+            margin: 8px 0;
         }
+
         a {
-            color: #ff9800;
+            color: #00bcd4;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #888;
-            font-size: 0.9em;
         }
     </style>
 </head>
@@ -56,31 +59,28 @@
     </header>
     <main>
         <h2>Como pagar com USDC na Base?</h2>
-        <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask. Após conectar a carteira, acesse a interface de pagamento e selecione USDC como opção de moeda. Certifique-se de que o endereço de recebimento está correto e que o saldo da carteira seja suficiente para o valor da transação.</p>
+        <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base e transferir os USDC para o endereço fornecido no contrato de pagamento. Certifique-se de que o endereço está correto e que a transação é confirmada antes de encerrar o processo.</p>
 
         <h2>Como pagar com ETH na Base?</h2>
-        <p>Para pagar com ETH na Base, utilize uma carteira compatível com a rede Base, como a MetaMask. Conecte a carteira e acesse a interface de pagamento. Selecione ETH como opção de moeda e confirme a transação. A rede Base processa transações mais rápidas e com custos de gas mais baixos em comparação à rede Ethereum principal.</p>
+        <p>Para pagar com ETH na Base, utilize uma carteira que suporte a rede Base e envie ETH para o endereço especificado. A transação deve ser confirmada para que o pagamento seja processado corretamente.</p>
 
         <h2>Como pagar com ETH na Mainnet?</h2>
-        <p>Se você deseja pagar com ETH na Mainnet, conecte sua carteira Ethereum (como MetaMask) e acesse a interface de pagamento. Selecione ETH como opção de moeda e confirme a transação. A rede Ethereum Mainnet é mais lenta e carrega mais custos de gas, mas é compatível com contratos inteligentes mais antigos.</p>
+        <p>Se você deseja pagar com ETH na Mainnet, envie ETH para o endereço fornecido, utilizando uma carteira Ethereum. A transação será processada na rede Ethereum e o contrato receberá o pagamento.</p>
 
-        <h2>Qual é o prazo para receber o entregável?</h2>
-        <p>O prazo para receber o entregável é de 7 dias úteis após a confirmação do pagamento. Caso o pagamento não seja confirmado dentro desse prazo, será necessário reenviar a transação ou contactar o suporte para verificar a situação.</p>
+        <h2>Quais são os prazos para o pagamento?</h2>
+        <p>Os prazos para o pagamento variam conforme o tipo de contrato. Geralmente, o prazo é de 7 dias úteis após a confirmação da transação. Caso o pagamento não seja realizado dentro desse prazo, o contrato será cancelado automaticamente.</p>
 
         <h2>O que acontece se o pagamento falhar?</h2>
-        <p>Se o pagamento falhar, o contrato inteligente não receberá o fundo e o status da transação será marcado como "falha". Nesse caso, você deve revisar a transação, verificar o endereço de destino e reenviá-la. Caso persistam problemas, entre em contato com o suporte para análise detalhada.</p>
+        <p>Se o pagamento falhar, o contrato será cancelado e o valor será devolvido para a carteira do cliente. É importante verificar o endereço e a rede antes de enviar qualquer valor para evitar perdas.</p>
 
         <h2>Como recebo o entregável?</h2>
-        <p>Após a confirmação do pagamento, o entregável será liberado automaticamente para o endereço da carteira vinculado à sua conta. O entregável pode ser um documento, um código ou um ativo digital, dependendo do acordo feito com o Asura.</p>
+        <p>Após o pagamento ser confirmado, o entregável será liberado automaticamente para a carteira vinculada ao contrato. Você receberá um e-mail de confirmação com detalhes da liberação.</p>
 
-        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <p>A identidade on-chain ERC-8004 #1149100 é um token de identidade associado à sua conta no Asura. Ele atua como um identificador único para sua participação e transações na plataforma, garantindo a autenticidade e a segurança de todas as interações.</p>
+        <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
+        <p>Sua identidade on-chain é representada pelo token ERC-8004 #1149100, que é associado à sua carteira e serve como comprovação de identidade no sistema Asura. Você pode verificar o status do token em uma blockchain explorer.</p>
 
         <h2>Como solicitar reembolso?</h2>
-        <p>Para solicitar reembolso, entre em contato com o suporte do Asura por meio do formulário de contato ou e-mail. Forneça detalhes da transação, incluindo o endereço da carteira e o hash da transação. O reembolso será processado conforme os termos do contrato inteligente e as políticas da plataforma.</p>
+        <p>Para solicitar reembolso, entre em contato com o suporte da Asura e forneça detalhes da transação e do motivo do reembolso. O reembolso será processado após a análise da solicitação.</p>
     </main>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
 </body>
 </html>
