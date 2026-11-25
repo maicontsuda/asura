@@ -7,7 +7,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
@@ -18,79 +18,109 @@
         }
         h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
         }
-        main {
-            padding: 20px;
+        .container {
             max-width: 1000px;
-            margin: auto;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
         }
         h2 {
             color: #ff9800;
-            border-bottom: 2px solid #ff9800;
-            padding-bottom: 5px;
+            margin-top: 30px;
         }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
         li {
-            margin-bottom: 10px;
-        }
-        .aviso {
-            background-color: #2e2e2e;
-            padding: 15px;
-            margin-top: 20px;
+            background-color: #2a2a2a;
             border-left: 5px solid #ff9800;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .alert {
+            background-color: #2a2a2a;
+            border-left: 5px solid #e53935;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
+            margin-top: 40px;
             font-size: 0.9em;
-            color: #aaaaaa;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Checklist de SEO Básico para uma Landing Page</h1>
+        <h1>Checklist de SEO Básico para Landing Page</h1>
     </header>
-    <main>
+    <div class="container">
+        <p>Um bom SEO é fundamental para aumentar a visibilidade de sua landing page no Google e atrair mais tráfego orgânico. Abaixo está um checklist com os elementos essenciais de SEO básico para uma landing page.</p>
+
         <h2>1. Title Tag</h2>
-        <p>O título da página é o primeiro elemento que aparece nos resultados de busca. Ele deve ser curto, descritivo e incluir palavras-chave relevantes. Exemplo: "Como Criar uma Landing Page Eficaz - Guia Completo".</p>
+        <ul>
+            <li>Use um título único e relevante para cada página.</li>
+            <li>Evite títulos muito longos (recomenda-se até 60 caracteres).</li>
+            <li>Inclua palavras-chave principais, mas não exagere.</li>
+        </ul>
 
         <h2>2. Meta Description</h2>
-        <p>A meta descrição é um resumo do conteúdo da página. Ela deve ser única, não repetitiva e incluir palavras-chave. É importante que tenha entre 155 e 160 caracteres para ser exibida corretamente no Google.</p>
+        <ul>
+            <li>Crie uma descrição única e atraente para cada página.</li>
+            <li>Use entre 155 e 160 caracteres para evitar truncamento.</li>
+            <li>Inclua palavras-chave e um chamado à ação.</li>
+        </ul>
 
         <h2>3. Headings (H1, H2, H3)</h2>
-        <p>Os headings ajudam a estruturar o conteúdo e melhoram a legibilidade. O H1 deve ser único e representar o tema principal da página. Os H2 e H3 devem ser usados para dividir seções e subseções, facilitando a navegação e a indexação.</p>
+        <ul>
+            <li>Use o H1 para o título principal da página.</li>
+            <li>Use H2 e H3 para seções e subseções, mantendo a hierarquia clara.</li>
+            <li>Evite usar H1 em mais de uma vez por página.</li>
+        </ul>
 
         <h2>4. Texto Alternativo (Alt Text)</h2>
-        <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso melhora a acessibilidade e ajuda o motor de busca a entender o conteúdo da imagem.</p>
+        <ul>
+            <li>Adicione descrições únicas e descritivas para todas as imagens.</li>
+            <li>Use palavras-chave relevantes, mas sem exagerar.</li>
+            <li>Evite repetir palavras-chave excessivamente.</li>
+        </ul>
 
         <h2>5. Velocidade de Carregamento</h2>
-        <p>A velocidade da página é um fator importante para o SEO. Use imagens otimizadas, minimize o uso de scripts e evite carregar muitos arquivos. Ferramentas como Google PageSpeed Insights podem ajudar a identificar melhorias.</p>
+        <ul>
+            <li>Optimize imagens e use formatos como WebP.</li>
+            <li>Reduza o uso de scripts e arquivos externos.</li>
+            <li>Use CDN para acelerar o carregamento em diferentes regiões.</li>
+        </ul>
 
         <h2>6. Links Internos</h2>
-        <p>Os links internos ajudam o visitante a navegar pela página e também indicam ao Google a estrutura do site. Evite links quebrados e use URLs curtas e descritivas.</p>
+        <ul>
+            <li>Conecte páginas relevantes dentro do site para melhorar a navegação.</li>
+            <li>Use links de qualidade e evite links quebrados.</li>
+            <li>Evite usar links internos para páginas irrelevantes.</li>
+        </ul>
 
-        <h2>7. O que NÃO Fazer</h2>
-        <p>
+        <div class="alert">
+            <p><strong>O que NÃO fazer:</strong></p>
             <ul>
-                <li>Não use palavras-chave de forma excessiva ou forçada.</li>
-                <li>Não repita o mesmo título ou meta description em várias páginas.</li>
-                <li>Não use imagens sem texto alternativo.</li>
-                <li>Não inclua links quebrados ou irrelevantes.</li>
-                <li>Não carregue arquivos grandes sem otimizar.</li>
+                <li>Não use meta tags duplicadas ou não relevantes.</li>
+                <li>Não inclua palavras-chave de forma forçada ou spamosa.</li>
+                <li>Não use links internos para páginas não existentes ou irrelevantes.</li>
+                <li>Não ignore a otimização de imagens e texto alternativo.</li>
             </ul>
-        </p>
-
-        <div class="aviso">
-            <p><strong>Aviso:</strong> O SEO é um processo contínuo. Monitore o desempenho da sua landing page regularmente e atualize o conteúdo conforme necessário.</p>
         </div>
-    </main>
+
+        <p>Seguindo esse checklist, você estará em um bom caminho para otimizar sua landing page e melhorar sua presença no Google. Lembre-se que SEO é um processo contínuo e que o conteúdo relevante e de qualidade é o pilar mais importante.</p>
+    </div>
     <footer>
-        &copy; 2025 Checklist de SEO Básico - Guia para Landing Pages
+        &copy; 2025 Checklist de SEO Básico - Todos os direitos reservados.
     </footer>
 </body>
 </html>
