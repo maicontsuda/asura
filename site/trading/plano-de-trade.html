@@ -5,9 +5,9 @@
     <title>Plano de Trade - Modelo para Operações</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -17,13 +17,15 @@
             text-align: center;
         }
         h1 {
-            color: #00ffcc;
+            margin: 0;
+            font-size: 24px;
+            color: #ffffff;
         }
         section {
+            background-color: #1a1a1a;
             padding: 20px;
             margin: 20px 0;
-            background-color: #1e1e1e;
-            border-radius: 8px;
+            border-left: 4px solid #00ffcc;
         }
         h2 {
             color: #00ffcc;
@@ -33,24 +35,33 @@
             line-height: 1.6;
         }
         ul {
-            list-style-type: disc;
             padding-left: 20px;
+        }
+        .aviso {
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+            padding: 15px;
+            margin: 30px 0;
+            font-style: italic;
         }
         .checklist {
             background-color: #2a2a2a;
+            border: 1px solid #444;
             padding: 15px;
-            border-radius: 6px;
+            margin: 20px 0;
         }
         .checklist h3 {
             color: #00ffcc;
         }
-        .checklist p {
-            margin: 5px 0;
+        .checklist ul {
+            list-style-type: square;
+            padding-left: 20px;
         }
         .registro {
             background-color: #2a2a2a;
+            border: 1px solid #444;
             padding: 15px;
-            border-radius: 6px;
+            margin: 20px 0;
         }
         .registro h3 {
             color: #00ffcc;
@@ -61,18 +72,11 @@
         }
         .registro th, .registro td {
             border: 1px solid #444;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
-        .aviso {
+        .registro th {
             background-color: #2a2a2a;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 30px;
-        }
-        .aviso p {
-            font-style: italic;
-            color: #cccccc;
         }
     </style>
 </head>
@@ -82,37 +86,46 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de cada operação, como a direção esperada (cima/baixo), o nível de stop loss e o target. Exemplo: “Objetivo: Comprar XPT22 a R$ 10,00 com stop loss em R$ 9,50 e target em R$ 11,00.”</p>
+        <p>Defina claramente quais são os objetivos de cada operação. Exemplos: proteger capital, gerar rendimento mensal, acumular lucro em um período específico.</p>
+        <p>Exemplo de objetivo: "Obter um lucro de 5% em 10 dias de operação no mercado de ações, com risco máximo de 2% por dia."</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Identifique o mercado alvo (ativo, índice, moeda, etc.) e a razão da escolha. Exemplo: “Mercado: Dólar/Real (USD/BRL), por causa da volatilidade diária e da tendência de alta em determinado período.”</p>
+        <p>Selecione os mercados em que você planeja operar. Exemplos: ações, forex, criptomoedas, futuros, opções.</p>
+        <ul>
+            <li>Ações: empresas de tecnologia e consumo</li>
+            <li>Forex: EUR/USD, USD/JPY</li>
+            <li>Criptomoedas: BTC/USD, ETH/USD</li>
+        </ul>
     </section>
     <section>
-        < <h2>Horários</h2>
-        <p>Escolha o horário de entrada e saída da operação com base no comportamento do mercado e sua disponibilidade. Exemplo: “Entrada: 10:00, Saída: 15:00.”</p>
+        <h2>Horários</h2>
+        <p>Defina os horários em que você vai operar. Exemplos: 8h às 12h, 14h às 18h, 20h às 24h.</p>
+        <p>Exemplo: "Operar apenas entre 14h e 18h, com análise prévia antes das 13h."</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
+        <p>Defina regras claras para entrar e sair de operações. Exemplos: entrada com confirmação de breakout, saída com stop loss ou take profit.</p>
         <ul>
-            <li>Entrada: Apenas quando confirmada pela análise técnica e fundamentalista.</li>
-            <li>Saída: Cumprir o stop loss ou atingir o target estabelecido.</li>
-            <li>Regras de gestão de risco: Limitar a exposição a 2% do capital por operação.</li>
+            <li>Entrada: Quando a média móvel de 50 dias cruza a de 200 dias para cima</li>
+            <li>Saída: Após 3% de lucro ou 2% de perda</li>
         </ul>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas que você está disposto a aceitar no dia. Exemplo: “Limite de perdas diária: 5% do capital total.”</p>
+        <p>Defina um limite máximo de perdas que você está disposto a aceitar por dia. Exemplo: "Máximo de 2% de perda diária."</p>
     </section>
+    <div class="aviso">
+        Este conteúdo é apenas educacional e não constitui recomendação de investimento. As operações com mercado financeiro envolvem risco de perda de capital.
+    </div>
     <section class="checklist">
         <h3>Checklist Antes de Abrir Operação</h3>
-        <p>Verifique todos os itens abaixo antes de entrar em uma operação:</p>
         <ul>
-            <li>Condições técnicas e fundamentais estão alinhadas.</li>
-            <li>Stop loss e target estão definidos.</li>
-            <li>Capital disponível é suficiente para o risco assumido.</li>
-            <li>Horário de operação está disponível.</li>
-            <li>Plano de trade foi revisado e aprovado.</li>
+            <li>Verificar os objetivos da operação</li>
+            <li>Confirmar condições de mercado</li>
+            <li>Verificar regras de entrada e saída</li>
+            <li>Calcular o stop loss e take profit</li>
+            <li>Confirmar que o limite de perdas diária não será ultrapassado</li>
         </ul>
     </section>
     <section class="registro">
@@ -120,26 +133,21 @@
         <table>
             <tr>
                 <th>Data</th>
-                <th>Ativo</th>
+                <th>Operação</th>
                 <th>Entrada</th>
-                <th>Stop Loss</th>
-                <th>Target</th>
+                <th>Saída</th>
                 <th>Resultado</th>
-                <th>Observações</th>
+                <th>Comentários</th>
             </tr>
             <tr>
-                <td>01/10/2025</td>
-                <td>USDBRL</td>
-                <td>R$ 5,20</td>
-                <td>R$ 5,10</td>
-                <td>R$ 5,30</td>
-                <td>Lucro</td>
-                <td>Operação bem-sucedida com margem de segurança.</td>
+                <td>15/05/2025</td>
+                <td>Compra de BTC/USD</td>
+                <td>30.000</td>
+                <td>30.500</td>
+                <td>+1,67%</td>
+                <td>Operação bem-sucedida com confirmação de volume</td>
             </tr>
         </table>
-    </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas. Consulte um profissional antes de investir.</p>
     </section>
 </body>
 </html>
