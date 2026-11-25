@@ -8,45 +8,62 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            padding: 20px;
+            color: #ffffff;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
         }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #1e1e1e;
+            border-left: 4px solid #ff9800;
+            border-right: 4px solid #ff9800;
+        }
+
         h2 {
-            margin-top: 30px;
-            font-size: 1.5em;
+            color: #ff9800;
+            margin-top: 0;
         }
+
         p {
-            line-height: 1.6;
             font-size: 1em;
         }
-        .section {
-            margin-bottom: 40px;
+
+        ul {
+            padding-left: 20px;
         }
+
         .aviso {
             background-color: #2a2a2a;
+            border: 1px solid #ff9800;
             padding: 15px;
-            border-left: 5px solid #e63946;
-            margin-top: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
+            border-radius: 8px;
         }
+
         .aviso p {
-            font-weight: bold;
-            margin: 0;
+            font-size: 1.2em;
         }
-        a {
-            color: #e63946;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
@@ -54,32 +71,35 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <div class="section">
+    <section>
         <h2>Risco por Operação</h2>
-        <p>Em operações financeiras, é essencial limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1% ou 2% do seu capital. Esse limite ajuda a proteger o capital e evita que uma única operação comprometa significativamente o seu patrimônio.</p>
-    </div>
-    <div class="section">
+        <p>Em operações de investimento, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso significa que, em cada transação, você deve estar disposto a perder no máximo esse percentual. Essa limitação ajuda a proteger o capital e a evitar que uma única operação cause danos irreversíveis.</p>
+    </section>
+    <section>
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ordem que limita as perdas em uma operação, enquanto o take profit define o ponto em que você sairá do mercado para garantir lucros. Esses limites ajudam a manter a disciplina emocional e a evitar decisões impulsivas, garantindo que você respeite seus planos de trading.</p>
-    </div>
-    <div class="section">
+        <p>Os stop loss e take profit são ferramentas essenciais para controlar o risco e maximizar os ganhos. O stop loss é um limite de venda automática que protege contra perdas excessivas, enquanto o take profit define o nível de lucro almejado. Esses limites ajudam a manter disciplina e evitar emoções durante a operação.</p>
+    </section>
+    <section>
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco por operação, garantindo que você não exponha mais do que está disposto a perder. Isso é fundamental para manter o equilíbrio entre risco e potencial retorno.</p>
-    </div>
-    <div class="section">
+        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco por operação e no stop loss. Por exemplo, se você tem um capital de R$100.000 e deseja risco de 1%, com um stop loss de 50 pontos, você deve posicionar apenas uma quantidade que garanta que a perda máxima não ultrapasse R$1.000.</p>
+    </section>
+    <section>
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é uma métrica que compara o potencial de lucro com o risco assumido. Operações com um risco/retorno de 1:2, por exemplo, significam que você espera ganhar dois reais para cada um que está disposto a perder. Esse conceito ajuda a identificar operações mais favoráveis.</p>
-    </div>
-    <div class="section">
+        <p>Um bom indicador de qualidade de uma operação é a proporção entre risco e retorno. Geralmente, um risco/retorno de 1:2 ou 1:3 é considerado aceitável. Isso significa que, para cada unidade de risco, você espera ganhar duas ou três vezes. Isso cria um equilíbrio entre segurança e potencial de lucro.</p>
+    </section>
+    <section>
         <h2>Drawdown</h2>
-        <p>O drawdown é a queda percentual do capital em relação ao seu valor máximo atingido. Ele mede o impacto de uma sequência de perdas e ajuda a entender a volatilidade e a resiliência do seu portfólio. Um drawdown controlado é sinal de gestão de risco eficaz.</p>
-    </div>
-    <div class="section">
+        <p>O drawdown é a perda máxima acumulada em um período de tempo. Ele é uma métrica importante para avaliar a volatilidade e a consistência de um sistema de operações. Um drawdown elevado pode indicar que o sistema é excessivamente arriscado ou que o gestor não está controlando adequadamente os riscos.</p>
+    </section>
+    <section>
         <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por falta de disciplina, falta de planejamento e excesso de emoção. Além disso, a maioria não segue regras de gestão de risco, entra com posições muito grandes e não respeita seus stop losses. Compreender e aplicar a gestão de risco é crucial para aumentar as chances de sucesso.</p>
-    </div>
+        <p>Muitos traders perdem dinheiro por falta de disciplina, gestão de risco e conhecimento técnico. A maioria não segue regras claras, age com emoção, ou não compreende os fundamentos da operação. Além disso, muitos operam com posições muito grandes, o que amplia as perdas e dificulta a recuperação.</p>
+    </section>
     <div class="aviso">
-        <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. O trading envolve riscos e pode resultar em perdas.</p>
+        <p><strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. Qualquer operação financeira envolve riscos e deve ser feita com cuidado e pesquisa própria.</p>
     </div>
+    <footer>
+        &copy; 2025 - Educação Financeira e Investimento
+    </footer>
 </body>
 </html>
