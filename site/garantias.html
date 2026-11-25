@@ -8,47 +8,53 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #f5f5f5;
             line-height: 1.6;
         }
+
         header {
-            padding: 20px;
-            text-align: center;
             background-color: #1e1e1e;
-            border-bottom: 1px solid #333;
+            padding: 20px 0;
+            text-align: center;
         }
-        h1 {
+
+        header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 2em;
+            color: #ffffff;
         }
+
         main {
-            padding: 20px;
+            padding: 30px;
             max-width: 800px;
             margin: auto;
         }
+
         h2 {
-            color: #00bcd4;
-            margin-top: 30px;
+            color: #ffffff;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
         }
+
         p {
-            margin-bottom: 15px;
+            font-size: 1em;
         }
+
         ul {
-            margin: 10px 0;
+            margin-top: 10px;
             padding-left: 20px;
         }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
+
+        .section {
+            margin-bottom: 40px;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e1e1e;
-            border-top: 1px solid #333;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -57,32 +63,43 @@
         <h1>Garantias do Serviço</h1>
     </header>
     <main>
-        <p>Na entrega do seu projeto, garantimos que o resultado atenda às diretrizes e expectativas definidas no briefing. No entanto, é importante que você entenda os limites e condições do serviço para evitar mal-entendidos.</p>
+        <div class="section">
+            <h2>Se o entregável não atender o briefing</h2>
+            <p>
+                Em caso de não conformidade do entregável com o briefing fornecido, o serviço será reavaliado e ajustado dentro dos limites estabelecidos no contrato. Caso a divergência seja significativa, será necessário redefinir os objetivos e prazos, o que pode impactar o cronograma e a entrega final. O cliente será notificado e consultado sobre a melhor forma de proceder.
+            </p>
+        </div>
 
-        <h2>O que acontece se o entregável não atender o briefing?</h2>
-        <p>Se o entregável não atender às expectativas do briefing, entraremos em contato com você imediatamente para discutir as possíveis soluções. Caso haja um desvio significativo, será necessário redefinir os requisitos ou ajustar o cronograma. A responsabilidade de garantir que o briefing esteja claro e completo cabe ao cliente.</p>
+        <div class="section">
+            <h2>Quantos ajustes são permitidos?</h2>
+            <p>
+                São permitidos até 3 ajustes gratuitos dentro do prazo contratado, desde que os mesmos sejam solicitados por escrito e dentro do prazo estipulado. Cada ajuste deve ser claro e específico, com descrição do que precisa ser modificado. Após esse limite, eventuais ajustes adicionais serão cobrados conforme o custo adicional envolvido.
+            </p>
+        </div>
 
-        <h2>Quantos ajustes são permitidos?</h2>
-        <p>São permitidos até 3 ajustes no conteúdo ou na estrutura do entregável, desde que solicitados dentro do prazo de 7 dias após a entrega. Cada ajuste deve ser bem definido e específico. Após esse prazo ou após o limite de ajustes, serão cobrados custos adicionais por alteração.</p>
+        <div class="section">
+            <h2>Prazo de resposta</h2>
+            <p>
+                O prazo para resposta a solicitações de ajuste ou dúvidas é de até 48 horas úteis, exceto em dias de feriado ou em caso de força maior. Caso haja urgência, o cliente deve informar antecipadamente para que possamos priorizar o atendimento.
+            </p>
+        </div>
 
-        <h2>Prazo de resposta para ajustes</h2>
-        <p>Todo ajuste solicitado será respondido em até 48 horas úteis. Caso haja uma demanda urgente, será acordado um prazo adicional com o cliente.</p>
+        <div class="section">
+            <h2>O que não é coberto</h2>
+            <p>
+                Não são cobertos ajustes que envolvam mudanças significativas no escopo do projeto, como alterações de conceito, novos elementos que não estavam previstos no briefing, ou demandas que excedam o número de ajustes permitidos. Além disso, não há cobertura para erros de terceiros, como falhas em softwares ou sistemas externos.
+            </p>
+        </div>
 
-        <h2>O que não é coberto?</h2>
-        <p>As seguintes situações não estão incluídas no serviço e podem gerar custos adicionais:
-        <ul>
-            <li>Revisão de conteúdo com base em critérios externos (ex: normas de estilo, gramática, etc.)</li>
-            <li>Reprodução de conteúdo de terceiros sem autorização</li>
-            <li>Alterações de design que não estejam alinhadas com a identidade visual estabelecida</li>
-            <li>Requisitos que envolvam integração com sistemas externos ou APIs</li>
-            <li>Revisões de projeto após o prazo de 30 dias da entrega</li>
-        </ul>
-        </p>
-
-        <p>Se tiver dúvidas ou precisar de esclarecimentos, entre em contato conosco. Estamos aqui para garantir que seu projeto seja entregue com qualidade e dentro do prazo acordado.</p>
+        <div class="section">
+            <h2>Princípio fundamental</h2>
+            <p>
+                Nossa prioridade é entregar um serviço de qualidade, com transparência e clareza. Estas garantias são baseadas em condições reais e objetivas, sem promessas que não possam ser cumpridas. Caso haja dúvidas ou necessidade de esclarecimento, estamos à disposição para conversar.
+            </p>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Serviço de Produção. Todos os direitos reservados.</p>
+        &copy; 2025 Serviços de Produção e Desenvolvimento. Todos os direitos reservados.
     </footer>
 </body>
 </html>
