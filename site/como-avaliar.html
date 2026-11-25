@@ -2,34 +2,33 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Avaliação de Conteúdo</title>
+    <title>Critérios para Avaliação de Conteúdo</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #333;
         }
         h1 {
             margin: 0;
             font-size: 24px;
         }
-        section {
+        main {
             padding: 20px;
-            margin: 20px 0;
         }
         h2 {
-            color: #f5f5f5;
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 1.6;
+            margin-top: 30px;
+            font-size: 20px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
         }
         table {
             width: 100%;
@@ -37,92 +36,87 @@
             margin-top: 20px;
         }
         th, td {
-            border: 1px solid #333;
+            border: 1px solid #444;
             padding: 10px;
-            text-align: left;
+            text-align: center;
         }
         th {
-            background-color: #2e2e2e;
+            background-color: #2a2a2a;
         }
         tr:nth-child(even) {
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
         }
         .nota {
             font-weight: bold;
-            color: #00ff99;
+            color: #ff6f61;
         }
-        .avaliacao {
-            background-color: #000000;
-            padding: 15px;
-            margin-top: 30px;
-            border-radius: 8px;
+        .observacao {
+            font-style: italic;
+            color: #cccccc;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Avaliação de Conteúdo</h1>
+        <h1>Critérios para Avaliação de Conteúdo</h1>
     </header>
-    <section>
-        <h2>Critérios de Avaliação</h2>
-        <p>Para garantir uma avaliação objetiva e precisa do conteúdo recebido, utilizamos os seguintes critérios. Cada um deve ser analisado com atenção e clareza.</p>
-        <h3>1. Clareza</h3>
-        <p>O conteúdo deve ser fácil de entender, com linguagem direta e sem ambiguidades. Exemplo: evite frases como "Pode-se considerar que..." e prefira "Considera-se que...".</p>
-        <h3>2. Aderência ao Briefing</h3>
-        <p>O conteúdo deve seguir estritamente as diretrizes e objetivos definidos no briefing. Verifique se todos os pontos foram abordados e se o tom adequado foi respeitado.</p>
-        <h3>3. Tom</h3>
-        <p>O tom do texto deve ser consistente com o público-alvo e o propósito da comunicação. Exemplos: formal para um site corporativo, informal para um blog ou redes sociais.</p>
-        <h3>4. Estrutura</h3>
-        <p>O conteúdo deve ter uma organização lógica com introdução, desenvolvimento e conclusão. Use títulos, subtítulos e listas para facilitar a leitura.</p>
-        <h3>5. Erros de Português</h3>
-        <p>Verifique a gramática, ortografia e uso correto da língua. Evite erros comuns como concordância verbal, regência e uso inadequado de preposições.</p>
-        <h3>6. Chamada para a Ação</h3>
-        <p>O conteúdo deve conter uma chamada para ação clara e direta, incentivando o leitor a agir. Exemplo: "Clique aqui para mais informações" ou "Inscreva-se na nossa newsletter".</p>
-    </section>
-    <section>
+    <main>
+        <h2>1. Clareza</h2>
+        <p>O conteúdo deve ser compreensível e direto, sem ambiguidades. As ideias devem ser transmitidas de forma clara e objetiva, evitando jargões desnecessários ou termos técnicos sem explicação. A linguagem deve ser acessível ao público-alvo.</p>
+
+        <h2>2. Aderência ao Briefing</h2>
+        <p>O conteúdo deve estar alinhado com os objetivos, público-alvo, mensagem principal e diretrizes fornecidas no briefing. Qualquer desvio ou falta de coerência com o plano deve ser pontuado.</p>
+
+        <h2>3. Tom</h2>
+        <p>O tom do conteúdo deve ser consistente com o propósito e o público-alvo. Se o conteúdo é formal, informal, persuasivo ou informativo, ele deve refletir esse tom de forma clara e natural.</p>
+
+        <h2>4. Estrutura</h2>
+        <p>A estrutura do conteúdo deve ser lógica e organizada, com introdução, desenvolvimento e conclusão bem definidos. Parágrafos devem ser curtos e coesos, facilitando a leitura.</p>
+
+        <h2>5. Erros de Português</h2>
+        <p>Devem ser verificados erros gramaticais, ortográficos, de concordância e regência. O uso de palavras repetidas ou incorretas pode comprometer a credibilidade do conteúdo.</p>
+
+        <h2>6. Chamada para a Ação</h2>
+        <p>O conteúdo deve conter uma chamada para ação clara e direta, incentivando o público a realizar uma ação específica, como visitar um site, preencher um formulário ou compartilhar o conteúdo.</p>
+
         <h2>Tabela de Notas</h2>
         <table>
             <tr>
                 <th>Critério</th>
-                <th>Nota</th>
-                <th>Descrição</th>
+                <th>Nota (0 a 10)</th>
+                <th>Observação</th>
             </tr>
             <tr>
                 <td>Clareza</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Conteúdo confuso e difícil de compreender. 3-6: Algumas ambiguidades. 7-10: Conteúdo claro e bem estruturado.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre clareza</td>
             </tr>
             <tr>
                 <td>Aderência ao Briefing</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Não responde aos objetivos do briefing. 3-6: Parcialmente atende. 7-10: Totalmente alinhado.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre aderência ao briefing</td>
             </tr>
             <tr>
                 <td>Tom</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Tom inadequado. 3-6: Tom quase adequado. 7-10: Tom consistente e adequado.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre tom</td>
             </tr>
             <tr>
                 <td>Estrutura</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Estrutura caótica e difícil de seguir. 3-6: Estrutura básica. 7-10: Estrutura clara e lógica.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre estrutura</td>
             </tr>
             <tr>
                 <td>Erros de Português</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Muitos erros que prejudicam a compreensão. 3-6: Alguns erros. 7-10: Texto correto e sem erros.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre erros de português</td>
             </tr>
             <tr>
                 <td>Chamada para a Ação</td>
-                <td class="nota">0-10</td>
-                <td>0-2: Não há chamada para ação. 3-6: Chamada fraca. 7-10: Chamada clara e direta.</td>
+                <td class="nota">0</td>
+                <td class="observacao">Observação sobre chamada para ação</td>
             </tr>
         </table>
-    </section>
-    <section class="avaliacao">
-        <h2>Avaliação Final</h2>
-        <p>Com base na análise dos critérios acima, a pontuação final pode ser calculada somando as notas de cada item e divindo pelo número total de critérios. Isso fornece uma média que reflete a qualidade geral do conteúdo.</p>
-        <p>Exemplo: Se cada critério for avaliado com 8/10, a média final será 8/10, indicando um conteúdo de boa qualidade.</p>
-    </section>
+    </main>
 </body>
 </html>
