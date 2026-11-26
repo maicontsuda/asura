@@ -5,55 +5,49 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+            line-height: 1.6;
         }
-
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-
         h1 {
-            color: #ffffff;
             margin: 0;
+            font-size: 2em;
+            color: #ffffff;
         }
-
-        .glossario {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        main {
             padding: 20px;
         }
-
         .termo {
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px;
         }
-
         .termo h2 {
-            margin-top: 0;
             color: #ffffff;
+            margin-bottom: 5px;
         }
-
         .termo p {
-            margin: 10px 0 0 0;
-            font-size: 0.95em;
+            font-size: 1em;
+            color: #cccccc;
         }
-
         footer {
             background-color: #1e1e1e;
-            text-align: center;
             padding: 15px;
-            margin-top: 30px;
-            color: #888;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888888;
+        }
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -61,154 +55,86 @@
     <header>
         <h1>Glossário de Termos de Mercado</h1>
     </header>
-    <div class="glossario">
+    <main>
         <div class="termo">
             <h2>Pip</h2>
-            <p>Unidade de medida da variação de preços em mercados financeiros. Exemplo: 1 pip em EUR/USD é 0.0001.</p>
+            <p>Unidade de medida da variação de preços em mercados financeiros. Exemplo: Um movimento de 10 pips em EUR/USD representa uma mudança de 0,0010.</p>
         </div>
         <div class="termo">
             <h2>Spread</h2>
-            <p>Diferença entre o preço de compra e venda de uma moeda. Exemplo: spread de 1.5 pips em EUR/USD.</p>
+            <p>Diferença entre o preço de compra e venda de uma moeda. Exemplo: Se o EUR/USD está cotado a 1,1000/1,1005, o spread é de 5 pips.</p>
         </div>
         <div class="termo">
             <h2>Lote</h2>
-            <p>Unidade de negociação padrão. 1 lote = 100.000 unidades da moeda base.</p>
+            <p>Unidade padrão de negociação em forex. Um lote corresponde a 100.000 unidades da moeda base. Exemplo: Comprar 1 lote de EUR/USD é comprar 100.000 euros.</p>
         </div>
         <div class="termo">
             <h2>Alavancagem</h2>
-            <p>Capacidade de controlar grandes posições com capital limitado. Exemplo: alavancagem de 1:100.</p>
+            <p>Fator que amplia o potencial de ganhos e perdas. Exemplo: Com alavancagem de 1:100, um movimento de 1% no preço resulta em um ganho de 100% no capital.</p>
         </div>
         <div class="termo">
             <h2>Margem</h2>
-            <p>Capital garantido pelo operador para abrir posições. Exemplo: margem de US$ 5.000.</p>
+            <p>Quantia de dinheiro que o trader deposita como garantia para operar com alavancagem. Exemplo: Para operar com alavancagem de 1:100, a margem necessária é 1% do valor da operação.</p>
         </div>
         <div class="termo">
             <h2>Stop</h2>
-            <p>Ordem que limita perdas ao encerrar uma posição. Exemplo: stop em US$ 1.000.</p>
+            <p>Ordem que limita as perdas ao definir um nível de venda automática. Exemplo: Se o preço cai para 1,0980, o stop é acionado e a posição é encerrada.</p>
         </div>
         <div class="termo">
             <h2>Take Profit</h2>
-            <p>Ordem que limita ganhos ao encerrar uma posição. Exemplo: take profit em US$ 2.000.</p>
+            <p>Ordem que limita os ganhos ao definir um nível de venda automática. Exemplo: Se o preço sobe para 1,1020, o take profit é acionado e a posição é encerrada.</p>
         </div>
         <div class="termo">
             <h2>Long</h2>
-            <p>Posição comprada com expectativa de aumento do preço.</p>
+            <p>Operação de compra para aproveitar o aumento do preço. Exemplo: Comprar 1 lote de EUR/USD quando o preço está em 1,1000.</p>
         </div>
         <div class="termo">
             <h2>Short</h2>
-            <p>Posição vendida com expectativa de queda do preço.</p>
+            <p>Operação de venda para aproveitar a queda do preço. Exemplo: Vender 1 lote de EUR/USD quando o preço está em 1,1000.</p>
         </div>
         <div class="termo">
             <h2>Gap</h2>
-            <p>Variação abrupta de preços em uma nova sessão. Exemplo: gap de 50 pips.</p>
+            <p>Variação abrupta no preço de uma moeda entre o fechamento de uma sessão e o início da próxima. Exemplo: O EUR/USD pode abrir em 1,1020 após fechar em 1,1000.</p>
         </div>
         <div class="termo">
             <h2>Volume</h2>
-            <p>Quantidade de negócios realizados em um período. Indica liquidez.</p>
+            <p>Quantidade de negociações em um período. Exemplo: Um volume alto pode indicar uma tendência forte em uma moeda.</p>
         </div>
         <div class="termo">
             <h2>RSI</h2>
-            <p>Índice de Força Relativa que mede a força de uma tendência. Varia de 0 a 100.</p>
+            <p>Índice de Força Relativa que mede a força de uma tendência. Exemplo: Um RSI acima de 70 indica sobrecompra, enquanto abaixo de 30 indica sobre venda.</p>
         </div>
         <div class="termo">
             <h2>MACD</h2>
-            <p>Índice que compara médias móveis para identificar tendências e sinais de reversão.</p>
+            <p>Indicador que compara a média móvel exponencial de curto e longo prazo. Exemplo: Quando a linha MACD cruza a linha zero, pode sinalizar uma mudança de tendência.</p>
         </div>
         <div class="termo">
             <h2>Suporte</h2>
-            <p>Nível de preço onde o ativo tende a encontrar demanda.</p>
+            <p>Nível de preço onde o ativo tende a encontrar demanda. Exemplo: Se o preço cai até 1,0980 e recupera, isso pode ser um nível de suporte.</p>
         </div>
         <div class="termo">
             <h2>Resistência</h2>
-            <p>Nível de preço onde o ativo tende a encontrar oferta.</p>
+            <p>Nível de preço onde o ativo tende a encontrar oferta. Exemplo: Se o preço sobe até 1,1020 e recua, isso pode ser um nível de resistência.</p>
         </div>
         <div class="termo">
             <h2>Drawdown</h2>
-            <p>Perda máxima acumulada de um investimento em um determinado período.</p>
+            <p>Perda acumulada em uma estratégia de investimento. Exemplo: Um drawdown de 20% significa que o capital foi reduzido em 20%.</p>
         </div>
         <div class="termo">
             <h2>Equity</h2>
-            <p>Valor total da conta, incluindo lucros e perdas.</p>
+            <p>Valor total do portfólio, incluindo ganhos e perdas. Exemplo: Se o capital inicial era de 10.000 e houve um ganho de 500, a equity é de 10.500.</p>
         </div>
         <div class="termo">
             <h2>Margem Livre</h2>
-            <p>Quantidade de capital disponível para negociação.</p>
+            <p>Quantia disponível para operar após o uso da margem. Exemplo: Se o capital é de 10.000 e a margem usada é de 5.000, a margem livre é de 5.000.</p>
         </div>
         <div class="termo">
             <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
+            <p>Ordem que é executada apenas a um preço específico. Exemplo: Comprar EUR/USD a 1,1000, apenas se o preço atingir ou cair abaixo desse nível.</p>
         </div>
-        <div class="termo">
-            <h2>Ordem Stop Loss</h2>
-            <p>Ordem que limita perdas ao encerrar uma posição.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Take Profit</h2>
-            <p>Ordem que limita ganhos ao encerrar uma posição.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Market</h2>
-            <p>Ordem que é executada imediatamente ao preço atual.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Stop</h2>
-            <p>Ordem que é executada ao atingir um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Market</h2>
-            <p>Ordem que é executada imediatamente ao preço atual.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Stop</h2>
-            <p>Ordem que é executada ao atingir um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Market</h2>
-            <p>Ordem que é executada imediatamente ao preço atual.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Stop</h2>
-            <p>Ordem que é executada ao atingir um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Market</h2>
-            <p>Ordem que é executada imediatamente ao preço atual.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Limitada</h2>
-            <p>Ordem que é executada apenas em um preço específico.</p>
-        </div>
-        <div class="termo">
-            <h2>Ordem Stop</h2>
-            <p>Ordem que é executada ao atingir um preço específico.</p>
-        </div>
-    </div>
+    </main>
     <footer>
-        <p>© 2025 Glossário de Mercado</p>
+        &copy; 2025 Glossário de Mercado - Todos os direitos reservados
     </footer>
 </body>
 </html>
