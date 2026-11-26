@@ -5,18 +5,18 @@
     <title>Fundamentos do Mercado Forex</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
@@ -24,31 +24,41 @@
             background-color: #2a2a2a;
             padding: 15px;
             margin: 20px 0;
-            border-left: 5px solid #ff4d4d;
+            border-left: 5px solid #ff4081;
+        }
+        .aviso p {
+            font-weight: bold;
+            margin: 0;
         }
         section {
             padding: 20px;
-            border-bottom: 1px solid #333;
+            max-width: 1000px;
+            margin: auto;
         }
         h2 {
-            color: #00bcd4;
+            color: #ff4081;
+            border-bottom: 2px solid #ff4081;
+            padding-bottom: 5px;
         }
         p {
-            font-size: 1em;
+            line-height: 1.6;
         }
         ul {
             padding-left: 20px;
         }
-        .horarios {
-            background-color: #1a1a1a;
-            padding: 15px;
-            border-left: 5px solid #00bcd4;
+        .sessoes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #121212;
-            color: #aaa;
+        .sessoes div {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .sessoes div h3 {
+            margin: 0 0 10px 0;
         }
     </style>
 </head>
@@ -57,47 +67,39 @@
         <h1>Fundamentos do Mercado Forex</h1>
     </header>
     <div class="aviso">
-        <strong>Nota: Este conteúdo é educacional e não constitui recomendação de investimento.</strong>
+        <p><strong>Conteúdo educacional. Não é recomendação de investimento.</strong></p>
     </div>
     <section>
         <h2>O que é o Forex?</h2>
-        <p>O mercado cambial, ou Forex, é o maior mercado financeiro do mundo, onde as moedas são compradas e vendidas. Ele opera 24 horas por dia, 5 dias por semana, e envolve a troca de pares de moedas, como USD/EUR ou BRL/USD. O Forex é movido por fatores econômicos, políticos e sociais, sendo uma das formas mais líquidas de investimento.</p>
-    </section>
-    <section>
+        <p>O Forex (sigla para Foreign Exchange) é o mercado de câmbio, onde as moedas de diferentes países são compradas e vendidas. É o maior e mais líquido mercado financeiro do mundo, operando 24 horas por dia, 5 dias por semana. A sua principal função é facilitar as transações internacionais e permitir que investidores realizem operações com moedas.</p>
+        
         <h2>Pares de Moedas</h2>
-        <p>Os pares de moedas são combinações de duas moedas. O primeiro elemento é a moeda base, e o segundo é a moeda contraída. Exemplos comuns incluem USD/EUR, GBP/USD e BRL/USD. Cada par representa a taxa de câmbio entre essas moedas.</p>
-    </section>
-    <section>
-        < <h2>Pip</h2>
-        <p>O pip é a unidade de medida de movimento de preços no Forex. Ele representa 0,0001 em pares de moedas que não envolvem o JPY (como USD/JPY, o pip é 0,001). O cálculo do pip é essencial para medir ganhos e perdas.</p>
-    </section>
-    <section>
-        <h2>Lote</h2>
-        <p>Um lote é a quantidade padrão de moedas negociadas no Forex. Um lote padrão equivale a 100.000 unidades da moeda base. Lotes menores, como mini e micro, são também comuns para facilitar a entrada no mercado com menor capital.</p>
-    </section>
-    <section>
-        <h2>Alavancagem</h2>
-        <p>A alavancagem permite que os investidores negociem grandes quantidades com um capital menor. Por exemplo, com alavancagem de 1:100, um investidor pode controlar 100.000 USD com apenas 1.000 USD. No entanto, ela aumenta tanto os ganhos quanto os riscos.</p>
-    </section>
-    <section>
-        <h2>Spread</h2>
-        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. É o custo de transação no mercado Forex. Em geral, o spread é menor em pares de moedas maiores, como USD/EUR, e maior em pares menores ou menos líquidos.</p>
-    </section>
-    <section class="horarios">
+        <p>Os pares de moedas são combinações de duas moedas, como USD/JPY (Dólar Americano contra Iene Japonês) ou EUR/USD (Euro contra Dólar Americano). Cada par representa a taxa de câmbio entre as duas moedas, indicando quantas unidades da moeda base são necessárias para comprar uma unidade da moeda contra.</p>
+        
+        <h2>Pip e Lote</h2>
+        <p>Um <strong>pip</strong> é a unidade mínima de movimento de um par de moedas, geralmente representada como 0,0001 em pares como EUR/USD. Já um <strong>lote</strong> é a quantidade padrão de moedas que são compradas ou vendidas em uma operação, sendo o lote padrão igual a 100.000 unidades da moeda base.</p>
+        
+        <h2>Alavancagem e Spread</h2>
+        <p>A <strong>alavancagem</strong> é o recurso que permite ao investidor operar com volumes maiores do que o capital disponível, aumentando o potencial de ganho, mas também o risco. Já o <strong>spread</strong> é a diferença entre a cotação de compra e venda de um par de moedas, representando o custo de transação.</p>
+        
         <h2>Horários de Sessão</h2>
-        <p>O mercado Forex opera em três principais centros financeiros:</p>
-        <ul>
-            <li><strong>Tóquio:</strong> Abre às 22h (horário do Brasil), fecha às 8h (horário do Brasil).</li>
-            <li><strong>Londres:</strong> Abre às 8h (horário do Brasil), fecha às 16h (horário do Brasil).</li>
-            <li><strong>Nova York:</strong> Abre às 13h (horário do Brasil), fecha às 21h (horário do Brasil).</li>
-        </ul>
-    </section>
-    <section>
+        <div class="sessoes">
+            <div>
+                <h3>Tóquio</h3>
+                <p>Aberta de segunda a sexta, das 10h às 18h (horário do Brasil).</p>
+            </div>
+            <div>
+                <h3>Londres</h3>
+                <p>Aberta de segunda a sexta, das 15h às 23h (horário do Brasil).</p>
+            </div>
+            <div>
+                <h3>Nova York</h3>
+                <p>Aberta de segunda a sexta, das 19h às 1h (horário do Brasil).</p>
+            </div>
+        </div>
+        
         <h2>Participantes do Mercado Forex</h2>
-        <p>Os participantes incluem bancos centrais, bancos comerciais, investidores institucionais, traders profissionais, traders individuais e corretores. Cada um desempenha um papel específico na formação dos preços e na liquidez do mercado.</p>
+        <p>O mercado Forex é composto por vários tipos de participantes, incluindo bancos centrais, instituições financeiras, corretoras, investidores institucionais e traders individuais. Cada um desempenha um papel específico no funcionamento do mercado, influenciando as taxas de câmbio e os movimentos de preços.</p>
     </section>
-    <footer>
-        &copy; 2025 - Conteúdo educacional sobre Forex
-    </footer>
 </body>
 </html>
