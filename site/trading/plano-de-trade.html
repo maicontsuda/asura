@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Plano de Trade - Modelo para Operações</title>
+    <title>Modelo de Plano de Trade</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,97 +11,168 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             color: #ffffff;
         }
+
         section {
-            padding: 20px;
-            margin: 10px 0;
-            background-color: #1e1e1e;
-            border-radius: 8px;
+            margin: 20px 0;
         }
+
         h2 {
             color: #ffffff;
-            margin-top: 0;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
         }
+
         p {
             line-height: 1.6;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 5px solid #ff4d4d;
-            margin-top: 20px;
-        }
-        .aviso p {
-            font-weight: bold;
-            margin: 0;
-        }
+
         .checklist {
             background-color: #2a2a2a;
             padding: 15px;
-            border-left: 5px solid #00ff88;
-            margin-top: 20px;
+            border-left: 4px solid #ff4081;
         }
-        .checklist p {
-            font-weight: bold;
-            margin: 0;
+
+        .checklist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            margin: 10px 0;
+        }
+
+        .checklist li::before {
+            content: "✓";
+            color: #ff4081;
+            margin-right: 10px;
+        }
+
+        .registro {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .registro table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .registro th, .registro td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .registro th {
+            background-color: #333;
+        }
+
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 4px solid #f44336;
+            margin-top: 30px;
+        }
+
+        .aviso p {
+            font-style: italic;
+            color: #f44336;
+        }
+
+        a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Plano de Trade - Modelo para Operações</h1>
+        <h1>Modelo de Plano de Trade</h1>
     </header>
-    <section>
-        <h2>Objetivos</h2>
-        <p>Definir metas claras e mensuráveis para cada operação, como lucro esperado, número de operações por semana e gestão de risco. Exemplo: "Atingir um lucro de 5% por mês com risco máximo de 1% por operação."</p>
-    </section>
-    <section>
-        <h2>Mercados</h2>
-        <p>Selecionar os mercados que serão operados com base em conhecimento técnico e análise fundamentalista. Exemplo: "Operar apenas no mercado de ações brasileiro (B3) com foco em empresas de tecnologia."</p>
-    </section>
-    <section>
-        <h2>Horários</h2>
-        <p>Definir horários de entrada e saída para operações. Exemplo: "Entrar entre 9h e 10h e sair antes das 15h, com pausas para análise de candlestick."</p>
-    </section>
-    <section>
-        <h2>Regras de Entrada e Saída</h2>
-        <ul>
-            <li>Entrar somente após confirmação de padrão técnico (ex: breakout, reversão).</li>
-            <li>Sair com lucro ou perda definida, respeitando o limite de perdas diárias.</li>
-            <li>Evitar operações emocionais; seguir o plano em todos os momentos.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Definir um limite máximo de perdas que não pode ser ultrapassado em um dia. Exemplo: "Perdas diárias não devem ultrapassar 2% do capital total."</p>
-    </section>
-    <section class="checklist">
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul>
-            <li>Confirme os objetivos da operação.</li>
-            <li>Analise o gráfico de 1 hora e 4 horas.</li>
-            <li>Verifique se o mercado está em tendência ou range.</li>
-            <li>Confirme o nível de suporte/resistência.</li>
-            <li>Verifique a posição do stop loss e take profit.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Template de Registro</h2>
-        <p>Registre todas as operações com dados completos: data, horário, ativo, tipo de operação, stop loss, take profit, resultado e análise da operação.</p>
-    </section>
-    <section class="aviso">
-        <p><strong>Aviso Legal:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações no mercado financeiro envolvem risco e podem resultar em perdas.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Objetivos</h2>
+            <p>Definir metas claras e realistas para o investimento. Exemplo: Alcançar um retorno de 10% em 3 meses, com risco máximo de 5% por operação.</p>
+        </section>
+
+        <section>
+            <h2>Mercados</h2>
+            <p>Selecionar mercados com liquidez e volatilidade adequadas. Exemplo: Ações de empresas de tecnologia (NASDAQ), forex (EUR/USD), ou criptomoedas (BTC/USD).</p>
+        </section>
+
+        <section>
+            <h2>Horários</h2>
+            <p>Definir horários de operação e pausa. Exemplo: Operar de 8h às 15h (horário de Brasília), com pausa para análise de 15h às 16h.</p>
+        </section>
+
+        <section>
+            <h2>Regras de Entrada e Saída</h2>
+            <p>Entrar apenas com confirmação de padrão ou sinal técnico. Exemplo: Entrar em compra após confirmação de breakout em nível de suporte. Sair com lucro ou perda pré-definida (ex.: 5% de lucro ou 2% de perda).</p>
+        </section>
+
+        <section>
+            <h2>Limite de Perdas Diárias</h2>
+            <p>Definir um limite máximo de perdas para o dia. Exemplo: 3% do capital em risco por dia, para evitar perdas irreversíveis.</p>
+        </section>
+
+        <section class="checklist">
+            <h2>Checklist Antes de Abrir Operação</h2>
+            <ul>
+                <li>Verificar se o mercado está alinhado com o plano.</li>
+                <li>Confirmar condições técnicas e fundamentais.</li>
+                <li>Verificar se os níveis de risco estão dentro do limite diário.</li>
+                <li>Confirmar que há tempo suficiente para monitorar a operação.</li>
+                <li>Verificar se há espaço de capital para nova operação.</li>
+            </ul>
+        </section>
+
+        <section class="registro">
+            <h2>Template de Registro</h2>
+            <table>
+                <tr>
+                    <th>Data/Hora</th>
+                    <th>Ativo</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Resultado</th>
+                    <th>Comentário</th>
+                </tr>
+                <tr>
+                    <td>2025-04-05 10:30</td>
+                    <td>EUR/USD</td>
+                    <td>1.0820</td>
+                    <td>1.0860</td>
+                    <td>+0.40%</td>
+                    <td>Confirmação de breakout em 1.0820.</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. Aprenda, planeje e invista com responsabilidade.</p>
+    </div>
 </body>
 </html>
