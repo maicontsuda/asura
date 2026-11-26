@@ -8,8 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            color: #ffffff;
         }
         header {
             background-color: #1e1e1e;
@@ -18,56 +17,59 @@
         }
         h1 {
             margin: 0;
-            color: #ffffff;
+            font-size: 24px;
         }
-        main {
+        .faq {
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
         }
-        h2 {
-            color: #ffffff;
+        .faq h2 {
             margin-top: 30px;
+            font-size: 18px;
+            color: #ffffff;
         }
-        p {
-            margin-bottom: 15px;
+        .faq p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cccccc;
         }
-        ul {
-            margin: 0;
+        .faq ul {
+            margin-top: 10px;
             padding-left: 20px;
         }
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .faq li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes - Asura</h1>
+        <h1>Perguntas Frequentes sobre o Asura</h1>
     </header>
-    <main>
+    <div class="faq">
         <h2>Como pagar com USDC na Base?</h2>
-        <p>Para pagar com USDC na Base, você deve usar um wallet compatível com a rede Base, como o MetaMask. Conecte seu wallet, acesse a interface de pagamento do Asura, insira o endereço da carteira do fornecedor e o valor em USDC. Após a confirmação da transação, o pagamento será processado em até 15 minutos.</p>
+        <p>Para pagar com USDC na rede Base, você deve conectar sua carteira compatível à plataforma do Asura. Após a conexão, selecione a opção de pagamento com USDC e confirme a transação na rede Base. A transação será processada automaticamente e o valor será creditado em sua conta.</p>
 
         <h2>Como pagar com ETH na Base?</h2>
-        <p>Para pagar com ETH na Base, conecte seu wallet compatível com a rede Base, acesse a interface de pagamento do Asura, insira o endereço da carteira do fornecedor e o valor em ETH. A transação será confirmada em até 10 minutos e o pagamento será processado automaticamente.</p>
+        <p>Para pagar com ETH na rede Base, conecte sua carteira compatível ao Asura e escolha a opção de pagamento com ETH. Confirme a transação na rede Base e aguarde o processamento. O valor em ETH será convertido e creditado em sua conta.</p>
 
-        <h2>Como pagar com ETH na Mainnet?</h2>
-        <p>Para pagar com ETH na Mainnet, conecte seu wallet compatível com a rede Ethereum, acesse a interface de pagamento do Asura, insira o endereço da carteira do fornecedor e o valor em ETH. A transação será confirmada em até 5 minutos e o pagamento será processado automaticamente.</p>
-
-        <h2>O que acontece se o pagamento falhar?</h2>
-        <p>Se o pagamento falhar, o sistema do Asura notificará o cliente e o fornecedor. O cliente poderá reenviar o pagamento ou contactar o suporte para resolver o problema. O fornecedor deve aguardar a confirmação da transação antes de liberar o entregável.</p>
-
-        <h2>Como recebo o entregável?</h2>
-        <p>Após o pagamento ser confirmado, o entregável será liberado automaticamente para sua carteira vinculada no Asura. Caso não receba, verifique a confirmação da transação e entre em contato com o suporte para verificar o status da liberação.</p>
+        <h2>Como pagar com ETH na mainnet?</h2>
+        <p>Para pagar com ETH na mainnet, conecte sua carteira compatível ao Asura e selecione a opção de pagamento com ETH. Confirme a transação na mainnet e aguarde o processamento. O valor será creditado em sua conta após a confirmação da transação.</p>
 
         <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <p>A identidade on-chain ERC-8004 #1149100 é um identificador único associado a sua conta no Asura. Ele é usado para rastrear e validar sua identidade digital na rede blockchain. É essencial para a verificação de identidade e para garantir a segurança das transações.</p>
+        <p>A identidade on-chain ERC-8004 #1149100 é um endereço de contrato inteligente que representa a identidade digital do usuário no Asura. Esse endereço é vinculado a todas as transações e interações na plataforma, garantindo a autenticidade e a rastreabilidade das ações do usuário em blockchain.</p>
 
-        <h2>Como solicitar reembolso?</h2>
-        <p>Para solicitar um reembolso, acesse a seção de suporte no Asura, preencha o formulário de reembolso com os detalhes da transação e o motivo da solicitação. O suporte revisará seu caso e, se aprovado, o reembolso será processado conforme as políticas de reembolso do Asura.</p>
-    </main>
+        <h2>O que acontece se o pagamento falhar?</h2>
+        <p>Se o pagamento falhar, o sistema do Asura tentará reprocessar a transação automaticamente dentro de 24 horas. Caso persista o erro, entre em contato com o suporte técnico para investigar a causa e resolver o problema. O reembolso será feito conforme as condições de cancelamento.</p>
+
+        <h2>Como recebo o entregável?</h2>
+        <p>O entregável será liberado automaticamente após a confirmação do pagamento e a validação das condições contratuais. Você receberá um aviso no seu e-mail e na plataforma do Asura. Caso haja alguma pendência, entre em contato com o suporte para resolver.</p>
+
+        <h2>Como funciona o reembolso?</h2>
+        <p>O reembolso é realizado apenas em casos de cancelamento prévio ou falha no processamento da transação. Para solicitar o reembolso, entre em contato com o suporte técnico dentro de 7 dias úteis após a transação. O valor será devolvido à sua carteira original, conforme a política de reembolso do Asura.</p>
+    </div>
 </body>
 </html>
