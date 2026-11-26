@@ -5,24 +5,29 @@
     <title>Critérios para Avaliação de Conteúdo</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
+            background-color: #1e1e2f;
             color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2a2a40;
             padding: 20px;
+            text-align: center;
         }
         h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 22px;
-            margin-top: 30px;
-            margin-bottom: 10px;
+            color: #ffffff;
+            margin: 0;
         }
         p {
-            line-height: 1.6;
-            font-size: 16px;
+            color: #cccccc;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
         table {
             width: 100%;
@@ -30,60 +35,129 @@
             margin-top: 30px;
         }
         th, td {
+            border: 1px solid #555;
             padding: 12px;
             text-align: left;
-            border: 1px solid #444;
         }
         th {
-            background-color: #2a2a2a;
+            background-color: #333;
+            color: #ffffff;
         }
         tr:nth-child(even) {
-            background-color: #1e1e1e;
+            background-color: #2a2a40;
         }
-        .nota {
-            font-weight: bold;
-            color: #ff4d4d;
+        .criteria {
+            margin-bottom: 20px;
+        }
+        .criteria h2 {
+            color: #ffffff;
+        }
+        .criteria p {
+            margin: 10px 0;
+        }
+        .criteria ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .criteria li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Critérios para Avaliação de Conteúdo</h1>
-    <p>A seguir, apresentamos uma lista de critérios objetivos que o cliente pode utilizar para avaliar o conteúdo recebido. Cada critério é descrito com base em parâmetros claros e medíveis, facilitando a avaliação e a comparação entre diferentes entregas.</p>
-
-    <h2>1. Clareza</h2>
-    <p>O conteúdo deve ser compreensível, direto e sem ambiguidades. O leitor deve conseguir entender o propósito, a mensagem principal e as informações apresentadas sem esforço excessivo. Evite jargões excessivos ou linguagem confusa.</p>
-
-    <h2>2. Aderência ao Briefing</h2>
-    <p>O conteúdo deve seguir estritamente as diretrizes e objetivos definidos no briefing. Isso inclui o público-alvo, o tom da mensagem, o estilo de escrita e os pontos-chave que devem ser abordados. A falta de alinhamento ao briefing pode comprometer a eficácia do conteúdo.</p>
-
-    <h2>3. Tom</h2>
-    <p>O tom do conteúdo deve ser coerente com o público-alvo e o propósito da comunicação. Seja formal, informal, técnico ou criativo, o tom deve ser consistente e adequado para o contexto e o público. Evite mudanças bruscas de estilo ou tom ao longo do texto.</p>
-
-    <h2>4. Estrutura</h2>
-    <p>O conteúdo deve ter uma estrutura clara e lógica. Isso inclui uma introdução, desenvolvimento e conclusão bem definidos. Parágrafos devem ser curtos e focados, com transições naturais entre as ideias. A falta de organização pode dificultar a compreensão do leitor.</p>
-
-    <h2>5. Erros de Português</h2>
-    <p>O conteúdo deve ser gramaticalmente correto e com boa ortografia. A ausência de erros de português aumenta a credibilidade e a qualidade do conteúdo. Em caso de erros, eles devem ser corrigidos antes da publicação.</p>
-
-    <h2>6. Chamada para a Ação</h2>
-    <p>O conteúdo deve conter uma chamada para ação clara e direta, incentivando o leitor a agir. Essa ação pode ser um link, uma sugestão de contato, uma inscrição em uma newsletter ou qualquer outro comportamento desejado. A falta de uma chamada para ação pode reduzir o impacto do conteúdo.</p>
-
-    <h2>Tabela de Notas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Critério</th>
-                <th>Nota</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Clareza</td><td class="nota">0 a 10</td></tr>
-            <tr><td>Aderência ao Briefing</td><td class="nota">0 a 10</td></tr>
-            <tr><td>Tom</td><td class="nota">0 a 10</td></tr>
-            <tr><s><td>Estrutura</td><td class="nota">0 a 10</td></s></tr>
-            <tr><td>Erros de Português</td><td class="nota">0 a 10</td></tr>
-            <tr><td>Chamada para a Ação</td><td class="nota">0 a 10</td></tr>
-        </tbody>
-    </table>
+    <header>
+        <h1>Critérios para Avaliação de Conteúdo</h1>
+        <p>Guia objetivo para que o cliente avalie o conteúdo recebido com base em critérios claros e objetivos.</p>
+    </header>
+    <main>
+        <div class="criteria">
+            <h2>1. Clareza</h2>
+            <p>Verifique se o conteúdo é compreensível, direto e sem ambiguidade. O texto deve transmitir a mensagem principal de forma clara e direta.</p>
+            <ul>
+                <li>É fácil de entender por qualquer leitor?</li>
+                <li>As ideias estão bem organizadas e apresentadas?</li>
+                <li>Evita-se jargões excessivos ou termos técnicos sem explicação?</li>
+            </ul>
+        </div>
+        <div class="criteria">
+            <h2>2. Aderência ao Briefing</h2>
+            <p>Avalie se o conteúdo segue exatamente as diretrizes e objetivos definidos no briefing. O texto deve estar alinhado com o público-alvo, o tom e o propósito estabelecidos.</p>
+            <ul>
+                <li>Reflete os objetivos e a mensagem principal do briefing?</li>
+                <li>Está alinhado com o público-alvo definido?</li>
+                <li>Respeita o tom e o estilo solicitado?</li>
+            </ul>
+        </div>
+        <div class="criteria">
+            <h2>3. Tom</h2>
+            <p>O tom do conteúdo deve ser consistente e adequado ao público e ao propósito. Verifique se o texto mantém o tom solicitado (formal, informal, técnico, etc.).</p>
+            <ul>
+                <li>É coerente com o tom desejado (formal, informal, técnico, etc.)?</li>
+                <li>Evita-se linguagem agressiva, discriminatória ou inadequada?</li>
+                <li>É empático e respeitoso com o público-alvo?</li>
+            </ul>
+        </div>
+        <div class="criteria">
+            <h2>4. Estrutura</h2>
+            <p>Verifique se o conteúdo está bem estruturado, com introdução, desenvolvimento e encerramento claramente definidos. Use títulos, subtítulos e parágrafos para facilitar a leitura.</p>
+            <ul>
+                <li>Tem uma estrutura lógica e organizada?</li>
+                <li>Os títulos e subtítulos estão claros e coerentes?</li>
+                <li>Parágrafos são curtos e bem distribuídos?</li>
+            </ul>
+        </div>
+        <div class="criteria">
+            <h2>5. Erros de Português</h2>
+            <p>Verifique a gramática, a ortografia e o uso adequado da língua. O conteúdo deve estar livre de erros que possam comprometer a clareza e a credibilidade.</p>
+            <ul>
+                <li>Existem erros gramaticais, ortográficos ou de concordância?</li>
+                <li>Está em conformidade com as normas da língua portuguesa?</li>
+                <li>É consistente em termos de acentuação e pontuação?</li>
+            </ul>
+        </div>
+        <div class="criteria">
+            <h2>6. Chamada para a Ação</h2>
+            <p>Verifique se o conteúdo inclui uma chamada para ação clara e direcionada. O texto deve motivar o leitor a agir, seja para visitar uma página, comprar um produto ou se inscrever em um serviço.</p>
+            <ul>
+                <li>Tem uma chamada para ação clara e direta?</li>
+                <li>É motivadora e incentivadora ao leitor?</li>
+                <li>Está alinhada com o objetivo principal do conteúdo?</li>
+            </ul>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Critério</th>
+                    <th>Nota (0 a 10)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clareza</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td>Aderência ao Briefing</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td>Tom</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td>Estrutura</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td>Erros de Português</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td>Chamada para a Ação</td>
+                    <td><input type="number" min="0" max="10" style="width: 60px; text-align: center;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
