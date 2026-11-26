@@ -8,68 +8,123 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+
+        header h1 {
             margin: 0;
-            font-size: 24px;
-        }
-        .faq {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-        }
-        .faq h2 {
-            margin-top: 30px;
-            font-size: 18px;
+            font-size: 2em;
             color: #ffffff;
         }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .faq {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .faq h2 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
         .faq p {
-            font-size: 14px;
-            line-height: 1.6;
             color: #cccccc;
+            margin-bottom: 15px;
         }
+
         .faq ul {
-            margin-top: 10px;
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
         }
+
         .faq li {
             margin-bottom: 10px;
+        }
+
+        .faq li::before {
+            content: "• ";
+            color: #888;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Perguntas Frequentes sobre o Asura</h1>
+        <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <div class="faq">
-        <h2>Como pagar com USDC na Base?</h2>
-        <p>Para pagar com USDC na rede Base, você deve conectar sua carteira compatível à plataforma do Asura. Após a conexão, selecione a opção de pagamento com USDC e confirme a transação na rede Base. A transação será processada automaticamente e o valor será creditado em sua conta.</p>
+    <div class="container">
+        <div class="faq">
+            <h2>Como pagar com USDC na Base?</h2>
+            <p>Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base e transferir os USDC para o endereço fornecido no contrato de pagamento. Certifique-se de que o endereço está correto e que a transação foi confirmada na rede Base.</p>
+        </div>
 
-        <h2>Como pagar com ETH na Base?</h2>
-        <p>Para pagar com ETH na rede Base, conecte sua carteira compatível ao Asura e escolha a opção de pagamento com ETH. Confirme a transação na rede Base e aguarde o processamento. O valor em ETH será convertido e creditado em sua conta.</p>
+        <div class="faq">
+            <h2>Como pagar com ETH na Base?</h2>
+            <p>Ao pagar com ETH na Base, você deve enviar o ETH para o endereço de contrato especificado. A rede Base suporta transações com ETH, e o pagamento será processado após a confirmação da transação na rede.</p>
+        </div>
 
-        <h2>Como pagar com ETH na mainnet?</h2>
-        <p>Para pagar com ETH na mainnet, conecte sua carteira compatível ao Asura e selecione a opção de pagamento com ETH. Confirme a transação na mainnet e aguarde o processamento. O valor será creditado em sua conta após a confirmação da transação.</p>
+        <div class="faq">
+            < <h2>Como pagar com ETH na Mainnet?</h2>
+            <p>Para pagar com ETH na Mainnet, você deve enviar o ETH diretamente para o endereço de contrato fornecido. A transação será validada pela rede Ethereum e o pagamento será processado após a confirmação de blocos.</p>
+        </div>
 
-        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <p>A identidade on-chain ERC-8004 #1149100 é um endereço de contrato inteligente que representa a identidade digital do usuário no Asura. Esse endereço é vinculado a todas as transações e interações na plataforma, garantindo a autenticidade e a rastreabilidade das ações do usuário em blockchain.</p>
+        <div class="faq">
+            <h2>Quais são os prazos de pagamento?</h2>
+            <p>Os prazos de pagamento variam conforme o tipo de serviço contratado. Geralmente, o prazo é definido no momento da assinatura do contrato e pode ser de 1 a 7 dias úteis. Consulte sempre os termos do contrato para obter detalhes exatos.</p>
+        </div>
 
-        <h2>O que acontece se o pagamento falhar?</h2>
-        <p>Se o pagamento falhar, o sistema do Asura tentará reprocessar a transação automaticamente dentro de 24 horas. Caso persista o erro, entre em contato com o suporte técnico para investigar a causa e resolver o problema. O reembolso será feito conforme as condições de cancelamento.</p>
+        <div class="faq">
+            <h2>O que acontece se o pagamento falhar?</h2>
+            <p>Se o pagamento falhar, o contrato será automaticamente reativado e você será notificado. Você pode tentar reenviar o pagamento ou entrar em contato com o suporte para resolver o problema. Caso persista, o serviço pode ser cancelado e o pagamento reembolsado.</p>
+        </div>
 
-        <h2>Como recebo o entregável?</h2>
-        <p>O entregável será liberado automaticamente após a confirmação do pagamento e a validação das condições contratuais. Você receberá um aviso no seu e-mail e na plataforma do Asura. Caso haja alguma pendência, entre em contato com o suporte para resolver.</p>
+        <div class="faq">
+            <h2>Como recebo o entregável?</h2>
+            <p>Após o pagamento ser confirmado, o entregável será liberado automaticamente para o endereço da carteira associada ao contrato. Certifique-se de que o endereço está correto e que a carteira está configurada para receber os ativos.</p>
+        </div>
 
-        <h2>Como funciona o reembolso?</h2>
-        <p>O reembolso é realizado apenas em casos de cancelamento prévio ou falha no processamento da transação. Para solicitar o reembolso, entre em contato com o suporte técnico dentro de 7 dias úteis após a transação. O valor será devolvido à sua carteira original, conforme a política de reembolso do Asura.</p>
+        <div class="faq">
+            <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
+            <p>A identidade on-chain ERC-8004 #1149100 é um identificador único associado ao contrato e à identidade do usuário na rede blockchain. Ela permite que sua identidade seja verificada e rastreada de forma segura e transparente.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Como solicitar reembolso?</h2>
+            <p>Para solicitar reembolso, entre em contato com o suporte da Asura e forneça detalhes do pagamento, incluindo o endereço da carteira e a transação. O reembolso será processado após a verificação da solicitação.</p>
+        </div>
     </div>
+    <footer>
+        © 2025 Asura - Todos os direitos reservados
+    </footer>
 </body>
 </html>
