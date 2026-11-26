@@ -15,56 +15,46 @@
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
         h1 {
-            margin: 0;
-            font-size: 24px;
+            color: #ffffff;
         }
         section {
             padding: 20px;
-            margin: 20px 0;
+            margin: 10px 0;
             background-color: #1e1e1e;
-            border: 1px solid #333;
             border-radius: 8px;
         }
         h2 {
-            color: #00ffcc;
+            color: #ffffff;
             margin-top: 0;
         }
         p {
             line-height: 1.6;
         }
         ul {
+            list-style-type: disc;
             padding-left: 20px;
         }
-        .checklist {
-            list-style-type: none;
-            padding: 0;
-        }
-        .checklist li {
-            margin: 8px 0;
-            background-color: #2a2a2a;
-            padding: 8px;
-            border-radius: 4px;
-        }
-        .checklist li::before {
-            content: "✅ ";
-        }
-        .registro {
-            border-top: 2px solid #00ffcc;
-            padding-top: 20px;
-        }
         .aviso {
-            background-color: #1e1e1e;
-            border: 1px solid #00ffcc;
+            background-color: #2a2a2a;
             padding: 15px;
-            margin-top: 30px;
-            border-radius: 8px;
+            border-left: 5px solid #ff4d4d;
+            margin-top: 20px;
         }
         .aviso p {
-            font-style: italic;
-            color: #b0b0b0;
+            font-weight: bold;
+            margin: 0;
+        }
+        .checklist {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-left: 5px solid #00ff88;
+            margin-top: 20px;
+        }
+        .checklist p {
+            font-weight: bold;
+            margin: 0;
         }
     </style>
 </head>
@@ -74,40 +64,44 @@
     </header>
     <section>
         <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de curto, médio e longo prazo. Exemplo: "Obter uma rentabilidade de 5% mensal com risco máximo de 2% por operação".</p>
+        <p>Definir metas claras e mensuráveis para cada operação, como lucro esperado, número de operações por semana e gestão de risco. Exemplo: "Atingir um lucro de 5% por mês com risco máximo de 1% por operação."</p>
     </section>
     <section>
         <h2>Mercados</h2>
-        <p>Selecione os mercados que você pretende operar. Exemplo: "Forex (EUR/USD, GBP/USD), ações (B3SAO, PETR4) e criptomoedas (BTC/USD, ETH/USD)".</p>
+        <p>Selecionar os mercados que serão operados com base em conhecimento técnico e análise fundamentalista. Exemplo: "Operar apenas no mercado de ações brasileiro (B3) com foco em empresas de tecnologia."</p>
     </section>
     <section>
-        < <h2>Horários</h2>
-        <p>Determine os horários de operação. Exemplo: "Operações de 08:00 às 14:00 (horário de Brasília) nos dias úteis, com pausas para análise e revisão".</p>
+        <h2>Horários</h2>
+        <p>Definir horários de entrada e saída para operações. Exemplo: "Entrar entre 9h e 10h e sair antes das 15h, com pausas para análise de candlestick."</p>
     </section>
     <section>
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrar e sair das operações. Exemplo: "Entrada em níveis de suporte, com confirmação de candle de alta. Saída em níveis de resistência ou com stop loss a 2% abaixo da entrada".</p>
+        <ul>
+            <li>Entrar somente após confirmação de padrão técnico (ex: breakout, reversão).</li>
+            <li>Sair com lucro ou perda definida, respeitando o limite de perdas diárias.</li>
+            <li>Evitar operações emocionais; seguir o plano em todos os momentos.</li>
+        </ul>
     </section>
     <section>
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina o limite máximo de perdas diárias. Exemplo: "Não ultrapassar 3% do capital total por dia, com parada imediata em caso de ultrapassagem".</p>
+        <p>Definir um limite máximo de perdas que não pode ser ultrapassado em um dia. Exemplo: "Perdas diárias não devem ultrapassar 2% do capital total."</p>
     </section>
     <section class="checklist">
         <h2>Checklist Antes de Abrir Operação</h2>
         <ul>
-            <li>Verificar condições de mercado (volatilidade, tendências).</li>
-            <li>Confirmar análise técnica e fundamentalista.</li>
-            <li>Verificar nível de risco em relação ao capital.</li>
-            <li>Confirmar que o plano de trade está alinhado com a operação.</li>
-            <li>Verificar que todos os recursos estão disponíveis e em ordem.</li>
+            <li>Confirme os objetivos da operação.</li>
+            <li>Analise o gráfico de 1 hora e 4 horas.</li>
+            <li>Verifique se o mercado está em tendência ou range.</li>
+            <li>Confirme o nível de suporte/resistência.</li>
+            <li>Verifique a posição do stop loss e take profit.</li>
         </ul>
     </section>
-    <section class="registro">
-        <h2>Template de Registro de Operações</h2>
-        <p>Data: _______ | Mercado: _______ | Tipo: _______ | Entrada: _______ | Saída: _______ | Lucro/Perda: _______ | Observações: __________________________</p>
+    <section>
+        <h2>Template de Registro</h2>
+        <p>Registre todas as operações com dados completos: data, horário, ativo, tipo de operação, stop loss, take profit, resultado e análise da operação.</p>
     </section>
     <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações de mercado envolvem riscos e você deve buscar orientação profissional antes de investir.</p>
+        <p><strong>Aviso Legal:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações no mercado financeiro envolvem risco e podem resultar em perdas.</p>
     </section>
 </body>
 </html>
