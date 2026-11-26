@@ -8,50 +8,43 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            color: #ffffff;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
-        section {
+        main {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
+        }
+        section {
+            margin-bottom: 30px;
         }
         h2 {
-            color: #ff9800;
-            border-bottom: 2px solid #ff9800;
+            color: #ffffff;
+            border-bottom: 2px solid #00ffcc;
             padding-bottom: 5px;
         }
         p {
-            margin: 10px 0;
+            line-height: 1.6;
         }
         ul {
-            margin: 10px 0;
-            padding-left: 20px;
+            margin-left: 20px;
         }
         .aviso {
-            background-color: #2e2e2e;
-            border: 1px solid #ff9800;
-            padding: 15px;
-            margin: 30px auto;
-            max-width: 800px;
-            text-align: center;
-            font-weight: bold;
-            color: #ff9800;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
             background-color: #1e1e1e;
-            color: #ccc;
+            border: 1px solid #00ffcc;
+            padding: 15px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        .aviso p {
+            margin: 0;
         }
     </style>
 </head>
@@ -59,36 +52,52 @@
     <header>
         <h1>Fundamentos do Mercado Forex</h1>
     </header>
-    <section>
-        <h2>O que é o Forex?</h2>
-        <p>O mercado Forex, ou mercado cambial, é o maior mercado financeiro do mundo, onde as moedas são compradas e vendidas. Ele opera 24 horas por dia, 5 dias por semana, e envolve a compra e venda de pares de moedas, como USD/JPY ou EUR/USD.</p>
-        
-        <h2>Pares de Moedas</h2>
-        <p>Os pares de moedas são combinações de duas moedas, como USD/GBP (dólar americano contra libra esterlina). Existem três categorias principais: pares principais (major pairs), pares menores (minor pairs) e pares exóticos (exotic pairs).</p>
-        
-        <h2>Pip, Lote e Alavancagem</h2>
-        <p>O <strong>pip</strong> é a unidade de movimento mínima de uma moeda no mercado forex. O <strong>lote</strong> é a quantidade de moedas negociada, com um lote padrão sendo 100.000 unidades. A <strong>alavancagem</strong> permite que os investidores negociem grandes volumes com capital pequeno, mas traz riscos elevados.</p>
-        
-        <h2>Spread</h2>
-        <p>O <strong>spread</strong> é a diferença entre o preço de compra e venda de uma moeda. Ele representa a taxa de custos de transação e varia conforme o broker e a moeda negociada.</p>
-        
-        <h2>Horários de Sessão</h2>
-        <p>O mercado forex opera em várias zonas horárias, com as principais sessões sendo:</p>
-        <ul>
-            <li><strong>Sessão de Tóquio:</strong> 22:00 - 06:00 (horário de Brasília)</li>
-            <li><strong>Sessão de Londres:</strong> 00:00 - 12:00 (horário de Brasília)</li>
-            <li><strong>Sessão de Nova York:</strong> 12:00 - 20:00 (horário de Brasília)</li>
-        </ul>
-        
-        <h2>Participantes do Mercado Forex</h2>
-        <p>Os principais participantes incluem bancos centrais, instituições financeiras, traders profissionais, investidores institucionais, corretores e traders individuais. Cada um desempenha um papel na formação dos preços.</p>
-        
+    <main>
+        <section>
+            <h2>O que é o Forex?</h2>
+            <p>O mercado cambial, ou Forex, é o maior mercado financeiro do mundo, onde as moedas de diferentes países são compradas e vendidas. Ele opera 24 horas por dia, 5 dias por semana, e envolve bilhões de dólares em transações diárias. O mercado é liquidado em pares de moedas, como USD/EUR ou BRL/USD.</p>
+        </section>
+        <section>
+            <h2>Pares de Moedas</h2>
+            <p>Os pares de moedas são as combinações de duas moedas que são negociadas no mercado. Os principais pares incluem:</p>
+            <ul>
+                <li>USD/EUR (Dólar Americano contra Euro)</li>
+                <li>GBP/USD (Libra Esterlina contra Dólar Americano)</li>
+                <li>EUR/JPY (Euro contra Iene Japonês)</li>
+                <li>AUD/USD (Dólar Australiano contra Dólar Americano)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Pip, Lote e Alavancagem</h2>
+            <p>O <strong>pip</strong> é a unidade de medida de movimento de preços no Forex, geralmente equivalente a 0,0001 em moedas. Um <strong>lote</strong> é a quantidade padrão de moedas negociadas, geralmente 100.000 unidades. A <strong>alavancagem</strong> permite que os traders abram posições com capital menor, ampliando potencialmente os ganhos e os riscos.</p>
+        </section>
+        <section>
+            <h2>Spread</h2>
+            <p>O <strong>spread</strong> é a diferença entre o preço de compra e venda de uma moeda. Ele representa o custo de transação e varia de acordo com o par de moedas e o provedor de liquidez.</p>
+        </section>
+        <section>
+            <h2>Horários de Sessão</h2>
+            <p>O mercado Forex opera em diferentes zonas horárias:</p>
+            <ul>
+                <li><strong>Sessão de Tóquio</strong>: 22:00 (horário de Brasília) até 08:00</li>
+                <li><strong>Sessão de Londres</strong>: 08:00 até 16:00</li>
+                <li><strong>Sessão de Nova York</strong>: 13:00 até 21:00</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Participantes do Mercado</h2>
+            <p>Os principais participantes do mercado Forex incluem:</p>
+            <ul>
+                <li><strong>Bancos Centrais</strong>: Regulam a política monetária.</li>
+                <li><strong>Bancos de Investimento</strong>: Oferecem serviços de negociação.</li>
+                <li><strong>Corretoras</strong>: Facilitam a entrada de traders individuais.</li>
+                <li><strong>Investidores Institucionais</strong>: Como fundos de investimento e hedge funds.</li>
+                <li><strong>Trader Individual</strong>: Pessoas físicas que operam com pequenos ou grandes volumes.</li>
+            </ul>
+        </section>
         <div class="aviso">
-            Este conteúdo é educacional e não é uma recomendação de investimento. O mercado forex envolve riscos significativos e não deve ser negociado sem a devida pesquisa e compreensão.
+            <p>Este conteúdo é educacional e não constitui recomendação de investimento. A negociação de moedas envolve riscos significativos e pode resultar em perdas.</p>
         </div>
-    </section>
-    <footer>
-        &copy; 2025 - Fundamentos do Mercado Forex
-    </footer>
+    </main>
 </body>
 </html>
