@@ -8,45 +8,48 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             line-height: 1.6;
         }
         header {
-            background-color: #1f1f1f;
+            background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
-        header h1 {
+        h1 {
             margin: 0;
-            font-size: 2em;
+            color: #ffffff;
         }
         main {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
-        section {
-            margin-bottom: 40px;
-        }
         h2 {
-            color: #ff9800;
-            margin-bottom: 10px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
         }
         p {
-            font-size: 1em;
+            margin-bottom: 15px;
         }
         ul {
-            margin-left: 20px;
+            margin: 10px 0;
+            padding-left: 20px;
         }
         .aviso {
-            background-color: #1e001e;
-            border-left: 5px solid #ff9800;
+            background-color: #1e1e1e;
             padding: 15px;
             margin-top: 30px;
-            font-style: italic;
+            border-left: 4px solid #ff4757;
+        }
+        .aviso p {
+            font-weight: bold;
+            margin: 0;
         }
         a {
-            color: #ff9800;
+            color: #ff4757;
             text-decoration: none;
         }
         a:hover {
@@ -59,32 +62,23 @@
         <h1>Gestão de Risco em Operações</h1>
     </header>
     <main>
-        <section>
-            <h2>Risco por Operação</h2>
-            <p>Em operações de investimento, é essencial limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso garante que, em caso de perda, o impacto sobre o capital não seja significativo. Por exemplo, se você possui um capital de R$ 100.000, o risco máximo por operação deve ser de R$ 1.000 a R$ 2.000.</p>
-        </section>
-        <section>
-            <h2>Stop Loss e Take Profit</h2>
-            <p>O stop loss é uma ordem de venda automática que limita as perdas em uma operação, enquanto o take profit é o ponto em que você decide encerrar a operação ao atingir um lucro previsto. Essas ferramentas ajudam a manter a disciplina e evitar emoções durante o trading.</p>
-        </section>
-        <section>
-            <h2>Position Sizing</h2>
-            <p>O position sizing refere-se ao tamanho da posição que você entra em uma operação. Ele deve ser calculado com base no risco aceitável e no potencial de retorno. Um position sizing adequado ajuda a proteger o capital e maximizar os ganhos.</p>
-        </section>
-        <section>
-            <h2>Risco/Retorno</h2>
-            <p>O risco/retorno é uma métrica que compara o potencial de ganho com o risco de perda. Uma boa relação risco/retorno é geralmente de 1:2 ou superior, ou seja, para cada unidade de risco, você espera ganhar pelo menos duas unidades.</p>
-        </section>
-        <section>
-            <h2>Drawdown</h2>
-            <p>O drawdown é a perda acumulada de capital em um período de tempo. Ele indica o quanto você pode perder em uma sequência de operações negativas. Um drawdown alto pode indicar falta de gestão de risco.</p>
-        </section>
-        <section>
-            <h2>Por Que a Maioria Perde Dinheiro</h2>
-            <p>Muitos traders perdem dinheiro por falta de disciplina, emoção, falta de educação e falta de gestão de risco. Operar sem um plano claro, ignorar as regras de stop loss e não controlar o risco por operação são fatores comuns que levam à falência de muitos investidores.</p>
-        </section>
+        <h2>Risco por Operação (1–2% do Capital)</h2>
+        <p>Cada operação deve ter um risco máximo de 1 a 2% do seu capital total. Isso limita as perdas em caso de uma operação mal sucedida, protegendo o capital de forma consistente. A regra do 1–2% é uma prática comum em traders profissionais para manter a disciplina e evitar o risco excessivo.</p>
+
+        <h2>Stop Loss e Take Profit</h2>
+        <p>Os stops e takes são ferramentas essenciais para controlar o risco e maximizar os lucros. O stop loss define o ponto em que você sairá da operação se o preço for contra você, enquanto o take profit define o objetivo de lucro. Esses limites ajudam a evitar emoções e garantem uma abordagem estruturada.</p>
+
+        <h2>Position Sizing</h2>
+        <p>O position sizing é a quantidade de capital alocada em cada operação. Ele deve ser calculado com base no risco por operação e no tamanho do stop loss. Por exemplo, se você tem um risco de 2% e um stop loss de 10 pontos, o position sizing será ajustado para garantir que a perda máxima não ultrapasse o limite estabelecido.</p>
+
+        <h2>Risco/Retorno</h2>
+        <p>O risco/retorno é a relação entre o risco e o potencial lucro de uma operação. Uma boa proporção é de 1:2 ou maior. Isso significa que, para cada unidade de risco, você espera ganhar pelo menos duas unidades. Isso aumenta a probabilidade de sucesso a longo prazo.</p>
+
+        <h2>Drawdown e Por Que a Maioria Perde Dinheiro</h2>
+        <p>O drawdown é a perda acumulada em um período, e ele pode ser devastador se não for gerenciado. A maioria dos traders perde dinheiro por falta de disciplina, emocionalidade, falta de planejamento e risco excessivo. A gestão de risco é a chave para evitar esses erros e manter a consistência.</p>
+
         <div class="aviso">
-            Este conteúdo é educacional e não é uma recomendação de investimento. As operações financeiras envolvem riscos e você deve buscar orientação profissional antes de investir.
+            <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações de mercado envolvem risco de perda de capital.</p>
         </div>
     </main>
 </body>
