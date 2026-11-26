@@ -9,45 +9,45 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+        h1 {
             margin: 0;
-            font-size: 2em;
+            color: #ffffff;
         }
         main {
             padding: 20px;
         }
         .glossario {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 20px;
         }
         .termo {
             background-color: #2a2a2a;
-            border: 1px solid #444;
-            border-radius: 8px;
             padding: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
         }
         .termo h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.2em;
+            margin-top: 0;
             color: #ffffff;
         }
         .termo p {
+            margin: 10px 0 0 0;
             font-size: 0.95em;
-            line-height: 1.5;
         }
         footer {
+            background-color: #1e1e1e;
             text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 15px;
+            margin-top: 30px;
+            color: #999;
         }
     </style>
 </head>
@@ -59,140 +59,84 @@
         <div class="glossario">
             <div class="termo">
                 <h2>Pip</h2>
-                <p>Unidade de medida da variação de preços em forex. Exemplo: EUR/USD vai de 1.1200 para 1.1205, um movimento de 5 pips.</p>
+                <p>Unidade de medida de movimento de preços em mercados financeiros. Exemplo: Um movimento de 10 pips em EUR/USD representa uma variação de 0,0010.</p>
             </div>
             <div class="termo">
                 <h2>Spread</h2>
-                <p>Diferença entre o preço de compra e venda de uma moeda. Exemplo: EUR/USD com spread de 1.5 pips.</p>
+                <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se o spread de EUR/USD é 1,5 pips, o preço de compra é 1,1200 e o de venda é 1,12015.</p>
             </div>
             <div class="termo">
                 <h2>Lote</h2>
-                <p>Unidade de negociação. Um lote padrão é 100.000 unidades da moeda base.</p>
+                <p>Unidade padrão de negociação. Um lote representa 100.000 unidades da moeda base. Exemplo: Comprar 1 lote de EUR/USD equivale a 100.000 euros.</p>
             </div>
             <div class="termo">
                 <h2>Alavancagem</h2>
-                <p>Capacidade de investir com capital menor. Exemplo: 1:100 permite controlar um lote com R$1.000.</p>
+                <p>Capacidade de aumentar o potencial de lucro ou perda com um pequeno investimento. Exemplo: Com alavancagem de 1:100, um depósito de US$ 1.000 permite negociação de US$ 100.000.</p>
             </div>
             <div class="termo">
                 <h2>Margem</h2>
-                <p>Quantia de dinheiro disponível para operar. Exemplo: com margem de R$5.000, pode-se operar com R$500.</p>
+                <p>Quantia depositada como garantia para operações com alavancagem. Exemplo: Para operar com alavancagem 1:50, a margem necessária é 2% do valor da posição.</p>
             </div>
             <div class="termo">
                 <h2>Stop</h2>
-                <p>Ordem que limita perdas. Exemplo: se o preço cair para 1.1000, a operação é encerrada.</p>
+                <p>Ordem que limita a perda em uma operação. Exemplo: Um stop de 50 pips abaixo do preço de entrada para limitar perdas.</p>
             </div>
             <div class="termo">
                 <h2>Take Profit</h2>
-                <p>Ordem que fixa lucro. Exemplo: se o preço subir para 1.1300, a operação é encerrada.</p>
+                <p>Ordem que limita o lucro em uma operação. Exemplo: Um take profit de 100 pips acima do preço de entrada para fechar a posição com lucro.</p>
             </div>
             <div class="termo">
                 <h2>Long</h2>
-                <p>Operação de compra para aproveitar subidas. Exemplo: compra de EUR/USD esperando que suba.</p>
+                <p>Operação de compra com expectativa de aumento do preço. Exemplo: Comprar EUR/USD com a expectativa de que o euro suba.</p>
             </div>
             <div class="termo">
                 <h2>Short</h2>
-                <p>Operação de venda para aproveitar quedas. Exemplo: venda de EUR/USD esperando que caia.</p>
+                <p>Operação de venda com expectativa de queda do preço. Exemplo: Vender EUR/USD com a expectativa de que o euro caia.</p>
             </div>
             <div class="termo">
                 <h2>Gap</h2>
-                <p>Quebra de preços entre fechamento de uma sessão e abertura da próxima. Exemplo: abertura em 1.1250 após fechar em 1.1200.</p>
+                <p>Variação brusca no preço entre a abertura e o fechamento de um mercado. Exemplo: Um gap positivo em uma ação pode indicar uma forte demanda.</p>
             </div>
             <div class="termo">
                 <h2>Volume</h2>
-                <p>Quantidade de negociações em um período. Exemplo: volume alto indica maior liquidez.</p>
+                <p>Quantidade de negócios realizados em um ativo. Exemplo: Um volume alto em uma ação pode indicar maior liquidez.</p>
             </div>
             <div class="termo">
                 <h2>RSI</h2>
-                <p>Índice de Força Relativa que mede a sobrecompra/sobrerress. Exemplo: RSI acima de 70 indica sobrecompra.</p>
+                <p>Índice de Força Relativa que mede a velocidade e a aceleração de mudanças no preço. Exemplo: RSI acima de 70 sugere sobrecompra.</p>
             </div>
             <div class="termo">
                 <h2>MACD</h2>
-                <p>Indicador que mostra a relação entre médias móveis. Exemplo: cruzamento do sinal com a linha zero.</p>
+                <p>Índice de médias móveis convergente/divergente que compara velocidades de mudanças no preço. Exemplo: Quando o MACD cruza a linha zero, pode sinalizar reversão.</p>
             </div>
             <div class="termo">
                 <h2>Suporte</h2>
-                <p>Nível de preço onde o ativo tende a encontrar demanda. Exemplo: preço quebrado em 1.1000 pode ser um suporte.</p>
+                <p>Nível de preço onde o ativo tende a encontrar demanda. Exemplo: Um suporte rompido pode indicar queda do preço.</p>
             </div>
             <div class="termo">
                 <h2>Resistência</h2>
-                <p>Nível de preço onde o ativo tende a encontrar oferta. Exemplo: preço quebrado em 1.1200 pode ser uma resistência.</p>
+                <p>Nível de preço onde o ativo tende a encontrar oferta. Exemplo: Uma resistência rompida pode indicar aumento do preço.</p>
             </div>
             <div class="termo">
                 <h2>Drawdown</h2>
-                <p>Perda acumulada em um período. Exemplo: drawdown de 20% após um grande desvalorização.</p>
+                <p>Perda acumulada em um investimento desde o pico mais alto. Exemplo: Um drawdown de 20% indica que o capital caiu 20% desde o máximo.</p>
             </div>
             <div class="termo">
                 <h2>Equity</h2>
-                <p>Valor total do conta. Exemplo: equity de R$10.000 inclui lucros e capital.</p>
+                <p>Valor total do saldo da conta, incluindo lucros e perdas. Exemplo: Equity de US$ 50.000 representa o valor total da conta.</p>
             </div>
             <div class="termo">
                 <h2>Margem Livre</h2>
-                <p>Quantia disponível para operar após as garantias. Exemplo: margem livre de R$5.000.</p>
+                <p>Valor disponível para operações. Exemplo: Se a margem total é US$ 10.000 e a margem usada é US$ 5.000, a margem livre é US$ 5.000.</p>
             </div>
             <div class="termo">
                 <h2>Ordem Limitada</h2>
-                <p>Ordem que é executada apenas em um preço específico. Exemplo: compra a 1.1200.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Stop Loss</h2>
-                <p>Ordem que limita perdas. Exemplo: venda a 1.1000 para proteger contra quedas.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Take Profit</h2>
-                <p>Ordem que fixa lucro. Exemplo: venda a 1.1300 para encerrar operação.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Market</h2>
-                <p>Ordem que é executada imediatamente ao preço atual. Exemplo: compra a preço de mercado.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Pending</h2>
-                <p>Ordem que é colocada para ser executada em determinado momento. Exemplo: ordem de compra a 1.1200.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Stop Limit</h2>
-                <p>Ordem que combina stop e limit. Exemplo: venda a 1.1000 com limit de 1.0990.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Limit Stop</h2>
-                <p>Ordem que combina limit e stop. Exemplo: compra a 1.1200 com stop em 1.1190.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Pending Limit</h2>
-                <p>Ordem que combina pending e limit. Exemplo: compra a 1.1200 com stop em 1.1190.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Pending Stop</h2>
-                <p>Ordem que combina pending e stop. Exemplo: venda a 1.1000 com limit em 1.0990.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Stop Limit</h2>
-                <p>Ordem que combina stop e limit. Exemplo: venda a 1.1000 com limit de 1.0990.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Limit Stop</h2>
-                <p>Ordem que combina limit e stop. Exemplo: compra a 1.1200 com stop em 1.1190.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Pending Limit</h2>
-                <p>Ordem que combina pending e limit. Exemplo: compra a 1.1200 com stop em 1.1190.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Pending Stop</h2>
-                <p>Ordem que combina pending e stop. Exemplo: venda a 1.1000 com limit em 1.0990.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Limit Stop</h2>
-                <p>Ordem que combina limit e stop. Exemplo: compra a 1.1200 com stop em 1.1190.</p>
-            </div>
-            <div class="termo">
-                <h2>Ordem Stop Limit</h2>
-                <p>Ordem que combina stop e limit. Exemplo: venda a 1.1000 com limit de 1.0990.</p>
+                <p>Ordem que é executada apenas se o preço atingir um nível específico. Exemplo: Comprar EUR/USD a 1,1200 se o preço cair até esse nível.</p>
             </div>
         </div>
     </main>
     <footer>
-        &copy; 2025 Glossário de Mercado - Todos os direitos reservados.
+        &copy; 2025 - Glossário de Termos de Mercado
     </footer>
 </body>
 </html>
