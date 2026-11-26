@@ -5,177 +5,152 @@
     <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 1.2em;
+            color: #ffffff;
         }
         main {
-            padding: 40px 20px;
+            padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
         h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
         }
         ul {
-            margin: 0;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
-        .secao {
-            margin-bottom: 60px;
+        .section {
+            margin-bottom: 40px;
         }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 60px;
+        .section h3 {
+            color: #ffffff;
         }
-        footer p {
-            font-size: 0.9em;
-            color: #888;
+        .section .subtitulo {
+            color: #cccccc;
+            margin-top: 5px;
+        }
+        .section .critérios, .section .erros, .section .como_revisar {
+            margin-top: 15px;
+        }
+        .section .critérios {
+            color: #ffffff;
+        }
+        .section .erros {
+            color: #ff4d4d;
+        }
+        .section .como_revisar {
+            color: #00ff99;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
-        <p>Guia completo para garantir a qualidade em cada serviço oferecido</p>
     </header>
     <main>
-        <div class="secao">
+        <div class="section">
             <h2>Landing Page</h2>
-            <h3>Critérios de Aceite</h3>
+            <p class="subtitulo">Critérios de aceite:</p>
             <ul>
-                <li>Objetivo claro e direcionado ao público-alvo.</li>
-                <li>CTA (Call to Action) visível e direto.</li>
-                <li>Design responsivo e compatível com todos os dispositivos.</li>
-                <li>Conteúdo relevante e estruturado com hierarquia visual.</li>
-                <li>Links e botões funcionais e sem erros de navegação.</li>
+                <li class="critérios">Destaque claramente o valor proposto e o CTA (Call to Action).</li>
+                <li class="critérios">A página deve ser responsiva e funcional em todos os dispositivos.</li>
+                <li class="critérios">O tempo de carregamento deve ser inferior a 3 segundos.</li>
             </ul>
-            <h3>Erros Comuns a Evitar</h3>
+            <p class="subtitulo">Erros comuns a evitar:</p>
             <ul>
-                <li>Textos longos sem divisão clara.</li>
-                <li>Imagens de baixa qualidade ou sem legenda.</li>
-                <li>CTA sem destaque ou confusão na mensagem.</li>
-                <li>Falta de otimização para SEO e velocidade de carregamento.</li>
-                <li>Erros de formatação ou inconsistências de estilo.</li>
+                <li class="erros">Texto muito longo sem divisões visuais.</li>
+                <li class="erros">Falta de imagens ou ícones que reforcem a mensagem.</li>
+                <li class="erros">CTA sem cor ou destaque visual.</li>
             </ul>
-            <h3>Como Revisar Antes de Entregar</h3>
+            <p class="subtitulo">Como revisar antes de entregar:</p>
             <ul>
-                <li>Verifique a usabilidade em diferentes dispositivos.</li>
-                <li>Teste todos os links e formulários.</li>
-                <li>Confirme a conformidade com as normas de acessibilidade.</li>
-                <li>Releia o conteúdo para garantir clareza e coerência.</li>
-                <li>Use ferramentas de análise de performance e SEO.</li>
+                <li class="como_revisar">Teste a navegação e validação de links.</li>
+                <li class="como_revisar">Verifique a legibilidade e o tom da linguagem.</li>
+                <li class="como_revisar">Use ferramentas de análise de desempenho como Lighthouse.</li>
             </ul>
         </div>
-        <div class="secao">
+        <div class="section">
             <h2>Texto de Apresentação</h2>
-            <h3>Critérios de Aceite</h3>
+            <p class="subtitulo">Critérios de aceite:</p>
             <ul>
-                <li>Clareza na comunicação do valor proposto.</li>
-                <li>Tom de voz consistente e alinhado ao público-alvo.</li>
-                <li>Uso de linguagem simples e direta.</li>
-                <li>Informações relevantes e bem estruturadas.</li>
-                <li>Conclusão impactante e chamada para ação clara.</li>
+                <li class="critérios">Conter uma introdução clara e impactante.</li>
+                <li class="critérios">Focar em benefícios e não em características.</li>
+                <li class="critérios">Ter uma estrutura lógica e coerente.</li>
             </ul>
-            <h3>Erros Comuns a Evitar</h3>
+            <p class="subtitulo">Erros comuns a evitar:</p>
             <ul>
-                <li>Repetição excessiva de informações.</li>
-                <li>Uso de jargões ou linguagem complexa.</li>
-                <li>Textos sem uma mensagem central ou foco.</li>
-                <li>Falta de personalização ao público-alvo.</li>
-                <li>Erros de gramática, ortografia ou formatação.</li>
+                <li class="erros">Frase repetitiva ou excesso de jargão técnico.</li>
+                <li class="erros">Falta de tom de voz adequado ao público-alvo.</li>
+                <li class="erros">Palavras ou frases sem sentido ou com ambiguidade.</li>
             </ul>
-            <h3>Como Revisar Antes de Entregar</h3>
+            <p class="subtitulo">Como revisar antes de entregar:</p>
             <ul>
-                <li>Releia o texto para identificar redundâncias.</li>
-                <li>Verifique a coerência e o fluxo da mensagem.</li>
-                <li>Teste a leitura em voz alta para melhorar a fluidez.</li>
-                <li>Confirme que todos os dados e informações estão atualizados.</li>
-                <li>Revisite a formatação e a apresentação visual.</li>
+                <li class="como_revisar">Leia o texto em voz alta para identificar falhas de ritmo.</li>
+                <li class="como_revisar">Verifique a consistência de informações entre parágrafos.</li>
+                <li class="como_revisar">Use ferramentas de gramática e ortografia.</li>
             </ul>
         </div>
-        <div class="secao">
+        <div class="section">
             <h2>Revisão de Texto</h2>
-            <h3>Critérios de Aceite</h3>
+            <p class="subtitulo">Critérios de aceite:</p>
             <ul>
-                <li>Correção de erros de gramática e ortografia.</li>
-                <li>Revisão de consistência de estilo e tom de voz.</li>
-                <li>Verificação de coerência e lógica do conteúdo.</li>
-                <li>Reformulação de frases complexas ou ambíguas.</li>
-                <li>Revisão de formatação e estrutura do texto.</li>
+                <li class="critérios">Texto revisado com base em um guia de estilo definido.</li>
+                <li class="critérios">Erros gramaticais, ortográficos e de pontuação corrigidos.</li>
+                <li class="critérios">Consistência de tom e linguagem ao longo do texto.</li>
             </ul>
-            <h3>Erros Comuns a Evitar</h3>
+            <p class="subtitulo">Erros comuns a evitar:</p>
             <ul>
-                <li>Ignorar o contexto e o público-alvo.</li>
-                <li>Revisar apenas a gramática, ignorando a clareza.</li>
-                <li>Repetir frases sem necessidade.</li>
-                <li>Ignorar a revisão de dados e fatores técnicos.</li>
-                <li>Erros de formatação ou inconsistências de estilo.</li>
+                <li class="erros">Revisão superficial, sem atenção a nuances.</li>
+                <li class="erros">Falta de contextualização do público-alvo.</li>
+                <li class="erros">Ignorar a formatação e a hierarquia do conteúdo.</li>
             </ul>
-            <h3>Como Revisar Antes de Entregar</h3>
+            <p class="subtitulo">Como revisar antes de entregar:</p>
             <ul>
-                <li>Releia o texto com atenção a todos os aspectos.</li>
-                <li>Use ferramentas de revisão gramatical e de estilo.</li>
-                <li>Verifique a consistência de termos e definições.</li>
-                <li>Confirme que o texto atende ao propósito e ao público-alvo.</li>
-                <li>Revisite a formatação e o estilo de apresentação.</li>
+                <li class="como_revisar">Releia o texto com foco em clareza e fluidez.</li>
+                <li class="como_revisar">Compare com o original para garantir que nenhuma informação foi perdida.</li>
+                <li class="como_revisar">Verifique se o tom do texto se alinha com a marca.</li>
             </ul>
         </div>
-        <div class="secao">
+        <div class="section">
             <h2>5 Ideias de Conteúdo</h2>
-            <h3>Critérios de Aceite</h3>
+            <p class="subtitulo">Critérios de aceite:</p>
             <ul>
-                <li>Conceitos claros e bem definidos.</li>
-                <li>Uso de linguagem acessível e direta.</li>
-                <li>Divisão em seções e subtítulos para melhor leitura.</li>
-                <li>Apresentação de informações de forma estruturada.</li>
-                <li>Destaque para o valor agregado ao público.</li>
+                <li class="critérios">Cada ideia deve ter um objetivo claro e direcionado.</li>
+                <li class="critérios">Conter elementos de engajamento e valor para o leitor.</li>
+                <li class="critérios">Ser alinhada ao público-alvo e ao propósito do site.</li>
             </ul>
-            <h3>Erros Comuns a Evitar</h3>
+            <p class="subtitulo">Erros comuns a evitar:</p>
             <ul>
-                <li>Textos longos sem divisão clara.</li>
-                <li>Uso excessivo de termos técnicos sem explicação.</li>
-                <li>Conteúdo sem foco ou direção clara.</li>
-                <li>Erros de formatação ou inconsistências de estilo.</li>
-                <li>Repetição de ideias sem necessidade.</li>
+                <li class="erros">Ideias genéricas ou sem foco específico.</li>
+                <li class="erros">Falta de diferenciação entre as ideias.</li>
+                <li class="erros">Ausência de palavras-chave relevantes.</li>
             </ul>
-            <h3>Como Revisar Antes de Entregar</h3>
+            <p class="subtitulo">Como revisar antes de entregar:</p>
             <ul>
-                <li>Verifique a coerência e a clareza de cada ideia.</li>
-                <li>Releia o conteúdo para identificar redundâncias.</li>
-                <li>Teste a leitura em voz alta para melhorar a fluidez.</li>
-                <li>Confirme que o conteúdo atende ao propósito e ao público-alvo.</li>
-                <li>Revisite a formatação e a apresentação visual.</li>
+                <li class="como_revisar">Verifique se cada ideia é única e relevante.</li>
+                <li class="como_revisar">Avalie a clareza e o impacto de cada sugestão.</li>
+                <li class="como_revisar">Certifique-se de que todas as ideias se alinham com o posicionamento da marca.</li>
             </ul>
         </div>
     </main>
-    <footer>
-        <p>© 2025 Asura - Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
