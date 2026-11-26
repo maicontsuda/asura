@@ -1,60 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Roteiros para Vídeos de Pequenos Negócios</title>
     <style>
-        body {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
+        html, body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
         }
-        .scene {
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .roteiro {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+            position: relative;
         }
-        .scene h2 {
+
+        .roteiro h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        .roteiro .cena {
+            font-weight: bold;
             margin-bottom: 10px;
-            font-size: 24px;
         }
-        .scene p {
-            margin: 10px 0;
-            font-size: 16px;
+
+        .roteiro .fala {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .roteiro .texto {
+            font-weight: bold;
+        }
+
+        .roteiro .acao {
+            margin-top: 10px;
+            font-style: italic;
+            color: #a0a0a0;
+        }
+
+        .roteiro .imagem {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="scene">
-        <h2>1 - Nossa História</h2>
-        <p>Olá, somos a Loja do João, fundada há 10 anos. Aqui, tudo começa com a nossa história de amor pela confecção artesanal. Cada peça é feita com amor e dedicação, garantindo qualidade e originalidade. Venha conhecer a nossa loja e descubra a diferença de fazer compras com quem ama o que faz.</p>
-    </div>
-    <div class="scene">
-        <h2>2 - Nossa Produção</h2>
-        <p>Na Loja do João, nos orgulhamos de produzir tudo aqui mesmo em nossa fábrica. Vemos todos os processos, desde a seleção das matérias-primas até o acabamento final. Cada detalhe é cuidado com carinho, garantindo a excelência em nossos produtos. Vem ver como fazemos e confira a qualidade do nosso trabalho.</p>
-    </div>
-    <div class="scene">
-        <h2>3 - Sustentabilidade</h2>
-        <p>Na Loja do João, a sustentabilidade é parte do nosso DNA. Usamos materiais recicláveis e criamos peças que duram. Além disso, colaboramos com comunidades locais para garantir a qualidade dos nossos produtos e promover o bem-estar social. Saiba mais sobre como a Loja do João faz a diferença.</p>
-    </div>
-    <div class="scene">
-        <h2>4 - Clientes Felizes</h2>
-        <p>Na Loja do João, clientes felizes são a nossa prioridade. Nosso objetivo é oferecer produtos de alta qualidade e atendimento personalizado. Vamos mostrar alguns depoimentos de clientes que já experimentaram nossos produtos e ficaram satisfeitos. Descubra porque a Loja do João é o seu lugar favorito para comprar roupas.</p>
-    </div>
-    <div class="scene">
-        <h2>5 - Ainda Não Conhece?</h2>
-        <p>Se você ainda não conhece a Loja do João, é hora de dar uma chance! Aqui, você encontra peças únicas, produzidas com amor e dedicação. Venha nos visitar e descubra a diferença de fazer compras em uma loja que ama o que faz. Agende sua visita e faça parte de nossa história.</p>
+    <div class="container">
+        <div class="roteiro">
+            <h2>Roteiro 1</h2>
+            <div class="cena">Cena: Loja de Doces</div>
+            <div class="fala">"Olá! Aqui na Doces do João, temos os melhores sabores da cidade."</div>
+            <div class="texto">Sabor, qualidade e satisfação garantida!</div>
+            <div class="acao">Mostrar os doces em um display colorido.</div>
+            <img class="imagem" src="https://via.placeholder.com/600x400?text=Doces+do+João" alt="Doces do João">
+        </div>
+
+        <div class="roteiro">
+            <h2>Roteiro 2</h2>
+            <div class="cena">Cena: Cafeteria</div>
+            <div class="fala">"Bem-vindo à Café da Manhã. Aqui, cada café tem um toque especial."</div>
+            <div class="texto">Conheça nossos melhores cafés e biscoitos.</div>
+            <div class="acao">Mostrar o barista preparando um café com fumaça.</div>
+            <img class="imagem" src="https://via.placeholder.com/600x400?text=Café+da+Manhã" alt="Café da Manhã">
+        </div>
+
+        <div class="roteiro">
+            <3>Roteiro 3</h2>
+            <div class="cena">Cena: Loja de Roupas</div>
+            <div class="fala">"Encontre roupas confortáveis e com estilo para todos os looks."</div>
+            <div class="texto">Sua nova tendência começa aqui.</div>
+            <div class="acao">Mostrar modelos de roupas sendo vestidos por clientes.</div>
+            <img class="imagem" src="https://via.placeholder.com/600x400?text=Loja+de+Roupas" alt="Loja de Roupas">
+        </div>
+
+        <div class="roteiro">
+            <h2>Roteiro 4</h2>
+            <div class="cena">Cena: Lavanderia</div>
+            <div class="fala">"Lavanderia do Zé: limpeza profissional e rápido para todos."</div>
+            <div class="texto">Sua roupa limpa, em tempo recorde.</div>
+            <div class="acao">Mostrar roupas sendo lavadas em uma máquina.</div>
+            <img class="imagem" src="https://via.placeholder.com/600x400?text=Lavanderia+do+Zé" alt="Lavanderia do Zé">
+        </div>
+
+        <div class="roteiro">
+            <h2>Roteiro 5</h2>
+            <div class="cena">Cena: Loja de Livros</div>
+            <div class="fala">"Bem-vindo à Livraria do Pedro. Descubra novos mundos com cada livro."</div>
+            <div class="texto">Livros para todos os gostos e idades.</div>
+            <div class="acao">Mostrar livros sendo organizados em estantes.</div>
+            <img class="imagem" src="https://via.placeholder.com/600x400?text=Livraria+do+Pedro" alt="Livraria do Pedro">
+        </div>
     </div>
 </body>
 </html>
