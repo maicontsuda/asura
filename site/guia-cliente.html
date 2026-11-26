@@ -5,9 +5,9 @@
     <title>Como Contratar o Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -17,37 +17,37 @@
             text-align: center;
         }
         h1 {
-            color: #00ffcc;
+            color: #ffffff;
         }
-        section {
-            padding: 30px;
-            margin: 20px 0;
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
         }
         h2 {
-            color: #00ffcc;
-            margin-bottom: 10px;
+            color: #ffffff;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #ffffff;
+            margin-top: 20px;
         }
         p {
             line-height: 1.6;
         }
-        .highlight {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 5px solid #00ffcc;
+        ul {
+            margin-left: 20px;
+        }
+        .step {
             margin-bottom: 20px;
         }
-        .agent-wallet {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-left: 5px solid #00ffcc;
-            margin-top: 30px;
+        .step h3 {
+            margin-top: 0;
         }
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .step p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -55,33 +55,32 @@
     <header>
         <h1>Como Contratar o Asura</h1>
     </header>
-    <section>
-        <h2>Passo 1: Escolher o Serviço</h2>
-        <p>Antes de iniciar o processo de contratação, é essencial escolher o serviço que melhor se adapta às suas necessidades. O Asura oferece uma variedade de opções, desde consultoria de blockchain até desenvolvimento de contratos inteligentes. Analise as funções disponíveis e selecione a que mais se alinha ao seu objetivo.</p>
-    </section>
-    <section>
-        <h2>Passo 2: Criar o Pedido</h2>
-        <p>Após escolher o serviço, o próximo passo é criar o pedido. Forneça todos os detalhes necessários, como o escopo do trabalho, prazo esperado e qualquer requisito específico. É importante ser claro e preciso para garantir que o serviço entregue atenda às suas expectativas.</p>
-    </section>
-    <section>
-        < <h2>Passo 3: Pagar em USDC na Rede Base</h2>
-        <p>O pagamento pode ser realizado utilizando USDC (Token US Dollar) na rede Base. Para isso, utilize uma carteira compatível com a rede Base e envie o valor correspondente para o contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Certifique-se de que o valor está em USDC e que a transação foi confirmada na rede.</p>
-    </section>
-    <section>
-        <h2>Passo 4: Pagar em ETH (Rede Base ou Mainnet)</h2>
-        <p>Se preferir, o pagamento também pode ser feito em ETH, tanto na rede Base quanto na mainnet. Utilize uma carteira compatível e envie o valor para o contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Em ambos os casos, o valor será convertido automaticamente, e o contrato processará a transação.</p>
-    </section>
-    <section class="highlight">
-        <h2>Passo 5: Enviar o Hash da Transação</h2>
-        <p>Após realizar o pagamento, é fundamental enviar o hash da transação para o agente. Isso permite que o Asura confirme que o pagamento foi efetuado e que está pronto para iniciar o serviço. Envie o hash via mensagem ou por meio do canal de comunicação estabelecido.</p>
-    </section>
-    <section>
-        <h2>Passo 6: Acompanhar a Entrega</h2>
-        <p>Uma vez que o pagamento foi confirmado e o hash da transação enviado, o agente iniciará o serviço. Para acompanhar a entrega, acesse o status do pedido regularmente. Você pode verificar o progresso do trabalho e, em caso de dúvidas, entrar em contato com o agente para obter atualizações.</p>
-    </section>
-    <section class="agent-wallet">
-        <h2>Carteira do Agente</h2>
-        <p>A carteira do agente é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F. Qualquer transferência para essa carteira será considerada como pagamento e será processada conforme a ordem do serviço.</p>
-    </section>
+    <div class="container">
+        <h2>Passo a Passo para Contratar o Asura</h2>
+        <div class="step">
+            <h3>1. Escolha o Serviço</h3>
+            <p>Antes de iniciar o processo de contratação, selecione o serviço que deseja utilizar com o Asura. Cada serviço tem características específicas, como duração, custo e benefícios. Certifique-se de que o serviço escolhido atende às suas necessidades.</p>
+        </div>
+        <div class="step">
+            <h3>2. Crie o Pedido</h3>
+            <p>Após escolher o serviço, crie um pedido detalhado com as especificações necessárias. Inclua informações como data de início, duração, localização (se aplicável) e quaisquer requisitos adicionais. Isso ajuda o agente a entender melhor o que você precisa e a oferecer uma proposta adequada.</p>
+        </div>
+        <div class=">
+            <h3>3. Pague em USDC ou ETH</h3>
+            <p>Para concluir a contratação, você deve realizar o pagamento em uma das moedas aceitas: USDC ou ETH. O pagamento deve ser feito na rede Base. Caso prefira, também é possível utilizar a rede Ethereum mainnet. O contrato do agente é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F.</p>
+            <p>Para pagar com USDC, utilize o contrato 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Certifique-se de que a transação seja enviada com o endereço correto e que o valor esteja correto conforme o valor do serviço.</p>
+            <p>Após realizar o pagamento, envie o hash da transação para o agente. Isso é essencial para que ele possa verificar o status do pagamento e confirmar a conclusão do contrato.</p>
+        </div>
+        <div class="step">
+            <h3>4. Acompanhe o Status do Pagamento</h3>
+            <p>Após enviar o hash da transação, o agente verificará o status do pagamento nas respectivas redes. Se o pagamento for confirmado, ele iniciará o processo de atendimento. Caso haja algum problema, como falha na transação ou endereço incorreto, o agente entrará em contato para resolver a situação.</p>
+            <p>Para verificar se o pagamento foi processado, você pode utilizar uma ferramenta de exploração de blocos, como Etherscan (para Ethereum) ou BaseScan (para Base). Insira o hash da transação e confirme se o status é "confirmed" ou "pending".</p>
+        </div>
+        <div class="step">
+            < <h3>5. Acompanhe a Entrega do Serviço</h3>
+            <p>Após a confirmação do pagamento, o agente iniciará o serviço conforme combinado. Para acompanhar a entrega, mantenha-se em contato com o agente e confirme se cada etapa foi concluída conforme o plano. Se houver alguma alteração ou problema, comunique imediatamente para ajustar o processo.</p>
+            <p>Se o serviço for concluído com sucesso, o agente fornecerá um relatório final e, caso necessário, uma avaliação do resultado. Isso garante que você tenha certeza de que o serviço foi entregue conforme acordado.</p>
+        </div>
+    </div>
 </body>
 </html>
