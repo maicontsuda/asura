@@ -6,7 +6,7 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -17,39 +17,41 @@
             text-align: center;
         }
         h1 {
-            color: #00ffcc;
-            margin: 0;
+            color: #ff9800;
         }
         section {
             padding: 30px;
-            max-width: 1000px;
-            margin: auto;
-            border: 1px solid #222;
-            border-radius: 8px;
-            background-color: #1e1e1e;
+            margin: 20px auto;
+            max-width: 900px;
         }
         h2 {
-            color: #00ffcc;
-            margin-top: 0;
+            color: #ffeb3b;
+            margin-bottom: 15px;
         }
         p {
             line-height: 1.6;
         }
         ul {
-            padding-left: 20px;
+            margin: 20px 0;
         }
-        a {
-            color: #00ffcc;
-            text-decoration: none;
+        li {
+            margin-bottom: 10px;
         }
-        a:hover {
-            text-decoration: underline;
+        .step {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-left: 5px solid #ffeb3b;
+            margin-bottom: 20px;
         }
-        .footer {
+        .step h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #121212;
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
-            color: #888;
+            margin-top: 40px;
+            color: #9e9e9e;
         }
     </style>
 </head>
@@ -58,24 +60,33 @@
         <h1>Como Contratar o Asura</h1>
     </header>
     <section>
-        <h2>Passo a Passo para Contratar o Asura</h2>
-        <p>Para contratar o Asura, siga os passos abaixo com atenção. É importante que você tenha uma carteira de criptoativos e compreenda como realizar transações na rede blockchain.</p>
-        <h3>1. Escolha o Serviço</h3>
-        <p>Antes de iniciar o processo, identifique qual serviço você deseja contratar. O Asura oferece uma variedade de serviços, desde consultoria até desenvolvimento de contratos inteligentes. Escolha o que mais se adequa às suas necessidades.</p>
-        <h3>2. Crie o Pedido</h3>
-        <p>Após escolher o serviço, preencha o formulário de pedido com os detalhes necessários, como descrição do serviço, prazo esperado e outros requisitos específicos. Envie o pedido para que o Asura possa avaliar e aceitar sua solicitação.</p>
-        <h3>3. Pague em USDC na Rede Base</h3>
-        <p>Para pagar, utilize USDC (Tether) na rede Base. O contrato do USDC é 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913. Conecte sua carteira e envie a quantia exata para o endereço do contrato. Certifique-se de que o endereço da carteira está correto.</p>
-        <h3>4. Pague em ETH na Rede Base ou Mainnet</h3>
-        < <p>Se preferir pagar com ETH, você pode usar a rede Base ou a mainnet. O endereço da carteira do agente é 0x3ecdD82B0abd76b4B32211d08eE309973760DF6F. Conecte sua carteira e envie a quantia exata para o endereço do agente.</p>
-        <h3>5. Envie o Hash da Transação</h3>
-        <p>Após realizar o pagamento, envie o hash da transação para o Asura. Isso é fundamental para que ele possa confirmar o recebimento e iniciar o processo de atendimento.</p>
-        <h3>6. Acompanhe a Entrega</h3>
-        <p>O Asura entrará em contato com você para confirmar o início do serviço e manter o acompanhamento da entrega. Se houver qualquer problema, entre em contato imediatamente para resolver.</p>
-        <p>Seguindo esses passos, você garantirá um processo eficiente e seguro para contratar o Asura. Lembre-se de sempre verificar os endereços e as quantias antes de realizar qualquer transação.</p>
+        <div class="step">
+            <h3>1. Escolha o Serviço</h3>
+            <p>Antes de iniciar o processo, certifique-se de que você escolheu o serviço correto para o Asura. Cada serviço tem suas especificações, prazos e custos. Consulte a documentação do Asura para entender quais opções estão disponíveis e quais se adequam melhor às suas necessidades.</p>
+        </div>
+        <div class="step">
+            <h3>2. Crie o Pedido</h3>
+            <p>Após escolher o serviço, acesse a plataforma do Asura e crie um pedido com as informações necessárias. Inclua detalhes como data, horário, localização e quaisquer especificações adicionais. O sistema irá gerar um identificador único para o seu pedido, que será importante para acompanhar o status.</p>
+        </div>
+        <div class="3">
+            <h3>3. Pague em USDC na Rede Base</h3>
+            <p>Para pagar com USDC, use uma carteira compatível com a rede Base. Acesse o contrato do Asura em <a href="https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913" target="_blank">0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</a> e envie o valor correspondente em USDC. Após a transação ser confirmada, anote o hash da transação para enviar ao agente.</p>
+        </div>
+        <div class="step">
+            <h3>4. Pague em ETH (Rede Base ou Mainnet)</h3>
+            <p>Se preferir pagar em ETH, você pode escolher entre a rede Base ou a mainnet. Certifique-se de que a carteira está configurada corretamente para a rede selecionada. Envie o valor em ETH ao contrato do Asura, e após a confirmação, envie o hash da transação ao agente.</p>
+        </div>
+        <div class="step">
+            <h3>5. Envie o Hash da Transação</h3>
+            <p>Após realizar o pagamento, obtenha o hash da transação e envie-o ao agente do Asura, cuja carteira é <a href="https://basescan.org/address/0x3ecdD82B0abd76b4B32211d08eE309973760DF6F" target="_blank">0x3ecdD82B0abd76b4B32211d08eE309973760DF6F</a>. Esse hash é essencial para que o agente possa verificar o pagamento e iniciar o serviço.</p>
+        </div>
+        <div class="step">
+            <h3>6. Acompanhe a Entrega</h3>
+            <p>Com o pagamento confirmado e o hash enviado, o agente do Asura iniciará o processo de entrega. Você pode acompanhar o status do seu pedido no sistema do Asura ou pelo suporte do agente. Em caso de dúvidas ou problemas, entre em contato com o agente para obter assistência.</p>
+        </div>
     </section>
-    <div class="footer">
-        &copy; 2025 Asura - Todos os direitos reservados
-    </div>
+    <footer>
+        <p>© 2025 Asura. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
