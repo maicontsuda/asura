@@ -5,69 +5,57 @@
     <title>Como Testar Estratégias de Trading Sem Arriscar Dinheiro</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f5f5f5;
-            margin: 0;
-            padding: 0;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
         h1 {
             margin: 0;
             font-size: 2em;
         }
-        section {
+        main {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 900px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
             color: #ff9800;
             margin-top: 30px;
         }
         p {
-            line-height: 1.6;
+            font-size: 1em;
         }
         ul {
-            padding-left: 20px;
+            margin-left: 20px;
         }
         .metricas {
             background-color: #1a1a1a;
             padding: 15px;
-            border-left: 4px solid #ff9800;
-            margin: 20px 0;
-        }
-        .metricas h3 {
-            margin-top: 0;
-        }
-        .diario {
-            background-color: #1a1a1a;
-            padding: 15px;
-            border-left: 4px solid #00bcd4;
-            margin: 20px 0;
-        }
-        .diario h3 {
-            margin-top: 0;
+            border-radius: 8px;
+            margin-top: 15px;
         }
         .aviso {
-            background-color: #1a1a1a;
+            background-color: #2a2a2a;
             padding: 15px;
-            border-left: 4px solid #e53935;
-            margin: 20px 0;
-        }
-        .aviso h3 {
-            margin-top: 0;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: bold;
         }
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
-            color: #aaa;
+            background-color: #1e1e1e;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -75,66 +63,45 @@
     <header>
         <h1>Como Testar Estratégias de Trading Sem Arriscar Dinheiro</h1>
     </header>
-    <section>
-        <h2>Backtest, Forward Test e Conta Demo: O Que São e Como Funcionam</h2>
-        <p>
-            Antes de investir dinheiro real no mercado financeiro, é essencial testar suas estratégias de trading. Isso pode ser feito com <strong>backtest</strong>, <strong>forward test</strong> e <strong>conta demo</strong>, que oferecem formas seguras de validar a eficácia de uma estratégia sem arriscar capital.
-        </p>
-        <p>
-            <strong>Backtest</strong> é o processo de testar uma estratégia com dados históricos, simular como ela teria se comportado no passado. Já o <strong>forward test</strong> envolve a aplicação da estratégia em tempo real, mas com risco limitado, como em uma conta demo. A <strong>conta demo</strong> é um ambiente virtual onde o trader pode operar com dinheiro simulado, aprendendo a lidar com emoções e decisões sem expor seus recursos reais.
-        </p>
-        <p>
-            Esses métodos ajudam a identificar falhas, melhorar a eficiência da estratégia e preparar o trader para o mercado real.
-        </p>
-    </section>
-    <section>
-        <h2>Métricas Essenciais para Avaliar uma Estratégia</h2>
-        <div class="metricas">
-            <h3>Principais Métricas</h3>
+    <main>
+        <section>
+            <h2>Backtest: Teste da Estratégia no Passado</h2>
+            <p>O backtest é o processo de simular o desempenho de uma estratégia de trading com dados históricos. Ele permite que você analise como sua estratégia teria se comportado em situações reais no passado, sem usar dinheiro real. É uma ferramenta essencial para validar ideias antes de aplicá-las no mercado.</p>
+            <div class="metricas">
+                <p><strong>Taxa de Acerto:</strong> Porcentagem de operações que resultaram em ganho.</p>
+                <p><strong>Payoff:</strong> Relação entre ganhos e perdas em operações.</p>
+                <p><strong>Drawdown:</strong> Perda máxima acumulada em um período de tempo.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Forward Test: Teste da Estratégia no Presente</h2>
+            <p>O forward test é uma forma de validar uma estratégia com dados recentes, sem usar dinheiro real. Ele é mais rigoroso que o backtest, pois simula condições reais de mercado em tempo real, mas sem riscos financeiros.</p>
+            <p>Essa fase é crucial para identificar vieses ou falhas na estratégia que podem surgir em condições reais.</p>
+        </section>
+        <section>
+            <h2>Conta Demo: Simulação de Mercado</h2>
+            <p>As contas demo são contas virtuais que replicam o comportamento do mercado real. Elas permitem que traders testem estratégias, gerenciem riscos e pratiquem operações sem comprometer seu capital.</p>
+            <p>É importante lembrar que, embora a conta demo ofereça um ambiente realista, ela não garante resultados no mercado real, pois não replica todos os fatores de risco e psicologia de trading.</p>
+        </section>
+        <section>
+            <h2>Diário de Operações</h2>
+            <p>Manter um diário de operações é fundamental para acompanhar o desempenho da estratégia. Nele, você deve anotar cada operação, motivo, previsão, resultado e lições aprendidas.</p>
+        </section>
+        <section>
+            <h2>Critérios para Passar da Conta Demo para o Real</h2>
             <ul>
-                <li><strong>Taxa de Acerto:</strong> Porcentagem de operações que resultam em lucro.</li>
-                <li><strong>Payoff:</strong> Relação entre o lucro e a perda média por operação.</li>
-                <li><strong>Drawdown:</strong> Perda máxima acumulada em um período, indicando a volatilidade da estratégia.</li>
+                <li>Consistência de resultados em pelo menos 3 meses de simulação.</li>
+                <li>Compreensão clara das regras de entrada e saída.</li>
+                <li>Capacidade de gerenciar risco em todas as operações.</li>
+                <li>Confiança para aplicar a estratégia no mercado real.</li>
             </ul>
-        </div>
-        <p>
-            Essas métricas são fundamentais para entender o desempenho da estratégia e identificar sua robustez em diferentes condições de mercado.
-        </p>
-    </section>
-    <section>
-        <h2>Diário de Operações: Rastreando o Desempenho</h2>
-        <div class="diario">
-            <h3>Como Registrar e Analisar</h3>
-            <ul>
-                <li><strong>Data e Hora:</strong> Registro detalhado da entrada e saída de cada operação.</li>
-                <li><strong>Preço de Entrada e Saída:</strong> Para calcular lucro ou prejuízo.</li>
-                <li><strong>Motivo da Operação:</strong> Justificativa para a entrada e saída.</li>
-                <li><strong>Resultado:</strong> Acompanhamento do desempenho da estratégia ao longo do tempo.</li>
-            </ul>
-        </div>
-        <p>
-            Um diário de operações bem estruturado é essencial para ajustar a estratégia e identificar padrões de sucesso ou falha.
-        </p>
-    </section>
-    <section>
-        <h2>Passar da Conta Demo para o Real: Critérios e Avisos</h2>
+        </section>
         <div class="aviso">
-            <h3>Importante!</h3>
-            <p>
-                A conta demo não garante resultados reais. Mesmo com desempenho positivo na simulação, o mercado real pode apresentar volatilidade e condições diferentes. Antes de migrar para a conta real, é essencial atingir os seguintes critérios:
-            </p>
-            <ul>
-                <li><strong>Consistência:</strong> A estratégia deve ter resultados estáveis ao longo do tempo.</li>
-                <li><strong>Confiança:</strong> O trader deve ter confiança e disciplina para seguir a estratégia.</li>
-                <li><strong>Resultado Real:</strong> A estratégia deve ter resultados positivos em ambientes reais, como forward test.</li>
-            </ul>
+            <p><strong>AVISO:</strong> A conta demo não garante resultados no mercado real. É importante sempre considerar os riscos associados ao trading e buscar orientação profissional.</p>
         </div>
-        <p>
-            Lembre-se: o trading é uma atividade de longo prazo e exige preparação, estudo e disciplina. Nunca invista mais do que pode perder.
-        </p>
-    </section>
+    </main>
     <footer>
-        © 2025 - Manual de Testes de Estratégias de Trading
+        <p>© 2025 - Guia de Educação em Trading</p>
     </footer>
 </body>
 </html>
