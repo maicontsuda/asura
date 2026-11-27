@@ -8,48 +8,42 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #e0e0e0;
+            color: #f5f5f5;
             line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         h1 {
             margin: 0;
-            color: #ffffff;
+            font-size: 2em;
         }
-        main {
+        .container {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
         h2 {
-            color: #ffffff;
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 5px;
+            color: #ff9800;
+            margin-top: 30px;
         }
         p {
             margin-bottom: 15px;
         }
         ul {
-            margin: 10px 0;
+            margin: 0;
             padding-left: 20px;
         }
         .aviso {
-            background-color: #1e1e1e;
+            background-color: #2e2e2e;
             padding: 15px;
             margin-top: 30px;
-            border-left: 4px solid #ff4757;
-        }
-        .aviso p {
-            font-weight: bold;
-            margin: 0;
+            border-left: 5px solid #ff9800;
         }
         a {
-            color: #ff4757;
+            color: #ff9800;
             text-decoration: none;
         }
         a:hover {
@@ -61,25 +55,28 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <main>
-        <h2>Risco por Operação (1–2% do Capital)</h2>
-        <p>Cada operação deve ter um risco máximo de 1 a 2% do seu capital total. Isso limita as perdas em caso de uma operação mal sucedida, protegendo o capital de forma consistente. A regra do 1–2% é uma prática comum em traders profissionais para manter a disciplina e evitar o risco excessivo.</p>
+    <div class="container">
+        <h2>Risco por Operação</h2>
+        <p>Em operações de investimento ou trading, é fundamental limitar o risco por operação para não comprometer o capital total. Geralmente, o risco por operação deve ser de 1 a 2% do capital investido. Isso significa que, em um dia ruim, você perderá no máximo 1 ou 2% do seu dinheiro, permitindo que continue operando sem se expor a grandes perdas.</p>
 
         <h2>Stop Loss e Take Profit</h2>
-        <p>Os stops e takes são ferramentas essenciais para controlar o risco e maximizar os lucros. O stop loss define o ponto em que você sairá da operação se o preço for contra você, enquanto o take profit define o objetivo de lucro. Esses limites ajudam a evitar emoções e garantem uma abordagem estruturada.</p>
+        <p>Os stop loss e take profit são ferramentas essenciais para controlar o risco e proteger os lucros. O stop loss define o ponto em que você sairá da operação para limitar perdas, enquanto o take profit é o nível alvo para encerrar a operação com lucro. Esses limites ajudam a manter disciplina e evitar decisões emocionais.</p>
 
         <h2>Position Sizing</h2>
-        <p>O position sizing é a quantidade de capital alocada em cada operação. Ele deve ser calculado com base no risco por operação e no tamanho do stop loss. Por exemplo, se você tem um risco de 2% e um stop loss de 10 pontos, o position sizing será ajustado para garantir que a perda máxima não ultrapasse o limite estabelecido.</p>
+        <p>Position sizing refere-se ao tamanho da posição que você abre em cada operação. A forma correta de calcular o tamanho da posição é baseada no risco por operação e no stop loss. Isso garante que cada operação seja alinhada com o seu perfil de risco.</p>
 
         <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a relação entre o risco e o potencial lucro de uma operação. Uma boa proporção é de 1:2 ou maior. Isso significa que, para cada unidade de risco, você espera ganhar pelo menos duas unidades. Isso aumenta a probabilidade de sucesso a longo prazo.</p>
+        <p>O risco/retorno é a relação entre o risco assumido e o potencial lucro de uma operação. É importante que essa relação seja favorável, geralmente acima de 1:2. Isso significa que, para cada risco de 1 unidade, o potencial de lucro é de 2 unidades.</p>
 
-        <h2>Drawdown e Por Que a Maioria Perde Dinheiro</h2>
-        <p>O drawdown é a perda acumulada em um período, e ele pode ser devastador se não for gerenciado. A maioria dos traders perde dinheiro por falta de disciplina, emocionalidade, falta de planejamento e risco excessivo. A gestão de risco é a chave para evitar esses erros e manter a consistência.</p>
+        <h2>Drawdown</h2>
+        <p>Drawdown é o declínio percentual do capital em relação ao seu valor máximo. Ele mede a perda mais significativa que você pode sofrer em um período. A gestão de risco eficaz ajuda a minimizar o drawdown e proteger o capital.</p>
+
+        <h2>Por Que a Maioria Perde Dinheiro</h2>
+        <p>Muitos traders perdem dinheiro por falta de disciplina, falta de planejamento e por operar com risco excessivo. A maioria dos traders não segue regras de gestão de risco e acaba perdendo grande parte do seu capital. A educação e a prática são fundamentais para mudar esse cenário.</p>
 
         <div class="aviso">
-            <p><strong>Aviso:</strong> Este conteúdo é educacional e não é uma recomendação de investimento. As operações de mercado envolvem risco de perda de capital.</p>
+            <p><strong>Aviso:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e podem resultar em perdas.</p>
         </div>
-    </main>
+    </div>
 </body>
 </html>
