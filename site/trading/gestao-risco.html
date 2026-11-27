@@ -13,34 +13,33 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
-        .container {
+        main {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
-        h2 {
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
             color: #ff9800;
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
+            margin-bottom: 10px;
         }
         .aviso {
-            background-color: #2e2e2e;
+            background-color: #1a1a1a;
             padding: 15px;
-            margin-top: 30px;
             border-left: 5px solid #ff9800;
+            margin-top: 20px;
+        }
+        .aviso p {
+            font-style: italic;
         }
         a {
             color: #ff9800;
@@ -49,34 +48,49 @@
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #888;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <div class="container">
-        <h2>Risco por Operação</h2>
-        <p>Em operações de investimento ou trading, é fundamental limitar o risco por operação para não comprometer o capital total. Geralmente, o risco por operação deve ser de 1 a 2% do capital investido. Isso significa que, em um dia ruim, você perderá no máximo 1 ou 2% do seu dinheiro, permitindo que continue operando sem se expor a grandes perdas.</p>
-
-        <h2>Stop Loss e Take Profit</h2>
-        <p>Os stop loss e take profit são ferramentas essenciais para controlar o risco e proteger os lucros. O stop loss define o ponto em que você sairá da operação para limitar perdas, enquanto o take profit é o nível alvo para encerrar a operação com lucro. Esses limites ajudam a manter disciplina e evitar decisões emocionais.</p>
-
-        <h2>Position Sizing</h2>
-        <p>Position sizing refere-se ao tamanho da posição que você abre em cada operação. A forma correta de calcular o tamanho da posição é baseada no risco por operação e no stop loss. Isso garante que cada operação seja alinhada com o seu perfil de risco.</p>
-
-        <h2>Risco/Retorno</h2>
-        <p>O risco/retorno é a relação entre o risco assumido e o potencial lucro de uma operação. É importante que essa relação seja favorável, geralmente acima de 1:2. Isso significa que, para cada risco de 1 unidade, o potencial de lucro é de 2 unidades.</p>
-
-        <h2>Drawdown</h2>
-        <p>Drawdown é o declínio percentual do capital em relação ao seu valor máximo. Ele mede a perda mais significativa que você pode sofrer em um período. A gestão de risco eficaz ajuda a minimizar o drawdown e proteger o capital.</p>
-
-        <h2>Por Que a Maioria Perde Dinheiro</h2>
-        <p>Muitos traders perdem dinheiro por falta de disciplina, falta de planejamento e por operar com risco excessivo. A maioria dos traders não segue regras de gestão de risco e acaba perdendo grande parte do seu capital. A educação e a prática são fundamentais para mudar esse cenário.</p>
-
+    <main>
+        <section>
+            <h2>Risco por Operação</h2>
+            <p>Em operações de investimento, é fundamental limitar o risco de cada operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso evita que uma única perda possa comprometer significativamente o capital, garantindo maior resiliência contra perdas consecutivas.</p>
+        </section>
+        <section>
+            <h2>Stop Loss e Take Profit</h2>
+            <p>O stop loss é uma ordem que limita as perdas ao definir um nível de preço onde a operação é encerrada. Já o take profit é o ponto onde a operação é encerrada para garantir lucros. Esses limites ajudam a manter disciplina e evitar decisões emocionais.</p>
+        </section>
+        <section>
+            <h2>Position Sizing</h2>
+            <p>O position sizing refere-se ao tamanho da posição que será aberta em cada operação. Ele deve ser calculado com base no risco aceitável e no potencial de ganho, garantindo que cada operação seja gerenciada com responsabilidade.</p>
+        </section>
+        <section>
+            <h2>Risco/Retorno</h2>
+            <p>A relação entre risco e retorno é um dos principais indicadores de qualidade de uma estratégia. Operações com risco/retorno baixo (ex: 1:2) são mais seguras, enquanto aquelas com risco/retorno elevado (ex: 1:10) podem oferecer maiores ganhos, mas com maior volatilidade.</p>
+        </section>
+        <section>
+            <h2>Drawdown</h2>
+            <p>O drawdown é a queda percentual do capital em relação ao valor máximo atingido. Ele mede a perda máxima suportada por uma estratégia e é uma ferramenta essencial para avaliar o risco de capital.</p>
+        </section>
+        <section>
+            <h2>Por Que a Maioria Perde Dinheiro?</h2>
+            <p>Muitos traders perdem dinheiro por falta de gestão de risco, emocionalidade, falta de disciplina e sobreposição de posições. A maioria não segue uma estratégia consistente, e a maioria das operações é baseada em emoções, não em análise técnica ou fundamentalista.</p>
+        </section>
         <div class="aviso">
-            <p><strong>Aviso:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e podem resultar em perdas.</p>
+            <p><strong>Este conteúdo é educacional e não é uma recomendação de investimento.</strong></p>
         </div>
-    </div>
+    </main>
+    <footer>
+        &copy; 2025 - Guia de Gestão de Risco. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
