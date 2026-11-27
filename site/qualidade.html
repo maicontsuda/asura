@@ -5,62 +5,46 @@
     <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
-            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #f5f5f5;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            color: #ffffff;
+            font-size: 2em;
         }
         section {
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: auto;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
         }
-        h2 {
-            color: #ffffff;
-            margin-bottom: 15px;
+        section h2 {
+            margin-top: 0;
+            color: #ff9800;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            background-color: #1e1e1e;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 6px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin-bottom: 10px;
         }
-        .criterio {
-            color: #ffffff;
+        .subtitulo {
+            font-weight: bold;
+            margin-top: 15px;
         }
         .erro {
             color: #ff4d4d;
         }
-        .como-revisar {
-            color: #00ff8a;
-        }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        footer p {
-            color: #888;
-            font-size: 0.9em;
+        .revisao {
+            color: #4caf50;
         }
     </style>
 </head>
@@ -68,39 +52,98 @@
     <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
     </header>
+
     <section>
         <h2>Landing Page</h2>
+        <p>Para garantir que a landing page atenda aos padrões de qualidade, siga os critérios abaixo:</p>
+        <div class="subtitulo">Critérios de Aceite:</div>
         <ul>
-            <li><span class="criterio">Objetivo claro e direcionado ao público-alvo.</span><span class="erro">Texto genérico ou sem foco.</span><span class="como-revisar">Verifique se o CTA é claro e se o conteúdo responde à necessidade do usuário.</span></li>
-            <li><span class="criterio">Imagens relevantes e de alta qualidade.</span><span class="erro">Fotos de baixa resolução ou não relacionadas ao conteúdo.</span><span class="como-revisar">Use ferramentas de validação de imagem e evite uso de imagens genéricas.</span></li>
-            <li><span class="criterio">Formulário de contato ou CTAs bem definidos.</span><span class="erro">Formulário incompleto ou sem instruções.</span><span class="como-revisar">Teste o formulário em diferentes dispositivos e confirme se todos os campos são obrigatórios.</span></li>
+            <li>Objetivo claro e direcionado ao público-alvo.</li>
+            <li>Design responsivo e compatível com dispositivos móveis.</li>
+            <li>Texto conciso e com chamada para ação (CTA) bem definida.</li>
+            <li>Elementos visuais alinhados ao propósito da página.</li>
         </ul>
-
-        <h2>Texto de Apresentação</h2>
+        <div class="subtitulo">Erros Comuns a Evitar:</div>
         <ul>
-            <li><span class="criterio">Clareza na estrutura e na mensagem principal.</span><span class="erro">Texto confuso ou com excesso de informações.</span><span class="como-revisar">Leia em voz alta e verifique se a mensagem é compreensível.</span></li>
-            <li><span class="criterio">Estilo consistente e linguagem adequada ao público.</span><span class="erro">Mistura de linguagem formal e informal.</span><span class="como-revisar">Revisar o tom e o estilo para garantir coerência.</span></li>
-            <li><span class="criterio">Links e referências atualizadas.</span><span class="erro">Links quebrados ou dados desatualizados.</span><span class="como-revisar">Teste todos os links e valide as datas de publicação.</span></li>
+            <li>Excesso de texto sem foco principal.</li>
+            <li>Falta de CTA ou CTA mal posicionada.</li>
+            <li>Elementos visuais que não complementam o conteúdo.</li>
         </ul>
-
-        <h2>Revisão de Texto</h2>
+        <div class="subtitulo">Como Revisar Antes de Entregar:</div>
         <ul>
-            <li><span class="criterio">Correções gramaticais e ortográficas.</span><span class="erro">Erros de gramática ou uso incorreto de termos.</span><span class="como-revisar">Use ferramentas de revisão como o Grammarly e leia em voz alta.</span></li>
-            <li><span class="criterio">Clareza e coesão textual.</span><span class="erro">Frases desorganizadas ou sem conexão lógica.</span><span class="como-revisar">Reorganize o conteúdo para garantir fluxo natural.</span></li>
-            <li><span class="criterio">Uso adequado de termos técnicos.</span><span class="erro">Termos que não são compreensíveis para o público-alvo.</span><span class="como-revisar">Verifique se o vocabulário é apropriado e explique termos complexos.</span></li>
-        </ul>
-
-        <h2>5 Ideias de Conteúdo</h2>
-        <ul>
-            <li><span class="criterio">Blog com dicas práticas e relevantes.</span><span class="erro">Conteúdo repetitivo ou sem valor agregado.</span><span class="como-revisar">Verifique se o conteúdo é original e atende às expectativas do leitor.</span></li>
-            <li><span class="criterio">E-books com informações detalhadas.</span><span class="erro">Conteúdo superficial ou incompleto.</span><span class="como-revisar">Revisar a estrutura e garantir que todos os tópicos sejam abordados.</span></li>
-            <li><span class="criterio">Vídeos explicativos com transcrição.</span><span class="erro">Vídeo sem legenda ou com legenda de baixa qualidade.</span><span class="como-revisar">Teste a legibilidade da transcrição e valide a qualidade do vídeo.</span></li>
-            <li><span class="criterio">Infográficos com dados de alta qualidade.</span><span class="erro">Dados imprecisos ou representação visual errada.</span><span class="como-revisar">Verifique a fonte dos dados e a precisão da representação gráfica.</span></li>
-            <li><span class="criterio">Webinars com conteúdo estruturado.</span><span class="erro">Falta de organização ou conteúdo fragmentado.</span><span class="como-revisar">Revisar a agenda e garantir que o conteúdo esteja bem distribuído.</span></li>
+            <li>Verifique se todos os links estão funcionais.</li>
+            <li>Teste a navegação em diferentes dispositivos.</li>
+            <li>Releia o conteúdo para garantir clareza e consistência.</li>
         </ul>
     </section>
-    <footer>
-        <p>© 2025 Asura - Todos os direitos reservados.</p>
-    </footer>
+
+    <section>
+        <h2>Texto de Apresentação</h2>
+        <p>Um texto de apresentação deve ser claro, envolvente e alinhar-se ao propósito da marca.</p>
+        <div class="subtitulo">Critérios de Aceite:</div>
+        <ul>
+            <li>Tom de voz adequado ao público-alvo.</li>
+            <li>Construção lógica e coesão entre as ideias.</li>
+            <li>Uso adequado de linguagem formal ou informal, conforme o objetivo.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns a Evitar:</div>
+        <ul>
+            <li>Excesso de jargão ou linguagem técnica sem contexto.</li>
+            <li>Falta de clareza na mensagem principal.</li>
+            <li>Repetição de ideias sem propósito.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar Antes de Entregar:</div>
+        <ul>
+            <li>Leia o texto em voz alta para identificar pontos confusos.</li>
+            <li>Verifique a concordância e a gramática.</li>
+            <li>Teste a leitura em diferentes contextos para garantir flexibilidade.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Revisão de Texto</h2>
+        <p>A revisão de texto deve garantir que o conteúdo esteja alinhado às expectativas do cliente e ao padrão de qualidade da marca.</p>
+        <div class="subtitulo">Critérios de Aceite:</div>
+        <ul>
+            <li>Correção de erros gramaticais e ortográficos.</li>
+            <li>Revisão de coerência e coesão textual.</li>
+            <li>Alinhamento ao tom de voz e estilo solicitado.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns a Evitar:</div>
+        <ul>
+            <li>Ignorar o estilo de escrita solicitado.</li>
+            <li>Revisar apenas a gramática, ignorando a estrutura do texto.</li>
+            <li>Revisar sem considerar o contexto do conteúdo.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar Antes de Entregar:</div>
+        <ul>
+            <li>Use ferramentas de revisão gramatical, mas não substitua a leitura humana.</li>
+            <li>Releia o texto com atenção a detalhes e contexto.</li>
+            <li>Verifique se o conteúdo atende aos objetivos definidos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5 Ideias de Conteúdo</h2>
+        <p>Para garantir a qualidade das ideias de conteúdo, é essencial alinhar cada proposta ao objetivo de engajamento do público.</p>
+        <div class="subtitulo">Critérios de Aceite:</div>
+        <ul>
+            <li>Ideias que promovam engajamento e conversão.</li>
+            <li>Conteúdo original e alinhado ao público-alvo.</li>
+            <li>Propostas que sejam viáveis em termos de execução.</li>
+        </ul>
+        <div class="subtitulo">Erros Comuns a Evitar:</div>
+        <ul>
+            <li>Ideias genéricas ou sem direção clara.</li>
+            <li>Propostas que não consideram os recursos disponíveis.</li>
+            <li>Conteúdo que não se alinha ao propósito da marca.</li>
+        </ul>
+        <div class="subtitulo">Como Revisar Antes de Entregar:</div>
+        <ul>
+            <li>Verifique se cada ideia tem um propósito claro.</li>
+            <li>Teste a viabilidade da execução em diferentes contextos.</li>
+            <li>Releia as ideias para garantir originalidade e alinhamento.</li>
+        </ul>
+    </section>
 </body>
 </html>
