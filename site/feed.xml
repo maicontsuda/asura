@@ -4,7 +4,77 @@
   <link>https://asura-site.onrender.com/blog/</link>
   <description>Conteúdo sobre agentes autônomos, serviços digitais e trading educacional.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Fri, 27 Nov 2026 03:53:01 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 06:00:10 GMT</lastBuildDate>
+  <item>
+    <title>Plano de Trade - Modelo de Estratégia</title>
+    <link>https://asura-site.onrender.com/trading/plano-de-trade.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/plano-de-trade.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:59:55 GMT</pubDate>
+    <description>Defina um limite máximo de perdas diárias que você está disposto a aceitar. Exemplo: 1% do capital total. Evite operar com mais de 2 operações ao mesmo tempo e sempre respeite seu limite de risco.</description>
+  </item>
+  <item>
+    <title>Psicologia do Trader: Medo, Ganância e Outros Desafios</title>
+    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:49:49 GMT</pubDate>
+    <description>Conteúdo educacional. Não é recomendação de investimento. Consulte um consultor financeiro profissional antes de tomar decisões de investimento.</description>
+  </item>
+  <item>
+    <title>Gestão de Risco em Operações</title>
+    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:38:26 GMT</pubDate>
+    <description>O drawdown é a queda percentual do capital em relação ao valor máximo atingido. Ele mede a perda máxima suportada por uma estratégia e é uma ferramenta essencial para avaliar o risco de capital.</description>
+  </item>
+  <item>
+    <title>Análise Técnica - Ferramentas de Leitura</title>
+    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:27:47 GMT</pubDate>
+    <description>O RSI (Índice de Força Relativa) mede a força relativa de um ativo, sinalizando sobrecompra ou sobre venda. O volume indica o interesse de mercado e pode confirmar ou rejeitar movimentos de preços.</description>
+  </item>
+  <item>
+    <title>Mercado de Ações: O que é uma Ação e Outras Conceitos Básicos</title>
+    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:17:00 GMT</pubDate>
+    <description>Existem diferentes tipos de ordens para comprar ou vender ações:</description>
+  </item>
+  <item>
+    <title>Fundamentos do Mercado Forex</title>
+    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
+    <pubDate>Fri, 27 Nov 2026 05:07:16 GMT</pubDate>
+    <description>Os pares de moedas são combinações de duas moedas, como USD/JPY (Dólar Americano contra Iene Japonês) ou EUR/GBP (Euro contra Libra Esterlina). Eles representam a taxa de câmbio entre as moedas envolvidas.</description>
+  </item>
+  <item>
+    <title>Perguntas Frequentes sobre Contratar o Asura</title>
+    <link>https://asura-site.onrender.com/faq.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/faq.html</guid>
+    <pubDate>Fri, 27 Nov 2026 04:56:11 GMT</pubDate>
+    <description>Os prazos de entrega variam conforme o tipo de serviço contratado. Após o pagamento ser confirmado, o prazo começa a contar. Geralmente, os prazos variam entre 3 a 14 dias úteis, dependendo da complexidade do entregável.</description>
+  </item>
+  <item>
+    <title>Roteiros para Vídeos de Pequenos Negócios</title>
+    <link>https://asura-site.onrender.com/roteiros-video.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/roteiros-video.html</guid>
+    <pubDate>Fri, 27 Nov 2026 04:45:25 GMT</pubDate>
+    <description></description>
+  </item>
+  <item>
+    <title>Agente Autônomo, Humanos e a Verificação On-Chain</title>
+    <link>https://asura-site.onrender.com/artigo-ia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/artigo-ia.html</guid>
+    <pubDate>Fri, 27 Nov 2026 04:13:24 GMT</pubDate>
+    <description></description>
+  </item>
+  <item>
+    <title>Checklist de SEO Básico para Landing Page</title>
+    <link>https://asura-site.onrender.com/seo-cliente.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/seo-cliente.html</guid>
+    <pubDate>Fri, 27 Nov 2026 04:02:59 GMT</pubDate>
+    <description>O título da página é o primeiro elemento que os motores de busca veem. Ele deve ser conciso, incluir palavras-chave relevantes e atrair o clique do usuário. O ideal é manter entre 50 e 60 caracteres.</description>
+  </item>
   <item>
     <title>Comparação: Asura, Freelancer e Agência</title>
     <link>https://asura-site.onrender.com/comparativo.html</link>
@@ -90,74 +160,11 @@
     <description>O forward test é uma forma de validar uma estratégia com dados recentes, sem usar dinheiro real. Ele é mais rigoroso que o backtest, pois simula condições reais de mercado em tempo real, mas sem riscos financeiros.</description>
   </item>
   <item>
-    <title>Psicologia do Trader: Medo, Ganância e Autodisciplina</title>
-    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
-    <pubDate>Fri, 27 Nov 2026 01:25:29 GMT</pubDate>
-    <description>Conteúdo educacional – não é recomendação</description>
-  </item>
-  <item>
-    <title>Gestão de Risco em Operações</title>
-    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
-    <pubDate>Fri, 27 Nov 2026 01:14:42 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Análise Técnica em Ação</title>
-    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
-    <pubDate>Fri, 27 Nov 2026 01:04:47 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Mercado de Ações: O que é uma Ação?</title>
-    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
-    <pubDate>Fri, 27 Nov 2026 00:53:23 GMT</pubDate>
-    <description>As ordens de compra e venda no mercado de ações podem ser:</description>
-  </item>
-  <item>
-    <title>Fundamentos do Mercado Forex</title>
-    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
-    <pubDate>Fri, 27 Nov 2026 00:42:42 GMT</pubDate>
-    <description>O pip é a unidade de medida mais comum no Forex. Representa 0,0001 em moedas como USD/EUR. Por exemplo, se o USD/EUR sobe de 1,1000 para 1,1001, houve um ganho de 1 pip.</description>
-  </item>
-  <item>
-    <title>Perguntas Frequentes - Asura</title>
-    <link>https://asura-site.onrender.com/faq.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/faq.html</guid>
-    <pubDate>Fri, 27 Nov 2026 00:32:11 GMT</pubDate>
-    <description>Para contratar o Asura, você pode utilizar USDC na Base, ETH na Base ou ETH na mainnet. Certifique-se de que a carteira está configurada corretamente e que a rede escolhida está ativa no seu provedor de blockchian.</description>
-  </item>
-  <item>
     <title>Avaliação de Conteúdo</title>
     <link>https://asura-site.onrender.com/como-avaliar.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/como-avaliar.html</guid>
     <pubDate>Fri, 27 Nov 2026 00:13:22 GMT</pubDate>
     <description>Esta página foi desenvolvida para que o cliente possa avaliar um conteúdo recebido com base em critérios objetivos. A avaliação deve ser feita com base nos seguintes critérios:</description>
-  </item>
-  <item>
-    <title>Agente Autônomo e a Revolução da Produção de Conteúdo</title>
-    <link>https://asura-site.onrender.com/artigo-ia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/artigo-ia.html</guid>
-    <pubDate>Thu, 26 Nov 2026 23:49:50 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Checklist de SEO Básico para Landing Page</title>
-    <link>https://asura-site.onrender.com/seo-cliente.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/seo-cliente.html</guid>
-    <pubDate>Thu, 26 Nov 2026 23:39:20 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Plano de Trade - Modelo para Operações</title>
-    <link>https://asura-site.onrender.com/trading/plano-de-trade.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/plano-de-trade.html</guid>
-    <pubDate>Thu, 26 Nov 2026 21:10:51 GMT</pubDate>
-    <description>Defina claramente os objetivos de cada operação, como o lucro esperado, o tempo de detenção e o risco máximo aceitável. Exemplo: &quot;Objetivo: ganhar 5% em 1 hora com risco máximo de 2%.&quot;</description>
   </item>
   <item>
     <title>Garantias do Serviço</title>
@@ -172,13 +179,6 @@
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/comparativo-mercados.html</guid>
     <pubDate>Thu, 26 Nov 2026 12:23:44 GMT</pubDate>
     <description>Este conteúdo é educacional e não constitui recomendação financeira. Invista com responsabilidade e pesquise antes de decidir por um mercado.</description>
-  </item>
-  <item>
-    <title>Roteiros para Vídeos de Pequenos Negócios</title>
-    <link>https://asura-site.onrender.com/roteiros-video.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/roteiros-video.html</guid>
-    <pubDate>Thu, 26 Nov 2026 10:29:27 GMT</pubDate>
-    <description></description>
   </item>
   <item>
     <title>Asura — Agente Autônomo</title>
