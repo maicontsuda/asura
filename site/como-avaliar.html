@@ -2,109 +2,162 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Avaliação de Conteúdo</title>
+    <title>Critérios para Avaliação de Conteúdo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
             margin: 0;
             padding: 20px;
         }
         h1 {
-            color: #ffffff;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
         h2 {
-            color: #e0e0e0;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #2e2e2e;
+            color: #f5f5f5;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-bottom: 30px;
         }
         th, td {
             border: 1px solid #444;
-            padding: 10px;
-            text-align: left;
+            padding: 12px;
+            text-align: center;
         }
         th {
-            background-color: #2a2a2a;
+            background-color: #2e2e2e;
         }
-        .avaliacao {
-            margin-top: 30px;
+        tr:nth-child(even) {
+            background-color: #222;
         }
-        .avaliacao h3 {
-            color: #ffffff;
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
         }
-        .avaliacao p {
-            color: #cccccc;
-        }
-        .avaliacao input[type="number"] {
-            width: 60px;
-            padding: 5px;
-            background-color: #2a2a2a;
-            color: #ffffff;
-            border: 1px solid #444;
+        .btn:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Avaliação de Conteúdo</h1>
-        <p>Esta página foi desenvolvida para que o cliente possa avaliar um conteúdo recebido com base em critérios objetivos. A avaliação deve ser feita com base nos seguintes critérios:</p>
+        <h1>Critérios para Avaliação de Conteúdo</h1>
+        <p>Avalie o conteúdo com base nos critérios abaixo. Cada critério deve ser pontuado com uma escala de 0 a 10, com base em sua conformidade com os requisitos estabelecidos. Utilize o formulário abaixo para preencher as notas e avaliar o conteúdo de forma objetiva.</p>
 
-        <h2>Critérios de Avaliação</h2>
-        <p>Para garantir uma avaliação equilibrada e consistente, utilizamos a escala de 0 a 10. Cada critério será avaliado com base em sua relevância, clareza e qualidade.</p>
+        <h2>1. Clareza</h2>
+        <p>O conteúdo deve ser compreensível, direto e sem ambiguidade. Evite termos técnicos excessivos ou frases confusas. A mensagem principal deve ser clara e transmitida com eficiência.</p>
+
+        <h2>2. Aderência ao Briefing</h2>
+        <p>O conteúdo deve seguir estritamente as diretrizes fornecidas no briefing. Verifique se todos os pontos foram abordados, sem desvios ou adições irrelevantes.</p>
+
+        <h2>3. Tom</h2>
+        <p>O tom deve ser adequado ao público-alvo e ao propósito do conteúdo. É essencial que o tom seja coerente, profissional e alinhado ao estilo da marca ou da plataforma.</p>
+
+        <h2>4. Estrutura</h2>
+        <p>O conteúdo deve ter uma estrutura lógica e organizada, com introdução, desenvolvimento e conclusão claros. Parágrafos devem ser curtos e bem distribuídos.</p>
+
+        <h2>5. Erros de Português</h2>
+        <p>Verifique a ortografia, a gramática e o uso correto da língua. O conteúdo deve ser gramaticalmente correto e com boa pontuação.</p>
+
+        <h2>6. Chamada para a Ação</h2>
+        <p>O conteúdo deve conter uma chamada para ação clara e motivadora, incentivando o público a agir. Verifique se há um convite para interação ou para ação específica.</p>
+
+        <div class="form-group">
+            <label for="notaClareza">Clareza (0-10)</label>
+            <input type="number" id="notaClareza" name="notaClareza" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="notaBriefing">Aderência ao Briefing (0-10)</label>
+            <input type="number" id="notaBriefing" name="notaBriefing" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="notaTom">Tom (0-10)</label>
+            <input type="number" id="notaTom" name="notaTom" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="notaEstrutura">Estrutura (0-10)</label>
+            <input type="number" id="notaEstrutura" name="notaEstrutura" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="notaPortugues">Erros de Português (0-10)</label>
+            <input type="number" id="notaPortugues" name="notaPortugues" min="0" max="10">
+        </div>
+        <div class="form-group">
+            <label for="notaCta">Chamada para a Ação (0-10)</label>
+            <input type="number" id="notaCta" name="notaCta" min="0" max="10">
+        </div>
 
         <table>
-            <tr>
-                <th>Critério</th>
-                <th>Descrição</th>
-                <th>Nota (0-10)</th>
-            </tr>
-            <tr>
-                <td>Clareza</td>
-                <td>O conteúdo é compreensível, direto e sem ambiguidades. A mensagem principal é transmitida de forma clara e objetiva.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Aderência ao briefing</td>
-                <td>O conteúdo segue estritamente as diretrizes, objetivos e expectativas definidos no briefing.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Tom</td>
-                <td>O tom do conteúdo é apropriado para o público-alvo, mantendo a formalidade, informalidade ou estilo desejado.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Estrutura</td>
-                <td>O conteúdo tem uma estrutura lógica, com introdução, desenvolvimento e conclusão bem definidos.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Erros de português</td>
-                <td>O conteúdo apresenta poucos ou nenhum erro gramatical, ortográfico ou de pontuação.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Chamada para ação</td>
-                <td>O conteúdo inclui uma chamada para ação clara e direcionada, estimulando a interação ou ação do público.</td>
-                <td><input type="number" min="0" max="10"></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Critério</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clareza</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+                <tr>
+                    <td>Aderência ao Briefing</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+                <tr>
+                    <td>Tom</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+                <tr>
+                    <td>Estrutura</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+                <tr>
+                    <td>Erros de Português</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+                <tr>
+                    <td>Chamada para a Ação</td>
+                    <td><input type="number" min="0" max="10" /></td>
+                </tr>
+            </tbody>
         </table>
 
-        <div class="avaliacao">
-            <h3>Como preencher a avaliação</h3>
-            <p>Para cada critério, atribua uma nota de 0 a 10, onde 10 representa o melhor desempenho. Após preencher todas as notas, você pode calcular a média para obter uma avaliação geral do conteúdo.</p>
-        </div>
+        <a href="#" class="btn">Calcular Média</a>
     </div>
 </body>
 </html>
