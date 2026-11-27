@@ -1,68 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Análise Técnica em Ação</title>
+    <title>Análise Técnica - Ferramentas de Leitura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #FFFFFF;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            background-color: #212121;
+
+        header {
+            background-color: #1e1e1e;
             padding: 20px;
-            border-radius: 8px;
-        }
-        h1 {
             text-align: center;
-            margin-bottom: 20px;
         }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+        }
+
         p {
             margin-bottom: 15px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+
+        .aviso {
+            background-color: #222;
+            padding: 15px;
+            border-left: 5px solid #ff4444;
+            margin-top: 20px;
+            font-weight: bold;
         }
-        li {
-            margin-bottom: 10px;
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
         }
-        code {
-            background-color: #444;
-            color: #F8F8F8;
-            padding: 2px 4px;
-            border-radius: 4px;
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Análise Técnica: Ferramentas Essenciais para Leitura de Mercados</h1>
-        <p>A análise técnica é uma ferramenta fundamental para entender e analisar o comportamento dos preços de ativos financeiros. Essa abordagem baseia-se no estudo de padrões históricos de preços e volume de negociação para prever o futuro do mercado. No entanto, é importante lembrar que não há garantia de previsão perfeita, e a análise técnica deve ser usada em conjunto com outras estratégias.</p>
-        <h2>Tendências</h2>
-        <p>Uma tendência identifica a direção geral de um mercado. Ela pode ser ascendente (preço em alta), descendente (preço em baixa) ou lateral (oscilações em um intervalo). A identificação de tendências ajuda os investidores a definir suas estratégias de entrada e saída.</p>
-        <h2>Suporte e Resistência</h2>
-        <p>Suporte e resistência são níveis de preço onde a tendência de alta ou baixa tende a se estabilizar. Suporte é um nível de preço onde a ação de compra é mais forte que a de venda, enquanto resistência é o contrário. Estes níveis podem ser usados para identificar potenciais entradas ou saídas.</p>
-        <h2>Candlestick</h2>
-        <p>O gráfico de candlestick é uma representação gráfica de preços que mostra a abertura, fechamento, mínimo e máximo de um ativo em um determinado período. Os candlesticks permitem visualizar rapidamente a força relativa de compradores e vendedores, facilitando a identificação de padrões e tendências.</p>
-        <h2>Médias Móveis</h2>
-        <p>A média móvel é uma ferramenta que suaviza os preços de um ativo ao longo do tempo, ajudando a identificar tendências. Elas são calculadas como a média aritmética dos preços de fechamento de um ativo em um período específico. As médias móveis podem ser de curto, médio ou longo prazo, dependendo do período de cálculo.</p>
-        <h2>RSI (Índice de Força Relativa)</h2>
-        <p>O RSI é um indicador que mede a força relativa de um ativo em relação a seu preço de fechamento. Ele varia de 0 a 100, com valores acima de 70 indicando sobrecompra e valores abaixo de 30 indicando sobrevenda. O RSI é útil para identificar possíveis momentos de reversão de tendência.</p>
-        <h2>VOLUME</h2>
-        <p>O volume de negociação é uma medida de quantos ativos são negociados durante um período específico. Um aumento no volume geralmente indica maior interesse no ativo, enquanto um declínio pode indicar falta de confiança. O volume é usado em conjunto com outros indicadores para confirmar a força de tendências ou padrões.</p>
+    <header>
+        <h1>Análise Técnica: Ferramentas de Leitura para Mercados</h1>
+    </header>
+    <section>
+        <h2>O que é Análise Técnica?</h2>
+        <p>A análise técnica é um método de avaliação de ativos que se baseia no estudo de gráficos e indicadores para identificar padrões de comportamento e possíveis oportunidades de entrada ou saída. Ela não é uma ferramenta de previsão garantida, mas sim uma forma de leitura do mercado baseada em dados históricos e padrões recorrentes.</p>
+
+        <h2>Tendência, Suporte e Resistência</h2>
+        <p>A tendência indica a direção geral do mercado, seja ascendente, descendente ou laterais. Suporte é um nível de preço onde o mercado tende a encontrar demanda, enquanto resistência é o nível onde a oferta tende a prevalecer. Esses níveis ajudam a identificar zonas de interesse para operações.</p>
+
+        <h2>Candlestick e Médias Móveis</h2>
+        <p>O candlestick é uma forma de representar gráficos de preços que revela volume e direção do movimento. Já as médias móveis ajudam a identificar tendências e suavizam flutuações de curto prazo, mostrando a média de preços em um período específico.</p>
+
+        <h2>RSI e Volume</h2>
+        <p>O RSI (Índice de Força Relativa) mede a força relativa de um ativo, sinalizando sobrecompra ou sobre venda. O volume indica o interesse de mercado e pode confirmar ou rejeitar movimentos de preços.</p>
+
         <h2>Padrões Comuns</h2>
-        <p>Existem vários padrões comuns na análise técnica, como os padrões de voo de papagaio, cabeça e ombros, e o padrão de saída do pente. Estes padrões são formados por padrões de preços e volume que podem indicar reversões ou continuação de tendências. No entanto, é importante ter cuidado, pois padrões podem ser enganosos e não sempre se concretizam conforme esperado.</p>
-        <p>Este conteúdo é de caráter educacional e não deve ser interpretado como recomendação de investimento. A análise técnica deve ser usada como uma ferramenta complementar às decisões de investimento, considerando sempre outros fatores e tendências do mercado.</p>
-    </div>
+        <p>Padrões como "head and shoulders", "triângulos" e "formações de vela" são frequentemente analisados para identificar possíveis reversões ou continuação de tendências.</p>
+
+        <div class="aviso">
+            Este conteúdo é educacional e não constitui recomendação ou conselhos de investimento. A análise técnica é uma ferramenta de leitura, não uma previsão garantida. Invista com responsabilidade e pesquise sempre.
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 - Conteúdo educacional sobre análise técnica. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
