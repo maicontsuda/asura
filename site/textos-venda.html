@@ -1,117 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Modelos de Venda para Pequenos Negócios</title>
     <style>
         body {
-            background-color: #111;
-            color: #f5f5f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #121212;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-
         .container {
-            max-width: 960px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            box-shadow: 0 0 15px #000;
-        }
-
-        h1 {
+            width: 80%;
+            max-width: 700px;
             text-align: center;
-            color: #ff6f61;
-            margin-bottom: 30px;
         }
-
-        .modelo {
-            margin-bottom: 40px;
-            padding: 25px;
-            border-left: 5px solid #ff6f61;
-            background-color: #222;
-            border-radius: 8px;
-        }
-
-        .modelo h2 {
-            color: #ff6f61;
-            margin-bottom: 15px;
-        }
-
-        .modelo .gancho {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .modelo .corpo {
-            font-size: 1em;
-            line-height: 1.6;
+        .card {
+            background: #1A1A1A;
+            padding: 20px;
             margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-
-        .modelo .acao {
-            font-weight: bold;
-            color: #ff6f61;
-            text-decoration: underline;
+        .card h2 {
+            margin-top: 0;
         }
-
-        a {
-            color: #ff6f61;
+        .card p {
+            margin: 10px 0;
+        }
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: #FFFFFF;
             text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .card a:hover {
+            background: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Modelos de Venda para Pequenos Negócios</h1>
-
-        <div class="modelo">
-            <h2>Cafeteria</h2>
-            <div class="gancho">Aqui no nosso café, cada xícara é uma experiência única.</div>
-            <div class="corpo">Nossa cafeteria oferece um ambiente acolhedor e deliciosos cafés artesanais feitos com ingredientes frescos e de qualidade. Seja para um café da manhã tranquilo ou um momento de descanso após o trabalho, temos algo para todos. Com opções de especialidades como café expresso, capuccino e chás variados, garantimos sabor e satisfação em cada gole. Venha experimentar e descubra o sabor da qualidade!</div>
-            <div class="acao">Reserve sua mesa agora e aproveite o melhor da nossa cafeteria!</div>
+        <div class="card">
+            <h2>Venha conhecer a nossa cafeteria!</h2>
+            <p>Nosso café da manhã é especial! Deliciosos sanduíches, torradas crocantes e café fresco. Experimente a nossa mistura única de café arábica, perfeita para aquele começo de dia. Venha nos visitar e descubra por que estamos entre os melhores da cidade!</p>
+            <a href="#">Agende uma visita</a>
         </div>
-
-        <div class="modelo">
-            <h2>Doceria</h2>
-            <div class="gancho">Delicie-se com sabores que desafiam o paladar.</div>
-            <div class="corpo">Nossa doceria traz para você os melhores doces artesanais, feitos com ingredientes naturais e cuidadosamente selecionados. Desde bolos recheados e tortas caseiras até bombons e balas, cada item é uma explosão de sabor. Temos opções para todos os gostos, incluindo doces sem glúten, veganos e dietéticos. Venha experimentar e descubra o verdadeiro sabor da doçura!</div>
-            <div class="acao">Conheça nossa seleção de doces e aproveite um desconto especial na sua primeira compra!</div>
+        <div class="card">
+            <h2>Doces irresistíveis para todos os momentos!</h2>
+            <p>A nossa doceria oferece uma variedade incrível de doces, desde os clássicos bolos de aniversário até os doces de festa de casamento. Cada saboreia é uma jornada deliciosa. Traga seus convidados para saborear nossos doces e deixem-nos fazer o resto do seu evento ainda mais especial!</p>
+            <a href="#">Saiba mais</a>
         </div>
-
-        <div class="modelo">
-            <h2>Floricultura</h2>
-            <div class="gancho">Que tal um toque de beleza em sua vida?</div>
-            <div class="corpo">Aqui na nossa floricultura, cada flor é uma mensagem de amor, cuidado e beleza. Temos flores frescas, arranjos criativos e plantas que trazem vida para sua casa. Seja para um presente especial, um arranjo de mesa ou um jardim caseiro, temos opções para todos os estilos e orçamentos. Com entrega rápida e produtos de alta qualidade, sua escolha será sempre uma surpresa agradável.</div>
-            <div class="acao">Encomende agora e receba seu arranjo em casa em até 24 horas!</div>
+        <div class="card">
+            <h2>Floricultura com a maior variedade de flores!</h2>
+            <p>Oferecemos o melhor em flores frescas e arranjos criativos. Com prazer, ajudamos a criar arranjos para qualquer ocasião, desde aniversários até celebrações de casamento. Traga suas fotos e deixe-nos fazer o resto do seu sonho floral virar realidade!</p>
+            <a href="#">Confira nossos arranjos</a>
         </div>
-
-        <div class="modelo">
-            <h2>Barbearia</h2>
-            <div class="gancho">Revele sua melhor versão com um corte de qualidade.</div>
-            <div class="corpo">Na nossa barbearia, cada corte é feito com profissionalismo, precisão e cuidado. Com profissionais certificados e equipamentos de alta tecnologia, oferecemos cortes de cabelo, barbas, depilação facial e tratamentos para pele. Seja para um corte de rotina ou um tratamento especial, você merece o melhor. Venha sentir a diferença de uma experiência de qualidade e conforto.</div>
-            <div class="acao">Agende sua primeira visita e aproveite um desconto de 10%!</div>
+        <div class="card">
+            <h2>Barbearia perfeita para o seu visual!</h2>
+            <p>Nossa barbearia oferece cortes modernos e cuidados com o cabelo. Nosso especialista em barba e cabelo tem mais de 10 anos de experiência e oferece cortes personalizados para todos os tipos de cabelo e barba. Venha nos visitar e descubra por que estamos entre os melhores da cidade!</p>
+            <a href="#">Agende uma visita</a>
         </div>
-
-        <div class="modelo">
-            <h2>Petshop</h2>
-            <div class="gancho">Amor à vida, amor aos pets!</div>
-            <div class="corpo">Na nossa petshop, cada pet é tratado como um membro da família. Oferecemos produtos de qualidade, como ração, brinquedos, cuidados de higiene e serviços de tosa. Também temos consultas veterinárias e cuidados com pets de todos os tamanhos e raças. Com ambiente acolhedor e profissionais dedicados, garantimos que seu pet se sinta em casa. Venha conhecer e descubra como cuidar melhor da sua companhia!</div>
-            <div class="acao">Reserve sua consulta agora e receba um brinde especial!</div>
+        <div class="card">
+            <h2>Petshop com cuidados de primeira!</h2>
+            <p>Seu pet merece o melhor! Oferecemos cuidados veterinários, banhos e tosa, além de produtos de alta qualidade. Nosso petshop tem tudo o que você precisa para manter seu animal de estimação saudável e feliz. Venha nos visitar e descubra por que estamos entre os melhores da cidade!</p>
+            <a href="#">Saiba mais</a>
         </div>
-
-        <div class="modelo">
-            <h2>Loja de Roupa</h2>
-            <div class="gancho">A moda que reflete sua personalidade.</div>
-            <div class="corpo">Na nossa loja de roupas, você encontra peças que combinam estilo, conforto e qualidade. Com opções para todos os gêneros, idades e estilos, temos roupas para o dia a dia, ocasiões especiais e até moda infantil. Com materiais duráveis e designs modernos, cada peça é pensada para atender às necessidades de quem busca beleza e funcionalidade. Venha descobrir o que combina com você!</div>
-            <div class="acao">Aproveite nossos descontos de até 30% nas roupas de verão!</div>
+        <div class="card">
+            <h2>Loja de roupa com o melhor em moda!</h2>
+            <p>Nossa loja de roupa oferece uma variedade de estilos e marcas, para todos os gostos e ocasiões. Venha nos visitar e encontre a peça perfeita para você. Nossa equipe é altamente qualificada e pronta para ajudar a escolher a roupa certa para você. Venha nos visitar e confira!</p>
+            <a href="#">Confira nossa coleção</a>
         </div>
     </div>
 </body>
