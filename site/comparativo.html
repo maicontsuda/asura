@@ -5,76 +5,65 @@
     <title>Comparação: Asura, Freelancer e Agência</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-
         h1 {
             margin: 0;
-            font-size: 2.5em;
-            color: #ffffff;
+            font-size: 2em;
         }
-
         section {
-            padding: 30px 20px;
+            padding: 20px;
+            margin: 20px auto;
             max-width: 1000px;
-            margin: auto;
-            border-bottom: 1px solid #333;
+            background-color: #1e1e1e;
+            border-radius: 8px;
         }
-
         h2 {
             color: #ffffff;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1em;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .option {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            padding: 20px;
-            width: 30%;
-            box-sizing: border-box;
-        }
-
-        .option h3 {
             margin-top: 0;
-            color: #ffffff;
         }
-
-        .option ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        p {
+            line-height: 1.6;
         }
-
-        .option li {
+        .section-title {
+            font-weight: bold;
             margin-bottom: 10px;
         }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #1e1e1e;
-            color: #888;
+        .option {
+            margin-bottom: 20px;
+        }
+        .option h3 {
+            color: #00e676;
+        }
+        .option .subtitle {
+            color: #8e8e8e;
+        }
+        .option ul {
+            padding-left: 20px;
+        }
+        .option li {
+            margin-bottom: 8px;
+        }
+        .advantages-limitations {
+            margin-top: 30px;
+        }
+        .advantages-limitations h3 {
+            color: #ff9800;
+        }
+        .advantages-limitations ul {
+            padding-left: 20px;
+        }
+        .advantages-limitations li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -82,96 +71,112 @@
     <header>
         <h1>Comparação: Asura, Freelancer e Agência</h1>
     </header>
-
     <section>
         <h2>Preço Relativo</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Preço fixo por projeto, com custo previsível.</li>
-                    <li>Menor custo em comparação a uma agência, mas maior do que um freelancer.</li>
-                    <li>Alguns serviços oferecem planos recorrentes, reduzindo custos a longo prazo.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Preço variável, dependendo da experiência e da complexidade do projeto.</li>
-                    <li>Menor custo inicial, mas pode variar conforme a demanda e a disponibilidade.</li>
-                    <li>Pode ter custos adicionais com horas extras ou ajustes no escopo.</li>
-                </ul>
-            </div>
-            <div class="option">
-                < <h3>Agência</h3>
-                <ul>
-                    <li>Preço geralmente mais alto, com custos fixos por mês ou por projeto.</li>
-                    <li>Valor inclui suporte, gestão e possíveis custos de infraestrutura.</li>
-                    <li>Menor flexibilidade em termos de custo, mas maior escala de recursos.</li>
-                </ul>
-            </div>
+        <div class="option">
+            <h3>Asura</h3>
+            <p class="subtitle">O Asura é uma plataforma de contratação que oferece um modelo de pagamento por tarefa, com preços transparentes e fixos. A taxa é geralmente proporcional ao volume de trabalho, sem custos ocultos.</p>
+            <ul>
+                <li>Preço fixo por tarefa ou por hora.</li>
+                <li>Menor custo por unidade de trabalho.</li>
+                <li>Existe uma taxa de serviço cobrada pela plataforma.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Freelancer</h3>
+            <p class="subtitle">Contratar um freelancer pode variar bastante em preço. Geralmente, o custo é baseado em horas trabalhadas ou em projetos, com tarifas que podem ser mais baixas do que as de uma agência, mas variam conforme a experiência do profissional.</p>
+            <ul>
+                <li>Preço varia conforme o profissional e a complexidade.</li>
+                <li>Pode ter custos ocultos, como taxas de serviços ou custos de viagem.</li>
+                <li>Menor custo se o trabalho for simples e de curta duração.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Agência</h3>
+            <p class="subtitle">As agências cobram por projeto e geralmente incluem recursos como planejamento, comunicação e suporte de equipe, o que pode aumentar o custo total, mas oferece mais garantia e suporte.</p>
+            <ul>
+                <li>Custo geralmente mais alto, mas inclui suporte e gestão.</li>
+                <li>Pode haver custos ocultos, como taxas de administração.</li>
+                <li>Menor risco de retrabalho devido à experiência da equipe.</li>
+            </ul>
         </div>
     </section>
-
     <section>
         <h2>Prazo</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Tempo previsível e definido no início do projeto.</li>
-                    <li>Pode ter ajustes no prazo caso haja mudanças no escopo.</li>
-                    <li>Oferece suporte contínuo, o que pode acelerar o processo.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Tempo variável, dependendo da disponibilidade e da complexidade.</li>
-                    <li>Menor risco de atrasos se o freelancer estiver comprometido.</li>
-                    <li>Pode haver atrasos em projetos com escopo ambíguo.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Agência</h3>
-                <ul>
-                    <li>Tempo previsível, com planejamento de etapas e entregas.</li>
-                    <li>Exige maior tempo de início devido à estrutura organizacional.</li>
-                    <li>Pode ter prazos mais longos, especialmente em projetos complexos.</li>
-                </ul>
-            </div>
+        <div class="option">
+            <h3>Asura</h3>
+            <p class="subtitle">O prazo é definido com base na complexidade da tarefa e no tempo estimado. O Asura pode acelerar o processo ao reunir profissionais qualificados de forma rápida.</p>
+            <ul>
+                <li>Prazo definido com base na tarefa.</li>
+                <li>Processo mais ágil por causa da plataforma.</li>
+                <li>Menor tempo de espera em comparação com uma agência.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Freelancer</h3>
+            <p class="subtitle">O prazo depende da disponibilidade e da complexidade do trabalho. Pode haver atrasos se o freelancer estiver sobrecarregado ou se houver mudanças no escopo do projeto.</p>
+            <ul>
+                <li>Prazo variável dependendo do freelancer.</li>
+                <li>Menor flexibilidade em caso de mudanças.</li>
+                <li>Pode haver atrasos se o profissional estiver ocupado.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Agência</h3>
+            <p class="subtitle">As agências possuem processos estabelecidos e costumam seguir prazos rigorosos. O prazo é definido com antecedência e é geralmente mais confiável.</p>
+            <ul>
+                <li>Prazo definido com antecedência e monitorado.</li>
+                <li>Maior garantia de cumprimento do prazo.</li>
+                <li>Pode haver atrasos se a equipe estiver sobrecarregada.</li>
+            </ul>
         </div>
     </section>
-
+    <section>
+        <h2>Processo</h2>
+        <div class="option">
+            <h3>Asura</h3>
+            <p class="subtitle">O processo é mais simples e direto. Você escolhe a tarefa, define os requisitos e aguarda a conclusão. A plataforma facilita a comunicação e o acompanhamento.</p>
+            <ul>
+                <li>Processo ágil e centralizado.</li>
+                <li>Comunicação facilitada pela plataforma.</li>
+                <li>Pode haver limitações em termos de personalização.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Freelancer</h3>
+            <p class="subtitle">O processo envolve negociação de contratos, comunicação direta e entrega do trabalho. Requer mais atenção à gestão de projetos e ao acompanhamento contínuo.</p>
+            <ul>
+                <li>Processo mais flexível, mas demanda mais gestão.</li>
+                <li>Comunicação direta pode ser mais eficiente.</li>
+                <li>Menor controle sobre o andamento do projeto.</li>
+            </ul>
+        </div>
+        <div class="option">
+            <h3>Agência</h3>
+            <p class="subtitle">O processo é mais estruturado, com planejamento, briefing e acompanhamento contínuo. A agência assume a responsabilidade pela gestão do projeto.</p>
+            <ul>
+                <li>Processo formal com planejamento e gestão.</li>
+                <li>Menor carga de trabalho para o cliente.</li>
+                <li>Pode haver mais burocracia.</li>
+            </ul>
+        </div>
+    </section>
     <section>
         <h2>Vantagens e Limitações</h2>
-        <div class="container">
-            <div class="option">
-                <h3>Asura</h3>
-                <ul>
-                    <li>Vantagens: Suporte contínuo, escala de recursos e gestão integrada.</li>
-                    <li>Limitações: Custos intermediários e dependência de um único provedor.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Freelancer</h3>
-                <ul>
-                    <li>Vantagens: Flexibilidade, custo mais baixo e personalização.</li>
-                    <li>Limitações: Menor suporte e maior risco de inconsistência.</li>
-                </ul>
-            </div>
-            <div class="option">
-                <h3>Agência</h3>
-                <ul>
-                    <li>Vantagens: Recursos especializados, gestão de equipe e suporte completo.</li>
-                    <li>Limitações: Custos elevados e maior tempo de implementação.</li>
-                </ul>
-            </div>
+        <div class="advantages-limitations">
+            <h3>Vantagens</h3>
+            <ul>
+                <li><strong>Asura:</strong> Menor custo, agilidade e facilita o acesso a profissionais qualificados.</li>
+                <li><strong>Freelancer:</strong> Flexibilidade, possibilidade de personalização e custo mais baixo em projetos simples.</li>
+                <li><strong>Agência:</strong> Maior garantia de qualidade, suporte completo e gestão do projeto.</li>
+            </ul>
+            <h3>Limitações</h3>
+            <ul>
+                <li><strong>Asura:</strong> Menor controle sobre o processo e menos personalização.</li>
+                <li><strong>Freelancer:</strong> Risco de atrasos e falta de suporte em caso de problemas.</li>
+                <li><strong>Agência:</strong> Maior custo e maior tempo de espera para início do projeto.</li>
+            </ul>
         </div>
     </section>
-
-    <footer>
-        <p>© 2025 Comparação de Serviços de Desenvolvimento</p>
-    </footer>
 </body>
 </html>
