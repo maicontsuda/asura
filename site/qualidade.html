@@ -1,171 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Checklist de Qualidade Asura</title>
+    <title>Checklist de Qualidade para Serviços do Asura</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            width: 100%;
+
+        header {
+            background-color: #1e1e1e;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
             text-align: center;
-            margin-bottom: 20px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-        }
-        th {
-            background-color: #222;
+
+        h1 {
             color: #ffffff;
+            margin: 0;
         }
-        .checklist {
-            margin-top: 20px;
+
+        h2 {
+            color: #e0e0e0;
+            margin-top: 40px;
         }
-        .checklist h2 {
-            color: #f06292;
+
+        section {
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
             margin-bottom: 10px;
         }
-        .checklist p {
-            margin: 5px 0;
+
+        .critérios {
+            color: #d4af37;
+        }
+
+        .erros {
+            color: #ff4757;
+        }
+
+        .revisão {
+            color: #2196f3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
-        <table>
-            <tr>
-                <th>Serviço</th>
-                <th>Critérios de Aceite</th>
-                <th>Erros Comuns a Evitar</th>
-                <th>Como Revisar Antes de Entregar</th>
-            </tr>
-            <tr>
-                <td>Landing Page</td>
-                <td>
-                    - Responsividade em diferentes dispositivos<br>
-                    - Carga rápida da página<br>
-                    - Design moderno e atraente<br>
-                    - Conteúdo claro e conciso<br>
-                    - Chamada à ação clara e direta
-                </td>
-                <td>
-                    - Erros de layout em diferentes dispositivos<br>
-                    - Conteúdo confuso ou desorganizado<br>
-                    - Tempo de carregamento muito longo<br>
-                    - Design desajeitado ou não alinhado com a marca<br>
-                    - Chamada à ação confusa ou inexistente
-                </td>
-                <td>
-                    - Verificar a responsividade em diferentes dispositivos<br>
-                    - Testar o tempo de carregamento<br>
-                    - Revisar o design e a consistência visual<br>
-                    - Garantir que o conteúdo seja claro e conciso<br>
-                    - Verificar a clareza da chamada à ação
-                </td>
-            </tr>
-            <tr>
-                <td>Texto de Apresentação</td>
-                <td>
-                    - Linguagem clara e compreensível<br>
-                    - Conteúdo relevante e informativo<br>
-                    - Estruturação clara e organizada<br>
-                    - Sem erros gramaticais<br>
-                    - Ajuste de tom de acordo com o público-alvo
-                </td>
-                <td>
-                    - Linguagem confusa ou difícil de entender<br>
-                    - Conteúdo desajeitado ou irrelevantes<br>
-                    - Erros gramaticais ou ortográficos<br>
-                    - Tom inadequado para o público-alvo<br>
-                    - Falta de estruturação clara
-                </td>
-                <td>
-                    - Revisar a linguagem para garantir clareza<br>
-                    - Verificar a relevância e a informação do conteúdo<br>
-                    - Corrigir erros gramaticais e ortográficos<br>
-                    - Ajustar o tom para o público-alvo<br>
-                    - Verificar a estruturação do texto
-                </td>
-            </tr>
-            <tr>
-                <td>Revisão de Texto</td>
-                <td>
-                    - Sem erros gramaticais ou ortográficos<br>
-                    - Estruturação clara e organizada<br>
-                    - Coerência do texto<br>
-                    - Consistência no uso de termos e estilos<br>
-                    - Adequação do texto ao propósito
-                </td>
-                <td>
-                    - Erros gramaticais ou ortográficos<br>
-                    - Estruturação desajeitada ou desorganizada<br>
-                    - Falta de coerência do texto<br>
-                    - Inconsistência no uso de termos e estilos<br>
-                    - Texto inadequado ao propósito
-                </td>
-                <td>
-                    - Verificar erros gramaticais e ortográficos<br>
-                    - Revisar a estruturação do texto<br>
-                    - Verificar a coerência do texto<br>
-                    - Verificar a consistência no uso de termos e estilos<br>
-                    - Verificar a adequação do texto ao propósito
-                </td>
-            </tr>
-            <tr>
-                <td>5 Ideias de Conteúdo</td>
-                <td>
-                    - Ideias originais e relevantes<br>
-                    - Conteúdo informativo e útil<br>
-                    - Ajuste ao público-alvo<br>
-                    - Coerência entre as ideias<br>
-                    - Acompanhamento de tendências
-                </td>
-                <td>
-                    - Ideias sem originalidade ou relevância<br>
-                    - Conteúdo desinformado ou inútil<br>
-                    - Falta de ajuste ao público-alvo<br>
-                    - Falta de coerência entre as ideias<br>
-                    - Falta de acompanhamento de tendências
-                </td>
-                <td>
-                    - Verificar a originalidade e relevância das ideias<br>
-                    - Revisar o conteúdo para garantir sua utilidade<br>
-                    - Ajustar as ideias ao público-alvo<br>
-                    - Verificar a coerência entre as ideias<br>
-                    - Verificar o acompanhamento de tendências
-                </td>
-            </tr>
-        </table>
-        <div class="checklist">
-            <h2>Checklist Adicional</h2>
-            <p><strong>Responsabilidade:</strong> Verificar se todas as verificações foram realizadas e se o serviço atende aos requisitos.</p>
-            <p><strong>Cooperativismo:</strong> Solicitar feedback de colegas ou clientes para melhorar o serviço.</p>
-            <p><strong>Autonomia:</strong> Realizar as verificações independentemente, mas estar disposto a buscar ajuda se necessário.</p>
-        </div>
-    </div>
+    </header>
+
+    <section>
+        <h2>Landing Page</h2>
+        <p>Para garantir que a landing page atenda aos padrões de qualidade, verifique os seguintes critérios:</p>
+        <ul>
+            <li class="critérios">Clareza na mensagem principal: O objetivo do serviço deve ser imediatamente compreensível.</li>
+            <li class="critérios">Foco no público-alvo: A linguagem e o design devem se alinhar com o público que o serviço visa atingir.</li>
+            <li class="critérios">Credibilidade: Inclua dados, depoimentos ou certificações relevantes para reforçar a confiança.</li>
+            <li class="erros">Falta de chamada para ação clara: Sem um botão ou link visível, o visitante não saberá o que fazer.</li>
+            <li class="erros">Design desorganizado: Elementos mal alinhados ou excesso de informações podem desestimular o visitante.</li>
+            <li class="revisão">Verifique se todos os links e imagens estão funcionando corretamente.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Texto de Apresentação</h2>
+        <p>Um texto de apresentação deve ser conciso, objetivo e envolvente. Aqui estão os critérios de aceite:</p>
+        <ul>
+            <li class="critérios">Clareza e objetividade: O texto deve transmitir a essência do serviço sem ambiguidade.</li>
+            <li class="critérios">Atratividade: Use linguagem dinâmica que desperte o interesse do leitor.</li>
+            <li class="critérios">Coerência: A estrutura deve ser lógica, com uma introdução, desenvolvimento e conclusão.</li>
+            <li class="erros">Frase longa e monótona: Evite parágrafos excessivamente longos sem pausas.</li>
+            <li class="erros">Falta de vocabulário variado: O uso repetitivo de palavras pode tornar o texto monótono.</li>
+            <li class="revisão">Releia o texto em voz alta para identificar erros de gramática e fluidez.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Revisão de Texto</h2>
+        <p>A revisão de texto é essencial para garantir que o conteúdo esteja impecável. Aqui estão os critérios:</p>
+        <ul>
+            <li class="critérios">Correção gramatical: Verifique ortografia, concordância e pontuação.</li>
+            <li class="critérios">Clareza e coesão: O texto deve ter uma estrutura lógica e ser compreensível.</li>
+            <li class="critérios">Consistência de estilo: Use o mesmo tom e vocabulário ao longo do conteúdo.</li>
+            <li class="erros">Falta de revisão de vocabulário: Termos técnicos ou específicos devem ser explicados.</li>
+            <li class="erros">Falta de revisão de formatação: Erros de alinhamento ou espaçamento podem prejudicar a leitura.</li>
+            <li class="revisão">Reveja o texto com um outro profissional para identificar erros subjetivos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5 Ideias de Conteúdo</h2>
+        <p>Para garantir que as ideias de conteúdo sejam de qualidade, verifique:</p>
+        <ul>
+            <li class="critérios">Relevância: As ideias devem ser alinhadas com o público-alvo e o propósito do serviço.</li>
+            <li class="critérios">Originalidade: Evite ideias genéricas e busque propostas inovadoras.</li>
+            <li class="critérios">Viabilidade: As ideias devem ser realistas e possíveis de implementar.</li>
+            <li class="erros">Falta de profundidade: Ideias superficiais podem não atender às expectativas do cliente.</li>
+            <li class="erros">Falta de estrutura: Ideias não organizadas podem dificultar a compreensão.</li>
+            <li class="revisão">Reveja as ideias com o cliente para garantir que atendam às expectativas.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Asura - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
