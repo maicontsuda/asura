@@ -8,7 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #f0f0f0;
+            color: #e0e0e0;
             line-height: 1.6;
         }
 
@@ -18,43 +18,43 @@
             text-align: center;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 24px;
-            color: #ffffff;
         }
 
         main {
             padding: 30px;
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
         }
 
         h2 {
             color: #ffffff;
-            margin-top: 30px;
+            margin-bottom: 10px;
         }
 
         p {
             font-size: 16px;
         }
 
-        ul {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
+        .highlight {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #1e1e1e;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
+            background-color: #121212;
+            color: #999;
             font-size: 14px;
-            color: #888;
         }
     </style>
 </head>
@@ -62,33 +62,35 @@
     <header>
         <h1>Garantias do Serviço</h1>
     </header>
-
     <main>
-        <h2>O que acontece se o entregável não atender o briefing?</h2>
-        <p>Se o entregável não atender integralmente ao briefing fornecido, o serviço será revisado e ajustado até que os requisitos sejam atendidos. Caso haja alguma divergência significativa que não possa ser resolvida com ajustes, o cliente será informado previamente e terá a opção de redefinir os termos do projeto ou solicitar uma revisão parcial do serviço.</p>
+        <section>
+            <h2>O que acontece se o entregável não atender o briefing?</h2>
+            <p>Se o entregável não atender ao briefing fornecido, o serviço será revisado imediatamente. Caso haja uma divergência significativa e não houver possibilidade de ajuste dentro dos limites estabelecidos, a entrega será considerada não conformada. Nesse caso, o cliente será notificado e terá 7 dias úteis para solicitar ajustes ou decidir se o serviço será refeito com base em novos requisitos.</p>
+        </section>
 
-        <h2>Quantos ajustes são permitidos?</h2>
-        <p>Fornece-se um limite de 3 ajustes gratuitos após a entrega inicial do conteúdo. Cada ajuste deve ser solicitado dentro do prazo de 10 dias úteis após a entrega. Caso o cliente solicite mais de 3 ajustes, será cobrado um valor adicional conforme o orçamento prévio ou acordo adicional.</p>
+        <section>
+            <h2>Quantos ajustes são permitidos?</h2>
+            <p>Podem ser feitos até 3 ajustes no conteúdo ou no design do entregável. Cada ajuste será analisado individualmente e, se necessário, será cobrado um valor adicional de acordo com o escopo do serviço. Após os 3 ajustes, qualquer alteração adicional será considerada uma nova solicitação e será cobrada com base no tempo e recursos envolvidos.</p>
+        </section>
 
-        <h2>Qual é o prazo de resposta?</h2>
-        <p>Os ajustes e solicitações de revisão devem ser respondidos em até 48 horas úteis após a solicitação, exceto em dias de feriado ou em casos de alta demanda. Caso haja algum atraso, o cliente será informado com antecedência e um novo prazo será definido.</p>
+        <section>
+            < <h2>Prazo de resposta</h2>
+            <p>Todo ajuste solicitado pelo cliente será respondido em até 48 horas úteis. Caso a demanda exija maior complexidade, o prazo será comunicado previamente. A resposta incluirá o status do ajuste e, se houver necessidade de mais tempo, será informado o prazo estimado.</p>
+        </section>
 
-        <h2>O que não é coberto?</h2>
-        <p>As seguintes situações não estão cobertas e devem ser acordadas previamente:
-        <ul>
-            <li>Revisões de conteúdo que envolvam reescritas completas ou mudanças estruturais.</li>
-            <li>Requisitos que envolvam conhecimento técnico especializado, como programação ou desenvolvimento de software.</li>
-            <li>Requisitos que envolvam criação de imagens, vídeos ou outros materiais gráficos.</li>
-            <li>Requisitos que envolvam tradução de conteúdo ou adaptação para idiomas diferentes do português.</li>
-            <li>Qualquer demanda que exija a criação de novos elementos não previstos no briefing.</li>
-        </ul>
-        </p>
-
-        <p>As garantias descritas acima são válidas para o serviço prestado, e qualquer alteração ou extensão dos termos deve ser acordada previamente e formalizada em contrato ou orçamento.</p>
+        <section>
+            <h2>O que não é coberto?</h2>
+            <div class="highlight">
+                <p><strong>1. Revisões de conteúdo que envolvam reescrita total.</strong><br>
+                <strong>2. Alterações de design que exijam reprojeto completo.</strong><br>
+                <strong>3. Requerimentos que envolvam integração com sistemas externos.</strong><br>
+                <strong>4. Solicitações que não estejam alinhadas ao briefing original.</strong></p>
+            </div>
+            <p>Esses itens são considerados fora do escopo do serviço e, portanto, não estão incluídos nas garantias. É importante que o briefing seja claro e detalhado para evitar mal-entendidos.</p>
+        </section>
     </main>
-
     <footer>
-        © 2025 Serviços de Produção de Conteúdo – Todos os direitos reservados.
+        &copy; 2025 Serviço de Produção de Conteúdo. Todos os direitos reservados.
     </footer>
 </body>
 </html>
