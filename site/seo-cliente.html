@@ -7,7 +7,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -17,38 +17,44 @@
             text-align: center;
         }
         h1 {
-            margin: 0;
+            color: #ffffff;
             font-size: 2em;
         }
-        section {
+        main {
             padding: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 40px;
         }
         h2 {
-            border-bottom: 2px solid #6a1b9a;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
             color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
         }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
         li {
+            background-color: #1e1e1e;
             margin-bottom: 10px;
+            padding: 10px;
+            border-left: 4px solid #ff9800;
         }
-        .destaque {
-            color: #ff9800;
-            font-weight: bold;
+        .alert {
+            background-color: #1e1e1e;
+            border-left: 4px solid #ff4081;
+            padding: 10px;
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #888;
             font-size: 0.9em;
-            color: #bbbbbb;
         }
     </style>
 </head>
@@ -56,39 +62,67 @@
     <header>
         <h1>Checklist de SEO Básico para Landing Page</h1>
     </header>
-    <section>
-        <h2>1. Title Tag</h2>
-        <p>O título da página é o primeiro elemento que os motores de busca veem. Ele deve ser conciso, incluir palavras-chave relevantes e atrair o clique do usuário. O ideal é manter entre 50 e 60 caracteres.</p>
-
-        <h2>2. Meta Description</h2>
-        <p>A meta description é o resumo da página que aparece nos resultados de busca. Ela deve ser única, incluir palavras-chave e incentivar o clique. Mantenha entre 155 e 160 caracteres.</p>
-
-        <h2>3. Headings (H1, H2, H3)</h2>
-        <p>Os headings ajudam a estruturar o conteúdo e facilitam a indexação. Use o H1 apenas uma vez no início da página, e H2, H3 para seções menores. Evite repetir palavras-chave excessivamente.</p>
-
-        <h2>4. Texto Alternativo (Alt Text)</h2>
-        <p>Todo imagem deve ter um texto alternativo descritivo e relevante. Isso melhora a acessibilidade e a indexação. Evite repetir palavras-chave e mantenha o texto natural.</p>
-
-        <h2>5. Velocidade de Carregamento</h2>
-        <p>Uma página lenta afeta a experiência do usuário e o ranking no Google. Otimize imagens, use CDN, minimize CSS e JavaScript, e evite carregamentos excessivos.</p>
-
-        <h2>6. Links Internos</h2>
-        <p>Links internos ajudam a distribuir autoridade e melhoram a navegação. Use-os para conectar páginas relevantes e incluir palavras-chave naturais no texto.</p>
-
-        <h2>7. O Que NÃO Fazer</h2>
-        <p>
+    <main>
+        <section>
+            <h2>1. Title Tag</h2>
+            <p>O título da página é a primeira informação que aparece nos resultados de busca. Deve ser claro, relevante e incluir palavras-chave principais. O ideal é manter o título entre 50 e 60 caracteres, para garantir que ele apareça completo nos resultados.</p>
             <ul>
-                <li><span class="destaque">Evite palavras-chave repetidas</span> em excesso ou forçadas.</li>
-                <li><span class="destaque">Não use meta tags duplicadas</span> ou irrelevantes.</li>
-                <li><span class="destaque">Não faça uso excessivo de JavaScript</span> ou Flash.</li>
-                <li><span class="destaque">Não ignore a experiência do usuário</span> – uma página mal estruturada afeta o SEO.</li>
-                <li><span class="destaque">Não use links de qualidade baixa</span> ou spam.</li>
-                <li><span class="destaque">Não escreva conteúdo duplicado</span> ou não relevante.</li>
+                <li>Evite palavras-chave repetidas ou excessivas.</li>
+                <li>Use o nome da marca se for relevante.</li>
+                <li>Evite usar símbolos ou caracteres especiais.</li>
             </ul>
-        </p>
-    </section>
+        </section>
+        <section>
+            <h2>2. Meta Description</h2>
+            <p>A meta description é uma breve descrição da página que aparece nos resultados de busca. Ela deve ser atraente, incluir palavras-chave e ser de até 160 caracteres. A meta description ajuda o usuário a decidir se ele vai clicar na sua página.</p>
+            <ul>
+                <li>Use uma linguagem persuasiva e clara.</li>
+                <li>Evite repetição de palavras-chave.</li>
+                <li>Inclua um chamado à ação, se for relevante.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Headings</h2>
+            <p>Os headings (H1, H2, H3, etc.) ajudam a estruturar o conteúdo e melhoram a legibilidade. O H1 deve ser único e representar o tema da página. Os headings H2 e H3 devem ser usados para organizar os tópicos.</p>
+            <ul>
+                <li>Evite usar H1 em múltiplas seções.</li>
+                <li>Use H2 para seções principais e H3 para subseções.</li>
+                <li>Inclua palavras-chave relevantes nos headings.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>4. Texto Alternativo</h2>
+            <p>Todo imagem deve ter um texto alternativo (alt text) que descreva o conteúdo da imagem. Isso é importante para a acessibilidade e também para o SEO, pois os motores de busca usam esse texto para entender o conteúdo da imagem.</p>
+            <ul>
+                <li>Evite usar palavras-chave excessivas no alt text.</li>
+                <li>Descreva a imagem de forma clara e concisa.</li>
+                <li>Evite repetir o mesmo texto alternativo em múltiplas imagens.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>5. Velocidade de Carregamento</h2>
+            <p>A velocidade de carregamento da página é um fator importante para o SEO e a experiência do usuário. Páginas lentas tendem a ter menor taxa de conversão e maior taxa de abandono.</p>
+            <ul>
+                <li>Use imagens otimizadas (formato WebP, compressão).</li>
+                <li>Evite scripts e CSS não essenciais.</li>
+                <li>Use CDN para carregar recursos de forma mais rápida.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>6. Links Internos</h2>
+            <p>Os links internos ajudam a navegação do site e também distribuem a autoridade entre as páginas. Use links internos para direcionar o usuário para outras seções relevantes da landing page ou para outras páginas do site.</p>
+            <ul>
+                <li>Use links internos para seções importantes da página.</li>
+                <li>Evite links que não levam a conteúdo relevante.</li>
+                <li>Use nomes de links descritivos.</li>
+            </ul>
+        </section>
+        <section class="alert">
+            <p><strong>O que NÃO fazer:</strong> Evite usar palavras-chave repetidas excessivamente, evite conteúdo duplicado, não use meta tags duplicadas, não use links quebrados e não ignore a experiência do usuário.</p>
+        </section>
+    </main>
     <footer>
-        © 2025 Checklist SEO Básico – Guia Prático para Landing Pages
+        &copy; 2025 Checklist de SEO Básico. Todos os direitos reservados.
     </footer>
 </body>
 </html>
