@@ -5,60 +5,73 @@
     <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #1e1e1e;
-            padding: 1rem;
+            padding: 20px;
             text-align: center;
         }
         h1 {
-            color: #ffcc00;
+            color: #ffffff;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
         }
         section {
-            padding: 1rem;
-            margin: 1rem 0;
-            background-color: #1e1e1e;
-            border-left: 5px solid #ffcc00;
+            margin-bottom: 40px;
         }
         h2 {
-            color: #ffcc00;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
         }
         p {
             line-height: 1.6;
         }
-        ul {
-            padding-left: 1rem;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
         }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-left: 5px solid #ffcc00;
-        }
-        .aviso p {
-            font-style: italic;
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: left;
         }
         .checklist {
-            background-color: #2a2a2a;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-left: 5px solid #ffcc00;
+            margin-top: 20px;
+        }
+        .checklist h3 {
+            color: #ffffff;
         }
         .checklist ul {
             list-style-type: none;
             padding: 0;
         }
         .checklist li {
-            margin: 0.5rem 0;
+            margin-bottom: 10px;
         }
         .checklist li::before {
-            content: "✅";
-            margin-right: 0.5rem;
+            content: "✅ ";
+            color: #00ff99;
+        }
+        .aviso {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-top: 40px;
+            border-left: 5px solid #00ff99;
+        }
+        .aviso p {
+            font-style: italic;
+            color: #cccccc;
         }
     </style>
 </head>
@@ -66,38 +79,135 @@
     <header>
         <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
-    <section>
-        <h2>Objetivos</h2>
-        <p>Defina claramente os objetivos de curto, médio e longo prazo da sua estratégia de trade. Exemplos: aumentar o capital em 20% em 6 meses, reduzir o risco de perda diária a 1%, ou manter uma consistência de 80% de acertos nas operações.</p>
-    </section>
-    <section>
-        <h2>Mercados</h2>
-        <p>Escolha os mercados que você deseja operar. Exemplos: Forex (EUR/USD, GBP/USD), CFDs (EUR/USD, NDX), ou criptomoedas (BTC/USD, ETH/USD). Defina também se você operará em mercados de alta volatilidade, tendências ou reversões.</p>
-    </section>
-    <section>
-        <h2>Horários de Operação</h2>
-        <p>Defina os horários em que você estará disponível para operar. Exemplo: de 08:00 às 16:00 (horário de Brasília), ou apenas em dias de semana, entre 10:00 e 14:00. Evite operar em horários de alta volatilidade e baixa liquidez.</p>
-    </section>
-    <section>
-        <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça regras claras para entrada e saída de operações. Exemplo: entrar em uma tendência de alta ao romper a média móvel de 50 dias com volume acima da média, e sair com um stop-loss de 2% e um take-profit de 5%. Evite decisões emocionais.</p>
-    </section>
-    <section>
-        <h2>Limite de Perdas Diárias</h2>
-        <p>Defina um limite máximo de perdas diárias que você está disposto a aceitar. Exemplo: 1% do capital total. Evite operar com mais de 2 operações ao mesmo tempo e sempre respeite seu limite de risco.</p>
-    </section>
-    <section class="checklist">
-        <h2>Checklist Antes de Abrir Operação</h2>
-        <ul>
-            <li>Verifique se o mercado está em tendência ou em reversão.</li>
-            <li>Confirme que o volume está acima da média.</li>
-            <li>Verifique o nível de liquidez.</li>
-            <li>Assegure-se de que o stop-loss e take-profit estão alinhados com o plano.</li>
-            <li>Confirme que o risco é dentro do limite diário estabelecido.</li>
-        </ul>
-    </section>
-    <section class="aviso">
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. O trade envolve riscos e você deve fazer sua própria pesquisa e consultar um profissional antes de investir.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Objetivos</h2>
+            <p>Definir claramente os objetivos de cada operação é essencial para manter a disciplina. Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Objetivo</th>
+                    <th>Valor Alvo</th>
+                    <th>Stop Loss</th>
+                </tr>
+                <tr>
+                    <td>Compra de ações</td>
+                    <td>R$ 10,00</td>
+                    <td>R$ 8,50</td>
+                </tr>
+                <tr>
+                    <td>Venda de opções</td>
+                    <td>R$ 2,50</td>
+                    <td>R$ 1,80</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Mercados</h2>
+            <p>Escolha o mercado que será operado com base em conhecimento e análise. Exemplos:</p>
+            <table>
+                <tr>
+                    <th>Mercado</th>
+                    <th>Ativo</th>
+                    <th>Moeda</th>
+                </tr>
+                <tr>
+                    <td>Forex</td>
+                    <td>EUR/USD</td>
+                    <td>USD</td>
+                </tr>
+                <tr>
+                    <td>Acionário</td>
+                    <td>Ações da Petrobras</td>
+                    <td>BRL</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Horários</h2>
+            <p>Defina os horários de abertura e fechamento das operações. Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Operação</th>
+                    <th>Horário de Abertura</th>
+                    <th>Horário de Fechamento</th>
+                </tr>
+                <tr>
+                    <td>Compra de ações</td>
+                    <td>09:00</td>
+                    <td>12:00</td>
+                </tr>
+                <tr>
+                    <td>Venda de opções</td>
+                    <td>14:00</td>
+                    <td>16:00</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Regras de Entrada e Saída</h2>
+            <p>Defina regras claras para entrar e sair de uma operação. Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Regra</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>Entrada</td>
+                    <td>Comprar quando o preço rompe a média móvel de 50 dias.</td>
+                </tr>
+                <tr>
+                    <td>Saída</td>
+                    <td>Vender quando o preço atinge o nível de resistência ou o stop loss.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Limite de Perdas Diárias</h2>
+            <p>Defina o limite máximo de perdas que você está disposto a aceitar por dia. Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Limite</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Perda Diária Máxima</td>
+                    <td>R$ 500,00</td>
+                </tr>
+            </table>
+        </section>
+        <section class="checklist">
+            <h3>Checklist Antes de Abrir Operação</h3>
+            <ul>
+                <li>Verificar se o mercado está em tendência.</li>
+                <li>Confirmar se as condições técnicas estão alinhadas.</li>
+                <li>Verificar se o stop loss está configurado.</li>
+                <li>Confirmar que o capital disponível está dentro dos limites.</li>
+                <li>Revisar o plano de trade antes de qualquer operação.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Template de Registro</h2>
+            <p>Registre cada operação com os seguintes dados:</p>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>2025-04-05</td>
+                    <td>EUR/USD</td>
+                    <td>1,0850</td>
+                    <td>1,0920</td>
+                    <td>+0,70%</td>
+                </tr>
+            </table>
+        </section>
+        <div class="aviso">
+            <p>Este conteúdo é educacional e não constitui recomendação de investimento. As estratégias apresentadas são para fins de estudo e não garantem resultados. Invista com responsabilidade.</p>
+        </div>
+    </div>
 </body>
 </html>
