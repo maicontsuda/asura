@@ -5,50 +5,32 @@
     <title>Perguntas Frequentes - Asura</title>
     <style>
         body {
-            margin: 0;
+            background-color: #0f0f0f;
+            color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #1e1e1e;
-            padding: 20px 0;
+            background-color: #1a1a1a;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        h1 {
+            color: #00e676;
         }
-        main {
+        section {
+            margin: 20px;
             padding: 20px;
+            background-color: #1e1e1e;
+            border-left: 5px solid #00e676;
         }
         h2 {
-            color: #ffffff;
-            margin-top: 30px;
+            color: #00e676;
+            margin-top: 0;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        .pergunta {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .resposta {
-            background-color: #1e1e1e;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #121212;
-            color: #888;
-            font-size: 0.9em;
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -56,57 +38,37 @@
     <header>
         <h1>Perguntas Frequentes - Asura</h1>
     </header>
-    <main>
+    <section>
         <h2>Como pagar com USDC na Base?</h2>
-        <ul>
-            <li class="pergunta">Para pagar com USDC na Base, você deve usar uma carteira compatível com a rede Base e transferir o valor exato para o endereço fornecido.</li>
-            <li class="resposta">A transação será processada automaticamente após a confirmação da rede, e o status do pagamento será atualizado em tempo real.</li>
-        </ul>
-
+        <p>Para pagar com USDC na Base, você deve utilizar um serviço de bridge ou exchange que suporte a transferência de USDC da Ethereum para a rede Base. Após a transferência, o USDC será depositado na carteira do Asura, que será usado para cobrir o valor do serviço. É importante garantir que o USDC esteja em uma carteira compatível com a rede Base para evitar falhas na transação.</p>
+    </section>
+    <section>
         <h2>Como pagar com ETH na Base?</h2>
-        <ul>
-            <li class="pergunta">Ao pagar com ETH na Base, certifique-se de que a carteira está configurada para a rede Base e que o endereço de destino está correto.</li>
-            <li class="resposta">O pagamento é confirmado pela rede Base e o contrato inteligente será acionado para liberar o acesso ao entregável.</li>
-        </ul>
-
-        <h2>Como pagar com ETH mainnet?</h2>
-        <ul>
-            <li class="pergunta">Para pagar com ETH mainnet, o contrato inteligente deve ser configurado para aceitar transações da rede principal.</li>
-            <li class="resposta">A transação é confirmada na rede Ethereum e, após a validação, o sistema processa o pagamento e libera os direitos.</li>
-        </ul>
-
-        <h2>Quais são os prazos para o pagamento?</h2>
-        <ul>
-            <li class="pergunta">Os prazos variam conforme o tipo de pagamento e a rede utilizada, mas geralmente são confirmados em até 15 minutos após a transação.</li>
-            <li class="resposta">Caso haja atraso, entre em contato com o suporte para verificar a situação do pagamento.</li>
-        </ul>
-
+        <p>Para pagar com ETH na Base, você deve realizar a transferência diretamente para a rede Base, utilizando uma carteira compatível. Após a transferência, o ETH será creditado na carteira do Asura, que será usado para cobrir o valor do serviço. Certifique-se de que a transação tenha sido confirmada e que o endereço de destino esteja correto para evitar perdas.</p>
+    </section>
+    <section>
+        <h2>Como pagar com ETH na Mainnet?</h2>
+        <p>Para pagar com ETH na Mainnet, você deve realizar a transferência diretamente para a rede Ethereum, utilizando uma carteira compatível. Após a transferência, o ETH será depositado na carteira do Asura, que será usado para cobrar o valor do serviço. É necessário garantir que a transação esteja confirmada e que o endereço de destino esteja correto.</p>
+    </section>
+    <section>
+        <h2>Qual é o prazo para entrega do serviço?</h2>
+        <p>O prazo para entrega do serviço varia conforme o tipo de projeto e a complexidade do trabalho. Geralmente, os prazos variam entre 5 a 30 dias úteis. Após a confirmação do pagamento, o Asura inicia o processo de desenvolvimento e comunica o prazo estimado ao cliente. Em caso de atrasos, o cliente será informado com antecedência.</p>
+    </section>
+    <section>
         <h2>O que acontece se o pagamento falhar?</h2>
-        <ul>
-            <li class="pergunta">Se o pagamento falhar, o sistema notifica o usuário e o valor é reembolsado automaticamente após verificação da transação.</li>
-            <li class="resposta">Caso haja falha na rede ou em transações, o reembolso é processado em até 24 horas.</li>
-        </ul>
-
+        <p>Em caso de falha no pagamento, o Asura não iniciará o processo de desenvolvimento e não liberará o acesso ao projeto. O cliente será notificado sobre a falha e poderá reenviar o pagamento ou resolver a questão com o suporte técnico. Caso o pagamento não seja feito dentro do prazo estipulado, o contrato será considerado cancelado, e o cliente não terá direito a reembolso.</p>
+    </section>
+    <section>
         <h2>Como recebo o entregável?</h2>
-        <ul>
-            <li class="pergunta">O entregável é liberado automaticamente após o pagamento ser confirmado e o contrato inteligente ser ativado.</li>
-            <li class="resposta">Você receberá uma notificação quando o entregável estiver disponível e poderá acessá-lo diretamente.</li>
-        </ul>
-
-        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
-        <ul>
-            <li class="pergunta">A identidade on-chain ERC-8004 #1149100 é um token que representa sua participação na rede Asura e permite acesso a recursos exclusivos.</li>
-            <li class="resposta">Você pode verificar o status da identidade no blockchain através de um explorador de rede.</li>
-        </ul>
-
-        <h2>Como funciona o reembolso?</h2>
-        <ul>
-            <li class="pergunta">O reembolso é feito automaticamente caso o pagamento falhe ou seja cancelado.</li>
-            <li class="resposta">O valor será devolvido para a carteira de origem em até 48 horas após a notificação do cancelamento.</li>
-        </ul>
-    </main>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
+        <p>Após a conclusão do serviço e a confirmação do pagamento, o entregável será liberado para o cliente. O entregável pode ser um contrato inteligente, um código-fonte ou outro tipo de produto, conforme acordado. O cliente receberá um link de download ou acesso direto ao conteúdo, dependendo do tipo de entrega. É importante garantir que o endereço de destino esteja correto para evitar problemas na entrega.</p>
+    </section>
+    <section>
+        <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
+        <p>Sua identidade on-chain é representada pelo token ERC-8004 com o identificador #1149100. Esse token atua como um documento de identidade digital e é vinculado à sua carteira. Ele é utilizado para verificar sua autenticidade e garantir que você é o titular do contrato. Você pode verificar o status do token em uma blockchain explorer compatível com a rede em que o token foi emitido.</p>
+    </section>
+    <section>
+        <h2>Qual é a política de reembolso?</h2>
+        <p>Em caso de cancelamento do contrato antes da entrega do serviço, o cliente terá direito a reembolso parcial ou total, conforme definido no contrato. O reembolso será processado após a validação do cancelamento e a confirmação da falha no pagamento ou da rescisão do contrato. É importante seguir o protocolo de cancelamento para garantir que o reembolso seja realizado conforme os termos acordados.</p>
+    </section>
 </body>
 </html>
