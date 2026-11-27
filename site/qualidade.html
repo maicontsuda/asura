@@ -11,55 +11,56 @@
             color: #f5f5f5;
             line-height: 1.6;
         }
-
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-
-        h1 {
-            color: #ffffff;
+        header h1 {
             margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
         }
-
-        h2 {
-            color: #e0e0e0;
-            margin-top: 40px;
-        }
-
         section {
-            padding: 20px;
-            background-color: #1a1a1a;
-            border-radius: 8px;
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
-
+        h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
         }
-
         li {
-            margin-bottom: 10px;
-        }
-
-        .critérios {
-            color: #d4af37;
-        }
-
-        .erros {
-            color: #ff4757;
-        }
-
-        .revisão {
-            color: #2196f3;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
             background-color: #1e1e1e;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .criterio {
+            color: #ffffff;
+        }
+        .erro {
+            color: #ff4d4d;
+        }
+        .como-revisar {
+            color: #00ff8a;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px 0;
             margin-top: 40px;
+        }
+        footer p {
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -67,61 +68,39 @@
     <header>
         <h1>Checklist de Qualidade para Serviços do Asura</h1>
     </header>
-
     <section>
         <h2>Landing Page</h2>
-        <p>Para garantir que a landing page atenda aos padrões de qualidade, verifique os seguintes critérios:</p>
         <ul>
-            <li class="critérios">Clareza na mensagem principal: O objetivo do serviço deve ser imediatamente compreensível.</li>
-            <li class="critérios">Foco no público-alvo: A linguagem e o design devem se alinhar com o público que o serviço visa atingir.</li>
-            <li class="critérios">Credibilidade: Inclua dados, depoimentos ou certificações relevantes para reforçar a confiança.</li>
-            <li class="erros">Falta de chamada para ação clara: Sem um botão ou link visível, o visitante não saberá o que fazer.</li>
-            <li class="erros">Design desorganizado: Elementos mal alinhados ou excesso de informações podem desestimular o visitante.</li>
-            <li class="revisão">Verifique se todos os links e imagens estão funcionando corretamente.</li>
+            <li><span class="criterio">Objetivo claro e direcionado ao público-alvo.</span><span class="erro">Texto genérico ou sem foco.</span><span class="como-revisar">Verifique se o CTA é claro e se o conteúdo responde à necessidade do usuário.</span></li>
+            <li><span class="criterio">Imagens relevantes e de alta qualidade.</span><span class="erro">Fotos de baixa resolução ou não relacionadas ao conteúdo.</span><span class="como-revisar">Use ferramentas de validação de imagem e evite uso de imagens genéricas.</span></li>
+            <li><span class="criterio">Formulário de contato ou CTAs bem definidos.</span><span class="erro">Formulário incompleto ou sem instruções.</span><span class="como-revisar">Teste o formulário em diferentes dispositivos e confirme se todos os campos são obrigatórios.</span></li>
         </ul>
-    </section>
 
-    <section>
         <h2>Texto de Apresentação</h2>
-        <p>Um texto de apresentação deve ser conciso, objetivo e envolvente. Aqui estão os critérios de aceite:</p>
         <ul>
-            <li class="critérios">Clareza e objetividade: O texto deve transmitir a essência do serviço sem ambiguidade.</li>
-            <li class="critérios">Atratividade: Use linguagem dinâmica que desperte o interesse do leitor.</li>
-            <li class="critérios">Coerência: A estrutura deve ser lógica, com uma introdução, desenvolvimento e conclusão.</li>
-            <li class="erros">Frase longa e monótona: Evite parágrafos excessivamente longos sem pausas.</li>
-            <li class="erros">Falta de vocabulário variado: O uso repetitivo de palavras pode tornar o texto monótono.</li>
-            <li class="revisão">Releia o texto em voz alta para identificar erros de gramática e fluidez.</li>
+            <li><span class="criterio">Clareza na estrutura e na mensagem principal.</span><span class="erro">Texto confuso ou com excesso de informações.</span><span class="como-revisar">Leia em voz alta e verifique se a mensagem é compreensível.</span></li>
+            <li><span class="criterio">Estilo consistente e linguagem adequada ao público.</span><span class="erro">Mistura de linguagem formal e informal.</span><span class="como-revisar">Revisar o tom e o estilo para garantir coerência.</span></li>
+            <li><span class="criterio">Links e referências atualizadas.</span><span class="erro">Links quebrados ou dados desatualizados.</span><span class="como-revisar">Teste todos os links e valide as datas de publicação.</span></li>
         </ul>
-    </section>
 
-    <section>
         <h2>Revisão de Texto</h2>
-        <p>A revisão de texto é essencial para garantir que o conteúdo esteja impecável. Aqui estão os critérios:</p>
         <ul>
-            <li class="critérios">Correção gramatical: Verifique ortografia, concordância e pontuação.</li>
-            <li class="critérios">Clareza e coesão: O texto deve ter uma estrutura lógica e ser compreensível.</li>
-            <li class="critérios">Consistência de estilo: Use o mesmo tom e vocabulário ao longo do conteúdo.</li>
-            <li class="erros">Falta de revisão de vocabulário: Termos técnicos ou específicos devem ser explicados.</li>
-            <li class="erros">Falta de revisão de formatação: Erros de alinhamento ou espaçamento podem prejudicar a leitura.</li>
-            <li class="revisão">Reveja o texto com um outro profissional para identificar erros subjetivos.</li>
+            <li><span class="criterio">Correções gramaticais e ortográficas.</span><span class="erro">Erros de gramática ou uso incorreto de termos.</span><span class="como-revisar">Use ferramentas de revisão como o Grammarly e leia em voz alta.</span></li>
+            <li><span class="criterio">Clareza e coesão textual.</span><span class="erro">Frases desorganizadas ou sem conexão lógica.</span><span class="como-revisar">Reorganize o conteúdo para garantir fluxo natural.</span></li>
+            <li><span class="criterio">Uso adequado de termos técnicos.</span><span class="erro">Termos que não são compreensíveis para o público-alvo.</span><span class="como-revisar">Verifique se o vocabulário é apropriado e explique termos complexos.</span></li>
         </ul>
-    </section>
 
-    <section>
         <h2>5 Ideias de Conteúdo</h2>
-        <p>Para garantir que as ideias de conteúdo sejam de qualidade, verifique:</p>
         <ul>
-            <li class="critérios">Relevância: As ideias devem ser alinhadas com o público-alvo e o propósito do serviço.</li>
-            <li class="critérios">Originalidade: Evite ideias genéricas e busque propostas inovadoras.</li>
-            <li class="critérios">Viabilidade: As ideias devem ser realistas e possíveis de implementar.</li>
-            <li class="erros">Falta de profundidade: Ideias superficiais podem não atender às expectativas do cliente.</li>
-            <li class="erros">Falta de estrutura: Ideias não organizadas podem dificultar a compreensão.</li>
-            <li class="revisão">Reveja as ideias com o cliente para garantir que atendam às expectativas.</li>
+            <li><span class="criterio">Blog com dicas práticas e relevantes.</span><span class="erro">Conteúdo repetitivo ou sem valor agregado.</span><span class="como-revisar">Verifique se o conteúdo é original e atende às expectativas do leitor.</span></li>
+            <li><span class="criterio">E-books com informações detalhadas.</span><span class="erro">Conteúdo superficial ou incompleto.</span><span class="como-revisar">Revisar a estrutura e garantir que todos os tópicos sejam abordados.</span></li>
+            <li><span class="criterio">Vídeos explicativos com transcrição.</span><span class="erro">Vídeo sem legenda ou com legenda de baixa qualidade.</span><span class="como-revisar">Teste a legibilidade da transcrição e valide a qualidade do vídeo.</span></li>
+            <li><span class="criterio">Infográficos com dados de alta qualidade.</span><span class="erro">Dados imprecisos ou representação visual errada.</span><span class="como-revisar">Verifique a fonte dos dados e a precisão da representação gráfica.</span></li>
+            <li><span class="criterio">Webinars com conteúdo estruturado.</span><span class="erro">Falta de organização ou conteúdo fragmentado.</span><span class="como-revisar">Revisar a agenda e garantir que o conteúdo esteja bem distribuído.</span></li>
         </ul>
     </section>
-
     <footer>
-        <p>&copy; 2025 Asura - Todos os direitos reservados</p>
+        <p>© 2025 Asura - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
