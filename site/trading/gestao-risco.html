@@ -5,45 +5,53 @@
     <title>Gestão de Risco em Operações</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
             font-size: 2em;
         }
         section {
-            padding: 20px;
+            padding: 30px;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: auto;
         }
         h2 {
-            color: #00ffcc;
-            margin-top: 30px;
+            color: #ff9800;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
         }
         p {
+            line-height: 1.6;
             font-size: 1.1em;
         }
         ul {
-            margin-top: 15px;
-            padding-left: 20px;
+            margin-left: 20px;
         }
         .aviso {
-            background-color: #222;
+            background-color: #2e2e2e;
             padding: 15px;
-            border-left: 5px solid #00ffcc;
-            margin-top: 30px;
+            border-left: 5px solid #ff9800;
+            margin: 30px 0;
         }
         .aviso p {
-            font-weight: bold;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -53,26 +61,28 @@
     </header>
     <section>
         <h2>Risco por Operação</h2>
-        <p>Em operações de investimento, é fundamental limitar o risco de cada operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso garante que, mesmo em caso de perda, o impacto sobre o capital seja mínimo e que o investidor possa continuar operando sem comprometer sua posição financeira.</p>
-        
+        <p>Um dos princípios fundamentais da gestão de risco é limitar o risco por operação a um máximo de 1 a 2% do seu capital total. Isso significa que, em cada operação, você deve estar disposto a perder no máximo 1 ou 2% do dinheiro que tem em sua conta. A razão para isso é proteger seu capital contra perdas significativas e manter a capacidade de operar no longo prazo.</p>
+
         <h2>Stop Loss e Take Profit</h2>
-        <p>O stop loss é uma ordem que limita as perdas ao definir um ponto de venda automática em caso de desvalorização. Já o take profit é o alvo de lucro, onde a operação é encerrada para garantir ganhos. Essas ferramentas são essenciais para disciplina e controle emocional.</p>
-        
+        <p>O stop loss é uma ferramenta essencial para limitar perdas em operações que não seguem o plano inicial. Ele deve ser definido com base em níveis de suporte ou resistência, ou com um percentual de perda aceitável. Já o take profit é o ponto em que você decide encerrar a operação ao atingir um ganho almejado, evitando que os lucros sejam comprometidos por flutuações de curto prazo.</p>
+
         <h2>Position Sizing</h2>
-        <p>O position sizing refere-se ao tamanho da posição que o investidor decide abrir. Ele é calculado com base no risco tolerável e no potencial de recompensa. Um position sizing adequado evita que o investidor arrisque mais do que pode perder.</p>
-        
+        <p>O position sizing refere-se ao tamanho da posição que você entra em cada operação. Ele deve ser calculado com base no risco por operação e no stop loss definido. Por exemplo, se seu capital é de R$100.000 e seu risco por operação é 1%, com um stop loss de 50 pontos, você deve posicionar um tamanho que limite essa perda a R$1.000.</p>
+
         <h2>Risco/Retorno</h2>
-        <p>A relação risco/retorno é um indicador importante para avaliar a viabilidade de uma operação. A regra geral é que o risco de uma operação não deve ultrapassar o potencial de ganho. Por exemplo, se um trade tem um risco de 1%, o lucro esperado deve ser pelo menos 2%.</p>
-        
+        <p>Relação risco/retorno é uma métrica que compara o potencial de ganho com o risco de perda. Um bom risco/retorno é de 1:2 ou maior, ou seja, para cada unidade de risco, você espera ganhar pelo menos duas unidades. Isso ajuda a identificar operações que são mais favoráveis do ponto de vista probabilístico.</p>
+
         <h2>Drawdown</h2>
-        <p>O drawdown é a perda acumulada de capital em relação ao pico máximo atingido. Ele mede a volatilidade e a exposição a riscos. Um drawdown elevado pode indicar que a estratégia não é suficientemente robusta.</p>
-        
-        <h2>Por que a Maioria Perde Dinheiro</h2>
-        <p>Muitos investidores perdem dinheiro por fatores como falta de disciplina, operações em excesso, falta de gestão de risco e emoção. Além disso, muitos não possuem planos de negociação claros ou não seguem regras estabelecidas. A educação e a prática são fundamentais para evitar esses erros.</p>
-        
-        <div class="aviso">
-            <p><strong>Aviso:</strong> O conteúdo apresentado é educacional e não constitui recomendação de investimento. Cada decisão de investimento deve ser feita com base em sua própria análise e consultoria profissional.</p>
-        </div>
+        <p>O drawdown é a perda máxima acumulada de um portfólio em um determinado período. Ele é uma medida da volatilidade e da capacidade de recuperação do capital. Um drawdown alto pode indicar que uma estratégia não está bem estruturada ou que o gestor não está aplicando corretamente a gestão de risco.</p>
+
+        <h2>Por Que a Maioria Perde Dinheiro</h2>
+        <p>Muitos traders perdem dinheiro por não seguir uma estratégia consistente, por não respeitar os limites de risco, ou por emocionalmente agir contra o plano. A falta de disciplina, o overtrading e a falta de educação são fatores comuns que levam ao fracasso. A gestão de risco é, portanto, a base para a sustentabilidade de qualquer operação.</p>
     </section>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não é uma recomendação de investimento. As estratégias e conceitos apresentados não garantem resultados e devem ser aplicados com cuidado e responsabilidade.</p>
+    </div>
+    <footer>
+        &copy; 2025 - Gestão de Risco em Operações
+    </footer>
 </body>
 </html>
