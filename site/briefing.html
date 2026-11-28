@@ -5,94 +5,135 @@
     <title>Como Escrever um Briefing Eficaz para Pedir Conteúdo</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #ffffff;
-        }
-        p {
-            line-height: 1.6;
-            color: #e0e0e0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .checklist {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #1e1e1e;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2a2a2a;
             padding: 20px;
-            border-left: 5px solid #888;
+            text-align: center;
         }
-        .checklist ul {
-            list-style-type: none;
-            padding-left: 0;
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
         }
-        .checklist li {
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #2a2a2a;
+            border-left: 4px solid #00bfff;
+            border-right: 4px solid #00bfff;
+        }
+
+        h2 {
+            color: #00bfff;
             margin-bottom: 10px;
         }
-        .exemplo {
-            background-color: #1e1e1e;
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        code {
+            background-color: #111;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .checklist {
+            background-color: #111;
             padding: 15px;
-            margin: 20px 0;
-            border-left: 5px solid #00bfff;
+            border: 2px solid #00bfff;
+            margin-top: 20px;
         }
-        .exemplo-bom {
-            border-left-color: #00ff88;
+
+        .checklist h3 {
+            color: #00bfff;
+            margin-top: 0;
         }
-        .exemplo-mau {
-            border-left-color: #ff6666;
+
+        .checklist ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            margin: 8px 0;
+        }
+
+        .checklist li::before {
+            content: "✅ ";
+            color: #00bfff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Como Escrever um Briefing Eficaz para Pedir Conteúdo</h1>
-        <p>Um briefing bem estruturado é essencial para garantir que o conteúdo que você pede atenda às suas expectativas. Ele serve como um guia claro para o criador, ajudando a alinhar a mensagem, o tom e o público-alvo. Abaixo, você encontrará os principais elementos que devem ser incluídos, exemplos práticos e um checklist para validar a qualidade do briefing.</p>
+    </header>
 
-        <div class="section">
-            <h2>O que Incluir no Briefing</h2>
-            <p>Para um briefing eficaz, inclua os seguintes pontos:</p>
+    <section>
+        <h2>O que Incluir no Briefing?</h2>
+        <p>Um briefing bem escrito é fundamental para garantir que o conteúdo produzido atenda aos objetivos da sua campanha. Ele deve ser claro, objetivo e abordar os seguintes pontos:</p>
+        <ul>
+            <li><strong>Público-alvo:</strong> Quem é o seu público? Descreva idade, localização, interesses e comportamentos.</li>
+            <li><strong>Tom e estilo:</strong> O conteúdo deve ser formal, casual, técnico, criativo ou emocional? Use exemplos para ilustrar.</li>
+            <li><strong>Exemplos de conteúdo:</strong> Forneça links, textos ou frases que representem o estilo desejado.</li>
+            <li><strong>Restrições:</strong> Indique limitações como tamanho, prazo, palavras-chave ou formatos aceitáveis.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Exemplos de Briefing: Bom vs. Ruim</h2>
+        <h3>Exemplo Bom:</h3>
+        <p><code>Quem: Mulheres de 25 a 35 anos que buscam produtos naturais.</code><br>
+        <code>Tom: Amigável e informativo.</code><br>
+        <code>Exemplo: "A pele se renova de dentro para fora com ingredientes naturais."</code><br>
+        <code>Restrições: Texto máximo de 150 palavras, sem marcas comerciais.</code></p>
+
+        <h3>Exemplo Ruim:</h3>
+        <p><code>Quem: Pessoas interessadas em saúde.</code><br>
+        <code>Tom: Não especificado.</code><br>
+        <code>Exemplo: "Vamos falar sobre saúde."</code><br>
+        <code>Restrições: Nenhuma.</code></p>
+    </section>
+
+    <section>
+        <h2>Checklist Final para um Briefing Eficaz</h2>
+        <div class="checklist">
+            <h3>Confira antes de enviar:</h3>
             <ul>
-                <li><strong>Público-alvo:</strong> Quem é o leitor? Idade, localização, interesses e conhecimento prévio sobre o tema.</li>
-                <li><strong>Tom da mensagem:</strong> Formal, descontraído, técnico, inspiracional, entre outros.</li>
-                <li><strong>Objetivo do conteúdo:</strong> Informar, persuadir, divertir, educar, etc.</li>
-                <li><strong>Exemplos de estilo:</strong> Frases ou trechos que ilustrem o tom e o estilo desejado.</li>
-                <li><strong>Restrições e limites:</strong> Palavras-chave a evitar, formatos específicos, prazos e recursos disponíveis.</li>
+                <li>Definiu claramente o público-alvo?</li>
+                <li>Definiu o tom e o estilo do conteúdo?</li>
+                <li>Forneceu exemplos de referência?</li>
+                <li>Definiu restrições e limites?</li>
+                <li>Escreveu de forma objetiva e direta?</li>
+                <li>Verificou a coerência e a clareza do briefing?</li>
             </ul>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Exemplos de Briefing</h2>
-            <div class="exemplo exemplo-bom">
-                <strong>Exemplo Bom:</strong><br>
-                <em>"Escreva um artigo sobre sustentabilidade para um público de 25 a 40 anos. O tom deve ser informativo e motivacional. Inclua exemplos práticos de como reduzir o desperdício de água. Evite termos técnicos e mantenha o texto leve e envolvente."</em>
-            </div>
-            <div class="exemplo exemplo-mau">
-                <strong>Exemplo Ruim:</strong><br>
-                <em>"Preciso de um artigo sobre sustentabilidade. Faça algo interessante."</em>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Checklist Final</h2>
-            <div class="checklist">
-                <p><strong>✅ Definiu o público-alvo com clareza.</strong></p>
-                <p><strong>✅ Especificou o tom e o estilo desejado.</strong></p>
-                <p><strong>✅ Definiu o objetivo do conteúdo.</strong></p>
-                <p><strong>✅ Forneceu exemplos de estilo ou tom.</strong></p>
-                <p><strong>✅ Listou restrições, limites e palavras a evitar.</strong></p>
-                <p><strong>✅ Definiu prazos e formatos exigidos.</strong></p>
-            </div>
-        </div>
-
-        <p>Com um briefing bem estruturado, você garantirá que o conteúdo receba a atenção necessária e atenda aos objetivos da sua campanha ou projeto.</p>
-    </div>
+    <footer>
+        <p>© 2025 - Guia Prático para Briefing de Conteúdo</p>
+    </footer>
 </body>
 </html>
