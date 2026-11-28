@@ -5,61 +5,69 @@
     <title>Plano de Trade - Modelo de Estratégia</title>
     <style>
         body {
-            background-color: #121212;
+            background-color: #1e1e1e;
             color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #2a2a2a;
             padding: 20px;
             text-align: center;
         }
         h1 {
-            color: #ffffff;
+            margin: 0;
+            font-size: 24px;
         }
-        .section {
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 20px 0;
-            background-color: #1e1e1e;
-            border-left: 4px solid #ff6f61;
+            background-color: #2e2e2e;
+            border-radius: 8px;
         }
-        .section h2 {
-            color: #ffffff;
-            margin-top: 0;
+        h2 {
+            color: #00bcd4;
+            margin-top: 30px;
         }
-        .section p {
+        p {
             line-height: 1.6;
         }
-        .checklist ul {
-            list-style-type: none;
-            padding: 0;
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
         }
-        .checklist li {
-            padding: 8px 0;
-            background-color: #2a2a2a;
-            border-left: 4px solid #ff6f61;
-            margin-bottom: 8px;
+        .checklist {
+            margin-top: 20px;
         }
-        .template {
-            background-color: #2a2a2a;
+        .checklist input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .registro {
+            margin-top: 30px;
+            background-color: #3e3e3e;
             padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
+            border-radius: 6px;
         }
-        .template h3 {
-            color: #ffffff;
+        .registro table {
+            width: 100%;
+            border-collapse: collapse;
         }
-        .template p {
-            margin: 5px 0;
-        }
-        footer {
+        .registro th, .registro td {
+            border: 1px solid #444;
+            padding: 8px;
             text-align: center;
+        }
+        .registro th {
+            background-color: #444;
+        }
+        .aviso {
+            margin-top: 40px;
             padding: 20px;
-            background-color: #1e1e1e;
-            color: #aaaaaa;
-            font-size: 0.9em;
+            background-color: #2e2e2e;
+            border-left: 5px solid #00bcd4;
+            font-style: italic;
         }
     </style>
 </head>
@@ -67,52 +75,59 @@
     <header>
         <h1>Plano de Trade - Modelo de Estratégia</h1>
     </header>
-    <div class="section">
+    <div class="container">
         <h2>Objetivos</h2>
-        <p>Definir metas claras e mensuráveis é fundamental para o sucesso no mercado. Seu objetivo principal é acumular lucros de forma consistente e controlar riscos. Exemplo: "Alcançar um retorno de 10% mensal com risco máximo de 2% por operação."</p>
-    </div>
-    <div class="section">
+        <p>Objetivo principal do plano de trade é estabelecer um método estruturado e consistente para a realização de operações no mercado financeiro, visando a preservação do capital e o crescimento contínuo do patrimônio. O plano deve ser baseado em regras claras, evitando emoções e impulso.</p>
+
         <h2>Mercados</h2>
-        <p>Escolha o mercado em que você deseja operar. Exemplo: "Forex - EUR/USD", "Ações - BOVA11", "Crypto - BTC/USDT". Defina também a frequência: "Operações de curto prazo (intra-day)" ou "longo prazo (swing trading)".</p>
-    </div>
-    <div class="section">
-        < <h2>Horários de Operação</h2>
-        <p>Defina os horários em que você será ativo no mercado. Exemplo: "Segunda à sexta-feira, das 08:00 às 15:00 (horário de Brasília)". Evite operar em horários de alta volatilidade sem planejamento.</p>
-    </div>
-    <div class="section">
+        <p>Operações serão realizadas nos mercados de ações, forex e criptomoedas. O foco será em ativos de alta liquidez e volatilidade moderada, como EUR/USD, GBP/USD, e ações de grandes empresas do índice S&P 500.</p>
+
+        <h2>Horários</h2>
+        <p>Operações serão realizadas entre 08:00 e 16:00 (horário de Brasília), em dias úteis. O horário de fechamento das operações será às 15:30, com análise de fechamento das tendências do dia.</p>
+
         <h2>Regras de Entrada e Saída</h2>
-        <p>Estabeleça condições claras para entrar e sair das operações. Exemplo: "Entrar quando a média móvel de 50 dias cruza a de 200 dias para cima", "Sair quando atingir o objetivo ou quando o stop-loss for acionado".</p>
-    </div>
-    <div class="section">
+        <ul>
+            <li>Entrada: apenas após sinalização de tendência clara (mais de 3 velas de alta ou baixa).</li>
+            <li>Saída: uso de stop loss e take profit predefinidos, com regra de 1:2 (stop loss menor que take profit).</li>
+            <li>Reforço: entrada de segunda posição apenas se a tendência for confirmada por indicadores técnicos.</li>
+        </ul>
+
         <h2>Limite de Perdas Diárias</h2>
-        <p>Defina um limite máximo de perdas que você está disposto a aceitar em um dia. Exemplo: "Não investir mais de 2% do capital total em uma única operação".</p>
-    </div>
-    <div class="section">
+        <p>Limite máximo de perdas diária é de 2% do capital investido. Caso o limite seja atingido, todas as operações do dia são encerradas e uma análise de causa é realizada.</p>
+
         <h2>Checklist Antes de Abrir Operação</h2>
         <div class="checklist">
-            <li>Verifique se o plano está atualizado.</li>
-            <li>Confirme os horários de operação.</li>
-            <li>Analise o gráfico e as condições técnicas.</li>
-            <li>Verifique se há fundamentos relevantes.</li>
-            <li>Confirme o stop-loss e o take-profit.</li>
-            <li>Assegure-se de estar em posição mental para lidar com variações.</li>
+            <p><input type="checkbox"> Verificar condições de mercado</p>
+            <p><input type="checkbox"> Confirmar indicadores técnicos</p>
+            <p><input type="checkbox"> Verificar posição de stop loss</p>
+            <p><input type="checkbox"> Revisar análise de risco/benefício</p>
+            <p><input type="checkbox"> Confirmar que não há emoção envolvida</p>
         </div>
-    </div>
-    <div class="section">
+
         <h2>Template de Registro</h2>
-        <div class="template">
-            <h3>Operação N° 001</h3>
-            <p><strong>Data:</strong> 01/05/2025</p>
-            <p><strong>Ativo:</strong> EUR/USD</p>
-            <p><strong>Entrada:</strong> 1,0850</p>
-            <p><strong>Stop-Loss:</strong> 1,0800</p>
-            <p><strong>Take-Profit:</strong> 1,0900</p>
-            <p><strong>Resultado:</strong> +0,0050</p>
-            <p><strong>Observações:</strong> Atendeu a todas as condições técnicas.</p>
+        <div class="registro">
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Ativo</th>
+                    <th>Entrada</th>
+                    <th>Stop Loss</th>
+                    <th>Take Profit</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>2025-04-05</td>
+                    <td>EUR/USD</td>
+                    <td>1.0850</td>
+                    <td>1.0820</td>
+                    <td>1.0870</td>
+                    <td>+100 pips</td>
+                </tr>
+            </table>
         </div>
     </div>
-    <footer>
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem riscos e podem resultar em perdas.</p>
-    </footer>
+    <div class="aviso">
+        <p>Este conteúdo é educacional e não constitui recomendação de investimento. As operações no mercado financeiro envolvem risco e podem resultar em perdas.</p>
+    </div>
 </body>
 </html>
