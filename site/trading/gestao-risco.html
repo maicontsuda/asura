@@ -16,37 +16,44 @@
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+        h1 {
             margin: 0;
             font-size: 2em;
         }
-        main {
+        section {
             padding: 30px;
             max-width: 1000px;
             margin: auto;
         }
-        section {
-            margin-bottom: 40px;
-        }
         h2 {
-            color: #ff9800;
-            margin-top: 30px;
+            border-bottom: 2px solid #6e6e6e;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 1em;
         }
-        a {
-            color: #ff9800;
-            text-decoration: none;
+        ul {
+            margin: 15px 0;
         }
-        a:hover {
-            text-decoration: underline;
+        li {
+            margin-bottom: 10px;
+        }
+        .aviso {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-left: 5px solid #ff4d4d;
+            margin-top: 40px;
+        }
+        .aviso p {
+            font-weight: bold;
+            margin: 0;
         }
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
-            color: #888;
+            background-color: #1e1e1e;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -54,34 +61,30 @@
     <header>
         <h1>Gestão de Risco em Operações</h1>
     </header>
-    <main>
-        <section>
-            <h2>Risco por Operação</h2>
-            <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do capital total, geralmente entre 1% e 2%. Isso garante que, mesmo em perdas consecutivas, o capital não seja comprometido de forma irreversível. Cada operação deve ser planejada com um limite de risco bem definido, evitando que o investidor assuma riscos excessivos.</p>
-        </section>
-        <section>
-            <h2>Stop Loss e Take Profit</h2>
-            <p>O stop loss é um limite de venda automática que protege o investidor contra perdas excessivas, enquanto o take profit é o ponto de venda para maximizar lucros. Esses limites devem ser definidos com base na análise técnica e no risco aceitável, ajudando a manter disciplina nas operações.</p>
-        </section>
-        <section>
-            <h2>Position Sizing</h2>
-            <p>O position sizing refere-se ao tamanho da posição que o investidor decide abrir em cada operação. Ele deve ser calculado com base no risco por operação e no capital disponível, assegurando que cada operação não comprometa o capital total.</p>
-        </section>
-        <section>
-            <h2>Risco/Retorno</h2>
-            <p>O risco/retorno é uma medida que compara o potencial de lucro com o risco assumido. Operações com um risco/retorno de 1:2 ou maior são consideradas mais equilibradas, pois oferecem maior probabilidade de sucesso em comparação ao risco envolvido.</p>
-        </section>
-        <section>
-            <h2>Drawdown</h2>
-            <p>O drawdown é a perda acumulada em relação ao valor máximo atingido. É importante monitorar o drawdown, pois ele indica a volatilidade e o risco de capital em operações de longo prazo.</p>
-        </section>
-        <section>
-            <h2>Por Que a Maioria Perde Dinheiro</h2>
-            <p>Muitos investidores perdem dinheiro por falta de disciplina, gestão de risco inadequada e emoção. A maioria não segue estratégias consistentes, não respeita limites de risco e reage a emoções como medo e ganância, o que leva a decisões irracionais.</p>
-        </section>
-    </main>
+    <section>
+        <h2>Risco por Operação</h2>
+        <p>Em operações financeiras, é fundamental limitar o risco por operação a um pequeno percentual do capital total. Geralmente, o recomendado é manter o risco por operação entre 1% e 2% do capital disponível. Isso garante que mesmo em operações que não saiam conforme o planejado, o impacto sobre o capital não seja significativo.</p>
+        
+        <h2>Stop Loss e Take Profit</h2>
+        <p>O stop loss é uma ordem que limita as perdas em uma operação, enquanto o take profit define o ponto de saída para lucro. Esses limites são essenciais para manter a disciplina e evitar emoções no mercado. A definição desses níveis deve ser baseada em análise técnica e psicológica.</p>
+        
+        <h2>Position Sizing</h2>
+        <p>O position sizing refere-se ao tamanho da posição que será aberta em uma operação. Ele está diretamente ligado ao risco por operação e deve ser calculado com base no capital disponível e no risco aceitável. Um position sizing adequado ajuda a proteger o capital e aumentar a probabilidade de sucesso.</p>
+        
+        <h2>Risco/Retorno</h2>
+        <p>Um bom plano de operações deve equilibrar o risco e o potencial de retorno. Geralmente, o retorno esperado deve ser significativamente maior que o risco assumido. Isso é conhecido como risco/retorno e é um fator crucial para longo prazo.</p>
+        
+        <h2>Drawdown</h2>
+        <p>O drawdown é a perda máxima acumulada de um capital durante um período. Ele é uma métrica importante para medir a volatilidade e a consistência de um sistema de trading. Um drawdown excessivo pode indicar que o sistema não é robusto o suficiente.</p>
+        
+        <h2>Por Que a Maioria Perde Dinheiro</h2>
+        <p>Muitos traders perdem dinheiro por falta de disciplina, gestão de risco inadequada e emocionalidade. A maioria entra no mercado sem um plano claro, sem definir limites de risco e sem seguir estratégias consistentes. Além disso, a falta de educação e experiência contribui significativamente para a perda.</p>
+    </section>
+    <div class="aviso">
+        <p><strong>Aviso:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. As operações financeiras envolvem riscos e você deve buscar orientação profissional antes de investir.</p>
+    </div>
     <footer>
-        <p>Este conteúdo é educacional e não constitui recomendação de investimento. Consulte um profissional antes de tomar decisões financeiras.</p>
+        <p>© 2025 - Gestão de Risco em Operações</p>
     </footer>
 </body>
 </html>
