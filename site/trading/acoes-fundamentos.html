@@ -8,43 +8,55 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
+
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+
+        h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            color: #ffffff;
         }
-        main {
+
+        .aviso {
+            background-color: #2c2c2c;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #ff4081;
+            font-weight: bold;
+        }
+
+        section {
             padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        .container {
             max-width: 1000px;
             margin: auto;
         }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        .aviso {
-            background-color: #2a2a2a;
-            padding: 15px;
-            border-left: 5px solid #4a90e2;
-            margin-top: 30px;
-            font-style: italic;
-        }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #aaa;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -52,16 +64,14 @@
     <header>
         <h1>Mercado de Ações: O que é uma Ação?</h1>
     </header>
-    <main>
+    <div class="container">
         <section>
             <h2>O que é uma Ação?</h2>
-            Uma ação é um título que representa a propriedade de uma fração do capital de uma empresa. Ao comprar uma ação, você torna-se acionista e pode participar dos lucros da empresa por meio de dividendos. As ações são negociadas em mercados financeiros, como a B3 no Brasil, e seu preço varia conforme a percepção do mercado sobre o desempenho da empresa e de fatores macroeconômicos.
-
-            <p>As ações podem ser classificadas em diferentes categorias, como ações ordinárias e preferenciais, e oferecem ao investidor diferentes níveis de risco e retorno.</p>
+            <p>Uma ação é um título representativo de propriedade parcial de uma empresa. Ao comprar uma ação, você se torna acionista e tem direito a uma parte dos lucros da empresa, chamada de <strong>dividendo</strong>, e também pode participar de decisões importantes, como a eleição de diretoria.</p>
         </section>
         <section>
             <h2>Tipos de Ordem</h2>
-            <p>As ordens são instruções para comprar ou vender ações. As principais são:</p>
+            <p>No mercado de ações, existem diferentes tipos de ordens para comprar ou vender ações:</p>
             <ul>
                 <li><strong>Ordem de mercado:</strong> Executada imediatamente ao preço atual.</li>
                 <li><strong>Ordem limitada:</strong> Executada apenas se o preço atingir um valor específico.</li>
@@ -70,27 +80,30 @@
         </section>
         <section>
             <h2>Dividendos</h2>
-            <p>Dividendos são parte dos lucros da empresa que são distribuídos para os acionistas. Eles podem ser pagos em dinheiro ou em ações, e são um dos principais motivos para investir em ações. A frequência e o valor dos dividendos dependem da política da empresa e de seu desempenho financeiro.</p>
+            <p>Dividendos são pagamentos feitos pelos lucros da empresa aos acionistas. Eles podem ser distribuídos em dinheiro ou em ações, e são uma forma de retorno sobre o investimento.</p>
         </section>
         <section>
             <h2>Índices</h2>
-            <p>Índices como o Ibovespa, S&P 500 e Nasdaq são indicadores que refletem o desempenho de um conjunto de ações. Eles ajudam os investidores a entender a tendência geral do mercado e a comparar o desempenho de diferentes ativos.</p>
+            <p>Índices, como o Ibovespa ou o S&P 500, são conjuntos de ações que refletem o desempenho geral de um mercado ou setor. Eles ajudam a medir o desempenho do mercado como um todo.</p>
         </section>
         <section>
             <h2>Liquidez</h2>
-            <p>Liquidez refere-se à facilidade com que uma ação pode ser comprada ou vendida sem afetar significativamente seu preço. Ações de grandes empresas geralmente têm maior liquidez, o que torna a negociação mais eficiente.</p>
+            <p>Liquidez refere-se à facilidade com que uma ação pode ser comprada ou vendida no mercado. Ações de alta liquidez têm preços mais estáveis e permitem transações rápidas.</p>
         </section>
         <section>
             <h2>Horário de Negociação</h2>
-            <p>No Brasil, o mercado de ações da B3 funciona de segunda a sexta-feira, das 10h às 17h. Durante esse horário, as negociações ocorrem continuamente, e as ações são cotadas em tempo real.</p>
+            <p>No Brasil, o mercado de ações está aberto de segunda a sexta-feira, das 10h às 17h. Durante esse horário, os preços das ações são negociados.</p>
         </section>
         <section>
             <h2>Diferenças entre Investir e Especular</h2>
-            <p><strong>Investir</strong> envolve a compra de ações com o objetivo de obter retorno a longo prazo, baseado em análise fundamentalista e estratégias de diversificação. <strong>Especular</strong> é a prática de comprar ou vender ações com base em previsões de curto prazo e volatilidade, muitas vezes com risco elevado.</p>
+            <p><strong>Investir</strong> envolve a compra de ações com a intenção de obter retorno a longo prazo, baseado em análise fundamentalista. <strong>Especular</strong> é uma prática de curto prazo, baseada em previsões de curto horizonte e risco elevado.</p>
         </section>
         <div class="aviso">
-            Este conteúdo é educacional e não constitui recomendação de investimento. Consulte um profissional antes de tomar decisões financeiras.
+            <strong>AVISO:</strong> Este conteúdo é educacional e não constitui recomendação de investimento. Antes de investir, consulte um profissional qualificado.
         </div>
-    </main>
+    </div>
+    <footer>
+        &copy; 2025 - Guia de Educação Financeira
+    </footer>
 </body>
 </html>
