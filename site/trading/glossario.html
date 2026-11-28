@@ -6,152 +6,77 @@
     <style>
         body {
             background-color: #121212;
-            color: #FFFFFF;
+            color: #ffffff;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         h1 {
+            color: #3498db;
             text-align: center;
-            margin-bottom: 20px;
         }
-        .term {
-            margin-bottom: 20px;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .term h2 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #FFB800;
+        li {
+            margin: 10px 0;
+            background: #2c3e50;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .term p {
-            margin: 5px 0;
-        }
-        .term .example {
-            font-style: italic;
-            color: #8BC34A;
+        code {
+            font-size: 1.2em;
+            background: #27ae60;
+            padding: 2px 5px;
+            border-radius: 3px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Glossário de Termos de Mercado</h1>
-        <div class="term">
-            <h2>Pip</h2>
-            <p>Pequena unidade de movimento de um determinado ativo. Exemplo: Um pip em um par de câmbio USD/EUR pode ser 0.0001.</p>
-        </div>
-        <div class="term">
-            <h2>Spread</h2>
-            <p>Diferença entre o preço de compra e venda de um ativo. Exemplo: Se um ativo está sendo negociado a 1.2000 e 1.2005, o spread é de 5 pips.</p>
-        </div>
-        <div class="term">
-            <h2>Lote</h2>
-            <p>Quantidade padrão de um ativo negociado em uma transação. Exemplo: Um lote padrão de forex é 100.000 unidades da moeda.</p>
-        </div>
-        <div class="term">
-            <h2>Alavancagem</h2>
-            <p>Fator que amplifica o valor do investimento, permitindo negociação com mais volume do que o depositado. Exemplo: Alavancagem 1:10 permite negociar 10 vezes o valor do depósito.</p>
-        </div>
-        <div class="term">
-            <h2>Margem</h2>
-            <p>Depósito necessário para abrir uma posição. Exemplo: Para abrir uma posição de 1 lote, pode ser necessário 1.000 USD com alavancagem 1:100.</p>
-        </div>
-        <div class="term">
-            <h2>Stop</h2>
-            <p>Pedido de ordem que fecha uma posição quando o preço atinge um determinado nível. Exemplo: Um stop loss de 1.2000 para um par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Take Profit</h2>
-            <p>Pedido de ordem que fecha uma posição quando o preço atinge um determinado nível de lucro. Exemplo: Um take profit de 1.2050 para um par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Long</h2>
-            <p>Posição comprada, esperando que o preço suba. Exemplo: Comprar 1 lote de EUR/USD.</p>
-        </div>
-        <div class="term">
-            <h2>Short</h2>
-            <p>Posição vendida, esperando que o preço desça. Exemplo: Vender 1 lote de EUR/USD.</p>
-        </div>
-        <div class="term">
-            <h2>Gap</h2>
-            <p>Diferença entre o preço de fechamento e abertura de um ativo após um feriado ou fim de semana. Exemplo: Um gap positivo ocorre quando o preço abre acima do fechamento anterior.</p>
-        </div>
-        <div class="term">
-            <h2>Volume</h2>
-            <p>Quantidade total de um ativo negociado em uma transação. Exemplo: Um volume de 100.000 unidades de uma moeda.</p>
-        </div>
-        <div class="term">
-            <h2>RSI</h2>
-            <p>Índice de Força Relativa que mede a velocidade e a magnitude dos movimentos de preços. Exemplo: Um RSI de 70 indica forte overbought.</p>
-        </div>
-        <div class="term">
-            <h2>MACD</h2>
-            <p>Moving Average Convergence Divergence que mede a diferença entre duas médias móveis. Exemplo: Um MACD cruzando acima do zero indica possível tendência de alta.</p>
-        </div>
-        <div class="term">
-            <h2>Suporte</h2>
-            <p>Nível onde a demanda é forte, limitando o movimento de baixa. Exemplo: Um suporte em 1.2000 para o par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Resistência</h2>
-            <p>Nível onde a oferta é forte, limitando o movimento de alta. Exemplo: Uma resistência em 1.2050 para o par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Drawdown</h2>
-            <p>Perda máxima de capital desde o máximo histórico de uma posição. Exemplo: Um drawdown de 15% desde o pico de uma conta de trading.</p>
-        </div>
-        <div class="term">
-            <h2>Equity</h2>
-            <p>Capital total disponível para negociação, incluindo depósitos e lucros líquidos. Exemplo: Uma conta de trading com equity de 10.000 USD.</p>
-        </div>
-        <div class="term">
-            <h2>Margem Livre</h2>
-            <p>Margem disponível para novas negociações, considerando posições existentes. Exemplo: Uma margem livre de 5.000 USD para novas posições.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem Limitada</h2>
-            <p>Pedido de ordem que executa a negociação apenas se o preço atingir um determinado nível. Exemplo: Uma ordem de compra limitada a 1.2000 para o par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem Stop-Limit</h2>
-            <p>Pedido de ordem que se torna uma ordem limitada quando atinge o preço de um stop. Exemplo: Um stop loss de 1.2000 que se torna uma ordem de venda limitada a 1.1995.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem Stop-Limit-Stop</h2>
-            <p>Pedido de ordem que se torna uma ordem limitada quando atinge o preço de um stop, mas também inclui um stop loss. Exemplo: Um stop loss de 1.2000, que se torna uma ordem de venda limitada a 1.1995, com um stop loss adicional em 1.1990.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem Trailing Stop</h2>
-            <p>Pedido de ordem que se move conforme o preço do ativo, garantindo lucros. Exemplo: Um trailing stop de 10 pips para um par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Ordem</h2>
-            <p>Pedido de ordem que executa uma negociação se atingir um determinado preço de um outro pedido. Exemplo: Uma ordem de compra de 1 lote de EUR/USD se um stop loss de 1.2000 for atingido.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Previsão</h2>
-            <p>Pedido de ordem que executa uma negociação se atingir um determinado preço previsto por um indicador técnico. Exemplo: Uma ordem de venda de 1 lote de EUR/USD se um MACD cruzar acima do zero.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Parada</h2>
-            <p>Pedido de ordem que executa uma negociação se atingir um determinado preço de parada. Exemplo: Um stop loss de 1.2000 para um par de câmbio USD/EUR.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Parada-Limitada</h2>
-            <p>Pedido de ordem que se torna uma ordem limitada quando atinge o preço de parada. Exemplo: Um stop loss de 1.2000 que se torna uma ordem de venda limitada a 1.1995.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Parada-Stop-Limit</h2>
-            <p>Pedido de ordem que se torna uma ordem limitada quando atinge o preço de parada, mas também inclui um stop loss. Exemplo: Um stop loss de 1.2000, que se torna uma ordem de venda limitada a 1.1995, com um stop loss adicional em 1.1990.</p>
-        </div>
-        <div class="term">
-            <h2>Ordem de Parada-Stop-Limit-Stop</h2>
-            <p>Pedido de ordem que se torna uma ordem limitada quando atinge o preço de parada, mas também inclui um stop loss. Exemplo: Um stop loss de 1.2000, que se torna uma ordem de venda limitada a 1.1995, com um stop loss adicional em 1.1990.</p>
-        </div>
-    </div>
+    <h1>Glossário de Termos de Mercado</h1>
+    <ul>
+        <li><code>pip</code>: Um ponto percentual na variação do preço de uma moeda, geralmente 0.0001 no forex.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>lote</code>: A quantidade padrão de uma moeda ou contrato de futuros negociado em uma transação.</li>
+        <li><code>alavancagem</code>: O uso de empréstimos para aumentar a posição em um investimento.</li>
+        <li><code> margem</code>: O valor inicial necessário para abrir uma posição.</li>
+        <li><code>stop</code>: Um nível de preço em que uma ordem de venda ou compra é automaticamente executada.</li>
+        <li><code>take profit</code>: Um nível de preço em que uma ordem de venda ou compra é automaticamente fechada para lucro.</li>
+        <li><code>long</code>: A posição de compra em uma moeda ou ativo.</li>
+        <li><code>short</code>: A posição de venda em uma moeda ou ativo.</li>
+        <li><code>gap</code>: A diferença entre o preço de fechamento e abertura de um ativo.</li>
+        <li><code>volume</code>: A quantidade total de um ativo negociado em um período de tempo.</li>
+        <li><code>RSI</code>: Índice de Força Relativa, usado para identificar o overbought ou oversold.</li>
+        <li><code>MACD</code>: Média Móvel Exponencial, usado para identificar tendências e inversões de mercado.</li>
+        <li><code>suporte</code>: O nível de preço em que a demanda é forte, impedindo o preço de cair mais.</li>
+        <li><code>resistência</code>: O nível de preço em que a oferta é forte, impedindo o preço de subir mais.</li>
+        <li><code>drawdown</code>: A diminuição percentual do valor de uma conta de investimento em comparação ao pico histórico.</li>
+        <li><code>equity</code>: O valor total de uma conta de negociação, incluindo posições abertas, margem e lucros ou perdas.</li>
+        <li><code>margem livre</code>: A margem disponível para novas posições.</li>
+        <li><code>ordem limitada</code>: Uma ordem que será executada apenas quando o preço atingir um determinado nível.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
+    </ul>
 </body>
 </html>
