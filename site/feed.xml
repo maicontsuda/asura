@@ -4,7 +4,77 @@
   <link>https://asura-site.onrender.com/blog/</link>
   <description>Conteúdo sobre agentes autônomos, serviços digitais e trading educacional.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Fri, 27 Nov 2026 23:12:56 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 01:17:16 GMT</lastBuildDate>
+  <item>
+    <title>Como Contratar o Asura</title>
+    <link>https://asura-site.onrender.com/guia-cliente.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/guia-cliente.html</guid>
+    <pubDate>Sat, 28 Nov 2026 01:16:47 GMT</pubDate>
+    <description>© 2025 Asura - Todos os direitos reservados.</description>
+  </item>
+  <item>
+    <title>Comparação entre Forex, Ações e Cripto</title>
+    <link>https://asura-site.onrender.com/trading/comparativo-mercados.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/comparativo-mercados.html</guid>
+    <pubDate>Sat, 28 Nov 2026 00:55:40 GMT</pubDate>
+    <description></description>
+  </item>
+  <item>
+    <title>Glossário de Termos de Mercado</title>
+    <link>https://asura-site.onrender.com/trading/glossario.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
+    <pubDate>Sat, 28 Nov 2026 00:45:53 GMT</pubDate>
+    <description>Unidade de medida da variação de preços em forex. Exemplo: se o EUR/USD sobe de 1.1200 para 1.1205, houve um movimento de 5 pips.</description>
+  </item>
+  <item>
+    <title>Como Identificar Golpes no Mercado Financeiro</title>
+    <link>https://asura-site.onrender.com/trading/golpes-e-erros.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/golpes-e-erros.html</guid>
+    <pubDate>Sat, 28 Nov 2026 00:34:35 GMT</pubDate>
+    <description>Antes de investir, verifique se o gestor está registrado em órgãos reguladores como a CVM. Investidores que não possuem registro podem não estar sujeitos a regras de proteção ao investidor.</description>
+  </item>
+  <item>
+    <title>Teste de Estratégias: Backtest, Forward Test e Conta Demo</title>
+    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
+    <pubDate>Sat, 28 Nov 2026 00:24:22 GMT</pubDate>
+    <description>Registre detalhadamente cada operação: data, horário, ativo, posição, entrada, saída, motivo e resultado. Isso ajuda a identificar padrões e melhorar a estratégia.</description>
+  </item>
+  <item>
+    <title>Psicologia do Trader: Medo, Ganância e Autodisciplina</title>
+    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
+    <pubDate>Sat, 28 Nov 2026 00:02:15 GMT</pubDate>
+    <description>A disciplina é a chave para manter a rotina de trading. Estabelecer regras claras, seguir um plano de operações e manter o controle emocional são fundamentais para o sucesso a longo prazo.</description>
+  </item>
+  <item>
+    <title>Gestão de Risco em Operações</title>
+    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
+    <pubDate>Fri, 27 Nov 2026 23:51:10 GMT</pubDate>
+    <description>O position sizing refere-se ao tamanho da posição que será aberta em cada operação. Ele deve ser calculado com base no risco por operação e no nível de stop loss, garantindo que a exposição ao risco seja controlada.</description>
+  </item>
+  <item>
+    <title>Análise Técnica - Ferramentas de Leitura</title>
+    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
+    <pubDate>Fri, 27 Nov 2026 23:42:25 GMT</pubDate>
+    <description>Os gráficos de velas são uma forma de representar as variações de preços em intervalos de tempo. Cada vela mostra a abertura, fechamento, alta e baixa do período, ajudando a entender o comportamento do mercado.</description>
+  </item>
+  <item>
+    <title>Mercado de Ações: O que é uma Ação?</title>
+    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
+    <pubDate>Fri, 27 Nov 2026 23:30:50 GMT</pubDate>
+    <description>As ações podem ser classificadas em diferentes categorias, como ações ordinárias e preferenciais, e oferecem ao investidor diferentes níveis de risco e retorno.</description>
+  </item>
+  <item>
+    <title>Fundamentos do Mercado Forex</title>
+    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
+    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
+    <pubDate>Fri, 27 Nov 2026 23:22:01 GMT</pubDate>
+    <description>O pip é a unidade de medida de movimento de preços no mercado forex. Representa 0,0001 em pares de moedas como EUR/USD, e 0,001 em pares como USD/JPY. É essencial para calcular ganhos e perdas em operações.</description>
+  </item>
   <item>
     <title>Perguntas Frequentes - Asura</title>
     <link>https://asura-site.onrender.com/faq.html</link>
@@ -62,13 +132,6 @@
     <description>Para garantir que a landing page atenda aos padrões de qualidade, siga os critérios abaixo:</description>
   </item>
   <item>
-    <title>Como Contratar o Asura</title>
-    <link>https://asura-site.onrender.com/guia-cliente.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/guia-cliente.html</guid>
-    <pubDate>Fri, 27 Nov 2026 20:54:54 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
     <title>Asura - Serviços</title>
     <link>https://asura-site.onrender.com/servicos.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/servicos.html</guid>
@@ -76,74 +139,11 @@
     <description>Criamos um texto de apresentação que captura a essência do seu negócio e posiciona a sua marca de forma eficaz. Este texto é projetado para ser usado em diversas plataformas, desde sites até redes sociais.</description>
   </item>
   <item>
-    <title>Comparação entre Forex, Ações e Cripto</title>
-    <link>https://asura-site.onrender.com/trading/comparativo-mercados.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/comparativo-mercados.html</guid>
-    <pubDate>Fri, 27 Nov 2026 20:31:38 GMT</pubDate>
-    <description></description>
-  </item>
-  <item>
-    <title>Glossário de Termos de Mercado</title>
-    <link>https://asura-site.onrender.com/trading/glossario.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/glossario.html</guid>
-    <pubDate>Fri, 27 Nov 2026 20:22:06 GMT</pubDate>
-    <description>Unidade de medida de movimento de preços em mercados financeiros. Representa 0,0001 em pares de moedas.</description>
-  </item>
-  <item>
-    <title>Golpes e Erros Comuns no Mercado Financeiro</title>
-    <link>https://asura-site.onrender.com/trading/golpes-e-erros.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/golpes-e-erros.html</guid>
-    <pubDate>Fri, 27 Nov 2026 20:10:37 GMT</pubDate>
-    <description>Conteúdo educacional. Este site não oferece conselhos financeiros.</description>
-  </item>
-  <item>
-    <title>Como Testar Estratégias de Trading Sem Arriscar Dinheiro</title>
-    <link>https://asura-site.onrender.com/trading/backtest-e-demo.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/backtest-e-demo.html</guid>
-    <pubDate>Fri, 27 Nov 2026 19:59:57 GMT</pubDate>
-    <description>Essas ferramentas são essenciais para validar a eficácia de uma estratégia, identificar vieses e ajustar parâmetros, garantindo que você esteja preparado para o ambiente real.</description>
-  </item>
-  <item>
     <title>Plano de Trade - Modelo de Estratégia</title>
     <link>https://asura-site.onrender.com/trading/plano-de-trade.html</link>
     <guid isPermaLink="true">https://asura-site.onrender.com/trading/plano-de-trade.html</guid>
     <pubDate>Fri, 27 Nov 2026 19:49:24 GMT</pubDate>
     <description>Definir claramente os objetivos do plano de trade é essencial para manter a disciplina e a consistência nas operações. Os objetivos podem incluir:</description>
-  </item>
-  <item>
-    <title>Psicologia do Trader: Medo, Ganância e Autodisciplina</title>
-    <link>https://asura-site.onrender.com/trading/psicologia.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/psicologia.html</guid>
-    <pubDate>Fri, 27 Nov 2026 19:41:07 GMT</pubDate>
-    <description>O revenge trading é a prática de operar com a intenção de &quot;revidar&quot; uma perda anterior. Essa atitude é impulsiva e frequentemente leva a decisões mal calculadas, aumentando ainda mais os riscos.</description>
-  </item>
-  <item>
-    <title>Gestão de Risco em Operações</title>
-    <link>https://asura-site.onrender.com/trading/gestao-risco.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/gestao-risco.html</guid>
-    <pubDate>Fri, 27 Nov 2026 19:30:22 GMT</pubDate>
-    <description>Este conteúdo é educacional e não constitui recomendação ou conselho financeiro. Investir em mercados financeiros envolve riscos e pode resultar em perdas.</description>
-  </item>
-  <item>
-    <title>Análise Técnica - Ferramentas de Leitura</title>
-    <link>https://asura-site.onrender.com/trading/analise-tecnica.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/analise-tecnica.html</guid>
-    <pubDate>Fri, 27 Nov 2026 19:20:00 GMT</pubDate>
-    <description>Este conteúdo é educacional e não constitui recomendação de investimento. As ferramentas apresentadas não garantem lucro ou previsões certas.</description>
-  </item>
-  <item>
-    <title>Mercado de Ações: O que é uma Ação?</title>
-    <link>https://asura-site.onrender.com/trading/acoes-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/acoes-fundamentos.html</guid>
-    <pubDate>Fri, 27 Nov 2026 19:10:08 GMT</pubDate>
-    <description>Dividendos são parte dos lucros da empresa que são distribuídos aos acionistas. Eles podem ser pagos em dinheiro ou em ações e são um indicador da saúde financeira da empresa.</description>
-  </item>
-  <item>
-    <title>Fundamentos do Mercado Forex</title>
-    <link>https://asura-site.onrender.com/trading/forex-fundamentos.html</link>
-    <guid isPermaLink="true">https://asura-site.onrender.com/trading/forex-fundamentos.html</guid>
-    <pubDate>Fri, 27 Nov 2026 18:58:17 GMT</pubDate>
-    <description>Os pares de moedas são as combinações de duas moedas que são negociadas no mercado. O primeiro país é a moeda base e o segundo é a moeda contra. Exemplos comuns incluem EUR/USD, GBP/USD e USD/JPY.</description>
   </item>
   <item>
     <title>Garantias do Serviço</title>
