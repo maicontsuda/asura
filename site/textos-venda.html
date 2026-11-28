@@ -5,51 +5,65 @@
     <title>Modelos de Texto de Venda para Pequenos Negócios</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
+            color: #f5f5f5;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 2em;
-            margin: 0;
+        header h1 {
+            color: #ff9800;
+            font-size: 2.5em;
         }
         section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
             background-color: #1a1a1a;
-            padding: 30px;
-            margin: 20px 0;
-            border-left: 5px solid #ff6b6b;
+            border-radius: 8px;
         }
         section h2 {
-            font-size: 1.5em;
+            color: #ff9800;
             margin-bottom: 10px;
         }
-        .gancho {
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-        .corpo {
-            font-size: 1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .acao {
-            font-weight: bold;
+        section p {
             font-size: 1.1em;
-            text-align: right;
+        }
+        .modelo {
+            margin-bottom: 40px;
+            border-left: 4px solid #ff9800;
+            padding-left: 20px;
+        }
+        .modelo h3 {
+            color: #ffeb3b;
+            margin-top: 20px;
+        }
+        .modelo .gancho {
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+        .modelo .corpo {
+            margin-top: 10px;
+        }
+        .modelo .acao {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #4caf50;
         }
         footer {
-            background-color: #1e1e1e;
             text-align: center;
             padding: 20px;
+            background-color: #1e1e1e;
             margin-top: 40px;
+        }
+        footer p {
+            font-size: 0.9em;
+            color: #ccc;
         }
     </style>
 </head>
@@ -58,43 +72,45 @@
         <h1>Modelos de Texto de Venda para Pequenos Negócios</h1>
     </header>
     <section>
-        <h2>Cafeteria</h2>
-        <div class="gancho">A melhor experiência de café em sua cidade!</div>
-        <div class="corpo">Nossa cafeteria oferece uma seleção de cafés artesanais, torrados com cuidado e preparados com ingredientes de qualidade. Cada xícara é uma experiência única, feita com amor e atenção aos detalhes. Venha desfrutar de um ambiente acolhedor e um serviço rápido e atencioso, ideal para momentos de relaxamento ou para trabalhar com produtividade. Com sabores variados e opções para todos os gostos, temos algo para todos os paladares.</div>
-        <div class="acao">Visite-nos hoje e descubra a diferença!</div>
-    </section>
-    <section>
-        <h2>Doceria</h2>
-        <div class="gancho">Doce como o amor, feito com carinho!</div>
-        <div class="corpo">Na nossa doceria, cada sobremesa é uma obra de arte. Com ingredientes frescos e receitas tradicionais, oferecemos doces que conquistam o paladar e a alma. De bolos caseiros até trufas finas, cada produto é feito com dedicação e sabedoria. Aproveite o sabor da tradição e da criatividade em cada pedaço.</div>
-        <div class="acao">Experimente nossos doces hoje mesmo!</div>
-    </section>
-    <section>
-        <h2>Floricultura</h2>
-        <div class="gancho">Flores que trazem beleza e significado!</div>
-        <div class="corpo">Na nossa floricultura, cada arranjo é uma expressão de carinho, estilo e personalidade. Seja para um presente especial ou para decorar seu espaço, temos flores que contam histórias. Com variedades de cores, texturas e formatos, cada corte é cuidadosamente selecionado para trazer alegria e beleza. Faça um presente que faça diferença com nossos arranjos exclusivos.</div>
-        <div class="acao">Compre agora e surpreenda alguém!</div>
-    </section>
-    <section>
-        <h2>Barbearia</h2>
-        <div class="gancho">Cuidado com o que você vê no espelho!</div>
-        <div class="corpo">Na nossa barbearia, cada corte é uma obra de precisão e estilo. Com profissionais experientes e equipamentos de ponta, oferecemos serviços que elevam a confiança e o autoestima. Seja uma barba impecável ou um cabelo bem definido, temos a técnica e a atenção para atender a cada necessidade. Venha se sentir bem cuidado e com um visual que ressalta sua personalidade.</div>
-        <div class="acao">Agende seu horário hoje!</div>
-    </section>
-    <section>
-        <h2>Petshop</h2>
-        <div class="gancho">O melhor cuidado para seu companheiro de quatro patas!</div>
-        <div class="corpo">Na nossa petshop, cada produto e serviço é pensado para o bem-estar do seu pet. Com rações nutritivas, brinquedos divertidos e cuidados veterinários, garantimos que seu animal tenha uma vida saudável e feliz. Temos tudo para atender a todos os gostos e necessidades, desde os mais pequenos até os mais grandes. Aproveite a qualidade e o carinho que só uma petshop verdadeira pode oferecer.</div>
-        <div class="acao">Venha conhecer a família da sua mascota!</div>
-    </section>
-    <section>
-        <h2>Loja de Roupa</h2>
-        <div class="gancho">Estilo, conforto e qualidade em cada peça!</div>
-        <div class="corpo">Na nossa loja de roupas, encontrará peças que combinam estilo, conforto e qualidade. Com uma seleção variada de tamanhos e cores, temos roupas para todos os gostos e ocasiões. Desde roupas casuais até trajes formais, cada peça é escolhida com atenção aos detalhes e à necessidade do cliente. Venha descobrir o que há de melhor em moda e conforto.</div>
-        <div class="acao">Visite-nos e encontre sua nova peça favorita!</div>
+        <div class="modelo">
+            <h2>Cafeteria</h2>
+            <div class="gancho">Que tal um café da manhã especial?</div>
+            <div class="corpo">Nossa cafeteria oferece cafés artesanais, sucos frescos e deliciosos bolos caseiros feitos com ingredientes de qualidade. Aproveite um ambiente acolhedor e um serviço rápido para começar o seu dia com energia. Venha experimentar nossa especialidade: o café especial com leite de castanha e canela. Cada xícara é preparada com carinho, para atender às suas necessidades e preferências.</div>
+            <div class="acao">Venha nos visitar hoje mesmo e desfrute do melhor café da região!</div>
+        </div>
+        <div class="modelo">
+            <h2>Doceria</h2>
+            <div class="gancho">Doce como o seu coração?</div>
+            <div class="corpo">A nossa doceria é o lugar perfeito para quem ama doçura e sabor. Temos uma variedade de doces artesanais, bolos caseiros e chocolates feitos com ingredientes premium. Nossas receitas são tradicionais, mas com um toque moderno, para atender aos paladares mais exigentes. Aproveite um momento especial com um doce que vai conquistar seu coração e sua boca. Venha conhecer nossa seleção e descubra o que há de melhor em doçura.</div>
+            <div class="acao">Experimente agora mesmo e descubra o sabor da tradição!</div>
+        </div>
+        <div class="modelo">
+            <h2>Floricultura</h2>
+            <div class="gancho">Que tal uma flor que traga alegria ao seu dia?</div>
+            <div class="corpo">A nossa floricultura oferece flores frescas, arranjos criativos e flores de alta qualidade. Seja para um presente especial, um ambiente de trabalho ou um momento de relaxamento, temos a solução perfeita. Nossos arranjos são feitos com carinho, utilizando flores de diferentes cores e texturas, para criar uma beleza que encanta. Aproveite o aroma fresco das flores e deixe o seu espaço mais colorido e alegre.</div>
+            <div class="acao">Encomende agora e traga a beleza da natureza para seu lar!</div>
+        </div>
+        <div class="modelo">
+            <h2>Barbearia</h2>
+            <div class="gancho">Penteado perfeito, cuidado com profissional.</div>
+            <div class="corpo">Na nossa barbearia, cada cliente é tratado com atenção e profissionalismo. Oferecemos cortes de cabelo, barbas e bigodes feitos por profissionais qualificados, com equipamentos modernos e produtos de qualidade. Nossa equipe se dedica a atender às necessidades de cada cliente, garantindo um resultado que faça você se sentir confiante e bem cuidado. Venha conhecer o novo estilo da sua rotina e descubra o que é ser bem tratado.</div>
+            <div class="acao">Agende seu horário e descubra a diferença!</div>
+        </div>
+        <div class="modelo">
+            <h2>Petshop</h2>
+            <div class="gancho">Cuidar do seu pet com carinho.</div>
+            <div class="corpo">Na nossa petshop, oferecemos tudo o que seu pet precisa para viver com saúde e felicidade. Temos petiscos naturais, ração de alta qualidade, banho e tosa profissional, além de brinquedos e acessórios que promovem a diversão e o bem-estar dos animais. Nossa equipe é especializada em atender as necessidades de cada animal, garantindo um cuidado personalizado. Venha conhecer nossa loja e descubra como cuidar do seu pet da melhor forma.</div>
+            <div class="acao">Venha nos visitar e descubra o amor que seu pet merece!</div>
+        </div>
+        <div class="modelo">
+            <h2>Loja de Roupa</h2>
+            <div class="gancho">Estilo e conforto em cada peça.</div>
+            <div class="corpo">Na nossa loja de roupas, você encontra peças de alta qualidade, confortáveis e modernas. Temos roupas para todos os gostos, tamanhos e ocasiões, com preços acessíveis e estilo único. Nossa seleção inclui roupas para homens, mulheres e crianças, com tecidos confortáveis e duráveis. Aproveite o melhor da moda com peças que combinam qualidade e estilo, para atender às suas necessidades de vestir com conforto e elegância.</div>
+            <div class="acao">Vem conhecer a loja e descubra o estilo que você merece!</div>
+        </div>
     </section>
     <footer>
-        <p>© 2025 - Modelos de Texto de Venda para Pequenos Negócios</p>
+        <p>© 2025 - Modelos de Venda para Pequenos Negócios</p>
     </footer>
 </body>
 </html>
