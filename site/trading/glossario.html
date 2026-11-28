@@ -5,78 +5,145 @@
     <title>Glossário de Termos de Mercado</title>
     <style>
         body {
-            background-color: #121212;
+            background-color: #1e1e1e;
             color: #ffffff;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
         }
         h1 {
-            color: #3498db;
             text-align: center;
+            color: #00bfff;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .glossario {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
         }
-        li {
-            margin: 10px 0;
-            background: #2c3e50;
-            padding: 10px;
-            border-radius: 5px;
+        .termo {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        code {
-            font-size: 1.2em;
-            background: #27ae60;
-            padding: 2px 5px;
-            border-radius: 3px;
+        .termo h2 {
+            margin-top: 0;
+        }
+        .termo p {
+            margin: 10px 0 0;
+        }
+        .termo p.example {
+            font-style: italic;
+            color: #6495ed;
         }
     </style>
 </head>
 <body>
     <h1>Glossário de Termos de Mercado</h1>
-    <ul>
-        <li><code>pip</code>: Um ponto percentual na variação do preço de uma moeda, geralmente 0.0001 no forex.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>lote</code>: A quantidade padrão de uma moeda ou contrato de futuros negociado em uma transação.</li>
-        <li><code>alavancagem</code>: O uso de empréstimos para aumentar a posição em um investimento.</li>
-        <li><code> margem</code>: O valor inicial necessário para abrir uma posição.</li>
-        <li><code>stop</code>: Um nível de preço em que uma ordem de venda ou compra é automaticamente executada.</li>
-        <li><code>take profit</code>: Um nível de preço em que uma ordem de venda ou compra é automaticamente fechada para lucro.</li>
-        <li><code>long</code>: A posição de compra em uma moeda ou ativo.</li>
-        <li><code>short</code>: A posição de venda em uma moeda ou ativo.</li>
-        <li><code>gap</code>: A diferença entre o preço de fechamento e abertura de um ativo.</li>
-        <li><code>volume</code>: A quantidade total de um ativo negociado em um período de tempo.</li>
-        <li><code>RSI</code>: Índice de Força Relativa, usado para identificar o overbought ou oversold.</li>
-        <li><code>MACD</code>: Média Móvel Exponencial, usado para identificar tendências e inversões de mercado.</li>
-        <li><code>suporte</code>: O nível de preço em que a demanda é forte, impedindo o preço de cair mais.</li>
-        <li><code>resistência</code>: O nível de preço em que a oferta é forte, impedindo o preço de subir mais.</li>
-        <li><code>drawdown</code>: A diminuição percentual do valor de uma conta de investimento em comparação ao pico histórico.</li>
-        <li><code>equity</code>: O valor total de uma conta de negociação, incluindo posições abertas, margem e lucros ou perdas.</li>
-        <li><code>margem livre</code>: A margem disponível para novas posições.</li>
-        <li><code>ordem limitada</code>: Uma ordem que será executada apenas quando o preço atingir um determinado nível.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-        <li><code>spread</code>: A diferença entre o preço de compra e venda de um ativo.</li>
-    </ul>
-</body>
-</html>
+    <div class="glossario">
+        <div class="termo">
+            <h2>pip</h2>
+            <p>Pequena unidade de medida do movimento relativo entre duas moedas. Por exemplo, no câmbio USD/JPY, 1 pip equivale a 0.0001.</p>
+            <p><strong>Exemplo:</strong> Se o preço do USD/JPY cair de 109.500 para 109.499, houve uma queda de 1 pip.</p>
+        </div>
+        <div class="termo">
+            <h2>spread</h2>
+            <p>Diferença entre o preço de compra e venda de um ativo. Também chamado de margem.</p>
+            <p><strong>Exemplo:</strong> Se o preço de compra é 1.3000 e o de venda é 1.3005, o spread é 5 pips.</p>
+        </div>
+        <div class="termo">
+            <h2>lote</h2>
+            <p>Unidade padrão de negociação em um mercado financeiro. Geralmente, 1 lote equivale a 100.000 unidades da moeda base.</p>
+            <p><strong>Exemplo:</strong> Ao negociar 1 lote de USD/JPY, você está negociando 100.000 dólares.</p>
+        </div>
+        <div class="termo">
+            <h2>alavancagem</h2>
+            <p>Permite que os traders negociem uma quantidade de dinheiro maior do que o que eles têm em conta. Exemplo: 1:100 alavancagem.</p>
+            <p><strong>Exemplo:</strong> Com 1:100 alavancagem, uma conta de 1000 dólares pode negociar 100.000 dólares.</p>
+        </div>
+        <div class="termo">
+            <h2>margin</h2>
+            <p>Fundos depositados em uma conta de negociação para cobrir potenciais perdas em negócios abertos. Também chamado de margem de garantia.</p>
+            <p><strong>Exemplo:</strong> Se você abre um trade com 1 lote e a alavancagem é 1:100, você precisa de 1.000 dólares em margem.</p>
+        </div>
+        <div class="termo">
+            <h2>stop</h2>
+            <p>Ordem para fechar um trade automaticamente se o preço atingir um determinado nível. Também chamado de stop loss ou take profit.</p>
+            <p><strong>Exemplo:</strong> Um stop loss de 10 pips é colocado a 1.3000, então se o preço atingir 1.3010, o trade será fechado.</p>
+        </div>
+        <div class="termo">
+            <h2>take profit</h2>
+            <p>Ordem para fechar um trade automaticamente se o preço atingir um determinado nível. Também chamado de stop loss ou take profit.</p>
+            <p><strong>Exemplo:</strong> Um take profit de 20 pips é colocado a 1.3020, então se o preço atingir 1.3020, o trade será fechado.</p>
+        </div>
+        <div class="termo">
+            <h2>long</h2>
+            <p>Posição de compra em um mercado. Espera que o preço suba.</p>
+            <p><strong>Exemplo:</strong> Ao abrir uma posição longa em USD/JPY, você espera que o valor do dólar suba em relação ao iene japonês.</p>
+        </div>
+        <div class="termo">
+            <h2>short</h2>
+            <p>Posição de venda em um mercado. Espera que o preço desça.</p>
+            <p><strong>Exemplo:</strong> Ao abrir uma posição short em USD/JPY, você espera que o valor do dólar caia em relação ao iene japonês.</p>
+        </div>
+        <div class="termo">
+            <h2>gap</h2>
+            <p>Diferença no preço entre dois períodos de negociação, geralmente ocorre durante feriados ou quando há notícias impactantes.</p>
+            <p><strong>Exemplo:</strong> Um gap positivo ocorre quando o preço do mercado abre acima do preço de fechamento do dia anterior.</p>
+        </div>
+        <div class="termo">
+            <h2>volume</h2>
+            <p>Quantidade de um determinado ativo negociada em um determinado período de tempo. Indica a liquidez do mercado.</p>
+            <p><strong>Exemplo:</strong> Um volume alto de negociação em USD/JPY indica que o mercado está muito líquido e as ordens são facilmente executadas.</p>
+        </div>
+        <div class="termo">
+            <h2>RSI</h2>
+            <p>Índice de Força Relativa. Mede a pressão de compra/venda de um ativo em um período de tempo específico. Geralmente usado para identificar sobrecomprado ou sobrevendido.</p>
+            <p><strong>Exemplo:</strong> Um RSI de 70 indica que o ativo pode estar sobrecomprado, enquanto um de 30 sugere que pode estar sobrevendido.</p>
+        </div>
+        <div class="termo">
+            <h2>MACD</h2>
+            <p>Moving Average Convergence Divergence. Um indicador técnico usado para identificar tendências de mercado e potenciais reversões.</p>
+            <p><strong>Exemplo:</strong> Quando as linhas do MACD cruzam para cima, isso pode ser um sinal de compra.</p>
+        </div>
+        <div class="termo">
+            <h2>suporte</h2>
+            <p>Nível de preço onde a ação do mercado tem dificuldade de cair. Geralmente há compras neste nível, mantendo o preço estável.</p>
+            <p><strong>Exemplo:</strong> Se o preço de uma ação atinge 100 e não desce, este pode ser um nível de suporte.</p>
+        </div>
+        <div class="termo">
+            <h2>resistência</h2>
+            <p>Nível de preço onde a ação do mercado tem dificuldade de subir. Geralmente há vendas neste nível, mantendo o preço estável.</p>
+            <p><strong>Exemplo:</strong> Se o preço de uma ação atinge 150 e não sobe, este pode ser um nível de resistência.</p>
+        </div>
+        <div class="termo">
+            <h2>drawdown</h2>
+            <p>Maior queda relativa de um ativo ou investimento desde um pico histórico. Usado para medir a volatilidade e o risco.</p>
+            <p><strong>Exemplo:</strong> Se um investimento atinge um pico de 100.000 dólares e depois cai para 80.000 dólares, o drawdown é de 20.000 dólares ou 20%.</p>
+        </div>
+        <div class="termo">
+            <h2>equity</h2>
+            <p>Valor total de uma conta de negociação, incluindo a posição aberta, o valor dos ativos e o dinheiro depositado.</p>
+            <p><strong>Exemplo:</strong> Se uma conta tem 10.000 dólares em margem e 20.000 dólares em ativos, o equity é de 30.000 dólares.</p>
+        </div>
+        <div class="termo">
+            <h2>margin livre</h2>
+            <p>Fundos disponíveis em uma conta de negociação para novos trades. Calculado subtraindo a margem usada de todo o equity.</p>
+            <p><strong>Exemplo:</strong> Se a conta tem 30.000 dólares de equity e 10.000 dólares em margem usada, a margem livre é de 20.000 dólares.</p>
+        </div>
+        <div class="termo">
+            <h2>ordem limitada</h2>
+            <p>Ordem para comprar ou vender um ativo a um preço específico. A ordem só será executada se o preço atingir o preço definido.</p>
+            <p><strong>Exemplo:</strong> Uma ordem limitada para comprar USD/JPY a 109.500 será executada apenas se o preço atingir este valor.</p>
+        </div>
+        <div class="termo">
+            <h2>spread betting</h2>
+            <p>Método de apostas onde o valor apostado é negociado com base na variação do preço do ativo. Não envolve a posse real do ativo.</p>
+            <p><strong>Exemplo:</strong> Se apostar que o preço de USD/JPY subirá de 109.500 para 110.000, e o preço realmente atinge 110.000, ganhará a diferença entre os preços.</p>
+        </div>
+        <div class="termo">
+            <h2>spread betting</h2>
+            <p>Método de apostas onde o valor apostado é negociado com base na variação do preço do ativo. Não envolve a posse real do ativo.</p>
+            <p><strong>Exemplo:</strong> Se apostar que o preço de USD/JPY subirá de 109.500 para 110.00
