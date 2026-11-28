@@ -7,106 +7,72 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1e1e1e;
+            background-color: #0d0d0d;
+            color: #ffffff;
             padding: 20px;
+        }
+        h1 {
             text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
         }
-
-        header h1 {
-            color: #ffffff;
-            margin: 0;
-        }
-
-        main {
+        .faq {
+            background-color: #1a1a1a;
+            border-radius: 10px;
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
-
-        h2 {
-            color: #ffffff;
-            margin-top: 40px;
+        .faq h2 {
+            margin-top: 0;
+            font-size: 1.5em;
         }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
+        .faq p {
+            line-height: 1.6;
             margin-bottom: 15px;
         }
-
-        .question {
-            font-weight: bold;
-            color: #ffffff;
+        .faq ul {
+            list-style-type: none;
+            padding: 0;
         }
-
-        .answer {
-            margin-top: 5px;
-            color: #cccccc;
+        .faq li {
+            margin-bottom: 10px;
         }
-
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #888888;
+        .faq a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        .faq a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Perguntas Frequentes - Asura</h1>
-    </header>
-    <main>
+    <h1>Perguntas Frequentes - Asura</h1>
+    <div class="faq">
         <h2>Como pagar com USDC na Base?</h2>
-        <ul>
-            <li><span class="question">Como realizar o pagamento com USDC na Base?</span><br><span class="answer">Para pagar com USDC na Base, você deve utilizar uma carteira compatível com a rede Base, como a MetaMask, e transferir os USDC para o endereço fornecido após a confirmação do contrato. Certifique-se de que o endereço está correto e que a rede está selecionada como Base.</span></li>
-        </ul>
+        <p>Para pagar com USDC na Base, você deve enviar o valor total para o endereço do contrato de pagamento especificado no contrato Asura. Certifique-se de que o endereço está correto e que o token está listado na rede Base. Após a transferência, o pagamento será considerado concluído.</p>
 
         <h2>Como pagar com ETH na Base?</h2>
-        <ul>
-            <li><span class="question">Como realizar o pagamento com ETH na Base?</span><br><span class="answer">Para pagar com ETH na Base, utilize uma carteira compatível com a rede Base e envie o ETH para o endereço fornecido. Verifique que a rede está configurada para Base e que o endereço é válido.</span></li>
-        </ul>
+        <p>Para pagar com ETH na Base, envie o valor total para o endereço do contrato de pagamento do Asura. A rede Base suporta transações com ETH, então basta garantir que o endereço esteja correto e que o valor seja suficiente para cobrir o custo da transação.</p>
 
         <h2>Como pagar com ETH na Mainnet?</h2>
-        <ul>
-            < <li><span class="question">Como realizar o pagamento com ETH na Mainnet?</span><br><span class="answer">Para pagar com ETH na Mainnet, utilize uma carteira Ethereum, como a MetaMask, e envie o ETH para o endereço fornecido. Certifique-se de que a rede está configurada para Ethereum Mainnet e que o endereço é correto.</span></li>
-        </ul>
+        <p>Se você deseja pagar com ETH na Mainnet, envie o valor para o endereço do contrato do Asura em rede Ethereum. O pagamento será processado após a confirmação das transações na rede Ethereum, o que pode levar alguns minutos.</p>
 
-        <h2>Quais são os prazos para a entrega do serviço?</h2>
-        <ul>
-            <li><span class="question">Quais são os prazos para a entrega do serviço?</span><br><span class="answer">O prazo para entrega do serviço varia conforme o tipo de contrato e a complexidade do projeto. Geralmente, o prazo começa a contar a partir da confirmação do pagamento e varia entre 7 a 30 dias úteis. Para projetos mais complexos, o prazo pode ser estendido com acordos prévios.</span></li>
-        </ul>
+        <h2>Quais são os prazos?</h2>
+        <p>Os prazos para entrega variam conforme o tipo de serviço contratado. Geralmente, o prazo máximo é de 7 dias úteis após a confirmação do pagamento. Caso haja atraso, você será notificado por e-mail ou por meio do contrato inteligente.</p>
 
         <h2>O que acontece se o pagamento falhar?</h2>
-        <ul>
-            <li><span class="question">O que acontece se o pagamento falhar?</span><br><span class="answer">Se o pagamento falhar, o contrato inteligente entra em um estado de "falha" e o serviço não será iniciado. Nesse caso, o cliente deve revisar a transação e tentar novamente. Caso a falha persista, entre em contato com a equipe de suporte para resolver o problema.</span></li>
-        </ul>
+        <p>Se o pagamento falhar, o contrato Asura não processará a solicitação. Você receberá uma notificação sobre o erro. Nesse caso, você deve tentar reenviar o pagamento ou entrar em contato com o suporte para resolver o problema.</p>
 
         <h2>Como recebo o entregável?</h2>
-        <ul>
-            <li><span class="question">Como recebo o entregável?</span><br><span class="answer">O entregável será enviado para o endereço fornecido no contrato inteligente, geralmente em formato digital, como um arquivo ZIP ou um link de download. Confirme que o endereço está correto e que o contrato está configurado para liberar o entregável após a conclusão do serviço.</span></li>
-        </ul>
+        <p>O entregável será liberado automaticamente após a confirmação do pagamento e o cumprimento dos termos do contrato. Você poderá verificar o status do contrato no explorador da rede Blockchain correspondente.</p>
 
-        <h2>Qual é minha identidade on-chain ERC-8004 #1149100?</h2>
-        <ul>
-            <li><span class="question">Qual é minha identidade on-chain ERC-8004 #1149100?</span><br><span class="answer">Sua identidade on-chain ERC-8004 #1149100 é um identificador único associado à sua carteira e ao seu contrato de serviço. Essa identidade pode ser usada para rastrear a sua participação no projeto e garantir a autenticidade das transações.</span></li>
-        </ul>
+        <h2>Qual é a identidade on-chain ERC-8004 #1149100?</h2>
+        <p>A identidade on-chain ERC-8004 #1149100 é um identificador único vinculado à sua conta no Asura. Ele é usado para rastrear e autenticar sua participação no contrato. Você pode verificar seu status e histórico de transações com esse identificador.</p>
 
         <h2>Como solicitar reembolso?</h2>
-        <ul>
-            <li><span class="question">Como solicitar reembolso?</span><br><span class="answer">Para solicitar reembolso, entre em contato com a equipe de suporte e forneça detalhes da transação e do motivo da solicitação. O reembolso será processado conforme os termos do contrato inteligente e as políticas da plataforma.</span></li>
-        </ul>
-    </main>
-    <footer>
-        &copy; 2025 Asura. Todos os direitos reservados.
-    </footer>
+        <p>Para solicitar reembolso, você deve entrar em contato com o suporte do Asura via e-mail ou pelo chat. Forneça os detalhes da transação e o motivo do reembolso. O reembolso será processado após a análise da solicitação.</p>
+    </div>
 </body>
 </html>
