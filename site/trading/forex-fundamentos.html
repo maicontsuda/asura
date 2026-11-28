@@ -5,96 +5,96 @@
     <title>Fundamentos do Mercado Forex</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
         header {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2em;
         }
-        header p {
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #aaa;
-        }
-        main {
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
             padding: 20px;
-        }
-        h2 {
-            color: #ffcc00;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            margin-left: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
         }
         .aviso {
-            background-color: #222;
-            border: 1px solid #ff4444;
-            color: #ff4444;
+            background-color: #2e2e2e;
             padding: 15px;
-            margin: 30px 0;
-            font-weight: bold;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff4444;
+        }
+        h2 {
+            color: #00ffcc;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .sessoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .sessoes div {
+            background-color: #2e2e2e;
+            padding: 15px;
+            border-radius: 8px;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1e1e1e;
-            color: #aaa;
+            color: #888;
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Fundamentos do Mercado Forex</h1>
-        <p>Conheça os conceitos básicos e principais elementos do mercado de câmbio internacional.</p>
+        <h1>fundamentos do mercado forex</h1>
     </header>
-    <main>
-        <h2>O que é o Forex?</h2>
-        <p>O mercado Forex, ou mercado cambial, é o maior mercado financeiro do mundo em termos de volume de transações diárias. Ele é composto por operações de compra e venda de moedas entre diferentes países, sendo conduzido 24 horas por dia, 5 dias por semana.</p>
-        
-        <h2>Pares de Moedas</h2>
-        <p>No Forex, as transações são feitas entre pares de moedas. Os principais pares incluem USD/JPY (dólar americano contra iene japonês), EUR/USD (euro contra dólar americano), GBP/USD (libra esterlina contra dólar americano) e AUD/USD (dólar australiano contra dólar americano).</p>
-        
-        <h2>Pip</h2>
-        <p>O pip é a unidade de medida mais comum no Forex, representando uma mudança de 0,0001 em uma cotação de moeda. Por exemplo, em USD/JPY, um pip seria 1 ponto (0,01) de movimento na cotação.</p>
-        
-        <h2>Lote</h2>
-        <p>Um lote é a unidade padrão de negociação no Forex. Um lote padrão equivale a 100.000 unidades da moeda base. Existem também lotes menores, como mini lotes (10.000 unidades) e micro lotes (1.000 unidades).</p>
-        
-        <h2>Alavancagem</h2>
-        <p>A alavancagem é a capacidade de negociar grandes volumes com um capital relativamente pequeno. Por exemplo, com alavancagem de 1:100, um investidor pode controlar um lote de 100.000 unidades com apenas 1.000 reais.</p>
-        
-        <h2>Spread</h2>
-        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. Ele representa a comissão cobrada pelo broker e é expresso em pips. Por exemplo, se o spread de EUR/USD for 1,5 pip, o preço de compra será 1,5 pip menor que o preço de venda.</p>
-        
-        <h2>Horários de Sessão</h2>
-        <p>O mercado Forex opera em três principais centros financeiros: Tóquio, Londres e Nova York. Cada região tem sua hora de abertura e fechamento, criando períodos de maior volatilidade.</p>
-        <ul>
-            <li><strong>Tóquio:</strong> 22h (horário de Brasília) até 8h (horário de Brasília)</li>
-            <li><strong>Londres:</strong> 8h (horário de Brasília) até 16h (horário de Brasília)</li>
-            <li><strong>Nova York:</strong> 16h (horário de Brasília) até 24h (horário de Brasília)</li>
-        </ul>
-        
-        <h2>Participantes do Mercado Forex</h2>
-        <p>O mercado Forex é composto por diversos participantes, incluindo bancos centrais, corretoras, investidores institucionais, traders profissionais e indivíduos. Cada um atua com diferentes objetivos e estratégias.</p>
-        
+    <div class="container">
         <div class="aviso">
-            Este conteúdo é educacional e não constitui recomendação de investimento. O trading de forex envolve riscos e pode resultar em perdas financeiras.
+            <strong>⚠️ Conteúdo educacional, não é recomendação de investimento.</strong>
         </div>
-    </main>
+        <h2>O que é o mercado forex?</h2>
+        <p>O mercado forex, ou mercado cambial, é o maior mercado financeiro do mundo, onde as moedas são compradas e vendidas em tempo real. Ele opera 24 horas por dia, 5 dias por semana, e envolve a troca de pares de moedas, como USD/EUR ou BRL/USD. O objetivo é aproveitar as flutuações de valor entre moedas.</p>
+
+        <h2>Pares de moedas</h2>
+        <p>Os pares de moedas são as combinações de duas moedas que são negociadas no mercado. O primeiro componente do par é a moeda base, e o segundo é a moeda contra. Exemplos comuns incluem USD/EUR, GBP/USD e USD/JPY.</p>
+
+        <h2>Pip</h2>
+        <p>O pip é a unidade de medida mais comum no mercado forex. Representa 0,0001 da unidade da moeda. Por exemplo, em EUR/USD, um pip seria 0,0001 USD.</p>
+
+        <h2>Lote</h2>
+        <p>Um lote é a unidade de negociação padrão no mercado forex. Um lote padrão é 100.000 unidades da moeda base. Existem também lotes menores, como mini lotes (10.000) e micro lotes (1.000).</p>
+
+        <h2>Alavancagem</h2>
+        <p>A alavancagem permite que os investidores abram posições com capital menor, aumentando o potencial de ganho, mas também o risco. Comumente, a alavancagem varia entre 1:50 e 1:100.</p>
+
+        <h2>Spread</h2>
+        <p>O spread é a diferença entre o preço de compra e venda de uma moeda. Ele representa o custo de transação do investidor e é geralmente expresso em pips.</p>
+
+        <h2>Horários de sessão</h2>
+        <div class="sessoes">
+            <div><strong>Tóquio</strong><br>Aberto das 22:00 às 07:00 (horário de Brasília).</div>
+            <div><strong>Londres</strong><br>Aberto das 00:00 às 12:00 (horário de Brasília).</div>
+            <div><strong>Nova York</strong><br>Aberto das 12:00 às 22:00 (horário de Brasília).</div>
+        </div>
+
+        <h2>Participantes</h2>
+        <p>Os principais participantes do mercado forex incluem bancos centrais, instituições financeiras, corretoras, investidores individuais e traders profissionais. Cada um desempenha um papel específico no movimento das moedas.</p>
+    </div>
     <footer>
-        © 2025 - Fundamentos do Mercado Forex. Todos os direitos reservados.
+        © 2025 - Conteúdo educacional sobre mercado forex
     </footer>
 </body>
 </html>
